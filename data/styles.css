@@ -323,6 +323,34 @@ body {
   margin-right: 8px;
 }
 
+.badge-dong {
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-weight: 700;
+  border: 1px solid #e5e7eb;
+}
+
+.search-item.dong-result {
+  border-left: 4px solid #9ca3af;
+  background: #f9fafb;
+}
+
+.search-item-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+.search-item-addr {
+  font-size: 11px;
+  color: var(--text-sub);
+  margin-top: 2px;
+}
+
 .info-val {
   font-weight: 500;
 }
@@ -705,6 +733,110 @@ body {
   background: #374151;
   color: white;
   border-color: #374151;
+}
+
+/* Range Slider Styles */
+.range-slider-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-track {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.range-slider-container input[type="range"] {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  appearance: none;
+  height: 6px;
+  background: none;
+  z-index: 2;
+  margin: 0;
+}
+
+.range-slider-container input[type="range"]::-webkit-slider-thumb {
+  pointer-events: auto;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s;
+}
+
+.range-slider-container input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.range-slider-container input[type="range"]:active::-webkit-slider-thumb {
+  background: var(--primary-color);
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+.range-labels span {
+  font-size: 11px;
+  color: var(--text-sub);
+  font-weight: 600;
+}
+
+.section-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.unit-toggle-container {
+  display: flex;
+  background: #f3f4f6;
+  padding: 2px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.unit-btn {
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.unit-btn.active {
+  background: white;
+  color: var(--primary-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.range-value-text {
+  float: right;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 12px;
 }
 
 /* Dong Aggregate Marker */

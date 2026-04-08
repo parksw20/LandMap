@@ -64,7 +64,7 @@ class ExcelParser:
                     'area': find_col(['전용면적', '면적']),
                     'land': find_col(['대지면적', '대지권']),
                     'floor': find_col(['층']),
-                    'bdong': find_col(['동']), 
+                    'bdong': find_col(['동'], exclude=['법정동', '행정동', '동명', '시도', '시군구']), 
                     'date': find_col(['계약일', '일자']),
                     'period': find_col(['임차기간']),
                     'renew': find_col(['갱신', '요구']),

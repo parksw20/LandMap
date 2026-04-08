@@ -63,12 +63,17 @@ class HierarchyBuilder:
         dong_s = [{"name": d, "parent": f"{s} {gu}", "coords": g.iloc[0]['__coords'], "stats": self._get_stats(g)} for (s, gu, d), g in df.groupby(['__sido', '__gungu', '__dong']) if d]
         self._save_json(dong_s, target_dir / "summary_dong.json")
 
-        # Details
+        # Details & Global Search Index
         det_path = target_dir / "details"
+        search_index = [] 
+
         for (sido, gungu), g in df.groupby(['__sido', '__gungu']):
             if not gungu: continue
             c_data = []
             for (addr, name), cg in g.groupby(['__address', '__name']):
+                # 검색 인덱스 데이터 수집 (n: 이름, a: 주소, c: 좌표)
+                search_index.append({"n": name, "a": addr, "c": cg.iloc[0]['__coords']})
+                
                 deals = []
                 for _, r in cg.iterrows():
                     deals.append({
@@ -83,6 +88,9 @@ class HierarchyBuilder:
             clean_gungu = str(gungu).replace("/", "_").replace(" ", "_")
             fname = f"{sido}_{clean_gungu}.json"
             self._save_details_custom(c_data, det_path / fname)
+        
+        # 검색 인덱스 저장
+        self._save_json(search_index, target_dir / "search_index.json")
 
     def _save_details_custom(self, data, path):
         os.makedirs(os.path.dirname(path), exist_ok=True)

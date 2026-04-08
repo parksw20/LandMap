@@ -73,10 +73,12 @@ kakaof108e51342fb80ccbdd2fa083ce51c72-->
               <input type="radio" name="housingType" value="sh">
               <span class="chip-label">단독/다가구</span>
             </label>
+            <!--
             <label class="filter-chip">
               <input type="radio" name="housingType" value="off">
               <span class="chip-label">오피스텔</span>
             </label>
+            -->
           </div>
         </div>
 
@@ -97,6 +99,28 @@ kakaof108e51342fb80ccbdd2fa083ce51c72-->
             </label>
           </div>
         </div>
+
+        <div class="panel-section">
+          <div class="section-header-flex">
+            <div class="section-title">면적 선택 <span id="area-range-text" class="range-value-text">전체</span></div>
+            <div class="unit-toggle-container">
+              <button id="unit-pyeong" class="unit-btn active">평</button>
+              <button id="unit-m2" class="unit-btn">㎡</button>
+            </div>
+          </div>
+          <div class="range-slider-container">
+            <div class="slider-track"></div>
+            <input type="range" id="area-min" min="0" max="80" value="0" step="5">
+            <input type="range" id="area-max" min="0" max="80" value="80" step="5">
+          </div>
+          <div class="range-labels">
+            <span>0평</span>
+            <span>20평</span>
+            <span>40평</span>
+            <span>60평</span>
+            <span>80평+</span>
+          </div>
+        </div>
       </div>
 
       <!-- Scrollable Data List Section -->
@@ -104,6 +128,7 @@ kakaof108e51342fb80ccbdd2fa083ce51c72-->
         <div class="section-title" id="data-title"
           style="padding: 20px 24px 10px 24px; position:sticky; top:0; background:rgba(255,255,255,0.95); z-index:5; border-bottom:1px solid var(--border-color);">
           거래 내역</div>
+        <div id="area-filter" class="area-filter-container"></div>
         <div id="data-list" class="data-list">
           <!-- Data Cards will be injected here -->
         </div>
