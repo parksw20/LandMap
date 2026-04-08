@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.zip
+*.csv
+!LAWD_서울_경기.csv
+
+# Data files (excluding cache and config)
+data/2025/
+data/2026/
+data/hierarchy/
+!data/address_cache.json
+!data/manifest.json
+!data/*.js
+!data/*.html
+!data/*.css
+!data/*.json

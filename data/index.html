@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부동산 실거래가 시각화</title>
+  <link rel="stylesheet" href="./styles.css?v=2">
+  <!-- Kakao Maps SDK -->
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=61feaec3994e05d0c9235d6b07bc5712&libraries=services,clusterer"></script>
+</head>
+<!--61feaec3994e05d0c9235d6b07bc5712
+src="//dapi.kakao.com/v2/maps/sdk.js?appkey=61feaec3994e05d0c9235d6b07bc5712&libraries=services,clusterer"></script>
+src="//dapi.kakao.com/v2/maps/sdk.js?appkey=kakaof108e51342fb80ccbdd2fa083ce51c72&libraries=services,clusterer"></script>
+kakaof108e51342fb80ccbdd2fa083ce51c72-->
+
+<body>
+
+  <!-- Full Screen Map -->
+  <div id="map"></div>
+
+  <!-- Map Controls (Top Right) -->
+  <div id="map-controls" class="map-controls">
+    <button id="skyview-btn" class="control-btn">스카이뷰</button>
+  </div>
+
+  <!-- Floating Control Panel -->
+  <div id="control-panel" class="control-panel">
+    <!-- Toggle Button (Inside Panel, Outside Wrapper) -->
+    <button id="panel-toggle-btn" class="toggle-btn" title="패널 토글">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <!-- Content Wrapper -->
+    <div class="panel-content-wrapper">
+
+      <!-- Fixed Top Section (Header + Filters) -->
+      <div class="panel-fixed-top">
+        <div class="panel-header">
+          <h1>부동산 실거래 분석</h1>
+          <p class="subtitle">데이터를 선택하여 지도에서 확인하세요</p>
+
+          <!-- Search Box -->
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="아파트, 건물명 검색" autocomplete="off">
+            <ul id="search-results" class="search-results hidden"></ul>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="panel-section">
+          <div class="section-title">데이터 선택 (기간)</div>
+          <div id="dataset-list" class="checkbox-grid">
+            <div class="loading-text">데이터 목록 로딩 중...</div>
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <div class="section-title">주택 유형</div>
+          <div class="checkbox-group">
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="apt" checked>
+              <span class="chip-label">아파트</span>
+            </label>
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="rh">
+              <span class="chip-label">연립/다세대</span>
+            </label>
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="sh">
+              <span class="chip-label">단독/다가구</span>
+            </label>
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="off">
+              <span class="chip-label">오피스텔</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <div class="section-title">거래 유형</div>
+          <div class="checkbox-group">
+            <label class="filter-chip">
+              <input type="checkbox" name="transactionType" value="매매" checked>
+              <span class="chip-label">매매</span>
+            </label>
+            <label class="filter-chip">
+              <input type="checkbox" name="transactionType" value="전세" checked>
+              <span class="chip-label">전세</span>
+            </label>
+            <label class="filter-chip">
+              <input type="checkbox" name="transactionType" value="월세" checked>
+              <span class="chip-label">월세</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrollable Data List Section -->
+      <div id="data-section" class="panel-scroll-area" style="display:none;">
+        <div class="section-title" id="data-title"
+          style="padding: 20px 24px 10px 24px; position:sticky; top:0; background:rgba(255,255,255,0.95); z-index:5; border-bottom:1px solid var(--border-color);">
+          거래 내역</div>
+        <div id="data-list" class="data-list">
+          <!-- Data Cards will be injected here -->
+        </div>
+      </div>
+
+      <div class="panel-footer">
+        <div id="status-bar">준비 완료</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js?v=2"></script>
+</body>
+
+</html>
