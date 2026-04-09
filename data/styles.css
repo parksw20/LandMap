@@ -181,19 +181,77 @@ body {
   transform: translateY(-1px);
 }
 
-.loading-text {
-  font-size: 13px;
-  color: var(--text-sub);
+.period-select-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
 }
 
-/* Map Controls */
+.modern-select {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: white;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7280' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  padding-right: 32px;
+}
+
+.modern-select:hover {
+  border-color: #d1d5db;
+  background-color: #f9fafb;
+}
+
+.modern-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* Selected Marker Enhancement */
+.level-marker.selected {
+  z-index: 999 !important;
+  transform: scale(1.25);
+}
+
+.level-marker.selected .marker-body {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6), 0 0 40px rgba(37, 99, 235, 0.3);
+  border: 3px solid white;
+  animation: marker-pulse 2s infinite;
+}
+
+@keyframes marker-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+.level-marker.selected .marker-label {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Map Controls - 위치 조정 */
 .map-controls {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 2px;
+  right: 40px; /* 24px -> 2px */
   z-index: 10;
   display: flex;
   gap: 8px;
+}
+
+/* 선택된 마커 강조 보완 */
+.level-marker.selected {
+  z-index: 999 !important;
 }
 
 .control-btn {

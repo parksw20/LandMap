@@ -52,11 +52,19 @@ kakaof108e51342fb80ccbdd2fa083ce51c72-->
 
         <!-- Filters -->
         <div class="panel-section">
-          <div class="section-title">데이터 선택 (기간)</div>
-          <div id="dataset-list" class="checkbox-grid">
-            <div class="loading-text">데이터 목록 로딩 중...</div>
-          </div>
+            <div class="section-title">데이터 선택 (기간)</div>
+            <div class="period-select-container">
+                <select id="base-month-select" class="modern-select">
+                    <option value="">데이터 로딩 중...</option>
+                </select>
+                <select id="range-select" class="modern-select">
+                    <option value="1">현재 월</option>
+                    <option value="2">이전 1개월 포함</option>
+                    <option value="3">이전 2개월 포함</option>
+                </select>
+            </div>
         </div>
+
 
         <div class="panel-section">
           <div class="section-title">주택 유형</div>

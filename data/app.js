@@ -37,19 +37,57 @@ async function init() {
     state.geocoder = new kakao.maps.services.Geocoder();
     const mapContainer = document.getElementById('map');
     state.map = new kakao.maps.Map(mapContainer, { center: new kakao.maps.LatLng(37.5665, 126.9780), level: 10 });
-    state.map.addControl(new kakao.maps.ZoomControl(), kakao.maps.ControlPosition.RIGHT);
+    
+    const zoomControl = new kakao.maps.ZoomControl();
+    state.map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+    
     state.tooltip = new kakao.maps.CustomOverlay({ zIndex: 1000, clickable: false, xAnchor: 0.5, yAnchor: 1.5 });
 
     setupEventListeners();
-    await renderMonthFilters(); 
+    await renderMonthSelect(); 
     await loadGlobalSearchIndex(); 
-    updateMap();
+    
+    const baseSelect = document.getElementById('base-month-select');
+    if (baseSelect && baseSelect.value) {
+        state.selectedMonths = [baseSelect.value];
+        updateMap(true);
+    }
 }
 
 function setupEventListeners() {
     kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); });
     kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); });
     
+    const baseSelect = document.getElementById('base-month-select');
+    const rangeSelect = document.getElementById('range-select');
+    const updatePeriod = async () => {
+        const baseIdx = baseSelect.selectedIndex;
+        const range = parseInt(rangeSelect.value);
+        if (baseIdx === -1) return;
+        
+        state.selectedMonths = [];
+        for (let i = 0; i < range; i++) {
+            const opt = baseSelect.options[baseIdx + i];
+            if (opt && opt.value) state.selectedMonths.push(opt.value);
+        }
+        
+        await updateMap(true); 
+        
+        if (state.selectedComplex) {
+            const currentComplex = state.allLoadedData.find(i => 
+                i.name === state.selectedComplex.name && i.address === state.selectedComplex.address
+            );
+            if (currentComplex) {
+                state.selectedComplex = currentComplex;
+                renderComplexDetail();
+            } else {
+                document.getElementById('data-list').innerHTML = '<div class="empty-state">선택한 기간에는 거래 내역이 없습니다.</div>';
+            }
+        }
+    };
+    if (baseSelect) baseSelect.onchange = updatePeriod;
+    if (rangeSelect) rangeSelect.onchange = updatePeriod;
+
     document.getElementById('skyview-btn').onclick = () => {
         const type = state.map.getMapTypeId();
         state.map.setMapTypeId(type === kakao.maps.MapTypeId.ROADMAP ? kakao.maps.MapTypeId.HYBRID : kakao.maps.MapTypeId.ROADMAP);
@@ -72,7 +110,6 @@ function setupEventListeners() {
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.oninput = (e) => handleSearch(e.target.value);
 
-    // 단위 전환 이벤트
     const btnP = document.getElementById('unit-pyeong');
     const btnM = document.getElementById('unit-m2');
     if (btnP && btnM) {
@@ -80,7 +117,6 @@ function setupEventListeners() {
         btnM.onclick = () => { state.displayUnit = 'm2'; btnM.classList.add('active'); btnP.classList.remove('active'); updateMap(true); if (state.selectedComplex) renderComplexDetail(); };
     }
 
-    // 전역 면적 슬라이더
     const minRange = document.getElementById('area-min'), maxRange = document.getElementById('area-max'), rangeText = document.getElementById('area-range-text');
     if (minRange && maxRange) {
         const updateSlider = () => {
@@ -97,50 +133,49 @@ function setupEventListeners() {
     }
 }
 
-async function renderMonthFilters() {
+async function renderMonthSelect() {
     try {
         const res = await fetch('./manifest.json?v=' + Date.now());
         const ymList = await res.json();
-        const listEl = document.getElementById('dataset-list'); listEl.innerHTML = '';
-        if (ymList.length > 0 && state.selectedMonths.length === 0) state.selectedMonths = [ymList[0]];
-        ymList.forEach(ym => {
-            const wrapper = document.createElement('label'); wrapper.className = 'filter-chip';
-            wrapper.innerHTML = `<input type="checkbox" name="datasetMonth" value="${ym}" ${state.selectedMonths.includes(ym) ? 'checked' : ''}> <span class="chip-label">${ym.substring(0,4)}.${ym.substring(4,6)}</span>`;
-            wrapper.querySelector('input').onchange = (e) => {
-                const checked = document.querySelectorAll('input[name="datasetMonth"]:checked');
-                if (checked.length > 3) { alert('최대 3개월까지만 선택 가능합니다.'); e.target.checked = false; return; }
-                state.selectedMonths = Array.from(checked).map(el => el.value); updateMap(true);
-            };
-            listEl.appendChild(wrapper);
-        });
-    } catch (e) { setTimeout(renderMonthFilters, 3000); }
+        const selectEl = document.getElementById('base-month-select');
+        selectEl.innerHTML = ymList.map(ym => `<option value="${ym}">${ym.substring(0,4)}.${ym.substring(4,6)}</option>`).join('');
+        
+        if (ymList.length > 0) {
+            state.selectedMonths = [ymList[0]];
+            selectEl.selectedIndex = 0;
+        }
+    } catch (e) { console.error("데이터 목록 로드 실패:", e); }
 }
 
 async function updateMap(force = false) {
-    const zoom = state.map.getLevel();
-    let newLevel = zoom >= CONFIG.ZOOM_LEVELS[1] ? 1 : (zoom >= CONFIG.ZOOM_LEVELS[2] ? 2 : (zoom >= CONFIG.ZOOM_LEVELS[3] ? 3 : 4));
-    
-    if (newLevel === 4) {
-        const bounds = state.map.getBounds(), gungusInView = new Set();
-        for (const ym of state.selectedMonths) {
-            (await loadSummaryData(ym, 2)).forEach(g => { if (bounds.contain(new kakao.maps.LatLng(g.coords[1], g.coords[0]))) gungusInView.add(`${g.sido}_${g.name.split(' ')[1] || g.name}`.replace(/ /g, '_')); });
-        }
-        state.geocoder.coord2RegionCode(state.map.getCenter().getLng(), state.map.getCenter().getLat(), async (result, status) => {
-            if (status === kakao.maps.services.Status.OK) {
-                const reg = result.find(r => r.region_type === 'H' || r.region_type === 'B');
-                gungusInView.add(`${reg.region_1depth_name}_${reg.region_2depth_name}`.replace(/ /g, '_'));
-                const gunguKeyStr = Array.from(gungusInView).sort().join('|');
-                if (state.activeGungus !== gunguKeyStr || state.currentLevel !== 4 || force) {
-                    state.activeGungus = gunguKeyStr; state.currentLevel = 4;
-                    renderMarkers(await fetchAndMergeData(4, Array.from(gungusInView)), 4);
-                }
+    return new Promise(async (resolve) => {
+        const zoom = state.map.getLevel();
+        let newLevel = zoom >= CONFIG.ZOOM_LEVELS[1] ? 1 : (zoom >= CONFIG.ZOOM_LEVELS[2] ? 2 : (zoom >= CONFIG.ZOOM_LEVELS[3] ? 3 : 4));
+        
+        if (newLevel === 4) {
+            const bounds = state.map.getBounds(), gungusInView = new Set();
+            for (const ym of state.selectedMonths) {
+                (await loadSummaryData(ym, 2)).forEach(g => { if (bounds.contain(new kakao.maps.LatLng(g.coords[1], g.coords[0]))) gungusInView.add(`${g.sido}_${g.name.split(' ')[1] || g.name}`.replace(/ /g, '_')); });
             }
-        });
-    } else {
-        if (state.currentLevel === newLevel && !force) return;
-        state.currentLevel = newLevel; state.activeGungus = null;
-        renderMarkers(await fetchAndMergeData(newLevel), newLevel);
-    }
+            state.geocoder.coord2RegionCode(state.map.getCenter().getLng(), state.map.getCenter().getLat(), async (result, status) => {
+                if (status === kakao.maps.services.Status.OK) {
+                    const reg = result.find(r => r.region_type === 'H' || r.region_type === 'B');
+                    gungusInView.add(`${reg.region_1depth_name}_${reg.region_2depth_name}`.replace(/ /g, '_'));
+                    const gunguKeyStr = Array.from(gungusInView).sort().join('|');
+                    if (state.activeGungus !== gunguKeyStr || state.currentLevel !== 4 || force) {
+                        state.activeGungus = gunguKeyStr; state.currentLevel = 4;
+                        renderMarkers(await fetchAndMergeData(4, Array.from(gungusInView)), 4);
+                    }
+                }
+                resolve();
+            });
+        } else {
+            if (state.currentLevel === newLevel && !force) { resolve(); return; }
+            state.currentLevel = newLevel; state.activeGungus = null;
+            renderMarkers(await fetchAndMergeData(newLevel), newLevel);
+            resolve();
+        }
+    });
 }
 
 async function loadGlobalSearchIndex() {
@@ -148,7 +183,6 @@ async function loadGlobalSearchIndex() {
         const res = await fetch('./global_search_index.json?v=' + Date.now());
         if (res.ok) {
             state.searchIndex = await res.json();
-            console.log(`통합 검색 인덱스 로드 완료: ${state.searchIndex.length}건`);
         }
     } catch (e) { console.error("검색 인덱스 로드 실패:", e); }
 }
@@ -166,10 +200,14 @@ async function fetchAndMergeData(level, gunguList = []) {
         else {
             const ex = mergedMap.get(key); ex.stats.total += item.stats.total;
             ['sale', 'jeonse', 'monthly'].forEach(t => {
-                if (!item.stats[t]) return; if (!ex.stats[t]) { ex.stats[t] = JSON.parse(JSON.stringify(item.stats[t])); return; }
+                if (!item.stats[t]) return; 
+                if (!ex.stats[t]) { ex.stats[t] = JSON.parse(JSON.stringify(item.stats[t])); return; }
                 ex.stats[t].count += item.stats[t].count;
                 ex.stats[t].range = [Math.min(ex.stats[t].range[0], item.stats[t].range[0]), Math.max(ex.stats[t].range[1], item.stats[t].range[1])];
-                if (item.stats[t].count > ex.stats[t].count / 2) { ex.stats[t].rep_area = item.stats[t].rep_area; ex.stats[t].rep_avg_price = item.stats[t].rep_avg_price; }
+                if (item.stats[t].count > ex.stats[t].count / 2) { 
+                    ex.stats[t].rep_area = item.stats[t].rep_area; 
+                    ex.stats[t].rep_avg_price = item.stats[t].rep_avg_price; 
+                }
             });
             if (level === 4 && item.deals) ex.deals.push(...item.deals);
         }
@@ -200,15 +238,24 @@ function renderMarkers(data, level) {
         const pos = new kakao.maps.LatLng(item.coords[1], item.coords[0]); if (level === 4 && !bounds.contain(pos)) return;
         const content = createOverlayContent(item, level), overlay = new kakao.maps.CustomOverlay({ position: pos, content: content, yAnchor: 1.0 });
         overlay.setMap(state.map); state.overlays.push(overlay);
-        content.onclick = () => { if (level === 4) { state.selectedComplex = item; state.selectedArea = null; renderComplexDetail(); } else handleLevelMove(item, level); };
+        content.onclick = () => { if (level === 4) { state.selectedComplex = item; state.selectedArea = null; renderComplexDetail(); updateMap(true); } else handleLevelMove(item, level); };
         content.onmouseenter = () => { const key = `${level}_${item.name}`; if (state.hoveredItem === key) return; state.hoveredItem = key; showTooltip(item, level, pos); };
         content.onmouseleave = () => { state.hoveredItem = null; state.tooltip.setMap(null); };
     });
-    document.getElementById('status-bar').textContent = `${level}단계: ${filtered.length}건 표시 중`;
+    
+    // 상태바 갱신: 선택된 단지가 있으면 단지 정보, 없으면 단계별 건수
+    const statusEl = document.getElementById('status-bar');
+    if (state.selectedComplex && level === 4) {
+        statusEl.textContent = `${state.selectedComplex.name}: 총 ${state.selectedComplex.deals.length}건`;
+    } else {
+        statusEl.textContent = `${level}단계: ${filtered.length}건 표시 중`;
+    }
 }
 
 function createOverlayContent(item, level) {
-    const div = document.createElement('div'); div.className = `level-marker level-${level}`;
+    const isSelected = state.selectedComplex && state.selectedComplex.name === item.name && state.selectedComplex.address === item.address;
+    const div = document.createElement('div'); 
+    div.className = `level-marker level-${level} ${isSelected ? 'selected' : ''}`;
     const themeColor = CONFIG.TYPE_COLORS[state.selectedType] || '#2563eb';
     let targetType = state.filters['매매'] && item.stats.sale ? "sale" : (state.filters['전세'] && item.stats.jeonse ? "jeonse" : (state.filters['월세'] && item.stats.monthly ? "monthly" : ""));
     const stats = item.stats[targetType]; let label = "", subLabel = "";
@@ -216,7 +263,9 @@ function createOverlayContent(item, level) {
         if (stats) { label = state.displayUnit === 'pyeong' ? `${Math.round(stats.rep_area * 0.3025)}평` : `${Math.round(stats.rep_area)}㎡`; subLabel = formatPrice(stats.rep_avg_price); } 
         else { label = "내역없음"; subLabel = "-"; } 
     } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${state.displayUnit === 'pyeong' ? Math.round(stats.rep_area * 0.3025)+'평' : Math.round(stats.rep_area)+'㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
-    div.innerHTML = `<div class="marker-body" style="background:${themeColor}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${themeColor}"></div>`;
+    
+    const markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
+    div.innerHTML = `<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${isSelected ? '#1e3a8a' : themeColor}"></div>`;
     return div;
 }
 
@@ -250,8 +299,10 @@ function renderComplexDetail() {
     filtered.forEach(deal => {
         const card = document.createElement('div'); card.className = `data-card card-${deal.type === '전세' ? 'jeonse' : (deal.type === '월세' ? 'monthly' : 'sale')}`;
         const pArea = Math.round(deal.area * 0.3025);
-        // 공급면적 데이터가 없으므로 전용면적을 명확히 표기
-        const info = `전용: ${pArea}평 (${deal.area}㎡)${(deal.floor && deal.floor !== "nan") ? ' | '+deal.floor+'층' : ''}`;
+        const pLand = deal.land ? Math.round(deal.land * 0.3025) : 0;
+        let info = `전용: ${pArea}평 (${deal.area}㎡)`;
+        if (pLand > 0) info += `, 대지: ${pLand}평 (${deal.land}㎡)`;
+        if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
         card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
@@ -262,11 +313,14 @@ function renderComplexDetail() {
 function handleSearch(q) {
     const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); return; }
     const qLower = q.toLowerCase();
-    const results = state.searchIndex.filter(i => 
-        (i.n && i.n.toLowerCase().includes(qLower)) || 
-        (i.a && i.a.toLowerCase().includes(qLower))
-    ).slice(0, 20);
-    
+    const results = state.searchIndex
+        .filter(i => (i.n && i.n.toLowerCase().includes(qLower)) || (i.a && i.a.toLowerCase().includes(qLower)))
+        .sort((a, b) => {
+            if (a.t === 'dong' && b.t !== 'dong') return -1;
+            if (a.t !== 'dong' && b.t === 'dong') return 1;
+            return 0;
+        })
+        .slice(0, 20);
     if (results.length > 0) {
         resEl.innerHTML = results.map(r => r.t === 'dong' ? `<li class="search-item dong-result" onclick="goToDong('${r.n}', ${r.c[1]}, ${r.c[0]})"><span class="badge-dong">법정동</span> <span class="search-item-name">${r.n}</span></li>` : `<li class="search-item" onclick="goToLocation(${r.c[1]}, ${r.c[0]}, '${r.n}')"><div class="search-item-name">${r.n}</div><div class="search-item-addr">${r.a}</div></li>`).join('');
         resEl.classList.remove('hidden');
@@ -274,5 +328,21 @@ function handleSearch(q) {
 }
 
 function goToDong(name, lat, lng) { state.map.setCenter(new kakao.maps.LatLng(lat, lng)); state.map.setLevel(6); document.getElementById('search-results').classList.add('hidden'); document.getElementById('search-input').value = name; updateMap(true); }
-function goToLocation(lat, lng, name) { state.map.setCenter(new kakao.maps.LatLng(lat, lng)); state.map.setLevel(4); document.getElementById('search-results').classList.add('hidden'); document.getElementById('search-input').value = name; updateMap(true); }
+function goToLocation(lat, lng, name) { 
+    state.map.setCenter(new kakao.maps.LatLng(lat, lng)); 
+    state.map.setLevel(4); 
+    document.getElementById('search-results').classList.add('hidden'); 
+    document.getElementById('search-input').value = name; 
+    updateMap(true).then(() => {
+        setTimeout(() => {
+            const item = state.allLoadedData.find(i => i.name === name);
+            if (item) {
+                state.selectedComplex = item;
+                state.selectedArea = null;
+                renderComplexDetail();
+                updateMap(true); 
+            }
+        }, 300);
+    });
+}
 function clearOverlays() { state.overlays.forEach(o => o.setMap(null)); state.overlays = []; }
