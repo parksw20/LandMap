@@ -19,6 +19,7 @@ class DataManager:
         self.geo = GeoCache(CACHE_PATH, KAKAO_API_KEY)
         self.parser = ExcelParser(TYPE_MAP)
         self.builder = HierarchyBuilder(BASE_DIR)
+        self.global_index = {} # (건물명, 주소)를 키로 중복 제거
 
     def run(self):
         print("\n[부동산 데이터 통합 관리 시스템 시작]")
@@ -41,6 +42,21 @@ class DataManager:
                 df = df.dropna(subset=['__coords'])
                 
                 if not df.empty:
+                    # 검색 인덱스 수집 (건물명)
+                    for (name, addr), g in df.groupby(['__name', '__address']):
+                        key = (name, addr)
+                        if key not in self.global_index:
+                            self.global_index[key] = {
+                                "n": name, "a": addr, "c": g.iloc[0]['__coords'], "t": "complex"
+                            }
+                    
+                    # 검색 인덱스 수집 (법정동)
+                    for dong, g in df.groupby('__dong'):
+                        if dong not in self.global_index:
+                            self.global_index[dong] = {
+                                "n": dong, "c": g.iloc[0]['__coords'], "t": "dong"
+                            }
+
                     for h_type, group in df.groupby('__h_type'):
                         if h_type != 'unknown':
                             self.builder.build_incremental(group)
@@ -49,8 +65,18 @@ class DataManager:
                     self.geo.save()
                 
                 self.update_manifest()
+        
+        # 통합 검색 인덱스 저장
+        self.save_global_index()
                 
-        print("\n[작업 완료] 모든 데이터 가공이 완료되었습니다.")
+        print("\n[작업 완료] 모든 데이터 가공 및 통합 검색 인덱스 생성이 완료되었습니다.")
+
+    def save_global_index(self):
+        print(f"  > 통합 검색 인덱스 생성 중 ({len(self.global_index)}건)...")
+        index_data = list(self.global_index.values())
+        with open(BASE_DIR / "global_search_index.json", "w", encoding="utf-8") as f:
+            import json
+            json.dump(index_data, f, ensure_ascii=False, indent=0)
 
     def update_manifest(self):
         h_dir = BASE_DIR / "hierarchy"

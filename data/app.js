@@ -42,6 +42,7 @@ async function init() {
 
     setupEventListeners();
     await renderMonthFilters(); 
+    await loadGlobalSearchIndex(); 
     updateMap();
 }
 
@@ -118,7 +119,7 @@ async function renderMonthFilters() {
 async function updateMap(force = false) {
     const zoom = state.map.getLevel();
     let newLevel = zoom >= CONFIG.ZOOM_LEVELS[1] ? 1 : (zoom >= CONFIG.ZOOM_LEVELS[2] ? 2 : (zoom >= CONFIG.ZOOM_LEVELS[3] ? 3 : 4));
-    loadSearchIndex();
+    
     if (newLevel === 4) {
         const bounds = state.map.getBounds(), gungusInView = new Set();
         for (const ym of state.selectedMonths) {
@@ -142,16 +143,14 @@ async function updateMap(force = false) {
     }
 }
 
-async function loadSearchIndex() {
-    const allSearchItems = [], dongSet = new Set();
-    for (const ym of state.selectedMonths) {
-        (await loadSummaryData(ym, 3)).forEach(d => { if (!dongSet.has(d.name)) { allSearchItems.push({ type: 'dong', name: d.name, coords: d.coords }); dongSet.add(d.name); } });
-        try {
-            const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/search_index.json`);
-            if (res.ok) (await res.json()).forEach(i => allSearchItems.push({ type: 'complex', name: i.n, addr: i.a, coords: i.c }));
-        } catch (e) {}
-    }
-    state.searchIndex = allSearchItems;
+async function loadGlobalSearchIndex() {
+    try {
+        const res = await fetch('./global_search_index.json?v=' + Date.now());
+        if (res.ok) {
+            state.searchIndex = await res.json();
+            console.log(`통합 검색 인덱스 로드 완료: ${state.searchIndex.length}건`);
+        }
+    } catch (e) { console.error("검색 인덱스 로드 실패:", e); }
 }
 
 async function fetchAndMergeData(level, gunguList = []) {
@@ -262,9 +261,14 @@ function renderComplexDetail() {
 
 function handleSearch(q) {
     const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); return; }
-    const results = state.searchIndex.filter(i => i.name.includes(q) || i.addr.includes(q)).slice(0, 20);
+    const qLower = q.toLowerCase();
+    const results = state.searchIndex.filter(i => 
+        (i.n && i.n.toLowerCase().includes(qLower)) || 
+        (i.a && i.a.toLowerCase().includes(qLower))
+    ).slice(0, 20);
+    
     if (results.length > 0) {
-        resEl.innerHTML = results.map(r => r.type === 'dong' ? `<li class="search-item dong-result" onclick="goToDong('${r.name}', ${r.coords[1]}, ${r.coords[0]})"><span class="badge-dong">법정동</span> <span class="search-item-name">${r.name}</span></li>` : `<li class="search-item" onclick="goToLocation(${r.coords[1]}, ${r.coords[0]}, '${r.name}')"><div class="search-item-name">${r.name}</div></li>`).join('');
+        resEl.innerHTML = results.map(r => r.t === 'dong' ? `<li class="search-item dong-result" onclick="goToDong('${r.n}', ${r.c[1]}, ${r.c[0]})"><span class="badge-dong">법정동</span> <span class="search-item-name">${r.n}</span></li>` : `<li class="search-item" onclick="goToLocation(${r.c[1]}, ${r.c[0]}, '${r.n}')"><div class="search-item-name">${r.n}</div><div class="search-item-addr">${r.a}</div></li>`).join('');
         resEl.classList.remove('hidden');
     } else { resEl.innerHTML = '<li class="search-item">결과 없음</li>'; resEl.classList.remove('hidden'); }
 }
