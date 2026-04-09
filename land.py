@@ -26,7 +26,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 # 설정
 # ==========================
 # 1회: keyring.set_password('data_go_kr','parksw20','발급_API키_원문')
-SERVICE_NAME = "dart_api_key"
+SERVICE_NAME = "data_go_kr"
 SERVICE_USER = "parksw20"
 
 # (선택) 서울/경기 CSV(컬럼: region_name, LAWD_CD)

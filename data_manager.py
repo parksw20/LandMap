@@ -6,6 +6,7 @@ import os
 import json
 import argparse
 import re
+import keyring # 추가
 from pathlib import Path
 from geo_cache import GeoCache
 from excel_parser import ExcelParser
@@ -15,7 +16,14 @@ from hierarchy_builder import HierarchyBuilder
 ROOT_DIR = Path(__file__).parent
 BASE_DIR = ROOT_DIR / "data"
 CACHE_PATH = BASE_DIR / "address_cache.json"
-KAKAO_API_KEY = "159ba18d11b27a623f31a3d175030e55"
+
+# Keyring에서 키 가져오기 (없을 경우 안내)
+KAKAO_API_KEY = keyring.get_password("kakao", "api_key")
+if not KAKAO_API_KEY:
+    print("(!) 오류: 카카오 API 키가 설정되지 않았습니다.")
+    print("    설정 방법: python -c \"import keyring; keyring.set_password('kakao', 'api_key', '내_키_값')\"")
+    # 개발 편의를 위해 일단 실행은 되게 하되, 실제 API 호출 시 에러가 날 것입니다.
+
 TYPE_MAP = {'apt': '아파트', 'rh': '빌라', 'sh': '주택', 'off': '오피스텔'}
 
 class DataManager:
