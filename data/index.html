@@ -129,9 +129,29 @@
 
       <!-- Scrollable Data List Section -->
       <div id="data-section" class="panel-scroll-area" style="display:none;">
-        <div class="section-title" id="data-title"
-          style="padding: 20px 24px 10px 24px; position:sticky; top:0; background:rgba(255,255,255,0.95); z-index:5; border-bottom:1px solid var(--border-color);">
-          거래 내역</div>
+        <div class="data-section-header" style="padding: 20px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); position:sticky; top:0; background:white; z-index:10;">
+          <h2 id="data-title" style="font-size:18px; font-weight:800;">거래 내역</h2>
+          <button id="close-data-btn" style="border:none; background:#f3f4f6; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:18px;">&times;</button>
+        </div>
+
+        <div class="local-filter-section" style="padding: 15px 24px; background:#f9fafb; border-bottom:1px solid var(--border-color);">
+            <div class="section-title" style="font-size:11px; margin-bottom:8px;">리스트 내 거래 유형 필터</div>
+            <div class="checkbox-group">
+                <label class="filter-chip sm">
+                  <input type="checkbox" name="localTransactionType" value="매매" checked>
+                  <span class="chip-label" style="padding:4px 12px; font-size:12px;">매매</span>
+                </label>
+                <label class="filter-chip sm">
+                  <input type="checkbox" name="localTransactionType" value="전세" checked>
+                  <span class="chip-label" style="padding:4px 12px; font-size:12px;">전세</span>
+                </label>
+                <label class="filter-chip sm">
+                  <input type="checkbox" name="localTransactionType" value="월세" checked>
+                  <span class="chip-label" style="padding:4px 12px; font-size:12px;">월세</span>
+                </label>
+            </div>
+        </div>
+
         <div id="area-filter" class="area-filter-container"></div>
         <div id="data-list" class="data-list">
           <!-- Data Cards will be injected here -->

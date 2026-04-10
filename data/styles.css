@@ -223,15 +223,15 @@ body {
 }
 
 .level-marker.selected .marker-body {
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6), 0 0 40px rgba(37, 99, 235, 0.3);
-  border: 3px solid white;
+  box-shadow: 0 0 20px rgba(255, 235, 59, 0.6), 0 0 40px rgba(255, 235, 59, 0.3);
+  border: 3px solid #000000;
   animation: marker-pulse 2s infinite;
 }
 
 @keyframes marker-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
-  70% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(3, 27, 210, 0.813); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 235, 59, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 235, 59, 0); }
 }
 
 .level-marker.selected .marker-label {
@@ -924,9 +924,56 @@ body {
 .dong-marker b {
   font-size: 14px;
 }
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: 700;
-  display: inline-block;
-  margin-right: 8px;
+/* --- 신규 요청 기능 스타일 (기존 스타일 보존) --- */
+
+/* 전체 화면 모드 (모바일 대응) */
+.control-panel.full-screen {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+  z-index: 1000 !important;
+}
+
+.control-panel.full-screen .panel-content-wrapper {
+  max-height: 100vh !important;
+  height: 100vh;
+  border-radius: 0;
+}
+
+/* 닫기 버튼 스타일 보완 */
+#close-data-btn:hover {
+    background: #e5e7eb;
+    transform: scale(1.1);
+}
+
+/* 모바일 FAB 버튼 및 하단 숨김 처리 */
+@media (max-width: 768px) {
+  .control-panel.collapsed {
+    transform: translateY(100%); /* 아래로 완전히 숨김 */
+  }
+  
+  .control-panel.collapsed .toggle-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 24px;
+    top: auto;
+    left: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+    z-index: 2000;
+    transform: rotate(45deg); /* 플러스 아이콘처럼 보이게 */
+    display: flex;
+    border: none;
+  }
+  
+  .control-panel.collapsed .toggle-btn svg {
+      width: 30px;
+      height: 30px;
+  }
 }

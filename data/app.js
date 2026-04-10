@@ -15,6 +15,7 @@ const state = {
     selectedType: 'apt',
     activeGungus: null, 
     filters: { '매매': true, '전세': true, '월세': true },
+    localFilters: { '매매': true, '전세': true, '월세': true },
     globalArea: { min: 0, max: 80 },
     displayUnit: 'pyeong', // 'pyeong' | 'm2'
     hoveredItem: null,
@@ -36,7 +37,7 @@ window.onload = () => { if (typeof kakao !== 'undefined' && kakao.maps) kakao.ma
 async function init() {
     state.geocoder = new kakao.maps.services.Geocoder();
     const mapContainer = document.getElementById('map');
-    state.map = new kakao.maps.Map(mapContainer, { center: new kakao.maps.LatLng(37.5665, 126.9780), level: 10 });
+    state.map = new kakao.maps.Map(mapContainer, { center: new kakao.maps.LatLng(37.5665, 126.9780), level: 5 });
     
     const zoomControl = new kakao.maps.ZoomControl();
     state.map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
@@ -130,6 +131,39 @@ function setupEventListeners() {
             updateMap(true);
         };
         minRange.oninput = updateSlider; maxRange.oninput = updateSlider; updateSlider(); 
+    }
+
+    // 리스트 내 필터 (Checkbox)
+    document.querySelectorAll('input[name="localTransactionType"]').forEach(c => {
+        c.onchange = () => {
+            const chks = document.querySelectorAll('input[name="localTransactionType"]:checked');
+            state.localFilters = { '매매': false, '전세': false, '월세': false };
+            chks.forEach(chk => state.localFilters[chk.value] = true);
+            if (state.selectedComplex) renderComplexDetail();
+        };
+    });
+
+    const closeDataBtn = document.getElementById('close-data-btn');
+    if (closeDataBtn) {
+        closeDataBtn.onclick = () => {
+            document.getElementById('data-section').style.display = 'none';
+            document.getElementById('control-panel').classList.remove('full-screen');
+            state.selectedComplex = null;
+            updateMap(true);
+        };
+    }
+
+    const toggleBtn = document.getElementById('panel-toggle-btn');
+    if (toggleBtn) {
+        toggleBtn.onclick = () => {
+            const panel = document.getElementById('control-panel');
+            panel.classList.toggle('collapsed');
+            if (window.innerWidth <= 768 && !panel.classList.contains('collapsed')) {
+                panel.classList.add('full-screen');
+            } else if (panel.classList.contains('collapsed')) {
+                panel.classList.remove('full-screen');
+            }
+        };
     }
 }
 
@@ -283,7 +317,15 @@ function renderComplexDetail() {
     const item = state.selectedComplex; if (!item || !item.deals) return;
     const sidePanel = document.getElementById('data-section'), dataList = document.getElementById('data-list'), areaFilter = document.getElementById('area-filter');
     sidePanel.scrollTop = 0; document.getElementById('data-title').textContent = item.name;
-    sidePanel.style.display = 'block'; document.getElementById('control-panel').classList.remove('collapsed');
+    
+    // 모바일에서만 전체 화면 활성화
+    const controlPanel = document.getElementById('control-panel');
+    controlPanel.classList.remove('collapsed');
+    if (window.innerWidth <= 768) {
+        controlPanel.classList.add('full-screen');
+    }
+    sidePanel.style.display = 'block'; 
+
     const validInGlobal = item.deals.filter(d => { const p = Math.round(d.area * 0.3025); return p >= state.globalArea.min && (state.globalArea.max >= 80 || p <= state.globalArea.max); });
     const uniqueAreas = [...new Set(validInGlobal.map(d => state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area)))].sort((a, b) => a - b);
     areaFilter.innerHTML = '';
@@ -293,7 +335,9 @@ function renderComplexDetail() {
         areaFilter.style.display = 'flex';
     } else areaFilter.style.display = 'none';
     dataList.innerHTML = ''; const priority = { '매매': 1, '전세': 2, '월세': 3 };
-    let filtered = validInGlobal.filter(d => state.filters[d.type]);
+    
+    // localFilters 적용
+    let filtered = validInGlobal.filter(d => state.localFilters[d.type]);
     if (state.selectedArea !== null) filtered = filtered.filter(d => (state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area)) === state.selectedArea);
     filtered.sort((a, b) => (priority[a.type] || 99) - (priority[b.type] || 99) || b.date.localeCompare(a.date));
     filtered.forEach(deal => {
