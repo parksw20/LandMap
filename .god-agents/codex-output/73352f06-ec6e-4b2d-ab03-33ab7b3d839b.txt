@@ -1,0 +1,19 @@
+수정 완료했습니다. 변경은 [land.py](C:/CLI/PROJECT/부동산/land.py:31)에만 적용했습니다.
+
+**변경 요약**
+- `serviceKey`를 미리 `quote()`하지 않도록 수정했습니다. 이제 keyring에 data.go.kr의 Encoding 키 또는 Decoding 키가 저장되어 있어도 `unquote()`로 원문 형태로 정규화한 뒤 `requests`가 한 번만 인코딩합니다.
+- API 키를 import 시점이 아니라 실제 호출 시점에 지연 로딩하도록 바꿨습니다.
+- 401/403 인증 실패는 재시도하지 않고 `[x] data.go.kr API 인증 실패...` 형태로 바로 안내하게 했습니다.
+- 그 외 HTTP/API 오류는 기존처럼 재시도 대상 `APICallError`로 처리합니다.
+
+**검증 방법**
+- 문법 검증: `compile-ok`
+- 인증키 정규화 검증: `normalize-ok`
+- 401 처리 경로 검증: `auth-error-ok`
+- `git diff --check -- land.py` 통과
+
+전체 `python land.py -n 2 2`는 실제 data.go.kr 네트워크/API 키 권한이 필요해서 여기서는 끝까지 돌리지 않았습니다. 수정 후에도 401이 계속 뜨면 keyring에 저장된 키 자체가 만료됐거나 해당 RTMS API 활용 신청/승인이 안 된 상태일 가능성이 큽니다.
+
+**다음 담당자 제안**
+- 운영 담당자: data.go.kr 마이페이지에서 현재 키가 활성 상태인지, `RTMSDataSvcAptTradeDev` 등 사용 API가 승인되어 있는지 확인.
+- 개발 담당자: 이후에는 keyring 외에 환경변수 fallback을 추가하면 배포/자동화 환경에서 더 안정적으로 실행할 수 있습니다.

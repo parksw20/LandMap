@@ -1,11 +1,592 @@
 [
   {
+    "name": "현대가든빌라나동 (다세대)",
+    "address": "노원구 공릉동 208-25",
+    "coords": [127.078916067391, 37.6273545553089],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 80.2, "rep_avg_price": 34000}, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 80.2, "rep_avg_price": 24000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34000, "rent": 0, "area": 80.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 24000, "rent": 0, "area": 80.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대가든빌라가동 (연립)",
+    "address": "노원구 공릉동 208-26",
+    "coords": [127.079075648818, 37.6275369883175],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 93.8, "rep_avg_price": 8000}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 100, "area": 93.85, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "퍼즐주택(공릉) (다세대)",
     "address": "노원구 공릉동 218",
     "coords": [127.080300663209, 37.6268837567226],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [22176, 22176], "rep_area": 39.3, "rep_avg_price": 22176}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [27500, 27500], "rep_area": 35.5, "rep_avg_price": 27500}, "monthly": {"count": 2, "range": [3000, 22176], "rep_area": 37.0, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 125, "area": 37.01, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 27500, "rent": 0, "area": 35.48, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "갱신", "p_dep": 27500, "p_rent": 0},
       {"type": "월세", "price": 22176, "rent": 30, "area": 39.31, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동경맨션타운A동 (다세대)",
+    "address": "노원구 공릉동 224-11",
+    "coords": [127.080752690917, 37.6255542227257],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [12000, 12000], "rep_area": 42.1, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 42.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 12000, "rent": 0, "area": 42.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동경맨션타운B동 (다세대)",
+    "address": "노원구 공릉동 224-19",
+    "coords": [127.080841347649, 37.6255162304795],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [15600, 15600], "rep_area": 43.1, "rep_avg_price": 15600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 15600, "rent": 0, "area": 43.13, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "예림하이빌 (다세대)",
+    "address": "노원구 공릉동 238-20",
+    "coords": [127.080674783743, 37.6232752297514],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 12.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 55, "area": 12.24, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-17", "period": "26.05~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 55, "area": 12.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "26.05~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "준하우스 (다세대)",
+    "address": "노원구 공릉동 240-13",
+    "coords": [127.081379424974, 37.6219830907425],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 20.3, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 20, "area": 20.3, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "광신빌라 (연립)",
+    "address": "노원구 공릉동 240-212",
+    "coords": [127.08227751437, 37.6214137647928],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 44.5, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 45, "area": 44.49, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "조은빌리지 (다세대)",
+    "address": "노원구 공릉동 240-303",
+    "coords": [127.081693704787, 37.6217250110303],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [21000, 22000], "rep_area": 59.2, "rep_avg_price": 21500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21000, "rent": 0, "area": 59.19, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 22000, "rent": 0, "area": 59.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "퍼스티안 (다세대)",
+    "address": "노원구 공릉동 240-75",
+    "coords": [127.080432562114, 37.6223994554443],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11576, 11576], "rep_area": 35.5, "rep_avg_price": 11576}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11576, "rent": 0, "area": 35.47, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "JH.VILLAGE (다세대)",
+    "address": "노원구 공릉동 320-110",
+    "coords": [127.078604019078, 37.6213723008079],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 19.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 42, "area": 19.86, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 38.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-07", "period": "26.05~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "다원하이츠 (다세대)",
+    "address": "노원구 공릉동 320-114",
+    "coords": [127.078462390101, 37.6217677482971],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32500, 32500], "rep_area": 37.5, "rep_avg_price": 32500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32500, "rent": 0, "area": 37.54, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청운명가(362-12) (다세대)",
+    "address": "노원구 공릉동 362-12",
+    "coords": [127.072934411975, 37.6280382886101],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27000, 27000], "rep_area": 27.6, "rep_avg_price": 27000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 27000, "rent": 0, "area": 27.62, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대승빌라 (다세대)",
+    "address": "노원구 공릉동 370-11",
+    "coords": [127.07492693782, 37.6283625665256],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25300, 25300], "rep_area": 48.1, "rep_avg_price": 25300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25300, "rent": 0, "area": 48.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "노원빌라 (다세대)",
+    "address": "노원구 공릉동 370-6",
+    "coords": [127.075242334482, 37.6281522558193],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 40.2, "rep_avg_price": 18000}, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 48.6, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "매매", "price": 18000, "rent": 0, "area": 40.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 3000, "rent": 90, "area": 48.55, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-28", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우공리온빌 (다세대)",
+    "address": "노원구 공릉동 371-3",
+    "coords": [127.073801993234, 37.6278674627315],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [28100, 35000], "rep_area": 53.1, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28100, "rent": 0, "area": 57.2, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 35000, "rent": 0, "area": 53.11, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(404-16) (다세대)",
+    "address": "노원구 공릉동 404-16",
+    "coords": [127.071540402625, 37.6239589338141],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 47.8, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 47.76, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "441-135 (다세대)",
+    "address": "노원구 공릉동 441-135",
+    "coords": [127.078180555826, 37.626626327067],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12600, 12600], "rep_area": 39.0, "rep_avg_price": 12600}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12600, "rent": 0, "area": 38.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-02", "period": "26.04~27.04", "renew": "갱신", "p_dep": 12300, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "해비치빌 (다세대)",
+    "address": "노원구 공릉동 441-47",
+    "coords": [127.078069874709, 37.6269460703639],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 29.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 52, "area": 29.7, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-04", "period": "26.04~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "르네상스힐 (다세대)",
+    "address": "노원구 공릉동 502-1",
+    "coords": [127.074808932789, 37.6255734574844],
+    "stats": {"total": 3, "sale": {"count": 2, "range": [49800, 49800], "rep_area": 40.9, "rep_avg_price": 49800}, "jeonse": {"count": 1, "range": [37400, 37400], "rep_area": 45.5, "rep_avg_price": 37400}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49800, "rent": 0, "area": 41.18, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 49800, "rent": 0, "area": 40.88, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 37400, "rent": 0, "area": 45.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-17", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "그랜드빌딩 (다세대)",
+    "address": "노원구 공릉동 502-38",
+    "coords": [127.075512235187, 37.6258595232692],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 12.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 51, "area": 12.01, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.05~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(503-22) (다세대)",
+    "address": "노원구 공릉동 503-22",
+    "coords": [127.076124846783, 37.6257419112704],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 35.5, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 4000, "rent": 85, "area": 35.46, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "송정 (다세대)",
+    "address": "노원구 공릉동 509-14",
+    "coords": [127.076595161626, 37.6250571272914],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 15.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 48, "area": 14.97, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "26.05~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "제이하우스(513-40) (다세대)",
+    "address": "노원구 공릉동 513-40",
+    "coords": [127.075586884965, 37.6250747160331],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7240, 7240], "rep_area": 17.2, "rep_avg_price": 7240}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7240, "rent": 0, "area": 17.19, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-30", "period": "26.05~28.05", "renew": "갱신", "p_dep": 6900, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동일아트맨션 (다세대)",
+    "address": "노원구 공릉동 513-50",
+    "coords": [127.075405074187, 37.6246278527944],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [23000, 23000], "rep_area": 58.1, "rep_avg_price": 23000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 23000, "rent": 0, "area": 58.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대성빌라 (다세대)",
+    "address": "노원구 공릉동 517-61",
+    "coords": [127.075411649916, 37.6235120663619],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 69.2, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29000, "rent": 0, "area": 69.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "태양빌라 (다세대)",
+    "address": "노원구 공릉동 517-71",
+    "coords": [127.075914730818, 37.6234205638897],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12600, 12600], "rep_area": 32.3, "rep_avg_price": 12600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12600, "rent": 0, "area": 32.34, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "아이뜨리 (다세대)",
+    "address": "노원구 공릉동 556-34",
+    "coords": [127.076308973398, 37.6242364235975],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5500, 5500], "rep_area": 11.1, "rep_avg_price": 5500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5500, "rent": 0, "area": 11.13, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동일빌라다동 (다세대)",
+    "address": "노원구 공릉동 557-13",
+    "coords": [127.076953301569, 37.6236923496283],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 54.0, "rep_avg_price": 21000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21000, "rent": 0, "area": 54.0, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "파크빌(559-26) (다세대)",
+    "address": "노원구 공릉동 559-26",
+    "coords": [127.077400455699, 37.6243969893473],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 12.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 44, "area": 12.0, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-17", "period": "26.05~27.05", "renew": "갱신", "p_dep": 500, "p_rent": 42}
+    ]
+  },
+  {
+    "name": "대도벤츠하우스 (다세대)",
+    "address": "노원구 공릉동 566-19",
+    "coords": [127.075726993392, 37.6227125086645],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 53.8, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35000, "rent": 0, "area": 53.78, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "이안빌라 (다세대)",
+    "address": "노원구 공릉동 566-22",
+    "coords": [127.076010501929, 37.6226934957498],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 30.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 82, "area": 29.97, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "파크빌(567-12) (다세대)",
+    "address": "노원구 공릉동 567-12",
+    "coords": [127.074497860069, 37.6229557467028],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 16.4, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 40, "area": 16.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "정우맨션 (다세대)",
+    "address": "노원구 공릉동 567-14",
+    "coords": [127.074850287776, 37.6228700199971],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 24.0, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 24.02, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "마음속의집 (다세대)",
+    "address": "노원구 공릉동 569-16",
+    "coords": [127.072986146242, 37.6227877563348],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 33.6, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16000, "rent": 0, "area": 33.55, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "스마일룸 (다세대)",
+    "address": "노원구 공릉동 571-32",
+    "coords": [127.072000041995, 37.6218042137928],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6800, 6800], "rep_area": 27.0, "rep_avg_price": 6800}},
+    "deals": [
+      {"type": "월세", "price": 6800, "rent": 9, "area": 27.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.04~27.04", "renew": "갱신", "p_dep": 6800, "p_rent": 7}
+    ]
+  },
+  {
+    "name": "(585-20) (다세대)",
+    "address": "노원구 공릉동 585-20",
+    "coords": [127.076369065168, 37.6216323517711],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 5000], "rep_area": 12.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 90, "area": 34.35, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 44, "area": 12.24, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-12", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(587-9) (다세대)",
+    "address": "노원구 공릉동 587-9",
+    "coords": [127.077316176357, 37.621771388041],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20500, 20500], "rep_area": 54.7, "rep_avg_price": 20500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20500, "rent": 0, "area": 54.72, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "더하우스 (다세대)",
+    "address": "노원구 공릉동 589-16",
+    "coords": [127.077896215722, 37.6215199915024],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 47.9, "rep_avg_price": 12000}},
+    "deals": [
+      {"type": "월세", "price": 12000, "rent": 42, "area": 47.86, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "갱신", "p_dep": 12000, "p_rent": 37}
+    ]
+  },
+  {
+    "name": "덕산빌리지B동 (다세대)",
+    "address": "노원구 공릉동 591-10",
+    "coords": [127.076960222165, 37.6205161849124],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24500, 24500], "rep_area": 64.3, "rep_avg_price": 24500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24500, "rent": 0, "area": 64.26, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "에덴빌리지C동 (다세대)",
+    "address": "노원구 공릉동 592-18",
+    "coords": [127.07636292863, 37.6203948495408],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4500, 4500], "rep_area": 46.6, "rep_avg_price": 4500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 4500, "rent": 0, "area": 46.56, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "리치빌 (연립)",
+    "address": "노원구 공릉동 593-8",
+    "coords": [127.075616282825, 37.6206593196882],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [26000, 26000], "rep_area": 72.8, "rep_avg_price": 26000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 26000, "rent": 0, "area": 72.75, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "두두빌라 (다세대)",
+    "address": "노원구 공릉동 596-25",
+    "coords": [127.07536651403, 37.620206733258],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12600, 12600], "rep_area": 35.9, "rep_avg_price": 12600}},
+    "deals": [
+      {"type": "월세", "price": 12600, "rent": 30, "area": 35.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "골드리버하우스 (다세대)",
+    "address": "노원구 공릉동 609-38",
+    "coords": [127.072548435748, 37.6191592092783],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 54.0, "rep_avg_price": 25000}},
+    "deals": [
+      {"type": "월세", "price": 25000, "rent": 5, "area": 53.97, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "644-2 (다세대)",
+    "address": "노원구 공릉동 644-2",
+    "coords": [127.078238195338, 37.6203378499734],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7028, 7028], "rep_area": 18.3, "rep_avg_price": 7028}},
+    "deals": [
+      {"type": "월세", "price": 7028, "rent": 9, "area": 18.33, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성우그랜드빌 (다세대)",
+    "address": "노원구 공릉동 644-36",
+    "coords": [127.078699045996, 37.620396378003],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 69.8, "rep_avg_price": 7000}},
+    "deals": [
+      {"type": "월세", "price": 7000, "rent": 80, "area": 69.82, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "이룸빌딩 (다세대)",
+    "address": "노원구 공릉동 644-49",
+    "coords": [127.078410871472, 37.6194149438915],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 16.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 80, "area": 16.79, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-15", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "제이하우스(683-23) (다세대)",
+    "address": "노원구 공릉동 683-23",
+    "coords": [127.074586550909, 37.6179629585433],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 12.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 12.62, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-18", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "거성빌라 (다세대)",
+    "address": "노원구 상계동 101-158",
+    "coords": [127.07875192627, 37.6683548102916],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 37.8, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 10, "area": 37.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-28", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "양지빌라 (연립)",
+    "address": "노원구 상계동 101-64",
+    "coords": [127.078182796652, 37.6672489653761],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [61000, 61000], "rep_area": 80.6, "rep_avg_price": 61000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 61000, "rent": 0, "area": 80.65, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "태조빌라 (다세대)",
+    "address": "노원구 상계동 1017-5",
+    "coords": [127.05775566567, 37.6732160336813],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 55.8, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 80, "area": 55.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대한빌 (다세대)",
+    "address": "노원구 상계동 1048-4",
+    "coords": [127.053202882959, 37.6736910092427],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24900, 24900], "rep_area": 64.8, "rep_avg_price": 24900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24900, "rent": 0, "area": 64.8, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "상계동승리빌라 (연립)",
+    "address": "노원구 상계동 1050-2",
+    "coords": [127.052553747885, 37.6737417551169],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 48.9, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 55, "area": 48.93, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-15", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "은빛정원 (다세대)",
+    "address": "노원구 상계동 1054-18",
+    "coords": [127.051625390606, 37.6732536540421],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [22000, 22000], "rep_area": 32.3, "rep_avg_price": 22000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 22000, "rent": 0, "area": 32.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "유성그린빌라(1096-5) (연립)",
+    "address": "노원구 상계동 1096-5",
+    "coords": [127.051111647027, 37.6756855309177],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17400, 17400], "rep_area": 44.1, "rep_avg_price": 17400}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17400, "rent": 0, "area": 44.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "수락파크빌(1097-13) (다세대)",
+    "address": "노원구 상계동 1097-13",
+    "coords": [127.051502058754, 37.6753786677741],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 72.6, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 47, "area": 72.61, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "갱신", "p_dep": 10000, "p_rent": 45}
+    ]
+  },
+  {
+    "name": "정우빌라가,나동 (연립)",
+    "address": "노원구 상계동 1104-2",
+    "coords": [127.053974086211, 37.6755019876422],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 83.9, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 30, "area": 83.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 10500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "모던하우스 (다세대)",
+    "address": "노원구 상계동 1108-10",
+    "coords": [127.052268264002, 37.6770473944255],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24500, 24500], "rep_area": 36.3, "rep_avg_price": 24500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24500, "rent": 0, "area": 36.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼정하우스 (다세대)",
+    "address": "노원구 상계동 1113-36",
+    "coords": [127.054051811079, 37.6770136146984],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 20.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 20.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-15", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "레나힐스 (다세대)",
+    "address": "노원구 상계동 1116-74",
+    "coords": [127.057179136318, 37.6761426952871],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 17.1, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(1116-82) (다세대)",
+    "address": "노원구 상계동 1116-82",
+    "coords": [127.058269458123, 37.675639325226],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10300, 10300], "rep_area": 33.6, "rep_avg_price": 10300}},
+    "deals": [
+      {"type": "월세", "price": 10300, "rent": 10, "area": 33.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-14", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "에스엔타워 (연립)",
+    "address": "노원구 상계동 1117-16",
+    "coords": [127.056048713737, 37.6768531192607],
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 18.7, "rep_avg_price": 12000}, "monthly": {"count": 2, "range": [9000, 9500], "rep_area": 17.2, "rep_avg_price": 9250}},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 18.69, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-25", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 9500, "rent": 10, "area": 17.25, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 9000, "rent": 10, "area": 17.25, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "수락래미안 (다세대)",
+    "address": "노원구 상계동 1118-16",
+    "coords": [127.054860918615, 37.6754196794643],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 15.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 70, "area": 14.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.04~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "1118-25 (다세대)",
+    "address": "노원구 상계동 1118-25",
+    "coords": [127.054446045868, 37.6755853815829],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 16.7, "rep_avg_price": 8000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 16.66, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -18,12 +599,43 @@
     ]
   },
   {
+    "name": "수락사회주택 (다세대)",
+    "address": "노원구 상계동 1125",
+    "coords": [127.061007469965, 37.6748323752596],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15746, 15746], "rep_area": 43.2, "rep_avg_price": 15746}},
+    "deals": [
+      {"type": "월세", "price": 15746, "rent": 44, "area": 43.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "갱신", "p_dep": 15746, "p_rent": 39}
+    ]
+  },
+  {
     "name": "수락사회주택 (연립)",
     "address": "노원구 상계동 1125",
     "coords": [127.061007469965, 37.6748323752596],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15694, 15694], "rep_area": 41.1, "rep_avg_price": 15694}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [11243, 20584], "rep_area": 30.0, "rep_avg_price": 11243}},
     "deals": [
+      {"type": "월세", "price": 11243, "rent": 32, "area": 30.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "갱신", "p_dep": 11243, "p_rent": 29},
+      {"type": "월세", "price": 20584, "rent": 56, "area": 53.03, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "갱신", "p_dep": 20584, "p_rent": 50},
+      {"type": "월세", "price": 16034, "rent": 44, "area": 43.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-09", "period": "26.06~28.05", "renew": "갱신", "p_dep": 16034, "p_rent": 39},
       {"type": "월세", "price": 15694, "rent": 44, "area": 41.14, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-03", "period": "26.05~28.04", "renew": "갱신", "p_dep": 15694, "p_rent": 39}
+    ]
+  },
+  {
+    "name": "동양빌딩(1131-12) (다세대)",
+    "address": "노원구 상계동 1131-12",
+    "coords": [127.056312982384, 37.6780957135136],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 14.29, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한신빌라 (연립)",
+    "address": "노원구 상계동 1278",
+    "coords": [127.060507848959, 37.6732130321239],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [51000, 51000], "rep_area": 59.8, "rep_avg_price": 51000}, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 76.9, "rep_avg_price": 35000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 51000, "rent": 0, "area": 59.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 35000, "rent": 0, "area": 76.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -33,6 +645,69 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 50.2, "rep_avg_price": 5000}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 50, "area": 50.21, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-01", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(136-37) (다세대)",
+    "address": "노원구 상계동 136-37",
+    "coords": [127.070697553317, 37.6651337722746],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 16.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 37, "area": 16.05, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대성휴먼빌 (다세대)",
+    "address": "노원구 상계동 137-11",
+    "coords": [127.071032754576, 37.665549193264],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 33.8, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 10, "area": 33.76, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "5차홍진그린맨션 (연립)",
+    "address": "노원구 상계동 1374-13",
+    "coords": [127.079234224562, 37.6727419886577],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29600, 29600], "rep_area": 47.4, "rep_avg_price": 29600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29600, "rent": 0, "area": 47.37, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "영광빌라 (다세대)",
+    "address": "노원구 상계동 1375-2",
+    "coords": [127.079534577872, 37.6726100633039],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24600, 24600], "rep_area": 31.4, "rep_avg_price": 24600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24600, "rent": 0, "area": 31.35, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동원아트맨션 (다세대)",
+    "address": "노원구 상계동 1376-4",
+    "coords": [127.080187356941, 37.6728118912026],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33900, 33900], "rep_area": 63.2, "rep_avg_price": 33900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33900, "rent": 0, "area": 63.18, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대그린빌라 (연립)",
+    "address": "노원구 상계동 1378-1",
+    "coords": [127.080373414216, 37.6720153887694],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 46.8, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 50, "area": 46.84, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우신빌라 (다세대)",
+    "address": "노원구 상계동 1379-7",
+    "coords": [127.079604673488, 37.671803008632],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27600, 27600], "rep_area": 47.4, "rep_avg_price": 27600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 27600, "rent": 0, "area": 47.37, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -54,6 +729,298 @@
     ]
   },
   {
+    "name": "화이트빌 (다세대)",
+    "address": "노원구 상계동 138-166",
+    "coords": [127.073563523171, 37.6647382911397],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 49.1, "rep_avg_price": 43000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43000, "rent": 0, "area": 49.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "프린스빌라 (다세대)",
+    "address": "노원구 상계동 138-170",
+    "coords": [127.072733597803, 37.6653770605239],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 43.9, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 30, "area": 43.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-09", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "태평아트빌 (다세대)",
+    "address": "노원구 상계동 138-90",
+    "coords": [127.072203975015, 37.6649247332243],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 28.8, "rep_avg_price": 14000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 14000, "rent": 0, "area": 28.8, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-09", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대아트빌 (다세대)",
+    "address": "노원구 상계동 138-96",
+    "coords": [127.07231473622, 37.6648374504389],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 42.2, "rep_avg_price": 17000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 42.24, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "갱신", "p_dep": 16700, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "아기솔그린맨션 (연립)",
+    "address": "노원구 상계동 1380",
+    "coords": [127.079436702621, 37.6724537192216],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 55.2, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35000, "rent": 0, "area": 55.2, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동원맨션 (다세대)",
+    "address": "노원구 상계동 1380-1",
+    "coords": [127.079630142318, 37.6724068279453],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 54.4, "rep_avg_price": 34000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34000, "rent": 0, "area": 54.43, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "초산빌라 (연립)",
+    "address": "노원구 상계동 1380-4",
+    "coords": [127.079496727713, 37.6721935659883],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 57.9, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40000, "rent": 0, "area": 57.94, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신성파크빌라 (다세대)",
+    "address": "노원구 상계동 1380-5",
+    "coords": [127.079338851474, 37.672319629232],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34500, 34500], "rep_area": 56.1, "rep_avg_price": 34500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34500, "rent": 0, "area": 56.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "보람빌라17차 (연립)",
+    "address": "노원구 상계동 1381",
+    "coords": [127.078421354138, 37.6722838432582],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29500, 29500], "rep_area": 37.9, "rep_avg_price": 29500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29500, "rent": 0, "area": 37.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "초록하이츠빌라C동 (연립)",
+    "address": "노원구 상계동 1381-5",
+    "coords": [127.078785712692, 37.672009432357],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [23000, 23000], "rep_area": 56.6, "rep_avg_price": 23000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 23000, "rent": 0, "area": 56.63, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "6차홍진그린맨션 (연립)",
+    "address": "노원구 상계동 1381-6",
+    "coords": [127.078932932205, 37.6722024138483],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [39350, 39350], "rep_area": 68.1, "rep_avg_price": 39350}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 39350, "rent": 0, "area": 68.14, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "장미빌라 (다세대)",
+    "address": "노원구 상계동 1381-8",
+    "coords": [127.079030235685, 37.6723553350169],
+    "stats": {"total": 3, "sale": {"count": 3, "range": [30500, 35000], "rep_area": 43.2, "rep_avg_price": 30500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32000, "rent": 0, "area": 49.39, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 35000, "rent": 0, "area": 51.34, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 30500, "rent": 0, "area": 43.15, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "보람아트 (다세대)",
+    "address": "노원구 상계동 1381-9",
+    "coords": [127.079082974918, 37.6724915277708],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38250, 38250], "rep_area": 64.2, "rep_avg_price": 38250}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38250, "rent": 0, "area": 64.17, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "타워그린빌라A (연립)",
+    "address": "노원구 상계동 1382-12",
+    "coords": [127.077927713774, 37.671743042098],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [17000, 34000], "rep_area": 34.5, "rep_avg_price": 17000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34000, "rent": 0, "area": 44.64, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 17000, "rent": 0, "area": 34.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "내경빌라 (다세대)",
+    "address": "노원구 상계동 1382-27",
+    "coords": [127.077331358617, 37.6717215407955],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [33850, 39900], "rep_area": 52.6, "rep_avg_price": 33850}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33850, "rent": 0, "area": 52.55, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 39900, "rent": 0, "area": 66.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "타워그린빌라B (연립)",
+    "address": "노원구 상계동 1382-7",
+    "coords": [127.078062017047, 37.6718358442869],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30900, 30900], "rep_area": 42.4, "rep_avg_price": 30900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30900, "rent": 0, "area": 42.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대빌라1차 (연립)",
+    "address": "노원구 상계동 1383",
+    "coords": [127.078452232707, 37.6718980232694],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33800, 33800], "rep_area": 48.1, "rep_avg_price": 33800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33800, "rent": 0, "area": 48.14, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "홍진그린빌라8차 (연립)",
+    "address": "노원구 상계동 1383-3",
+    "coords": [127.078337132939, 37.6717430411792],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 45.6, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 45.58, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "강원빌라 (다세대)",
+    "address": "노원구 상계동 1386-11",
+    "coords": [127.078491420168, 37.6711146854774],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33600, 33600], "rep_area": 52.0, "rep_avg_price": 33600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33600, "rent": 0, "area": 51.96, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "호연빌라 (연립)",
+    "address": "노원구 상계동 1388-1",
+    "coords": [127.07734553147, 37.6713978996076],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36500, 36500], "rep_area": 57.0, "rep_avg_price": 36500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36500, "rent": 0, "area": 57.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "금정빌라 (다세대)",
+    "address": "노원구 상계동 1388-36",
+    "coords": [127.078320579127, 37.670444289894],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43900, 43900], "rep_area": 64.4, "rep_avg_price": 43900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43900, "rent": 0, "area": 64.37, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "역전빌라 (다세대)",
+    "address": "노원구 상계동 1388-37",
+    "coords": [127.078181302492, 37.6702546359393],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43600, 43600], "rep_area": 62.2, "rep_avg_price": 43600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43600, "rent": 0, "area": 62.16, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "톰스타운 (연립)",
+    "address": "노원구 상계동 1396-3",
+    "coords": [127.080920285579, 37.671140704202],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43500, 43500], "rep_area": 40.6, "rep_avg_price": 43500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43500, "rent": 0, "area": 40.62, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "범하훼미리타운 (다세대)",
+    "address": "노원구 상계동 1402-13",
+    "coords": [127.079812820406, 37.6697205235199],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [35200, 35200], "rep_area": 44.6, "rep_avg_price": 35200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35200, "rent": 0, "area": 44.64, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "보람하이츠빌라가,나 (다세대)",
+    "address": "노원구 상계동 148-4",
+    "coords": [127.069799027308, 37.665166742699],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 52.6, "rep_avg_price": 20000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20000, "rent": 0, "area": 52.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대베스트빌 (다세대)",
+    "address": "노원구 상계동 149-2",
+    "coords": [127.069712782262, 37.6644465497023],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 60.9, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 60.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-13", "period": "26.04~28.04", "renew": "갱신", "p_dep": 18000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한양그린빌 (다세대)",
+    "address": "노원구 상계동 156-149",
+    "coords": [127.072035498409, 37.6627574366481],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32800, 32800], "rep_area": 44.6, "rep_avg_price": 32800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32800, "rent": 0, "area": 44.6, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(169-103) (다세대)",
+    "address": "노원구 상계동 169-103",
+    "coords": [127.071928656777, 37.6622056509349],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [23900, 23900], "rep_area": 41.4, "rep_avg_price": 23900}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 23900, "rent": 0, "area": 41.38, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "갱신", "p_dep": 23000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "임오아트빌 (다세대)",
+    "address": "노원구 상계동 169-42",
+    "coords": [127.071261840258, 37.662729976165],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 59.6, "rep_avg_price": 20000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 59.55, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(176-23) (다세대)",
+    "address": "노원구 상계동 176-23",
+    "coords": [127.069453085767, 37.6572286710519],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 48.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 70, "area": 48.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "이오그린빌B (다세대)",
+    "address": "노원구 상계동 178-36",
+    "coords": [127.069099061802, 37.6558960562847],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 52.4, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 52.38, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우리빌 (다세대)",
+    "address": "노원구 상계동 193-31",
+    "coords": [127.070276287128, 37.6550530326148],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 21.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 49, "area": 21.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(349-15) (다세대)",
     "address": "노원구 상계동 349-15",
     "coords": [127.06482651739, 37.6572666227965],
@@ -63,12 +1030,446 @@
     ]
   },
   {
+    "name": "캐슬빌 (다세대)",
+    "address": "노원구 상계동 389-416",
+    "coords": [127.067336452424, 37.6594731625965],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30800, 30800], "rep_area": 39.0, "rep_avg_price": 30800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30800, "rent": 0, "area": 38.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(389-664) (다세대)",
+    "address": "노원구 상계동 389-664",
+    "coords": [127.070505825187, 37.6603856268263],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9000, 9000], "rep_area": 38.0, "rep_avg_price": 9000}},
+    "deals": [
+      {"type": "월세", "price": 9000, "rent": 30, "area": 37.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "천우빌라1 (다세대)",
+    "address": "노원구 상계동 389-786",
+    "coords": [127.067435843001, 37.6602240739039],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20500, 20500], "rep_area": 41.6, "rep_avg_price": 20500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20500, "rent": 0, "area": 41.64, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진주빌라B (다세대)",
+    "address": "노원구 상계동 397-18",
+    "coords": [127.06613549637, 37.6587215223755],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11800, 11800], "rep_area": 36.4, "rep_avg_price": 11800}},
+    "deals": [
+      {"type": "월세", "price": 11800, "rent": 40, "area": 36.38, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(407-35) (다세대)",
+    "address": "노원구 상계동 407-35",
+    "coords": [127.067067190793, 37.6607473938872],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7380, 7380], "rep_area": 38.2, "rep_avg_price": 7380}},
+    "deals": [
+      {"type": "월세", "price": 7380, "rent": 28, "area": 38.24, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "호암아트빌라가,나 (다세대)",
+    "address": "노원구 상계동 429-21",
+    "coords": [127.066970145779, 37.6626041911388],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9500, 9500], "rep_area": 46.7, "rep_avg_price": 9500}},
+    "deals": [
+      {"type": "월세", "price": 9500, "rent": 35, "area": 46.7, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(442-22) (다세대)",
+    "address": "노원구 상계동 442-22",
+    "coords": [127.067987401831, 37.6620563532726],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14500, 14500], "rep_area": 41.6, "rep_avg_price": 14500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 14500, "rent": 0, "area": 41.58, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "천우빌라10차 (연립)",
+    "address": "노원구 상계동 450-1",
+    "coords": [127.068852884456, 37.6638355590782],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 51.4, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 40, "area": 51.39, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "C-HOUSE (다세대)",
+    "address": "노원구 상계동 456-140",
+    "coords": [127.066645512125, 37.6649681885093],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 43.4, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 75, "area": 43.42, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진명하이츠빌라11-23동 (다세대)",
+    "address": "노원구 상계동 47-5",
+    "coords": [127.08414992812, 37.6726422692443],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8400, 8400], "rep_area": 36.0, "rep_avg_price": 8400}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 8400, "rent": 0, "area": 35.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-09", "period": "26.04~28.04", "renew": "갱신", "p_dep": 8000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신아빌리지2차가동 (다세대)",
+    "address": "노원구 상계동 68-6",
+    "coords": [127.08236512738, 37.670203856409],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 50.5, "rep_avg_price": 12000}},
+    "deals": [
+      {"type": "월세", "price": 12000, "rent": 30, "area": 50.49, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진명하이츠빌라24,25동 (다세대)",
+    "address": "노원구 상계동 71-3",
+    "coords": [127.084517178567, 37.6726360601907],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11025, 11025], "rep_area": 52.0, "rep_avg_price": 11025}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11025, "rent": 0, "area": 52.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "갱신", "p_dep": 10500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한진빌라 (연립)",
+    "address": "노원구 상계동 71-42",
+    "coords": [127.083821566613, 37.6722539106052],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 56.9, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 10, "area": 56.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼미빌라1동 (연립)",
+    "address": "노원구 상계동 72-201",
+    "coords": [127.082903061278, 37.6692753801328],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [33500, 33500], "rep_area": 58.4, "rep_avg_price": 33500}, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 58.4, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "매매", "price": 33500, "rent": 0, "area": 58.38, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 13000, "rent": 30, "area": 58.38, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우영빌라 (다세대)",
+    "address": "노원구 월계동 376-11",
+    "coords": [127.059429808201, 37.6239292548893],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 37.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 50, "area": 37.84, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성북로얄빌라 (다세대)",
+    "address": "노원구 월계동 377-70",
+    "coords": [127.059506731226, 37.6237970413219],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 48.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 80, "area": 48.78, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(382-25) (다세대)",
+    "address": "노원구 월계동 382-25",
+    "coords": [127.058651149204, 37.6220646911128],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 30.4, "rep_avg_price": 11000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11000, "rent": 0, "area": 30.41, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(382-50) (다세대)",
+    "address": "노원구 월계동 382-50",
+    "coords": [127.05818351166, 37.622447571928],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 58.4, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 30, "area": 58.38, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-23", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한전주택나동 (다세대)",
+    "address": "노원구 월계동 392-24",
+    "coords": [127.057721920651, 37.6217201612584],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17200, 17200], "rep_area": 34.3, "rep_avg_price": 17200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17200, "rent": 0, "area": 34.32, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한전주택다동 (다세대)",
+    "address": "노원구 월계동 392-25",
+    "coords": [127.057878146793, 37.6217481054423],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 62.4, "rep_avg_price": 21000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 62.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "갱신", "p_dep": 20000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "태광A동(402-52) (다세대)",
+    "address": "노원구 월계동 402-52",
+    "coords": [127.058571452284, 37.6209710220775],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15780, 15780], "rep_area": 54.7, "rep_avg_price": 15780}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15780, "rent": 0, "area": 54.74, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-28", "period": "26.06~28.06", "renew": "갱신", "p_dep": 15030, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "가든빌딩(429-5) (다세대)",
+    "address": "노원구 월계동 429-5",
+    "coords": [127.06134721969, 37.6201712465849],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 12.1, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 46, "area": 12.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "26.04~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성진빌딩 (다세대)",
+    "address": "노원구 월계동 496-3",
+    "coords": [127.057314858052, 37.6194156334886],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 47.4, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 47.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "덕산SUN빌리지(534-105) (다세대)",
+    "address": "노원구 월계동 534-105",
+    "coords": [127.053626305064, 37.6231711514706],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19870, 19870], "rep_area": 70.8, "rep_avg_price": 19870}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19870, "rent": 0, "area": 70.79, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "534-208 (다세대)",
+    "address": "노원구 월계동 534-208",
+    "coords": [127.053323845756, 37.6226778178395],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [37000, 37000], "rep_area": 57.9, "rep_avg_price": 37000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 37000, "rent": 0, "area": 57.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "허니하우스 (다세대)",
+    "address": "노원구 월계동 534-221",
+    "coords": [127.054291955052, 37.6246287342515],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18200, 18200], "rep_area": 54.6, "rep_avg_price": 18200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18200, "rent": 0, "area": 54.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(534-26) (다세대)",
+    "address": "노원구 월계동 534-26",
+    "coords": [127.054563802574, 37.6241363996658],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 32.8, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 30, "area": 32.76, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(69-10) (연립)",
+    "address": "노원구 월계동 69-10",
+    "coords": [127.06348530421, 37.6170766640357],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 49.6, "rep_avg_price": 15000}},
+    "deals": [
+      {"type": "월세", "price": 15000, "rent": 35, "area": 49.59, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-24", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(신)신우빌라 (연립)",
+    "address": "노원구 월계동 877",
+    "coords": [127.045547749396, 37.6292063822944],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 53.6, "rep_avg_price": 17000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 53.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동훈쉐르빌 (다세대)",
+    "address": "노원구 월계동 907-7",
+    "coords": [127.043248429384, 37.6321865380908],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13800, 13800], "rep_area": 47.8, "rep_avg_price": 13800}},
+    "deals": [
+      {"type": "월세", "price": 13800, "rent": 10, "area": 47.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "하박아트빌라 (다세대)",
+    "address": "노원구 월계동 907-8",
+    "coords": [127.043261375483, 37.6318492943371],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [11900, 11900], "rep_area": 36.0, "rep_avg_price": 11900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 11900, "rent": 0, "area": 35.99, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동성네스트 (다세대)",
     "address": "노원구 월계동 912",
     "coords": [127.043021560838, 37.6326672969537],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [17000, 17000], "rep_area": 49.9, "rep_avg_price": 17000}},
     "deals": [
       {"type": "월세", "price": 17000, "rent": 30, "area": 49.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼진하우스 (다세대)",
+    "address": "노원구 중계동 107-24",
+    "coords": [127.083259918686, 37.6514547989822],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 44.6, "rep_avg_price": 12000}},
+    "deals": [
+      {"type": "월세", "price": 12000, "rent": 29, "area": 44.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "갱신", "p_dep": 12000, "p_rent": 25}
+    ]
+  },
+  {
+    "name": "쉬즈빌5차 (다세대)",
+    "address": "노원구 중계동 107-50",
+    "coords": [127.081705741544, 37.651136397166],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28000, 28000], "rep_area": 81.1, "rep_avg_price": 28000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28000, "rent": 0, "area": 81.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "중계쉐르빌 (다세대)",
+    "address": "노원구 중계동 134-2",
+    "coords": [127.075982611966, 37.6607155892521],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 43.8, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 30, "area": 43.83, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "그린빌라 (다세대)",
+    "address": "노원구 중계동 42-1",
+    "coords": [127.084058703629, 37.6459252594647],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 39.5, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 25, "area": 39.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신성빌리지3차 (다세대)",
+    "address": "노원구 중계동 75-41",
+    "coords": [127.084052934614, 37.6492521443895],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8700, 8700], "rep_area": 39.2, "rep_avg_price": 8700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8700, "rent": 0, "area": 39.21, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "숲속파크빌(90-24) (다세대)",
+    "address": "노원구 중계동 90-24",
+    "coords": [127.084452811285, 37.650440795902],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 52.7, "rep_avg_price": 20000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 52.73, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(90-27)쉬즈빌 (다세대)",
+    "address": "노원구 중계동 90-27",
+    "coords": [127.084289872876, 37.6502508050483],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16500, 16500], "rep_area": 46.9, "rep_avg_price": 16500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16500, "rent": 0, "area": 46.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "민하우스(A동) (다세대)",
+    "address": "노원구 중계동 90-33",
+    "coords": [127.084163000444, 37.6497865290325],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [19500, 19500], "rep_area": 53.0, "rep_avg_price": 19500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 19500, "rent": 0, "area": 53.05, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "26.06~28.06", "renew": "갱신", "p_dep": 19000, "p_rent": 0},
+      {"type": "전세", "price": 19500, "rent": 0, "area": 54.72, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "베델빌라 (연립)",
+    "address": "노원구 중계동 90-7",
+    "coords": [127.083052712551, 37.6505875689241],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 50.6, "rep_avg_price": 12000}},
+    "deals": [
+      {"type": "월세", "price": 12000, "rent": 15, "area": 50.64, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "채움빌(170-45) (다세대)",
+    "address": "노원구 하계동 170-45",
+    "coords": [127.071544382474, 37.6357925726003],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 24.2, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 24.2, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경일빌라 (다세대)",
+    "address": "노원구 하계동 171-6",
+    "coords": [127.074217860837, 37.6368722834505],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 61.3, "rep_avg_price": 18000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18000, "rent": 0, "area": 61.29, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청구하계101 (연립)",
+    "address": "노원구 하계동 279",
+    "coords": [127.070564215947, 37.635259689537],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 133.2, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 200, "area": 133.22, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한신코아 (연립)",
+    "address": "노원구 하계동 285",
+    "coords": [127.069568693638, 37.6399927940028],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [60000, 60000], "rep_area": 84.9, "rep_avg_price": 60000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 60000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(61-17) (다세대)",
+    "address": "노원구 하계동 61-17",
+    "coords": [127.074802366233, 37.6367668594718],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 13.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 13.42, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-08", "period": "26.04~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한화그린빌B동 (다세대)",
+    "address": "노원구 하계동 67-33",
+    "coords": [127.078702647061, 37.6368111734497],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 51.5, "rep_avg_price": 18000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18000, "rent": 0, "area": 51.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "유성빌라 (연립)",
+    "address": "노원구 하계동 67-5",
+    "coords": [127.078368801999, 37.6367414792362],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [15500, 15500], "rep_area": 52.6, "rep_avg_price": 15500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 15500, "rent": 0, "area": 52.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "보람빌라트 (다세대)",
+    "address": "노원구 하계동 71",
+    "coords": [127.076103434778, 37.6366271856323],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 63.2, "rep_avg_price": 15000}},
+    "deals": [
+      {"type": "월세", "price": 15000, "rent": 50, "area": 63.22, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-03", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   }
 ]

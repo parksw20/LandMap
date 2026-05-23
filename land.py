@@ -12,7 +12,7 @@
 
 import sys, time
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import unquote
 import numpy as np
 from datetime import datetime, timedelta
 
@@ -169,7 +169,7 @@ def load_service_key() -> str:
         print("Error: API key not found in keyring.")
         print(f"Run once:\n  keyring.set_password('{SERVICE_NAME}', '{SERVICE_USER}', 'YOUR_API_KEY')")
         sys.exit(1)
-    return quote(raw.strip(), safe="")
+    return unquote(raw.strip())
 
 SERVICE_KEY_ENC = load_service_key()
 
@@ -742,7 +742,7 @@ def main():
                 # 시트별 표시 서식 적용
                 set_sheet_formats(writer, sheet, df_all)
 
-        print(f"[✓] Saved: {out_path}")
+        print(f"[OK] Saved: {out_path}")
 
 if __name__ == "__main__":
     try:

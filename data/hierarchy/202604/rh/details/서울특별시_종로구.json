@@ -1,11 +1,406 @@
 [
   {
+    "name": "가회빌라 (연립)",
+    "address": "종로구 가회동 1-216",
+    "coords": [126.985189212282, 37.5858282577076],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [340000, 340000], "rep_area": 236.1, "rep_avg_price": 340000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 340000, "rent": 0, "area": 236.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 340000, "rent": 0, "area": 236.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대구기빌라 (연립)",
+    "address": "종로구 구기동 130",
+    "coords": [126.957483092675, 37.6096913069764],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 73.4, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 100, "area": 73.4, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "힐탑빌라 (다세대)",
+    "address": "종로구 구기동 132-8",
+    "coords": [126.95818521237, 37.6087948031389],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 77.7, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 125, "area": 77.66, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼진파크맨션(가,나동) (연립다세대)",
+    "address": "종로구 구기동 238-1",
+    "coords": [126.955044829912, 37.6102312671914],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [37800, 37800], "rep_area": 141.1, "rep_avg_price": 37800}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 37800, "rent": 0, "area": 141.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청구빌라 (연립)",
+    "address": "종로구 구기동 266",
+    "coords": [126.956255919907, 37.6047478490352],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [58500, 58500], "rep_area": 84.7, "rep_avg_price": 58500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 58500, "rent": 0, "area": 84.72, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "오라빌 (다세대)",
+    "address": "종로구 구기동 35-2",
+    "coords": [126.957773330032, 37.6057492213605],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [27500, 27500], "rep_area": 51.4, "rep_avg_price": 27500}},
+    "deals": [
+      {"type": "월세", "price": 27500, "rent": 15, "area": 51.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동익빌라 (연립)",
+    "address": "종로구 구기동 40",
+    "coords": [126.95798032468, 37.6043851963964],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [88500, 88500], "rep_area": 144.3, "rep_avg_price": 88500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 88500, "rent": 0, "area": 144.33, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "산정하이츠빌라 (연립)",
+    "address": "종로구 구기동 51-7",
+    "coords": [126.957163409547, 37.6054795154761],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [56000, 56000], "rep_area": 119.8, "rep_avg_price": 56000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 56000, "rent": 0, "area": 119.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진에버빌 (다세대)",
+    "address": "종로구 구기동 97-2",
+    "coords": [126.958141399691, 37.6065420433294],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [36000, 36000], "rep_area": 74.7, "rep_avg_price": 36000}},
+    "deals": [
+      {"type": "월세", "price": 36000, "rent": 10, "area": 74.68, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-24", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "유림빌라 (다세대)",
+    "address": "종로구 누상동 100-1",
+    "coords": [126.966439061601, 37.5803015066562],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 59.8, "rep_avg_price": 21000}},
+    "deals": [
+      {"type": "월세", "price": 21000, "rent": 30, "area": 59.75, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "은행골드빌2차 (다세대)",
+    "address": "종로구 누상동 151-1",
+    "coords": [126.966929816255, 37.5798232174306],
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [28800, 30100], "rep_area": 60.0, "rep_avg_price": 29750}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30100, "rent": 0, "area": 59.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 30100, "rent": 0, "area": 59.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 30000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 28800, "rent": 0, "area": 59.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "26.05~26.06", "renew": "갱신", "p_dep": 28800, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "파크골드빌101동 (다세대)",
+    "address": "종로구 누상동 151-2",
+    "coords": [126.966865817885, 37.5796457937875],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11000, 11000], "rep_area": 23.2, "rep_avg_price": 11000}},
+    "deals": [
+      {"type": "월세", "price": 11000, "rent": 2, "area": 23.22, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.04~28.04", "renew": "갱신", "p_dep": 11000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "스카이라이프빌 (다세대)",
+    "address": "종로구 누상동 151-8",
+    "coords": [126.966891130635, 37.5797503161817],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 59.9, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 70, "area": 59.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성일아트빌 (다세대)",
+    "address": "종로구 누상동 166-130",
+    "coords": [126.964307837233, 37.581545874598],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36000, 36000], "rep_area": 66.6, "rep_avg_price": 36000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36000, "rent": 0, "area": 66.57, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "선우하이빌 (연립)",
+    "address": "종로구 누상동 166-204",
+    "coords": [126.964671596092, 37.5800956544353],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [31000, 31000], "rep_area": 66.5, "rep_avg_price": 31000}},
+    "deals": [
+      {"type": "월세", "price": 31000, "rent": 15, "area": 66.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "덕산빌라 (다세대)",
+    "address": "종로구 누상동 166-3",
+    "coords": [126.965681070959, 37.5799024187532],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32000, 32000], "rep_area": 59.0, "rep_avg_price": 32000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32000, "rent": 0, "area": 59.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "원빌라 (다세대)",
+    "address": "종로구 누상동 166-54",
+    "coords": [126.965093550368, 37.5810266867148],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 59.9, "rep_avg_price": 30000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(30-5) (다세대)",
+    "address": "종로구 누상동 30-5",
+    "coords": [126.966036714436, 37.5805406054308],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 59.8, "rep_avg_price": 30000}},
+    "deals": [
+      {"type": "월세", "price": 30000, "rent": 75, "area": 59.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "창원예가2 (다세대)",
+    "address": "종로구 누상동 31-1",
+    "coords": [126.965893181523, 37.5804988480357],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 43.8, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 43.79, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "누상빌라 (다세대)",
+    "address": "종로구 누상동 53-1",
+    "coords": [126.967079250974, 37.5808580505769],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 46.0, "rep_avg_price": 21000}},
+    "deals": [
+      {"type": "월세", "price": 21000, "rent": 9, "area": 46.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "갱신", "p_dep": 21000, "p_rent": 5}
+    ]
+  },
+  {
+    "name": "97-9 (다세대)",
+    "address": "종로구 누상동 97-9",
+    "coords": [126.966564762292, 37.5804730014448],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 20.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 20.16, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-09", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "기린하이츠빌 (다세대)",
+    "address": "종로구 동숭동 129-82",
+    "coords": [127.005466686768, 37.5812412922746],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [22000, 22000], "rep_area": 26.0, "rep_avg_price": 22000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 22000, "rent": 0, "area": 26.03, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "광명빌라트 (다세대)",
+    "address": "종로구 동숭동 130-69",
+    "coords": [127.004945220409, 37.5810888671364],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [16500, 16500], "rep_area": 56.2, "rep_avg_price": 16500}},
+    "deals": [
+      {"type": "월세", "price": 16500, "rent": 40, "area": 56.22, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(130-7) (다세대)",
+    "address": "종로구 동숭동 130-7",
+    "coords": [127.005069414186, 37.5810894024645],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 16.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 16.92, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동숭동공동체주택 (다세대)",
+    "address": "종로구 동숭동 192-6",
+    "coords": [127.005302739714, 37.5794263377687],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 31.8, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 109, "area": 31.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-17", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(201-14) (다세대)",
+    "address": "종로구 동숭동 201-14",
+    "coords": [127.005802373455, 37.578477567535],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 60.3, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 130, "area": 60.27, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-02", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "세종드모네 (다세대)",
+    "address": "종로구 동숭동 201-9",
+    "coords": [127.006001528256, 37.5787462340185],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [89000, 89000], "rep_area": 142.0, "rep_avg_price": 89000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 89000, "rent": 0, "area": 141.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(4-119) (다세대)",
+    "address": "종로구 동숭동 4-119",
+    "coords": [127.005611551244, 37.5836266658083],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 23.4, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 23.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(4-120) (다세대)",
+    "address": "종로구 동숭동 4-120",
+    "coords": [127.005613820355, 37.583690456028],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 36.0, "rep_avg_price": 7000}},
+    "deals": [
+      {"type": "월세", "price": 7000, "rent": 30, "area": 36.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(4-171) (다세대)",
+    "address": "종로구 동숭동 4-171",
+    "coords": [127.006211787362, 37.5832037995618],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19700, 19700], "rep_area": 34.3, "rep_avg_price": 19700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19700, "rent": 0, "area": 34.29, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(4-82) (다세대)",
+    "address": "종로구 동숭동 4-82",
+    "coords": [127.006056520051, 37.5839958708725],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 28.9, "rep_avg_price": 13000}, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 28.9, "rep_avg_price": 7000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 28.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 7000, "rent": 0, "area": 28.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(4-82) (연립)",
+    "address": "종로구 동숭동 4-82",
+    "coords": [127.006056520051, 37.5839958708725],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 28.9, "rep_avg_price": 7000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7000, "rent": 0, "area": 28.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동숭테크노타운 (다세대)",
+    "address": "종로구 동숭동 5-9",
+    "coords": [127.00551307742, 37.5839534607212],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 63.8, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 150, "area": 63.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(6-6) (다세대)",
+    "address": "종로구 동숭동 6-6",
+    "coords": [127.005488912004, 37.5832683465154],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [15500, 15500], "rep_area": 46.0, "rep_avg_price": 15500}, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 46.0, "rep_avg_price": 7000}},
+    "deals": [
+      {"type": "매매", "price": 15500, "rent": 0, "area": 45.96, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 7000, "rent": 50, "area": 45.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(7-5) (다세대)",
+    "address": "종로구 동숭동 7-5",
+    "coords": [127.005074889913, 37.5833692762997],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 31.3, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 31.29, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "블루맨션 (다세대)",
+    "address": "종로구 명륜1가 33-61",
+    "coords": [126.998466397124, 37.5881160769013],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 68.4, "rep_avg_price": 15000}},
+    "deals": [
+      {"type": "월세", "price": 15000, "rent": 80, "area": 68.45, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.05~27.04", "renew": "갱신", "p_dep": 7000, "p_rent": 120}
+    ]
+  },
+  {
+    "name": "명륜동나산빌라 (다세대)",
+    "address": "종로구 명륜1가 43",
+    "coords": [126.999008414125, 37.5866506179768],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 89.1, "rep_avg_price": 45000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 45000, "rent": 0, "area": 89.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "세레노 (연립)",
+    "address": "종로구 명륜1가 5-11",
+    "coords": [126.998045845219, 37.5897383077248],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 101.2, "rep_avg_price": 35000}, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 144.8, "rep_avg_price": 30000}},
+    "deals": [
+      {"type": "전세", "price": 35000, "rent": 0, "area": 101.15, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 30000, "rent": 200, "area": 144.76, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "르느와르팰리스 (연립)",
+    "address": "종로구 명륜1가 7-19",
+    "coords": [126.997163380983, 37.5893839294954],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [35000, 48800], "rep_area": 47.6, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 48800, "rent": 0, "area": 66.66, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 35000, "rent": 0, "area": 47.58, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(7-27) (다세대)",
+    "address": "종로구 명륜1가 7-27",
+    "coords": [126.996832441629, 37.5889942418298],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 18.0, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 10, "area": 18.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "칼라하우스A동 (다세대)",
+    "address": "종로구 명륜1가 78-15",
+    "coords": [126.99733535002, 37.5867497913796],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 37.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 102, "area": 37.59, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "오크하우스 (다세대)",
     "address": "종로구 명륜2가 43-7",
     "coords": [126.99905486057, 37.5845938314727],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 50.2, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 131, "area": 50.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-03", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "어젤리아명륜2 (연립다세대)",
+    "address": "종로구 명륜2가 8",
+    "coords": [126.999491881025, 37.5844429178024],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 89, "area": 35.3697, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-24", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(86-36) (다세대)",
+    "address": "종로구 명륜2가 86-36",
+    "coords": [126.998273184336, 37.5855821219682],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 40.1, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 100, "area": 40.11, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -18,12 +413,308 @@
     ]
   },
   {
+    "name": "대보빌라6차 (연립)",
+    "address": "종로구 명륜2가 90-2",
+    "coords": [126.998203206023, 37.5859562132197],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [60000, 60000], "rep_area": 77.0, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 76.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 60000, "rent": 0, "area": 76.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(1-819) (다세대)",
+    "address": "종로구 명륜3가 1-819",
+    "coords": [126.994806580307, 37.5881579588707],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27500, 27500], "rep_area": 55.0, "rep_avg_price": 27500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 27500, "rent": 0, "area": 54.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(1-91) (다세대)",
+    "address": "종로구 명륜3가 1-91",
+    "coords": [126.995727323249, 37.589883486542],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 59.1, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 35, "area": 59.11, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-18", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(1-99) (다세대)",
+    "address": "종로구 명륜3가 1-99",
+    "coords": [126.995558746639, 37.5896120113104],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 39.5, "rep_avg_price": 0}},
+    "deals": [
+      {"type": "월세", "price": 0, "rent": 50, "area": 39.48, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "26.04~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(154-16) (다세대)",
+    "address": "종로구 명륜4가 154-16",
+    "coords": [126.99923026144, 37.5819705004028],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 39.2, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 100, "area": 39.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진양빌라B동 (다세대)",
+    "address": "종로구 무악동 63-11",
+    "coords": [126.957022491708, 37.5760060278788],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 40.0, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 40, "area": 40.02, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "무악복합상가 (연립다세대)",
+    "address": "종로구 무악동 63-4",
+    "coords": [126.956406783842, 37.5761810455324],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [69000, 69000], "rep_area": 80.8, "rep_avg_price": 69000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 69000, "rent": 0, "area": 80.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "부암스카이빌 (다세대)",
+    "address": "종로구 부암동 129-10",
+    "coords": [126.963745238195, 37.5977437439075],
+    "stats": {"total": 3, "sale": {"count": 2, "range": [57000, 60000], "rep_area": 102.3, "rep_avg_price": 57000}, "jeonse": {"count": 1, "range": [52000, 52000], "rep_area": 122.6, "rep_avg_price": 52000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 122.58, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 57000, "rent": 0, "area": 102.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 52000, "rent": 0, "area": 122.58, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "스카이빌라 (연립)",
+    "address": "종로구 부암동 131-1",
+    "coords": [126.963290459603, 37.5987008162293],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [173000, 173000], "rep_area": 192.9, "rep_avg_price": 173000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 173000, "rent": 0, "area": 192.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대빌라 (연립)",
+    "address": "종로구 부암동 185-3",
+    "coords": [126.961962634663, 37.5975618133611],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [39700, 39700], "rep_area": 54.9, "rep_avg_price": 39700}, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 54.9, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "매매", "price": 39700, "rent": 0, "area": 54.86, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 88, "area": 54.86, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동우빌라 (다세대)",
     "address": "종로구 부암동 208-10",
     "coords": [126.965032892083, 37.5954984115973],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 124.3, "rep_avg_price": 10000}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 90, "area": 124.3, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-03", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "화이트빌 (다세대)",
+    "address": "종로구 부암동 208-43",
+    "coords": [126.964387048805, 37.5946946241454],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [54300, 54300], "rep_area": 63.9, "rep_avg_price": 54300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 54300, "rent": 0, "area": 63.86, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "가람빌라 (연립)",
+    "address": "종로구 부암동 95-31",
+    "coords": [126.966514155703, 37.5974085823636],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 58.5, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35000, "rent": 0, "area": 58.5, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(187-1) (다세대)",
+    "address": "종로구 사직동 187-1",
+    "coords": [126.967287769523, 37.573393731246],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 46.0, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 46.02, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "인남가옥 (다세대)",
+    "address": "종로구 사직동 281-1",
+    "coords": [126.965173219792, 37.5745324342576],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 21.4, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 21.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 60, "area": 21.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(311-7) (다세대)",
+    "address": "종로구 사직동 311-7",
+    "coords": [126.966865900092, 37.5738396060323],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [56000, 56000], "rep_area": 69.0, "rep_avg_price": 56000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 56000, "rent": 0, "area": 68.97, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대한빌라 (다세대)",
+    "address": "종로구 숭인동 1479",
+    "coords": [127.021835992245, 37.5774985623802],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3500, 3500], "rep_area": 36.6, "rep_avg_price": 3500}},
+    "deals": [
+      {"type": "월세", "price": 3500, "rent": 50, "area": 36.63, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.04~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(178-164) (다세대)",
+    "address": "종로구 숭인동 178-164",
+    "coords": [127.019024444804, 37.5759338415295],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9000, 9000], "rep_area": 50.3, "rep_avg_price": 9000}},
+    "deals": [
+      {"type": "월세", "price": 9000, "rent": 20, "area": 50.28, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(179-10) (다세대)",
+    "address": "종로구 숭인동 179-10",
+    "coords": [127.019044929451, 37.576801856262],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9500, 9500], "rep_area": 31.0, "rep_avg_price": 9500}},
+    "deals": [
+      {"type": "월세", "price": 9500, "rent": 5, "area": 31.0, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "숭인그린빌 (다세대)",
+    "address": "종로구 숭인동 179-20",
+    "coords": [127.018723241345, 37.5765190855835],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 25.5, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 105, "area": 25.53, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-02", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(179-22) (다세대)",
+    "address": "종로구 숭인동 179-22",
+    "coords": [127.01898533322, 37.5766047282912],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [600, 600], "rep_area": 25.2, "rep_avg_price": 600}},
+    "deals": [
+      {"type": "월세", "price": 600, "rent": 40, "area": 25.2, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(179-86) (다세대)",
+    "address": "종로구 숭인동 179-86",
+    "coords": [127.01915456239, 37.5761125777944],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6000, 6000], "rep_area": 20.0, "rep_avg_price": 6000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 6000, "rent": 0, "area": 19.97, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-11", "period": "26.04~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현진빌라트 (다세대)",
+    "address": "종로구 숭인동 181-101",
+    "coords": [127.019952373358, 37.5767541338736],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31500, 31500], "rep_area": 49.7, "rep_avg_price": 31500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 31500, "rent": 0, "area": 49.68, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(181-117) (다세대)",
+    "address": "종로구 숭인동 181-117",
+    "coords": [127.019905427336, 37.5764577146433],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 51.7, "rep_avg_price": 15000}},
+    "deals": [
+      {"type": "월세", "price": 15000, "rent": 35, "area": 51.67, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "갱신", "p_dep": 14000, "p_rent": 35}
+    ]
+  },
+  {
+    "name": "로하스빌14차 (다세대)",
+    "address": "종로구 숭인동 181-14",
+    "coords": [127.020436476461, 37.5760573120713],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [41000, 41000], "rep_area": 40.6, "rep_avg_price": 41000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 41000, "rent": 0, "area": 40.59, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-08", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "정우빌라B동 (다세대)",
+    "address": "종로구 숭인동 521-1",
+    "coords": [127.020772015018, 37.578096023456],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23300, 23300], "rep_area": 59.6, "rep_avg_price": 23300}},
+    "deals": [
+      {"type": "월세", "price": 23300, "rent": 10, "area": 59.58, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "숭인제일빌라 (다세대)",
+    "address": "종로구 숭인동 525",
+    "coords": [127.020709276828, 37.5776108491012],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 100, "area": 59.25, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "월드메카 (연립)",
+    "address": "종로구 숭인동 586",
+    "coords": [127.020414556719, 37.5774549383312],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 76.7, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 76.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "N.S숭인빌라 (다세대)",
+    "address": "종로구 숭인동 7-13",
+    "coords": [127.015624441793, 37.5796142711911],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1272, 4191], "rep_area": 43.0, "rep_avg_price": 1272}},
+    "deals": [
+      {"type": "월세", "price": 4191, "rent": 17, "area": 43.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "26.05~28.04", "renew": "갱신", "p_dep": 2064, "p_rent": 27},
+      {"type": "월세", "price": 1272, "rent": 17, "area": 42.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "26.05~28.04", "renew": "갱신", "p_dep": 1225, "p_rent": 16}
+    ]
+  },
+  {
+    "name": "(703-0) (다세대)",
+    "address": "종로구 숭인동 703",
+    "coords": [127.021705177524, 37.5772885647406],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 40.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 40.32, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(17-45) (다세대)",
+    "address": "종로구 신교동 17-45",
+    "coords": [126.968586283644, 37.5831157203825],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [12850, 13000], "rep_area": 25.4, "rep_avg_price": 12925}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12850, "rent": 0, "area": 25.38, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 13000, "rent": 0, "area": 25.38, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "가원빌라 (다세대)",
+    "address": "종로구 신교동 6-25",
+    "coords": [126.967543937342, 37.583576746979],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 90.2, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 90.23, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(1-166) (다세대)",
+    "address": "종로구 신문로2가 1-166",
+    "coords": [126.968895985265, 37.5729067276822],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [48500, 53700], "rep_area": 43.1, "rep_avg_price": 48500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 53700, "rent": 0, "area": 48.59, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 48500, "rent": 0, "area": 43.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -36,13 +727,145 @@
     ]
   },
   {
+    "name": "썬빌라 (다세대)",
+    "address": "종로구 신영동 100-1",
+    "coords": [126.96236075215, 37.6012064490712],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 53.1, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 4, "area": 53.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-21", "period": "26.04~28.04", "renew": "갱신", "p_dep": 20000, "p_rent": 0}
+    ]
+  },
+  {
     "name": "삼성중앙빌라 (연립)",
     "address": "종로구 신영동 150-6",
     "coords": [126.963545817407, 37.5996205367982],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [28500, 39000], "rep_area": 79.6, "rep_avg_price": 33750}, "monthly": null},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [28500, 39000], "rep_area": 79.6, "rep_avg_price": 34375}, "monthly": null},
     "deals": [
-      {"type": "전세", "price": 28500, "rent": 0, "area": 79.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 35000, "rent": 0, "area": 79.56, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-15", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 35000, "rent": 0, "area": 79.56, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-15", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 28500, "rent": 0, "area": 79.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 39000, "rent": 0, "area": 79.56, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-01", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경동빌라 (연립)",
+    "address": "종로구 신영동 167-1",
+    "coords": [126.960680832654, 37.600279322571],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [44000, 44000], "rep_area": 106.9, "rep_avg_price": 44000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 44000, "rent": 0, "area": 106.87, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진안빌라 (연립)",
+    "address": "종로구 신영동 188",
+    "coords": [126.96056703667, 37.6017595220902],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 93.6, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 120, "area": 93.57, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "북악더테라스6단지 (다세대)",
+    "address": "종로구 신영동 209",
+    "coords": [126.959985466456, 37.6025151672303],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [98000, 98000], "rep_area": 85.0, "rep_avg_price": 98000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 98000, "rent": 0, "area": 84.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "북악더테라스2단지 (다세대)",
+    "address": "종로구 신영동 211-11",
+    "coords": [126.959114855018, 37.602698040186],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [80000, 80000], "rep_area": 85.0, "rep_avg_price": 80000}, "jeonse": {"count": 1, "range": [60000, 60000], "rep_area": 85.0, "rep_avg_price": 60000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 80000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 60000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "완성빌라 (연립)",
+    "address": "종로구 신영동 212-1",
+    "coords": [126.958479246362, 37.6034502352829],
+    "stats": {"total": 4, "sale": {"count": 2, "range": [33000, 33000], "rep_area": 49.3, "rep_avg_price": 33000}, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 49.3, "rep_avg_price": 22000}, "monthly": {"count": 1, "range": [17000, 17000], "rep_area": 49.3, "rep_avg_price": 17000}},
+    "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 49.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 33000, "rent": 0, "area": 49.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 17000, "rent": 25, "area": 49.32, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 22000, "rent": 0, "area": 49.32, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "완성주택 (연립)",
+    "address": "종로구 신영동 213-1",
+    "coords": [126.958887666262, 37.6035566050104],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 44.5, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 44.46, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "온현재세검정 (다세대)",
+    "address": "종로구 신영동 214-18",
+    "coords": [126.960441042296, 37.6038120260342],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [28000, 28000], "rep_area": 39.9, "rep_avg_price": 28000}},
+    "deals": [
+      {"type": "월세", "price": 28000, "rent": 5, "area": 39.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청만빌라 (연립)",
+    "address": "종로구 신영동 214-63",
+    "coords": [126.959813702817, 37.6028833436291],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [64000, 64000], "rep_area": 142.4, "rep_avg_price": 64000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 64000, "rent": 0, "area": 142.43, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동궁 (다세대)",
+    "address": "종로구 신영동 233",
+    "coords": [126.960168569036, 37.6048777155875],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18900, 18900], "rep_area": 48.2, "rep_avg_price": 18900}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18900, "rent": 0, "area": 48.22, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-01", "period": "26.07~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "주미빌라 (다세대)",
+    "address": "종로구 연건동 117",
+    "coords": [127.000759514066, 37.5784975295637],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 38.1, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 95, "area": 38.1, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(271-15) (다세대)",
+    "address": "종로구 연건동 271-15",
+    "coords": [127.000209655873, 37.5764349757233],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 16.4, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 40, "area": 16.38, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(61-4) (다세대)",
+    "address": "종로구 연건동 61-4",
+    "coords": [127.001135485606, 37.5789573939262],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16500, 16500], "rep_area": 42.1, "rep_avg_price": 16500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16500, "rent": 0, "area": 42.07, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(65-2) (다세대)",
+    "address": "종로구 연건동 65-2",
+    "coords": [127.001475223398, 37.5788449461111],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 26.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 26.02, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-25", "period": "26.04~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -55,6 +878,43 @@
     ]
   },
   {
+    "name": "주함해븐타워(2동) (다세대)",
+    "address": "종로구 연지동 193-1",
+    "coords": [126.999728886532, 37.5729092031226],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [60, 60], "rep_area": 17.1, "rep_avg_price": 60}},
+    "deals": [
+      {"type": "월세", "price": 60, "rent": 36, "area": 17.14, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-27", "period": "26.04~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "주함해븐타워(1동) (연립)",
+    "address": "종로구 연지동 193-2",
+    "coords": [126.999850802953, 37.5727786491665],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [60, 60], "rep_area": 17.1, "rep_avg_price": 60}},
+    "deals": [
+      {"type": "월세", "price": 60, "rent": 36, "area": 17.14, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-06", "period": "26.04~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "연지서영빌 (다세대)",
+    "address": "종로구 연지동 42",
+    "coords": [126.998673834253, 37.5746207257883],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [27500, 27500], "rep_area": 30.0, "rep_avg_price": 27500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 27500, "rent": 0, "area": 29.98, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-15", "period": "26.06~28.06", "renew": "갱신", "p_dep": 27500, "p_rent": 0},
+      {"type": "전세", "price": 27500, "rent": 0, "area": 29.98, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-15", "period": "26.06~28.06", "renew": "갱신", "p_dep": 27500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "연지스테이트 (다세대)",
+    "address": "종로구 연지동 6-1",
+    "coords": [126.999305274443, 37.57490292273],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 14.7, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 45, "area": 14.73, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(145-0) (다세대)",
     "address": "종로구 옥인동 145",
     "coords": [126.967761787234, 37.5806365944919],
@@ -64,12 +924,631 @@
     ]
   },
   {
+    "name": "(178-27) (다세대)",
+    "address": "종로구 옥인동 178-27",
+    "coords": [126.965423073588, 37.5818412819351],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 45.4, "rep_avg_price": 20000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 45.39, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "갱신", "p_dep": 18000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "옥인 (연립)",
+    "address": "종로구 옥인동 182",
+    "coords": [126.965086661218, 37.58220293182],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [62000, 62000], "rep_area": 59.2, "rep_avg_price": 62000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 62000, "rent": 0, "area": 59.23, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "상원빌라트 (다세대)",
+    "address": "종로구 원서동 135-71",
+    "coords": [126.988423730371, 37.5810019076999],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 60.0, "rep_avg_price": 30000}},
+    "deals": [
+      {"type": "월세", "price": 30000, "rent": 60, "area": 59.97, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-08", "period": "26.04~28.04", "renew": "갱신", "p_dep": 48300, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(4-6) (다세대)",
+    "address": "종로구 원서동 4-6",
+    "coords": [126.987695820531, 37.583489206937],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 43.2, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 100, "area": 43.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "원서빌라 (다세대)",
+    "address": "종로구 원서동 76-54",
+    "coords": [126.988778039914, 37.5828042894976],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 40.4, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 51, "area": 40.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-29", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(86-20) (다세대)",
+    "address": "종로구 원서동 86-20",
+    "coords": [126.988961261868, 37.5817633889428],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [6000, 6000], "rep_area": 19.8, "rep_avg_price": 6000}},
+    "deals": [
+      {"type": "월세", "price": 6000, "rent": 40, "area": 19.84, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 6000, "rent": 40, "area": 19.84, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-13", "period": "26.07~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(7-13) (다세대)",
+    "address": "종로구 이화동 28-17",
+    "coords": [127.005905874757, 37.577411415963],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 22.4, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 30, "area": 22.35, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "갱신", "p_dep": 5000, "p_rent": 30}
+    ]
+  },
+  {
+    "name": "(87-2) (다세대)",
+    "address": "종로구 창성동 87-2",
+    "coords": [126.972016618971, 37.5815307447577],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 34.0, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 58, "area": 34.0, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-24", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1500, "p_rent": 56}
+    ]
+  },
+  {
+    "name": "(131-42) (다세대)",
+    "address": "종로구 창신동 131-42",
+    "coords": [127.011593844677, 37.5746060183057],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 42.9, "rep_avg_price": 9000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 9000, "rent": 0, "area": 42.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한일빌라 (연립)",
+    "address": "종로구 창신동 140-10",
+    "coords": [127.012464787724, 37.5737120526396],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [18000, 18000], "rep_area": 51.6, "rep_avg_price": 18000}},
+    "deals": [
+      {"type": "월세", "price": 18000, "rent": 30, "area": 51.62, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "갱신", "p_dep": 18000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "스카이빌 (다세대)",
+    "address": "종로구 창신동 197-15",
+    "coords": [127.013360047275, 37.5734484137197],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 36.6, "rep_avg_price": 21000}},
+    "deals": [
+      {"type": "월세", "price": 21000, "rent": 13, "area": 36.6, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "26.07~28.07", "renew": "갱신", "p_dep": 21000, "p_rent": 10}
+    ]
+  },
+  {
+    "name": "(23-2) (다세대)",
+    "address": "종로구 창신동 23-2",
+    "coords": [127.013726761798, 37.5768469233728],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 32.2, "rep_avg_price": 10000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10000, "rent": 0, "area": 32.23, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "종로웰라이프 (다세대)",
+    "address": "종로구 창신동 302-1",
+    "coords": [127.014415445213, 37.573010586232],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [19000, 19950], "rep_area": 20.2, "rep_avg_price": 19000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 19950, "rent": 0, "area": 20.5, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 19000, "rent": 0, "area": 20.2, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "갱신", "p_dep": 18600, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동대문상가 (연립)",
+    "address": "종로구 창신동 436-64",
+    "coords": [127.014784809929, 37.5701137509736],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 72.4, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 72.4, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동대문상가 (연립다세대)",
+    "address": "종로구 창신동 436-64",
+    "coords": [127.014784809929, 37.5701137509736],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 48.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 55, "area": 48.32, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-01", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동남레저타운나동 (연립)",
+    "address": "종로구 창신동 598-1",
+    "coords": [127.009740042014, 37.5772053747796],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32000, 32000], "rep_area": 82.4, "rep_avg_price": 32000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32000, "rent": 0, "area": 82.39, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "인아빌라 (다세대)",
+    "address": "종로구 창신동 625-10",
+    "coords": [127.009068595898, 37.5779766793518],
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1500], "rep_area": 43.5, "rep_avg_price": 1250}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 40.74, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-11", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1000, "p_rent": 50},
+      {"type": "월세", "price": 1000, "rent": 60, "area": 43.53, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1000, "p_rent": 50},
+      {"type": "월세", "price": 1500, "rent": 56, "area": 43.53, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-24", "period": "26.04~27.11", "renew": "갱신", "p_dep": 1500, "p_rent": 45}
+    ]
+  },
+  {
+    "name": "(627-1) (다세대)",
+    "address": "종로구 창신동 627-1",
+    "coords": [127.009327439718, 37.5774827341448],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 28.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 28.46, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동문빌라 (다세대)",
+    "address": "종로구 창신동 627-4",
+    "coords": [127.009254524902, 37.5774043533815],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 57.8, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 57.84, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-28", "period": "26.04~30.04", "renew": "갱신", "p_dep": 12000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(629-24) (다세대)",
+    "address": "종로구 창신동 629-24",
+    "coords": [127.009637423662, 37.5767905654056],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 37.9, "rep_avg_price": 8000}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 20, "area": 37.89, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(629-33) (다세대)",
+    "address": "종로구 창신동 629-33",
+    "coords": [127.009552627968, 37.5767540820254],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12700, 12700], "rep_area": 34.2, "rep_avg_price": 12700}},
+    "deals": [
+      {"type": "월세", "price": 12700, "rent": 15, "area": 34.24, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(629-53) (다세대)",
+    "address": "종로구 창신동 629-53",
+    "coords": [127.009370554055, 37.5764403703662],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.8, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 80, "area": 59.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-24", "period": "26.06~28.06", "renew": "갱신", "p_dep": 3000, "p_rent": 70}
+    ]
+  },
+  {
+    "name": "성준빌라5차 (다세대)",
+    "address": "종로구 창신동 629-61",
+    "coords": [127.009165648798, 37.5764078605543],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 54.2, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 54.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성준빌라6차 (다세대)",
+    "address": "종로구 창신동 629-62",
+    "coords": [127.009043051725, 37.5764411167039],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9500, 9500], "rep_area": 36.3, "rep_avg_price": 9500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 9500, "rent": 0, "area": 36.33, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대도시빌 (다세대)",
+    "address": "종로구 창신동 638-3",
+    "coords": [127.009140320974, 37.5757280621773],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 29.0, "rep_avg_price": 34000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34000, "rent": 0, "area": 28.99, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "금강 (다세대)",
+    "address": "종로구 창신동 639-49",
+    "coords": [127.009851161968, 37.5759770398841],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.6, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 70, "area": 59.58, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "라비앙종로 (다세대)",
+    "address": "종로구 창신동 647-28",
+    "coords": [127.009960468931, 37.574762940497],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [31500, 31500], "rep_area": 41.1, "rep_avg_price": 31500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 31500, "rent": 0, "area": 41.14, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "갱신", "p_dep": 33000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(660-120) (다세대)",
+    "address": "종로구 창신동 660-120",
+    "coords": [127.009299271237, 37.573091739151],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 34.6, "rep_avg_price": 14000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 14000, "rent": 0, "area": 34.64, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "평안빌 (다세대)",
+    "address": "종로구 청운동 108-14",
+    "coords": [126.970479913289, 37.5845701419691],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 31.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 31.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-02", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "풍림팍사이드빌라 (연립)",
+    "address": "종로구 청운동 134-2",
+    "coords": [126.969812605749, 37.5848604533872],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 53.8, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 4000, "rent": 80, "area": 53.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "갱신", "p_dep": 3500, "p_rent": 80}
+    ]
+  },
+  {
+    "name": "청운THEHILLS (다세대)",
+    "address": "종로구 청운동 4-35",
+    "coords": [126.968001643876, 37.5899840120442],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [115000, 115000], "rep_area": 68.5, "rep_avg_price": 115000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 115000, "rent": 0, "area": 68.49, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "아름드리청운빌 (다세대)",
+    "address": "종로구 청운동 60",
+    "coords": [126.969438271829, 37.5863323093254],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [35000, 35000], "rep_area": 68.6, "rep_avg_price": 35000}},
+    "deals": [
+      {"type": "월세", "price": 35000, "rent": 50, "area": 68.63, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청와아트 (다세대)",
+    "address": "종로구 청운동 89-23",
+    "coords": [126.971410987585, 37.5852298080003],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24700, 24700], "rep_area": 82.9, "rep_avg_price": 24700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24700, "rent": 0, "area": 82.92, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진선미빌라 (다세대)",
+    "address": "종로구 체부동 202",
+    "coords": [126.970642136478, 37.5768297451122],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [50000, 50000], "rep_area": 74.3, "rep_avg_price": 50000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 50000, "rent": 0, "area": 74.31, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "갱신", "p_dep": 45150, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "화이트빌 (연립)",
+    "address": "종로구 평창동 153-6",
+    "coords": [126.970374547043, 37.6070351658212],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 120.3, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 250, "area": 120.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대평창빌라 (연립)",
+    "address": "종로구 평창동 176",
+    "coords": [126.966790370775, 37.6085494058739],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [48000, 48000], "rep_area": 85.0, "rep_avg_price": 48000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 48000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "하이스트빌 (다세대)",
+    "address": "종로구 평창동 234-11",
+    "coords": [126.967760122618, 37.6049689612878],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 44.2, "rep_avg_price": 33000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 44.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "안성빌라(A동) (연립)",
+    "address": "종로구 평창동 274-7",
+    "coords": [126.965672646143, 37.6041640587291],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 83.9, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 130, "area": 83.86, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-06", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "햇빛잘드는집 (다세대)",
+    "address": "종로구 평창동 293-10",
+    "coords": [126.963203844362, 37.6053433415021],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [18000, 18000], "rep_area": 69.6, "rep_avg_price": 18000}},
+    "deals": [
+      {"type": "월세", "price": 18000, "rent": 34, "area": 69.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-25", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "더스카이 (다세대)",
+    "address": "종로구 평창동 293-31",
+    "coords": [126.962993687493, 37.6050479312749],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 75.6, "rep_avg_price": 54000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 54000, "rent": 0, "area": 75.63, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "평창아트빌 (다세대)",
+    "address": "종로구 평창동 523-7",
+    "coords": [126.96845118121, 37.612167603506],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [88000, 88000], "rep_area": 119.3, "rep_avg_price": 88000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 88000, "rent": 0, "area": 119.28, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "샹그리라빌(가동) (다세대)",
+    "address": "종로구 평창동 75-1",
+    "coords": [126.974964479309, 37.609171754231],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [27700, 27700], "rep_area": 79.9, "rep_avg_price": 27700}},
+    "deals": [
+      {"type": "월세", "price": 27700, "rent": 8, "area": 79.876, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대빌라 (연립)",
+    "address": "종로구 필운동 173",
+    "coords": [126.969735480788, 37.5779267469597],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [170000, 170000], "rep_area": 185.4, "rep_avg_price": 170000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 170000, "rent": 0, "area": 185.37, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "양지빌라 (다세대)",
+    "address": "종로구 필운동 27-1",
+    "coords": [126.966825331415, 37.5777634256517],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 84.4, "rep_avg_price": 40000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 40000, "rent": 0, "area": 84.38, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "배화빌라 (다세대)",
+    "address": "종로구 필운동 31-4",
+    "coords": [126.967146538338, 37.5776762091443],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36000, 36000], "rep_area": 53.8, "rep_avg_price": 36000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36000, "rent": 0, "area": 53.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성우빌라B동 (다세대)",
+    "address": "종로구 행촌동 171-120",
+    "coords": [126.962934453274, 37.5740071033417],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 51.9, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 51.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(171-4) (다세대)",
+    "address": "종로구 행촌동 171-4",
+    "coords": [126.962271698512, 37.5728065880576],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.4, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 100, "area": 59.45, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(210-166) (다세대)",
+    "address": "종로구 행촌동 210-166",
+    "coords": [126.962943140882, 37.5747507870945],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 24.3, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 30, "area": 24.27, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(210-180) (다세대)",
+    "address": "종로구 행촌동 210-180",
+    "coords": [126.962377274612, 37.5742345183574],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 40.0, "rep_avg_price": 15000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15000, "rent": 0, "area": 40.04, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "26.05~28.05", "renew": "갱신", "p_dep": 15000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(210-238) (다세대)",
+    "address": "종로구 행촌동 210-238",
+    "coords": [126.96151852321, 37.5740198048067],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 25.1, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 25.11, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(210-392) (다세대)",
+    "address": "종로구 행촌동 210-392",
+    "coords": [126.962570446438, 37.5752663087271],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 58.9, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 80, "area": 58.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(210-396) (다세대)",
+    "address": "종로구 행촌동 210-396",
+    "coords": [126.962548872396, 37.5749448270159],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21800, 21800], "rep_area": 59.5, "rep_avg_price": 21800}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21800, "rent": 0, "area": 59.49, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "갱신", "p_dep": 20790, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "해오름아트빌 (다세대)",
+    "address": "종로구 행촌동 210-419",
+    "coords": [126.962271568016, 37.575084753278],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 52.8, "rep_avg_price": 22000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 22000, "rent": 0, "area": 52.78, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-15", "period": "26.04~28.04", "renew": "갱신", "p_dep": 21000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(210-422) (다세대)",
+    "address": "종로구 행촌동 210-422",
+    "coords": [126.962171379846, 37.5753153758265],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 37.0, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40000, "rent": 0, "area": 36.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "이조은빌 (다세대)",
+    "address": "종로구 혜화동 10-12",
+    "coords": [126.999580839869, 37.5897765252343],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 33.1, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 33.14, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대도아트빌 (다세대)",
+    "address": "종로구 혜화동 20-21",
+    "coords": [127.001200845767, 37.5884092637556],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40500, 40500], "rep_area": 51.6, "rep_avg_price": 40500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40500, "rent": 0, "area": 51.61, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "행운의집 (다세대)",
+    "address": "종로구 혜화동 22-18",
+    "coords": [127.001399995893, 37.5878984888334],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 38.7, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 110, "area": 38.69, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-17", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "뉴파인빌 (다세대)",
+    "address": "종로구 혜화동 22-30",
+    "coords": [127.00171939814, 37.5879701135306],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 40.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 100, "area": 40.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 100, "area": 40.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "뉴파인빌2(22-52) (다세대)",
+    "address": "종로구 혜화동 22-52",
+    "coords": [127.001476662646, 37.5886647821236],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [37000, 37000], "rep_area": 27.5, "rep_avg_price": 37000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 37000, "rent": 0, "area": 27.53, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "뉴파인빌2(22-88) (다세대)",
+    "address": "종로구 혜화동 22-88",
+    "coords": [127.001538711665, 37.5887846133407],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 28.0, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 27.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "아마레스22 (다세대)",
+    "address": "종로구 혜화동 22-99",
+    "coords": [127.002127136016, 37.5887908210519],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [47500, 47500], "rep_area": 59.0, "rep_avg_price": 47500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 47500, "rent": 0, "area": 58.95, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "스카이힐 (다세대)",
+    "address": "종로구 혜화동 26-12",
+    "coords": [127.002982726781, 37.5877461916852],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [41000, 41000], "rep_area": 59.1, "rep_avg_price": 41000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 41000, "rent": 0, "area": 59.076, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(5-37) (다세대)",
+    "address": "종로구 혜화동 5-37",
+    "coords": [127.000782057388, 37.5907427475503],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [42000, 42000], "rep_area": 108.5, "rep_avg_price": 42000}},
+    "deals": [
+      {"type": "월세", "price": 42000, "rent": 20, "area": 108.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.04~28.04", "renew": "갱신", "p_dep": 42000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "젬스톤빌리지 (다세대)",
+    "address": "종로구 혜화동 5-45",
+    "coords": [126.999541321066, 37.590292523408],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36900, 36900], "rep_area": 34.3, "rep_avg_price": 36900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36900, "rent": 0, "area": 34.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(71-8) (다세대)",
     "address": "종로구 혜화동 71-8",
     "coords": [127.001744970054, 37.5872680596258],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 21.6, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 18.2, "rep_avg_price": 11000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 21.6, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "전세", "price": 11000, "rent": 0, "area": 18.15, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-22", "period": "26.05~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 73, "area": 21.57, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "26.05~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "서교빌라 (연립)",
+    "address": "종로구 홍지동 69-3",
+    "coords": [126.957123902191, 37.601701649165],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 74.9, "rep_avg_price": 30000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30000, "rent": 0, "area": 74.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "건우빌라 (연립)",
+    "address": "종로구 홍지동 69-4",
+    "coords": [126.957599774698, 37.6028568907966],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32500, 32500], "rep_area": 76.0, "rep_avg_price": 32500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32500, "rent": 0, "area": 76.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "석촌빌라 (연립)",
+    "address": "종로구 홍파동 2-22",
+    "coords": [126.965261494743, 37.5716570251352],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 56.6, "rep_avg_price": 60000}, "jeonse": {"count": 1, "range": [32000, 32000], "rep_area": 58.0, "rep_avg_price": 32000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 56.55, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 32000, "rent": 0, "area": 58.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "송림빌라 (다세대)",
+    "address": "종로구 홍파동 2-39",
+    "coords": [126.965193983058, 37.571998572491],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 43.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 43.29, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   }
 ]
