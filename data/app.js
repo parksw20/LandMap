@@ -21,18 +21,43 @@ const state = {
     hoveredItem: null,
     selectedComplex: null,
     selectedArea: null,
-    searchIndex: [], 
-    allLoadedData: []
+    searchIndex: [],
+    allLoadedData: [],
+    // 정비사업 레이어
+    showRedev: false,
+    redevZones: null,
+    redevOverlays: []
 };
 
 const CONFIG = {
     ZOOM_LEVELS: { 1: 9, 2: 7, 3: 5, 4: 0 },
     TYPE_COLORS: {
-        'apt': '#2563eb', 'rh': '#16a34a', 'sh': '#ef4444', 'off': '#06b6d4'
+        'apt': '#2563eb', 'rh': '#16a34a', 'sh': '#ef4444', 'off': '#06b6d4',
+        'nrg': '#f59e0b', 'land': '#65a30d', 'silv': '#8b5cf6', 'indu': '#64748b'
+    },
+    // 전월세(전세/월세) 실거래가 제공되는 유형. 나머지는 국토부가 매매만 공개함.
+    RENT_SUPPORTED: new Set(['apt', 'rh', 'sh', 'off']),
+    // 정비사업 추진단계별 색 (초기 → 착공 순)
+    REDEV_STAGES: ['구역지정', '추진위', '조합설립', '건축심의', '사업시행', '관리처분', '착공'],
+    REDEV_COLORS: {
+        '구역지정': '#9ca3af', '추진위': '#f59e0b', '조합설립': '#f97316',
+        '건축심의': '#06b6d4', '사업시행': '#3b82f6', '관리처분': '#8b5cf6', '착공': '#ef4444'
     }
 };
 
-window.onload = () => { if (typeof kakao !== 'undefined' && kakao.maps) kakao.maps.load(() => init()); };
+window.onload = () => {
+    if (typeof kakao !== 'undefined' && kakao.maps) {
+        kakao.maps.load(() => init());
+    } else {
+        // SDK 로드 실패가 조용히 묻히면 "마커 안 나옴/전환 안 됨"으로만 보임 → 원인을 화면에 표시
+        const banner = document.createElement('div');
+        banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#dc2626;color:#fff;padding:12px 16px;font-size:14px;font-weight:600;text-align:center;';
+        banner.textContent = '카카오맵 SDK 로드 실패: 인터넷 연결 또는 카카오 개발자 콘솔의 JavaScript 키/플랫폼 도메인(localhost:8080) 등록을 확인하세요. (F12 콘솔에서 상세 오류 확인 가능)';
+        document.body.appendChild(banner);
+        const statusEl = document.getElementById('status-bar');
+        if (statusEl) statusEl.textContent = '오류: 지도 SDK 로드 실패';
+    }
+};
 
 async function init() {
     state.geocoder = new kakao.maps.services.Geocoder();
@@ -45,8 +70,9 @@ async function init() {
     state.tooltip = new kakao.maps.CustomOverlay({ zIndex: 1000, clickable: false, xAnchor: 0.5, yAnchor: 1.5 });
 
     setupEventListeners();
-    await renderMonthSelect(); 
-    await loadGlobalSearchIndex(); 
+    applyTxAvailability();
+    await renderMonthSelect();
+    await loadGlobalSearchIndex();
     
     const baseSelect = document.getElementById('base-month-select');
     if (baseSelect && baseSelect.value) {
@@ -95,7 +121,7 @@ function setupEventListeners() {
     };
 
     document.querySelectorAll('input[name="housingType"]').forEach(r => {
-        r.onchange = (e) => { state.selectedType = e.target.value; state.selectedComplex = null; document.getElementById('data-section').style.display = 'none'; updateMap(true); };
+        r.onchange = (e) => { state.selectedType = e.target.value; state.selectedComplex = null; document.getElementById('data-section').style.display = 'none'; applyTxAvailability(); updateMap(true); };
     });
 
     document.querySelectorAll('input[name="transactionType"]').forEach(c => {
@@ -110,6 +136,9 @@ function setupEventListeners() {
 
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.oninput = (e) => handleSearch(e.target.value);
+
+    const redevChk = document.getElementById('show-redev');
+    if (redevChk) redevChk.onchange = (e) => toggleRedev(e.target.checked);
 
     const btnP = document.getElementById('unit-pyeong');
     const btnM = document.getElementById('unit-m2');
@@ -165,6 +194,126 @@ function setupEventListeners() {
             }
         };
     }
+}
+
+// 선택한 부동산 유형이 전월세를 제공하지 않으면 전세/월세 체크박스를 비활성화(회색+취소선)하고
+// 안내 문구를 노출한다. 매매만 강제로 켠다. (상위 필터 + 리스트 내 필터 모두 적용)
+function applyTxAvailability() {
+    const rentOk = CONFIG.RENT_SUPPORTED.has(state.selectedType);
+
+    ['전세', '월세'].forEach(v => {
+        document.querySelectorAll(
+            `input[name="transactionType"][value="${v}"], input[name="localTransactionType"][value="${v}"]`
+        ).forEach(cb => {
+            cb.disabled = !rentOk;
+            cb.checked = rentOk;
+            const chip = cb.closest('.filter-chip');
+            if (chip) chip.classList.toggle('disabled', !rentOk);
+        });
+    });
+
+    // 매매는 항상 제공 → 켜둔 상태 유지
+    document.querySelectorAll(
+        'input[name="transactionType"][value="매매"], input[name="localTransactionType"][value="매매"]'
+    ).forEach(cb => { cb.checked = true; });
+
+    state.filters = { '매매': true, '전세': rentOk, '월세': rentOk };
+    state.localFilters = { '매매': true, '전세': rentOk, '월세': rentOk };
+
+    const note = document.getElementById('tx-availability-note');
+    if (note) note.style.display = rentOk ? 'none' : 'block';
+}
+
+// ==========================
+// 정비사업(재개발/재건축) 레이어
+// ==========================
+async function toggleRedev(on) {
+    state.showRedev = on;
+    const legend = document.getElementById('redev-legend');
+    if (!on) {
+        clearRedevOverlays();
+        if (legend) legend.style.display = 'none';
+        return;
+    }
+    if (!state.redevZones) {
+        try {
+            const res = await fetch(`./redev_zones.json?v=${DATA_VER}`);
+            state.redevZones = await res.json();
+        } catch (e) {
+            console.error('정비구역 데이터 로드 실패:', e);
+            state.redevZones = [];
+        }
+    }
+    if (legend) {
+        legend.innerHTML = CONFIG.REDEV_STAGES.map(s =>
+            `<span class="legend-item"><span class="legend-dot" style="background:${CONFIG.REDEV_COLORS[s]}"></span>${s}</span>`
+        ).join('');
+        legend.style.display = 'flex';
+    }
+    renderRedevMarkers();
+}
+
+function clearRedevOverlays() {
+    state.redevOverlays.forEach(o => o.setMap(null));
+    state.redevOverlays = [];
+}
+
+function renderRedevMarkers() {
+    clearRedevOverlays();
+    if (!state.showRedev || !state.redevZones) return;
+    state.redevZones.forEach(z => {
+        const pos = new kakao.maps.LatLng(z.coords[1], z.coords[0]);
+        const color = CONFIG.REDEV_COLORS[z.stage] || '#6b7280';
+        const div = document.createElement('div');
+        div.className = 'redev-marker';
+        div.innerHTML = `<div class="redev-dot" style="background:${color}"></div>`;
+        const overlay = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 0.5, zIndex: 50 });
+        overlay.setMap(state.map);
+        state.redevOverlays.push(overlay);
+
+        div.onmouseenter = () => {
+            state.tooltip.setContent(
+                `<div class="custom-tooltip"><div class="tooltip-header">${z.name} <span style="color:${color}">● ${z.stage}</span></div>` +
+                `<div class="tooltip-body"><div class="tooltip-row"><span>${z.type}</span></div>` +
+                `<div class="tooltip-row"><span>${z.district} ${z.addr}</span></div></div></div>`
+            );
+            state.tooltip.setPosition(pos);
+            state.tooltip.setMap(state.map);
+        };
+        div.onmouseleave = () => state.tooltip.setMap(null);
+        div.onclick = () => showRedevDetail(z, color);
+    });
+}
+
+function showRedevDetail(z, color) {
+    const sidePanel = document.getElementById('data-section');
+    const dataList = document.getElementById('data-list');
+    const areaFilter = document.getElementById('area-filter');
+    state.selectedComplex = null;
+    document.getElementById('data-title').textContent = `${z.name} (${z.stage})`;
+    areaFilter.style.display = 'none';
+
+    const controlPanel = document.getElementById('control-panel');
+    controlPanel.classList.remove('collapsed');
+    if (window.innerWidth <= 768) controlPanel.classList.add('full-screen');
+    sidePanel.style.display = 'block';
+    sidePanel.scrollTop = 0;
+
+    const dates = [
+        ['구역지정', z.d_zone], ['추진위 승인', z.d_committee], ['조합설립', z.d_assoc],
+        ['사업시행인가', z.d_impl], ['관리처분인가', z.d_mgmt], ['착공', z.d_constr]
+    ].filter(([, v]) => v);
+    const hh = [];
+    if (z.hh_exist) hh.push(`기존 ${z.hh_exist}세대`);
+    if (z.hh_total) hh.push(`신축 ${z.hh_total}세대 (분양 ${z.hh_sale || '-'} / 임대 ${z.hh_rent || '-'})`);
+
+    dataList.innerHTML =
+        `<div class="data-card" style="border-left:4px solid ${color}">` +
+        `<div class="card-title-row"><span class="card-badge" style="background:${color}">${z.stage}</span><span class="card-date">${z.type}</span></div>` +
+        `<div class="card-row-main">${z.district} ${z.addr}</div>` +
+        (hh.length ? `<div class="card-row-highlight">${hh.join(' → ')}</div>` : '') +
+        dates.map(([k, v]) => `<div class="card-row-sub">${k}: ${v}</div>`).join('') +
+        `</div>`;
 }
 
 async function renderMonthSelect() {
@@ -249,15 +398,19 @@ async function fetchAndMergeData(level, gunguList = []) {
     return (state.allLoadedData = Array.from(mergedMap.values()));
 }
 
+// 페이지 로드 시각 기반 버전 토큰: 새로고침하면 항상 최신 데이터(JSON)를 받는다
+// (데이터 재생성 후 브라우저가 옛 hierarchy 캐시를 계속 쓰는 문제 방지)
+const DATA_VER = Date.now();
+
 async function loadSummaryData(ym, level) {
     const cacheKey = `${ym}_${state.selectedType}_${level}`; if (state.levelData[cacheKey]) return state.levelData[cacheKey];
     const fileMap = { 1: 'summary_sido.json', 2: 'summary_gungu.json', 3: 'summary_dong.json' };
-    try { const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/${fileMap[level]}`); const data = await res.json(); return (state.levelData[cacheKey] = data); } catch (e) { return []; }
+    try { const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/${fileMap[level]}?v=${DATA_VER}`); const data = await res.json(); return (state.levelData[cacheKey] = data); } catch (e) { return []; }
 }
 
 async function loadDetailShard(ym, gunguKey) {
     const cacheKey = `${ym}_${state.selectedType}_${gunguKey}`; if (state.detailShards[cacheKey]) return state.detailShards[cacheKey];
-    try { const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/details/${gunguKey}.json`); const data = await res.json(); return (state.detailShards[cacheKey] = data); } catch (e) { return []; }
+    try { const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/details/${gunguKey}.json?v=${DATA_VER}`); const data = await res.json(); return (state.detailShards[cacheKey] = data); } catch (e) { return []; }
 }
 
 function renderMarkers(data, level) {

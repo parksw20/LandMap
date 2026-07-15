@@ -1,5 +1,14 @@
 [
   {
+    "name": "더위드 (다세대)",
+    "address": "경기도 평택시 동삭동",
+    "coords": [127.097667874173, 37.0138927319355],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 22.4, "rep_avg_price": 10000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10000, "rent": 0, "area": 22.41, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "S-House (다세대)",
     "address": "평택시 가재동 174-4",
     "coords": [127.085602048374, 37.0422927580821],
@@ -18,6 +27,15 @@
     ]
   },
   {
+    "name": "가온빌 (다세대)",
+    "address": "평택시 가재동 181-85",
+    "coords": [127.08339058514, 37.0401650907213],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 22.9, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 50, "area": 22.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "가재동181-90공동주택 (다세대)",
     "address": "평택시 가재동 181-90",
     "coords": [127.083323951265, 37.0404934896268],
@@ -33,9 +51,19 @@
     "name": "(181-95) (다세대)",
     "address": "평택시 가재동 181-95",
     "coords": [127.083201490562, 37.0398275001667],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 21.6, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [100, 200], "rep_area": 21.6, "rep_avg_price": 200}},
     "deals": [
+      {"type": "월세", "price": 100, "rent": 51, "area": 24.19, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 56, "area": 21.65, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "도시라동 (다세대)",
+    "address": "평택시 고덕면 궁리 87-6",
+    "coords": [127.030873749532, 37.0167824434383],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 37.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 37.13, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-16", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -66,12 +94,30 @@
     ]
   },
   {
+    "name": "유림빌라 (다세대)",
+    "address": "평택시 고덕면 동고리 103-2",
+    "coords": [127.048027717424, 37.0031714124488],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 76.4, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 70, "area": 76.36, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-12", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동광주택 (다세대)",
     "address": "평택시 고덕면 동고리 157",
     "coords": [127.046332780798, 37.0060800567474],
     "stats": {"total": 1, "sale": {"count": 1, "range": [5000, 5000], "rep_area": 79.7, "rep_avg_price": 5000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 5000, "rent": 0, "area": 79.74, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "송림 (다세대)",
+    "address": "평택시 고덕면 동고리 252",
+    "coords": [127.041405781121, 37.0109357310206],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [5000, 5000], "rep_area": 59.7, "rep_avg_price": 5000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 5000, "rent": 0, "area": 59.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -102,6 +148,16 @@
     ]
   },
   {
+    "name": "세린더메인 (연립)",
+    "address": "평택시 독곡동 285",
+    "coords": [127.067214106423, 37.0855610352043],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [35500, 39000], "rep_area": 60.6, "rep_avg_price": 39000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35500, "rent": 0, "area": 82.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 39000, "rent": 0, "area": 60.64, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "대성빌라가동 (다세대)",
     "address": "평택시 독곡동 398-2",
     "coords": [127.059624159526, 37.0859023640151],
@@ -129,6 +185,15 @@
     ]
   },
   {
+    "name": "현대홈타운 (다세대)",
+    "address": "평택시 비전동 483-43",
+    "coords": [127.096536615128, 37.0005920808706],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 61.6, "rep_avg_price": 15000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 15000, "rent": 0, "area": 61.605, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "낙원빌라A동 (다세대)",
     "address": "평택시 비전동 516-1",
     "coords": [127.098929127027, 36.9955616210762],
@@ -146,6 +211,15 @@
     "deals": [
       {"type": "월세", "price": 300, "rent": 60, "area": 30.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "갱신", "p_dep": 300, "p_rent": 55},
       {"type": "월세", "price": 300, "rent": 60, "area": 30.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "갱신", "p_dep": 300, "p_rent": 65}
+    ]
+  },
+  {
+    "name": "가람센텀하우스(A동) (다세대)",
+    "address": "평택시 비전동 600-64",
+    "coords": [127.093666556534, 36.9974154524263],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13500, 13500], "rep_area": 60.4, "rep_avg_price": 13500}},
+    "deals": [
+      {"type": "월세", "price": 13500, "rent": 10, "area": 60.385, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -171,9 +245,29 @@
     "name": "(747-17) (다세대)",
     "address": "평택시 비전동 747-17",
     "coords": [127.098572286383, 36.9931693626602],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [3400, 3400], "rep_area": 24.8, "rep_avg_price": 3400}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [2500, 3400], "rep_area": 19.0, "rep_avg_price": 2500}, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 24.8, "rep_avg_price": 200}},
     "deals": [
-      {"type": "매매", "price": 3400, "rent": 0, "area": 24.82, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 2500, "rent": 0, "area": 19.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 3400, "rent": 0, "area": 24.82, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 200, "rent": 30, "area": 24.82, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-06", "period": "26.03~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "부원맨션(가동) (다세대)",
+    "address": "평택시 비전동 758-5",
+    "coords": [127.099572826353, 36.9931498751942],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 74.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 74.24, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-20", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신동아홈타운2차 (다세대)",
+    "address": "평택시 비전동 797-1",
+    "coords": [127.096703743338, 37.0006475415849],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 61.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 61.605, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -202,6 +296,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9750, 9750], "rep_area": 59.6, "rep_avg_price": 9750}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 9750, "rent": 0, "area": 59.64, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "유성홈타운102동 (다세대)",
+    "address": "평택시 서정동 159-29",
+    "coords": [127.062778801068, 37.0644006459651],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 59.6, "rep_avg_price": 10000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10000, "rent": 0, "area": 59.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -251,6 +354,15 @@
     ]
   },
   {
+    "name": "트윈빌 (다세대)",
+    "address": "평택시 서정동 236-4",
+    "coords": [127.057010674557, 37.059782856929],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 21.4, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 50, "area": 21.45, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동광맨션B동 (다세대)",
     "address": "평택시 서정동 281-27",
     "coords": [127.058125837265, 37.0589684664215],
@@ -287,6 +399,16 @@
     ]
   },
   {
+    "name": "타워빌 (다세대)",
+    "address": "평택시 서정동 302-3",
+    "coords": [127.055008549204, 37.0595815112787],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 300], "rep_area": 14.8, "rep_avg_price": 250}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 33, "area": 14.85, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 39, "area": 14.85, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-06", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "VIPTown (다세대)",
     "address": "평택시 서정동 303-2",
     "coords": [127.054660577387, 37.0599047969688],
@@ -294,6 +416,15 @@
     "deals": [
       {"type": "월세", "price": 300, "rent": 41, "area": 18.37, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 41, "area": 18.37, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성빌 (다세대)",
+    "address": "평택시 서정동 335-34",
+    "coords": [127.054502408832, 37.0560097093756],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 17.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 17.01, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -333,6 +464,24 @@
     ]
   },
   {
+    "name": "우진빌라 (다세대)",
+    "address": "평택시 서정동 38-7",
+    "coords": [127.057674556637, 37.0711736217792],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8300, 8300], "rep_area": 38.8, "rep_avg_price": 8300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8300, "rent": 0, "area": 38.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신한임페리얼(40-13) (다세대)",
+    "address": "평택시 서정동 40-13",
+    "coords": [127.05886816963, 37.0718485686189],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 26.4, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 26.37, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "신한임페리얼(40-20) (다세대)",
     "address": "평택시 서정동 40-20",
     "coords": [127.058774787548, 37.0716406476606],
@@ -354,8 +503,9 @@
     "name": "대영빌라 (다세대)",
     "address": "평택시 서정동 42-1",
     "coords": [127.057896469879, 37.0716831596536],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7300, 7300], "rep_area": 52.5, "rep_avg_price": 7300}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [7300, 7300], "rep_area": 52.5, "rep_avg_price": 7300}, "monthly": {"count": 1, "range": [300, 300], "rep_area": 42.5, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 45, "area": 42.54, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 7300, "rent": 0, "area": 52.47, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -369,11 +519,21 @@
     ]
   },
   {
+    "name": "대부빌라 (다세대)",
+    "address": "평택시 서정동 48-6",
+    "coords": [127.058648629139, 37.0726770321887],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 50.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 50.46, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-22", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "파크빌 (다세대)",
     "address": "평택시 서정동 51-1",
     "coords": [127.057777308379, 37.0730646500968],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 37.9, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 200], "rep_area": 21.4, "rep_avg_price": 200}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 36, "area": 21.39, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 45, "area": 37.9, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -393,6 +553,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [9500, 9500], "rep_area": 56.5, "rep_avg_price": 9500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 9500, "rent": 0, "area": 56.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성쉐르빌5 (다세대)",
+    "address": "평택시 서정동 557-171",
+    "coords": [127.049640608158, 37.0717225844726],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 55.4, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 57, "area": 55.41, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -429,6 +598,33 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [2000, 2000], "rep_area": 43.6, "rep_avg_price": 2000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 2000, "rent": 0, "area": 43.56, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "지장빌라 (다세대)",
+    "address": "평택시 서정동 75-37",
+    "coords": [127.05677998648, 37.0733921304162],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 59.8, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 60, "area": 59.81, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-10", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동화빌라(774-4) (다세대)",
+    "address": "평택시 서정동 774-4",
+    "coords": [127.064394336749, 37.0721177307011],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 49.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 50, "area": 48.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "서울주택기린동 (다세대)",
+    "address": "평택시 서정동 775-4",
+    "coords": [127.064129000513, 37.0716409374122],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4300, 4300], "rep_area": 41.1, "rep_avg_price": 4300}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 4300, "rent": 0, "area": 41.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -477,6 +673,15 @@
     ]
   },
   {
+    "name": "강남빌라(829-16) (다세대)",
+    "address": "평택시 서정동 829-16",
+    "coords": [127.055324515668, 37.0689138623566],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 45.1, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 35, "area": 45.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.05~27.04", "renew": "갱신", "p_dep": 1000, "p_rent": 40}
+    ]
+  },
+  {
     "name": "보라맨션 (다세대)",
     "address": "평택시 서정동 829-22",
     "coords": [127.055458520844, 37.0680992308248],
@@ -493,6 +698,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 48.1, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 45, "area": 48.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "풍진빌라 (연립)",
+    "address": "평택시 서정동 832-12",
+    "coords": [127.05534109511, 37.0674347450919],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 63.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 65, "area": 63.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-19", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "금호빌라(832-16) (다세대)",
+    "address": "평택시 서정동 832-16",
+    "coords": [127.055214028279, 37.0678933598373],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 40.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 39.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -535,6 +758,15 @@
     ]
   },
   {
+    "name": "백향빌라나동 (다세대)",
+    "address": "평택시 서정동 841-3",
+    "coords": [127.059769512665, 37.0664678185317],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [3800, 3800], "rep_area": 74.4, "rep_avg_price": 3800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 3800, "rent": 0, "area": 74.44, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "우주빌라(842-1) (다세대)",
     "address": "평택시 서정동 842-1",
     "coords": [127.059408766746, 37.0661415413036],
@@ -550,6 +782,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6700, 6700], "rep_area": 59.8, "rep_avg_price": 6700}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 6700, "rent": 0, "area": 59.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대진아트빌라 (다세대)",
+    "address": "평택시 서정동 851-16",
+    "coords": [127.060398122909, 37.0654029734057],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 32.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 32.76, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -571,6 +812,16 @@
     ]
   },
   {
+    "name": "효성빌라(858) (다세대)",
+    "address": "평택시 서정동 858",
+    "coords": [127.060194368181, 37.0648194524141],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [7000, 7000], "rep_area": 40.8, "rep_avg_price": 7000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7000, "rent": 0, "area": 40.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 7000, "rent": 0, "area": 40.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "태림하이츠빌라 (다세대)",
     "address": "평택시 서정동 858-8",
     "coords": [127.06031155965, 37.0645715979751],
@@ -586,6 +837,16 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 48.4, "rep_avg_price": 300}},
     "deals": [
       {"type": "월세", "price": 300, "rent": 50, "area": 48.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우주빌라(863-13) (다세대)",
+    "address": "평택시 서정동 863-13",
+    "coords": [127.059036684122, 37.0639507696139],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 38.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 38.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 44.14, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -613,6 +874,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4000, 4000], "rep_area": 30.6, "rep_avg_price": 4000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 4000, "rent": 0, "area": 30.6, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "티파니하우스 (다세대)",
+    "address": "평택시 서정동 867-9",
+    "coords": [127.057243631948, 37.0659135533377],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 28.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 70, "area": 28.16, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -690,6 +960,15 @@
     ]
   },
   {
+    "name": "현대하이츠빌라3차 (다세대)",
+    "address": "평택시 서정동 882-1",
+    "coords": [127.055529634741, 37.064155294577],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 45.5, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 50, "area": 45.48, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "금일주택(883-9) (다세대)",
     "address": "평택시 서정동 883-9",
     "coords": [127.056004402709, 37.0637631949324],
@@ -729,8 +1008,9 @@
     "name": "(891-10) (다세대)",
     "address": "평택시 서정동 891-10",
     "coords": [127.056748170912, 37.0628384310355],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4800, 4800], "rep_area": 26.1, "rep_avg_price": 4800}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [4500, 4500], "rep_area": 24.1, "rep_avg_price": 4500}, "jeonse": {"count": 1, "range": [4800, 4800], "rep_area": 26.1, "rep_avg_price": 4800}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 4500, "rent": 0, "area": 24.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 4800, "rent": 0, "area": 26.13, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -741,6 +1021,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 59.9, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 55, "area": 59.94, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현진청구 (다세대)",
+    "address": "평택시 서정동 892-7",
+    "coords": [127.056223817664, 37.0627602873901],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 37.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 37.23, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -785,8 +1074,9 @@
     "name": "라움12 (다세대)",
     "address": "평택시 서정동 898-12",
     "coords": [127.054542347139, 37.0613872967751],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 16.6, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 16.6, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 45, "area": 23.22, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 45, "area": 16.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-01", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -848,9 +1138,10 @@
     "name": "시그마맨션3 (다세대)",
     "address": "평택시 서정동 904-3",
     "coords": [127.056907745909, 37.0615189136744],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [14000, 14000], "rep_area": 59.9, "rep_avg_price": 14000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [14000, 14000], "rep_area": 59.9, "rep_avg_price": 14000}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 59.9, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 14000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 14000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 95, "area": 59.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -902,6 +1193,15 @@
     ]
   },
   {
+    "name": "광영빌라다동 (다세대)",
+    "address": "평택시 세교동 188-9",
+    "coords": [127.07736532602, 37.0029670492172],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 73.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 73.94, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "범신빌라 (연립)",
     "address": "평택시 세교동 228",
     "coords": [127.074598425473, 37.0055320369658],
@@ -917,6 +1217,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [315, 315], "rep_area": 25.3, "rep_avg_price": 315}},
     "deals": [
       {"type": "월세", "price": 315, "rent": 44, "area": 25.34, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "레몬하우스 (다세대)",
+    "address": "평택시 세교동 231-33",
+    "coords": [127.077274105553, 37.0069701628209],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 25.0, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 55, "area": 24.96, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "26.04~26.07", "renew": "갱신", "p_dep": 100, "p_rent": 50}
     ]
   },
   {
@@ -1014,6 +1323,16 @@
     ]
   },
   {
+    "name": "송탄웰시티 (연립다세대)",
+    "address": "평택시 신장동 227-24",
+    "coords": [127.054482702286, 37.0786037393986],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [10600, 10600], "rep_area": 42.5, "rep_avg_price": 10600}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 37.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "매매", "price": 10600, "rent": 0, "area": 42.53, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 65, "area": 37.02, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "하늘마루(빌)B (다세대)",
     "address": "평택시 신장동 252-101",
     "coords": [127.056192681453, 37.0732896879966],
@@ -1060,6 +1379,16 @@
     ]
   },
   {
+    "name": "호산빌 (다세대)",
+    "address": "평택시 신장동 267-91",
+    "coords": [127.050468060845, 37.073652329886],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 39.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 42.93, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-22", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 38.97, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "엔젤빌라 (다세대)",
     "address": "평택시 신장동 274-222",
     "coords": [127.051876123459, 37.0783244950037],
@@ -1081,9 +1410,19 @@
     "name": "(278-17) (다세대)",
     "address": "평택시 신장동 278-17",
     "coords": [127.053495833808, 37.0774461329208],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 20.0, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 200], "rep_area": 20.0, "rep_avg_price": 200}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 27, "area": 20.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 32, "area": 20.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-12", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "FIRSTVILLE (다세대)",
+    "address": "평택시 신장동 311-1",
+    "coords": [127.051678226818, 37.0821846755077],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 59.3, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 90, "area": 59.26, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1093,6 +1432,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 55.4, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 45, "area": 55.44, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "송탄미래안빌 (연립)",
+    "address": "평택시 신장동 327-80",
+    "coords": [127.053707101568, 37.0831253018619],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 84.6, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 90, "area": 84.64, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1112,6 +1460,15 @@
     "deals": [
       {"type": "월세", "price": 300, "rent": 80, "area": 64.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-06", "period": "26.03~27.03", "renew": "갱신", "p_dep": 300, "p_rent": 75},
       {"type": "월세", "price": 300, "rent": 80, "area": 64.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-06", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "VIRGINIAVILLAB동 (다세대)",
+    "address": "평택시 신장동 353-21",
+    "coords": [127.049125975334, 37.0834839312337],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 76.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 85, "area": 76.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1151,6 +1508,15 @@
     ]
   },
   {
+    "name": "CLOUD9(SANFRANCISCO) (연립)",
+    "address": "평택시 신장동 405-12",
+    "coords": [127.053444407501, 37.087653113499],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 84.9, "rep_avg_price": 0}},
+    "deals": [
+      {"type": "월세", "price": 0, "rent": 160, "area": 84.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "CLOUD9(CHICAGO) (연립)",
     "address": "평택시 신장동 405-3",
     "coords": [127.053650438303, 37.0882607013399],
@@ -1181,8 +1547,9 @@
     "name": "DesigHous1 (연립)",
     "address": "평택시 신장동 603",
     "coords": [127.046175503725, 37.086653997396],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 78.7, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 78.7, "rep_avg_price": 13000}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 78.7, "rep_avg_price": 500}},
     "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 78.748, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 90, "area": 78.748, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1236,8 +1603,9 @@
     "name": "드림캐슬빌리지 (연립)",
     "address": "평택시 신장동 624-28",
     "coords": [127.047748374077, 37.0845883040085],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [153, 153], "rep_area": 60.0, "rep_avg_price": 153}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [153, 160], "rep_area": 60.0, "rep_avg_price": 156}},
     "deals": [
+      {"type": "월세", "price": 160, "rent": 160, "area": 59.96, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-06", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 153, "rent": 153, "area": 59.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1314,6 +1682,15 @@
     ]
   },
   {
+    "name": "오리온 (연립)",
+    "address": "평택시 신장동 693-45",
+    "coords": [127.046995378456, 37.0756405279623],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 60.2, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 60.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.05~27.05", "renew": "갱신", "p_dep": 12000, "p_rent": 0}
+    ]
+  },
+  {
     "name": "성경원룸 (다세대)",
     "address": "평택시 신장동 693-58",
     "coords": [127.047784867704, 37.0762514989247],
@@ -1332,12 +1709,30 @@
     ]
   },
   {
+    "name": "레몬그라스 (다세대)",
+    "address": "평택시 안중읍 안중리 256-129",
+    "coords": [126.92543241156, 36.9879900490838],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 37, "area": 17.15, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "안국씨티빌A동 (다세대)",
     "address": "평택시 안중읍 안중리 256-77",
     "coords": [126.924141276928, 36.9879239024695],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 62.6, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 62.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성하우스2 (다세대)",
+    "address": "평택시 안중읍 안중리 260-23",
+    "coords": [126.927088036763, 36.9872465117148],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 28.9, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 28.87, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1383,6 +1778,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.8, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 38, "area": 17.82, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "필하우스 (다세대)",
+    "address": "평택시 안중읍 학현리 500-40",
+    "coords": [126.924403026519, 36.9895986437413],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7300, 7300], "rep_area": 27.3, "rep_avg_price": 7300}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7300, "rent": 0, "area": 27.31, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1471,11 +1875,21 @@
     ]
   },
   {
+    "name": "라온떼르빌 (다세대)",
+    "address": "평택시 오성면 숙성리 148-4",
+    "coords": [126.981510645287, 37.0087396321533],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 75.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 59, "area": 75.61, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-12", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "테라로사 (다세대)",
     "address": "평택시 오성면 죽리 76-1",
     "coords": [126.978653306107, 37.0090381313286],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 54.5, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 51.2, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 100, "area": 51.19, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 100, "area": 54.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-06", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1555,11 +1969,23 @@
     ]
   },
   {
+    "name": "하영빌 (다세대)",
+    "address": "평택시 용이동 443-2",
+    "coords": [127.136107698771, 36.9978378919423],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [100, 100], "rep_area": 20.5, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 50, "area": 20.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.04~26.06", "renew": "갱신", "p_dep": 100, "p_rent": 45},
+      {"type": "월세", "price": 100, "rent": 80, "area": 36.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-16", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "하모니2차 (다세대)",
     "address": "평택시 용이동 443-6",
     "coords": [127.137071809874, 36.9980233966223],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [50, 50], "rep_area": 13.8, "rep_avg_price": 50}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [3500, 3500], "rep_area": 13.8, "rep_avg_price": 3500}, "monthly": {"count": 2, "range": [50, 3000], "rep_area": 13.8, "rep_avg_price": 1525}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 2, "area": 13.825, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 3500, "rent": 0, "area": 13.825, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 50, "rent": 30, "area": 13.825, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-01", "period": "26.03~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1570,6 +1996,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 36.5, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 50, "area": 36.47, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(444-6) (다세대)",
+    "address": "평택시 용이동 444-6",
+    "coords": [127.136725250907, 36.998220322287],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 19.6, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 42, "area": 19.59, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1675,11 +2110,23 @@
     ]
   },
   {
+    "name": "아르노빌 (다세대)",
+    "address": "평택시 용이동 456-14",
+    "coords": [127.138380279197, 36.9955567879895],
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [100, 300], "rep_area": 16.0, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 40, "area": 16.45, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100, "rent": 40, "area": 16.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 60, "area": 38.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "편안한가 (다세대)",
     "address": "평택시 용이동 456-5",
     "coords": [127.137955727835, 36.9956049494097],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 21.4, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 200], "rep_area": 18.2, "rep_avg_price": 200}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 50, "area": 18.25, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 35, "area": 21.45, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1700,6 +2147,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 54.6, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 91, "area": 54.555, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-02", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "마로니에 (다세대)",
+    "address": "평택시 용이동 460-8",
+    "coords": [127.140467406332, 36.9965318305796],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6000, 6000], "rep_area": 29.9, "rep_avg_price": 6000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 6000, "rent": 0, "area": 29.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1737,6 +2193,15 @@
     "deals": [
       {"type": "월세", "price": 100, "rent": 31, "area": 19.07, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-07", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 36, "area": 19.07, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "퍼스트빌 (다세대)",
+    "address": "평택시 용이동 481-13",
+    "coords": [127.148620499705, 37.0003074373458],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 18.6, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 51, "area": 18.57, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1780,8 +2245,9 @@
     "name": "Hplusll (다세대)",
     "address": "평택시 용이동 488-12",
     "coords": [127.150010297316, 36.9995515739199],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 22.5, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 200], "rep_area": 17.5, "rep_avg_price": 200}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 55, "area": 17.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 30, "area": 22.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-15", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1816,8 +2282,9 @@
     "name": "스타시티 (연립)",
     "address": "평택시 용이동 491-2",
     "coords": [127.148389381475, 36.9993699708981],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 30.0, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 30.0, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 29.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 60, "area": 29.95, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-20", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1828,6 +2295,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 18.6, "rep_avg_price": 200}},
     "deals": [
       {"type": "월세", "price": 200, "rent": 33, "area": 18.6, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-15", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "해마루1 (다세대)",
+    "address": "평택시 용이동 585-5",
+    "coords": [127.132938995471, 37.0026146028127],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 22.5, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 40, "area": 22.52, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-12", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1861,9 +2337,19 @@
     "name": "E house (다세대)",
     "address": "평택시 용이동 603-14",
     "coords": [127.131714140602, 36.9962138720713],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 21.2, "rep_avg_price": 2000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 21.2, "rep_avg_price": 2000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 21, "area": 21.16, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 2000, "rent": 23, "area": 21.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "샵우드빌 (다세대)",
+    "address": "평택시 용이동 603-27",
+    "coords": [127.130204070924, 36.996341779681],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 27.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 27.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1897,8 +2383,9 @@
     "name": "J&S(669-5) (다세대)",
     "address": "평택시 용이동 669-5",
     "coords": [127.129037464448, 36.9944359125491],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 17.7, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 17.4, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 35, "area": 17.425, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 38, "area": 17.675, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1954,6 +2441,16 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 26.6, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 71, "area": 26.6, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "소정빌딩 (다세대)",
+    "address": "평택시 이충동 472",
+    "coords": [127.058274147016, 37.056338340348],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 18.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 41, "area": 18.18, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 43, "area": 18.87, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-26", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2032,6 +2529,15 @@
     ]
   },
   {
+    "name": "삼성타운4차 (다세대)",
+    "address": "평택시 장당동 492-34",
+    "coords": [127.053836273036, 37.0515479846928],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 16.8, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 60, "area": 16.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "원빌리지3차 (다세대)",
     "address": "평택시 장당동 492-40",
     "coords": [127.054456910244, 37.0518099140915],
@@ -2050,12 +2556,33 @@
     ]
   },
   {
+    "name": "(405-0) (다세대)",
+    "address": "평택시 장안동 405",
+    "coords": [127.0759471576, 37.0648334803004],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 34.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 42, "area": 34.05, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 34.05, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-29", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "평택소사벌해링턴코트 (연립)",
     "address": "평택시 죽백동 766",
     "coords": [127.119037354132, 37.0068171330988],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [31500, 31500], "rep_area": 93.8, "rep_avg_price": 31500}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [31500, 42000], "rep_area": 85.0, "rep_avg_price": 42000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 85.0, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 150, "area": 84.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 42000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-15", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 31500, "rent": 0, "area": 93.84, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동안하우스 (다세대)",
+    "address": "평택시 지산동 1234-1",
+    "coords": [127.076631924508, 37.0814905094477],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 69.0, "rep_avg_price": 0}},
+    "deals": [
+      {"type": "월세", "price": 0, "rent": 26, "area": 68.955, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2068,12 +2595,30 @@
     ]
   },
   {
+    "name": "소호202 (다세대)",
+    "address": "평택시 지산동 419-8",
+    "coords": [127.075834741084, 37.0810066968175],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 27.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 65, "area": 27.1, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "드림하우스 (다세대)",
     "address": "평택시 지산동 426-10",
     "coords": [127.075626058853, 37.0806054935388],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 17.8, "rep_avg_price": 300}},
     "deals": [
       {"type": "월세", "price": 300, "rent": 35, "area": 17.77, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "그린빌C동 (다세대)",
+    "address": "평택시 지산동 426-26",
+    "coords": [127.07511373575, 37.0805534669422],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 20.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 20.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2100,8 +2645,10 @@
     "name": "더팰리스(C동) (다세대)",
     "address": "평택시 지산동 621-57",
     "coords": [127.070558859093, 37.0837185682574],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [12700, 13000], "rep_area": 71.4, "rep_avg_price": 12850}, "jeonse": null, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 4, "range": [12700, 13000], "rep_area": 71.4, "rep_avg_price": 12850}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 71.44, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 12700, "rent": 0, "area": 71.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 13000, "rent": 0, "area": 71.44, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 12700, "rent": 0, "area": 71.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
@@ -2126,6 +2673,24 @@
     ]
   },
   {
+    "name": "락토맨션206동 (다세대)",
+    "address": "평택시 지산동 630-11",
+    "coords": [127.067268596218, 37.0818035445482],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [7500, 7500], "rep_area": 38.6, "rep_avg_price": 7500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 7500, "rent": 0, "area": 38.61, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "나우맨션2차 (다세대)",
+    "address": "평택시 지산동 630-6",
+    "coords": [127.067898721369, 37.081656761646],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5500, 5500], "rep_area": 59.6, "rep_avg_price": 5500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5500, "rent": 0, "area": 59.64, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-11", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "갤러리하우스(B) (다세대)",
     "address": "평택시 지산동 681-15",
     "coords": [127.059329840279, 37.072936742552],
@@ -2138,8 +2703,9 @@
     "name": "갤러리하우스디동 (다세대)",
     "address": "평택시 지산동 681-17",
     "coords": [127.059082515214, 37.0730269731199],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 16.4, "rep_avg_price": 100}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [100, 100], "rep_area": 16.4, "rep_avg_price": 100}},
     "deals": [
+      {"type": "월세", "price": 100, "rent": 33, "area": 16.45, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-08", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 100, "rent": 33, "area": 16.45, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-08", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2147,8 +2713,10 @@
     "name": "갤러리하우스F동 (다세대)",
     "address": "평택시 지산동 681-19",
     "coords": [127.059149797694, 37.0727836503717],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 16.4, "rep_avg_price": 200}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [200, 200], "rep_area": 16.4, "rep_avg_price": 200}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 50, "area": 16.45, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 200, "rent": 50, "area": 16.17, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 42, "area": 16.45, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2171,6 +2739,15 @@
     ]
   },
   {
+    "name": "용운아트빌 (다세대)",
+    "address": "평택시 지산동 726-3",
+    "coords": [127.058998287587, 37.0804284989448],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 56.5, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 10000, "rent": 0, "area": 56.47, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "화신노블레스1 (연립)",
     "address": "평택시 지산동 744-3",
     "coords": [127.057632464387, 37.0824185525614],
@@ -2181,11 +2758,23 @@
     ]
   },
   {
+    "name": "세종원룸 (다세대)",
+    "address": "평택시 지산동 762-18",
+    "coords": [127.057357685552, 37.080297206821],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 18.1, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 32, "area": 18.055, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동호원룸텔 (다세대)",
     "address": "평택시 지산동 762-8",
     "coords": [127.057686801672, 37.0805101502662],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 15.4, "rep_avg_price": 200}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [100, 200], "rep_area": 15.4, "rep_avg_price": 150}},
     "deals": [
+      {"type": "월세", "price": 100, "rent": 43, "area": 15.43, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100, "rent": 43, "area": 19.4, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100, "rent": 43, "area": 19.4, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-19", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 43, "area": 15.43, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2221,8 +2810,9 @@
     "name": "그레이스원룸A(790-9) (다세대)",
     "address": "평택시 지산동 790-9",
     "coords": [127.058612453227, 37.0769578576003],
-    "stats": {"total": 7, "sale": null, "jeonse": null, "monthly": {"count": 7, "range": [100, 200], "rep_area": 27.3, "rep_avg_price": 142}},
+    "stats": {"total": 8, "sale": null, "jeonse": null, "monthly": {"count": 8, "range": [100, 200], "rep_area": 27.3, "rep_avg_price": 150}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 35, "area": 27.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 43, "area": 27.3, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 37, "area": 27.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 100, "rent": 50, "area": 27.3, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -2260,12 +2850,30 @@
     ]
   },
   {
+    "name": "AirTown (다세대)",
+    "address": "평택시 지산동 818-5",
+    "coords": [127.055607779071, 37.0773994772986],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 78.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 90, "area": 78.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-25", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "정미원룸 (다세대)",
     "address": "평택시 지산동 820-2",
     "coords": [127.056043036603, 37.077303218321],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 27.7, "rep_avg_price": 100}},
     "deals": [
       {"type": "월세", "price": 100, "rent": 36, "area": 27.74, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "명진쉐르빌 (연립)",
+    "address": "평택시 지산동 824-1",
+    "coords": [127.055787546747, 37.0771721428974],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 59.6, "rep_avg_price": 11000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11000, "rent": 0, "area": 59.59, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2377,6 +2985,15 @@
     ]
   },
   {
+    "name": "예가원룸 (다세대)",
+    "address": "평택시 지산동 850-22",
+    "coords": [127.058175242364, 37.0741960206328],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [3000, 3000], "rep_area": 17.5, "rep_avg_price": 3000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 3000, "rent": 0, "area": 17.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "가온빌 (다세대)",
     "address": "평택시 지산동 850-30",
     "coords": [127.057973883559, 37.0745526729957],
@@ -2392,6 +3009,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7500, 7500], "rep_area": 24.5, "rep_avg_price": 7500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 7500, "rent": 0, "area": 24.46, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "갱신", "p_dep": 7500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대성쉐르빌라동 (다세대)",
+    "address": "평택시 지산동 854-1",
+    "coords": [127.058944175327, 37.0760477920988],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [10400, 10400], "rep_area": 58.7, "rep_avg_price": 10400}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 10400, "rent": 0, "area": 58.68, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2413,6 +3039,33 @@
     ]
   },
   {
+    "name": "세진하우스빌 (다세대)",
+    "address": "평택시 지산동 864-27",
+    "coords": [127.058596776066, 37.0733912468097],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4500, 4500], "rep_area": 33.0, "rep_avg_price": 4500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 4500, "rent": 0, "area": 33.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-04", "period": "26.03~30.03", "renew": "갱신", "p_dep": 3000, "p_rent": 35}
+    ]
+  },
+  {
+    "name": "채움스마트타운 (다세대)",
+    "address": "평택시 지제동 390-5",
+    "coords": [127.063638582314, 37.0215217795402],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 21.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 55, "area": 21.23, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "오성플러스 (다세대)",
+    "address": "평택시 진위면 가곡리 315-1",
+    "coords": [127.075311926593, 37.116723979454],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 77.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 77.19, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "해나하우스 (다세대)",
     "address": "평택시 진위면 견산리 347-11",
     "coords": [127.074228918071, 37.1075846183488],
@@ -2427,9 +3080,20 @@
     "name": "고은이네집 (다세대)",
     "address": "평택시 진위면 견산리 348-10",
     "coords": [127.07499745767, 37.1076132391667],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 13.1, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 13.1, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 43, "area": 13.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 43, "area": 13.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "서율이네 (다세대)",
+    "address": "평택시 진위면 견산리 348-8",
+    "coords": [127.074940018248, 37.1074354951977],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 11.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 11.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 11.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-12", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2453,6 +3117,51 @@
     ]
   },
   {
+    "name": "포에이치빌(FourHVill) (다세대)",
+    "address": "평택시 진위면 견산리 424-25",
+    "coords": [127.075428776465, 37.1081605432355],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 30.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 81, "area": 30.2469, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대산빌라 (다세대)",
+    "address": "평택시 진위면 견산리 438-4",
+    "coords": [127.072542437306, 37.107056826564],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 54.4, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 35, "area": 54.45, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "라온빌 (다세대)",
+    "address": "평택시 진위면 봉남리 146-1",
+    "coords": [127.091036347579, 37.0985352996192],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 35.66, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-17", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "예뜰B (다세대)",
+    "address": "평택시 진위면 봉남리 183",
+    "coords": [127.090161654795, 37.0991304018181],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 27.4, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 27.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우드빌 (다세대)",
+    "address": "평택시 칠괴동 450-1",
+    "coords": [127.08227580343, 37.027179366806],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 52.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 63, "area": 52.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "명신오피스텔 (다세대)",
     "address": "평택시 통복동 159-14",
     "coords": [127.08126802598, 36.9919082486891],
@@ -2465,17 +3174,28 @@
     "name": "리버빌 (다세대)",
     "address": "평택시 통복동 42-3",
     "coords": [127.086143648995, 37.0005079878182],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 15.8, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 300], "rep_area": 15.8, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 35, "area": 16.2, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-31", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 35, "area": 15.75, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "에이스빌 (다세대)",
+    "address": "평택시 통복동 93-9",
+    "coords": [127.085647082763, 36.9967025358255],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 20.9, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 36, "area": 20.865, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-27", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
     "name": "에벤에셀C동 (다세대)",
     "address": "평택시 팽성읍 객사리 147-3",
     "coords": [127.057871032335, 36.9657071308368],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 19.6, "rep_avg_price": 100}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [100, 100], "rep_area": 19.6, "rep_avg_price": 100}},
     "deals": [
+      {"type": "월세", "price": 100, "rent": 34, "area": 19.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-30", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 100, "rent": 38, "area": 19.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2492,8 +3212,9 @@
     "name": "(159-12) (다세대)",
     "address": "평택시 팽성읍 객사리 159-12",
     "coords": [127.057969794256, 36.9660760779757],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 23.1, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 300], "rep_area": 23.1, "rep_avg_price": 250}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 23.1, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 46, "area": 23.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2528,6 +3249,15 @@
     ]
   },
   {
+    "name": "더팰리스스위트팽성 (연립)",
+    "address": "평택시 팽성읍 객사리 176-1",
+    "coords": [127.062448995027, 36.9677019813137],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20500, 20500], "rep_area": 84.6, "rep_avg_price": 20500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20500, "rent": 0, "area": 84.61, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "motherville (다세대)",
     "address": "평택시 팽성읍 객사리 42-14",
     "coords": [127.062753018816, 36.9662396267085],
@@ -2537,12 +3267,30 @@
     ]
   },
   {
+    "name": "세븐캐슬G동 (다세대)",
+    "address": "평택시 팽성읍 근내리 221-3",
+    "coords": [127.05138353539, 36.9730208141776],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 92.7, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 90, "area": 92.73, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-20", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(149-6) (다세대)",
     "address": "평택시 팽성읍 남산리 149-6",
     "coords": [127.062038500843, 36.9608620398853],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6000, 6000], "rep_area": 29.5, "rep_avg_price": 6000}},
     "deals": [
       {"type": "월세", "price": 6000, "rent": 4, "area": 29.46, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(94-1) (연립)",
+    "address": "평택시 팽성읍 남산리 94-1",
+    "coords": [127.063978533862, 36.9622588684205],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 55.7, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 55, "area": 55.72, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-15", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2558,10 +3306,20 @@
     "name": "진양주택 (연립)",
     "address": "평택시 팽성읍 남산리 산76-9",
     "coords": [127.065737999975, 36.9629174136452],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 1000], "rep_area": 53.6, "rep_avg_price": 650}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [300, 1000], "rep_area": 53.6, "rep_avg_price": 600}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 53.64, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 50, "area": 53.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.03~29.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 40, "area": 53.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-17", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(166-1) (연립)",
+    "address": "평택시 팽성읍 대사리 166-1",
+    "coords": [127.063951960054, 36.9432358035636],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 148.7, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 200, "area": 148.7, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2593,6 +3351,16 @@
     ]
   },
   {
+    "name": "WHITECASTLE205 (다세대)",
+    "address": "평택시 팽성읍 송화리 238-6",
+    "coords": [127.05195878708, 36.9520703581021],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [7000, 7000], "rep_area": 30.4, "rep_avg_price": 7000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 7000, "rent": 0, "area": 30.38, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 7000, "rent": 0, "area": 30.38, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "WHITECATSLE304 (다세대)",
     "address": "평택시 팽성읍 송화리 247-35",
     "coords": [127.051744542944, 36.951038073216],
@@ -2620,11 +3388,22 @@
     ]
   },
   {
+    "name": "송화유엔빌리지P동 (다세대)",
+    "address": "평택시 팽성읍 송화리 437-1",
+    "coords": [127.043761060974, 36.9483191806957],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 77.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 44, "area": 77.28, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-29", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "송화유엔빌리지B동 (다세대)",
     "address": "평택시 팽성읍 송화리 437-21",
     "coords": [127.045172050346, 36.9483093711599],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 73.8, "rep_avg_price": 500}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [500, 500], "rep_area": 73.8, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 73.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-15", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 77.28, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-16", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 50, "area": 73.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2683,11 +3462,21 @@
     ]
   },
   {
+    "name": "범규빌 (다세대)",
+    "address": "평택시 평택동 108-1",
+    "coords": [127.081827816354, 36.9901588610505],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 18.6, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 42, "area": 18.58, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "제니스 (다세대)",
     "address": "평택시 평택동 150",
     "coords": [127.084522441968, 36.9892868866417],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 24.2, "rep_avg_price": 500}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [500, 500], "rep_area": 24.2, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 71, "area": 29.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 61, "area": 29.83, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 56, "area": 24.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -2712,12 +3501,39 @@
     ]
   },
   {
-    "name": "JC그린빌- (다세대)",
-    "address": "평택시 포승읍 만호리 378-3",
-    "coords": [126.859564598068, 36.9546092325378],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 40.1, "rep_avg_price": 300}},
+    "name": "우석캐슬B(WooSukCastleB) (연립다세대)",
+    "address": "평택시 포승읍 도곡리 1117-19",
+    "coords": [126.842973116439, 36.9899480455771],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 17.8, "rep_avg_price": 200}},
     "deals": [
-      {"type": "월세", "price": 300, "rent": 50, "area": 40.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-01", "period": "26.03~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 200, "rent": 30, "area": 17.76, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "수암하이츠빌라101동 (연립)",
+    "address": "평택시 포승읍 도곡리 847",
+    "coords": [126.869405483719, 36.9863935740053],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [4000, 4000], "rep_area": 50.1, "rep_avg_price": 4000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 4000, "rent": 0, "area": 50.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "채움빌 (다세대)",
+    "address": "평택시 포승읍 만호리 690-2",
+    "coords": [126.858077454453, 36.9653902405292],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 23.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 23.925, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(690-5) (다세대)",
+    "address": "평택시 포승읍 만호리 690-5",
+    "coords": [126.857566083899, 36.965080465299],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 21.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 50, "area": 20.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-01", "period": "26.03~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2736,6 +3552,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [2400, 2400], "rep_area": 21.8, "rep_avg_price": 2400}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 2400, "rent": 0, "area": 21.75, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신촌빌라 (다세대)",
+    "address": "평택시 포승읍 원정리 305-4",
+    "coords": [126.843600254436, 36.9996578545466],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [3400, 3400], "rep_area": 58.3, "rep_avg_price": 3400}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 3400, "rent": 0, "area": 58.32, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2763,6 +3588,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 59.6, "rep_avg_price": 7000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 7000, "rent": 0, "area": 59.55, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "글로리아 (다세대)",
+    "address": "평택시 합정동 727-9",
+    "coords": [127.0921694548, 36.9934678093215],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 23.9, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 37, "area": 23.865, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-22", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2797,8 +3631,9 @@
     "name": "합정동731-14제1종근린생활시설(강진구) (다세대)",
     "address": "평택시 합정동 731-14",
     "coords": [127.091448036921, 36.9921530561646],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 19.2, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 300], "rep_area": 19.2, "rep_avg_price": 250}},
     "deals": [
+      {"type": "월세", "price": 200, "rent": 35, "area": 19.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 38, "area": 19.19, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2809,6 +3644,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 21.5, "rep_avg_price": 300}},
     "deals": [
       {"type": "월세", "price": 300, "rent": 36, "area": 21.53, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "해든빌 (다세대)",
+    "address": "평택시 합정동 737-5",
+    "coords": [127.092812649024, 36.9918658130294],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 22.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 42, "area": 22.23, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2839,6 +3683,15 @@
     ]
   },
   {
+    "name": "(905-2) (다세대)",
+    "address": "평택시 합정동 905-2",
+    "coords": [127.103667361082, 36.9896258375963],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 27.5, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 31, "area": 27.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "0925-0008 (다세대)",
     "address": "평택시 합정동 925-8",
     "coords": [127.101205321695, 36.9881835249342],
@@ -2854,6 +3707,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 25.2, "rep_avg_price": 200}},
     "deals": [
       {"type": "월세", "price": 200, "rent": 30, "area": 25.185, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-13", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(970-15) (다세대)",
+    "address": "평택시 합정동 970-15",
+    "coords": [127.113248545564, 36.9870005171544],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 34.4, "rep_avg_price": 2500}},
+    "deals": [
+      {"type": "월세", "price": 2500, "rent": 55, "area": 34.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2877,6 +3739,16 @@
     ]
   },
   {
+    "name": "Appletown(2) (다세대)",
+    "address": "평택시 합정동 973-1",
+    "coords": [127.113241870727, 36.9878019474752],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 300], "rep_area": 13.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 33, "area": 13.175, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.03~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 200, "rent": 29, "area": 13.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "로얄해스티아 (다세대)",
     "address": "평택시 합정동 973-15",
     "coords": [127.114606711094, 36.9880729451994],
@@ -2892,6 +3764,42 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 46.6, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 12000, "rent": 0, "area": 46.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(974-1) (다세대)",
+    "address": "평택시 합정동 974-1",
+    "coords": [127.114503754579, 36.9892287744053],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 23.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 23.34, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "명동빌딩 (다세대)",
+    "address": "평택시 합정동 974-15",
+    "coords": [127.114703818376, 36.9887091065847],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 27.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 26.98, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-24", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "0974-0003 (다세대)",
+    "address": "평택시 합정동 974-3",
+    "coords": [127.114780635108, 36.9892967190397],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 29.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 57, "area": 29.79, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(975-5) (다세대)",
+    "address": "평택시 합정동 975-5",
+    "coords": [127.11428851836, 36.9874925034773],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 59.2, "rep_avg_price": 2500}},
+    "deals": [
+      {"type": "월세", "price": 2500, "rent": 60, "area": 59.15, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2919,6 +3827,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [700, 700], "rep_area": 51.0, "rep_avg_price": 700}},
     "deals": [
       {"type": "월세", "price": 700, "rent": 45, "area": 51.04, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-07", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "비원빌라 (연립)",
+    "address": "평택시 현덕면 인광리 406-17",
+    "coords": [126.918617448571, 36.9638032229469],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 39.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 45, "area": 39.24, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {

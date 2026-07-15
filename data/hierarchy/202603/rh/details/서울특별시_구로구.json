@@ -1,5 +1,14 @@
 [
   {
+    "name": "이노시티빌 (다세대)",
+    "address": "구로구 가리봉동 103-1",
+    "coords": [126.888652448243, 37.4828481817954],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2118, 2118], "rep_area": 43.9, "rep_avg_price": 2118}},
+    "deals": [
+      {"type": "월세", "price": 2118, "rent": 28, "area": 43.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-10", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "중앙하이츠빌(106-64) (다세대)",
     "address": "구로구 가리봉동 106-64",
     "coords": [126.889025784708, 37.4833067858494],
@@ -39,8 +48,9 @@
     "name": "트라움펠리스 (다세대)",
     "address": "구로구 가리봉동 118-17",
     "coords": [126.890105768232, 37.4828488216798],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 29.4, "rep_avg_price": 19000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [19000, 19200], "rep_area": 29.4, "rep_avg_price": 19100}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 19200, "rent": 0, "area": 29.43, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 19000, "rent": 0, "area": 29.43, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 19200, "p_rent": 0}
     ]
   },
@@ -66,8 +76,9 @@
     "name": "시그니처 (다세대)",
     "address": "구로구 가리봉동 133-57",
     "coords": [126.891010579836, 37.4817069108287],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 21.0, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [35000, 35000], "rep_area": 21.0, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 35000, "rent": 0, "area": 20.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 35000, "rent": 0, "area": 20.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -75,9 +86,10 @@
     "name": "에버그린 (다세대)",
     "address": "구로구 가리봉동 134-13",
     "coords": [126.893147304105, 37.480222468591],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 29.1, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3000, 3000], "rep_area": 29.1, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "월세", "price": 3000, "rent": 80, "area": 29.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 3000, "rent": 80, "area": 29.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 3000, "rent": 80, "area": 29.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -129,9 +141,19 @@
     "name": "동진캐슬 (다세대)",
     "address": "구로구 가리봉동 2-174",
     "coords": [126.881695501017, 37.4858752948366],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 30.0, "rep_avg_price": 15000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [15000, 15000], "rep_area": 30.0, "rep_avg_price": 15000}},
     "deals": [
+      {"type": "월세", "price": 15000, "rent": 55, "area": 53.565, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "갱신", "p_dep": 15000, "p_rent": 50},
       {"type": "월세", "price": 15000, "rent": 22, "area": 29.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "예그린 (다세대)",
+    "address": "구로구 가리봉동 2-180",
+    "coords": [126.882090502144, 37.4859130815234],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 27.6, "rep_avg_price": 8000}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 40, "area": 27.62, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -168,6 +190,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17080, 17080], "rep_area": 28.1, "rep_avg_price": 17080}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 17080, "rent": 0, "area": 28.07, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우성타운 (다세대)",
+    "address": "구로구 가리봉동 770-4",
+    "coords": [126.884276622902, 37.4858755986621],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 30.3, "rep_avg_price": 8000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 30.33, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -228,11 +259,22 @@
     ]
   },
   {
+    "name": "성산아트빌 (다세대)",
+    "address": "구로구 개봉동 109-5",
+    "coords": [126.845367376904, 37.5058824267227],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [9200, 9200], "rep_area": 33.8, "rep_avg_price": 9200}},
+    "deals": [
+      {"type": "월세", "price": 9200, "rent": 15, "area": 33.8, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 9200, "rent": 15, "area": 33.8, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "평화그린빌 (다세대)",
     "address": "구로구 개봉동 11-31",
     "coords": [126.843393370389, 37.5033316051156],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7800, 7800], "rep_area": 39.8, "rep_avg_price": 7800}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [12700, 12700], "rep_area": 39.8, "rep_avg_price": 12700}, "jeonse": {"count": 1, "range": [7800, 7800], "rep_area": 39.8, "rep_avg_price": 7800}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 12700, "rent": 0, "area": 39.81, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 7800, "rent": 0, "area": 39.81, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -249,8 +291,9 @@
     "name": "프라이빗캐슬개봉1차 (다세대)",
     "address": "구로구 개봉동 112-11",
     "coords": [126.847113680461, 37.5050189246282],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [19950, 22000], "rep_area": 42.7, "rep_avg_price": 19950}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [19950, 22000], "rep_area": 42.7, "rep_avg_price": 19950}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 19950, "rent": 0, "area": 42.69, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 22000, "rent": 0, "area": 45.86, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 19950, "rent": 0, "area": 42.69, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -263,6 +306,15 @@
     "deals": [
       {"type": "월세", "price": 2000, "rent": 80, "area": 38.13, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 70, "area": 47.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "정은쉐르빌(120-16) (다세대)",
+    "address": "구로구 개봉동 120-16",
+    "coords": [126.848031099401, 37.5030224008558],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 44.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 44.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -292,6 +344,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19500, 19500], "rep_area": 69.8, "rep_avg_price": 19500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 19500, "rent": 0, "area": 69.84, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "이호스빌(153-14) (다세대)",
+    "address": "구로구 개봉동 153-14",
+    "coords": [126.855208927847, 37.5002250561338],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.5, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 59.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.04~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -417,8 +478,10 @@
     "name": "동아연립(265-5) (연립)",
     "address": "구로구 개봉동 265-5",
     "coords": [126.857673410085, 37.4892459567566],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [23000, 23000], "rep_area": 78.2, "rep_avg_price": 23000}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [23000, 23000], "rep_area": 78.2, "rep_avg_price": 23000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 87.1, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 80, "area": 87.11, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "26.03~28.03", "renew": "갱신", "p_dep": 1000, "p_rent": 70},
+      {"type": "전세", "price": 23000, "rent": 0, "area": 78.25, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-05", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 23000, "rent": 0, "area": 78.25, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-05", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -441,6 +504,15 @@
     ]
   },
   {
+    "name": "로얄하이츠(278-12) (다세대)",
+    "address": "구로구 개봉동 278-12",
+    "coords": [126.85723702877, 37.4883118066825],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 43.1, "rep_avg_price": 24000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 24000, "rent": 0, "area": 43.09, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "갱신", "p_dep": 24000, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(279-18) (다세대)",
     "address": "구로구 개봉동 279-18",
     "coords": [126.857146691862, 37.4877734357741],
@@ -457,6 +529,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18100, 18100], "rep_area": 28.0, "rep_avg_price": 18100}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 18100, "rent": 0, "area": 28.01, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-08", "period": "26.03~28.03", "renew": "갱신", "p_dep": 18100, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "다원아트3차 (다세대)",
+    "address": "구로구 개봉동 281-8",
+    "coords": [126.852645134347, 37.487470935079],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 54.5, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28500, "rent": 0, "area": 54.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -490,8 +571,9 @@
     "name": "디자인골든빌(304-5) (다세대)",
     "address": "구로구 개봉동 304-5",
     "coords": [126.854560268301, 37.4933320149917],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [16600, 17300], "rep_area": 29.9, "rep_avg_price": 16950}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [16600, 17300], "rep_area": 29.9, "rep_avg_price": 16833}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 16600, "rent": 0, "area": 29.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 17300, "rent": 0, "area": 29.92, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 16600, "rent": 0, "area": 29.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "갱신", "p_dep": 16400, "p_rent": 0}
     ]
@@ -503,6 +585,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 41.4, "rep_avg_price": 3000}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 40, "area": 41.36, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-16", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "시몬아트빌라1차(305-5) (다세대)",
+    "address": "구로구 개봉동 305-5",
+    "coords": [126.852737550921, 37.4935569908189],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33500, 33500], "rep_area": 76.3, "rep_avg_price": 33500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33500, "rent": 0, "area": 76.29, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -598,6 +689,15 @@
     ]
   },
   {
+    "name": "거영블루힐 (다세대)",
+    "address": "구로구 개봉동 312-35",
+    "coords": [126.852116998294, 37.4827012418621],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 29.9, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 29.89, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-08", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "다원리치빌4차 (다세대)",
     "address": "구로구 개봉동 312-41",
     "coords": [126.85166398705, 37.4838850488571],
@@ -622,6 +722,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 46.1, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 75, "area": 46.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼원아이빌(312-69) (다세대)",
+    "address": "구로구 개봉동 312-69",
+    "coords": [126.852053900115, 37.483221765259],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30300, 30300], "rep_area": 42.9, "rep_avg_price": 30300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30300, "rent": 0, "area": 42.86, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -679,11 +788,21 @@
     ]
   },
   {
+    "name": "미래빌리지3(320-2) (다세대)",
+    "address": "구로구 개봉동 320-2",
+    "coords": [126.852289991325, 37.4930924138056],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20500, 20500], "rep_area": 43.4, "rep_avg_price": 20500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20500, "rent": 0, "area": 43.4, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "소라빌라(322-13) (다세대)",
     "address": "구로구 개봉동 322-13",
     "coords": [126.85214872732, 37.4917873093903],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 61.8, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 61.8, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 10000, "rent": 43, "area": 61.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 43, "area": 61.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -691,8 +810,10 @@
     "name": "(323-11) (다세대)",
     "address": "구로구 개봉동 323-11",
     "coords": [126.853475417089, 37.4917521110912],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12300, 12300], "rep_area": 28.6, "rep_avg_price": 12300}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [28000, 30500], "rep_area": 54.8, "rep_avg_price": 29250}, "jeonse": {"count": 1, "range": [12300, 12300], "rep_area": 28.6, "rep_avg_price": 12300}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 28000, "rent": 0, "area": 54.77, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 30500, "rent": 0, "area": 54.77, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 12300, "rent": 0, "area": 28.62, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -700,9 +821,12 @@
     "name": "명문아이빌(323-13) (다세대)",
     "address": "구로구 개봉동 323-13",
     "coords": [126.853487647683, 37.4916269764393],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 58.3, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 4, "range": [28800, 29000], "rep_area": 53.0, "rep_avg_price": 28800}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 29000, "rent": 0, "area": 58.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 28800, "rent": 0, "area": 52.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 28800, "rent": 0, "area": 52.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 29000, "rent": 0, "area": 58.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 28800, "rent": 0, "area": 52.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -731,6 +855,33 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 35.8, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 35000, "rent": 0, "area": 35.81, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성빌라트(331-18) (다세대)",
+    "address": "구로구 개봉동 331-18",
+    "coords": [126.85395267006, 37.4906139196605],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 58.4, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 58.41, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-15", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "미성주택(332-16) (다세대)",
+    "address": "구로구 개봉동 332-16",
+    "coords": [126.853363485742, 37.4905876012528],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 41.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 41.58, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "명품리치빌2 (다세대)",
+    "address": "구로구 개봉동 333-17",
+    "coords": [126.852849192513, 37.4914081393316],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17500, 17500], "rep_area": 28.5, "rep_avg_price": 17500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17500, "rent": 0, "area": 28.47, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -790,12 +941,30 @@
     ]
   },
   {
+    "name": "다청림102 (다세대)",
+    "address": "구로구 개봉동 339-14",
+    "coords": [126.852346916124, 37.4903691924949],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 59.9, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 59.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "청림빌(340-14) (다세대)",
     "address": "구로구 개봉동 340-14",
     "coords": [126.852734130484, 37.4910371416078],
     "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 35.9, "rep_avg_price": 20000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 20000, "rent": 0, "area": 35.91, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "서운빌리지(342-13) (다세대)",
+    "address": "구로구 개봉동 342-13",
+    "coords": [126.853311955463, 37.4881425647457],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19500, 19500], "rep_area": 59.7, "rep_avg_price": 19500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19500, "rent": 0, "area": 59.66, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -806,6 +975,15 @@
     "deals": [
       {"type": "매매", "price": 30800, "rent": 0, "area": 46.19, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 19400, "rent": 0, "area": 29.58, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성아트빌(343-20) (다세대)",
+    "address": "구로구 개봉동 343-20",
+    "coords": [126.853538141687, 37.4888734720265],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 60.0, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29000, "rent": 0, "area": 59.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -828,6 +1006,15 @@
     ]
   },
   {
+    "name": "대광빌라 (다세대)",
+    "address": "구로구 개봉동 349-19",
+    "coords": [126.855422848987, 37.4869317802445],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32000, 32000], "rep_area": 62.5, "rep_avg_price": 32000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32000, "rent": 0, "area": 62.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "일진파크빌A(351-21) (다세대)",
     "address": "구로구 개봉동 351-21",
     "coords": [126.854469212756, 37.4872842548034],
@@ -843,6 +1030,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 25.7, "rep_avg_price": 5000}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 100, "area": 25.68, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-02", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성현빌라C(355-18) (다세대)",
+    "address": "구로구 개봉동 355-18",
+    "coords": [126.850934468786, 37.4861721494443],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 67.2, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 67.23, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-03", "period": "26.03~28.03", "renew": "갱신", "p_dep": 17000, "p_rent": 0}
     ]
   },
   {
@@ -864,6 +1060,15 @@
     ]
   },
   {
+    "name": "시몬쉐르빌(357-2) (다세대)",
+    "address": "구로구 개봉동 357-2",
+    "coords": [126.853842642504, 37.4866121407641],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32500, 32500], "rep_area": 74.4, "rep_avg_price": 32500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32500, "rent": 0, "area": 74.36, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "로얄파크뷰 (다세대)",
     "address": "구로구 개봉동 357-8",
     "coords": [126.852858950855, 37.4865485700529],
@@ -873,12 +1078,49 @@
     ]
   },
   {
+    "name": "금반석시티빌36차 (다세대)",
+    "address": "구로구 개봉동 363-7",
+    "coords": [126.852589745755, 37.485563793708],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32500, 32500], "rep_area": 67.0, "rep_avg_price": 32500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32500, "rent": 0, "area": 66.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "해오름(364-10) (다세대)",
+    "address": "구로구 개봉동 364-10",
+    "coords": [126.85309027386, 37.4849980437647],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 30.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 29.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "해오름(367-17) (다세대)",
     "address": "구로구 개봉동 367-17",
     "coords": [126.853781837202, 37.4841621357855],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [31500, 31500], "rep_area": 43.8, "rep_avg_price": 31500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [20500, 31500], "rep_area": 28.4, "rep_avg_price": 20500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 20500, "rent": 0, "area": 28.37, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 31500, "rent": 0, "area": 43.81, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우덕맨션(368-3) (다세대)",
+    "address": "구로구 개봉동 368-3",
+    "coords": [126.852745708066, 37.4849087754654],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 58.9, "rep_avg_price": 7000}},
+    "deals": [
+      {"type": "월세", "price": 7000, "rent": 45, "area": 58.92, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "유상빌리지(370-12) (다세대)",
+    "address": "구로구 개봉동 370-12",
+    "coords": [126.853039611876, 37.4827508672692],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13200, 13200], "rep_area": 47.7, "rep_avg_price": 13200}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13200, "rent": 0, "area": 47.68, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "갱신", "p_dep": 13300, "p_rent": 0}
     ]
   },
   {
@@ -888,6 +1130,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [27000, 27000], "rep_area": 36.0, "rep_avg_price": 27000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 27000, "rent": 0, "area": 35.99, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "샤인하우스(38-49) (다세대)",
+    "address": "구로구 개봉동 38-49",
+    "coords": [126.842633957419, 37.5020303558335],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19500, 19500], "rep_area": 28.5, "rep_avg_price": 19500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19500, "rent": 0, "area": 28.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -919,6 +1170,15 @@
     ]
   },
   {
+    "name": "우레하이빌(405-18) (다세대)",
+    "address": "구로구 개봉동 405-18",
+    "coords": [126.857474838782, 37.4916341063526],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 17.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "기정아트빌2(416-270) (다세대)",
     "address": "구로구 개봉동 416-270",
     "coords": [126.846325547117, 37.5039509323156],
@@ -928,12 +1188,30 @@
     ]
   },
   {
+    "name": "미건스위트빌(101동)417-17 (다세대)",
+    "address": "구로구 개봉동 417-17",
+    "coords": [126.860753496557, 37.4948054143337],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 22.1, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 22.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "대림아트빌가동 (다세대)",
     "address": "구로구 개봉동 450-1",
     "coords": [126.855634177613, 37.5022056255941],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 36.8, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 12000, "rent": 0, "area": 36.75, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "화인아트빌(450-12) (다세대)",
+    "address": "구로구 개봉동 450-12",
+    "coords": [126.85552602018, 37.501991955168],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 58.9, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 58.92, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 18000, "p_rent": 0}
     ]
   },
   {
@@ -952,6 +1230,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 44.2, "rep_avg_price": 8000}},
     "deals": [
       {"type": "월세", "price": 8000, "rent": 23, "area": 44.18, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-20", "period": "26.03~28.03", "renew": "갱신", "p_dep": 11000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청우아트빌-B동(456-21) (다세대)",
+    "address": "구로구 개봉동 456-21",
+    "coords": [126.854257510593, 37.5013847413323],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13500, 13500], "rep_area": 45.8, "rep_avg_price": 13500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13500, "rent": 0, "area": 45.84, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.03~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "중앙힐타운-가(457-14) (다세대)",
+    "address": "구로구 개봉동 457-14",
+    "coords": [126.853649269413, 37.5011126967018],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 49.1, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 80, "area": 49.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1028,11 +1324,30 @@
     ]
   },
   {
+    "name": "삼현빌라(70-15) (다세대)",
+    "address": "구로구 개봉동 70-15",
+    "coords": [126.846230497623, 37.4982396976359],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 50.3, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 50.3, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우분투포레스트 (다세대)",
+    "address": "구로구 개봉동 70-16",
+    "coords": [126.846725218798, 37.4978136243083],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 25.0, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 56, "area": 25.01, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "우미블루밍 (다세대)",
     "address": "구로구 개봉동 97-16",
     "coords": [126.846904697969, 37.5025162935882],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 3000], "rep_area": 29.2, "rep_avg_price": 2500}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [1000, 3000], "rep_area": 29.2, "rep_avg_price": 2333}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 110, "area": 29.16, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-27", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 3000, "rent": 105, "area": 29.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 2000, "rent": 107, "area": 29.16, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-08", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 114, "area": 26.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-17", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
@@ -1054,6 +1369,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [19780, 19780], "rep_area": 24.4, "rep_avg_price": 19780}},
     "deals": [
       {"type": "월세", "price": 19780, "rent": 10, "area": 24.44, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "썬아트빌 (다세대)",
+    "address": "구로구 고척동 145-117",
+    "coords": [126.858123461836, 37.5025656196954],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 53.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 72, "area": 53.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1129,6 +1453,15 @@
     ]
   },
   {
+    "name": "성화아트빌 (다세대)",
+    "address": "구로구 고척동 241-127",
+    "coords": [126.848270455729, 37.5051775513129],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [22700, 22700], "rep_area": 43.0, "rep_avg_price": 22700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 22700, "rent": 0, "area": 43.02, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "뜰안에 (다세대)",
     "address": "구로구 고척동 241-162",
     "coords": [126.846852722288, 37.5063688318092],
@@ -1160,8 +1493,9 @@
     "name": "계림트라움 (다세대)",
     "address": "구로구 고척동 249-117",
     "coords": [126.846691723432, 37.5058998304071],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [23000, 23000], "rep_area": 39.5, "rep_avg_price": 23000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [14600, 23000], "rep_area": 28.4, "rep_avg_price": 14600}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 14600, "rent": 0, "area": 28.36, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "갱신", "p_dep": 14600, "p_rent": 0},
       {"type": "전세", "price": 23000, "rent": 0, "area": 39.52, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-25", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1172,6 +1506,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [19500, 19500], "rep_area": 29.9, "rep_avg_price": 19500}},
     "deals": [
       {"type": "월세", "price": 19500, "rent": 4, "area": 29.91, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-17", "period": "26.04~28.04", "renew": "갱신", "p_dep": 19500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(253-68) (다세대)",
+    "address": "구로구 고척동 253-68",
+    "coords": [126.849412233916, 37.5037396574686],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 36.2, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 36.205, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1200,6 +1543,15 @@
     "deals": [
       {"type": "전세", "price": 24500, "rent": 0, "area": 87.18, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 24500, "rent": 0, "area": 87.18, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(51-11) (다세대)",
+    "address": "구로구 고척동 51-11",
+    "coords": [126.863209949841, 37.5035579493333],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 43.3, "rep_avg_price": 9000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 9000, "rent": 0, "area": 43.34, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1251,8 +1603,9 @@
     "name": "하늘사랑채7차 (다세대)",
     "address": "구로구 고척동 62-85",
     "coords": [126.868817196362, 37.5014242419248],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5132, 5132], "rep_area": 18.5, "rep_avg_price": 5132}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5132, 6224], "rep_area": 18.5, "rep_avg_price": 5132}},
     "deals": [
+      {"type": "월세", "price": 6224, "rent": 6, "area": 22.89, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.04~28.03", "renew": "갱신", "p_dep": 6128, "p_rent": 5},
       {"type": "월세", "price": 5132, "rent": 4, "area": 18.53, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1260,8 +1613,11 @@
     "name": "고척루미아트다동 (다세대)",
     "address": "구로구 고척동 98-3",
     "coords": [126.856442325423, 37.4994955757444],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15750, 15750], "rep_area": 47.3, "rep_avg_price": 15750}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [14600, 15750], "rep_area": 47.3, "rep_avg_price": 14912}},
     "deals": [
+      {"type": "월세", "price": 14600, "rent": 20, "area": 47.26, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 14700, "rent": 20, "area": 47.26, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 14600, "rent": 20, "area": 47.26, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 15750, "rent": 10, "area": 47.26, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1272,6 +1628,33 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 36.0, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 55, "area": 36.01, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-06", "period": "26.03~28.03", "renew": "갱신", "p_dep": 10500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대원파크빌다동 (다세대)",
+    "address": "구로구 구로동 111-29",
+    "coords": [126.887764675818, 37.5014359245465],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 29.4, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 29.43, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "로렐타운 (다세대)",
+    "address": "구로구 구로동 112-10",
+    "coords": [126.887785722825, 37.5006722522684],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27800, 27800], "rep_area": 43.3, "rep_avg_price": 27800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 27800, "rent": 0, "area": 43.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "어반하우스 (다세대)",
+    "address": "구로구 구로동 112-24",
+    "coords": [126.887360127675, 37.5009216059643],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36400, 36400], "rep_area": 49.1, "rep_avg_price": 36400}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36400, "rent": 0, "area": 49.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1287,9 +1670,28 @@
     "name": "대우스위트힐 (다세대)",
     "address": "구로구 구로동 1288",
     "coords": [126.881436730518, 37.4912139546242],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 24.4, "rep_avg_price": 19000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [29300, 29300], "rep_area": 36.2, "rep_avg_price": 29300}, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 24.4, "rep_avg_price": 19000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 29300, "rent": 0, "area": 36.16, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 19000, "rent": 0, "area": 24.4, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(153-30) (다세대)",
+    "address": "구로구 구로동 153-30",
+    "coords": [126.894584151086, 37.49094611404],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6000, 6000], "rep_area": 30.9, "rep_avg_price": 6000}},
+    "deals": [
+      {"type": "월세", "price": 6000, "rent": 30, "area": 30.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "소금강빌라 (다세대)",
+    "address": "구로구 구로동 155-25",
+    "coords": [126.894405444998, 37.4908985614754],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 44.7, "rep_avg_price": 17000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 44.66, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1308,6 +1710,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20500, 20500], "rep_area": 52.1, "rep_avg_price": 20500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 20500, "rent": 0, "area": 52.08, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "갱신", "p_dep": 19500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "태산빌라(180-15) (다세대)",
+    "address": "구로구 구로동 180-15",
+    "coords": [126.896326973423, 37.4871946900972],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 52.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 66, "area": 52.2, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-02", "period": "26.03~27.03", "renew": "갱신", "p_dep": 1000, "p_rent": 66}
+    ]
+  },
+  {
+    "name": "(252-74) (다세대)",
+    "address": "구로구 구로동 252-74",
+    "coords": [126.892082081896, 37.4841343998747],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 51.9, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 51.93, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1423,8 +1843,9 @@
     "name": "지나주택 (연립)",
     "address": "구로구 구로동 425-79",
     "coords": [126.883691990985, 37.4949630327441],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [7461, 7877], "rep_area": 55.7, "rep_avg_price": 7461}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [7461, 8056], "rep_area": 55.7, "rep_avg_price": 7461}},
     "deals": [
+      {"type": "월세", "price": 8056, "rent": 20, "area": 59.5, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.04~28.03", "renew": "갱신", "p_dep": 7634, "p_rent": 19},
       {"type": "월세", "price": 7461, "rent": 21, "area": 55.74, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-12", "period": "26.04~28.03", "renew": "갱신", "p_dep": 2621, "p_rent": 49},
       {"type": "월세", "price": 7877, "rent": 19, "area": 74.3, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-10", "period": "26.04~28.03", "renew": "갱신", "p_dep": 7713, "p_rent": 17}
     ]
@@ -1457,6 +1878,15 @@
       {"type": "월세", "price": 6181, "rent": 6, "area": 35.71, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.04~28.03", "renew": "갱신", "p_dep": 2457, "p_rent": 25},
       {"type": "월세", "price": 3454, "rent": 12, "area": 26.5, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "26.04~28.03", "renew": "갱신", "p_dep": 1881, "p_rent": 19},
       {"type": "월세", "price": 6114, "rent": 6, "area": 35.71, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-12", "period": "26.04~28.03", "renew": "갱신", "p_dep": 2430, "p_rent": 25}
+    ]
+  },
+  {
+    "name": "비젼빌B (다세대)",
+    "address": "구로구 구로동 429-35",
+    "coords": [126.887782962037, 37.4914831569645],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7500, 7500], "rep_area": 20.0, "rep_avg_price": 7500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7500, "rent": 0, "area": 20.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1506,12 +1936,31 @@
     ]
   },
   {
+    "name": "에버그린 (다세대)",
+    "address": "구로구 구로동 474-21",
+    "coords": [126.881283458246, 37.4983205789438],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [8000, 26700], "rep_area": 27.2, "rep_avg_price": 26700}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 105, "area": 27.29, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 26700, "rent": 39, "area": 27.17, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "삼성하이빌 (다세대)",
     "address": "구로구 구로동 476-56",
     "coords": [126.88091664857, 37.4977227527321],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22600, 22600], "rep_area": 32.9, "rep_avg_price": 22600}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 22600, "rent": 0, "area": 32.94, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "제이하우스 (다세대)",
+    "address": "구로구 구로동 476-65",
+    "coords": [126.881995775182, 37.4979009733636],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 29.7, "rep_avg_price": 28000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 28000, "rent": 0, "area": 29.71, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-24", "period": "26.03~28.03", "renew": "갱신", "p_dep": 34500, "p_rent": 0}
     ]
   },
   {
@@ -1542,6 +1991,15 @@
     ]
   },
   {
+    "name": "삼성드림빌(546-4) (다세대)",
+    "address": "구로구 구로동 546-4",
+    "coords": [126.888281746225, 37.5021848798658],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20900, 20900], "rep_area": 30.0, "rep_avg_price": 20900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20900, "rent": 0, "area": 29.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "현대가우스빌 (다세대)",
     "address": "구로구 구로동 549-69",
     "coords": [126.88605056903, 37.5012709312637],
@@ -1569,12 +2027,40 @@
     ]
   },
   {
+    "name": "청암하이츠빌B동 (연립다세대)",
+    "address": "구로구 구로동 570-183",
+    "coords": [126.885272280122, 37.5025969984524],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 27.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 27.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "블리시움3차 (다세대)",
+    "address": "구로구 구로동 570-86",
+    "coords": [126.884147629993, 37.502189277156],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 28.7, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 20, "area": 28.72, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "해오름 (다세대)",
     "address": "구로구 구로동 642-88",
     "coords": [126.87681497807, 37.4987778595101],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [17000, 17000], "rep_area": 50.8, "rep_avg_price": 17000}},
     "deals": [
       {"type": "월세", "price": 17000, "rent": 20, "area": 50.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "베스트빌1차 (다세대)",
+    "address": "구로구 구로동 706-1",
+    "coords": [126.883035027658, 37.4904396906466],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [20500, 20500], "rep_area": 23.4, "rep_avg_price": 20500}, "monthly": {"count": 1, "range": [3500, 3500], "rep_area": 19.8, "rep_avg_price": 3500}},
+    "deals": [
+      {"type": "전세", "price": 20500, "rent": 0, "area": 23.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.03~27.03", "renew": "갱신", "p_dep": 20500, "p_rent": 0},
+      {"type": "월세", "price": 3500, "rent": 90, "area": 19.84, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1587,12 +2073,39 @@
     ]
   },
   {
+    "name": "(738-37) (다세대)",
+    "address": "구로구 구로동 738-37",
+    "coords": [126.885357658643, 37.4876579447434],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13500, 13500], "rep_area": 52.6, "rep_avg_price": 13500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13500, "rent": 0, "area": 52.61, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(738-9) (다세대)",
     "address": "구로구 구로동 738-9",
     "coords": [126.885617245706, 37.4878960623334],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 35.4, "rep_avg_price": 10000}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 30, "area": 35.4, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(739-1) (다세대)",
+    "address": "구로구 구로동 739-1",
+    "coords": [126.886268321317, 37.4884108958417],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 43.1, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 43.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(739-15) (다세대)",
+    "address": "구로구 구로동 739-15",
+    "coords": [126.885990334658, 37.488149786256],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 30.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 42, "area": 30.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1623,6 +2136,15 @@
     ]
   },
   {
+    "name": "(742-80) (다세대)",
+    "address": "구로구 구로동 742-80",
+    "coords": [126.887401091237, 37.4897577254254],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.5, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 75, "area": 84.54, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(744-30) (다세대)",
     "address": "구로구 구로동 744-30",
     "coords": [126.886455022421, 37.4878006428522],
@@ -1649,6 +2171,15 @@
       {"type": "월세", "price": 600, "rent": 45, "area": 30.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 600, "rent": 40, "area": 42.65, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 600, "rent": 45, "area": 30.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(746-1) (다세대)",
+    "address": "구로구 구로동 746-1",
+    "coords": [126.886779332633, 37.4874863222495],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12900, 12900], "rep_area": 46.7, "rep_avg_price": 12900}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12900, "rent": 0, "area": 46.69, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "26.03~28.03", "renew": "갱신", "p_dep": 13900, "p_rent": 0}
     ]
   },
   {
@@ -1787,6 +2318,15 @@
     ]
   },
   {
+    "name": "예하임 (다세대)",
+    "address": "구로구 궁동 134-7",
+    "coords": [126.833184115501, 37.5004276562353],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5999, 5999], "rep_area": 24.8, "rep_avg_price": 5999}},
+    "deals": [
+      {"type": "월세", "price": 5999, "rent": 6, "area": 24.78, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.04~28.03", "renew": "갱신", "p_dep": 2385, "p_rent": 25}
+    ]
+  },
+  {
     "name": "예하임 (연립)",
     "address": "구로구 궁동 134-7",
     "coords": [126.833184115501, 37.5004276562353],
@@ -1841,6 +2381,15 @@
     ]
   },
   {
+    "name": "삼성드림빌 (다세대)",
+    "address": "구로구 궁동 175-1",
+    "coords": [126.831056059335, 37.495977449672],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11790, 11790], "rep_area": 29.9, "rep_avg_price": 11790}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11790, "rent": 0, "area": 29.93, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-10", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "윤성주택8동(178-21) (다세대)",
     "address": "구로구 궁동 178-21",
     "coords": [126.830412833872, 37.497330739488],
@@ -1859,12 +2408,40 @@
     ]
   },
   {
+    "name": "윤성주택9동(178-29) (다세대)",
+    "address": "구로구 궁동 178-29",
+    "coords": [126.830670014357, 37.4974202178428],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 37.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 37.2, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-05", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "그루안 (다세대)",
     "address": "구로구 궁동 187-4",
     "coords": [126.832226685694, 37.4954778884406],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11410, 11410], "rep_area": 59.3, "rep_avg_price": 11410}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [11410, 17622], "rep_area": 58.1, "rep_avg_price": 17622}},
     "deals": [
+      {"type": "월세", "price": 17622, "rent": 20, "area": 58.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 11410, "rent": 44, "area": 59.32, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.04~28.03", "renew": "갱신", "p_dep": 10008, "p_rent": 44}
+    ]
+  },
+  {
+    "name": "중앙빌라(190-50) (연립)",
+    "address": "구로구 궁동 190-50",
+    "coords": [126.834420061457, 37.4946986395944],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17600, 17600], "rep_area": 38.9, "rep_avg_price": 17600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17600, "rent": 0, "area": 38.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대명아트빌(192-50) (다세대)",
+    "address": "구로구 궁동 192-50",
+    "coords": [126.835645675427, 37.4958687754512],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 59.1, "rep_avg_price": 34000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34000, "rent": 0, "area": 59.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1874,6 +2451,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [34500, 34500], "rep_area": 50.4, "rep_avg_price": 34500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 34500, "rent": 0, "area": 50.37, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "상떼그린빌(101동) (다세대)",
+    "address": "구로구 궁동 197-3",
+    "coords": [126.83734590108, 37.4941394852859],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17500, 17500], "rep_area": 25.8, "rep_avg_price": 17500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17500, "rent": 0, "area": 25.83, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1916,9 +2502,11 @@
     "name": "우신빌라 (연립)",
     "address": "구로구 궁동 213-21",
     "coords": [126.830509504324, 37.4942361938098],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [59500, 59500], "rep_area": 57.2, "rep_avg_price": 59500}, "jeonse": {"count": 3, "range": [16000, 20000], "rep_area": 46.5, "rep_avg_price": 16500}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [59500, 59500], "rep_area": 57.2, "rep_avg_price": 59500}, "jeonse": {"count": 5, "range": [15000, 20000], "rep_area": 46.5, "rep_avg_price": 15750}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 59500, "rent": 0, "area": 57.19, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 15000, "rent": 0, "area": 46.51, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 15000, "rent": 0, "area": 46.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 20000, "rent": 0, "area": 57.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 17000, "rent": 0, "area": 46.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 16000, "rent": 0, "area": 46.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
@@ -1928,8 +2516,9 @@
     "name": "현대힐타운(237-1) (다세대)",
     "address": "구로구 궁동 237-1",
     "coords": [126.824657933265, 37.4963554689591],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23600, 23600], "rep_area": 42.3, "rep_avg_price": 23600}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [22500, 23600], "rep_area": 42.3, "rep_avg_price": 23050}},
     "deals": [
+      {"type": "월세", "price": 22500, "rent": 7, "area": 42.29, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "갱신", "p_dep": 23600, "p_rent": 0},
       {"type": "월세", "price": 23600, "rent": 4, "area": 42.29, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1971,6 +2560,15 @@
     ]
   },
   {
+    "name": "별장빌라2차(284-3) (연립)",
+    "address": "구로구 궁동 284-3",
+    "coords": [126.82846701795, 37.4974096513774],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 71.7, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 71.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "로제트힐 (연립)",
     "address": "구로구 궁동 292",
     "coords": [126.836351435718, 37.4960207637791],
@@ -2001,8 +2599,9 @@
     "name": "신도림큐브스테이트 (다세대)",
     "address": "구로구 신도림동 436-7",
     "coords": [126.883752834602, 37.5064852414507],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [22500, 22500], "rep_area": 25.8, "rep_avg_price": 22500}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 28.0, "rep_avg_price": 30000}, "jeonse": null, "monthly": {"count": 1, "range": [22500, 22500], "rep_area": 25.8, "rep_avg_price": 22500}},
     "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 27.97, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 22500, "rent": 27, "area": 25.8, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "갱신", "p_dep": 22500, "p_rent": 22}
     ]
   },
@@ -2056,9 +2655,37 @@
     "name": "(136-42) (다세대)",
     "address": "구로구 오류동 136-42",
     "coords": [126.842576356589, 37.4924048356032],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 40.0, "rep_avg_price": 4000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 4000], "rep_area": 40.0, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 85, "area": 39.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 4000, "rent": 70, "area": 39.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-18", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "화신빌라 (다세대)",
+    "address": "구로구 오류동 136-50",
+    "coords": [126.84304182101, 37.492550156548],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [11000, 11000], "rep_area": 43.6, "rep_avg_price": 11000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 11000, "rent": 0, "area": 43.56, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "나비빌라 (연립)",
+    "address": "구로구 오류동 14-5",
+    "coords": [126.839835186673, 37.4976680716322],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 96.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 96.34, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "행운빌라 (다세대)",
+    "address": "구로구 오류동 145-33",
+    "coords": [126.847307458651, 37.4925571883502],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 34.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 39, "area": 34.34, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2068,6 +2695,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.5, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 35.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "명성하우스 (다세대)",
+    "address": "구로구 오류동 150-1",
+    "coords": [126.843916533311, 37.4916558051081],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17800, 17800], "rep_area": 34.4, "rep_avg_price": 17800}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17800, "rent": 0, "area": 34.35, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2116,6 +2752,33 @@
     ]
   },
   {
+    "name": "정원파크빌 (다세대)",
+    "address": "구로구 오류동 18-10",
+    "coords": [126.841514378371, 37.4991768174462],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 44.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 110, "area": 43.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "천왕빌딩 (다세대)",
+    "address": "구로구 오류동 182-17",
+    "coords": [126.838279805985, 37.4877539823242],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6000, 6000], "rep_area": 14.5, "rep_avg_price": 6000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 6000, "rent": 0, "area": 14.52, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성신빌라(가)(다) (연립)",
+    "address": "구로구 오류동 184-1",
+    "coords": [126.838768232996, 37.4886143006593],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 82.6, "rep_avg_price": 17000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 82.65, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "서서울가든맨션 (연립)",
     "address": "구로구 오류동 184-2",
     "coords": [126.83890002433, 37.4882694848756],
@@ -2157,8 +2820,10 @@
     "name": "비전타워 (다세대)",
     "address": "구로구 오류동 201-7",
     "coords": [126.836905356615, 37.4896588938541],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [25400, 27300], "rep_area": 53.3, "rep_avg_price": 25400}, "monthly": null},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [25400, 27300], "rep_area": 53.3, "rep_avg_price": 25400}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 25400, "rent": 0, "area": 53.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 24200, "p_rent": 0},
+      {"type": "전세", "price": 27300, "rent": 0, "area": 58.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 26500, "p_rent": 0},
       {"type": "전세", "price": 25400, "rent": 0, "area": 53.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 24200, "p_rent": 0},
       {"type": "전세", "price": 27300, "rent": 0, "area": 58.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 26500, "p_rent": 0}
     ]
@@ -2191,6 +2856,15 @@
     ]
   },
   {
+    "name": "동부그린 (연립)",
+    "address": "구로구 오류동 236-5",
+    "coords": [126.831834417273, 37.4897717988073],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 39.8, "rep_avg_price": 13000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 39.765, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "유앤미다동 (다세대)",
     "address": "구로구 오류동 267-3",
     "coords": [126.835204586502, 37.488538113978],
@@ -2219,6 +2893,24 @@
     ]
   },
   {
+    "name": "비앤비퀸즈빌(355) (연립)",
+    "address": "구로구 오류동 355",
+    "coords": [126.833006389836, 37.4875549119956],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28000, 28000], "rep_area": 54.9, "rep_avg_price": 28000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28000, "rent": 0, "area": 54.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "다원리치타운 (다세대)",
+    "address": "구로구 오류동 358",
+    "coords": [126.830881607243, 37.4868839730863],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [23000, 23000], "rep_area": 24.4, "rep_avg_price": 23000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 23000, "rent": 0, "area": 24.36, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-24", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "4-10 (다세대)",
     "address": "구로구 오류동 4-10",
     "coords": [126.837526803689, 37.4970748508709],
@@ -2240,8 +2932,9 @@
     "name": "칸타빌레6차 (연립)",
     "address": "구로구 오류동 55-5",
     "coords": [126.845320827311, 37.4959915820277],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 29.7, "rep_avg_price": 1000}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [1000, 1000], "rep_area": 29.7, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 58, "area": 29.7, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 73, "area": 29.7, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-20", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 72, "area": 29.7, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 59, "area": 29.7, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-16", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
@@ -2258,6 +2951,42 @@
     ]
   },
   {
+    "name": "양지타운ll (다세대)",
+    "address": "구로구 오류동 6-13",
+    "coords": [126.839543885475, 37.4960785726161],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6702, 6702], "rep_area": 54.7, "rep_avg_price": 6702}},
+    "deals": [
+      {"type": "월세", "price": 6702, "rent": 13, "area": 54.67, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-13", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대동빌101동102동 (다세대)",
+    "address": "구로구 오류동 6-14",
+    "coords": [126.839665225076, 37.4957078833601],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1200, 1200], "rep_area": 29.5, "rep_avg_price": 1200}},
+    "deals": [
+      {"type": "월세", "price": 1200, "rent": 125, "area": 29.47, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "J팰리스3차(A동) (다세대)",
+    "address": "구로구 오류동 6-242",
+    "coords": [126.838334800169, 37.4964437236657],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 18.7, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 18.71, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(81-1) (다세대)",
+    "address": "구로구 오류동 81-1",
+    "coords": [126.839083296357, 37.4952351452537],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 80.3, "rep_avg_price": 14000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 14000, "rent": 0, "area": 80.33, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-11", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "하늘사랑채6차 (다세대)",
     "address": "구로구 오류동 81-117",
     "coords": [126.837626546971, 37.4950368228265],
@@ -2268,11 +2997,21 @@
     ]
   },
   {
+    "name": "(유명빌라9-205) (다세대)",
+    "address": "구로구 오류동 9-205",
+    "coords": [126.84180607642, 37.4962077643315],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 29.2, "rep_avg_price": 2500}},
+    "deals": [
+      {"type": "월세", "price": 2500, "rent": 42, "area": 29.17, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "양지쉐르빌 (다세대)",
     "address": "구로구 오류동 9-33",
     "coords": [126.840813971755, 37.4957912481768],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 33.4, "rep_avg_price": 16000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [15876, 16000], "rep_area": 33.4, "rep_avg_price": 15938}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 15876, "rent": 0, "area": 33.44, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 16000, "rent": 0, "area": 33.44, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -2293,9 +3032,10 @@
     "name": "서울가든빌라2단지 (연립)",
     "address": "구로구 오류동 97-4",
     "coords": [126.8310206217, 37.492332379239],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 45.9, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 45.9, "rep_avg_price": 40000}, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 45.9, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 40000, "rent": 0, "area": 45.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 40000, "rent": 0, "area": 45.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 15000, "rent": 0, "area": 45.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2308,23 +3048,48 @@
     ]
   },
   {
+    "name": "동부에이스 (다세대)",
+    "address": "구로구 온수동 16-1",
+    "coords": [126.82182218766, 37.4933784475736],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31000, 31000], "rep_area": 50.0, "rep_avg_price": 31000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 31000, "rent": 0, "area": 49.99, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동진빌라 (연립)",
     "address": "구로구 온수동 44-1",
     "coords": [126.825410459331, 37.4909837946144],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [50500, 50500], "rep_area": 37.0, "rep_avg_price": 50500}, "jeonse": {"count": 2, "range": [11000, 11000], "rep_area": 47.5, "rep_avg_price": 11000}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [50500, 50500], "rep_area": 37.0, "rep_avg_price": 50500}, "jeonse": {"count": 2, "range": [11000, 11000], "rep_area": 47.5, "rep_avg_price": 11000}, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 42.4, "rep_avg_price": 2500}},
     "deals": [
       {"type": "매매", "price": 50500, "rent": 0, "area": 36.99, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 11000, "rent": 0, "area": 47.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2500, "rent": 40, "area": 42.435, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-16", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 11000, "rent": 0, "area": 47.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대흥빌라 (연립)",
+    "address": "구로구 온수동 45-31",
+    "coords": [126.822047747839, 37.4909140851168],
+    "stats": {"total": 4, "sale": {"count": 2, "range": [57000, 68000], "rep_area": 61.3, "rep_avg_price": 57000}, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 61.3, "rep_avg_price": 750}},
+    "deals": [
+      {"type": "매매", "price": 68000, "rent": 0, "area": 73.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 57000, "rent": 0, "area": 61.26, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 61.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 61.26, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
     "name": "성원빌라 (연립)",
     "address": "구로구 온수동 45-32",
     "coords": [126.823491861051, 37.489751250106],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [42500, 42500], "rep_area": 68.5, "rep_avg_price": 42500}, "jeonse": {"count": 1, "range": [11500, 11500], "rep_area": 82.0, "rep_avg_price": 11500}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [42500, 71000], "rep_area": 68.5, "rep_avg_price": 56750}, "jeonse": {"count": 1, "range": [11500, 11500], "rep_area": 82.0, "rep_avg_price": 11500}, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 68.5, "rep_avg_price": 2000}},
     "deals": [
       {"type": "매매", "price": 42500, "rent": 0, "area": 68.53, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 71000, "rent": 0, "area": 68.53, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 40, "area": 68.53, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 50, "area": 68.53, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 11500, "rent": 0, "area": 81.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.03~28.03", "renew": "갱신", "p_dep": 11500, "p_rent": 0}
     ]
   },
@@ -2335,6 +3100,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 55.5, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 60, "area": 55.48, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한백 (연립다세대)",
+    "address": "구로구 온수동 67-12",
+    "coords": [126.818923254655, 37.4930149889589],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 84.2, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40000, "rent": 0, "area": 84.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "목화빌라15차 (다세대)",
+    "address": "구로구 온수동 68-5",
+    "coords": [126.818076784378, 37.4942577974773],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [23900, 23900], "rep_area": 59.7, "rep_avg_price": 23900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 23900, "rent": 0, "area": 59.69, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -2365,6 +3148,24 @@
     ]
   },
   {
+    "name": "온수그린빌3차 (연립)",
+    "address": "구로구 온수동 86-14",
+    "coords": [126.817841050615, 37.4966159065756],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [22500, 22500], "rep_area": 59.9, "rep_avg_price": 22500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 22500, "rent": 0, "area": 59.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "정산하이츠빌라 (연립)",
+    "address": "구로구 온수동 93",
+    "coords": [126.816841152279, 37.4956461400349],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 41.6, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 45, "area": 41.64, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동삼파크빌라 (연립)",
     "address": "구로구 항동 1",
     "coords": [126.824273362538, 37.487366008576],
@@ -2377,8 +3178,9 @@
     "name": "매화빌라 (연립)",
     "address": "구로구 항동 232",
     "coords": [126.822897390882, 37.4765475360742],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [22000, 23000], "rep_area": 59.9, "rep_avg_price": 22500}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [21000, 23000], "rep_area": 59.9, "rep_avg_price": 22000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 59.89, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 23000, "rent": 0, "area": 59.89, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 22000, "rent": 0, "area": 59.89, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -2387,8 +3189,9 @@
     "name": "비앤비퀸즈빌 (다세대)",
     "address": "구로구 항동 6",
     "coords": [126.825220412844, 37.486552812942],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 44.2, "rep_avg_price": 25000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 59.5, "rep_avg_price": 33000}, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 44.2, "rep_avg_price": 25000}},
     "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 59.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 25000, "rent": 25, "area": 44.19, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   }

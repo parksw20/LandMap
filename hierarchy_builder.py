@@ -54,13 +54,19 @@ class HierarchyBuilder:
         os.makedirs(target_dir, exist_ok=True)
 
         # Summary (Level 1-3)
-        sido_s = [{"name": n, "coords": g.iloc[0]['__coords'], "stats": self._get_stats(g)} for n, g in df.groupby('__sido') if n]
+        # 좌표는 '첫 거래 위치'가 아닌 지역명 지오코딩 좌표(__*_coords)를 사용 → 유형과 무관하게 위치 고정
+        def _rc(g, col):
+            first = g.iloc[0]
+            c = first.get(col)
+            return c if c is not None else first['__coords']
+
+        sido_s = [{"name": n, "coords": _rc(g, '__sido_coords'), "stats": self._get_stats(g)} for n, g in df.groupby('__sido') if n]
         self._save_json(sido_s, target_dir / "summary_sido.json")
-        
-        gungu_s = [{"name": f"{s} {gu}", "sido": s, "coords": g.iloc[0]['__coords'], "stats": self._get_stats(g)} for (s, gu), g in df.groupby(['__sido', '__gungu']) if gu]
+
+        gungu_s = [{"name": f"{s} {gu}", "sido": s, "coords": _rc(g, '__gungu_coords'), "stats": self._get_stats(g)} for (s, gu), g in df.groupby(['__sido', '__gungu']) if gu]
         self._save_json(gungu_s, target_dir / "summary_gungu.json")
-        
-        dong_s = [{"name": d, "parent": f"{s} {gu}", "coords": g.iloc[0]['__coords'], "stats": self._get_stats(g)} for (s, gu, d), g in df.groupby(['__sido', '__gungu', '__dong']) if d]
+
+        dong_s = [{"name": d, "parent": f"{s} {gu}", "coords": _rc(g, '__dong_coords'), "stats": self._get_stats(g)} for (s, gu, d), g in df.groupby(['__sido', '__gungu', '__dong']) if d]
         self._save_json(dong_s, target_dir / "summary_dong.json")
 
         # Details & Global Search Index

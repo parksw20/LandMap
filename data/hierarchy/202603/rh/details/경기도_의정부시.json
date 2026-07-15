@@ -12,8 +12,9 @@
     "name": "남성 (연립)",
     "address": "의정부시 가능동 15-234",
     "coords": [127.046178353176, 37.7510750725903],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12200, 12200], "rep_area": 60.7, "rep_avg_price": 12200}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [9500, 9500], "rep_area": 60.7, "rep_avg_price": 9500}, "jeonse": {"count": 1, "range": [12200, 12200], "rep_area": 60.7, "rep_avg_price": 12200}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 9500, "rent": 0, "area": 60.69, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 12200, "rent": 0, "area": 60.69, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -63,6 +64,15 @@
     ]
   },
   {
+    "name": "하모니빌라(1동,2동,3동) (다세대)",
+    "address": "의정부시 가능동 357-9",
+    "coords": [127.030454574313, 37.7540255368765],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 55.3, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 50, "area": 55.27, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "창도 (다세대)",
     "address": "의정부시 가능동 44-55",
     "coords": [127.042279604373, 37.7520525537646],
@@ -70,6 +80,15 @@
     "deals": [
       {"type": "전세", "price": 7200, "rent": 0, "area": 44.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 9000, "rent": 0, "area": 44.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "부림스카이타워 (연립)",
+    "address": "의정부시 가능동 59-7",
+    "coords": [127.041150718019, 37.7560318045567],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 36.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 53, "area": 36.28, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-24", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -91,11 +110,21 @@
     ]
   },
   {
+    "name": "무림주택(가동) (연립)",
+    "address": "의정부시 가능동 625-20",
+    "coords": [127.039890831699, 37.7527660516923],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 51.8, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 51.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "대가트라움3차(A동) (다세대)",
     "address": "의정부시 가능동 626-15",
     "coords": [127.039365658786, 37.752516299913],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [17000, 17000], "rep_area": 47.6, "rep_avg_price": 17000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [17000, 18600], "rep_area": 47.6, "rep_avg_price": 17800}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 18600, "rent": 0, "area": 47.55, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 17000, "rent": 0, "area": 47.55, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -163,12 +192,30 @@
     ]
   },
   {
+    "name": "하얏트빌리지C동 (다세대)",
+    "address": "의정부시 가능동 652-37",
+    "coords": [127.036693334003, 37.7469214310351],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 46.5, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 85, "area": 46.53, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "서울(1동) (다세대)",
     "address": "의정부시 가능동 664-14",
     "coords": [127.035875485157, 37.7481004194858],
     "stats": {"total": 1, "sale": {"count": 1, "range": [8500, 8500], "rep_area": 48.3, "rep_avg_price": 8500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 8500, "rent": 0, "area": 48.3, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "아산파크뷰 (연립)",
+    "address": "의정부시 가능동 671-2",
+    "coords": [127.034664271023, 37.7496381035983],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 58.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 90, "area": 58.82, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-24", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -190,12 +237,31 @@
     ]
   },
   {
+    "name": "동진빌라18차 (다세대)",
+    "address": "의정부시 가능동 675-6",
+    "coords": [127.033789031675, 37.7487636079863],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 56.3, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 55, "area": 56.31, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "대신 (연립)",
     "address": "의정부시 가능동 679-3",
     "coords": [127.033729869504, 37.7474127133496],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 49.1, "rep_avg_price": 8000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [8000, 8000], "rep_area": 49.1, "rep_avg_price": 8000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 49.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 8000, "rent": 0, "area": 49.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동아금강맨션(나동) (다세대)",
+    "address": "의정부시 가능동 681-10",
+    "coords": [127.032335594734, 37.7478969240103],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7100, 7100], "rep_area": 49.2, "rep_avg_price": 7100}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7100, "rent": 0, "area": 49.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -226,6 +292,15 @@
     ]
   },
   {
+    "name": "센텀파크빌(7동,8동) (다세대)",
+    "address": "의정부시 가능동 686-5",
+    "coords": [127.031468146432, 37.7468195106989],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [21400, 21400], "rep_area": 57.0, "rep_avg_price": 21400}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21400, "rent": 0, "area": 57.008, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "아리띠애 (다세대)",
     "address": "의정부시 가능동 687-3",
     "coords": [127.030841709443, 37.7470894261841],
@@ -253,6 +328,15 @@
     ]
   },
   {
+    "name": "재훈빌라(18차)나동 (다세대)",
+    "address": "의정부시 가능동 698-29",
+    "coords": [127.027845056223, 37.7445217813843],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10500, 10500], "rep_area": 58.5, "rep_avg_price": 10500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10500, "rent": 0, "area": 58.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "공간라움 (다세대)",
     "address": "의정부시 가능동 706-50",
     "coords": [127.031299840091, 37.7434938102552],
@@ -277,6 +361,16 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [10500, 10500], "rep_area": 64.1, "rep_avg_price": 10500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 10500, "rent": 0, "area": 64.11, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "파인트리 (다세대)",
+    "address": "의정부시 가능동 713-6",
+    "coords": [127.031418405992, 37.7451070532552],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 53.8, "rep_avg_price": 2500}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 80, "area": 53.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 85, "area": 53.82, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -398,6 +492,15 @@
     ]
   },
   {
+    "name": "우진빌라 (다세대)",
+    "address": "의정부시 금오동 213-10",
+    "coords": [127.066117509867, 37.7536072929626],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [10800, 10800], "rep_area": 50.1, "rep_avg_price": 10800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 10800, "rent": 0, "area": 50.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "양주빌라 (다세대)",
     "address": "의정부시 금오동 221-11",
     "coords": [127.067738560536, 37.7549260188677],
@@ -417,12 +520,39 @@
     ]
   },
   {
+    "name": "금오리치빌 (다세대)",
+    "address": "의정부시 금오동 263-3",
+    "coords": [127.060134317488, 37.754700938005],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 55.5, "rep_avg_price": 15000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 15000, "rent": 0, "area": 55.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "힐링타운 (다세대)",
+    "address": "의정부시 금오동 265-78",
+    "coords": [127.059586915753, 37.7554174847584],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 46.6, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16000, "rent": 0, "area": 46.56, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "산장 (연립)",
     "address": "의정부시 금오동 270-13",
     "coords": [127.058676859231, 37.755025840538],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 66.4, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 40, "area": 66.42, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진주빌라(283-21) (다세대)",
+    "address": "의정부시 금오동 283-21",
+    "coords": [127.059528951924, 37.7519054539205],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 47.9, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 47.86, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -441,6 +571,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 43.3, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 40, "area": 43.31, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-12", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(416-13) (다세대)",
+    "address": "의정부시 금오동 416-13",
+    "coords": [127.057071968991, 37.7497207416244],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 36.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 35, "area": 36.57, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -471,11 +610,21 @@
     ]
   },
   {
+    "name": "양지그린빌 (다세대)",
+    "address": "의정부시 금오동 457-8",
+    "coords": [127.078080932362, 37.7560151064686],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 51.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 51.18, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "해들녘愛 (다세대)",
     "address": "의정부시 금오동 80-9",
     "coords": [127.074106956977, 37.7586616486226],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [15500, 15500], "rep_area": 50.2, "rep_avg_price": 15500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [14800, 15500], "rep_area": 50.2, "rep_avg_price": 15500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 14800, "rent": 0, "area": 52.03, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 15500, "rent": 0, "area": 50.21, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -600,6 +749,15 @@
     ]
   },
   {
+    "name": "초원빌라(122-5) (다세대)",
+    "address": "의정부시 신곡동 122-5",
+    "coords": [127.06774351045, 37.7456682130304],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 53.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 53.64, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "청광빌라(122-73) (다세대)",
     "address": "의정부시 신곡동 122-73",
     "coords": [127.068039160703, 37.7455085713381],
@@ -685,12 +843,30 @@
     ]
   },
   {
+    "name": "해피빌 (다세대)",
+    "address": "의정부시 신곡동 612-1",
+    "coords": [127.055479544733, 37.7345111638281],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 29.4, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 29.35, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "정은스카이C,D (다세대)",
     "address": "의정부시 신곡동 78-18",
     "coords": [127.064926980148, 37.7467754664147],
     "stats": {"total": 1, "sale": {"count": 1, "range": [7400, 7400], "rep_area": 40.7, "rep_avg_price": 7400}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 7400, "rent": 0, "area": 40.71, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "정은스카이E,F (다세대)",
+    "address": "의정부시 신곡동 78-23",
+    "coords": [127.06544648929, 37.7471134025545],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10500, 10500], "rep_area": 45.2, "rep_avg_price": 10500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10500, "rent": 0, "area": 45.25, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "갱신", "p_dep": 10500, "p_rent": 0}
     ]
   },
   {
@@ -763,6 +939,33 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 46.1, "rep_avg_price": 9000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 9000, "rent": 0, "area": 46.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "산장주택(235-37) (다세대)",
+    "address": "의정부시 용현동 235-37",
+    "coords": [127.084176815662, 37.7331295554091],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 45.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 45.115, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "산장주택 (다세대)",
+    "address": "의정부시 용현동 235-38",
+    "coords": [127.084336186195, 37.7331143952969],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 45.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 45.115, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청우하이츠빌라 (다세대)",
+    "address": "의정부시 용현동 235-4",
+    "coords": [127.084041329843, 37.7326974566597],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14500, 14500], "rep_area": 71.0, "rep_avg_price": 14500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 14500, "rent": 0, "area": 70.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -875,6 +1078,15 @@
     ]
   },
   {
+    "name": "해피빌3차 (다세대)",
+    "address": "의정부시 의정부동 210-18",
+    "coords": [127.046506523068, 37.7416668519998],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 26.6, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 26.6, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-26", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "한성아트빌라(가동) (다세대)",
     "address": "의정부시 의정부동 216-7",
     "coords": [127.050052328541, 37.7480047045697],
@@ -941,9 +1153,19 @@
     "name": "진영빌라A동 (다세대)",
     "address": "의정부시 의정부동 235-18",
     "coords": [127.044132055596, 37.7497913468741],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [14750, 14750], "rep_area": 53.9, "rep_avg_price": 14750}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [14750, 14750], "rep_area": 53.9, "rep_avg_price": 14750}, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 49.6, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 14750, "rent": 0, "area": 53.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 14750, "rent": 0, "area": 53.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 49.6, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "드림팰리스7차 (다세대)",
+    "address": "의정부시 의정부동 240-213",
+    "coords": [127.044922566678, 37.7443060437022],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 34.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 75, "area": 34.75, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -956,11 +1178,21 @@
     ]
   },
   {
+    "name": "센트럴빌리지 (다세대)",
+    "address": "의정부시 의정부동 360-11",
+    "coords": [127.051071351822, 37.735598915086],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19500, 19500], "rep_area": 29.9, "rep_avg_price": 19500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19500, "rent": 0, "area": 29.92, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "로뎀빌딩 (다세대)",
     "address": "의정부시 의정부동 360-14",
     "coords": [127.051271812077, 37.7357625343079],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [22500, 22500], "rep_area": 25.4, "rep_avg_price": 22500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [22500, 22500], "rep_area": 25.4, "rep_avg_price": 22500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 22500, "rent": 0, "area": 25.45, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 22500, "rent": 0, "area": 25.45, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -999,6 +1231,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [24500, 24500], "rep_area": 58.2, "rep_avg_price": 24500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 24500, "rent": 0, "area": 58.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "이현엘리지움 (다세대)",
+    "address": "의정부시 의정부동 406-31",
+    "coords": [127.040263922381, 37.746256972522],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 51.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 70, "area": 51.23, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1042,8 +1283,9 @@
     "name": "정화빌라(가동)(438-12) (다세대)",
     "address": "의정부시 의정부동 438-12",
     "coords": [127.044416012654, 37.7402061961634],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 47.1, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 2000], "rep_area": 36.1, "rep_avg_price": 2000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 40, "area": 36.12, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 50, "area": 47.07, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1054,6 +1296,25 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1200, 1200], "rep_area": 52.9, "rep_avg_price": 1200}},
     "deals": [
       {"type": "월세", "price": 1200, "rent": 53, "area": 52.86, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "E아름텔 (다세대)",
+    "address": "의정부시 의정부동 440-3",
+    "coords": [127.043468434856, 37.7403837700635],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 28.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 28.7, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 58, "area": 28.7, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-11", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한솔빌라8차(440-49) (다세대)",
+    "address": "의정부시 의정부동 440-49",
+    "coords": [127.043752185236, 37.7394218803183],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 38.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 55, "area": 38.13, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1087,9 +1348,20 @@
     "name": "의정빌라 (다세대)",
     "address": "의정부시 의정부동 482-2",
     "coords": [127.03854332582, 37.7393982912694],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [8500, 8500], "rep_area": 33.8, "rep_avg_price": 8500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [8500, 8500], "rep_area": 33.8, "rep_avg_price": 8500}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 34.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 8500, "rent": 0, "area": 33.78, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 8500, "rent": 0, "area": 33.78, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 60, "area": 34.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한솔레디앙 (다세대)",
+    "address": "의정부시 의정부동 504-10",
+    "coords": [127.041842132505, 37.7362667473817],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 500], "rep_area": 23.3, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 44, "area": 23.3, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-31", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 24.25, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1111,12 +1383,39 @@
     ]
   },
   {
+    "name": "재훈빌라(12차) (다세대)",
+    "address": "의정부시 의정부동 513-8",
+    "coords": [127.038636785905, 37.7371671896552],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 55.7, "rep_avg_price": 11000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11000, "rent": 0, "area": 55.72, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "쌍용빌라(520-7) (다세대)",
     "address": "의정부시 의정부동 520-7",
     "coords": [127.038015813399, 37.7354891549218],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 46.9, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 60, "area": 46.86, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "진성빌라(나동) (다세대)",
+    "address": "의정부시 의정부동 521-2",
+    "coords": [127.037898479995, 37.7352089910173],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 49.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 49.74, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "동아주택(마동) (다세대)",
+    "address": "의정부시 의정부동 536-2",
+    "coords": [127.03651049752, 37.7334310039803],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 49.2, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 49.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "26.05~28.05", "renew": "갱신", "p_dep": 12000, "p_rent": 0}
     ]
   },
   {
@@ -1228,12 +1527,30 @@
     ]
   },
   {
+    "name": "대성빌라(560-10) (다세대)",
+    "address": "의정부시 의정부동 560-10",
+    "coords": [127.042089550802, 37.7344421949728],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 34.4, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 34.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "세훈빌라 (다세대)",
     "address": "의정부시 의정부동 563-1",
     "coords": [127.041925359192, 37.733572997391],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7800, 7800], "rep_area": 35.5, "rep_avg_price": 7800}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 7800, "rent": 0, "area": 35.49, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "명신빌라 (다세대)",
+    "address": "의정부시 의정부동 563-14",
+    "coords": [127.042200479392, 37.7334060395184],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14000, 14000], "rep_area": 52.4, "rep_avg_price": 14000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 14000, "rent": 0, "area": 52.35, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1272,6 +1589,15 @@
     "deals": [
       {"type": "매매", "price": 19000, "rent": 0, "area": 52.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 13665, "rent": 0, "area": 45.29, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "건영빌라 (다세대)",
+    "address": "의정부시 의정부동 570-13",
+    "coords": [127.044180163452, 37.7348974109671],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 55.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 77, "area": 55.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1321,6 +1647,15 @@
     ]
   },
   {
+    "name": "신한주택(B동5차) (다세대)",
+    "address": "의정부시 의정부동 571-7",
+    "coords": [127.044029920728, 37.7340630787097],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 40.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 47, "area": 40.32, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1000, "p_rent": 45}
+    ]
+  },
+  {
     "name": "청담 (다세대)",
     "address": "의정부시 의정부동 575",
     "coords": [127.044013105761, 37.7336372864429],
@@ -1342,8 +1677,10 @@
     "name": "대도빌라(가나동)(577-1) (다세대)",
     "address": "의정부시 의정부동 577-1",
     "coords": [127.045268770232, 37.7346774315285],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 56.5, "rep_avg_price": 10000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [2000, 10000], "rep_area": 59.9, "rep_avg_price": 2000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 59.9, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 60, "area": 59.9, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 20, "area": 56.48, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1493,6 +1830,15 @@
     ]
   },
   {
+    "name": "클래스원2차 (다세대)",
+    "address": "의정부시 호원동 226-299",
+    "coords": [127.046154038258, 37.705876516473],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [22350, 22350], "rep_area": 60.5, "rep_avg_price": 22350}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 22350, "rent": 0, "area": 60.545, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "이정루체빌 (다세대)",
     "address": "의정부시 호원동 226-40",
     "coords": [127.045954685753, 37.7031338469962],
@@ -1520,11 +1866,21 @@
     ]
   },
   {
+    "name": "(242-3) (다세대)",
+    "address": "의정부시 호원동 242-3",
+    "coords": [127.04603361717, 37.7110286941115],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 52.7, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 65, "area": 52.74, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "아침동산 (다세대)",
     "address": "의정부시 호원동 246-2",
     "coords": [127.044359214403, 37.7121295149058],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13700, 13700], "rep_area": 57.2, "rep_avg_price": 13700}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 41.7, "rep_avg_price": 13000}, "monthly": {"count": 1, "range": [13700, 13700], "rep_area": 57.2, "rep_avg_price": 13700}},
     "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 41.69, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 13700, "rent": 10, "area": 57.21, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1532,8 +1888,9 @@
     "name": "추산그랑빌(247-40) (다세대)",
     "address": "의정부시 호원동 247-40",
     "coords": [127.046489048964, 37.7109951793907],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 83.0, "rep_avg_price": 18000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [18000, 18000], "rep_area": 83.0, "rep_avg_price": 18000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 83.01, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-05", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 18000, "rent": 0, "area": 83.01, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1544,6 +1901,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [37000, 37000], "rep_area": 60.7, "rep_avg_price": 37000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 37000, "rent": 0, "area": 60.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "에이원빌 (다세대)",
+    "address": "의정부시 호원동 247-7",
+    "coords": [127.045047726073, 37.7123038625362],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4000, 4000], "rep_area": 20.3, "rep_avg_price": 4000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 4000, "rent": 0, "area": 20.313, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1568,8 +1934,9 @@
     "name": "성현하이츠7차 (다세대)",
     "address": "의정부시 호원동 252-20",
     "coords": [127.042455516465, 37.7131634521908],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 66.2, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [40000, 40000], "rep_area": 66.2, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 40000, "rent": 0, "area": 66.2114, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 40000, "rent": 0, "area": 66.2114, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1631,9 +1998,19 @@
     "name": "장수빌라다동 (다세대)",
     "address": "의정부시 호원동 260-68",
     "coords": [127.044390855635, 37.7138396407182],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 38.8, "rep_avg_price": 7000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [7000, 7000], "rep_area": 38.8, "rep_avg_price": 7000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 7000, "rent": 0, "area": 38.76, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 7000, "rent": 0, "area": 38.76, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "호원아트빌 (다세대)",
+    "address": "의정부시 호원동 260-7",
+    "coords": [127.044882024243, 37.713795397173],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 47.1, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 70, "area": 47.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1680,6 +2057,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 47.0, "rep_avg_price": 7000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 7000, "rent": 0, "area": 47.03, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성C (다세대)",
+    "address": "의정부시 호원동 326-17",
+    "coords": [127.04472190254, 37.7287306937978],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 48.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 55, "area": 48.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-22", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1818,6 +2204,15 @@
     ]
   },
   {
+    "name": "회룡타운 (연립)",
+    "address": "의정부시 호원동 50-2",
+    "coords": [127.046401465192, 37.7240376955293],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 24.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 24.32, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-05", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "명성빌라가동 (다세대)",
     "address": "의정부시 호원동 6-16",
     "coords": [127.045766628529, 37.7281379043504],
@@ -1852,6 +2247,15 @@
     "deals": [
       {"type": "월세", "price": 0, "rent": 45, "area": 13.39, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-17", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 0, "rent": 45, "area": 13.39, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-06", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대현오피스텔 (다세대)",
+    "address": "의정부시 호원동 85-9",
+    "coords": [127.046358800004, 37.7140017793321],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 27.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 52, "area": 27.29, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {

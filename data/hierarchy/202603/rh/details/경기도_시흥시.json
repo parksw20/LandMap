@@ -36,6 +36,15 @@
     ]
   },
   {
+    "name": "금성그린맨션 (다세대)",
+    "address": "시흥시 거모동 1717-4",
+    "coords": [126.785501219139, 37.3478494062918],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 60.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 70, "area": 59.98, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "신안그린빌201동202동 (다세대)",
     "address": "시흥시 거모동 1719-10",
     "coords": [126.78443149482, 37.348728216346],
@@ -78,6 +87,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 58.5, "rep_avg_price": 9000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 9000, "rent": 0, "area": 58.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우진빌라A동 (다세대)",
+    "address": "시흥시 거모동 1726-12",
+    "coords": [126.784417417113, 37.3471782429153],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [11000, 11000], "rep_area": 59.6, "rep_avg_price": 11000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 11000, "rent": 0, "area": 59.6, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -154,6 +172,15 @@
     ]
   },
   {
+    "name": "청정맨션B동 (다세대)",
+    "address": "시흥시 거모동 1751-4",
+    "coords": [126.78324978007, 37.3425807758867],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [7805, 7805], "rep_area": 39.6, "rep_avg_price": 7805}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 7805, "rent": 0, "area": 39.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "청정맨션A동 (다세대)",
     "address": "시흥시 거모동 1751-5",
     "coords": [126.783350501037, 37.3424826581703],
@@ -199,12 +226,31 @@
     ]
   },
   {
+    "name": "ST타워 (연립)",
+    "address": "시흥시 거모동 1761-4",
+    "coords": [126.785795258154, 37.3437841402991],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 14.1, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 31, "area": 14.0735, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-11", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 34, "area": 15.4674, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "현대팰리스(1763-15) (다세대)",
     "address": "시흥시 거모동 1763-15",
     "coords": [126.787225917286, 37.3429042548063],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 48.1, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 60, "area": 48.12, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼익아트빌(201동) (다세대)",
+    "address": "시흥시 거모동 1763-9",
+    "coords": [126.786919050672, 37.3428308093022],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 59.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 59.92, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -256,9 +302,19 @@
     "name": "영아맨션가동 (다세대)",
     "address": "시흥시 거모동 1776-6",
     "coords": [126.785390650177, 37.3391524801057],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.3, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [6190, 6190], "rep_area": 38.2, "rep_avg_price": 6190}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.3, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "전세", "price": 6190, "rent": 0, "area": 38.17, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 50, "area": 35.31, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "양지마을2차 (다세대)",
+    "address": "시흥시 거모동 1777-1",
+    "coords": [126.78419163782, 37.3389963132138],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12300, 12300], "rep_area": 78.6, "rep_avg_price": 12300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12300, "rent": 0, "area": 78.57, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -277,6 +333,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [6200, 6200], "rep_area": 59.9, "rep_avg_price": 6200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 6200, "rent": 0, "area": 59.89, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신안아트빌4차 (다세대)",
+    "address": "시흥시 거모동 1779-1",
+    "coords": [126.784621676117, 37.338569918984],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8000, 8000], "rep_area": 59.8, "rep_avg_price": 8000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8000, "rent": 0, "area": 59.82, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "풍경채가동 (다세대)",
+    "address": "시흥시 거모동 589-16",
+    "coords": [126.772259787872, 37.3571279378378],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12500, 12500], "rep_area": 45.2, "rep_avg_price": 12500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12500, "rent": 0, "area": 45.18, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -337,9 +411,19 @@
     "name": "삼성홈타운1동 (다세대)",
     "address": "시흥시 대야동 443-5",
     "coords": [126.79076312419, 37.4477452033381],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 48.2, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 48.2, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 48.18, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 60, "area": 48.18, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "주신맨션4동 (다세대)",
+    "address": "시흥시 대야동 445-4",
+    "coords": [126.790437466261, 37.447893293426],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 36.5, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 58, "area": 36.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -349,6 +433,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6800, 6800], "rep_area": 38.8, "rep_avg_price": 6800}},
     "deals": [
       {"type": "월세", "price": 6800, "rent": 5, "area": 38.8, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-12", "period": "26.03~28.03", "renew": "갱신", "p_dep": 7000, "p_rent": 5}
+    ]
+  },
+  {
+    "name": "성원1차3동 (다세대)",
+    "address": "시흥시 대야동 452-8",
+    "coords": [126.788975948034, 37.4479149301954],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 53.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 53.91, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -370,6 +463,15 @@
     ]
   },
   {
+    "name": "나성빌라나동 (다세대)",
+    "address": "시흥시 대야동 461-22",
+    "coords": [126.787713811761, 37.4476055147884],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 38.2, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 38.24, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "성원빌라 (다세대)",
     "address": "시흥시 대야동 471-27",
     "coords": [126.788612654831, 37.4451303319879],
@@ -385,6 +487,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 59.9, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 10000, "rent": 0, "area": 59.87, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "석천파크빌 (다세대)",
+    "address": "시흥시 대야동 476-1",
+    "coords": [126.786803136927, 37.4459456519468],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8700, 8700], "rep_area": 42.0, "rep_avg_price": 8700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8700, "rent": 0, "area": 42.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -436,8 +547,9 @@
     "name": "승원룸 (다세대)",
     "address": "시흥시 도창동 378-2",
     "coords": [126.815682399803, 37.409836808647],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 19.7, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 19.4, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 37, "area": 19.41, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-29", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 36, "area": 19.66, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.06~28.06", "renew": "갱신", "p_dep": 500, "p_rent": 35}
     ]
   },
@@ -532,6 +644,15 @@
     ]
   },
   {
+    "name": "일화주택마동 (다세대)",
+    "address": "시흥시 매화동 337-8",
+    "coords": [126.809426042093, 37.4157066638158],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 55.1, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 55.145, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "공작빌라10동 (다세대)",
     "address": "시흥시 매화동 342-5",
     "coords": [126.809419138405, 37.414552629114],
@@ -588,12 +709,30 @@
     ]
   },
   {
+    "name": "우덕주택4동(241-5) (다세대)",
+    "address": "시흥시 목감동 241-5",
+    "coords": [126.860537529388, 37.3851941213155],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 36.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 36.15, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "현대빌라 (연립)",
     "address": "시흥시 목감동 242-10",
     "coords": [126.860341779165, 37.3836463831676],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 50.5, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 12000, "rent": 0, "area": 50.49, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼현빌라가동 (다세대)",
+    "address": "시흥시 미산동 320-4",
+    "coords": [126.79326241093, 37.4172012319345],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 37.4, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 30, "area": 37.41, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -624,12 +763,30 @@
     ]
   },
   {
+    "name": "석원빌라111동 (다세대)",
+    "address": "시흥시 미산동 321-27",
+    "coords": [126.793624712786, 37.4167397331797],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 30, "area": 35.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "석천파크빌 (다세대)",
     "address": "시흥시 신천동 314-100",
     "coords": [126.781313380418, 37.4430522004616],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 45.8, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 50, "area": 45.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(314-52) (다세대)",
+    "address": "시흥시 신천동 314-52",
+    "coords": [126.780658283578, 37.4434443688731],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 51.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 51.84, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -645,8 +802,9 @@
     "name": "대우빌라가동 (다세대)",
     "address": "시흥시 신천동 704-1",
     "coords": [126.783278585962, 37.4442417335614],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6000, 6000], "rep_area": 36.4, "rep_avg_price": 6000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [6000, 6000], "rep_area": 36.4, "rep_avg_price": 6000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 6000, "rent": 0, "area": 36.45, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 6000, "rent": 0, "area": 36.45, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -666,6 +824,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 23.5, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 42, "area": 23.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한솔빌라(여우고개길320) (다세대)",
+    "address": "시흥시 신천동 704-32",
+    "coords": [126.784922305626, 37.4432353311604],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [600, 600], "rep_area": 29.2, "rep_avg_price": 600}},
+    "deals": [
+      {"type": "월세", "price": 600, "rent": 60, "area": 29.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "태원탑스빌(C동) (다세대)",
+    "address": "시흥시 신천동 706-24",
+    "coords": [126.7829209017, 37.4423718354095],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 55.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 55.06, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -729,6 +905,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9300, 9300], "rep_area": 56.6, "rep_avg_price": 9300}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 9300, "rent": 0, "area": 56.64, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "88주택8동 (다세대)",
+    "address": "시흥시 신천동 755-18",
+    "coords": [126.780546067132, 37.4396535074338],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 34.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 30, "area": 34.35, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -858,6 +1043,15 @@
     ]
   },
   {
+    "name": "이레아트맨션4차 (다세대)",
+    "address": "시흥시 신천동 824-23",
+    "coords": [126.77561699095, 37.4367663250297],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 53.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 53.84, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "이지럭스빌(A동) (다세대)",
     "address": "시흥시 신천동 824-32",
     "coords": [126.776029856365, 37.4366197922675],
@@ -870,8 +1064,9 @@
     "name": "삼우그린맨션6동 (다세대)",
     "address": "시흥시 신천동 826-9",
     "coords": [126.77798649457, 37.4359577242319],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10600, 10600], "rep_area": 59.7, "rep_avg_price": 10600}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [10450, 10600], "rep_area": 59.7, "rep_avg_price": 10525}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 10450, "rent": 0, "area": 59.68, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 10600, "rent": 0, "area": 59.68, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -882,6 +1077,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [6000, 6000], "rep_area": 35.8, "rep_avg_price": 6000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 6000, "rent": 0, "area": 35.755, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "신천노블리안씨티A동 (다세대)",
+    "address": "시흥시 신천동 838-5",
+    "coords": [126.78190989759, 37.4376500146445],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25500, 25500], "rep_area": 55.8, "rep_avg_price": 25500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25500, "rent": 0, "area": 55.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -926,8 +1130,9 @@
     "name": "승진빌라 (다세대)",
     "address": "시흥시 신천동 845-6",
     "coords": [126.7836317749, 37.4361013625596],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7900, 7900], "rep_area": 35.6, "rep_avg_price": 7900}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [7900, 7900], "rep_area": 35.6, "rep_avg_price": 7900}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 7900, "rent": 0, "area": 35.63, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 7900, "rent": 0, "area": 35.63, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -950,12 +1155,12 @@
     ]
   },
   {
-    "name": "더스테이 (다세대)",
-    "address": "시흥시 신천동 856-19",
-    "coords": [126.789218038393, 37.4369097547592],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 59.5, "rep_avg_price": 20000}, "monthly": null},
+    "name": "태원탑스빌A동 (다세대)",
+    "address": "시흥시 신천동 855-11",
+    "coords": [126.786958038916, 37.4372279957697],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 35.5, "rep_avg_price": 500}},
     "deals": [
-      {"type": "전세", "price": 20000, "rent": 0, "area": 59.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-05", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 500, "rent": 50, "area": 35.47, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -984,6 +1189,24 @@
     "deals": [
       {"type": "매매", "price": 8200, "rent": 0, "area": 59.76, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 8200, "rent": 0, "area": 59.76, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "롯데그린맨션1,2동 (다세대)",
+    "address": "시흥시 신천동 872-7",
+    "coords": [126.789354154056, 37.4311190864301],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 39.9, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 30, "area": 39.88, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "기원아트빌 (다세대)",
+    "address": "시흥시 신천동 873-11",
+    "coords": [126.789806501098, 37.4313382075889],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 31.2, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 35, "area": 31.23, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-15", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1059,12 +1282,51 @@
     ]
   },
   {
+    "name": "태웅빌라 (다세대)",
+    "address": "시흥시 신천동 890-14",
+    "coords": [126.791036832563, 37.4308409562696],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 35.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 35.58, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "라온오션팰리스주상복합 (연립)",
     "address": "시흥시 월곶동 1013-10",
     "coords": [126.734719256321, 37.3879722752276],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 79.1, "rep_avg_price": 1500}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1500, 1500], "rep_area": 78.3, "rep_avg_price": 1500}},
     "deals": [
+      {"type": "월세", "price": 1500, "rent": 120, "area": 78.28, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1500, "rent": 120, "area": 78.28, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1500, "rent": 120, "area": 79.138, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-01", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "광양프런티어빌 (연립)",
+    "address": "시흥시 월곶동 1013-9",
+    "coords": [126.734505308922, 37.3881857874961],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 19.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 33, "area": 19.155, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 38, "area": 19.155, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "새보미주택 (연립)",
+    "address": "시흥시 은행동 105-1",
+    "coords": [126.796277914239, 37.437957759107],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 44.2, "rep_avg_price": 7000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7000, "rent": 0, "area": 44.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대명맨션 (다세대)",
+    "address": "시흥시 은행동 245-12",
+    "coords": [126.796159878454, 37.4351914416535],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 16.8, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 36, "area": 16.83, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-22", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1092,6 +1354,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 59.7, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 15000, "rent": 0, "area": 59.74, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "목화연립3동 (연립)",
+    "address": "시흥시 은행동 276-10",
+    "coords": [126.795108972773, 37.4320710324506],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 43.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 43.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1197,6 +1468,15 @@
     ]
   },
   {
+    "name": "거산아트빌 (다세대)",
+    "address": "시흥시 정왕동 2021-9",
+    "coords": [126.690552983893, 37.3423475981983],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 104.7, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 80, "area": 104.7, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-09", "period": "26.04~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "한신주택 (다세대)",
     "address": "시흥시 정왕동 2022-3",
     "coords": [126.690386527963, 37.3425671934071],
@@ -1215,12 +1495,39 @@
     ]
   },
   {
+    "name": "한스빌리지 (다세대)",
+    "address": "시흥시 정왕동 2027-3",
+    "coords": [126.688530372039, 37.3430208535959],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 59.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 59.65, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "대치빌 (다세대)",
     "address": "시흥시 정왕동 2027-9",
     "coords": [126.688314740951, 37.3428493609529],
     "stats": {"total": 1, "sale": {"count": 1, "range": [12200, 12200], "rep_area": 59.2, "rep_avg_price": 12200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 12200, "rent": 0, "area": 59.165, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "드림빌라 (다세대)",
+    "address": "시흥시 정왕동 2033-10",
+    "coords": [126.687652828969, 37.3421205768563],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 58.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 58.57, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "씨앤빌2차 (다세대)",
+    "address": "시흥시 정왕동 2034-7",
+    "coords": [126.687842037367, 37.3415587454678],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 60.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 60.68, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-14", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1236,8 +1543,9 @@
     "name": "(2236-1) (다세대)",
     "address": "시흥시 정왕동 2236-1",
     "coords": [126.751708891397, 37.3580978076129],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 62.5, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 62.5, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 34, "area": 62.49, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 34, "area": 62.49, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1305,6 +1613,24 @@
     ]
   },
   {
+    "name": "동산이스트빌 (다세대)",
+    "address": "시흥시 정왕동 2305-29",
+    "coords": [126.737892097802, 37.3525392148796],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.9, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 59.94, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.03~28.03", "renew": "갱신", "p_dep": 2000, "p_rent": 60}
+    ]
+  },
+  {
+    "name": "시그니처하우스 (연립)",
+    "address": "시흥시 정왕동 2314-42",
+    "coords": [126.747076454736, 37.3527834737441],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 37.8, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 37.77, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "시그니처하우스 (연립다세대)",
     "address": "시흥시 정왕동 2314-42",
     "coords": [126.747076454736, 37.3527834737441],
@@ -1341,12 +1667,30 @@
     ]
   },
   {
+    "name": "나비하우스 (다세대)",
+    "address": "시흥시 정왕동 2745-1",
+    "coords": [126.696430933182, 37.3209985409503],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 19.5, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 35, "area": 19.54, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(2746-0) (다세대)",
     "address": "시흥시 정왕동 2746",
     "coords": [126.695769375513, 37.3205454258222],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1700, 1700], "rep_area": 20.7, "rep_avg_price": 1700}},
     "deals": [
       {"type": "월세", "price": 1700, "rent": 30, "area": 20.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "더팔레스1 (다세대)",
+    "address": "시흥시 정왕동 2746-4",
+    "coords": [126.695465359043, 37.3202297337546],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 20.4, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 21, "area": 20.35, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1381,8 +1725,9 @@
     "name": "정왕동도시형주택(윤미옥) (다세대)",
     "address": "시흥시 정왕동 2749-2",
     "coords": [126.697061678957, 37.3203884480473],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 16.2, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 16.2, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 30, "area": 16.155, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 30, "area": 16.155, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1463,8 +1808,9 @@
     "name": "조운집 (다세대)",
     "address": "시흥시 정왕동 2752-5",
     "coords": [126.699897494937, 37.319257402419],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 22.5, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 21.0, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 30, "area": 21.005, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 30, "area": 22.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-24", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1472,8 +1818,10 @@
     "name": "(2752-7) (다세대)",
     "address": "시흥시 정왕동 2752-7",
     "coords": [126.700190750523, 37.3190764079426],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10450, 10450], "rep_area": 40.7, "rep_avg_price": 10450}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [7500, 10450], "rep_area": 40.7, "rep_avg_price": 8616}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 7500, "rent": 0, "area": 40.71, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 7900, "rent": 0, "area": 40.71, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 10450, "rent": 0, "area": 40.71, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1481,9 +1829,19 @@
     "name": "(2752-8) (다세대)",
     "address": "시흥시 정왕동 2752-8",
     "coords": [126.700337208028, 37.3189860451522],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 16.5, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 500], "rep_area": 16.5, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 32.71, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 32, "area": 16.47, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-12", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "브라운하우스 (다세대)",
+    "address": "시흥시 정왕동 2756",
+    "coords": [126.697875218275, 37.3201353562348],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 30.9, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 17, "area": 30.855, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.04~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1530,6 +1888,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 20.5, "rep_avg_price": 300}},
     "deals": [
       {"type": "월세", "price": 300, "rent": 38, "area": 20.52, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-13", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(2758-5) (다세대)",
+    "address": "시흥시 정왕동 2758-5",
+    "coords": [126.698152244017, 37.3197267251581],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 30.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 53, "area": 30.01, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1597,6 +1964,15 @@
     ]
   },
   {
+    "name": "(2763-5) (다세대)",
+    "address": "시흥시 정왕동 2763-5",
+    "coords": [126.69840880634, 37.3186505578955],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 19.5, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 33, "area": 19.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(2764-1) (다세대)",
     "address": "시흥시 정왕동 2764-1",
     "coords": [126.699653985005, 37.3190712624321],
@@ -1651,6 +2027,15 @@
     ]
   },
   {
+    "name": "수안채 (다세대)",
+    "address": "시흥시 정왕동 2767-2",
+    "coords": [126.699356647448, 37.3180674801862],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1700, 1700], "rep_area": 19.4, "rep_avg_price": 1700}},
+    "deals": [
+      {"type": "월세", "price": 1700, "rent": 19, "area": 19.38, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(2770-10) (다세대)",
     "address": "시흥시 정왕동 2770-10",
     "coords": [126.696651603079, 37.3190914456379],
@@ -1675,6 +2060,52 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 46.8, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 70, "area": 46.8, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-18", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "청송아트빌 (다세대)",
+    "address": "시흥시 정왕동 2774-5",
+    "coords": [126.701728366751, 37.3181278142858],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 35.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 35.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "준빌II (다세대)",
+    "address": "시흥시 정왕동 2775-3",
+    "coords": [126.702561735549, 37.3176135312564],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 37.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 65, "area": 38.745, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 60, "area": 37.185, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "준빌리지 (다세대)",
+    "address": "시흥시 정왕동 2775-4",
+    "coords": [126.702709092382, 37.3175225370365],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 24.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 48, "area": 24.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "오션빌 (다세대)",
+    "address": "시흥시 정왕동 2775-6",
+    "coords": [126.703003578649, 37.3173407276754],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 22.3, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 22.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-06", "period": "26.04~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(2775-7) (다세대)",
+    "address": "시흥시 정왕동 2775-7",
+    "coords": [126.703150821251, 37.3172498227156],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3500, 3500], "rep_area": 26.6, "rep_avg_price": 3500}},
+    "deals": [
+      {"type": "월세", "price": 3500, "rent": 12, "area": 26.6, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "26.03~28.03", "renew": "갱신", "p_dep": 6300, "p_rent": 0}
     ]
   },
   {
@@ -1714,6 +2145,15 @@
     ]
   },
   {
+    "name": "(2784-4) (다세대)",
+    "address": "시흥시 정왕동 2784-4",
+    "coords": [126.702154283251, 37.3170037700061],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 22.3, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 37, "area": 22.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-13", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "희빌리지 (다세대)",
     "address": "시흥시 정왕동 2786-2",
     "coords": [126.70283992303, 37.3168436686251],
@@ -1723,11 +2163,21 @@
     ]
   },
   {
+    "name": "원빌리지 (다세대)",
+    "address": "시흥시 정왕동 2787-3",
+    "coords": [126.702102524856, 37.3160830564556],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 17.86, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "다원 (다세대)",
     "address": "시흥시 정왕동 2787-4",
     "coords": [126.701973618302, 37.3161875217756],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 20.6, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 300], "rep_area": 19.4, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 36, "area": 19.35, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 35, "area": 20.575, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-17", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1738,6 +2188,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 26.2, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 37, "area": 26.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(2790-3) (다세대)",
+    "address": "시흥시 정왕동 2790-3",
+    "coords": [126.703517492508, 37.3161812182922],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 28.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 35, "area": 28.84, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1762,6 +2221,24 @@
     ]
   },
   {
+    "name": "크리스탈 (다세대)",
+    "address": "시흥시 정왕동 2792-2",
+    "coords": [126.703915441835, 37.3159365936116],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 20.0, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 26, "area": 19.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "셋빌 (다세대)",
+    "address": "시흥시 정왕동 2793-2",
+    "coords": [126.703501854206, 37.3155097307864],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 25.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 25.76, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "더팰리스Ⅲ (다세대)",
     "address": "시흥시 정왕동 2794-2",
     "coords": [126.704532803651, 37.3161544742372],
@@ -1783,8 +2260,9 @@
     "name": "(2794-8) (다세대)",
     "address": "시흥시 정왕동 2794-8",
     "coords": [126.703669895207, 37.3152636295945],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 29.2, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 500], "rep_area": 16.3, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 35, "area": 16.32, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 46, "area": 29.22, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1827,6 +2305,15 @@
     ]
   },
   {
+    "name": "(2797-0) (다세대)",
+    "address": "시흥시 정왕동 2797",
+    "coords": [126.702550468143, 37.3154340893783],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 20.3, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 33, "area": 20.3, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동호주택가동 (다세대)",
     "address": "시흥시 조남동 169-15",
     "coords": [126.859677066672, 37.3825473390481],
@@ -1836,11 +2323,21 @@
     ]
   },
   {
+    "name": "목감타운빌라나동 (다세대)",
+    "address": "시흥시 조남동 171-47",
+    "coords": [126.859552980859, 37.3862978804856],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 59.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 59.25, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-11", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "맘모스초원 (다세대)",
     "address": "시흥시 조남동 171-56",
     "coords": [126.857277611516, 37.3837683275151],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 48.3, "rep_avg_price": 11000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 48.3, "rep_avg_price": 11000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 45.3, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 45.28, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 11000, "rent": 0, "area": 48.28, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1848,8 +2345,9 @@
     "name": "맘모스 (다세대)",
     "address": "시흥시 조남동 171-59",
     "coords": [126.857596115999, 37.3836040044383],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 45.5, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 45.5, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 45.48, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 50, "area": 45.48, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1878,6 +2376,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [27200, 27200], "rep_area": 48.0, "rep_avg_price": 27200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 27200, "rent": 0, "area": 48.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "두성빌라 (다세대)",
+    "address": "시흥시 포동 1-66",
+    "coords": [126.785470521311, 37.4084185542698],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8000, 8000], "rep_area": 30.0, "rep_avg_price": 8000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8000, "rent": 0, "area": 30.03, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {

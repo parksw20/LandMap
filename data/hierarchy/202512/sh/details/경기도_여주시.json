@@ -1,225 +1,284 @@
 [
   {
-    "name": "여주시",
-    "address": "여주시",
-    "coords": [127.637058787484, 37.2984233734533],
-    "stats": {"total": 146, "sale": null, "jeonse": {"count": 23, "range": [3000, 29000], "rep_area": 20.0, "rep_avg_price": 5000}, "monthly": {"count": 123, "range": [0, 3000], "rep_area": 25.0, "rep_avg_price": 325}},
+    "name": "경기도 여주시 가남읍 대신리",
+    "address": "경기도 여주시 가남읍 대신리",
+    "coords": [127.531759182835, 37.186987944473],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6000, 6000], "rep_area": 84.1, "rep_avg_price": 6000}, "monthly": null},
     "deals": [
-      {"type": "월세", "price": 500, "rent": 41, "area": 42.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "25.12~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 30, "area": 30.34, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 39, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.01~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 5000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 80, "area": 98.04, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.01~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 6000, "rent": 0, "area": 84.12, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "25.12~27.12", "renew": "갱신", "p_dep": 5000, "p_rent": 5}
+    ]
+  },
+  {
+    "name": "경기도 여주시 가남읍 본두리",
+    "address": "경기도 여주시 가남읍 본두리",
+    "coords": [127.585429047723, 37.2371209155234],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 33.1, "rep_avg_price": 0}},
+    "deals": [
+      {"type": "월세", "price": 0, "rent": 28, "area": 33.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 가남읍 태평리",
+    "address": "경기도 여주시 가남읍 태평리",
+    "coords": [127.541659020585, 37.2088203814846],
+    "stats": {"total": 26, "sale": {"count": 1, "range": [36600, 36600], "rep_area": 83.5, "rep_avg_price": 36600}, "jeonse": {"count": 2, "range": [3000, 6000], "rep_area": 30.0, "rep_avg_price": 6000}, "monthly": {"count": 23, "range": [100, 1500], "rep_area": 33.0, "rep_avg_price": 450}},
+    "deals": [
+      {"type": "매매", "price": 36600, "rent": 0, "area": 83.5, "land": 387.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 6000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 200, "rent": 33, "area": 197.02, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 4000, "rent": 0, "area": 35.28, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 61, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 60, "area": 66.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 36.14, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 60, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 50, "rent": 35, "area": 247.95, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 60, "area": 95.52, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 35, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 60, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 45, "area": 21.58, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 60, "area": 115.78, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 60, "area": 44.43, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 26.44, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 48, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 26.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 35, "area": 29.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 65, "area": 38.58, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 61, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 39, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 38, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 33, "area": 26.27, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 19.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 63, "area": 43.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 42, "area": 32.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 70, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 130, "area": 72.96, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 200, "rent": 40, "area": 29.75, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 6000, "rent": 0, "area": 84.12, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "25.12~27.12", "renew": "갱신", "p_dep": 5000, "p_rent": 5},
-      {"type": "월세", "price": 500, "rent": 30, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 48, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 5000, "rent": 0, "area": 29.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 40, "area": 96.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 26.44, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 5000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2500, "rent": 47, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 46, "area": 25.18, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "26.01~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 46, "area": 37.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1500, "rent": 50, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 62, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 30.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 200, "rent": 43, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 50, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 38, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 28000, "rent": 0, "area": 145.68, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~28.01", "renew": "갱신", "p_dep": 27000, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 78, "area": 58.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 48, "area": 24.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 40, "area": 22.11, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 60, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 20.25, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 3500, "rent": 0, "area": 22.91, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2500, "rent": 57, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 17700, "rent": 0, "area": 59.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 23000, "rent": 0, "area": 115.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~28.05", "renew": "갱신", "p_dep": 23000, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 6000, "rent": 0, "area": 36.3, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 4000, "rent": 0, "area": 99.58, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "25.12~28.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 7500, "rent": 0, "area": 54.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 80, "area": 32.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 75, "area": 34.55, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 16000, "rent": 0, "area": 60.16, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 10000, "rent": 0, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 0, "rent": 28, "area": 33.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 100, "rent": 40, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 100, "rent": 13, "area": 21.76, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "26.02~28.01", "renew": "갱신", "p_dep": 100, "p_rent": 13},
-      {"type": "월세", "price": 500, "rent": 50, "area": 29.38, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 45, "area": 31.68, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 37, "area": 30.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 47, "area": 34.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 60, "area": 40.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 40, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 49, "area": 102.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 600, "rent": 40, "area": 198.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 30, "area": 81.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 38, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 23000, "rent": 0, "area": 98.05, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 24.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 45, "area": 31.625, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 37, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 4000, "rent": 0, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "갱신", "p_dep": 500, "p_rent": 55},
-      {"type": "월세", "price": 500, "rent": 35, "area": 53.87, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-21", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 73.61, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 70, "area": 35.73, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 300, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 39, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 17700, "rent": 0, "area": 59.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 43, "area": 34.2, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 63, "area": 23.43, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 3000, "rent": 75, "area": 178.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 35, "area": 29.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 100, "rent": 35, "area": 26.71, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 21.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 29000, "rent": 0, "area": 136.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 5000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 60, "area": 32.95, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 3000, "rent": 0, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 35, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 35, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 60, "area": 47.28, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-07", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 29.56, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 5000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 38, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 42, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 5000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 43, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 250, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 500, "rent": 45, "area": 29.56, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 가남읍 태평리 *",
-    "address": "여주시 가남읍 태평리 *",
-    "coords": [127.541659020585, 37.2088203814846],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [36600, 36600], "rep_area": 83.5, "rep_avg_price": 36600}, "jeonse": null, "monthly": null},
+    "name": "경기도 여주시 가업동",
+    "address": "경기도 여주시 가업동",
+    "coords": [127.620364977515, 37.2707568862917],
+    "stats": {"total": 7, "sale": null, "jeonse": null, "monthly": {"count": 7, "range": [300, 2000], "rep_area": 30.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 36600, "rent": 0, "area": 83.5, "land": 387.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 1000, "rent": 60, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 39, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 43, "area": 34.2, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 강천면 걸은리 8**",
-    "address": "여주시 강천면 걸은리 8**",
-    "coords": [127.715614236554, 37.3122904445067],
+    "name": "경기도 여주시 강천면 걸은리",
+    "address": "경기도 여주시 강천면 걸은리",
+    "coords": [127.713243811777, 37.2961398742385],
     "stats": {"total": 1, "sale": {"count": 1, "range": [7500, 7500], "rep_area": 103.9, "rep_avg_price": 7500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 7500, "rent": 0, "area": 103.86, "land": 660.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 강천면 적금리 4**",
-    "address": "여주시 강천면 적금리 4**",
-    "coords": [127.716873161596, 37.2587174594716],
+    "name": "경기도 여주시 강천면 부평리",
+    "address": "경기도 여주시 강천면 부평리",
+    "coords": [127.75146144698, 37.2810041599272],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 81.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 30, "area": 81.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 강천면 적금리",
+    "address": "경기도 여주시 강천면 적금리",
+    "coords": [127.7033259816, 37.2532565064697],
     "stats": {"total": 1, "sale": {"count": 1, "range": [28650, 28650], "rep_area": 124.8, "rep_avg_price": 28650}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 28650, "rent": 0, "area": 124.82, "land": 368.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 대신면 송촌리 3**",
-    "address": "여주시 대신면 송촌리 3**",
-    "coords": [127.582758202532, 37.4144509154839],
+    "name": "경기도 여주시 교동",
+    "address": "경기도 여주시 교동",
+    "coords": [127.632057487791, 37.2803107820782],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 44.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 44.43, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 78, "area": 58.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 대신면 송촌리",
+    "address": "경기도 여주시 대신면 송촌리",
+    "coords": [127.579309505461, 37.4084603074739],
     "stats": {"total": 1, "sale": {"count": 1, "range": [7560, 7560], "rep_area": 88.5, "rep_avg_price": 7560}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 7560, "rent": 0, "area": 88.48, "land": 626.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 산북면 상품리 *",
-    "address": "여주시 산북면 상품리 *",
-    "coords": [127.427526219022, 37.398103408481],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [23500, 23500], "rep_area": 134.7, "rep_avg_price": 23500}, "jeonse": null, "monthly": null},
+    "name": "경기도 여주시 매룡동",
+    "address": "경기도 여주시 매룡동",
+    "coords": [127.657831800882, 37.2816119892237],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 145.7, "rep_avg_price": 28000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 23500, "rent": 0, "area": 134.71, "land": 926.0, "floor": "", "dong": "", "date": "2025-12-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "전세", "price": 28000, "rent": 0, "area": 145.68, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~28.01", "renew": "갱신", "p_dep": 27000, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 세종대왕면 번도리 6*",
-    "address": "여주시 세종대왕면 번도리 6*",
-    "coords": [127.591113242736, 37.3031585984099],
+    "name": "경기도 여주시 멱곡동",
+    "address": "경기도 여주시 멱곡동",
+    "coords": [127.668690144195, 37.2532589577957],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [46500, 46500], "rep_area": 183.2, "rep_avg_price": 46500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 46500, "rent": 0, "area": 183.2, "land": 449.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 북내면 석우리",
+    "address": "경기도 여주시 북내면 석우리",
+    "coords": [127.691749256707, 37.3809627037334],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4000, 4000], "rep_area": 99.6, "rep_avg_price": 4000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 4000, "rent": 0, "area": 99.58, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "25.12~28.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 북내면 주암리",
+    "address": "경기도 여주시 북내면 주암리",
+    "coords": [127.677478550197, 37.3986329610968],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 178.1, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 75, "area": 178.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 산북면 상품리",
+    "address": "경기도 여주시 산북면 상품리",
+    "coords": [127.427526219022, 37.398103408481],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [23500, 23500], "rep_area": 134.7, "rep_avg_price": 23500}, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 35.7, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "매매", "price": 23500, "rent": 0, "area": 134.71, "land": 926.0, "floor": "", "dong": "", "date": "2025-12-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 70, "area": 35.73, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 산북면 송현리",
+    "address": "경기도 여주시 산북면 송현리",
+    "coords": [127.45088320589, 37.3795710565694],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [23000, 23000], "rep_area": 115.0, "rep_avg_price": 23000}, "monthly": {"count": 1, "range": [600, 600], "rep_area": 198.0, "rep_avg_price": 600}},
+    "deals": [
+      {"type": "전세", "price": 23000, "rent": 0, "area": 115.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~28.05", "renew": "갱신", "p_dep": 23000, "p_rent": 0},
+      {"type": "월세", "price": 600, "rent": 40, "area": 198.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 삼교동",
+    "address": "경기도 여주시 삼교동",
+    "coords": [127.656722622439, 37.234393514445],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30900, 30900], "rep_area": 82.8, "rep_avg_price": 30900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30900, "rent": 0, "area": 82.8, "land": 262.8, "floor": "", "dong": "", "date": "2025-12-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 상동",
+    "address": "경기도 여주시 상동",
+    "coords": [127.649692377046, 37.2907464658487],
+    "stats": {"total": 4, "sale": {"count": 1, "range": [37500, 37500], "rep_area": 238.4, "rep_avg_price": 37500}, "jeonse": null, "monthly": {"count": 3, "range": [300, 500], "rep_area": 26.4, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "매매", "price": 37500, "rent": 0, "area": 238.44, "land": 239.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 41, "area": 42.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "25.12~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 26.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 29.38, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 세종대왕면 마래리",
+    "address": "경기도 여주시 세종대왕면 마래리",
+    "coords": [127.557671653562, 37.2630100047189],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [50, 50], "rep_area": 248.0, "rep_avg_price": 50}},
+    "deals": [
+      {"type": "월세", "price": 50, "rent": 35, "area": 247.95, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 세종대왕면 번도리",
+    "address": "경기도 여주시 세종대왕면 번도리",
+    "coords": [127.584616347741, 37.3016962523546],
     "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 74.5, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 16000, "rent": 0, "area": 74.52, "land": 340.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 점동면 뇌곡리 1**",
-    "address": "여주시 점동면 뇌곡리 1**",
-    "coords": [127.67227521601, 37.1598433179495],
+    "name": "경기도 여주시 세종대왕면 신지리",
+    "address": "경기도 여주시 세종대왕면 신지리",
+    "coords": [127.580227739606, 37.2895179720035],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [17700, 17700], "rep_area": 59.1, "rep_avg_price": 17700}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17700, "rent": 0, "area": 59.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 17700, "rent": 0, "area": 59.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 신진동",
+    "address": "경기도 여주시 신진동",
+    "coords": [127.674692145167, 37.2791383878604],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 60.2, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 60.16, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 연라동",
+    "address": "경기도 여주시 연라동",
+    "coords": [127.610698537716, 37.2593388598244],
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 1, "range": [29000, 29000], "rep_area": 137.0, "rep_avg_price": 29000}, "monthly": {"count": 3, "range": [200, 2000], "rep_area": 28.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 80, "area": 98.04, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 200, "rent": 40, "area": 29.75, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 29000, "rent": 0, "area": 136.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 오금동",
+    "address": "경기도 여주시 오금동",
+    "coords": [127.650085194049, 37.3342815584958],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 96.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 40, "area": 96.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 오학동",
+    "address": "경기도 여주시 오학동",
+    "coords": [127.647466891088, 37.3110856971201],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 28.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 66.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 38, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 월송동",
+    "address": "경기도 여주시 월송동",
+    "coords": [127.612197735235, 37.2857852706795],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 42.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 점동면 뇌곡리",
+    "address": "경기도 여주시 점동면 뇌곡리",
+    "coords": [127.67189416267, 37.1605712675793],
     "stats": {"total": 1, "sale": {"count": 1, "range": [14000, 14000], "rep_area": 75.3, "rep_avg_price": 14000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 14000, "rent": 0, "area": 75.31, "land": 347.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "여주시 점동면 장안리 4**",
-    "address": "여주시 점동면 장안리 4**",
-    "coords": [127.729570261775, 37.2205808241046],
+    "name": "경기도 여주시 점동면 장안리",
+    "address": "경기도 여주시 점동면 장안리",
+    "coords": [127.710693717219, 37.2024052920648],
     "stats": {"total": 2, "sale": {"count": 2, "range": [33038, 44500], "rep_area": 99.6, "rep_avg_price": 38769}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 44500, "rent": 0, "area": 99.56, "land": 925.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
@@ -227,12 +286,156 @@
     ]
   },
   {
-    "name": "여주시 점동면 흔암리 1**",
-    "address": "여주시 점동면 흔암리 1**",
-    "coords": [127.683169340215, 37.2421783591065],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [38500, 38500], "rep_area": 132.4, "rep_avg_price": 38500}, "jeonse": null, "monthly": null},
+    "name": "경기도 여주시 점동면 흔암리",
+    "address": "경기도 여주시 점동면 흔암리",
+    "coords": [127.678527994641, 37.2366493017262],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [38500, 38500], "rep_area": 132.4, "rep_avg_price": 38500}, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 95.5, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 38500, "rent": 0, "area": 132.41, "land": 957.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 38500, "rent": 0, "area": 132.41, "land": 957.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 60, "area": 95.52, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 점봉동",
+    "address": "경기도 여주시 점봉동",
+    "coords": [127.643726431418, 37.2565581189546],
+    "stats": {"total": 48, "sale": null, "jeonse": {"count": 7, "range": [3500, 10000], "rep_area": 20.0, "rep_avg_price": 5000}, "monthly": {"count": 41, "range": [100, 2500], "rep_area": 25.0, "rep_avg_price": 333}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 39, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.01~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.01~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 61, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 36.14, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 61, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 39, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 63, "area": 43.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 42, "area": 32.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 70, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 29.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2500, "rent": 47, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 46, "area": 25.18, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "26.01~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 46, "area": 37.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 62, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 200, "rent": 43, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 48, "area": 24.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 3500, "rent": 0, "area": 22.91, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2500, "rent": 57, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 10000, "rent": 0, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100, "rent": 40, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 47, "area": 34.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 38, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 24.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "갱신", "p_dep": 500, "p_rent": 55},
+      {"type": "월세", "price": 300, "rent": 40, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 21.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 38, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 42, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 43, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 창동",
+    "address": "경기도 여주시 창동",
+    "coords": [127.633475599951, 37.2934473378757],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [250, 250], "rep_area": 40.0, "rep_avg_price": 250}},
+    "deals": [
+      {"type": "월세", "price": 250, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 하거동",
+    "address": "경기도 여주시 하거동",
+    "coords": [127.634000419291, 37.2269234411728],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 115.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 115.78, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 하동",
+    "address": "경기도 여주시 하동",
+    "coords": [127.626316131304, 37.2999367633577],
+    "stats": {"total": 18, "sale": null, "jeonse": {"count": 3, "range": [4000, 6000], "rep_area": 33.0, "rep_avg_price": 4000}, "monthly": {"count": 15, "range": [300, 2000], "rep_area": 23.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 30, "area": 30.34, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 4000, "rent": 0, "area": 35.28, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 19.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 30, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-25", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 38, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 6000, "rent": 0, "area": 36.3, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 60, "area": 40.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 4000, "rent": 0, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 35, "area": 53.87, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-21", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 73.61, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 현암동",
+    "address": "경기도 여주시 현암동",
+    "coords": [127.634234242669, 37.315565147318],
+    "stats": {"total": 7, "sale": null, "jeonse": {"count": 2, "range": [7500, 23000], "rep_area": 54.0, "rep_avg_price": 7500}, "monthly": {"count": 5, "range": [500, 500], "rep_area": 29.7, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 35, "area": 29.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 30.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 7500, "rent": 0, "area": 54.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 37, "area": 30.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 23000, "rent": 0, "area": 98.05, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-22", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 35, "area": 29.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 홍문동",
+    "address": "경기도 여주시 홍문동",
+    "coords": [127.638294215407, 37.2876621096577],
+    "stats": {"total": 11, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 30.0, "rep_avg_price": 5000}, "monthly": {"count": 10, "range": [300, 2000], "rep_area": 26.4, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 26.44, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 48, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 33, "area": 26.27, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 130, "area": 72.96, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 48, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 40, "area": 26.44, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 60, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 50, "area": 20.25, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 80, "area": 32.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 여주시 흥천면 효지리",
+    "address": "경기도 여주시 흥천면 효지리",
+    "coords": [127.547812087639, 37.3311339621437],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 31.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 31.68, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   }
 ]

@@ -13,8 +13,9 @@
     "name": "LIG서울역리가",
     "address": "중구 만리동1가 231",
     "coords": [126.967001745344, 37.555868464626],
-    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [69458, 80000], "rep_area": 85.0, "rep_avg_price": 74729}, "monthly": {"count": 2, "range": [15000, 40000], "rep_area": 85.0, "rep_avg_price": 27500}},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [163000, 163000], "rep_area": 85.0, "rep_avg_price": 163000}, "jeonse": {"count": 2, "range": [69458, 80000], "rep_area": 85.0, "rep_avg_price": 74729}, "monthly": {"count": 2, "range": [15000, 40000], "rep_area": 85.0, "rep_avg_price": 27500}},
     "deals": [
+      {"type": "매매", "price": 163000, "rent": 0, "area": 84.9581, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 15000, "rent": 290, "area": 84.9566, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 69458, "rent": 0, "area": 84.9566, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 40000, "rent": 150, "area": 84.9866, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -34,8 +35,15 @@
     "name": "서울역센트럴자이",
     "address": "중구 만리동2가 273",
     "coords": [126.96402989384, 37.5537819672024],
-    "stats": {"total": 16, "sale": null, "jeonse": {"count": 8, "range": [21000, 100000], "rep_area": 85.0, "rep_avg_price": 73083}, "monthly": {"count": 8, "range": [0, 64000], "rep_area": 85.0, "rep_avg_price": 6465}},
+    "stats": {"total": 23, "sale": {"count": 1, "range": [220000, 220000], "rep_area": 85.0, "rep_avg_price": 220000}, "jeonse": {"count": 11, "range": [21000, 100000], "rep_area": 85.0, "rep_avg_price": 74500}, "monthly": {"count": 11, "range": [0, 64000], "rep_area": 59.9, "rep_avg_price": 29750}},
     "deals": [
+      {"type": "매매", "price": 220000, "rent": 0, "area": 84.9791, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 83000, "rent": 0, "area": 84.972, "land": 0.0, "floor": "23", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 305, "area": 72.9733, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 30000, "rent": 200, "area": 59.943, "land": 0.0, "floor": "23", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "갱신", "p_dep": 30000, "p_rent": 150},
+      {"type": "전세", "price": 89000, "rent": 0, "area": 72.8899, "land": 0.0, "floor": "22", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 350, "area": 59.943, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 77700, "rent": 0, "area": 59.943, "land": 0.0, "floor": "23", "dong": "", "date": "2026-03-26", "period": "26.05~28.05", "renew": "갱신", "p_dep": 74000, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 330, "area": 59.9808, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 21000, "rent": 0, "area": 84.9918, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-10", "period": "26.05~28.05", "renew": "갱신", "p_dep": 20000, "p_rent": 0},
       {"type": "전세", "price": 62000, "rent": 0, "area": 59.943, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 60000, "p_rent": 0},
@@ -58,9 +66,11 @@
     "name": "서울역한라비발디센트럴",
     "address": "중구 만리동2가 288",
     "coords": [126.965563662247, 37.5550897722338],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 85.0, "rep_avg_price": 121000}, "jeonse": {"count": 2, "range": [70000, 80850], "rep_area": 85.0, "rep_avg_price": 75425}, "monthly": {"count": 1, "range": [72000, 72000], "rep_area": 85.0, "rep_avg_price": 72000}},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 85.0, "rep_avg_price": 121000}, "jeonse": {"count": 2, "range": [70000, 80850], "rep_area": 85.0, "rep_avg_price": 75425}, "monthly": {"count": 3, "range": [40000, 72000], "rep_area": 72.0, "rep_avg_price": 40000}},
     "deals": [
-      {"type": "매매", "price": 121000, "rent": 0, "area": 84.9774, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 121000, "rent": 0, "area": 84.9774, "land": 0.0, "floor": "11", "dong": "101", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 40000, "rent": 83, "area": 71.9832, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "26.04~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 40000, "rent": 170, "area": 71.9832, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "27.03~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 72000, "rent": 40, "area": 84.9774, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "26.03~27.03", "renew": "갱신", "p_dep": 72000, "p_rent": 25},
       {"type": "전세", "price": 70000, "rent": 0, "area": 84.9774, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-12", "period": "26.03~28.03", "renew": "갱신", "p_dep": 68000, "p_rent": 0},
       {"type": "전세", "price": 80850, "rent": 0, "area": 84.9774, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "갱신", "p_dep": 77000, "p_rent": 0}
@@ -70,8 +80,10 @@
     "name": "힐스테이트남산",
     "address": "중구 묵정동 35",
     "coords": [126.999280611633, 37.5615322366192],
-    "stats": {"total": 9, "sale": null, "jeonse": {"count": 4, "range": [49000, 57000], "rep_area": 44.6, "rep_avg_price": 55800}, "monthly": {"count": 5, "range": [5000, 6000], "rep_area": 44.6, "rep_avg_price": 5333}},
+    "stats": {"total": 11, "sale": {"count": 2, "range": [87000, 87000], "rep_area": 44.6, "rep_avg_price": 87000}, "jeonse": {"count": 4, "range": [49000, 57000], "rep_area": 44.6, "rep_avg_price": 55800}, "monthly": {"count": 5, "range": [5000, 6000], "rep_area": 44.6, "rep_avg_price": 5333}},
     "deals": [
+      {"type": "매매", "price": 87000, "rent": 0, "area": 49.41, "land": 0.0, "floor": "9", "dong": "102동", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 87000, "rent": 0, "area": 44.55, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 189, "area": 38.95, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 260, "area": 44.55, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 250, "area": 44.55, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -81,6 +93,15 @@
       {"type": "전세", "price": 49000, "rent": 0, "area": 29.17, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 215, "area": 46.65, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-12", "period": "26.04~27.04", "renew": "갱신", "p_dep": 5000, "p_rent": 205},
       {"type": "전세", "price": 49350, "rent": 0, "area": 38.95, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-02", "period": "26.03~28.03", "renew": "갱신", "p_dep": 47000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "대림상가",
+    "address": "중구 산림동 207-2",
+    "coords": [126.99542739784, 37.5675235050637],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 83.3, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 125, "area": 83.31, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-05", "period": "26.03~31.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -100,8 +121,9 @@
     "name": "바비엥3",
     "address": "중구 순화동 215",
     "coords": [126.969654984929, 37.5631527459053],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 70.8, "rep_avg_price": 2000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [2000, 2000], "rep_area": 70.8, "rep_avg_price": 2000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 200, "area": 70.46, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 2000, "rent": 231, "area": 70.81, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-20", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 2000, "rent": 210, "area": 70.81, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -110,9 +132,11 @@
     "name": "덕수궁롯데캐슬",
     "address": "중구 순화동 217",
     "coords": [126.97037127234, 37.5635913526827],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 1, "range": [120000, 120000], "rep_area": 82.3, "rep_avg_price": 120000}, "monthly": {"count": 5, "range": [3000, 10000], "rep_area": 82.3, "rep_avg_price": 8333}},
+    "stats": {"total": 8, "sale": {"count": 1, "range": [139000, 139000], "rep_area": 69.5, "rep_avg_price": 139000}, "jeonse": {"count": 2, "range": [66150, 120000], "rep_area": 56.3, "rep_avg_price": 66150}, "monthly": {"count": 5, "range": [3000, 10000], "rep_area": 82.3, "rep_avg_price": 8333}},
     "deals": [
+      {"type": "매매", "price": 139000, "rent": 0, "area": 69.5135, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 400, "area": 82.3212, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 66150, "rent": 0, "area": 56.2897, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-17", "period": "26.04~28.04", "renew": "갱신", "p_dep": 63000, "p_rent": 0},
       {"type": "월세", "price": 3000, "rent": 350, "area": 69.5135, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-31", "period": "26.03~29.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 120000, "rent": 0, "area": 82.3212, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 430, "area": 82.3212, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -142,8 +166,9 @@
     "name": "신당아르브",
     "address": "중구 신당동 160-5",
     "coords": [127.023335129269, 37.5649718292469],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 18.1, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 18.1, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 10000, "rent": 30, "area": 18.08, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 30, "area": 18.08, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -160,9 +185,11 @@
     "name": "남산정은스카이",
     "address": "중구 신당동 366-126",
     "coords": [127.007787174305, 37.5494498739986],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [145000, 145000], "rep_area": 143.0, "rep_avg_price": 145000}, "jeonse": {"count": 1, "range": [76650, 76650], "rep_area": 143.0, "rep_avg_price": 76650}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [145000, 145000], "rep_area": 143.0, "rep_avg_price": 145000}, "jeonse": {"count": 2, "range": [76650, 80000], "rep_area": 143.0, "rep_avg_price": 78325}, "monthly": {"count": 1, "range": [57000, 57000], "rep_area": 84.8, "rep_avg_price": 57000}},
     "deals": [
       {"type": "매매", "price": 145000, "rent": 0, "area": 143.049, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 57000, "rent": 40, "area": 84.841, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-26", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 80000, "rent": 0, "area": 143.049, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "26.05~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 76650, "rent": 0, "area": 143.049, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 73000, "p_rent": 0}
     ]
   },
@@ -170,8 +197,10 @@
     "name": "노블레스2",
     "address": "중구 신당동 432-1653",
     "coords": [127.005255709035, 37.5497332877511],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [88500, 88500], "rep_area": 84.8, "rep_avg_price": 88500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [85000, 99000], "rep_area": 84.8, "rep_avg_price": 86750}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 99000, "rent": 0, "area": 74.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 85000, "rent": 0, "area": 84.84, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 88500, "rent": 0, "area": 84.78, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -194,12 +223,24 @@
     ]
   },
   {
+    "name": "명경",
+    "address": "중구 신당동 432-657",
+    "coords": [127.006512700611, 37.5518503910487],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 59.2, "rep_avg_price": 33000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 59.22, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "현대",
     "address": "중구 신당동 840",
     "coords": [127.021759346522, 37.5599721399106],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 79.1, "rep_avg_price": 120000}, "jeonse": {"count": 2, "range": [42525, 60000], "rep_area": 66.6, "rep_avg_price": 42525}, "monthly": {"count": 2, "range": [7000, 46000], "rep_area": 66.6, "rep_avg_price": 7000}},
+    "stats": {"total": 8, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 79.1, "rep_avg_price": 120000}, "jeonse": {"count": 3, "range": [42525, 60000], "rep_area": 84.0, "rep_avg_price": 57500}, "monthly": {"count": 4, "range": [5000, 46000], "rep_area": 66.6, "rep_avg_price": 6000}},
     "deals": [
-      {"type": "매매", "price": 120000, "rent": 0, "area": 79.11, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 120000, "rent": 0, "area": 79.11, "land": 0.0, "floor": "1", "dong": "9", "date": "2026-03-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 150, "area": 66.6, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 46000, "rent": 30, "area": 79.11, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 55000, "rent": 0, "area": 83.97, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 7000, "rent": 180, "area": 66.6, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 60000, "rent": 0, "area": 83.97, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-18", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 46000, "rent": 30, "area": 79.11, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -210,11 +251,22 @@
     "name": "약수하이츠",
     "address": "중구 신당동 842",
     "coords": [127.014263668771, 37.5547365066187],
-    "stats": {"total": 23, "sale": {"count": 2, "range": [149500, 159000], "rep_area": 65.4, "rep_avg_price": 154250}, "jeonse": {"count": 13, "range": [47000, 72000], "rep_area": 84.9, "rep_avg_price": 64653}, "monthly": {"count": 8, "range": [10000, 50000], "rep_area": 57.6, "rep_avg_price": 31183}},
+    "stats": {"total": 34, "sale": {"count": 4, "range": [149500, 159000], "rep_area": 57.6, "rep_avg_price": 153250}, "jeonse": {"count": 17, "range": [47000, 75000], "rep_area": 84.9, "rep_avg_price": 65740}, "monthly": {"count": 13, "range": [10000, 50000], "rep_area": 57.6, "rep_avg_price": 28710}},
     "deals": [
-      {"type": "매매", "price": 159000, "rent": 0, "area": 65.37, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 154000, "rent": 0, "area": 57.63, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 159000, "rent": 0, "area": 65.37, "land": 0.0, "floor": "7", "dong": "110", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 152500, "rent": 0, "area": 57.63, "land": 0.0, "floor": "7", "dong": "109", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 149500, "rent": 0, "area": 65.37, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 63000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 25000, "rent": 140, "area": 57.63, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 36100, "rent": 45, "area": 65.37, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-02", "period": "26.03~27.03", "renew": "갱신", "p_dep": 33900, "p_rent": 45},
+      {"type": "월세", "price": 25000, "rent": 140, "area": 57.63, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 59850, "rent": 0, "area": 65.37, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "갱신", "p_dep": 57000, "p_rent": 0},
+      {"type": "월세", "price": 43000, "rent": 100, "area": 84.88, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-28", "period": "26.06~28.06", "renew": "갱신", "p_dep": 43000, "p_rent": 70},
+      {"type": "전세", "price": 63000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "갱신", "p_dep": 60000, "p_rent": 0},
+      {"type": "전세", "price": 75000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-25", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 48615, "rent": 0, "area": 57.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "26.05~28.05", "renew": "갱신", "p_dep": 46300, "p_rent": 0},
+      {"type": "월세", "price": 30000, "rent": 100, "area": 65.37, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 60770, "rent": 0, "area": 84.88, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "갱신", "p_dep": 57880, "p_rent": 0},
       {"type": "월세", "price": 20000, "rent": 108, "area": 57.63, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "갱신", "p_dep": 20000, "p_rent": 100},
       {"type": "전세", "price": 63000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "갱신", "p_dep": 60000, "p_rent": 0},
@@ -241,9 +293,11 @@
     "name": "삼성",
     "address": "중구 신당동 843",
     "coords": [127.017895622274, 37.5581689025054],
-    "stats": {"total": 11, "sale": {"count": 1, "range": [147000, 147000], "rep_area": 60.0, "rep_avg_price": 147000}, "jeonse": {"count": 9, "range": [47460, 70000], "rep_area": 60.0, "rep_avg_price": 56542}, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 85.0, "rep_avg_price": 7000}},
+    "stats": {"total": 13, "sale": {"count": 2, "range": [147000, 147000], "rep_area": 60.0, "rep_avg_price": 147000}, "jeonse": {"count": 10, "range": [47460, 70000], "rep_area": 60.0, "rep_avg_price": 56542}, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 85.0, "rep_avg_price": 7000}},
     "deals": [
+      {"type": "매매", "price": 147000, "rent": 0, "area": 59.98, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 147000, "rent": 0, "area": 59.98, "land": 0.0, "floor": "21", "dong": "", "date": "2026-03-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 57000, "rent": 0, "area": 114.91, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-26", "period": "26.05~28.05", "renew": "갱신", "p_dep": 57000, "p_rent": 0},
       {"type": "월세", "price": 7000, "rent": 158, "area": 84.96, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-10", "period": "26.06~28.06", "renew": "갱신", "p_dep": 7000, "p_rent": 150},
       {"type": "전세", "price": 57750, "rent": 0, "area": 59.98, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 55000, "p_rent": 0},
       {"type": "전세", "price": 60000, "rent": 0, "area": 59.98, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-28", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -260,10 +314,32 @@
     "name": "남산타운",
     "address": "중구 신당동 844",
     "coords": [127.008880476432, 37.5486807945139],
-    "stats": {"total": 32, "sale": {"count": 2, "range": [171000, 171800], "rep_area": 84.9, "rep_avg_price": 171400}, "jeonse": {"count": 21, "range": [47000, 100000], "rep_area": 59.9, "rep_avg_price": 54643}, "monthly": {"count": 9, "range": [5000, 65000], "rep_area": 59.9, "rep_avg_price": 9250}},
+    "stats": {"total": 54, "sale": {"count": 13, "range": [148000, 195000], "rep_area": 84.9, "rep_avg_price": 168500}, "jeonse": {"count": 28, "range": [47000, 100000], "rep_area": 59.9, "rep_avg_price": 54875}, "monthly": {"count": 13, "range": [5000, 65000], "rep_area": 59.9, "rep_avg_price": 8642}},
     "deals": [
+      {"type": "매매", "price": 152000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 195000, "rent": 0, "area": 114.88, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 168000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 166000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "12", "dong": "6", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 148000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "13", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 168000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 151500, "rent": 0, "area": 59.94, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 159700, "rent": 0, "area": 84.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 159000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 171800, "rent": 0, "area": 84.88, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 171000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 150000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 171000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "10", "dong": "7", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 175000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 52000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 60000, "rent": 120, "area": 114.88, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 315, "area": 84.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 89000, "rent": 0, "area": 114.88, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 85000, "p_rent": 0},
+      {"type": "월세", "price": 54000, "rent": 35, "area": 84.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-31", "period": "26.06~28.06", "renew": "갱신", "p_dep": 54000, "p_rent": 25},
+      {"type": "전세", "price": 91000, "rent": 0, "area": 114.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-26", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 68000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-25", "period": "26.06~28.06", "renew": "갱신", "p_dep": 65000, "p_rent": 0},
+      {"type": "전세", "price": 68250, "rent": 0, "area": 84.88, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "갱신", "p_dep": 65000, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 220, "area": 59.94, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-27", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 57000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "13", "dong": "", "date": "2026-03-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 54600, "rent": 0, "area": 59.94, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "갱신", "p_dep": 52000, "p_rent": 0},
       {"type": "전세", "price": 59000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "26.05~26.11", "renew": "갱신", "p_dep": 53000, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 165, "area": 59.94, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 80850, "rent": 0, "area": 114.88, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "갱신", "p_dep": 77000, "p_rent": 0},
@@ -318,18 +394,26 @@
     "name": "신당푸르지오",
     "address": "중구 신당동 850",
     "coords": [127.019504822129, 37.5592004695562],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [155000, 155000], "rep_area": 84.4, "rep_avg_price": 155000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 3, "range": [120000, 155000], "rep_area": 84.4, "rep_avg_price": 137500}, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.4, "rep_avg_price": 10000}},
     "deals": [
-      {"type": "매매", "price": 155000, "rent": 0, "area": 84.39, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 120000, "rent": 0, "area": 84.39, "land": 0.0, "floor": "4", "dong": "104", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 154000, "rent": 0, "area": 84.76, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 155000, "rent": 0, "area": 84.39, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 250, "area": 84.39, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
     "name": "래미안하이베르",
     "address": "중구 신당동 851",
     "coords": [127.022720407044, 37.5616192513452],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [160000, 160000], "rep_area": 59.7, "rep_avg_price": 160000}, "jeonse": {"count": 2, "range": [75000, 75000], "rep_area": 85.0, "rep_avg_price": 75000}, "monthly": {"count": 3, "range": [4000, 55000], "rep_area": 59.7, "rep_avg_price": 4000}},
+    "stats": {"total": 11, "sale": {"count": 3, "range": [142000, 160000], "rep_area": 59.7, "rep_avg_price": 151000}, "jeonse": {"count": 3, "range": [75000, 75000], "rep_area": 85.0, "rep_avg_price": 75000}, "monthly": {"count": 5, "range": [4000, 70000], "rep_area": 59.7, "rep_avg_price": 17000}},
     "deals": [
+      {"type": "매매", "price": 160000, "rent": 0, "area": 59.95, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 142000, "rent": 0, "area": 59.74, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 160000, "rent": 0, "area": 59.74, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 75000, "rent": 0, "area": 84.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 70000, "rent": 80, "area": 117.0, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 30000, "rent": 150, "area": 59.74, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 4000, "rent": 200, "area": 59.74, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "갱신", "p_dep": 4000, "p_rent": 158},
       {"type": "월세", "price": 45000, "rent": 80, "area": 59.95, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 55000, "rent": 140, "area": 117.0, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -341,8 +425,10 @@
     "name": "청구e편한세상",
     "address": "중구 신당동 852",
     "coords": [127.016730517193, 37.5604485958729],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [84000, 84000], "rep_area": 85.0, "rep_avg_price": 84000}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 118.5, "rep_avg_price": 200000}, "jeonse": {"count": 2, "range": [80000, 84000], "rep_area": 85.0, "rep_avg_price": 82000}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "매매", "price": 200000, "rent": 0, "area": 118.47, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 80000, "rent": 0, "area": 84.95, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 274, "area": 84.95, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "갱신", "p_dep": 10000, "p_rent": 260},
       {"type": "전세", "price": 84000, "rent": 0, "area": 84.95, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "26.05~28.05", "renew": "갱신", "p_dep": 80000, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 264, "area": 84.95, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-13", "period": "26.06~28.06", "renew": "갱신", "p_dep": 10000, "p_rent": 250}
@@ -352,19 +438,37 @@
     "name": "신당파인힐하나유보라",
     "address": "중구 신당동 855",
     "coords": [127.024956745645, 37.5642191657493],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [4112, 4112], "rep_area": 30.5, "rep_avg_price": 4112}},
+    "stats": {"total": 9, "sale": null, "jeonse": null, "monthly": {"count": 9, "range": [514, 10280], "rep_area": 30.5, "rep_avg_price": 4112}},
     "deals": [
+      {"type": "월세", "price": 514, "rent": 73, "area": 24.5152, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 4112, "rent": 76, "area": 30.4927, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10280, "rent": 97, "area": 59.0613, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 4112, "rent": 76, "area": 30.2477, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1028, "rent": 74, "area": 24.3931, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-17", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1028, "rent": 67, "area": 24.3931, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 4112, "rent": 76, "area": 30.4927, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 4112, "rent": 76, "area": 30.4927, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 4112, "rent": 76, "area": 30.2477, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
+    "name": "신당KCC스위첸",
+    "address": "중구 신당동 856",
+    "coords": [127.02479384731, 37.5631258409821],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 45.7, "rep_avg_price": 8000}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 190, "area": 45.7339, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "약수역더시티",
     "address": "중구 신당동 857",
     "coords": [127.010711986181, 37.5531773450446],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 18.9, "rep_avg_price": 1000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 18.9, "rep_avg_price": 21000}, "monthly": {"count": 3, "range": [1000, 16000], "rep_area": 20.7, "rep_avg_price": 9000}},
     "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 18.86, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-19", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 16000, "rent": 50, "area": 20.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 120, "area": 20.73, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-29", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 110, "area": 18.86, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -388,13 +492,26 @@
     ]
   },
   {
+    "name": "이지마루오장",
+    "address": "중구 오장동 206-34",
+    "coords": [127.001963679832, 37.5644109062796],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 14.5, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 60, "area": 14.49, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "세운푸르지오헤리시티",
     "address": "중구 인현동2가 240",
     "coords": [126.996608456921, 37.5646377447534],
-    "stats": {"total": 18, "sale": {"count": 2, "range": [37000, 38000], "rep_area": 28.4, "rep_avg_price": 37000}, "jeonse": {"count": 6, "range": [25200, 52000], "rep_area": 24.6, "rep_avg_price": 30400}, "monthly": {"count": 10, "range": [4000, 52000], "rep_area": 29.5, "rep_avg_price": 4666}},
+    "stats": {"total": 22, "sale": {"count": 2, "range": [37000, 38000], "rep_area": 28.4, "rep_avg_price": 37000}, "jeonse": {"count": 7, "range": [25200, 65000], "rep_area": 24.6, "rep_avg_price": 30400}, "monthly": {"count": 13, "range": [4000, 52000], "rep_area": 29.5, "rep_avg_price": 5862}},
     "deals": [
       {"type": "매매", "price": 38000, "rent": 0, "area": 29.4564, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 37000, "rent": 0, "area": 28.4064, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 9450, "rent": 105, "area": 29.4564, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "갱신", "p_dep": 9000, "p_rent": 100},
+      {"type": "전세", "price": 65000, "rent": 0, "area": 42.2349, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 130, "area": 28.4064, "land": 0.0, "floor": "13", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 15000, "rent": 80, "area": 24.5533, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 35000, "rent": 0, "area": 28.4064, "land": 0.0, "floor": "21", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 25000, "rent": 32, "area": 24.5533, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-14", "period": "26.03~28.03", "renew": "갱신", "p_dep": 25000, "p_rent": 30},
       {"type": "월세", "price": 5000, "rent": 220, "area": 40.7637, "land": 0.0, "floor": "26", "dong": "", "date": "2026-03-31", "period": "26.04~27.04", "renew": "갱신", "p_dep": 5000, "p_rent": 210},
@@ -417,8 +534,12 @@
     "name": "힐스테이트세운센트럴1단지",
     "address": "중구 입정동 277",
     "coords": [126.99307715654, 37.5679940708271],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [71085, 75000], "rep_area": 49.4, "rep_avg_price": 71085}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 49.4, "rep_avg_price": 5000}},
+    "stats": {"total": 7, "sale": {"count": 1, "range": [86200, 86200], "rep_area": 46.7, "rep_avg_price": 86200}, "jeonse": {"count": 2, "range": [71085, 75000], "rep_area": 49.4, "rep_avg_price": 71085}, "monthly": {"count": 4, "range": [5000, 10000], "rep_area": 49.4, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "매매", "price": 86200, "rent": 0, "area": 46.6997, "land": 0.0, "floor": "25", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 320, "area": 49.4486, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 350, "area": 59.7076, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 400, "area": 59.9881, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 340, "area": 49.4486, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 71085, "rent": 0, "area": 49.4486, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-20", "period": "26.05~27.11", "renew": "갱신", "p_dep": 67700, "p_rent": 0},
       {"type": "전세", "price": 75000, "rent": 0, "area": 49.9668, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
@@ -428,8 +549,13 @@
     "name": "힐스테이트세운센트럴2단지",
     "address": "중구 입정동 280",
     "coords": [126.994184286586, 37.5680483704991],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 2, "range": [60000, 70000], "rep_area": 50.0, "rep_avg_price": 65000}, "monthly": {"count": 4, "range": [1000, 32000], "rep_area": 46.0, "rep_avg_price": 1000}},
+    "stats": {"total": 11, "sale": {"count": 2, "range": [79000, 138500], "rep_area": 43.0, "rep_avg_price": 79000}, "jeonse": {"count": 3, "range": [60000, 71000], "rep_area": 50.0, "rep_avg_price": 65000}, "monthly": {"count": 6, "range": [1000, 32000], "rep_area": 50.0, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "매매", "price": 138500, "rent": 0, "area": 59.9851, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 79000, "rent": 0, "area": 42.998, "land": 0.0, "floor": "23", "dong": "힐스테이트 세운 센트럴 2단지", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 300, "area": 49.9619, "land": 0.0, "floor": "19", "dong": "", "date": "2026-03-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 71000, "rent": 0, "area": 49.7623, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 20000, "rent": 210, "area": 49.9902, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 32000, "rent": 150, "area": 49.3179, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 70000, "rent": 0, "area": 49.9976, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 250, "area": 45.9844, "land": 0.0, "floor": "27", "dong": "", "date": "2026-03-05", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -439,11 +565,22 @@
     ]
   },
   {
+    "name": "파크원빌",
+    "address": "중구 장충동2가 211",
+    "coords": [127.004538549458, 37.5603568913475],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 20.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 73, "area": 20.01, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-16", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "삼정아트테라스정동",
     "address": "중구 정동 37",
     "coords": [126.971934852329, 37.5632014230769],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 3, "range": [25000, 37000], "rep_area": 18.1, "rep_avg_price": 25000}, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 17.7, "rep_avg_price": 2000}},
+    "stats": {"total": 7, "sale": null, "jeonse": {"count": 3, "range": [25000, 37000], "rep_area": 18.1, "rep_avg_price": 25000}, "monthly": {"count": 4, "range": [2000, 15000], "rep_area": 28.2, "rep_avg_price": 15000}},
     "deals": [
+      {"type": "월세", "price": 15000, "rent": 129, "area": 28.1974, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 15000, "rent": 129, "area": 28.1974, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-09", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 37000, "rent": 0, "area": 36.7834, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 30000, "rent": 0, "area": 18.6574, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "갱신", "p_dep": 30000, "p_rent": 0},
       {"type": "전세", "price": 25000, "rent": 0, "area": 18.0824, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-18", "period": "26.04~27.04", "renew": "갱신", "p_dep": 25000, "p_rent": 0},
@@ -452,13 +589,44 @@
     ]
   },
   {
+    "name": "리하우스(LEEHAUS)",
+    "address": "중구 중림동 1153",
+    "coords": [126.966600546098, 37.5599197759693],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 43.1, "rep_avg_price": 10000}},
+    "deals": [
+      {"type": "월세", "price": 10000, "rent": 77, "area": 43.056, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 67, "area": 43.056, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "더플레이스충정로",
+    "address": "중구 중림동 1154",
+    "coords": [126.966069020449, 37.5589915975119],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 17.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 73, "area": 17.04, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성요셉",
+    "address": "중구 중림동 149",
+    "coords": [126.967257249333, 37.5595875821395],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 39.7, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 123, "area": 39.67, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-10", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "삼성사이버빌리지",
     "address": "중구 중림동 200",
     "coords": [126.965306488642, 37.5581161473011],
-    "stats": {"total": 7, "sale": {"count": 2, "range": [149300, 156000], "rep_area": 59.7, "rep_avg_price": 149300}, "jeonse": {"count": 3, "range": [63000, 72000], "rep_area": 84.9, "rep_avg_price": 67500}, "monthly": {"count": 2, "range": [35000, 58000], "rep_area": 59.9, "rep_avg_price": 58000}},
+    "stats": {"total": 10, "sale": {"count": 4, "range": [149300, 156000], "rep_area": 59.7, "rep_avg_price": 149645}, "jeonse": {"count": 4, "range": [40000, 72000], "rep_area": 59.9, "rep_avg_price": 55000}, "monthly": {"count": 2, "range": [35000, 58000], "rep_area": 59.9, "rep_avg_price": 58000}},
     "deals": [
       {"type": "매매", "price": 156000, "rent": 0, "area": 59.93, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 156000, "rent": 0, "area": 59.93, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 149990, "rent": 0, "area": 59.7, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 149300, "rent": 0, "area": 59.7, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 40000, "rent": 0, "area": 59.93, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-20", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 63000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-30", "period": "26.05~28.09", "renew": "갱신", "p_dep": 63000, "p_rent": 0},
       {"type": "월세", "price": 58000, "rent": 10, "area": 59.93, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "갱신", "p_dep": 58000, "p_rent": 0},
       {"type": "전세", "price": 70000, "rent": 0, "area": 59.93, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -470,8 +638,9 @@
     "name": "브라운스톤서울",
     "address": "중구 중림동 355",
     "coords": [126.968341179709, 37.5606358272505],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [3000, 20000], "rep_area": 84.9, "rep_avg_price": 3000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 1, "range": [102000, 102000], "rep_area": 112.5, "rep_avg_price": 102000}, "monthly": {"count": 3, "range": [3000, 20000], "rep_area": 84.9, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "전세", "price": 102000, "rent": 0, "area": 112.527, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-27", "period": "26.05~28.04", "renew": "갱신", "p_dep": 98000, "p_rent": 0},
       {"type": "월세", "price": 3000, "rent": 330, "area": 84.878, "land": 0.0, "floor": "30", "dong": "", "date": "2026-03-11", "period": "26.05~27.04", "renew": "갱신", "p_dep": 3000, "p_rent": 289},
       {"type": "월세", "price": 20000, "rent": 340, "area": 112.527, "land": 0.0, "floor": "35", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "갱신", "p_dep": 20000, "p_rent": 320},
       {"type": "월세", "price": 3000, "rent": 325, "area": 84.878, "land": 0.0, "floor": "26", "dong": "", "date": "2026-03-09", "period": "26.03~27.05", "renew": "갱신", "p_dep": 3000, "p_rent": 310}
@@ -481,8 +650,10 @@
     "name": "진양상가",
     "address": "중구 충무로4가 120-3",
     "coords": [126.995939188779, 37.562402711937],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23000, 23000], "rep_area": 71.9, "rep_avg_price": 23000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 71.9, "rep_avg_price": 28000}, "monthly": {"count": 2, "range": [23000, 23000], "rep_area": 71.9, "rep_avg_price": 23000}},
     "deals": [
+      {"type": "전세", "price": 28000, "rent": 0, "area": 71.93, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 23000, "rent": 25, "area": 71.93, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "갱신", "p_dep": 23000, "p_rent": 25},
       {"type": "월세", "price": 23000, "rent": 25, "area": 71.93, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "갱신", "p_dep": 23000, "p_rent": 15}
     ]
   },
@@ -490,8 +661,9 @@
     "name": "남산센트럴자이",
     "address": "중구 충무로4가 306",
     "coords": [126.997667728847, 37.5625353854314],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 114.8, "rep_avg_price": 20000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [146000, 146000], "rep_area": 89.3, "rep_avg_price": 146000}, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 114.8, "rep_avg_price": 20000}},
     "deals": [
+      {"type": "매매", "price": 146000, "rent": 0, "area": 89.307, "land": 0.0, "floor": "31", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 20000, "rent": 400, "area": 114.84, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-14", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -499,8 +671,9 @@
     "name": "이지마루충무로",
     "address": "중구 충무로5가 36-19",
     "coords": [126.999468255601, 37.5633219772152],
-    "stats": {"total": 4, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 28.4, "rep_avg_price": 30000}, "monthly": {"count": 3, "range": [15000, 24600], "rep_area": 27.8, "rep_avg_price": 21400}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 28.4, "rep_avg_price": 30000}, "monthly": {"count": 4, "range": [15000, 24600], "rep_area": 27.8, "rep_avg_price": 22200}},
     "deals": [
+      {"type": "월세", "price": 24600, "rent": 20, "area": 27.8, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 24600, "rent": 20, "area": 27.8, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 30000, "rent": 0, "area": 28.43, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "갱신", "p_dep": 29400, "p_rent": 0},
       {"type": "월세", "price": 15000, "rent": 56, "area": 27.8, "land": 0.0, "floor": "13", "dong": "", "date": "2026-03-19", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
@@ -513,8 +686,8 @@
     "coords": [127.000001584595, 37.5633835164692],
     "stats": {"total": 3, "sale": {"count": 2, "range": [21000, 35500], "rep_area": 22.8, "rep_avg_price": 21000}, "jeonse": {"count": 1, "range": [18500, 18500], "rep_area": 22.8, "rep_avg_price": 18500}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 21000, "rent": 0, "area": 22.75, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 35500, "rent": 0, "area": 35.55, "land": 0.0, "floor": "13", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 21000, "rent": 0, "area": 22.75, "land": 0.0, "floor": "4", "dong": "충무로엘크루메트로시티2", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 35500, "rent": 0, "area": 35.55, "land": 0.0, "floor": "13", "dong": "충무로엘크루메트로시티2", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 18500, "rent": 0, "area": 22.75, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -551,8 +724,9 @@
     "name": "동광팰리스",
     "address": "중구 황학동 1572",
     "coords": [127.022600451787, 37.5695479497411],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [24600, 24600], "rep_area": 26.9, "rep_avg_price": 24600}, "monthly": {"count": 1, "range": [13700, 13700], "rep_area": 16.6, "rep_avg_price": 13700}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [24600, 24600], "rep_area": 26.9, "rep_avg_price": 24600}, "monthly": {"count": 2, "range": [13700, 24300], "rep_area": 16.6, "rep_avg_price": 13700}},
     "deals": [
+      {"type": "월세", "price": 24300, "rent": 10, "area": 25.78, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 24600, "rent": 0, "area": 26.92, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "갱신", "p_dep": 24600, "p_rent": 0},
       {"type": "월세", "price": 13700, "rent": 7, "area": 16.61, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 24600, "rent": 0, "area": 26.92, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "갱신", "p_dep": 24600, "p_rent": 0}
@@ -600,8 +774,9 @@
     "name": "청계리버팰리스A",
     "address": "중구 황학동 2033",
     "coords": [127.020742512867, 37.5696874945972],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 26.5, "rep_avg_price": 21000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [31300, 31300], "rep_area": 34.3, "rep_avg_price": 31300}, "jeonse": null, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 26.5, "rep_avg_price": 21000}},
     "deals": [
+      {"type": "매매", "price": 31300, "rent": 0, "area": 34.26, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 21000, "rent": 25, "area": 26.49, "land": 0.0, "floor": "13", "dong": "", "date": "2026-03-17", "period": "26.04~28.04", "renew": "갱신", "p_dep": 21000, "p_rent": 21}
     ]
   },
@@ -619,30 +794,43 @@
     "name": "롯데캐슬",
     "address": "중구 황학동 2545",
     "coords": [127.021433711217, 37.5709782271712],
-    "stats": {"total": 37, "sale": {"count": 22, "range": [95000, 145000], "rep_area": 84.9, "rep_avg_price": 116111}, "jeonse": {"count": 6, "range": [56000, 76500], "rep_area": 59.9, "rep_avg_price": 57233}, "monthly": {"count": 9, "range": [4000, 60000], "rep_area": 59.9, "rep_avg_price": 19666}},
+    "stats": {"total": 50, "sale": {"count": 32, "range": [95000, 145000], "rep_area": 59.9, "rep_avg_price": 99533}, "jeonse": {"count": 7, "range": [50600, 76500], "rep_area": 59.9, "rep_avg_price": 55575}, "monthly": {"count": 11, "range": [4000, 60000], "rep_area": 59.9, "rep_avg_price": 19666}},
     "deals": [
+      {"type": "매매", "price": 145000, "rent": 0, "area": 114.9, "land": 0.0, "floor": "33", "dong": "104", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 95000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "18", "dong": "105", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 118000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "20", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 143000, "rent": 0, "area": 114.9, "land": 0.0, "floor": "25", "dong": "105", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 145000, "rent": 0, "area": 114.9, "land": 0.0, "floor": "33", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 99700, "rent": 0, "area": 59.94, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 105000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "27", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 98000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 102000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "31", "dong": "102", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 99700, "rent": 0, "area": 59.94, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 117000, "rent": 0, "area": 84.92, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 143000, "rent": 0, "area": 114.9, "land": 0.0, "floor": "20", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 117000, "rent": 0, "area": 84.92, "land": 0.0, "floor": "32", "dong": "104", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 120000, "rent": 0, "area": 84.92, "land": 0.0, "floor": "29", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 100000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 115000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "28", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 124500, "rent": 0, "area": 84.9, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 95000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 100000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "33", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 116000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 113000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "21", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 100000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "33", "dong": "104", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 116000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "11", "dong": "102", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 119000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "22", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 115000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 95500, "rent": 0, "area": 59.91, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 115000, "rent": 0, "area": 84.92, "land": 0.0, "floor": "25", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 115000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "32", "dong": "101", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 95500, "rent": 0, "area": 59.91, "land": 0.0, "floor": "32", "dong": "102", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 115000, "rent": 0, "area": 84.92, "land": 0.0, "floor": "25", "dong": "102", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 118500, "rent": 0, "area": 84.97, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 101000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "26", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 145000, "rent": 0, "area": 114.9, "land": 0.0, "floor": "23", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 103500, "rent": 0, "area": 59.94, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 130000, "rent": 0, "area": 114.9, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 118500, "rent": 0, "area": 84.97, "land": 0.0, "floor": "16", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 110000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 112500, "rent": 0, "area": 84.9, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 118500, "rent": 0, "area": 84.97, "land": 0.0, "floor": "16", "dong": "104", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 110000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "10", "dong": "102", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 112500, "rent": 0, "area": 84.9, "land": 0.0, "floor": "8", "dong": "103", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 240, "area": 84.97, "land": 0.0, "floor": "22", "dong": "", "date": "2026-03-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 250, "area": 84.97, "land": 0.0, "floor": "21", "dong": "", "date": "2026-03-09", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 50600, "rent": 0, "area": 59.94, "land": 0.0, "floor": "33", "dong": "", "date": "2026-03-15", "period": "26.05~28.05", "renew": "갱신", "p_dep": 49600, "p_rent": 0},
       {"type": "월세", "price": 20000, "rent": 195, "area": 84.92, "land": 0.0, "floor": "22", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 56700, "rent": 0, "area": 59.94, "land": 0.0, "floor": "30", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "갱신", "p_dep": 54000, "p_rent": 0},
       {"type": "전세", "price": 75600, "rent": 0, "area": 114.9, "land": 0.0, "floor": "18", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "갱신", "p_dep": 72000, "p_rent": 0},
@@ -684,9 +872,10 @@
     "name": "DUO302",
     "address": "중구 황학동 819",
     "coords": [127.023270434217, 37.5665827328463],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 16.0, "rep_avg_price": 16000}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 16.0, "rep_avg_price": 1000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 16.0, "rep_avg_price": 16000}, "jeonse": null, "monthly": {"count": 3, "range": [1000, 4000], "rep_area": 16.0, "rep_avg_price": 2000}},
     "deals": [
       {"type": "매매", "price": 16000, "rent": 0, "area": 15.97, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 4000, "rent": 56, "area": 15.97, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-26", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 75, "area": 15.97, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-13", "period": "26.06~27.05", "renew": "갱신", "p_dep": 1000, "p_rent": 73},
       {"type": "월세", "price": 1000, "rent": 80, "area": 15.97, "land": 0.0, "floor": "15", "dong": "", "date": "2026-03-03", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -704,8 +893,9 @@
     "name": "황학동코아루",
     "address": "중구 황학동 882",
     "coords": [127.022477348128, 37.566708034837],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 85.0, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [99500, 99500], "rep_area": 84.9, "rep_avg_price": 99500}, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 85.0, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "매매", "price": 99500, "rent": 0, "area": 84.94, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 3000, "rent": 230, "area": 84.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -722,17 +912,21 @@
     "name": "삼풍",
     "address": "중구 회현동1가 146-1",
     "coords": [126.98252007976, 37.5562258738598],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 59.5, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 48.6, "rep_avg_price": 30000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 46.8, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "매매", "price": 40000, "rent": 0, "area": 59.5, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 3000, "rent": 120, "area": 46.85, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 30000, "rent": 0, "area": 48.59, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
     "name": "SK리더스뷰남산",
     "address": "중구 회현동1가 206",
     "coords": [126.980636557364, 37.5591275120652],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [130000, 130000], "rep_area": 137.5, "rep_avg_price": 130000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 137.5, "rep_avg_price": 10000}},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [250000, 250000], "rep_area": 176.3, "rep_avg_price": 250000}, "jeonse": {"count": 1, "range": [130000, 130000], "rep_area": 137.5, "rep_avg_price": 130000}, "monthly": {"count": 2, "range": [10000, 100000], "rep_area": 137.5, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "매매", "price": 250000, "rent": 0, "area": 176.26, "land": 0.0, "floor": "24", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 250000, "rent": 0, "area": 176.26, "land": 0.0, "floor": "24", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100000, "rent": 280, "area": 176.26, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-30", "period": "26.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 130000, "rent": 0, "area": 137.53, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.03~27.03", "renew": "갱신", "p_dep": 99000, "p_rent": 0},
       {"type": "월세", "price": 10000, "rent": 650, "area": 137.53, "land": 0.0, "floor": "26", "dong": "", "date": "2026-03-19", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -751,29 +945,42 @@
     "name": "쌍용남산플래티넘",
     "address": "중구 회현동2가 87",
     "coords": [126.983218672682, 37.5594031619007],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [168000, 190000], "rep_area": 177.0, "rep_avg_price": 179000}, "monthly": {"count": 1, "range": [0, 0], "rep_area": 177.0, "rep_avg_price": 0}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 2, "range": [168000, 190000], "rep_area": 177.0, "rep_avg_price": 179000}, "monthly": {"count": 3, "range": [0, 10000], "rep_area": 177.0, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "월세", "price": 10000, "rent": 850, "area": 166.24, "land": 0.0, "floor": "28", "dong": "", "date": "2026-03-31", "period": "26.06~30.06", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 950, "area": 177.0, "land": 0.0, "floor": "32", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 190000, "rent": 0, "area": 177.0, "land": 0.0, "floor": "23", "dong": "", "date": "2026-03-03", "period": "26.05~28.05", "renew": "갱신", "p_dep": 190000, "p_rent": 0},
       {"type": "월세", "price": 0, "rent": 1100, "area": 177.0, "land": 0.0, "floor": "29", "dong": "", "date": "2026-03-04", "period": "26.03~26.06", "renew": "갱신", "p_dep": 0, "p_rent": 1100},
       {"type": "전세", "price": 168000, "rent": 0, "area": 177.0, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
+    "name": "청계천두산위브더제니스",
+    "address": "중구 흥인동 13-1",
+    "coords": [127.017110234475, 37.566861653483],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [148000, 148000], "rep_area": 116.6, "rep_avg_price": 148000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 148000, "rent": 0, "area": 116.6232, "land": 0.0, "floor": "14", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "위더스하임",
     "address": "중구 흥인동 142-1",
     "coords": [127.014221235624, 37.566084567426],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [26500, 26500], "rep_area": 23.8, "rep_avg_price": 26500}, "jeonse": {"count": 1, "range": [27500, 27500], "rep_area": 23.8, "rep_avg_price": 27500}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [26500, 26500], "rep_area": 23.8, "rep_avg_price": 26500}, "jeonse": {"count": 1, "range": [27500, 27500], "rep_area": 23.8, "rep_avg_price": 27500}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 23.8, "rep_avg_price": 2000}},
     "deals": [
       {"type": "매매", "price": 26500, "rent": 0, "area": 23.82, "land": 0.0, "floor": "11", "dong": "101동", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 27500, "rent": 0, "area": 23.82, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "전세", "price": 27500, "rent": 0, "area": 23.82, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 135, "area": 23.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
     "name": "우일타운",
     "address": "중구 흥인동 3-4",
     "coords": [127.016528447054, 37.5674299944468],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [68000, 68000], "rep_area": 84.9, "rep_avg_price": 68000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [66300, 68000], "rep_area": 75.4, "rep_avg_price": 66300}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 66300, "rent": 0, "area": 75.45, "land": 0.0, "floor": "20", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 68000, "rent": 0, "area": 84.87, "land": 0.0, "floor": "20", "dong": "", "date": "2026-03-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },

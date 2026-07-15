@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>부동산 실거래가 시각화</title>
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="stylesheet" href="./styles.css?v=3">
   <!-- Kakao Maps SDK -->
   <script type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=61feaec3994e05d0c9235d6b07bc5712&libraries=services,clusterer"></script>
@@ -67,7 +67,7 @@
 
 
         <div class="panel-section">
-          <div class="section-title">주택 유형</div>
+          <div class="section-title">부동산 유형</div>
           <div class="checkbox-group">
             <label class="filter-chip">
               <input type="radio" name="housingType" value="apt" checked>
@@ -81,12 +81,26 @@
               <input type="radio" name="housingType" value="sh">
               <span class="chip-label">단독/다가구</span>
             </label>
-            <!--
             <label class="filter-chip">
               <input type="radio" name="housingType" value="off">
               <span class="chip-label">오피스텔</span>
             </label>
-            -->
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="nrg">
+              <span class="chip-label">상가</span>
+            </label>
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="land">
+              <span class="chip-label">토지</span>
+            </label>
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="silv">
+              <span class="chip-label">분양권</span>
+            </label>
+            <label class="filter-chip">
+              <input type="radio" name="housingType" value="indu">
+              <span class="chip-label">공장/창고</span>
+            </label>
           </div>
         </div>
 
@@ -106,6 +120,20 @@
               <span class="chip-label">월세</span>
             </label>
           </div>
+          <div id="tx-availability-note" class="tx-note" style="display:none;">
+            ※ 선택한 유형은 <b>매매 실거래만</b> 제공됩니다 (전·월세 데이터 없음)
+          </div>
+        </div>
+
+        <div class="panel-section">
+          <div class="section-title">정비사업 구역 (서울)</div>
+          <div class="checkbox-group">
+            <label class="filter-chip">
+              <input type="checkbox" id="show-redev">
+              <span class="chip-label">재개발·재건축 표시</span>
+            </label>
+          </div>
+          <div id="redev-legend" class="redev-legend" style="display:none;"></div>
         </div>
 
         <div class="panel-section">
@@ -168,7 +196,7 @@
     </div>
   </div>
 
-  <script src="./app.js?v=2"></script>
+  <script src="./app.js?v=3"></script>
 </body>
 
 </html>

@@ -56,6 +56,12 @@ SHEET_NAMES = {
     "rh_rt":  "연립다세대_전월세",
     "sh_tr":  "단독다가구_매매",
     "sh_rt":  "단독다가구_전월세",
+    "off_tr": "오피스텔_매매",
+    "off_rt": "오피스텔_전월세",
+    "nrg_tr": "상가_매매",       # 상업업무용 (매매만 제공)
+    "land_tr":"토지_매매",       # 토지 (매매만 제공)
+    "silv_tr":"분양권_매매",     # 분양권/입주권 (매매만 제공)
+    "indu_tr":"공장창고_매매",   # 공장/창고 등 (매매만 제공)
 }
 
 # 필요시 원하는 경로로 변경 (예: Path("output") , Path(__file__).parent)
@@ -182,12 +188,25 @@ BASE_RH_TRADE  = "https://apis.data.go.kr/1613000/RTMSDataSvcRHTrade/getRTMSData
 BASE_RH_RENT   = "https://apis.data.go.kr/1613000/RTMSDataSvcRHRent/getRTMSDataSvcRHRent"
 BASE_SH_TRADE  = "https://apis.data.go.kr/1613000/RTMSDataSvcSHTrade/getRTMSDataSvcSHTrade"
 BASE_SH_RENT   = "https://apis.data.go.kr/1613000/RTMSDataSvcSHRent/getRTMSDataSvcSHRent"
+# 오피스텔 (매매/전월세)
+BASE_OFFI_TRADE = "https://apis.data.go.kr/1613000/RTMSDataSvcOffiTrade/getRTMSDataSvcOffiTrade"
+BASE_OFFI_RENT  = "https://apis.data.go.kr/1613000/RTMSDataSvcOffiRent/getRTMSDataSvcOffiRent"
+# 상업업무용(상가) 매매 — 국토부는 매매만 제공(전월세 API 없음)
+BASE_NRG_TRADE  = "https://apis.data.go.kr/1613000/RTMSDataSvcNrgTrade/getRTMSDataSvcNrgTrade"
+# 토지 매매 — 매매만 제공
+BASE_LAND_TRADE = "https://apis.data.go.kr/1613000/RTMSDataSvcLandTrade/getRTMSDataSvcLandTrade"
+# 아파트 분양권/입주권 매매 — 매매만 제공
+BASE_SILV_TRADE = "https://apis.data.go.kr/1613000/RTMSDataSvcSilvTrade/getRTMSDataSvcSilvTrade"
+# 공장/창고 등(산업용) 매매 — 매매만 제공
+BASE_INDU_TRADE = "https://apis.data.go.kr/1613000/RTMSDataSvcInduTrade/getRTMSDataSvcInduTrade"
 
 # ==========================
 # 요청/파싱 공통
 # ==========================
 OK_CODES = {"00", "000", "0000"}
 class APICallError(Exception): pass
+# 활용신청이 안 된(미승인) API. 403/권한 오류는 재시도해도 소용없으므로 재시도 대상에서 제외한다.
+class APIUnauthorizedError(Exception): pass
 
 @retry(
     reraise=True,
@@ -204,6 +223,9 @@ def call_rtms(url: str, lawd_cd: str, yyyymm: str, page: int, rows: int = NUM_RO
         "numOfRows": rows,
     }
     r = requests.get(url, params=params, timeout=30)
+    # 403/401 = 해당 API 미승인(활용신청 필요). 재시도 불가 → 즉시 전용 예외로 중단.
+    if r.status_code in (401, 403):
+        raise APIUnauthorizedError(url)
     r.raise_for_status()
     data = xmltodict.parse(r.text)
     header = (data.get("response") or {}).get("header") or {}
@@ -234,6 +256,24 @@ def fetch_all(url: str, lawd_cd: str, yyyymm: str) -> list[dict]:
             break
         page += 1
     return results
+
+# 미승인(403)으로 건너뛴 API URL 모음 — 한 번 실패하면 이후 지역에선 호출조차 하지 않음
+DISABLED_APIS: set[str] = set()
+
+def safe_fetch(url: str, lawd_cd: str, yyyymm: str, label: str) -> list[dict]:
+    """
+    fetch_all 래퍼. 미승인(403/401) API는 전체 실행을 멈추지 않고 건너뛴다.
+    최초 1회만 안내를 출력하고, 이후 동일 API는 호출을 생략한다.
+    """
+    if url in DISABLED_APIS:
+        return []
+    try:
+        return fetch_all(url, lawd_cd, yyyymm)
+    except APIUnauthorizedError:
+        DISABLED_APIS.add(url)
+        print(f"    [!] '{label}' API 미승인(403) → 건너뜁니다. "
+              f"data.go.kr에서 해당 API 활용신청 후 승인되면 수집됩니다.")
+        return []
 
 # ==========================
 # 유틸(정규화/형변환/주소/표기)
@@ -580,6 +620,202 @@ def to_df_sh_rent(items:list[dict])->pd.DataFrame:
     if not df.empty: make_contract_cols(df)
     return df
 
+# --------------------------
+# 오피스텔 (아파트와 필드 구조 거의 동일, 단지명=offiNm)
+# --------------------------
+def to_df_offi_trade(items:list[dict])->pd.DataFrame:
+    rows=[]
+    for it in items:
+        dong = get_dong_name(it)
+        rows.append({
+            "법정동": dong,
+            "단지명/건물명": gv(it,"offiNm","단지명","offiName"),
+            "동": pd.NA,
+            "전용면적": gv(it,"전용면적","excluUseAr","exclusiveArea"),
+            "대지면적": pd.NA,
+            "층": gv(it,"층","flr","floor"),
+            "거래금액": gv(it,"거래금액","dealAmount"),
+            "보증금": pd.NA,
+            "월세": pd.NA,
+            "건축년도": gv(it,"건축년도","buildYear"),
+            "임차기간": pd.NA,
+            "갱신여부": pd.NA,
+            "기존 보증금": pd.NA,
+            "기존 월세": pd.NA,
+            "년": gv(it,"년","dealYear"),
+            "월": gv(it,"월","dealMonth"),
+            "일": gv(it,"일","dealDay"),
+            "도로명": build_road_name(it),
+            "지번": build_jibun(it, dong),
+        })
+    df=pd.DataFrame(rows)
+    if not df.empty: make_contract_cols(df)
+    return df
+
+def to_df_offi_rent(items:list[dict])->pd.DataFrame:
+    rows=[]
+    for it in items:
+        dong = get_dong_name(it)
+        rows.append({
+            "법정동": dong,
+            "단지명/건물명": gv(it,"offiNm","단지명","offiName"),
+            "동": pd.NA,
+            "전용면적": gv(it,"전용면적","excluUseAr","exclusiveArea"),
+            "대지면적": pd.NA,
+            "층": gv(it,"층","flr","floor"),
+            "거래금액": pd.NA,
+            "보증금": gv(it,"보증금","deposit"),
+            "월세": gv(it,"월세","monthlyRent","rent"),
+            "건축년도": gv(it,"건축년도","buildYear"),
+            "임차기간": gv(it,"contractTerm"),
+            "갱신여부": gv(it,"contractType"),
+            "기존 보증금": gv(it,"preDeposit"),
+            "기존 월세": gv(it,"preMonthlyRent"),
+            "년": gv(it,"년","dealYear"),
+            "월": gv(it,"월","dealMonth"),
+            "일": gv(it,"일","dealDay"),
+            "도로명": build_road_name(it),
+            "지번": build_jibun(it, dong),
+        })
+    df=pd.DataFrame(rows)
+    if not df.empty: make_contract_cols(df)
+    return df
+
+# --------------------------
+# 상업업무용(상가) 매매 — 단지명 없음 → 건물주용도/유형을 명칭으로, 건물면적을 전용면적 자리에 사용
+# --------------------------
+def to_df_nrg_trade(items:list[dict])->pd.DataFrame:
+    rows=[]
+    for it in items:
+        dong = get_dong_name(it)
+        name = gv(it,"buildingUse","건물주용도") or gv(it,"buildingType","건물유형") or "상가"
+        rows.append({
+            "법정동": dong,
+            "단지명/건물명": name,
+            "동": pd.NA,
+            "전용면적": gv(it,"buildingAr","건물면적"),   # 건물(연)면적을 대표 면적으로
+            "대지면적": gv(it,"plottageAr","대지면적"),
+            "층": gv(it,"층","floor","flr"),
+            "거래금액": gv(it,"거래금액","dealAmount"),
+            "보증금": pd.NA,
+            "월세": pd.NA,
+            "건축년도": gv(it,"건축년도","buildYear"),
+            "임차기간": pd.NA,
+            "갱신여부": pd.NA,
+            "기존 보증금": pd.NA,
+            "기존 월세": pd.NA,
+            "년": gv(it,"년","dealYear"),
+            "월": gv(it,"월","dealMonth"),
+            "일": gv(it,"일","dealDay"),
+            "도로명": build_road_name(it),
+            "지번": build_jibun(it, dong),
+        })
+    df=pd.DataFrame(rows)
+    if not df.empty: make_contract_cols(df)
+    return df
+
+# --------------------------
+# 토지 매매 — 건물/층/전용면적 개념 없음 → 지목을 명칭으로, 거래면적을 대표 면적으로
+# --------------------------
+def to_df_land_trade(items:list[dict])->pd.DataFrame:
+    rows=[]
+    for it in items:
+        dong = get_dong_name(it)
+        name = gv(it,"jimok","지목") or "토지"
+        rows.append({
+            "법정동": dong,
+            "단지명/건물명": name,
+            "동": pd.NA,
+            "전용면적": gv(it,"dealArea","거래면적"),   # 거래(토지)면적을 대표 면적으로
+            "대지면적": gv(it,"dealArea","거래면적"),
+            "층": pd.NA,
+            "거래금액": gv(it,"거래금액","dealAmount"),
+            "보증금": pd.NA,
+            "월세": pd.NA,
+            "건축년도": pd.NA,
+            "임차기간": pd.NA,
+            "갱신여부": pd.NA,
+            "기존 보증금": pd.NA,
+            "기존 월세": pd.NA,
+            "년": gv(it,"년","dealYear"),
+            "월": gv(it,"월","dealMonth"),
+            "일": gv(it,"일","dealDay"),
+            "도로명": build_road_name(it),
+            "지번": build_jibun(it, dong),
+        })
+    df=pd.DataFrame(rows)
+    if not df.empty: make_contract_cols(df)
+    return df
+
+# --------------------------
+# 분양권/입주권 매매 — 아파트와 유사, 구분(분양권/입주권)을 명칭에 부기
+# --------------------------
+def to_df_silv_trade(items:list[dict])->pd.DataFrame:
+    rows=[]
+    for it in items:
+        dong = get_dong_name(it)
+        name = gv(it,"aptNm","단지명")
+        gbn = gv(it,"ownershipGbn","구분")
+        if name and gbn:
+            name = f"{name} ({gbn})"
+        rows.append({
+            "법정동": dong,
+            "단지명/건물명": name,
+            "동": pd.NA,
+            "전용면적": gv(it,"전용면적","excluUseAr","exclusiveArea"),
+            "대지면적": pd.NA,
+            "층": gv(it,"층","floor","flr"),
+            "거래금액": gv(it,"거래금액","dealAmount"),
+            "보증금": pd.NA,
+            "월세": pd.NA,
+            "건축년도": pd.NA,
+            "임차기간": pd.NA,
+            "갱신여부": pd.NA,
+            "기존 보증금": pd.NA,
+            "기존 월세": pd.NA,
+            "년": gv(it,"년","dealYear"),
+            "월": gv(it,"월","dealMonth"),
+            "일": gv(it,"일","dealDay"),
+            "도로명": build_road_name(it),
+            "지번": build_jibun(it, dong),
+        })
+    df=pd.DataFrame(rows)
+    if not df.empty: make_contract_cols(df)
+    return df
+
+# --------------------------
+# 공장/창고 등(산업용) 매매 — 상가와 동일 구조
+# --------------------------
+def to_df_indu_trade(items:list[dict])->pd.DataFrame:
+    rows=[]
+    for it in items:
+        dong = get_dong_name(it)
+        name = gv(it,"buildingUse","건물주용도") or gv(it,"buildingType","건물유형") or "공장/창고"
+        rows.append({
+            "법정동": dong,
+            "단지명/건물명": name,
+            "동": pd.NA,
+            "전용면적": gv(it,"buildingAr","건물면적"),
+            "대지면적": gv(it,"plottageAr","대지면적"),
+            "층": gv(it,"층","floor","flr"),
+            "거래금액": gv(it,"거래금액","dealAmount"),
+            "보증금": pd.NA,
+            "월세": pd.NA,
+            "건축년도": gv(it,"건축년도","buildYear"),
+            "임차기간": pd.NA,
+            "갱신여부": pd.NA,
+            "기존 보증금": pd.NA,
+            "기존 월세": pd.NA,
+            "년": gv(it,"년","dealYear"),
+            "월": gv(it,"월","dealMonth"),
+            "일": gv(it,"일","dealDay"),
+            "도로명": build_road_name(it),
+            "지번": build_jibun(it, dong),
+        })
+    df=pd.DataFrame(rows)
+    if not df.empty: make_contract_cols(df)
+    return df
+
 # ==========================
 # 지역 로딩
 # ==========================
@@ -694,8 +930,8 @@ def main():
 
         for region_name, lawd_cd in REGIONS.items():
             # 아파트
-            apt_tr = fetch_all(BASE_APT_TRADE, lawd_cd, ym)
-            apt_rt = fetch_all(BASE_APT_RENT,  lawd_cd, ym)
+            apt_tr = safe_fetch(BASE_APT_TRADE, lawd_cd, ym, "아파트_매매")
+            apt_rt = safe_fetch(BASE_APT_RENT,  lawd_cd, ym, "아파트_전월세")
             if apt_tr:
                 df = finalize_columns(to_df_apt_trade(apt_tr), region_name, "아파트_매매")
                 bag["apt_tr"].append(df)
@@ -704,8 +940,8 @@ def main():
                 bag["apt_rt"].append(df)
 
             # 연립/다세대
-            rh_tr = fetch_all(BASE_RH_TRADE, lawd_cd, ym)
-            rh_rt = fetch_all(BASE_RH_RENT,  lawd_cd, ym)
+            rh_tr = safe_fetch(BASE_RH_TRADE, lawd_cd, ym, "연립다세대_매매")
+            rh_rt = safe_fetch(BASE_RH_RENT,  lawd_cd, ym, "연립다세대_전월세")
             if rh_tr:
                 df = finalize_columns(to_df_rh_trade(rh_tr), region_name, "연립다세대_매매")
                 bag["rh_tr"].append(df)
@@ -714,14 +950,48 @@ def main():
                 bag["rh_rt"].append(df)
 
             # 단독/다가구
-            sh_tr = fetch_all(BASE_SH_TRADE, lawd_cd, ym)
-            sh_rt = fetch_all(BASE_SH_RENT,  lawd_cd, ym)
+            sh_tr = safe_fetch(BASE_SH_TRADE, lawd_cd, ym, "단독다가구_매매")
+            sh_rt = safe_fetch(BASE_SH_RENT,  lawd_cd, ym, "단독다가구_전월세")
             if sh_tr:
                 df = finalize_columns(to_df_sh_trade(sh_tr), region_name, "단독다가구_매매")
                 bag["sh_tr"].append(df)
             if sh_rt:
                 df = finalize_columns(to_df_sh_rent(sh_rt), region_name, "단독다가구_전월세")
                 bag["sh_rt"].append(df)
+
+            # 오피스텔 (매매/전월세)
+            off_tr = safe_fetch(BASE_OFFI_TRADE, lawd_cd, ym, "오피스텔_매매")
+            off_rt = safe_fetch(BASE_OFFI_RENT,  lawd_cd, ym, "오피스텔_전월세")
+            if off_tr:
+                df = finalize_columns(to_df_offi_trade(off_tr), region_name, "오피스텔_매매")
+                bag["off_tr"].append(df)
+            if off_rt:
+                df = finalize_columns(to_df_offi_rent(off_rt), region_name, "오피스텔_전월세")
+                bag["off_rt"].append(df)
+
+            # 상업업무용(상가) — 매매만
+            nrg_tr = safe_fetch(BASE_NRG_TRADE, lawd_cd, ym, "상가_매매")
+            if nrg_tr:
+                df = finalize_columns(to_df_nrg_trade(nrg_tr), region_name, "상가_매매")
+                bag["nrg_tr"].append(df)
+
+            # 토지 — 매매만
+            land_tr = safe_fetch(BASE_LAND_TRADE, lawd_cd, ym, "토지_매매")
+            if land_tr:
+                df = finalize_columns(to_df_land_trade(land_tr), region_name, "토지_매매")
+                bag["land_tr"].append(df)
+
+            # 분양권/입주권 — 매매만
+            silv_tr = safe_fetch(BASE_SILV_TRADE, lawd_cd, ym, "분양권_매매")
+            if silv_tr:
+                df = finalize_columns(to_df_silv_trade(silv_tr), region_name, "분양권_매매")
+                bag["silv_tr"].append(df)
+
+            # 공장/창고 등 — 매매만
+            indu_tr = safe_fetch(BASE_INDU_TRADE, lawd_cd, ym, "공장창고_매매")
+            if indu_tr:
+                df = finalize_columns(to_df_indu_trade(indu_tr), region_name, "공장창고_매매")
+                bag["indu_tr"].append(df)
 
         # 파일 저장(해당 yyyymm 한 개 파일)
         out_path = make_output_path(ym)

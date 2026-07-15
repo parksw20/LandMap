@@ -24,7 +24,10 @@ if not KAKAO_API_KEY:
     print("    설정 방법: python -c \"import keyring; keyring.set_password('kakao', 'api_key', '내_키_값')\"")
     # 개발 편의를 위해 일단 실행은 되게 하되, 실제 API 호출 시 에러가 날 것입니다.
 
-TYPE_MAP = {'apt': '아파트', 'rh': '빌라', 'sh': '주택', 'off': '오피스텔'}
+TYPE_MAP = {
+    'apt': '아파트', 'rh': '빌라', 'sh': '주택', 'off': '오피스텔',
+    'nrg': '상가', 'land': '토지', 'silv': '분양권', 'indu': '공장창고',
+}
 
 class DataManager:
     def __init__(self):
@@ -76,11 +79,14 @@ class DataManager:
                                     "n": item['name'], "c": item['coords'], "t": "dong"
                                 }
 
-    def run(self, target_month=None):
+    def run(self, target_month=None, rebuild=False):
         print("\n[부동산 데이터 통합 관리 시스템 시작]")
-        
-        # 기존 데이터 인덱스 먼저 로드
-        self.load_existing_indexes()
+        if rebuild:
+            print("  > 전체 재생성 모드: manifest 스킵 없이 모든 월을 다시 처리합니다.")
+
+        # 기존 데이터 인덱스 먼저 로드 (재생성 시에는 오염된 기존 좌표를 재사용하지 않음)
+        if not rebuild:
+            self.load_existing_indexes()
 
         for yr in ["2026", "2025"]:
             d = BASE_DIR / yr
@@ -96,8 +102,8 @@ class DataManager:
                 if target_month and file_ym != target_month:
                     continue
                 
-                # 특정 월 지정이 없고, 이미 manifest에 있으면 스킵
-                if not target_month and file_ym in self.manifest:
+                # 특정 월 지정이 없고, 이미 manifest에 있으면 스킵 (재생성 모드는 스킵 안 함)
+                if not rebuild and not target_month and file_ym in self.manifest:
                     print(f"  - 스킵 (이미 처리됨): {file_ym} ({f.name})")
                     continue
 
@@ -111,7 +117,12 @@ class DataManager:
                 
                 df['__coords'] = df['__address'].map(addr_map)
                 df = df.dropna(subset=['__coords'])
-                
+
+                # 시도/구/동 요약 마커용 '고정' 좌표: 거래 좌표가 아닌 지역명 자체를 지오코딩
+                # (유형(apt/rh/sh)마다 동 마커 위치가 달라지는 문제 해결)
+                if not df.empty:
+                    self._attach_region_coords(df)
+
                 if not df.empty:
                     # 신규 데이터 인덱스 수집
                     for (name, addr), g in df.groupby(['__name', '__address']):
@@ -119,7 +130,8 @@ class DataManager:
                         self.global_index[key] = {"n": name, "a": addr, "c": g.iloc[0]['__coords'], "t": "complex"}
                     
                     for dong, g in df.groupby('__dong'):
-                        self.global_index[dong] = {"n": dong, "c": g.iloc[0]['__coords'], "t": "dong"}
+                        first = g.iloc[0]
+                        self.global_index[dong] = {"n": dong, "c": first.get('__dong_coords', first['__coords']), "t": "dong"}
 
                     for h_type, group in df.groupby('__h_type'):
                         if h_type != 'unknown':
@@ -131,6 +143,22 @@ class DataManager:
         
         self.save_global_index()
         print("\n[작업 완료] 모든 데이터 가공 및 통합 검색 인덱스 생성이 완료되었습니다.")
+
+    def _attach_region_coords(self, df):
+        """시도/구/동 canonical 좌표 컬럼(__sido_coords/__gungu_coords/__dong_coords) 추가.
+        지역명 지오코딩 실패 시 해당 행의 거래 좌표(__coords)로 폴백."""
+        sido_map, gungu_map, dong_map = {}, {}, {}
+        for _, r in df[['__sido', '__gungu', '__dong']].drop_duplicates().iterrows():
+            s, g, d = r['__sido'], r['__gungu'], r['__dong']
+            if s and s not in sido_map:
+                sido_map[s] = self.geo.get_coords(s)
+            if g and (s, g) not in gungu_map:
+                gungu_map[(s, g)] = self.geo.get_coords(f"{s} {g}".strip())
+            if d and (s, g, d) not in dong_map:
+                dong_map[(s, g, d)] = self.geo.get_coords(f"{s} {g} {d}".strip())
+        df['__sido_coords'] = df.apply(lambda r: sido_map.get(r['__sido']) or r['__coords'], axis=1)
+        df['__gungu_coords'] = df.apply(lambda r: gungu_map.get((r['__sido'], r['__gungu'])) or r['__coords'], axis=1)
+        df['__dong_coords'] = df.apply(lambda r: dong_map.get((r['__sido'], r['__gungu'], r['__dong'])) or r['__coords'], axis=1)
 
     def save_global_index(self):
         print(f"  > 통합 검색 인덱스 생성 중 ({len(self.global_index)}건)...")
@@ -148,6 +176,7 @@ class DataManager:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="부동산 데이터 관리 도구")
     parser.add_argument("-m", "--month", type=str, help="처리할 특정 연월 (예: 202604)")
+    parser.add_argument("-r", "--rebuild", action="store_true", help="manifest 무시하고 전체 월 재생성 (좌표 로직 변경 후 필수)")
     args = parser.parse_args()
 
-    DataManager().run(target_month=args.month)
+    DataManager().run(target_month=args.month, rebuild=args.rebuild)

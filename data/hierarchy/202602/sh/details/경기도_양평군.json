@@ -1,172 +1,100 @@
 [
   {
-    "name": "양평군",
-    "address": "양평군",
-    "coords": [127.487578470072, 37.4917882876855],
-    "stats": {"total": 102, "sale": null, "jeonse": {"count": 21, "range": [2000, 40000], "rep_area": 23.1, "rep_avg_price": 8500}, "monthly": {"count": 81, "range": [0, 20000], "rep_area": 40.0, "rep_avg_price": 1000}},
+    "name": "경기도 양평군 강상면 교평리",
+    "address": "경기도 양평군 강상면 교평리",
+    "coords": [127.486738806851, 37.4767018018596],
+    "stats": {"total": 7, "sale": {"count": 3, "range": [17000, 31200], "rep_area": 128.1, "rep_avg_price": 17000}, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 83.4, "rep_avg_price": 25000}, "monthly": {"count": 3, "range": [1000, 4500], "rep_area": 40.0, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "월세", "price": 4300, "rent": 30, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 3000, "rent": 80, "area": 131.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 49.41, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 142.25, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 80.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 4000, "rent": 85, "area": 143.43, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 50, "area": 54.72, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 10000, "rent": 0, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 12000, "rent": 0, "area": 201.84, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 31200, "rent": 0, "area": 83.37, "land": 334.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 17000, "rent": 0, "area": 128.1, "land": 496.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 17000, "rent": 0, "area": 128.1, "land": 496.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 25000, "rent": 0, "area": 83.37, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 0, "rent": 100, "area": 199.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 10000, "rent": 160, "area": 173.59, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 10000, "rent": 0, "area": 65.83, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 3000, "rent": 80, "area": 131.28, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 30000, "rent": 0, "area": 157.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 45, "area": 69.3, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 40, "area": 25.375, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 4500, "rent": 100, "area": 228.68, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 50, "area": 82.6, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 25.53, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 45, "area": 70.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 39, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 5000, "rent": 100, "area": 130.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 195.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 90, "area": 88.38, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 57, "area": 48.734, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 47, "area": 23.45, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 87, "area": 66.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 50, "area": 120.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 30, "area": 57.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 76.03, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 14000, "rent": 0, "area": 79.02, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 10000, "rent": 0, "area": 66.28, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 3000, "rent": 130, "area": 124.51, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 123.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-15", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 40, "area": 51.24, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 50, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 46, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 10000, "rent": 0, "area": 69.34, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~28.02", "renew": "갱신", "p_dep": 10000, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.02~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 8000, "rent": 0, "area": 23.08, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 9000, "rent": 0, "area": 23.08, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 55, "area": 100.86, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 22.11, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 17.64, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 17.64, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 8000, "rent": 0, "area": 17.27, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 12000, "rent": 0, "area": 31.16, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 95, "area": 82.02, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 300, "rent": 35, "area": 33.058, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 35, "area": 32.26, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 100, "rent": 50, "area": 66.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 30, "area": 43.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 20000, "rent": 40, "area": 140.66, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-15", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 40000, "rent": 0, "area": 134.04, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 55, "area": 40.19, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 43.48, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 24.51, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 13.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 25000, "rent": 0, "area": 151.15, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 3000, "rent": 27, "area": 31.14, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 50, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 5000, "rent": 120, "area": 88.56, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 18900, "rent": 0, "area": 63.22, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.04~28.04", "renew": "갱신", "p_dep": 18000, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 60, "area": 95.8, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 55, "area": 39.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 10000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 60, "area": 51.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 30, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 3000, "rent": 55, "area": 97.82, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 50, "rent": 30, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 42, "area": 64.89, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 33000, "rent": 0, "area": 231.12, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 35, "area": 33.3, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 9000, "rent": 0, "area": 41.36, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.03~28.03", "renew": "갱신", "p_dep": 9000, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 25.53, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-18", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2500, "rent": 35, "area": 63.57, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 0, "rent": 40, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-08", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 55, "area": 24.42, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 8000, "rent": 130, "area": 125.38, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "26.03~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 40, "area": 238.69, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 2000, "rent": 30, "area": 182.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 45, "area": 37.105, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 100, "rent": 30, "area": 108.31, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 500, "rent": 42, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 200, "rent": 50, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 6500, "rent": 0, "area": 39.645, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 2000, "rent": 0, "area": 182.42, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "월세", "price": 100, "rent": 50, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
-      {"type": "전세", "price": 25000, "rent": 0, "area": 105.06, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 1000, "rent": 30, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 강상면 화양리 1**",
-    "address": "양평군 강상면 화양리 1**",
-    "coords": [127.494315052615, 37.4585857014925],
+    "name": "경기도 양평군 강상면 송학리",
+    "address": "경기도 양평군 강상면 송학리",
+    "coords": [127.460576799374, 37.4713105642582],
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [500, 1000], "rep_area": 17.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 17.64, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 17.64, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 55, "area": 40.19, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 강상면 화양리",
+    "address": "경기도 양평군 강상면 화양리",
+    "coords": [127.483987184556, 37.4602355712388],
     "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 96.7, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 35000, "rent": 0, "area": 96.66, "land": 497.0, "floor": "", "dong": "", "date": "2026-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 강하면 동오리 3**",
-    "address": "양평군 강하면 동오리 3**",
-    "coords": [127.406089565219, 37.4726752932225],
+    "name": "경기도 양평군 강하면 동오리",
+    "address": "경기도 양평군 강하면 동오리",
+    "coords": [127.387851719269, 37.4598153298062],
     "stats": {"total": 1, "sale": {"count": 1, "range": [67344, 67344], "rep_area": 170.0, "rep_avg_price": 67344}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 67344, "rent": 0, "area": 170.04, "land": 496.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 강하면 전수리 *",
-    "address": "양평군 강하면 전수리 *",
+    "name": "경기도 양평군 강하면 성덕리",
+    "address": "경기도 양평군 강하면 성덕리",
+    "coords": [127.425736890446, 37.4594758840342],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [2000, 2000], "rep_area": 182.4, "rep_avg_price": 2000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 97.8, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 55, "area": 97.82, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 2000, "rent": 0, "area": 182.42, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 강하면 전수리",
+    "address": "경기도 양평군 강하면 전수리",
     "coords": [127.427655549981, 37.4907265644956],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [35200, 35200], "rep_area": 92.4, "rep_avg_price": 35200}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [35200, 50000], "rep_area": 92.4, "rep_avg_price": 35200}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 201.8, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 35200, "rent": 0, "area": 92.4, "land": 342.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 50000, "rent": 0, "area": 199.81, "land": 490.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 35200, "rent": 0, "area": 92.4, "land": 342.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 12000, "rent": 0, "area": 201.84, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 강하면 전수리 4**",
-    "address": "양평군 강하면 전수리 4**",
-    "coords": [127.442222268901, 37.5048551184432],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 199.8, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 50000, "rent": 0, "area": 199.81, "land": 490.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
-    ]
-  },
-  {
-    "name": "양평군 강하면 항금리 2**",
-    "address": "양평군 강하면 항금리 2**",
-    "coords": [127.409172400617, 37.447061394914],
+    "name": "경기도 양평군 강하면 항금리",
+    "address": "경기도 양평군 강하면 항금리",
+    "coords": [127.398962825473, 37.4364854739631],
     "stats": {"total": 1, "sale": {"count": 1, "range": [33368, 33368], "rep_area": 214.4, "rep_avg_price": 33368}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 33368, "rent": 0, "area": 214.36, "land": 446.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 개군면 계전리 2**",
-    "address": "양평군 개군면 계전리 2**",
-    "coords": [127.584875303827, 37.4317367025424],
+    "name": "경기도 양평군 개군면 계전리",
+    "address": "경기도 양평군 개군면 계전리",
+    "coords": [127.574510806686, 37.4219916216947],
     "stats": {"total": 1, "sale": {"count": 1, "range": [23470, 23470], "rep_area": 82.2, "rep_avg_price": 23470}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 23470, "rent": 0, "area": 82.15, "land": 409.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 개군면 불곡리 2**",
-    "address": "양평군 개군면 불곡리 2**",
-    "coords": [127.549763973865, 37.4516773040603],
+    "name": "경기도 양평군 개군면 공세리",
+    "address": "경기도 양평군 개군면 공세리",
+    "coords": [127.536740949482, 37.4622854717674],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 57.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 30, "area": 57.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 개군면 불곡리",
+    "address": "경기도 양평군 개군면 불곡리",
+    "coords": [127.540820960749, 37.4531235008622],
     "stats": {"total": 2, "sale": {"count": 2, "range": [25700, 26300], "rep_area": 139.3, "rep_avg_price": 26000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 26300, "rent": 0, "area": 139.28, "land": 496.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
@@ -174,275 +102,531 @@
     ]
   },
   {
-    "name": "양평군 개군면 상자포리 3**",
-    "address": "양평군 개군면 상자포리 3**",
-    "coords": [127.551077270839, 37.4267685962596],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [26000, 26000], "rep_area": 89.5, "rep_avg_price": 26000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 개군면 상자포리",
+    "address": "경기도 양평군 개군면 상자포리",
+    "coords": [127.547840737168, 37.4188998286225],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [9000, 26000], "rep_area": 81.3, "rep_avg_price": 9000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 26000, "rent": 0, "area": 89.46, "land": 436.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 26000, "rent": 0, "area": 89.46, "land": 436.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 9000, "rent": 0, "area": 81.3, "land": 495.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 단월면 봉상리 5**",
-    "address": "양평군 단월면 봉상리 5**",
-    "coords": [127.668537680702, 37.5261615066987],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [22586, 22586], "rep_area": 88.0, "rep_avg_price": 22586}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 개군면 석장리",
+    "address": "경기도 양평군 개군면 석장리",
+    "coords": [127.518711066396, 37.4558715622835],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 70.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 22586, "rent": 0, "area": 88.0, "land": 1081.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 300, "rent": 45, "area": 70.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 서종면 도장리 1**",
-    "address": "양평군 서종면 도장리 1**",
-    "coords": [127.404592635527, 37.6121162464397],
+    "name": "경기도 양평군 개군면 자연리",
+    "address": "경기도 양평군 개군면 자연리",
+    "coords": [127.561855158659, 37.4288568473976],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 69.3, "rep_avg_price": 10000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10000, "rent": 0, "area": 69.34, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~28.02", "renew": "갱신", "p_dep": 10000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 개군면 주읍리",
+    "address": "경기도 양평군 개군면 주읍리",
+    "coords": [127.582705902932, 37.4427142505557],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3000, 3000], "rep_area": 131.0, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 80, "area": 131.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 3000, "rent": 80, "area": 131.28, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 단월면 봉상리",
+    "address": "경기도 양평군 단월면 봉상리",
+    "coords": [127.652526662443, 37.5170021491001],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [22586, 24660], "rep_area": 88.0, "rep_avg_price": 22586}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 22586, "rent": 0, "area": 88.0, "land": 1081.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 24660, "rent": 0, "area": 93.67, "land": 557.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 단월면 석산리",
+    "address": "경기도 양평군 단월면 석산리",
+    "coords": [127.598443492737, 37.6328268807759],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 95.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 60, "area": 95.8, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 서종면 도장리",
+    "address": "경기도 양평군 서종면 도장리",
+    "coords": [127.393830187366, 37.6064127561924],
     "stats": {"total": 1, "sale": {"count": 1, "range": [26000, 26000], "rep_area": 161.8, "rep_avg_price": 26000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 26000, "rent": 0, "area": 161.83, "land": 446.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 서종면 문호리 1***",
-    "address": "양평군 서종면 문호리 1***",
-    "coords": [127.384382423571, 37.618007762053],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [82800, 92000], "rep_area": 198.1, "rep_avg_price": 92000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 서종면 명달리",
+    "address": "경기도 양평군 서종면 명달리",
+    "coords": [127.450264321149, 37.6183561707625],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 199.3, "rep_avg_price": 0}},
     "deals": [
+      {"type": "월세", "price": 0, "rent": 100, "area": 199.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 서종면 문호리",
+    "address": "경기도 양평군 서종면 문호리",
+    "coords": [127.364385648871, 37.6018582572136],
+    "stats": {"total": 8, "sale": {"count": 3, "range": [70000, 92000], "rep_area": 170.0, "rep_avg_price": 70000}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 134.0, "rep_avg_price": 40000}, "monthly": {"count": 4, "range": [200, 1000], "rep_area": 49.5, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "매매", "price": 70000, "rent": 0, "area": 169.96, "land": 464.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 92000, "rent": 0, "area": 198.08, "land": 658.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 82800, "rent": 0, "area": 284.83, "land": 984.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 82800, "rent": 0, "area": 284.83, "land": 984.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 90, "area": 88.38, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 95, "area": 82.02, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 40000, "rent": 0, "area": 134.04, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 42, "area": 64.89, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 200, "rent": 50, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 서종면 문호리 6*",
-    "address": "양평군 서종면 문호리 6*",
-    "coords": [127.378180896613, 37.6162371859425],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 170.0, "rep_avg_price": 70000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 서종면 수능리",
+    "address": "경기도 양평군 서종면 수능리",
+    "coords": [127.385880873021, 37.5872768451702],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 15.0, "rep_avg_price": 0}},
     "deals": [
-      {"type": "매매", "price": 70000, "rent": 0, "area": 169.96, "land": 464.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 0, "rent": 40, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-08", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양동면 금왕리 5**",
-    "address": "양평군 양동면 금왕리 5**",
-    "coords": [127.746684002558, 37.5035125846908],
+    "name": "경기도 양평군 서종면 정배리",
+    "address": "경기도 양평군 서종면 정배리",
+    "coords": [127.430077583089, 37.5959068914251],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 105.1, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 105.06, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양동면 금왕리",
+    "address": "경기도 양평군 양동면 금왕리",
+    "coords": [127.739605594796, 37.4761787941679],
     "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 166.6, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 166.6, "land": 640.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양동면 삼산리 7**",
-    "address": "양평군 양동면 삼산리 7**",
-    "coords": [127.784968492462, 37.4170955822946],
+    "name": "경기도 양평군 양동면 단석리",
+    "address": "경기도 양평군 양동면 단석리",
+    "coords": [127.731827929858, 37.3945140383837],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 63.6, "rep_avg_price": 2500}},
+    "deals": [
+      {"type": "월세", "price": 2500, "rent": 35, "area": 63.57, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양동면 삼산리",
+    "address": "경기도 양평군 양동면 삼산리",
+    "coords": [127.772743486774, 37.3962106964474],
     "stats": {"total": 1, "sale": {"count": 1, "range": [23000, 23000], "rep_area": 78.6, "rep_avg_price": 23000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 23000, "rent": 0, "area": 78.56, "land": 330.0, "floor": "", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 대심리 8*",
-    "address": "양평군 양서면 대심리 8*",
-    "coords": [127.410382228669, 37.5046737773947],
+    "name": "경기도 양평군 양서면 대심리",
+    "address": "경기도 양평군 양서면 대심리",
+    "coords": [127.400548736507, 37.5050285569428],
     "stats": {"total": 1, "sale": {"count": 1, "range": [81700, 81700], "rep_area": 286.0, "rep_avg_price": 81700}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 81700, "rent": 0, "area": 286.05, "land": 595.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 도곡리 2**",
-    "address": "양평군 양서면 도곡리 2**",
-    "coords": [127.394839066243, 37.5302335527593],
+    "name": "경기도 양평군 양서면 도곡리",
+    "address": "경기도 양평군 양서면 도곡리",
+    "coords": [127.386466373702, 37.5217799853976],
     "stats": {"total": 1, "sale": {"count": 1, "range": [26200, 26200], "rep_area": 68.2, "rep_avg_price": 26200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 26200, "rent": 0, "area": 68.2, "land": 397.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 목왕리 3**",
-    "address": "양평군 양서면 목왕리 3**",
-    "coords": [127.39325597979, 37.5642249361529],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [48090, 48090], "rep_area": 119.1, "rep_avg_price": 48090}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양서면 목왕리",
+    "address": "경기도 양평군 양서면 목왕리",
+    "coords": [127.379464145884, 37.556166640435],
+    "stats": {"total": 3, "sale": {"count": 1, "range": [48090, 48090], "rep_area": 119.1, "rep_avg_price": 48090}, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 79.0, "rep_avg_price": 14000}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 76.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 48090, "rent": 0, "area": 119.07, "land": 530.0, "floor": "", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 48090, "rent": 0, "area": 119.07, "land": 530.0, "floor": "", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 76.03, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 14000, "rent": 0, "area": 79.02, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 부용리 6**",
-    "address": "양평군 양서면 부용리 6**",
-    "coords": [127.360023589025, 37.5557885560042],
+    "name": "경기도 양평군 양서면 복포리",
+    "address": "경기도 양평군 양서면 복포리",
+    "coords": [127.417109768015, 37.5154516521348],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 380.7, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 120000, "rent": 0, "area": 380.73, "land": 404.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양서면 부용리",
+    "address": "경기도 양평군 양서면 부용리",
+    "coords": [127.348526685597, 37.5570837225096],
     "stats": {"total": 1, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 88.9, "rep_avg_price": 58000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 58000, "rent": 0, "area": 88.92, "land": 450.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 양수리 3**",
-    "address": "양평군 양서면 양수리 3**",
-    "coords": [127.352050115526, 37.5773462973136],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [33900, 33900], "rep_area": 149.1, "rep_avg_price": 33900}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양서면 신원리",
+    "address": "경기도 양평군 양서면 신원리",
+    "coords": [127.373282472272, 37.5320865475066],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 108.3, "rep_avg_price": 100}},
     "deals": [
-      {"type": "매매", "price": 33900, "rent": 0, "area": 149.13, "land": 982.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 100, "rent": 30, "area": 108.31, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 양수리 7**",
-    "address": "양평군 양서면 양수리 7**",
-    "coords": [127.354173014651, 37.5759490889695],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 73.5, "rep_avg_price": 15000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양서면 양수리",
+    "address": "경기도 양평군 양서면 양수리",
+    "coords": [127.319702821052, 37.5485193465094],
+    "stats": {"total": 3, "sale": {"count": 3, "range": [15000, 40000], "rep_area": 73.5, "rep_avg_price": 15000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 33900, "rent": 0, "area": 149.13, "land": 982.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 40000, "rent": 0, "area": 129.0, "land": 267.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 15000, "rent": 0, "area": 73.49, "land": 220.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 양수리 9*",
-    "address": "양평군 양서면 양수리 9*",
-    "coords": [127.355015733, 37.5766467169293],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 129.0, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 40000, "rent": 0, "area": 129.0, "land": 267.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
-    ]
-  },
-  {
-    "name": "양평군 양서면 용담리 2**",
-    "address": "양평군 양서면 용담리 2**",
-    "coords": [127.345710758028, 37.542649694285],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [66859, 96535], "rep_area": 80.8, "rep_avg_price": 96535}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양서면 용담리",
+    "address": "경기도 양평군 양서면 용담리",
+    "coords": [127.33341517455, 37.540747279613],
+    "stats": {"total": 6, "sale": {"count": 3, "range": [58214, 96535], "rep_area": 80.8, "rep_avg_price": 96535}, "jeonse": null, "monthly": {"count": 3, "range": [500, 1000], "rep_area": 17.0, "rep_avg_price": 500}},
     "deals": [
       {"type": "매매", "price": 66859, "rent": 0, "area": 99.45, "land": 169.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 96535, "rent": 0, "area": 80.82, "land": 227.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 96535, "rent": 0, "area": 80.82, "land": 227.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 58214, "rent": 0, "area": 117.54, "land": 345.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 40, "area": 25.375, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 25.53, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양서면 용담리 3**",
-    "address": "양평군 양서면 용담리 3**",
-    "coords": [127.3452685839, 37.5427297349787],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [58214, 58214], "rep_area": 117.5, "rep_avg_price": 58214}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양평읍 공흥리",
+    "address": "경기도 양평군 양평읍 공흥리",
+    "coords": [127.513955338698, 37.5060852224815],
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 1, "range": [18900, 18900], "rep_area": 63.2, "rep_avg_price": 18900}, "monthly": {"count": 5, "range": [300, 1000], "rep_area": 13.3, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 58214, "rent": 0, "area": 117.54, "land": 345.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 300, "rent": 45, "area": 49.41, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 13.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 18900, "rent": 0, "area": 63.22, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.04~28.04", "renew": "갱신", "p_dep": 18000, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 55, "area": 39.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 25.53, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-18", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 24.42, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양평읍 대흥리 2**",
-    "address": "양평군 양평읍 대흥리 2**",
-    "coords": [127.550078498232, 37.4899955373805],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 182.6, "rep_avg_price": 65000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양평읍 대흥리",
+    "address": "경기도 양평군 양평읍 대흥리",
+    "coords": [127.546569367991, 37.4901173310551],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 182.6, "rep_avg_price": 65000}, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 69.3, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 65000, "rent": 0, "area": 182.61, "land": 830.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 65000, "rent": 0, "area": 182.61, "land": 830.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 45, "area": 69.3, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양평읍 회현리 1**",
-    "address": "양평군 양평읍 회현리 1**",
-    "coords": [127.528014311087, 37.4711193689557],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [32500, 34780], "rep_area": 69.1, "rep_avg_price": 32500}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 양평읍 도곡리",
+    "address": "경기도 양평군 양평읍 도곡리",
+    "coords": [127.521900887202, 37.4835614953963],
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 157.3, "rep_avg_price": 30000}, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 27.0, "rep_avg_price": 750}},
+    "deals": [
+      {"type": "전세", "price": 30000, "rent": 0, "area": 157.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 백안리",
+    "address": "경기도 양평군 양평읍 백안리",
+    "coords": [127.523511600455, 37.5043962366578],
+    "stats": {"total": 8, "sale": null, "jeonse": {"count": 4, "range": [9000, 25000], "rep_area": 41.4, "rep_avg_price": 9000}, "monthly": {"count": 4, "range": [500, 4300], "rep_area": 40.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 4300, "rent": 30, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 10000, "rent": 0, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 10000, "rent": 0, "area": 65.83, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 43.48, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 25000, "rent": 0, "area": 151.15, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 9000, "rent": 0, "area": 41.36, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.03~28.03", "renew": "갱신", "p_dep": 9000, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 신애리",
+    "address": "경기도 양평군 양평읍 신애리",
+    "coords": [127.505512473038, 37.521997184601],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 142.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 142.25, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 양근리",
+    "address": "경기도 양평군 양평읍 양근리",
+    "coords": [127.488597357888, 37.4947501655069],
+    "stats": {"total": 12, "sale": null, "jeonse": null, "monthly": {"count": 12, "range": [50, 2000], "rep_area": 30.0, "rep_avg_price": 400}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 50, "area": 54.72, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 57, "area": 48.734, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 47, "area": 23.45, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 55, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 46, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.02~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 50, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 50, "rent": 30, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 37.105, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 오빈리",
+    "address": "경기도 양평군 양평읍 오빈리",
+    "coords": [127.471376889173, 37.5083351012228],
+    "stats": {"total": 5, "sale": {"count": 1, "range": [17000, 17000], "rep_area": 106.3, "rep_avg_price": 17000}, "jeonse": {"count": 2, "range": [10000, 33000], "rep_area": 66.3, "rep_avg_price": 10000}, "monthly": {"count": 2, "range": [2000, 20000], "rep_area": 140.7, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "매매", "price": 17000, "rent": 0, "area": 106.29, "land": 616.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 10000, "rent": 0, "area": 66.28, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 20000, "rent": 40, "area": 140.66, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-15", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 33000, "rent": 0, "area": 231.12, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 30, "area": 182.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 창대리",
+    "address": "경기도 양평군 양평읍 창대리",
+    "coords": [127.508654229613, 37.4775393215588],
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 17.3, "rep_avg_price": 8000}, "monthly": {"count": 2, "range": [100, 2000], "rep_area": 51.1, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 17.27, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100, "rent": 50, "area": 66.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 60, "area": 51.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 회현리",
+    "address": "경기도 양평군 양평읍 회현리",
+    "coords": [127.514598883814, 37.4607549559907],
+    "stats": {"total": 3, "sale": {"count": 3, "range": [32500, 71000], "rep_area": 69.1, "rep_avg_price": 32500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 32500, "rent": 0, "area": 69.1, "land": 353.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 71000, "rent": 0, "area": 198.2, "land": 562.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 34780, "rent": 0, "area": 130.03, "land": 488.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 양평읍 회현리 6**",
-    "address": "양평군 양평읍 회현리 6**",
-    "coords": [127.527036283129, 37.4682585529269],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [71000, 71000], "rep_area": 198.2, "rep_avg_price": 71000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 옥천면 신복리",
+    "address": "경기도 양평군 옥천면 신복리",
+    "coords": [127.463631704975, 37.5616973384205],
+    "stats": {"total": 6, "sale": {"count": 2, "range": [19600, 31000], "rep_area": 49.4, "rep_avg_price": 19600}, "jeonse": null, "monthly": {"count": 4, "range": [2000, 10000], "rep_area": 88.6, "rep_avg_price": 5000}},
     "deals": [
-      {"type": "매매", "price": 71000, "rent": 0, "area": 198.2, "land": 562.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 31000, "rent": 0, "area": 144.0, "land": 632.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 19600, "rent": 0, "area": 49.41, "land": 569.0, "floor": "", "dong": "", "date": "2026-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 10000, "rent": 160, "area": 173.59, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 50, "area": 120.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 120, "area": 88.56, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 8000, "rent": 130, "area": 125.38, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "26.03~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 옥천면 신복리 7**",
-    "address": "양평군 옥천면 신복리 7**",
-    "coords": [127.462362140744, 37.5890500656656],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [19600, 19600], "rep_area": 49.4, "rep_avg_price": 19600}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 옥천면 아신리",
+    "address": "경기도 양평군 옥천면 아신리",
+    "coords": [127.439710642532, 37.524116547539],
+    "stats": {"total": 9, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 81.0, "rep_avg_price": 25000}, "jeonse": {"count": 4, "range": [8000, 12000], "rep_area": 23.1, "rep_avg_price": 8500}, "monthly": {"count": 4, "range": [300, 3000], "rep_area": 28.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 19600, "rent": 0, "area": 49.41, "land": 569.0, "floor": "", "dong": "", "date": "2026-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 25000, "rent": 0, "area": 81.0, "land": 617.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 45, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 8000, "rent": 0, "area": 23.08, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 9000, "rent": 0, "area": 23.08, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 12000, "rent": 0, "area": 31.16, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 35, "area": 33.058, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 3000, "rent": 27, "area": 31.14, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 10000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 42, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 옥천면 아신리 2**",
-    "address": "양평군 옥천면 아신리 2**",
-    "coords": [127.454489077147, 37.5195468850347],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 81.0, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 옥천면 옥천리",
+    "address": "경기도 양평군 옥천면 옥천리",
+    "coords": [127.463790863805, 37.5179697523129],
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [6500, 6500], "rep_area": 39.6, "rep_avg_price": 6500}, "monthly": {"count": 2, "range": [500, 5000], "rep_area": 82.6, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 25000, "rent": 0, "area": 81.0, "land": 617.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 500, "rent": 50, "area": 82.6, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 100, "area": 130.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 6500, "rent": 0, "area": 39.645, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 옥천면 용천리 1**",
-    "address": "양평군 옥천면 용천리 1**",
-    "coords": [127.546357108174, 37.5823078724547],
+    "name": "경기도 양평군 옥천면 용천리",
+    "address": "경기도 양평군 옥천면 용천리",
+    "coords": [127.518176285521, 37.5525507632613],
     "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 190.1, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 90000, "rent": 0, "area": 190.12, "land": 674.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 용문면 광탄리 9**",
-    "address": "양평군 용문면 광탄리 9**",
-    "coords": [127.641842549917, 37.5095018431243],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [26400, 26400], "rep_area": 148.4, "rep_avg_price": 26400}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 용문면 광탄리",
+    "address": "경기도 양평군 용문면 광탄리",
+    "coords": [127.633786770932, 37.5112045163326],
+    "stats": {"total": 4, "sale": {"count": 1, "range": [26400, 26400], "rep_area": 148.4, "rep_avg_price": 26400}, "jeonse": null, "monthly": {"count": 3, "range": [300, 4000], "rep_area": 50.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 26400, "rent": 0, "area": 148.44, "land": 876.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 26400, "rent": 0, "area": 148.44, "land": 876.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 4000, "rent": 85, "area": 143.43, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 123.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-15", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 300, "rent": 50, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 용문면 연수리 5**",
-    "address": "양평군 용문면 연수리 5**",
-    "coords": [127.577280210452, 37.5008590589818],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [17000, 17000], "rep_area": 193.5, "rep_avg_price": 17000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 용문면 금곡리",
+    "address": "경기도 양평군 용문면 금곡리",
+    "coords": [127.619115757514, 37.5036491292298],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [27300, 33100], "rep_area": 67.1, "rep_avg_price": 27300}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 27300, "rent": 0, "area": 67.12, "land": 347.0, "floor": "", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 33100, "rent": 0, "area": 127.89, "land": 345.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 다문리",
+    "address": "경기도 양평군 용문면 다문리",
+    "coords": [127.593755811871, 37.4888120111711],
+    "stats": {"total": 9, "sale": null, "jeonse": null, "monthly": {"count": 9, "range": [500, 3000], "rep_area": 22.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 39, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 3000, "rent": 130, "area": 124.51, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 55, "area": 100.86, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 22.11, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 35, "area": 32.26, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 24.51, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 35, "area": 33.3, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 40, "area": 238.69, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 덕촌리",
+    "address": "경기도 양평군 용문면 덕촌리",
+    "coords": [127.597947925561, 37.5097299547424],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 80.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 80.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 마룡리",
+    "address": "경기도 양평군 용문면 마룡리",
+    "coords": [127.602474094523, 37.4947865150594],
+    "stats": {"total": 4, "sale": {"count": 3, "range": [27375, 31792], "rep_area": 94.3, "rep_avg_price": 27937}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 27.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "매매", "price": 27375, "rent": 0, "area": 94.3, "land": 242.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 31792, "rent": 0, "area": 132.16, "land": 266.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 28500, "rent": 0, "area": 94.3, "land": 242.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 500, "rent": 45, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 삼성리",
+    "address": "경기도 양평군 용문면 삼성리",
+    "coords": [127.575562618822, 37.4725939977606],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [100, 2000], "rep_area": 23.1, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 30, "area": 43.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 100, "rent": 50, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 연수리",
+    "address": "경기도 양평군 용문면 연수리",
+    "coords": [127.555953268489, 37.5265565841308],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [17000, 63500], "rep_area": 189.9, "rep_avg_price": 63500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 63500, "rent": 0, "area": 189.89, "land": 856.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 17000, "rent": 0, "area": 193.47, "land": 330.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 지평면 망미리 7**",
-    "address": "양평군 지평면 망미리 7**",
-    "coords": [127.66310095918, 37.4536311379967],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 68.5, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 지평면 망미리",
+    "address": "경기도 양평군 지평면 망미리",
+    "coords": [127.654880190016, 37.4512887038205],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [16230, 28500], "rep_area": 68.5, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 16230, "rent": 0, "area": 70.5, "land": 445.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 28500, "rent": 0, "area": 68.48, "land": 231.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 지평면 송현리 4**",
-    "address": "양평군 지평면 송현리 4**",
-    "coords": [127.64004734426, 37.4858463146862],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [27000, 27000], "rep_area": 86.2, "rep_avg_price": 27000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 지평면 송현리",
+    "address": "경기도 양평군 지평면 송현리",
+    "coords": [127.631558895005, 37.4905621164157],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [27000, 27000], "rep_area": 86.2, "rep_avg_price": 27000}, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 51.2, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 27000, "rent": 0, "area": 86.19, "land": 537.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 27000, "rent": 0, "area": 86.19, "land": 537.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 2000, "rent": 40, "area": 51.24, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 지평면 옥현리 1***",
-    "address": "양평군 지평면 옥현리 1***",
-    "coords": [127.644049200438, 37.4503619924654],
+    "name": "경기도 양평군 지평면 옥현리",
+    "address": "경기도 양평군 지평면 옥현리",
+    "coords": [127.626614537829, 37.4476757742929],
     "stats": {"total": 1, "sale": {"count": 1, "range": [21400, 21400], "rep_area": 97.4, "rep_avg_price": 21400}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 21400, "rent": 0, "area": 97.44, "land": 578.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 청운면 갈운리 8**",
-    "address": "양평군 청운면 갈운리 8**",
-    "coords": [127.799447800882, 37.5308823299704],
+    "name": "경기도 양평군 지평면 일신리",
+    "address": "경기도 양평군 지평면 일신리",
+    "coords": [127.685383551303, 37.4337877453121],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 195.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 195.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "경기도 양평군 청운면 갈운리",
+    "address": "경기도 양평군 청운면 갈운리",
+    "coords": [127.771741458367, 37.5308864480927],
     "stats": {"total": 1, "sale": {"count": 1, "range": [11600, 11600], "rep_area": 88.3, "rep_avg_price": 11600}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 11600, "rent": 0, "area": 88.32, "land": 618.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 청운면 비룡리 3*",
-    "address": "양평군 청운면 비룡리 3*",
-    "coords": [127.691639630046, 37.5517557729762],
+    "name": "경기도 양평군 청운면 비룡리",
+    "address": "경기도 양평군 청운면 비룡리",
+    "coords": [127.701019111748, 37.5328050597054],
     "stats": {"total": 1, "sale": {"count": 1, "range": [17000, 17000], "rep_area": 109.0, "rep_avg_price": 17000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 17000, "rent": 0, "area": 109.0, "land": 589.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
-    "name": "양평군 청운면 신론리 4**",
-    "address": "양평군 청운면 신론리 4**",
-    "coords": [127.810665676301, 37.5682256044707],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 94.5, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 청운면 신론리",
+    "address": "경기도 양평군 청운면 신론리",
+    "coords": [127.780101194578, 37.5666363455817],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [13000, 15666], "rep_area": 94.5, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 15666, "rent": 0, "area": 100.8, "land": 380.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 13000, "rent": 0, "area": 94.5, "land": 196.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   }

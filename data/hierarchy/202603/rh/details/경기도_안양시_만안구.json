@@ -30,9 +30,10 @@
     "name": "그랜드캐슬101동102동 (다세대)",
     "address": "안양시 만안구 박달동 140-8",
     "coords": [126.90437332332, 37.401297780595],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13500, 13500], "rep_area": 37.6, "rep_avg_price": 13500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [13500, 13500], "rep_area": 37.6, "rep_avg_price": 13500}},
     "deals": [
-      {"type": "월세", "price": 13500, "rent": 15, "area": 37.61, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "월세", "price": 13500, "rent": 15, "area": 37.61, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 13500, "rent": 15, "area": 37.61, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-16", "period": "26.06~29.08", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -45,12 +46,39 @@
     ]
   },
   {
+    "name": "아카데미테마타운(3,4동) (다세대)",
+    "address": "안양시 만안구 박달동 156-3",
+    "coords": [126.900335780549, 37.4014773535592],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 76.6, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 76.56, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(23-9) (연립)",
     "address": "안양시 만안구 박달동 23-9",
     "coords": [126.908629928459, 37.4062536058119],
     "stats": {"total": 1, "sale": {"count": 1, "range": [22300, 22300], "rep_area": 86.0, "rep_avg_price": 22300}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 22300, "rent": 0, "area": 85.98, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "은주빌라 (다세대)",
+    "address": "안양시 만안구 박달동 27-10",
+    "coords": [126.90929144596, 37.4068340117114],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 36.5, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 30, "area": 36.5, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "수자인 (다세대)",
+    "address": "안양시 만안구 박달동 30-10",
+    "coords": [126.910749083836, 37.4067169972753],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 38.9, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 38.94, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -73,6 +101,24 @@
     ]
   },
   {
+    "name": "다온빌 (다세대)",
+    "address": "안양시 만안구 박달동 55-4",
+    "coords": [126.91156519134, 37.40609842946],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6894, 6894], "rep_area": 69.8, "rep_avg_price": 6894}},
+    "deals": [
+      {"type": "월세", "price": 6894, "rent": 27, "area": 69.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.04~28.03", "renew": "갱신", "p_dep": 747, "p_rent": 59}
+    ]
+  },
+  {
+    "name": "효성하임빌 (다세대)",
+    "address": "안양시 만안구 박달동 56-13",
+    "coords": [126.910302595259, 37.405580292748],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 50.3, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16000, "rent": 0, "area": 50.34, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "은탑빌라(1,2동) (다세대)",
     "address": "안양시 만안구 박달동 603-2",
     "coords": [126.89850994036, 37.400662358836],
@@ -85,8 +131,9 @@
     "name": "대동연립 (연립)",
     "address": "안양시 만안구 박달동 64-3",
     "coords": [126.910723368433, 37.4037347808005],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 68.8, "rep_avg_price": 13000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [13000, 13000], "rep_area": 68.8, "rep_avg_price": 13000}},
     "deals": [
+      {"type": "월세", "price": 13000, "rent": 10, "area": 68.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 13000, "rent": 10, "area": 68.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -167,9 +214,19 @@
     "name": "삼진빌라(가동) (다세대)",
     "address": "안양시 만안구 석수동 101-63",
     "coords": [126.909121179881, 37.4221163328039],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12500, 12500], "rep_area": 36.2, "rep_avg_price": 12500}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 36.2, "rep_avg_price": 20000}, "jeonse": {"count": 1, "range": [12500, 12500], "rep_area": 36.2, "rep_avg_price": 12500}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 20000, "rent": 0, "area": 36.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 12500, "rent": 0, "area": 36.18, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼성타운(2차) (다세대)",
+    "address": "안양시 만안구 석수동 146-1",
+    "coords": [126.914540721572, 37.4249709240002],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 57.9, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29000, "rent": 0, "area": 57.931, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -219,6 +276,15 @@
     ]
   },
   {
+    "name": "창덕빌라 (다세대)",
+    "address": "안양시 만안구 석수동 262-2",
+    "coords": [126.908054642069, 37.4188544537541],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [11750, 11750], "rep_area": 33.4, "rep_avg_price": 11750}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 11750, "rent": 0, "area": 33.45, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "로체그랑(264-5) (다세대)",
     "address": "안양시 만안구 석수동 264-5",
     "coords": [126.90752705707, 37.4186926698898],
@@ -228,11 +294,21 @@
     ]
   },
   {
+    "name": "그라시아 (다세대)",
+    "address": "안양시 만안구 석수동 268-50",
+    "coords": [126.909724606765, 37.4169056666664],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 29.3, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 29.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "해동(3차) (다세대)",
     "address": "안양시 만안구 석수동 271-38",
     "coords": [126.910303065995, 37.4139960866809],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10500, 10500], "rep_area": 36.6, "rep_avg_price": 10500}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [16500, 16500], "rep_area": 36.6, "rep_avg_price": 16500}, "jeonse": null, "monthly": {"count": 1, "range": [10500, 10500], "rep_area": 36.6, "rep_avg_price": 10500}},
     "deals": [
+      {"type": "매매", "price": 16500, "rent": 0, "area": 36.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 10500, "rent": 10, "area": 36.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -270,6 +346,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 73.3, "rep_avg_price": 20000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 20000, "rent": 0, "area": 73.34, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성우맨션 (다세대)",
+    "address": "안양시 만안구 석수동 292-10",
+    "coords": [126.906716229371, 37.4123668814585],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [23800, 23800], "rep_area": 39.3, "rep_avg_price": 23800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 23800, "rent": 0, "area": 39.26, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -318,6 +403,15 @@
     ]
   },
   {
+    "name": "청림빌 (다세대)",
+    "address": "안양시 만안구 석수동 310-12",
+    "coords": [126.910155204313, 37.4105886800556],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 56.9, "rep_avg_price": 13000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 56.9, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "미소빌 (다세대)",
     "address": "안양시 만안구 석수동 310-9",
     "coords": [126.910004561567, 37.4103670047862],
@@ -333,6 +427,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 36.3, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 16000, "rent": 0, "area": 36.33, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼우빌리지 (다세대)",
+    "address": "안양시 만안구 석수동 320-27",
+    "coords": [126.910515920582, 37.4132047928527],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6000, 6000], "rep_area": 17.2, "rep_avg_price": 6000}},
+    "deals": [
+      {"type": "월세", "price": 6000, "rent": 15, "area": 17.23, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -370,6 +473,15 @@
     "deals": [
       {"type": "매매", "price": 24000, "rent": 0, "area": 61.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 17000, "rent": 0, "area": 61.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "에코그린빌 (다세대)",
+    "address": "안양시 만안구 석수동 377-1",
+    "coords": [126.905763702063, 37.4334254299859],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17300, 17300], "rep_area": 58.4, "rep_avg_price": 17300}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17300, "rent": 0, "area": 58.39, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -464,6 +576,15 @@
     ]
   },
   {
+    "name": "삼오빌라 (다세대)",
+    "address": "안양시 만안구 석수동 758",
+    "coords": [126.896245533337, 37.4075122031425],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 40.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 39, "area": 40.92, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "에메랄드빌라 (다세대)",
     "address": "안양시 만안구 석수동 763-17",
     "coords": [126.896149582003, 37.4064892810578],
@@ -542,6 +663,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13500, 13500], "rep_area": 41.1, "rep_avg_price": 13500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 13500, "rent": 0, "area": 41.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.05~28.05", "renew": "갱신", "p_dep": 13000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "오석빌라(2차) (다세대)",
+    "address": "안양시 만안구 석수동 776-6",
+    "coords": [126.899429731336, 37.4047983788961],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 36.2, "rep_avg_price": 15000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15000, "rent": 0, "area": 36.18, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -628,6 +758,15 @@
     ]
   },
   {
+    "name": "참터빌딩 (연립)",
+    "address": "안양시 만안구 석수동 878",
+    "coords": [126.905542594107, 37.4337753883061],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 21.3, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 21.308, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "칠성빌라 (다세대)",
     "address": "안양시 만안구 안양동 1003-4",
     "coords": [126.90835635136, 37.3901279946383],
@@ -646,6 +785,15 @@
     ]
   },
   {
+    "name": "공동주택(김성택) (다세대)",
+    "address": "안양시 만안구 안양동 1088-98",
+    "coords": [126.901334531518, 37.3824275166084],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 33.4, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 40, "area": 33.45, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "지앤에코타운(1091번지) (다세대)",
     "address": "안양시 만안구 안양동 1091",
     "coords": [126.902744475995, 37.3839117694169],
@@ -655,12 +803,39 @@
     ]
   },
   {
+    "name": "파크빌(1327-13) (다세대)",
+    "address": "안양시 만안구 안양동 1327-13",
+    "coords": [126.922627687395, 37.4185079060693],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 70.5, "rep_avg_price": 33000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 70.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "영화그린빌라8동 (다세대)",
+    "address": "안양시 만안구 안양동 195-53",
+    "coords": [126.935273211078, 37.3888285858117],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 36.1, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 55, "area": 36.08, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "유창빌라(7,8동) (다세대)",
     "address": "안양시 만안구 안양동 198-68",
     "coords": [126.939856821167, 37.3897057188615],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 37.7, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 37.74, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "중앙빌라 (다세대)",
+    "address": "안양시 만안구 안양동 342-30",
+    "coords": [126.936642301526, 37.3787404743352],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 37.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 35, "area": 37.94, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-29", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -751,17 +926,28 @@
     "name": "에이펙스빌 (다세대)",
     "address": "안양시 만안구 안양동 438-17",
     "coords": [126.932542060136, 37.3902258072438],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [24300, 24300], "rep_area": 58.1, "rep_avg_price": 24300}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [24300, 24300], "rep_area": 58.1, "rep_avg_price": 24300}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 24300, "rent": 0, "area": 58.14, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 24300, "rent": 0, "area": 58.14, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(0438-0003) (다세대)",
+    "address": "안양시 만안구 안양동 438-3",
+    "coords": [126.932410446217, 37.3904149468628],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17600, 17600], "rep_area": 46.8, "rep_avg_price": 17600}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17600, "rent": 0, "area": 46.835, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
     "name": "휴원 (다세대)",
     "address": "안양시 만안구 안양동 455-52",
     "coords": [126.925757398506, 37.3922182280579],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 45.4, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [28500, 28500], "rep_area": 45.4, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 28500, "rent": 0, "area": 45.37, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 28500, "rent": 0, "area": 45.37, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -778,8 +964,9 @@
     "name": "연합 (연립)",
     "address": "안양시 만안구 안양동 463-5",
     "coords": [126.927146641861, 37.3839227422845],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 51.8, "rep_avg_price": 10000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [10000, 10000], "rep_area": 51.8, "rep_avg_price": 10000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 10000, "rent": 0, "area": 51.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 10000, "rent": 0, "area": 51.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -793,6 +980,15 @@
     ]
   },
   {
+    "name": "경원주택 (다세대)",
+    "address": "안양시 만안구 안양동 488-18",
+    "coords": [126.926996670561, 37.3875539542832],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7500, 7500], "rep_area": 31.7, "rep_avg_price": 7500}},
+    "deals": [
+      {"type": "월세", "price": 7500, "rent": 15, "area": 31.68, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "경동주택가동 (다세대)",
     "address": "안양시 만안구 안양동 489-28",
     "coords": [126.927503621479, 37.3878529553092],
@@ -802,11 +998,22 @@
     ]
   },
   {
+    "name": "동서하이츠빌라 (다세대)",
+    "address": "안양시 만안구 안양동 498-7",
+    "coords": [126.927796280948, 37.385413073266],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18500, 18500], "rep_area": 58.5, "rep_avg_price": 18500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18500, "rent": 0, "area": 58.54, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "에덴빌라 (다세대)",
     "address": "안양시 만안구 안양동 499-25",
     "coords": [126.927989338218, 37.3855638420995],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9500, 9500], "rep_area": 41.5, "rep_avg_price": 9500}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [9500, 9500], "rep_area": 41.5, "rep_avg_price": 9500}, "monthly": {"count": 2, "range": [9500, 9500], "rep_area": 41.5, "rep_avg_price": 9500}},
     "deals": [
+      {"type": "월세", "price": 9500, "rent": 20, "area": 41.46, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 9500, "rent": 20, "area": 41.46, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 9500, "rent": 0, "area": 41.46, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -884,6 +1091,15 @@
     ]
   },
   {
+    "name": "유정빌라 (다세대)",
+    "address": "안양시 만안구 안양동 552-2",
+    "coords": [126.93011373788, 37.3842580918756],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24000, 24000], "rep_area": 59.9, "rep_avg_price": 24000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24000, "rent": 0, "area": 59.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "(553-1) (다세대)",
     "address": "안양시 만안구 안양동 553-1",
     "coords": [126.929564997129, 37.3842273117233],
@@ -929,6 +1145,15 @@
     ]
   },
   {
+    "name": "(570-16) (다세대)",
+    "address": "안양시 만안구 안양동 570-16",
+    "coords": [126.931405407655, 37.3832347445772],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 49.4, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 49.43, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 12000, "p_rent": 0}
+    ]
+  },
+  {
     "name": "헤나하우스 (다세대)",
     "address": "안양시 만안구 안양동 618-86",
     "coords": [126.919236185515, 37.3898931001287],
@@ -947,6 +1172,15 @@
     ]
   },
   {
+    "name": "중앙빌라B동 (다세대)",
+    "address": "안양시 만안구 안양동 627-164",
+    "coords": [126.921235264659, 37.3957348749699],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19300, 19300], "rep_area": 36.7, "rep_avg_price": 19300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19300, "rent": 0, "area": 36.68, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "노블팰리스C동 (다세대)",
     "address": "안양시 만안구 안양동 689-21",
     "coords": [126.919825192096, 37.4029384934441],
@@ -956,11 +1190,21 @@
     ]
   },
   {
+    "name": "아뜰리에 (다세대)",
+    "address": "안양시 만안구 안양동 689-33",
+    "coords": [126.919520601244, 37.4026049088396],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 16.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 16.7225, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-19", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "그린빌 (다세대)",
     "address": "안양시 만안구 안양동 695-104",
     "coords": [126.916280036154, 37.4019983441044],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 36.0, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 16.6, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 39, "area": 16.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 84, "area": 35.975, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -980,15 +1224,6 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11500, 11500], "rep_area": 38.2, "rep_avg_price": 11500}},
     "deals": [
       {"type": "월세", "price": 11500, "rent": 15, "area": 38.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
-    ]
-  },
-  {
-    "name": "아림빌라B동 (다세대)",
-    "address": "안양시 만안구 안양동 695-247",
-    "coords": [126.914124023984, 37.4022484530015],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 54.9, "rep_avg_price": 2000}},
-    "deals": [
-      {"type": "월세", "price": 2000, "rent": 70, "area": 54.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1031,8 +1266,9 @@
     "name": "베스트빌A (다세대)",
     "address": "안양시 만안구 안양동 707-64",
     "coords": [126.920548552566, 37.3947416696188],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 53.8, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [27500, 30000], "rep_area": 45.4, "rep_avg_price": 27500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 27500, "rent": 0, "area": 45.38, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 30000, "rent": 0, "area": 53.755, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1064,12 +1300,30 @@
     ]
   },
   {
+    "name": "건양빌딩(711-104) (다세대)",
+    "address": "안양시 만안구 안양동 711-104",
+    "coords": [126.917493388822, 37.397554729737],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 16.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 16.5, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "경기아트빌 (다세대)",
     "address": "안양시 만안구 안양동 711-195",
     "coords": [126.918473978415, 37.3961219745405],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 58.4, "rep_avg_price": 7000}},
     "deals": [
       {"type": "월세", "price": 7000, "rent": 55, "area": 58.41, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-15", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "로체그랑 (다세대)",
+    "address": "안양시 만안구 안양동 711-96",
+    "coords": [126.917260023181, 37.3969755702078],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 70.2, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 150, "area": 70.21, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-24", "period": "26.04~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1100,6 +1354,15 @@
     ]
   },
   {
+    "name": "제일주택(A동) (다세대)",
+    "address": "안양시 만안구 안양동 817-67",
+    "coords": [126.913874860239, 37.4112387405336],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10100, 10100], "rep_area": 38.9, "rep_avg_price": 10100}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10100, "rent": 0, "area": 38.92, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "정원빌라(B동) (다세대)",
     "address": "안양시 만안구 안양동 817-73",
     "coords": [126.914023519938, 37.4109338536487],
@@ -1109,12 +1372,30 @@
     ]
   },
   {
+    "name": "(821-17) (다세대)",
+    "address": "안양시 만안구 안양동 821-17",
+    "coords": [126.91240411555, 37.4075045551999],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 50.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 63, "area": 50.22, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "우림빌라8차 (다세대)",
     "address": "안양시 만안구 안양동 821-5",
     "coords": [126.912072641484, 37.4073776257464],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8500, 8500], "rep_area": 59.5, "rep_avg_price": 8500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 8500, "rent": 0, "area": 59.5, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-13", "period": "26.03~28.03", "renew": "갱신", "p_dep": 9000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "채운팰리스 (다세대)",
+    "address": "안양시 만안구 안양동 821-57",
+    "coords": [126.913148427434, 37.4075316843825],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34500, 34500], "rep_area": 47.1, "rep_avg_price": 34500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34500, "rent": 0, "area": 47.12, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1134,6 +1415,15 @@
     "deals": [
       {"type": "전세", "price": 20475, "rent": 0, "area": 55.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "갱신", "p_dep": 19500, "p_rent": 0},
       {"type": "전세", "price": 20475, "rent": 0, "area": 55.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "갱신", "p_dep": 19500, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "우석펠리스6차 (다세대)",
+    "address": "안양시 만안구 안양동 829-34",
+    "coords": [126.913584794551, 37.4037601530419],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21283, 21283], "rep_area": 65.3, "rep_avg_price": 21283}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21283, "rent": 0, "area": 65.27, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1164,13 +1454,41 @@
     ]
   },
   {
+    "name": "베아누체A동B동 (다세대)",
+    "address": "안양시 만안구 안양동 845-11",
+    "coords": [126.918400912601, 37.4052862994446],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29200, 29200], "rep_area": 59.3, "rep_avg_price": 29200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29200, "rent": 0, "area": 59.26, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동인아트빌 (다세대)",
     "address": "안양시 만안구 안양동 853-24",
     "coords": [126.915178665655, 37.4074724295583],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [14500, 14500], "rep_area": 51.8, "rep_avg_price": 14500}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [27000, 27000], "rep_area": 51.8, "rep_avg_price": 27000}, "jeonse": {"count": 2, "range": [14500, 14500], "rep_area": 51.8, "rep_avg_price": 14500}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 27000, "rent": 0, "area": 51.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 14500, "rent": 0, "area": 51.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "갱신", "p_dep": 3000, "p_rent": 55},
       {"type": "전세", "price": 14500, "rent": 0, "area": 51.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "갱신", "p_dep": 3000, "p_rent": 55}
+    ]
+  },
+  {
+    "name": "네이빌(859-4) (다세대)",
+    "address": "안양시 만안구 안양동 859-4",
+    "coords": [126.916848556024, 37.407954309904],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 33.9, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 4000, "rent": 44, "area": 33.9, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "화담가 (다세대)",
+    "address": "안양시 만안구 안양동 859-5",
+    "coords": [126.917172408482, 37.4075242100777],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 31.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 31.57, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1180,6 +1498,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 29.7, "rep_avg_price": 3000}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 56, "area": 29.72, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-04", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "다원빌 (다세대)",
+    "address": "안양시 만안구 안양동 871-12",
+    "coords": [126.913631797023, 37.4012848130698],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 26.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 26.89, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1195,8 +1522,9 @@
     "name": "거성 (다세대)",
     "address": "안양시 만안구 안양동 873-15",
     "coords": [126.914180340836, 37.4015915595895],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8300, 8300], "rep_area": 27.8, "rep_avg_price": 8300}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [8300, 8300], "rep_area": 27.8, "rep_avg_price": 8300}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 8300, "rent": 0, "area": 27.78, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 8300, "rent": 0, "area": 27.78, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -1229,12 +1557,30 @@
     ]
   },
   {
+    "name": "삼성아트빌 (다세대)",
+    "address": "안양시 만안구 안양동 873-54",
+    "coords": [126.916428348726, 37.4014722528237],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18970, 18970], "rep_area": 33.1, "rep_avg_price": 18970}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18970, "rent": 0, "area": 33.07, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "원하우스 (다세대)",
     "address": "안양시 만안구 안양동 873-7",
     "coords": [126.913841516203, 37.4015915834903],
     "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 25.8, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 10000, "rent": 0, "area": 25.76, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "원평노블레스(873-90) (다세대)",
+    "address": "안양시 만안구 안양동 873-90",
+    "coords": [126.914523806209, 37.401085434611],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 51.8, "rep_avg_price": 19000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 19000, "rent": 0, "area": 51.78, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-17", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1253,6 +1599,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [16700, 16700], "rep_area": 63.8, "rep_avg_price": 16700}},
     "deals": [
       {"type": "월세", "price": 16700, "rent": 3, "area": 63.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "갱신", "p_dep": 16700, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "삼신맨션B동(908-35) (다세대)",
+    "address": "안양시 만안구 안양동 908-35",
+    "coords": [126.912546272405, 37.4007429520794],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 107.5, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 107.5, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-18", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {

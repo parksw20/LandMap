@@ -6,4 +6,3 @@ title RealEstate Map Server
 echo manifest.json에 누락된 데이터 리스트를 추가합니다. 
 
 python data_manager.py
-

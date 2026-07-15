@@ -18,11 +18,17 @@ class ExcelParser:
         file_dfs = []
         for sn in xls.sheet_names:
             try:
+                # 시트명으로 유형 판별 (오피/상가/토지/분양/공장을 아파트·주택보다 먼저 검사)
+                snl = sn.lower()
                 h_type = 'unknown'
-                if any(k in sn.lower() for k in ['apt', '아파트']): h_type = 'apt'
-                elif any(k in sn.lower() for k in ['rh', '연립', '다세대', '빌라']): h_type = 'rh'
-                elif any(k in sn.lower() for k in ['sh', '단독', '다가구', '주택']): h_type = 'sh'
-                elif any(k in sn.lower() for k in ['off', '오피']): h_type = 'off'
+                if any(k in snl for k in ['off', '오피']): h_type = 'off'
+                elif any(k in snl for k in ['nrg', '상가', '상업', '업무']): h_type = 'nrg'
+                elif any(k in snl for k in ['land', '토지']): h_type = 'land'
+                elif any(k in snl for k in ['silv', '분양', '입주']): h_type = 'silv'
+                elif any(k in snl for k in ['indu', '공장', '창고', '산업']): h_type = 'indu'
+                elif any(k in snl for k in ['apt', '아파트']): h_type = 'apt'
+                elif any(k in snl for k in ['rh', '연립', '다세대', '빌라']): h_type = 'rh'
+                elif any(k in snl for k in ['sh', '단독', '다가구', '주택']): h_type = 'sh'
                 if h_type == 'unknown': h_type = 'apt'
 
                 is_sale_sheet = any(k in sn for k in ['매매', '분양'])
@@ -103,9 +109,22 @@ class ExcelParser:
                         sido_v = parts[0]
                         gungu_v = " ".join(parts[1:])
 
+                    # 마스킹된 지번(예: '3*', '1**')은 지오코딩 실패(탈락)나 구 중심 오좌표를 유발
+                    # → 주소에서 제외하고 동 단위로 지오코딩한다 (단독/다가구 개인정보 마스킹 대응)
+                    if '*' in jibeon_v:
+                        jibeon_v = ""
+
                     full_addr = " ".join([p for p in [sido_v, gungu_v, dong_v, jibeon_v] if p]).strip()
                     if m['address'] and pd.notna(row[m['address']]):
                         full_addr = str(row[m['address']]).strip()
+                        full_addr = " ".join(t for t in full_addr.split() if '*' not in t)
+
+                    # 번지 숫자가 전혀 없는 주소는 위치 특정 불가:
+                    #  - 단독 전월세: 지번/도로명 미제공 → 주소가 '동대문구' 뿐
+                    #  - 마스킹 매매: '동대문구 청량리동' (위에서 '*' 제거됨)
+                    # → 법정동 canonical 주소로 통일해 매매/전월세가 같은 동 중심 그룹에 묶이게 함
+                    if dong_v and not any(ch.isdigit() for ch in full_addr):
+                        full_addr = " ".join([p for p in [sido_v, gungu_v, dong_v] if p]).strip()
 
                     if len(full_addr) < 2: continue
                     

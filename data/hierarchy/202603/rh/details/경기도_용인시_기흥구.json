@@ -36,6 +36,15 @@
     ]
   },
   {
+    "name": "펜트하우스 (다세대)",
+    "address": "용인시 기흥구 고매동 358-4",
+    "coords": [127.112859029793, 37.2302538483249],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 22.3, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 35, "area": 22.323, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.03~27.03", "renew": "갱신", "p_dep": 5000, "p_rent": 35}
+    ]
+  },
+  {
     "name": "아트빌 (다세대)",
     "address": "용인시 기흥구 고매동 370-1",
     "coords": [127.113291998365, 37.2294460969157],
@@ -195,12 +204,30 @@
     ]
   },
   {
+    "name": "호수타운(102동) (다세대)",
+    "address": "용인시 기흥구 공세동 476-325",
+    "coords": [127.10199473234, 37.2421660704422],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12500, 12500], "rep_area": 42.1, "rep_avg_price": 12500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12500, "rent": 0, "area": 42.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "호수타운(103동) (다세대)",
     "address": "용인시 기흥구 공세동 476-326",
     "coords": [127.101740304218, 37.2422913543691],
     "stats": {"total": 1, "sale": {"count": 1, "range": [18500, 18500], "rep_area": 47.1, "rep_avg_price": 18500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 18500, "rent": 0, "area": 47.14, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "레이크파크(B동) (다세대)",
+    "address": "용인시 기흥구 공세동 476-343",
+    "coords": [127.101150668339, 37.241469115146],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19000, 19000], "rep_area": 51.3, "rep_avg_price": 19000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19000, "rent": 0, "area": 51.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -216,20 +243,23 @@
     "name": "화성파크드림PRAV (연립)",
     "address": "용인시 기흥구 공세동 676",
     "coords": [127.110771260462, 37.245395189445],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [39500, 40500], "rep_area": 84.9, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [39500, 40500], "rep_area": 84.9, "rep_avg_price": 40000}, "jeonse": {"count": 2, "range": [30000, 31800], "rep_area": 84.9, "rep_avg_price": 30900}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 40500, "rent": 0, "area": 84.9084, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
-      {"type": "매매", "price": 39500, "rent": 0, "area": 84.9084, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 39500, "rent": 0, "area": 84.9084, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 30000, "rent": 0, "area": 84.9084, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 31800, "rent": 0, "area": 84.9084, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "갱신", "p_dep": 28500, "p_rent": 0}
     ]
   },
   {
     "name": "세종그랑시아1단지 (연립)",
     "address": "용인시 기흥구 구갈동 270",
     "coords": [127.116727615319, 37.2805063116252],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [64000, 66000], "rep_area": 85.0, "rep_avg_price": 65000}, "jeonse": {"count": 1, "range": [38200, 38200], "rep_area": 85.0, "rep_avg_price": 38200}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [64000, 66000], "rep_area": 85.0, "rep_avg_price": 65000}, "jeonse": {"count": 1, "range": [38200, 38200], "rep_area": 85.0, "rep_avg_price": 38200}, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 85.0, "rep_avg_price": 30000}},
     "deals": [
       {"type": "매매", "price": 64000, "rent": 0, "area": 84.983, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 66000, "rent": 0, "area": 84.983, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 30000, "rent": 35, "area": 84.983, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 38200, "rent": 0, "area": 84.983, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-15", "period": "26.06~28.06", "renew": "갱신", "p_dep": 32350, "p_rent": 0}
     ]
   },
@@ -247,9 +277,19 @@
     "name": "안골마을롯데캐슬 (연립)",
     "address": "용인시 기흥구 구갈동 276",
     "coords": [127.118012262676, 37.2768752006083],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [61000, 61000], "rep_area": 84.8, "rep_avg_price": 61000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [61000, 61000], "rep_area": 84.8, "rep_avg_price": 61000}, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.8, "rep_avg_price": 5000}},
     "deals": [
-      {"type": "매매", "price": 61000, "rent": 0, "area": 84.79, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 61000, "rent": 0, "area": 84.79, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 5000, "rent": 190, "area": 84.79, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-03", "period": "26.10~28.10", "renew": "갱신", "p_dep": 5000, "p_rent": 159}
+    ]
+  },
+  {
+    "name": "우성에비뉴 (연립)",
+    "address": "용인시 기흥구 구갈동 277",
+    "coords": [127.119491243672, 37.2764313064867],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49000, 49000], "rep_area": 60.0, "rep_avg_price": 49000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49000, "rent": 0, "area": 59.99, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -265,8 +305,9 @@
     "name": "라신빌라 (연립)",
     "address": "용인시 기흥구 구갈동 398",
     "coords": [127.109966862828, 37.2783488490069],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 56.5, "rep_avg_price": 15000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [19500, 19500], "rep_area": 56.5, "rep_avg_price": 19500}, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 56.5, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 19500, "rent": 0, "area": 56.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 15000, "rent": 0, "area": 56.5, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-15", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -274,17 +315,19 @@
     "name": "신동아 (연립)",
     "address": "용인시 기흥구 구갈동 401",
     "coords": [127.110474229356, 37.2775496050063],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 40.0, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 40.0, "rep_avg_price": 13000}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 40.0, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 13000, "rent": 0, "area": 39.96, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+      {"type": "매매", "price": 13000, "rent": 0, "area": 39.96, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "전세", "price": 12000, "rent": 0, "area": 39.96, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-26", "period": "26.03~28.03", "renew": "갱신", "p_dep": 12000, "p_rent": 0}
     ]
   },
   {
     "name": "삼익마에스트로(D동,E동) (다세대)",
     "address": "용인시 기흥구 구갈동 406",
     "coords": [127.110992909099, 37.2757082054317],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17500, 17500], "rep_area": 47.5, "rep_avg_price": 17500}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [21900, 21900], "rep_area": 43.8, "rep_avg_price": 21900}, "jeonse": {"count": 1, "range": [17500, 17500], "rep_area": 47.5, "rep_avg_price": 17500}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 21900, "rent": 0, "area": 43.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 17500, "rent": 0, "area": 47.53, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -307,11 +350,22 @@
     ]
   },
   {
+    "name": "더아포리움 (다세대)",
+    "address": "용인시 기흥구 동백동 399-6",
+    "coords": [127.151545111786, 37.2880649536485],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [37200, 37200], "rep_area": 62.8, "rep_avg_price": 37200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 37200, "rent": 0, "area": 62.765, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "동백라온프라이빗테라스파크 (다세대)",
     "address": "용인시 기흥구 동백동 588",
     "coords": [127.165629232273, 37.2802296686383],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [50700, 50700], "rep_area": 84.9, "rep_avg_price": 50700}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [50700, 57000], "rep_area": 84.7, "rep_avg_price": 56000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 57000, "rent": 0, "area": 84.7324, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
+      {"type": "매매", "price": 55000, "rent": 0, "area": 84.7324, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 50700, "rent": 0, "area": 84.9314, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -328,8 +382,9 @@
     "name": "건양빌라 (연립)",
     "address": "용인시 기흥구 동백동 73-55",
     "coords": [127.166204161023, 37.2937503743489],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 85.0, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [25000, 25000], "rep_area": 85.0, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 25000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -418,6 +473,16 @@
     ]
   },
   {
+    "name": "풍산에코빌(101동102동103동) (다세대)",
+    "address": "용인시 기흥구 보라동 180-5",
+    "coords": [127.123518370539, 37.2507501886001],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 56.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 55.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
+      {"type": "월세", "price": 1000, "rent": 90, "area": 55.99, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "민속촌주택 (연립)",
     "address": "용인시 기흥구 보라동 288-16",
     "coords": [127.113652131643, 37.254812331959],
@@ -433,6 +498,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 36.6, "rep_avg_price": 18000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 18000, "rent": 0, "area": 36.55, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "미소빌라 (다세대)",
+    "address": "용인시 기흥구 보라동 391-14",
+    "coords": [127.105674717977, 37.2569369011342],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [10800, 10800], "rep_area": 29.3, "rep_avg_price": 10800}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 10800, "rent": 0, "area": 29.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "갱신", "p_dep": 11000, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "한양수자인 (연립)",
+    "address": "용인시 기흥구 보라동 601",
+    "coords": [127.115314049216, 37.2515954420847],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 119.3, "rep_avg_price": 43000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43000, "rent": 0, "area": 119.251, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -511,8 +594,10 @@
     "name": "(265-14) (다세대)",
     "address": "용인시 기흥구 서천동 265-14",
     "coords": [127.072269728982, 37.2420663908538],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 11000], "rep_area": 22.9, "rep_avg_price": 11000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [13000, 14000], "rep_area": 22.9, "rep_avg_price": 13000}, "monthly": {"count": 2, "range": [5000, 11000], "rep_area": 22.9, "rep_avg_price": 11000}},
     "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 22.86, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-10", "period": "26.05~28.05", "renew": "갱신", "p_dep": 13000, "p_rent": 0},
+      {"type": "전세", "price": 14000, "rent": 0, "area": 28.79, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "갱신", "p_dep": 14000, "p_rent": 0},
       {"type": "월세", "price": 5000, "rent": 50, "area": 28.79, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-16", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 11000, "rent": 20, "area": 22.86, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
@@ -524,6 +609,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9000, 9000], "rep_area": 27.7, "rep_avg_price": 9000}},
     "deals": [
       {"type": "월세", "price": 9000, "rent": 35, "area": 27.68, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "시우하이빌 (다세대)",
+    "address": "용인시 기흥구 서천동 373-14",
+    "coords": [127.066291811293, 37.2413842827476],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 22.8, "rep_avg_price": 11000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11000, "rent": 0, "area": 22.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -554,6 +648,15 @@
     ]
   },
   {
+    "name": "스테이블경희 (연립)",
+    "address": "용인시 기흥구 서천동 7-6",
+    "coords": [127.076546888872, 37.2468241940497],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 34.6, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 4000, "rent": 97, "area": 34.65, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-25", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "도무스빌 (다세대)",
     "address": "용인시 기흥구 신갈동 1-10",
     "coords": [127.107116123889, 37.2791350068003],
@@ -566,8 +669,9 @@
     "name": "도무스빌 (연립)",
     "address": "용인시 기흥구 신갈동 1-10",
     "coords": [127.107116123889, 37.2791350068003],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.9, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [300, 500], "rep_area": 17.9, "rep_avg_price": 400}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 45, "area": 17.867, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 500, "rent": 42, "area": 17.867, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-02", "period": "26.04~27.04", "renew": "갱신", "p_dep": 500, "p_rent": 40}
     ]
   },
@@ -596,6 +700,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 42.0, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 65, "area": 42.02, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(28-8) (다세대)",
+    "address": "용인시 기흥구 신갈동 28-8",
+    "coords": [127.108029813331, 37.2776422352267],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.4, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 47, "area": 17.43, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "갱신", "p_dep": 500, "p_rent": 45}
     ]
   },
   {
@@ -638,8 +751,9 @@
     "name": "그랑3657(34-10) (다세대)",
     "address": "용인시 기흥구 신갈동 34-10",
     "coords": [127.107423029809, 37.2761042619779],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [18500, 18500], "rep_area": 35.4, "rep_avg_price": 18500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [18500, 23300], "rep_area": 35.4, "rep_avg_price": 18500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 23300, "rent": 0, "area": 48.03, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 18500, "rent": 0, "area": 35.35, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -680,6 +794,15 @@
     ]
   },
   {
+    "name": "신갈드림타운(D동) (다세대)",
+    "address": "용인시 기흥구 신갈동 388-857",
+    "coords": [127.102202177854, 37.276761057099],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [3500, 3500], "rep_area": 22.8, "rep_avg_price": 3500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 3500, "rent": 0, "area": 22.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "진주맨션 (다세대)",
     "address": "용인시 기흥구 신갈동 39-5",
     "coords": [127.106313788185, 37.2747625335207],
@@ -692,8 +815,9 @@
     "name": "산솔VILLHOUSE (다세대)",
     "address": "용인시 기흥구 신갈동 40-4",
     "coords": [127.107022247861, 37.2751096065345],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 33.5, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 27.5, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 52, "area": 27.47, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 68, "area": 33.49, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -761,12 +885,31 @@
     ]
   },
   {
+    "name": "샤인빌 (다세대)",
+    "address": "용인시 기흥구 신갈동 52-15",
+    "coords": [127.10834387481, 37.2734974346408],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 20.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 40, "area": 20.03, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-07", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "선민빌라 (다세대)",
     "address": "용인시 기흥구 신갈동 52-20",
     "coords": [127.107668712947, 37.2731698016279],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 46.7, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3000, 3000], "rep_area": 46.7, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 105, "area": 46.66, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 3000, "rent": 105, "area": 46.66, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "(8-9) (다세대)",
+    "address": "용인시 기흥구 신갈동 8-9",
+    "coords": [127.1086333896, 37.277872799548],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 21.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 47, "area": 21.92, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-31", "period": "26.04~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -785,6 +928,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13600, 13600], "rep_area": 56.7, "rep_avg_price": 13600}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 13600, "rent": 0, "area": 56.71, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "갱신", "p_dep": 13200, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "루체움 (연립)",
+    "address": "용인시 기흥구 언남동 112-28",
+    "coords": [127.128159097626, 37.2949745275709],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17850, 17850], "rep_area": 59.8, "rep_avg_price": 17850}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17850, "rent": 0, "area": 59.84, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "갱신", "p_dep": 17000, "p_rent": 0}
     ]
   },
   {
@@ -809,8 +961,9 @@
     "name": "더포레타운하우스 (다세대)",
     "address": "용인시 기흥구 언남동 128-1",
     "coords": [127.12931641223, 37.2959975673614],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [56900, 56900], "rep_area": 69.9, "rep_avg_price": 56900}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [51900, 56900], "rep_area": 65.8, "rep_avg_price": 51900}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 51900, "rent": 0, "area": 65.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 56900, "rent": 0, "area": 69.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -892,8 +1045,9 @@
     "name": "세종그랑시아 (연립)",
     "address": "용인시 기흥구 영덕동 920",
     "coords": [127.075057330104, 37.2696791080813],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [42000, 42000], "rep_area": 164.7, "rep_avg_price": 42000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [42000, 42000], "rep_area": 164.7, "rep_avg_price": 42000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 42000, "rent": 0, "area": 164.713, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 42000, "rent": 0, "area": 164.713, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   },
@@ -949,6 +1103,15 @@
     ]
   },
   {
+    "name": "(665-17) (다세대)",
+    "address": "용인시 기흥구 중동 665-17",
+    "coords": [127.14232442853, 37.2864329966956],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 43.6, "rep_avg_price": 17000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 43.58, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.03~28.01", "renew": "갱신", "p_dep": 17000, "p_rent": 0}
+    ]
+  },
+  {
     "name": "하우스타힐Ⅳ (다세대)",
     "address": "용인시 기흥구 중동 665-18",
     "coords": [127.142911890467, 37.2866370047178],
@@ -985,6 +1148,15 @@
     "deals": [
       {"type": "매매", "price": 19900, "rent": 0, "area": 63.53, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0},
       {"type": "매매", "price": 21000, "rent": 0, "area": 55.28, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "시크빌(A동,B동) (다세대)",
+    "address": "용인시 기흥구 중동 665-26",
+    "coords": [127.141842542183, 37.2848582000612],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17200, 17200], "rep_area": 46.6, "rep_avg_price": 17200}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17200, "rent": 0, "area": 46.57, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.04~28.04", "renew": "갱신", "p_dep": 18000, "p_rent": 0}
     ]
   },
   {
@@ -1058,12 +1230,31 @@
     ]
   },
   {
+    "name": "남광하우스토리 (연립)",
+    "address": "용인시 기흥구 중동 869",
+    "coords": [127.155810085701, 37.2747502650359],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90500, 90500], "rep_area": 172.5, "rep_avg_price": 90500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 90500, "rent": 0, "area": 172.51, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
     "name": "성산마을카운티스 (연립)",
     "address": "용인시 기흥구 중동 922",
     "coords": [127.15934481648, 37.2733964332636],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 150.1, "rep_avg_price": 55000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 150.1, "rep_avg_price": 55000}, "monthly": {"count": 1, "range": [50000, 50000], "rep_area": 150.1, "rep_avg_price": 50000}},
     "deals": [
+      {"type": "월세", "price": 50000, "rent": 25, "area": 150.107, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "전세", "price": 55000, "rent": 0, "area": 150.107, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "성산마을카운티스 (연립다세대)",
+    "address": "용인시 기흥구 중동 922",
+    "coords": [127.15934481648, 37.2733964332636],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [50000, 50000], "rep_area": 150.1, "rep_avg_price": 50000}},
+    "deals": [
+      {"type": "월세", "price": 50000, "rent": 25, "area": 150.107, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0}
     ]
   },
   {
@@ -1074,6 +1265,24 @@
     "deals": [
       {"type": "월세", "price": 1000, "rent": 65, "area": 23.4, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0},
       {"type": "월세", "price": 1000, "rent": 65, "area": 23.4, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-17", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "현대빌라 (다세대)",
+    "address": "용인시 기흥구 하갈동 301-3",
+    "coords": [127.098665367746, 37.262998405143],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 47.7, "rep_avg_price": 5000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 5000, "rent": 0, "area": 47.74, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0}
+    ]
+  },
+  {
+    "name": "시더스프리미엄힐 (연립)",
+    "address": "용인시 기흥구 하갈동 383",
+    "coords": [127.091498021713, 37.2550425485041],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 64.0, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 4000, "rent": 80, "area": 63.9664, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0}
     ]
   }
 ]
