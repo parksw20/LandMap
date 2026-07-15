@@ -237,11 +237,16 @@ async function toggleRedev(on) {
     }
     if (!state.redevZones) {
         try {
-            const res = await fetch(`./redev_zones.json?v=${DATA_VER}`);
-            state.redevZones = await res.json();
+            const [zr, pr] = await Promise.all([
+                fetch(`./redev_zones.json?v=${DATA_VER}`),
+                fetch(`./redev_polygons.json?v=${DATA_VER}`)
+            ]);
+            state.redevZones = await zr.json();
+            state.redevPolys = pr.ok ? await pr.json() : {};
         } catch (e) {
             console.error('정비구역 데이터 로드 실패:', e);
-            state.redevZones = [];
+            state.redevZones = state.redevZones || [];
+            state.redevPolys = state.redevPolys || {};
         }
     }
     if (legend) {
@@ -264,6 +269,30 @@ function renderRedevMarkers() {
     state.redevZones.forEach(z => {
         const pos = new kakao.maps.LatLng(z.coords[1], z.coords[0]);
         const color = CONFIG.REDEV_COLORS[z.stage] || '#6b7280';
+
+        // 구역 경계 폴리곤 (SHP 매칭된 318개 구역) — 단계색으로 영역 표시
+        const rings = state.redevPolys ? state.redevPolys[`${z.district}|${z.name}`] : null;
+        if (rings) {
+            rings.forEach(ring => {
+                const path = ring.map(p => new kakao.maps.LatLng(p[1], p[0]));
+                const poly = new kakao.maps.Polygon({
+                    path, strokeWeight: 2, strokeColor: color, strokeOpacity: 0.9,
+                    fillColor: color, fillOpacity: 0.18, zIndex: 40
+                });
+                poly.setMap(state.map);
+                state.redevOverlays.push(poly);
+                kakao.maps.event.addListener(poly, 'click', () => showRedevDetail(z, color));
+                kakao.maps.event.addListener(poly, 'mouseover', () => {
+                    state.tooltip.setContent(
+                        `<div class="custom-tooltip"><div class="tooltip-header">${z.name} <span style="color:${color}">● ${z.stage}</span></div></div>`
+                    );
+                    state.tooltip.setPosition(pos);
+                    state.tooltip.setMap(state.map);
+                });
+                kakao.maps.event.addListener(poly, 'mouseout', () => state.tooltip.setMap(null));
+            });
+        }
+
         const div = document.createElement('div');
         div.className = 'redev-marker';
         div.innerHTML = `<div class="redev-dot" style="background:${color}"></div>`;
