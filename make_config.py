@@ -17,5 +17,6 @@ if not key or len(key) < 10:
     raise SystemExit(1)
 
 OUT.write_text(f"// 로컬 전용 설정 (git 미포함) — make_config.py 로 생성됨\n"
-               f"window.VWORLD_KEY = '{key}';\n", encoding="utf-8")
+               f"window.VWORLD_KEY = '{key}';\n"
+               f"window.VWORLD_DOMAIN = 'localhost';\n", encoding="utf-8")
 print(f"[OK] {OUT} 생성 완료")

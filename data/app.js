@@ -48,7 +48,10 @@ const state = {
     clickAddrOverlay: null,
     clickParcelPoly: null,
     // 노후도 모드
-    agingOn: false
+    agingOn: false,
+    // 토지이용계획(용도지역) 오버레이
+    landuseOn: false,
+    landuseReady: false
 };
 
 const CONFIG = {
@@ -112,10 +115,29 @@ window.onload = () => {
     }
 };
 
+// VWorld 용도지역 WMS를 카카오 커스텀 타일셋으로 등록
+// 카카오 타일 그리드: EPSG:5181, 원점(-30000,-60000), 해상도 2^(레벨-3) m/px (수치 검증 완료)
+function initLanduseTileset() {
+    if (!window.VWORLD_KEY || !kakao.maps.Tileset) return false;
+    const urlFunc = (x, y, z) => {
+        const span = 256 * Math.pow(2, z - 3);
+        const minx = x * span - 30000;
+        const miny = y * span - 60000;
+        return 'https://api.vworld.kr/req/wms?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0'
+            + '&LAYERS=lt_c_uq111&STYLES=lt_c_uq111&CRS=EPSG:5181'
+            + `&BBOX=${minx},${miny},${minx + span},${miny + span}`
+            + '&WIDTH=256&HEIGHT=256&FORMAT=image/png&TRANSPARENT=true'
+            + `&KEY=${window.VWORLD_KEY}&DOMAIN=${window.VWORLD_DOMAIN || 'localhost'}`;
+    };
+    kakao.maps.Tileset.add('LANDUSE', new kakao.maps.Tileset({ width: 256, height: 256, urlFunc }));
+    return true;
+}
+
 async function init() {
     state.geocoder = new kakao.maps.services.Geocoder();
     const mapContainer = document.getElementById('map');
     state.map = new kakao.maps.Map(mapContainer, { center: new kakao.maps.LatLng(37.5665, 126.9780), level: 5 });
+    state.landuseReady = initLanduseTileset();
     
     const zoomControl = new kakao.maps.ZoomControl();
     state.map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
@@ -256,6 +278,19 @@ function setupEventListeners() {
         agingBtn.classList.toggle('active', state.agingOn);
         updateMap(true);
     };
+    // 토지이용계획(용도지역) 오버레이 토글
+    const landuseBtn = document.getElementById('landuse-btn');
+    if (landuseBtn) landuseBtn.onclick = () => {
+        if (!state.landuseReady) {
+            document.getElementById('status-bar').textContent = 'VWorld 키가 없어 이용계획을 표시할 수 없습니다 (make_config.py 실행 필요)';
+            return;
+        }
+        state.landuseOn = !state.landuseOn;
+        landuseBtn.classList.toggle('active', state.landuseOn);
+        if (state.landuseOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE);
+        else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE);
+    };
+
     const agingDropdown = document.getElementById('aging-dropdown');
     if (agingDropdown) {
         agingDropdown.innerHTML = '<div class="dropdown-title">건축 경과년수</div>' +
