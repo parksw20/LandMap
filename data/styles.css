@@ -1144,10 +1144,27 @@ body {
   }
 }
 
-/* 패널 안에서는 이중 스크롤 없이 패널 전체가 스크롤 */
+/* 패널 폰트 +1pt, 용도지역 목록은 5개 초과 시 자체 스크롤 */
+.parcel-panel .click-addr-jibun {
+  font-size: 14px;
+}
+
+.parcel-panel .click-addr-road {
+  font-size: 12px;
+}
+
+.parcel-panel .click-addr-parcel {
+  font-size: 12px;
+}
+
 .parcel-panel .click-addr-landuse {
-  max-height: none;
-  overflow-y: visible;
+  font-size: 12px;
+  max-height: 130px; /* 약 5개 항목 높이 — 초과분은 스크롤 */
+  overflow-y: auto;
+}
+
+.parcel-panel .landuse-cnflc {
+  font-size: 11px;
 }
 
 /* 지적도 모드 클릭 주소 칩 (패널 내부에서 재사용) */

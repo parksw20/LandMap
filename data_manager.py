@@ -33,7 +33,15 @@ class DataManager:
     def __init__(self):
         print(f"  > 주소 캐시 로딩 중...")
         self.geo = GeoCache(CACHE_PATH, KAKAO_API_KEY)
-        self.parser = ExcelParser(TYPE_MAP)
+        # 마스킹 지번 매칭 캐시 (match_buildings.py 산출물, 없으면 빈 dict)
+        match_path = BASE_DIR / "match_cache.json"
+        match_cache = {}
+        if match_path.exists():
+            with open(match_path, "r", encoding="utf-8") as f:
+                match_cache = json.load(f)
+            hits = sum(1 for v in match_cache.values() if v)
+            print(f"  > 건물 매칭 캐시 로드: {hits}/{len(match_cache)}건 매칭")
+        self.parser = ExcelParser(TYPE_MAP, match_cache)
         self.builder = HierarchyBuilder(BASE_DIR)
         self.global_index = {} # (건물명, 주소)를 키로 중복 제거
         self.manifest = self._load_manifest()

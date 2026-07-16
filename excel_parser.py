@@ -4,8 +4,10 @@ import re
 from pathlib import Path
 
 class ExcelParser:
-    def __init__(self, type_map):
+    def __init__(self, type_map, match_cache=None):
         self.type_map = type_map
+        # 마스킹 지번 → 실제 지번 매칭 캐시 (match_buildings.py 생성)
+        self.match_cache = match_cache or {}
 
     def parse_file(self, file_path):
         yyyymm = str(file_path.stem.split('_')[1])
@@ -113,13 +115,28 @@ class ExcelParser:
                     # 카드 표시용 원본 지번 (마스킹 '*' 포함 그대로 보존)
                     raw_jibun = jibeon_v
 
-                    # 마스킹된 지번(예: '3*', '1**')은 지오코딩 실패(탈락)나 구 중심 오좌표를 유발
-                    # → 주소에서 제외하고 동 단위로 지오코딩한다 (단독/다가구 개인정보 마스킹 대응)
-                    if '*' in jibeon_v:
+                    # 건축년도/면적 선계산 (매칭 키 + 최종 dict에 재사용)
+                    byear_v = to_int(row[m['byear']]) if m['byear'] else 0
+                    try:
+                        area_v = float(re.sub(r'[^0-9.]', '', str(row[m['area']]))) if m['area'] and pd.notna(row[m['area']]) else 0.0
+                    except ValueError:
+                        area_v = 0.0
+
+                    # 마스킹 지번 → 건물 매칭 캐시로 실제 지번 복원 시도 (유일 매칭만 기록돼 있음)
+                    matched = None
+                    if '*' in jibeon_v and self.match_cache and dong_v:
+                        masked_tok = jibeon_v.split()[-1]
+                        mkey = f"{sido_v}|{gungu_v}|{dong_v}|{masked_tok}|{byear_v}|{area_v:.2f}"
+                        matched = self.match_cache.get(mkey)
+                    if matched:
+                        raw_jibun = f"{dong_v} {matched} (추정)"
+                        jibeon_v = matched
+                    elif '*' in jibeon_v:
+                        # 매칭 실패한 마스킹 지번은 기존대로 동 단위 지오코딩
                         jibeon_v = ""
 
                     full_addr = " ".join([p for p in [sido_v, gungu_v, dong_v, jibeon_v] if p]).strip()
-                    if m['address'] and pd.notna(row[m['address']]):
+                    if m['address'] and pd.notna(row[m['address']]) and not matched:
                         full_addr = str(row[m['address']]).strip()
                         full_addr = " ".join(t for t in full_addr.split() if '*' not in t)
 
@@ -142,13 +159,13 @@ class ExcelParser:
                         '__gungu': gungu_v,
                         '__dong': dong_v,
                         '__jibun': raw_jibun,
-                        '__byear': to_int(row[m['byear']]) if m['byear'] else 0,
+                        '__byear': byear_v,
                         '__tx_type': get_tx_type(row),
                         '__h_type': h_type,
                         '__ym': yyyymm,
                         '__price': to_int(row[m['price']]) if m['price'] else 0,
                         '__rent': to_int(row[m['rent']]) if m['rent'] else 0,
-                        '__area': float(re.sub(r'[^0-9.]', '', str(row[m['area']]))) if m['area'] and pd.notna(row[m['area']]) else 0.0,
+                        '__area': area_v,
                         '__land': float(re.sub(r'[^0-9.]', '', str(row[m['land']]))) if m['land'] and pd.notna(row[m['land']]) else 0.0,
                         '__floor': str(row[m['floor']]).split('.')[0] if m['floor'] and pd.notna(row[m['floor']]) else "",
                         '__bdong': str(row[m['bdong']]).split('.')[0] if m['bdong'] and pd.notna(row[m['bdong']]) else "",
