@@ -43,7 +43,9 @@ const state = {
     // 현위치 / 로드뷰
     geolocOverlay: null,
     roadviewOn: false,
-    rv: null, rvClient: null
+    rv: null, rvClient: null,
+    // 지적도 모드 클릭 주소 표시
+    clickAddrOverlay: null
 };
 
 const CONFIG = {
@@ -127,10 +129,11 @@ function setupEventListeners() {
     kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); if (state.radiusOn) drawRadius(); });
     kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); if (state.radiusOn) drawRadius(); });
 
-    // 지도 클릭: 로드뷰 > 측정 순으로 처리
+    // 지도 클릭: 로드뷰 > 측정 > 지적도(주소 표시) 순으로 처리
     kakao.maps.event.addListener(state.map, 'click', (e) => {
         if (state.roadviewOn) { openRoadview(e.latLng); return; }
-        if (state.measureMode) onMeasureClick(e.latLng);
+        if (state.measureMode) { onMeasureClick(e.latLng); return; }
+        if (state.cadastralOn) showClickAddress(e.latLng);
     });
     kakao.maps.event.addListener(state.map, 'rightclick', () => finishMeasure());
     kakao.maps.event.addListener(state.map, 'dblclick', () => finishMeasure());
@@ -235,12 +238,6 @@ function setupEventListeners() {
             ).join('');
     }
 
-    // 스카이뷰 드롭다운: 카카오맵(연도별 사진)으로 현재 위치 열기
-    const skyYears = document.getElementById('skyview-years-link');
-    if (skyYears) skyYears.onclick = () => {
-        const c = state.map.getCenter();
-        window.open(`https://map.kakao.com/link/map/현재위치,${c.getLat()},${c.getLng()}`, '_blank');
-    };
 
     // 모바일 좌측 상단 필터 토글
     const filterFab = document.getElementById('filter-fab');
@@ -814,18 +811,74 @@ function onMeasureClick(latlng) {
 }
 
 // 현재 그리던 도형을 확정(고정)하고 새로 그릴 수 있게 초기화 (모드는 유지)
+// 확정된 도형의 마지막 값 라벨에 × 버튼이 붙어 개별 삭제 가능
 function finishMeasure() {
     if (!state.measureMode) return;
-    const bucket = state.doneShapes[state.measureMode];
-    if (state.curLine) bucket.push(state.curLine);
-    if (state.curPoly) bucket.push(state.curPoly);
-    bucket.push(...state.curOverlays);
+    if (!state.curPts.length) return;
+    const mode = state.measureMode;
+    const complete = (mode === 'dist' && state.curPts.length >= 2) || (mode === 'area' && state.curPts.length >= 3);
+
+    const group = [];
+    if (state.curLine) group.push(state.curLine);
+    if (state.curPoly) group.push(state.curPoly);
+    group.push(...state.curOverlays);
+
+    if (!complete) {
+        // 점이 모자란 미완성 도형은 그냥 제거
+        group.forEach(o => o.setMap(null));
+    } else {
+        // 마지막 값 라벨에 삭제(×) 버튼 부착
+        const labelOv = [...state.curOverlays].reverse().find(o =>
+            o.opts && o.opts.content && o.opts.content.classList &&
+            (o.opts.content.classList.contains('total') || o.opts.content.classList.contains('area-total')));
+        if (labelOv) {
+            const el = labelOv.opts.content;
+            el.classList.add('closable');
+            const x = document.createElement('span');
+            x.className = 'measure-close';
+            x.textContent = '×';
+            x.title = '이 측정 삭제';
+            x.onclick = (e) => {
+                e.stopPropagation();
+                group.forEach(o => o.setMap(null));
+                state.doneShapes[mode] = state.doneShapes[mode].filter(g => g !== group);
+            };
+            el.appendChild(x);
+        }
+        state.doneShapes[mode].push(group);
+    }
     state.curPts = []; state.curLine = null; state.curPoly = null; state.curOverlays = []; state.curAreaLabel = null;
 }
 
 function clearMeasure(mode) {
-    state.doneShapes[mode].forEach(o => o.setMap(null));
+    state.doneShapes[mode].forEach(group => group.forEach(o => o.setMap(null)));
     state.doneShapes[mode] = [];
+}
+
+// ==========================
+// 지적도 모드: 지도 클릭 → 해당 지점 주소(지번/도로명) 표시
+// ==========================
+function showClickAddress(latlng) {
+    if (!state.geocoder || !state.geocoder.coord2Address) return;
+    state.geocoder.coord2Address(latlng.getLng(), latlng.getLat(), (result, status) => {
+        if (status !== kakao.maps.services.Status.OK || !result || !result.length) return;
+        const jibun = result[0].address ? result[0].address.address_name : '';
+        const road = result[0].road_address ? result[0].road_address.address_name : '';
+        if (!jibun && !road) return;
+        if (state.clickAddrOverlay) state.clickAddrOverlay.setMap(null);
+        const div = document.createElement('div');
+        div.className = 'click-addr';
+        div.innerHTML =
+            `<span class="click-addr-close" title="닫기">×</span>` +
+            `<div class="click-addr-jibun">${jibun || road}</div>` +
+            (road && jibun ? `<div class="click-addr-road">${road}</div>` : '');
+        div.querySelector('.click-addr-close').onclick = (e) => {
+            e.stopPropagation();
+            if (state.clickAddrOverlay) { state.clickAddrOverlay.setMap(null); state.clickAddrOverlay = null; }
+        };
+        state.clickAddrOverlay = new kakao.maps.CustomOverlay({ position: latlng, content: div, yAnchor: 1.25, zIndex: 1750 });
+        state.clickAddrOverlay.setMap(state.map);
+    });
 }
 
 // ==========================
