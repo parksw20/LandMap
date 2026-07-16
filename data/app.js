@@ -42,13 +42,40 @@ const CONFIG = {
     },
     // 전월세(전세/월세) 실거래가 제공되는 유형. 나머지는 국토부가 매매만 공개함.
     RENT_SUPPORTED: new Set(['apt', 'rh', 'sh', 'off']),
-    // 정비사업 추진단계별 색 (초기 → 착공 순)
+    // 정비사업 추진단계별 색 — 무지개색 순서 (초기 빨강 → 착공 보라)
     REDEV_STAGES: ['구역지정', '추진위', '조합설립', '건축심의', '사업시행', '관리처분', '착공'],
     REDEV_COLORS: {
-        '구역지정': '#9ca3af', '추진위': '#f59e0b', '조합설립': '#f97316',
-        '건축심의': '#06b6d4', '사업시행': '#3b82f6', '관리처분': '#8b5cf6', '착공': '#ef4444'
+        '구역지정': '#ef4444',  // 빨
+        '추진위': '#f97316',    // 주
+        '조합설립': '#eab308',  // 노
+        '건축심의': '#22c55e',  // 초
+        '사업시행': '#3b82f6',  // 파
+        '관리처분': '#4338ca',  // 남
+        '착공': '#a855f7'       // 보
     }
 };
+
+const isMobile = () => window.innerWidth <= 768;
+
+// 모바일: 결과 영역(data-section)을 필터 패널에서 분리해 독립 하단 시트로.
+// 데스크톱: 원래 위치(패널 내부)로 복귀.
+function placeDataSection() {
+    const ds = document.getElementById('data-section');
+    if (!ds) return;
+    if (isMobile()) {
+        if (ds.parentElement !== document.body) {
+            document.body.appendChild(ds);
+            ds.classList.add('mobile-sheet');
+        }
+    } else {
+        if (ds.parentElement === document.body) {
+            const wrapper = document.querySelector('.panel-content-wrapper');
+            const footer = wrapper.querySelector('.panel-footer');
+            wrapper.insertBefore(ds, footer);
+            ds.classList.remove('mobile-sheet', 'expanded');
+        }
+    }
+}
 
 window.onload = () => {
     if (typeof kakao !== 'undefined' && kakao.maps) {
@@ -76,6 +103,8 @@ async function init() {
 
     setupEventListeners();
     applyTxAvailability();
+    placeDataSection();
+    window.addEventListener('resize', placeDataSection);
     await renderMonthSelect();
     await loadGlobalSearchIndex();
     
@@ -195,10 +224,23 @@ function setupEventListeners() {
     const closeDataBtn = document.getElementById('close-data-btn');
     if (closeDataBtn) {
         closeDataBtn.onclick = () => {
-            document.getElementById('data-section').style.display = 'none';
+            const ds = document.getElementById('data-section');
+            ds.style.display = 'none';
+            ds.classList.remove('expanded');
             document.getElementById('control-panel').classList.remove('full-screen');
             state.selectedComplex = null;
             updateMap(true);
+        };
+    }
+
+    // 모바일 결과 시트: 30% ↔ 전체화면 토글
+    const expandBtn = document.getElementById('expand-data-btn');
+    if (expandBtn) {
+        expandBtn.onclick = () => {
+            const ds = document.getElementById('data-section');
+            const expanded = ds.classList.toggle('expanded');
+            expandBtn.textContent = expanded ? '⇲' : '⛶';
+            expandBtn.title = expanded ? '이전 크기로' : '전체화면 전환';
         };
     }
 
@@ -343,8 +385,11 @@ function showRedevDetail(z, color) {
     areaFilter.style.display = 'none';
 
     const controlPanel = document.getElementById('control-panel');
-    controlPanel.classList.remove('collapsed');
-    if (window.innerWidth <= 768) controlPanel.classList.add('full-screen');
+    if (isMobile()) {
+        controlPanel.classList.add('collapsed');
+    } else {
+        controlPanel.classList.remove('collapsed');
+    }
     sidePanel.style.display = 'block';
     sidePanel.scrollTop = 0;
 
@@ -618,13 +663,14 @@ function renderComplexDetail() {
     // 반경 표시가 켜져 있으면 새 선택 기준으로 다시 그림
     if (state.radiusOn) drawRadius();
     
-    // 모바일에서만 전체 화면 활성화
+    // 모바일: 필터 패널은 접고(FAB로 열기) 결과는 독립 하단 시트(30%)로
     const controlPanel = document.getElementById('control-panel');
-    controlPanel.classList.remove('collapsed');
-    if (window.innerWidth <= 768) {
-        controlPanel.classList.add('full-screen');
+    if (isMobile()) {
+        controlPanel.classList.add('collapsed');
+    } else {
+        controlPanel.classList.remove('collapsed');
     }
-    sidePanel.style.display = 'block'; 
+    sidePanel.style.display = 'block';
 
     const validInGlobal = item.deals.filter(d => { const p = Math.round(d.area * 0.3025); return p >= state.globalArea.min && (state.globalArea.max >= 80 || p <= state.globalArea.max); });
     const uniqueAreas = [...new Set(validInGlobal.map(d => state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area)))].sort((a, b) => a - b);
