@@ -26,7 +26,12 @@ const state = {
     // 정비사업 레이어
     showRedev: false,
     redevZones: null,
-    redevOverlays: []
+    redevOverlays: [],
+    // 겹침 마커 선택 리스트 / 반경 / 지적도
+    clusterPicker: null,
+    radiusOn: false,
+    radiusOverlays: [],
+    cadastralOn: false
 };
 
 const CONFIG = {
@@ -118,6 +123,21 @@ function setupEventListeners() {
     document.getElementById('skyview-btn').onclick = () => {
         const type = state.map.getMapTypeId();
         state.map.setMapTypeId(type === kakao.maps.MapTypeId.ROADMAP ? kakao.maps.MapTypeId.HYBRID : kakao.maps.MapTypeId.ROADMAP);
+    };
+
+    const radiusBtn = document.getElementById('radius-btn');
+    if (radiusBtn) radiusBtn.onclick = () => {
+        state.radiusOn = !state.radiusOn;
+        radiusBtn.classList.toggle('active', state.radiusOn);
+        drawRadius();
+    };
+
+    const cadastralBtn = document.getElementById('cadastral-btn');
+    if (cadastralBtn) cadastralBtn.onclick = () => {
+        state.cadastralOn = !state.cadastralOn;
+        cadastralBtn.classList.toggle('active', state.cadastralOn);
+        if (state.cadastralOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT);
+        else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT);
     };
 
     document.querySelectorAll('input[name="housingType"]').forEach(r => {
@@ -450,11 +470,33 @@ function renderMarkers(data, level) {
         if (maxRepArea > 0) { const p = Math.round(maxRepArea * 0.3025); if (!(p >= state.globalArea.min && (state.globalArea.max >= 80 || p <= state.globalArea.max))) return false; }
         return (state.filters['매매'] && s.sale) || (state.filters['전세'] && s.jeonse) || (state.filters['월세'] && s.monthly);
     });
-    filtered.forEach(item => {
+    // 레벨4: 동일 좌표에 여러 그룹이 겹치면 하나의 마커 + 개수 배지로 묶는다
+    let renderList; // [ [대표item, 그룹배열] ]
+    if (level === 4) {
+        const byPos = new Map();
+        filtered.forEach(item => {
+            const k = `${item.coords[0]},${item.coords[1]}`;
+            if (!byPos.has(k)) byPos.set(k, []);
+            byPos.get(k).push(item);
+        });
+        renderList = Array.from(byPos.values()).map(g => [g[0], g]);
+    } else {
+        renderList = filtered.map(item => [item, [item]]);
+    }
+
+    renderList.forEach(([item, group]) => {
         const pos = new kakao.maps.LatLng(item.coords[1], item.coords[0]); if (level === 4 && !bounds.contain(pos)) return;
-        const content = createOverlayContent(item, level), overlay = new kakao.maps.CustomOverlay({ position: pos, content: content, yAnchor: 1.0 });
+        const content = createOverlayContent(item, level, group.length), overlay = new kakao.maps.CustomOverlay({ position: pos, content: content, yAnchor: 1.0 });
         overlay.setMap(state.map); state.overlays.push(overlay);
-        content.onclick = () => { if (level === 4) { state.selectedComplex = item; state.selectedArea = null; renderComplexDetail(); updateMap(true); } else handleLevelMove(item, level); };
+        content.onclick = () => {
+            if (level !== 4) { handleLevelMove(item, level); return; }
+            closeClusterPicker();
+            if (group.length === 1) {
+                state.selectedComplex = item; state.selectedArea = null; renderComplexDetail(); updateMap(true);
+            } else {
+                showClusterPicker(group, pos);
+            }
+        };
         content.onmouseenter = () => { const key = `${level}_${item.name}`; if (state.hoveredItem === key) return; state.hoveredItem = key; showTooltip(item, level, pos); };
         content.onmouseleave = () => { state.hoveredItem = null; state.tooltip.setMap(null); };
     });
@@ -468,9 +510,9 @@ function renderMarkers(data, level) {
     }
 }
 
-function createOverlayContent(item, level) {
+function createOverlayContent(item, level, groupCount = 1) {
     const isSelected = state.selectedComplex && state.selectedComplex.name === item.name && state.selectedComplex.address === item.address;
-    const div = document.createElement('div'); 
+    const div = document.createElement('div');
     div.className = `level-marker level-${level} ${isSelected ? 'selected' : ''}`;
     const themeColor = CONFIG.TYPE_COLORS[state.selectedType] || '#2563eb';
     let targetType = state.filters['매매'] && item.stats.sale ? "sale" : (state.filters['전세'] && item.stats.jeonse ? "jeonse" : (state.filters['월세'] && item.stats.monthly ? "monthly" : ""));
@@ -481,8 +523,79 @@ function createOverlayContent(item, level) {
     } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${state.displayUnit === 'pyeong' ? Math.round(stats.rep_area * 0.3025)+'평' : Math.round(stats.rep_area)+'㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
     
     const markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
-    div.innerHTML = `<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${isSelected ? '#1e3a8a' : themeColor}"></div>`;
+    const badge = groupCount > 1 ? `<div class="marker-badge">${groupCount}</div>` : '';
+    div.innerHTML = `${badge}<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${isSelected ? '#1e3a8a' : themeColor}"></div>`;
     return div;
+}
+
+// ==========================
+// 겹침 마커 선택 리스트 (같은 좌표에 여러 매물 그룹)
+// ==========================
+function closeClusterPicker() {
+    if (state.clusterPicker) { state.clusterPicker.setMap(null); state.clusterPicker = null; }
+}
+
+function showClusterPicker(group, pos) {
+    closeClusterPicker();
+    const div = document.createElement('div');
+    div.className = 'cluster-picker';
+    const header = document.createElement('div');
+    header.className = 'picker-header';
+    header.innerHTML = `<span>이 위치 매물 ${group.length}개</span><button class="picker-close">&times;</button>`;
+    header.querySelector('.picker-close').onclick = (e) => { e.stopPropagation(); closeClusterPicker(); };
+    div.appendChild(header);
+
+    const list = document.createElement('div');
+    list.className = 'picker-list';
+    group.forEach(it => {
+        const row = document.createElement('div');
+        row.className = 'picker-item';
+        row.innerHTML = `<div class="picker-name">${it.name}</div>` +
+            `<div class="picker-addr">${it.address || ''}</div>` +
+            `<div class="picker-meta">거래 ${it.deals ? it.deals.length : it.stats.total}건</div>`;
+        row.onclick = (e) => {
+            e.stopPropagation();
+            state.selectedComplex = it; state.selectedArea = null;
+            closeClusterPicker();
+            renderComplexDetail();
+            updateMap(true);
+        };
+        list.appendChild(row);
+    });
+    div.appendChild(list);
+
+    state.clusterPicker = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.15, zIndex: 2000 });
+    state.clusterPicker.setMap(state.map);
+}
+
+// ==========================
+// 반경 동심원 (선택 장소 기준 100m 간격)
+// ==========================
+function drawRadius() {
+    state.radiusOverlays.forEach(o => o.setMap(null));
+    state.radiusOverlays = [];
+    if (!state.radiusOn) return;
+    const c = state.selectedComplex
+        ? new kakao.maps.LatLng(state.selectedComplex.coords[1], state.selectedComplex.coords[0])
+        : state.map.getCenter();
+    for (let i = 1; i <= 5; i++) {
+        const circle = new kakao.maps.Circle({
+            center: c, radius: i * 100,
+            strokeWeight: 1.5, strokeColor: '#2563eb', strokeOpacity: 0.75, strokeStyle: 'shortdash',
+            fillOpacity: 0
+        });
+        circle.setMap(state.map);
+        state.radiusOverlays.push(circle);
+        // 각 원 북쪽 끝에 거리 라벨
+        const labelPos = new kakao.maps.LatLng(c.getLat() + (i * 100) / 111000, c.getLng());
+        const label = new kakao.maps.CustomOverlay({
+            position: labelPos,
+            content: `<div class="radius-label">${i * 100}m</div>`,
+            yAnchor: 0.5, zIndex: 60
+        });
+        label.setMap(state.map);
+        state.radiusOverlays.push(label);
+    }
 }
 
 function handleLevelMove(item, level) { state.map.setCenter(new kakao.maps.LatLng(item.coords[1], item.coords[0])); state.map.setLevel((level === 1) ? 8 : (level === 2 ? 6 : 4), { animate: true }); }
@@ -499,6 +612,11 @@ function renderComplexDetail() {
     const item = state.selectedComplex; if (!item || !item.deals) return;
     const sidePanel = document.getElementById('data-section'), dataList = document.getElementById('data-list'), areaFilter = document.getElementById('area-filter');
     sidePanel.scrollTop = 0; document.getElementById('data-title').textContent = item.name;
+    // 주소 표시 (건물명과 주소가 같으면 중복 생략)
+    const addrEl = document.getElementById('data-address');
+    if (addrEl) addrEl.textContent = (item.address && item.address !== item.name) ? item.address : '';
+    // 반경 표시가 켜져 있으면 새 선택 기준으로 다시 그림
+    if (state.radiusOn) drawRadius();
     
     // 모바일에서만 전체 화면 활성화
     const controlPanel = document.getElementById('control-panel');
@@ -530,7 +648,10 @@ function renderComplexDetail() {
         if (pLand > 0) info += `, 대지: ${pLand}평 (${deal.land}㎡)`;
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
-        card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
+        // 지번 표시: 마스킹('2*')이면 그대로 표기, 없으면 그룹 주소로 대체
+        const jibunTxt = (deal.jibun && deal.jibun !== "nan") ? deal.jibun : (item.address || "");
+        const addrInfo = jibunTxt ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>` : "";
+        card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
     });
     if (filtered.length === 0) dataList.innerHTML = '<div class="empty-state">해당 필터에 맞는 거래 내역이 없습니다.</div>';
@@ -548,27 +669,29 @@ function handleSearch(q) {
         })
         .slice(0, 20);
     if (results.length > 0) {
-        resEl.innerHTML = results.map(r => r.t === 'dong' ? `<li class="search-item dong-result" onclick="goToDong('${r.n}', ${r.c[1]}, ${r.c[0]})"><span class="badge-dong">법정동</span> <span class="search-item-name">${r.n}</span></li>` : `<li class="search-item" onclick="goToLocation(${r.c[1]}, ${r.c[0]}, '${r.n}')"><div class="search-item-name">${r.n}</div><div class="search-item-addr">${r.a}</div></li>`).join('');
+        resEl.innerHTML = results.map(r => r.t === 'dong' ? `<li class="search-item dong-result" onclick="goToDong('${r.n}', ${r.c[1]}, ${r.c[0]})"><span class="badge-dong">법정동</span> <span class="search-item-name">${r.n}</span></li>` : `<li class="search-item" onclick="goToLocation(${r.c[1]}, ${r.c[0]}, '${r.n}', '${(r.a || '').replace(/'/g, "\\'")}')"><div class="search-item-name">${r.n}</div><div class="search-item-addr">${r.a || ''}</div></li>`).join('');
         resEl.classList.remove('hidden');
     } else { resEl.innerHTML = '<li class="search-item">결과 없음</li>'; resEl.classList.remove('hidden'); }
 }
 
 function goToDong(name, lat, lng) { state.map.setCenter(new kakao.maps.LatLng(lat, lng)); state.map.setLevel(6); document.getElementById('search-results').classList.add('hidden'); document.getElementById('search-input').value = name; updateMap(true); }
-function goToLocation(lat, lng, name) { 
-    state.map.setCenter(new kakao.maps.LatLng(lat, lng)); 
-    state.map.setLevel(4); 
-    document.getElementById('search-results').classList.add('hidden'); 
-    document.getElementById('search-input').value = name; 
+function goToLocation(lat, lng, name, addr) {
+    state.map.setCenter(new kakao.maps.LatLng(lat, lng));
+    state.map.setLevel(4);
+    document.getElementById('search-results').classList.add('hidden');
+    document.getElementById('search-input').value = name;
     updateMap(true).then(() => {
         setTimeout(() => {
-            const item = state.allLoadedData.find(i => i.name === name);
+            // 이름+주소로 정확 매칭 (상가는 '업무' 같은 이름이 중복됨), 없으면 이름만으로
+            const item = state.allLoadedData.find(i => i.name === name && (!addr || i.address === addr))
+                || state.allLoadedData.find(i => i.name === name);
             if (item) {
                 state.selectedComplex = item;
                 state.selectedArea = null;
                 renderComplexDetail();
-                updateMap(true); 
+                updateMap(true);
             }
         }, 300);
     });
 }
-function clearOverlays() { state.overlays.forEach(o => o.setMap(null)); state.overlays = []; }
+function clearOverlays() { state.overlays.forEach(o => o.setMap(null)); state.overlays = []; closeClusterPicker(); }

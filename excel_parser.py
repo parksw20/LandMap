@@ -109,6 +109,9 @@ class ExcelParser:
                         sido_v = parts[0]
                         gungu_v = " ".join(parts[1:])
 
+                    # 카드 표시용 원본 지번 (마스킹 '*' 포함 그대로 보존)
+                    raw_jibun = jibeon_v
+
                     # 마스킹된 지번(예: '3*', '1**')은 지오코딩 실패(탈락)나 구 중심 오좌표를 유발
                     # → 주소에서 제외하고 동 단위로 지오코딩한다 (단독/다가구 개인정보 마스킹 대응)
                     if '*' in jibeon_v:
@@ -137,6 +140,7 @@ class ExcelParser:
                         '__sido': sido_v,
                         '__gungu': gungu_v,
                         '__dong': dong_v,
+                        '__jibun': raw_jibun,
                         '__tx_type': get_tx_type(row),
                         '__h_type': h_type,
                         '__ym': yyyymm,

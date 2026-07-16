@@ -811,6 +811,119 @@ body {
   transform: none;
 }
 
+/* 겹침 마커 개수 배지 */
+.marker-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: #f59e0b;
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  z-index: 5;
+}
+
+/* 겹침 마커 선택 리스트 */
+.cluster-picker {
+  width: 260px;
+  max-height: 320px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.picker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  border-bottom: 1px solid #f3f4f6;
+  background: #f9fafb;
+}
+
+.picker-close {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6b7280;
+  line-height: 1;
+}
+
+.picker-list {
+  overflow-y: auto;
+}
+
+.picker-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #f9fafb;
+}
+
+.picker-item:hover {
+  background: #eff6ff;
+}
+
+.picker-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.picker-addr {
+  font-size: 11px;
+  color: var(--text-sub);
+  margin-top: 2px;
+}
+
+.picker-meta {
+  font-size: 11px;
+  color: #2563eb;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* 반경 동심원 거리 라벨 */
+.radius-label {
+  background: rgba(37, 99, 235, 0.85);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+/* 지도 컨트롤 활성 상태 */
+.control-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* 상세 헤더 주소 */
+.data-address {
+  font-size: 12px;
+  color: var(--text-sub);
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* 정비사업 레이어 */
 .redev-marker {
   cursor: pointer;

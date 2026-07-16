@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import requests
 import time
 from pathlib import Path
@@ -42,20 +43,47 @@ class GeoCache:
 
     def get_coords(self, address):
         if not address: return None
-        
+
         # 1. 캐시 확인
         clean_addr = str(address).replace(" ", "")
         if clean_addr in self.full_cache:
             return self.full_cache[clean_addr]
-        
+
         parts = str(address).split()
         if len(parts) >= 2:
             sub_addr = "".join(parts[-2:]).replace(" ", "")
             if sub_addr in self.sub_cache:
                 return self.sub_cache[sub_addr]
-        
+
         # 2. API 호출
-        return self._fetch_api(address)
+        coords = self._fetch_api(address)
+        if coords:
+            return coords
+
+        # 3. 폴백 사다리 — 카카오 DB에 없는 지번(특수지번 등)이나 일시 실패로
+        #    매물이 통째로 드랍되는 것을 방지. 정확도는 낮아져도 위치는 유지한다.
+        addr = str(address).strip()
+        # 3-1. 부번 제거: '명일동 228-8' → '명일동 228'
+        m = re.match(r'^(.+\d+)-\d+$', addr)
+        if m:
+            coords = self._fetch_api(m.group(1))
+            if coords:
+                self._store(addr, coords)
+                return coords
+        # 3-2. 지번 제거(동 단위): '종로구 인사동 280' → '종로구 인사동'
+        parts = addr.split()
+        if len(parts) >= 2 and re.search(r'\d', parts[-1]):
+            dong_addr = " ".join(parts[:-1])
+            coords = self._fetch_api(dong_addr)
+            if coords:
+                self._store(addr, coords)
+                return coords
+        return None
+
+    def _store(self, address, coords):
+        """폴백으로 얻은 좌표를 원래 주소 키로 캐시 (다음 실행부터 즉시 히트)"""
+        self.raw_cache[address] = coords
+        self.full_cache[address.replace(" ", "")] = coords
 
     def _fetch_api(self, address):
         url = "https://dapi.kakao.com/v2/local/search/address.json"

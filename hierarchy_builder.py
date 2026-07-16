@@ -83,11 +83,12 @@ class HierarchyBuilder:
                 deals = []
                 for _, r in cg.iterrows():
                     deals.append({
-                        "type": r['__tx_type'], "price": int(r['__price']), "rent": int(r['__rent']), 
+                        "type": r['__tx_type'], "price": int(r['__price']), "rent": int(r['__rent']),
                         "area": float(r['__area']), "land": float(r['__land']),
                         "floor": str(r['__floor']), "dong": str(r['__bdong']), "date": str(r['__date']),
                         "period": str(r['__period']), "renew": str(r['__renew']),
-                        "p_dep": int(r['__p_dep']), "p_rent": int(r['__p_rent'])
+                        "p_dep": int(r['__p_dep']), "p_rent": int(r['__p_rent']),
+                        "jibun": str(r['__jibun']) if '__jibun' in r and str(r['__jibun']) not in ('', 'nan') else ""
                     })
                 c_data.append({"name": name, "address": addr, "coords": cg.iloc[0]['__coords'], "stats": self._get_stats(cg), "deals": deals})
             

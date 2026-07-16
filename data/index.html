@@ -19,6 +19,8 @@
   <!-- Map Controls (Top Right) -->
   <div id="map-controls" class="map-controls">
     <button id="skyview-btn" class="control-btn">스카이뷰</button>
+    <button id="radius-btn" class="control-btn" title="선택 장소 기준 100m 간격 동심원">반경</button>
+    <button id="cadastral-btn" class="control-btn" title="지적편집도 표시">지적도</button>
   </div>
 
   <!-- Floating Control Panel -->
@@ -162,8 +164,11 @@
       <!-- Scrollable Data List Section -->
       <div id="data-section" class="panel-scroll-area" style="display:none;">
         <div class="data-section-header" style="padding: 20px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); position:sticky; top:0; background:white; z-index:10;">
-          <h2 id="data-title" style="font-size:18px; font-weight:800;">거래 내역</h2>
-          <button id="close-data-btn" style="border:none; background:#f3f4f6; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:18px;">&times;</button>
+          <div style="min-width:0;">
+            <h2 id="data-title" style="font-size:18px; font-weight:800;">거래 내역</h2>
+            <div id="data-address" class="data-address"></div>
+          </div>
+          <button id="close-data-btn" style="border:none; background:#f3f4f6; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:18px; flex-shrink:0;">&times;</button>
         </div>
 
         <div class="local-filter-section" style="padding: 15px 24px; background:#f9fafb; border-bottom:1px solid var(--border-color);">
