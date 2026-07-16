@@ -31,7 +31,11 @@ const state = {
     clusterPicker: null,
     radiusOn: false,
     radiusOverlays: [],
-    cadastralOn: false
+    cadastralOn: false,
+    // 주소 검색
+    lastAddrQuery: null,
+    lastAddrResults: [],
+    searchPin: null
 };
 
 const CONFIG = {
@@ -705,6 +709,8 @@ function renderComplexDetail() {
     if (filtered.length === 0) dataList.innerHTML = '<div class="empty-state">해당 필터에 맞는 거래 내역이 없습니다.</div>';
 }
 
+let searchTimer = null;
+
 function handleSearch(q) {
     const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); return; }
     const qLower = q.toLowerCase();
@@ -715,11 +721,75 @@ function handleSearch(q) {
             if (a.t !== 'dong' && b.t === 'dong') return 1;
             return 0;
         })
-        .slice(0, 20);
-    if (results.length > 0) {
-        resEl.innerHTML = results.map(r => r.t === 'dong' ? `<li class="search-item dong-result" onclick="goToDong('${r.n}', ${r.c[1]}, ${r.c[0]})"><span class="badge-dong">법정동</span> <span class="search-item-name">${r.n}</span></li>` : `<li class="search-item" onclick="goToLocation(${r.c[1]}, ${r.c[0]}, '${r.n}', '${(r.a || '').replace(/'/g, "\\'")}')"><div class="search-item-name">${r.n}</div><div class="search-item-addr">${r.a || ''}</div></li>`).join('');
-        resEl.classList.remove('hidden');
-    } else { resEl.innerHTML = '<li class="search-item">결과 없음</li>'; resEl.classList.remove('hidden'); }
+        .slice(0, 15);
+
+    renderSearchResults(results, (state.lastAddrQuery === q) ? state.lastAddrResults : []);
+
+    // 카카오 주소 지오코딩 병행 (디바운스) — 매물 인덱스에 없는 임의 주소도 위치 검색
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+        if (!state.geocoder) return;
+        state.geocoder.addressSearch(q, (result, status) => {
+            if (document.getElementById('search-input').value !== q) return; // 최신 입력만 반영
+            const addrs = (status === kakao.maps.services.Status.OK && result ? result : [])
+                .slice(0, 3)
+                .map(r => ({
+                    label: r.address_name,
+                    road: r.road_address ? r.road_address.address_name : '',
+                    x: parseFloat(r.x), y: parseFloat(r.y)
+                }));
+            state.lastAddrQuery = q;
+            state.lastAddrResults = addrs;
+            renderSearchResults(results, addrs);
+        });
+    }, 300);
+}
+
+function renderSearchResults(indexResults, addrResults) {
+    const resEl = document.getElementById('search-results');
+    resEl.innerHTML = '';
+    // 1) 지도 위치(주소) 결과 — 매물 유무와 무관하게 해당 위치로 이동
+    (addrResults || []).forEach(a => {
+        const li = document.createElement('li');
+        li.className = 'search-item addr-result';
+        li.innerHTML = `<span class="badge-addr">주소</span> <span class="search-item-name">${a.label}</span>` +
+            (a.road && a.road !== a.label ? `<div class="search-item-addr">${a.road}</div>` : '');
+        li.onclick = () => goToAddress(a.y, a.x, a.label);
+        resEl.appendChild(li);
+    });
+    // 2) 매물/법정동 인덱스 결과
+    (indexResults || []).forEach(r => {
+        const li = document.createElement('li');
+        if (r.t === 'dong') {
+            li.className = 'search-item dong-result';
+            li.innerHTML = `<span class="badge-dong">법정동</span> <span class="search-item-name">${r.n}</span>`;
+            li.onclick = () => goToDong(r.n, r.c[1], r.c[0]);
+        } else {
+            li.className = 'search-item';
+            li.innerHTML = `<div class="search-item-name">${r.n}</div><div class="search-item-addr">${r.a || ''}</div>`;
+            li.onclick = () => goToLocation(r.c[1], r.c[0], r.n, r.a || '');
+        }
+        resEl.appendChild(li);
+    });
+    if (!resEl.children.length) resEl.innerHTML = '<li class="search-item">결과 없음</li>';
+    resEl.classList.remove('hidden');
+}
+
+// 주소 검색 결과 선택 → 지도 이동 + 위치 핀 (핀 클릭 시 제거)
+function goToAddress(lat, lng, label) {
+    document.getElementById('search-results').classList.add('hidden');
+    document.getElementById('search-input').value = label;
+    const pos = new kakao.maps.LatLng(lat, lng);
+    state.map.setCenter(pos);
+    state.map.setLevel(3);
+    if (state.searchPin) state.searchPin.setMap(null);
+    const div = document.createElement('div');
+    div.className = 'search-pin';
+    div.innerHTML = `<div class="search-pin-label">${label}</div><div class="search-pin-dot"></div>`;
+    div.onclick = () => { if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
+    state.searchPin = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.0, zIndex: 1800 });
+    state.searchPin.setMap(state.map);
+    updateMap(true);
 }
 
 function goToDong(name, lat, lng) { state.map.setCenter(new kakao.maps.LatLng(lat, lng)); state.map.setLevel(6); document.getElementById('search-results').classList.add('hidden'); document.getElementById('search-input').value = name; updateMap(true); }
