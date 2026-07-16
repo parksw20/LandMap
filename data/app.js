@@ -44,8 +44,11 @@ const state = {
     geolocOverlay: null,
     roadviewOn: false,
     rv: null, rvClient: null,
-    // 지적도 모드 클릭 주소 표시
-    clickAddrOverlay: null
+    // 지적도 모드 클릭 주소 표시 + VWorld 필지 폴리곤
+    clickAddrOverlay: null,
+    clickParcelPoly: null,
+    // 노후도 모드
+    agingOn: false
 };
 
 const CONFIG = {
@@ -66,7 +69,15 @@ const CONFIG = {
         '사업시행': '#3b82f6',  // 파
         '관리처분': '#4338ca',  // 남
         '착공': '#a855f7'       // 보
-    }
+    },
+    // 노후도(경과년수) 구간별 색
+    AGING_BANDS: [
+        { min: 30, color: '#dc2626', label: '30년 이상' },
+        { min: 20, color: '#f97316', label: '20~29년' },
+        { min: 10, color: '#eab308', label: '10~19년' },
+        { min: 0,  color: '#22c55e', label: '10년 미만' }
+    ],
+    AGING_UNKNOWN: '#9ca3af'
 };
 
 const isMobile = () => window.innerWidth <= 768;
@@ -236,6 +247,23 @@ function setupEventListeners() {
             CONFIG.REDEV_STAGES.map(s =>
                 `<div class="legend-v-item"><span class="legend-dot" style="background:${CONFIG.REDEV_COLORS[s]}"></span>${s}</div>`
             ).join('');
+    }
+
+    // 노후도 모드: 상세 마커를 건축 경과년수 색으로
+    const agingBtn = document.getElementById('aging-btn');
+    if (agingBtn) agingBtn.onclick = () => {
+        state.agingOn = !state.agingOn;
+        agingBtn.classList.toggle('active', state.agingOn);
+        updateMap(true);
+    };
+    const agingDropdown = document.getElementById('aging-dropdown');
+    if (agingDropdown) {
+        agingDropdown.innerHTML = '<div class="dropdown-title">건축 경과년수</div>' +
+            CONFIG.AGING_BANDS.map(b =>
+                `<div class="legend-v-item"><span class="legend-dot" style="background:${b.color}"></span>${b.label}</div>`
+            ).join('') +
+            `<div class="legend-v-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span>정보 없음</div>` +
+            '<div class="dropdown-note" style="margin:6px 0 0;">확대(상세) 화면에서 매물 마커에 적용</div>';
     }
 
 
@@ -611,11 +639,30 @@ function renderMarkers(data, level) {
     }
 }
 
+// 매물 그룹의 대표 건축년도 (거래들 중 유효값의 최빈)
+function repBuildYear(item) {
+    if (!item.deals) return 0;
+    const counts = {};
+    item.deals.forEach(d => { if (d.by && d.by > 1900) counts[d.by] = (counts[d.by] || 0) + 1; });
+    let best = 0, n = 0;
+    for (const y in counts) if (counts[y] > n) { n = counts[y]; best = +y; }
+    return best;
+}
+
+function agingColor(buildYear) {
+    if (!buildYear || buildYear <= 1900) return CONFIG.AGING_UNKNOWN;
+    const age = new Date().getFullYear() - buildYear;
+    for (const b of CONFIG.AGING_BANDS) if (age >= b.min) return b.color;
+    return CONFIG.AGING_UNKNOWN;
+}
+
 function createOverlayContent(item, level, groupCount = 1) {
     const isSelected = state.selectedComplex && state.selectedComplex.name === item.name && state.selectedComplex.address === item.address;
     const div = document.createElement('div');
     div.className = `level-marker level-${level} ${isSelected ? 'selected' : ''}`;
-    const themeColor = CONFIG.TYPE_COLORS[state.selectedType] || '#2563eb';
+    let themeColor = CONFIG.TYPE_COLORS[state.selectedType] || '#2563eb';
+    // 노후도 모드: 상세 레벨 마커를 건축 경과년수 색으로
+    if (state.agingOn && level === 4) themeColor = agingColor(repBuildYear(item));
     let targetType = state.filters['매매'] && item.stats.sale ? "sale" : (state.filters['전세'] && item.stats.jeonse ? "jeonse" : (state.filters['월세'] && item.stats.monthly ? "monthly" : ""));
     const stats = item.stats[targetType]; let label = "", subLabel = "";
     if (level === 4) { 
@@ -749,7 +796,8 @@ function renderComplexDetail() {
         // 지번 표시: 마스킹('2*')이면 그대로 표기, 없으면 그룹 주소로 대체
         const jibunTxt = (deal.jibun && deal.jibun !== "nan") ? deal.jibun : (item.address || "");
         const addrInfo = jibunTxt ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>` : "";
-        card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
+        const byInfo = (deal.by && deal.by > 1900) ? `<div class="card-row-sub">건축년도: ${deal.by}년 (${new Date().getFullYear() - deal.by}년차)</div>` : "";
+        card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${byInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
     });
     if (filtered.length === 0) dataList.innerHTML = '<div class="empty-state">해당 필터에 맞는 거래 내역이 없습니다.</div>';
@@ -856,8 +904,27 @@ function clearMeasure(mode) {
 }
 
 // ==========================
-// 지적도 모드: 지도 클릭 → 해당 지점 주소(지번/도로명) 표시
+// 지적도 모드: 지도 클릭 → 주소 + VWorld 필지 경계/면적/공시지가
 // ==========================
+function clearClickParcel() {
+    if (state.clickAddrOverlay) { state.clickAddrOverlay.setMap(null); state.clickAddrOverlay = null; }
+    if (state.clickParcelPoly) { state.clickParcelPoly.setMap(null); state.clickParcelPoly = null; }
+}
+
+// VWorld 연속지적도 JSONP 조회 (키는 config.local.js — git 미포함)
+function vworldParcel(latlng, cb) {
+    if (!window.VWORLD_KEY) { cb(null); return; }
+    const cbName = '__vw' + Date.now() + Math.floor(Math.random() * 1000);
+    const script = document.createElement('script');
+    const cleanup = () => { delete window[cbName]; script.remove(); };
+    window[cbName] = (resp) => { cleanup(); cb(resp); };
+    script.onerror = () => { cleanup(); cb(null); };
+    script.src = 'https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LP_PA_CBND_BUBUN'
+        + `&key=${window.VWORLD_KEY}&format=json&crs=EPSG:4326&size=1`
+        + `&geomFilter=POINT(${latlng.getLng()} ${latlng.getLat()})&callback=${cbName}`;
+    document.head.appendChild(script);
+}
+
 function showClickAddress(latlng) {
     if (!state.geocoder || !state.geocoder.coord2Address) return;
     state.geocoder.coord2Address(latlng.getLng(), latlng.getLat(), (result, status) => {
@@ -865,19 +932,42 @@ function showClickAddress(latlng) {
         const jibun = result[0].address ? result[0].address.address_name : '';
         const road = result[0].road_address ? result[0].road_address.address_name : '';
         if (!jibun && !road) return;
-        if (state.clickAddrOverlay) state.clickAddrOverlay.setMap(null);
+        clearClickParcel();
         const div = document.createElement('div');
         div.className = 'click-addr';
         div.innerHTML =
             `<span class="click-addr-close" title="닫기">×</span>` +
             `<div class="click-addr-jibun">${jibun || road}</div>` +
-            (road && jibun ? `<div class="click-addr-road">${road}</div>` : '');
-        div.querySelector('.click-addr-close').onclick = (e) => {
-            e.stopPropagation();
-            if (state.clickAddrOverlay) { state.clickAddrOverlay.setMap(null); state.clickAddrOverlay = null; }
-        };
+            (road && jibun ? `<div class="click-addr-road">${road}</div>` : '') +
+            (window.VWORLD_KEY ? `<div class="click-addr-parcel">필지 조회 중...</div>` : '');
+        div.querySelector('.click-addr-close').onclick = (e) => { e.stopPropagation(); clearClickParcel(); };
         state.clickAddrOverlay = new kakao.maps.CustomOverlay({ position: latlng, content: div, yAnchor: 1.25, zIndex: 1750 });
         state.clickAddrOverlay.setMap(state.map);
+
+        // VWorld 필지 경계 + 면적 + 공시지가
+        vworldParcel(latlng, (resp) => {
+            const el = div.querySelector('.click-addr-parcel');
+            const feats = resp && resp.response && resp.response.status === 'OK'
+                ? (resp.response.result.featureCollection.features || []) : [];
+            if (!feats.length) { if (el) el.textContent = '필지 정보 없음'; return; }
+            const f = feats[0];
+            // MultiPolygon 외곽 링들 → 카카오 폴리곤
+            const rings = f.geometry.type === 'MultiPolygon'
+                ? f.geometry.coordinates.map(poly => poly[0])
+                : [f.geometry.coordinates[0]];
+            const paths = rings.map(ring => ring.map(p => new kakao.maps.LatLng(p[1], p[0])));
+            state.clickParcelPoly = new kakao.maps.Polygon({
+                path: paths, strokeWeight: 2.5, strokeColor: '#2563eb', strokeOpacity: 0.95,
+                fillColor: '#3b82f6', fillOpacity: 0.15, zIndex: 45
+            });
+            state.clickParcelPoly.setMap(state.map);
+            const area = state.clickParcelPoly.getArea();
+            const jiga = parseInt(f.properties.jiga || 0);
+            if (el) {
+                el.innerHTML = `면적: <b>${fmtArea(area)}</b>` +
+                    (jiga ? `<br>공시지가: ${jiga.toLocaleString()}원/㎡` : '');
+            }
+        });
     });
 }
 
