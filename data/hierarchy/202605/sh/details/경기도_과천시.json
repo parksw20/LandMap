@@ -76,13 +76,21 @@
     "name": "경기도 과천시 중앙동",
     "address": "경기도 과천시 중앙동",
     "coords": [126.993455678842, 37.433150880627],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 594.0, "rep_avg_price": 200000}, "jeonse": {"count": 1, "range": [32200, 32200], "rep_area": 66.4, "rep_avg_price": 32200}, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 44.0, "rep_avg_price": 1000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 1, "range": [32200, 32200], "rep_area": 66.4, "rep_avg_price": 32200}, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 44.0, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 200000, "rent": 0, "area": 594.0, "land": 254.1, "floor": "", "dong": "", "date": "2026-05-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 3*", "by": 1986},
       {"type": "월세", "price": 1000, "rent": 60, "area": 44.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "전세", "price": 32200, "rent": 0, "area": 66.42, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-09", "period": "26.06~27.06", "renew": "갱신", "p_dep": 31000, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 1000, "rent": 110, "area": 66.51, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-08", "period": "26.06~27.05", "renew": "갱신", "p_dep": 1000, "p_rent": 110, "jibun": "", "by": 1986},
       {"type": "월세", "price": 2000, "rent": 60, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-06", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988}
+    ]
+  },
+  {
+    "name": "경기도 과천시 중앙동 35-6",
+    "address": "경기도 과천시 중앙동 35-6",
+    "coords": [126.992049118771, 37.4327763319828],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 594.0, "rep_avg_price": 200000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 200000, "rent": 0, "area": 594.0, "land": 254.1, "floor": "", "dong": "", "date": "2026-05-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 35-6 (추정)", "by": 1986}
     ]
   }
 ]

@@ -634,9 +634,8 @@
     "name": "서울특별시 영등포구 영등포동",
     "address": "서울특별시 영등포구 영등포동",
     "coords": [126.906168599588, 37.5134118222973],
-    "stats": {"total": 21, "sale": {"count": 1, "range": [237000, 237000], "rep_area": 369.8, "rep_avg_price": 237000}, "jeonse": null, "monthly": {"count": 20, "range": [0, 1000], "rep_area": 13.0, "rep_avg_price": 250}},
+    "stats": {"total": 20, "sale": null, "jeonse": null, "monthly": {"count": 20, "range": [0, 1000], "rep_area": 13.0, "rep_avg_price": 250}},
     "deals": [
-      {"type": "매매", "price": 237000, "rent": 0, "area": 369.77, "land": 221.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영등포동 6**", "by": 1985},
       {"type": "월세", "price": 1000, "rent": 78, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1961},
       {"type": "월세", "price": 200, "rent": 20, "area": 15.7, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 1000, "rent": 55, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -657,6 +656,24 @@
       {"type": "월세", "price": 1000, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1998},
       {"type": "월세", "price": 500, "rent": 35, "area": 12.99, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 1000, "rent": 50, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 영등포동 620-5",
+    "address": "서울특별시 영등포구 영등포동 620-5",
+    "coords": [126.906314004839, 37.5131835332581],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [237000, 237000], "rep_area": 369.8, "rep_avg_price": 237000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 237000, "rent": 0, "area": 369.77, "land": 221.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영등포동 620-5 (추정)", "by": 1985}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 영등포동3가 17-4",
+    "address": "서울특별시 영등포구 영등포동3가 17-4",
+    "coords": [126.907591389526, 37.5185638901686],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [329000, 329000], "rep_area": 510.0, "rep_avg_price": 329000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 329000, "rent": 0, "area": 510.02, "land": 155.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영등포동3가 17-4 (추정)", "by": 1976}
     ]
   },
   {
@@ -728,15 +745,6 @@
     "deals": [
       {"type": "매매", "price": 33000, "rent": 0, "area": 24.3, "land": 25.5, "floor": "", "dong": "", "date": "2025-12-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양평동2가 3*", "by": 1985},
       {"type": "매매", "price": 88500, "rent": 0, "area": 67.6, "land": 115.7, "floor": "", "dong": "", "date": "2025-12-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양평동2가 2*", "by": 1972}
-    ]
-  },
-  {
-    "name": "영등포구 영등포동3가",
-    "address": "영등포구 영등포동3가",
-    "coords": [126.90787737105, 37.5182713776916],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [329000, 329000], "rep_area": 510.0, "rep_avg_price": 329000}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 329000, "rent": 0, "area": 510.02, "land": 155.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영등포동3가 1*", "by": 1976}
     ]
   }
 ]

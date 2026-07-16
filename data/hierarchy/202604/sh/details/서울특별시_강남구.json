@@ -177,10 +177,8 @@
     "name": "서울특별시 강남구 대치동",
     "address": "서울특별시 강남구 대치동",
     "coords": [127.056693501258, 37.4932421505465],
-    "stats": {"total": 65, "sale": {"count": 2, "range": [475000, 710000], "rep_area": 353.2, "rep_avg_price": 475000}, "jeonse": {"count": 7, "range": [9240, 65000], "rep_area": 19.5, "rep_avg_price": 13000}, "monthly": {"count": 56, "range": [500, 45000], "rep_area": 30.0, "rep_avg_price": 6750}},
+    "stats": {"total": 63, "sale": null, "jeonse": {"count": 7, "range": [9240, 65000], "rep_area": 19.5, "rep_avg_price": 13000}, "monthly": {"count": 56, "range": [500, 45000], "rep_area": 30.0, "rep_avg_price": 6750}},
     "deals": [
-      {"type": "매매", "price": 475000, "rent": 0, "area": 353.2, "land": 169.1, "floor": "", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대치동 9**", "by": 1997},
-      {"type": "매매", "price": 710000, "rent": 0, "area": 522.16, "land": 219.8, "floor": "", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대치동 9**", "by": 1994},
       {"type": "월세", "price": 10000, "rent": 100, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 50, "area": 38.25, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-22", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 1000, "rent": 95, "area": 148.48, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
@@ -244,6 +242,24 @@
       {"type": "월세", "price": 1000, "rent": 75, "area": 28.26, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 5000, "rent": 95, "area": 75.99, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-09", "period": "26.04~28.04", "renew": "갱신", "p_dep": 5000, "p_rent": 95, "jibun": "", "by": 1985},
       {"type": "월세", "price": 15000, "rent": 60, "area": 71.24, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 대치동 909-13",
+    "address": "서울특별시 강남구 대치동 909-13",
+    "coords": [127.053280534993, 37.5007185789786],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [710000, 710000], "rep_area": 522.2, "rep_avg_price": 710000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 710000, "rent": 0, "area": 522.16, "land": 219.8, "floor": "", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대치동 909-13 (추정)", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 대치동 926-11",
+    "address": "서울특별시 강남구 대치동 926-11",
+    "coords": [127.056355798758, 37.4999510265595],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [475000, 475000], "rep_area": 353.2, "rep_avg_price": 475000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 475000, "rent": 0, "area": 353.2, "land": 169.1, "floor": "", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대치동 926-11 (추정)", "by": 1997}
     ]
   },
   {
@@ -529,11 +545,10 @@
     "name": "서울특별시 강남구 일원동",
     "address": "서울특별시 강남구 일원동",
     "coords": [127.080430036811, 37.4795654903149],
-    "stats": {"total": 38, "sale": {"count": 3, "range": [180000, 350000], "rep_area": 249.8, "rep_avg_price": 275000}, "jeonse": {"count": 7, "range": [25000, 62000], "rep_area": 37.2, "rep_avg_price": 25000}, "monthly": {"count": 28, "range": [100, 30000], "rep_area": 25.0, "rep_avg_price": 1166}},
+    "stats": {"total": 37, "sale": {"count": 2, "range": [275000, 350000], "rep_area": 249.8, "rep_avg_price": 275000}, "jeonse": {"count": 7, "range": [25000, 62000], "rep_area": 37.2, "rep_avg_price": 25000}, "monthly": {"count": 28, "range": [100, 30000], "rep_area": 25.0, "rep_avg_price": 1166}},
     "deals": [
       {"type": "매매", "price": 350000, "rent": 0, "area": 281.55, "land": 230.2, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "일원동 6**", "by": 1987},
       {"type": "매매", "price": 275000, "rent": 0, "area": 249.76, "land": 192.6, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "일원동 6**", "by": 1986},
-      {"type": "매매", "price": 180000, "rent": 0, "area": 469.4, "land": 230.1, "floor": "", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "일원동 7**", "by": 1996},
       {"type": "월세", "price": 2000, "rent": 80, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-21", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
       {"type": "월세", "price": 500, "rent": 45, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
       {"type": "월세", "price": 5000, "rent": 200, "area": 90.72, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1986},
@@ -569,6 +584,15 @@
       {"type": "월세", "price": 13000, "rent": 5, "area": 63.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-09", "period": "26.06~28.01", "renew": "갱신", "p_dep": 13000, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "월세", "price": 13000, "rent": 35, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 3000, "rent": 80, "area": 26.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 일원동 720-2",
+    "address": "서울특별시 강남구 일원동 720-2",
+    "coords": [127.079486298054, 37.4837997886398],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [180000, 180000], "rep_area": 469.4, "rep_avg_price": 180000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 180000, "rent": 0, "area": 469.4, "land": 230.1, "floor": "", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "일원동 720-2 (추정)", "by": 1996}
     ]
   },
   {

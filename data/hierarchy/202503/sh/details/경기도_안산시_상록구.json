@@ -304,10 +304,8 @@
     "name": "경기도 안산시 상록구 이동",
     "address": "경기도 안산시 상록구 이동",
     "coords": [126.860857418137, 37.3054407225325],
-    "stats": {"total": 71, "sale": {"count": 3, "range": [71000, 100000], "rep_area": 361.6, "rep_avg_price": 71000}, "jeonse": {"count": 13, "range": [3000, 19000], "rep_area": 18.0, "rep_avg_price": 3000}, "monthly": {"count": 55, "range": [50, 14000], "rep_area": 40.0, "rep_avg_price": 1883}},
+    "stats": {"total": 69, "sale": {"count": 1, "range": [92500, 92500], "rep_area": 575.6, "rep_avg_price": 92500}, "jeonse": {"count": 13, "range": [3000, 19000], "rep_area": 18.0, "rep_avg_price": 3000}, "monthly": {"count": 55, "range": [50, 14000], "rep_area": 40.0, "rep_avg_price": 1883}},
     "deals": [
-      {"type": "매매", "price": 100000, "rent": 0, "area": 543.22, "land": 269.3, "floor": "", "dong": "", "date": "2025-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이동 5**", "by": 1996},
-      {"type": "매매", "price": 71000, "rent": 0, "area": 361.62, "land": 231.8, "floor": "", "dong": "", "date": "2025-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이동 5**", "by": 1995},
       {"type": "매매", "price": 92500, "rent": 0, "area": 575.64, "land": 272.5, "floor": "", "dong": "", "date": "2025-03-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이동 5**", "by": 1995},
       {"type": "월세", "price": 500, "rent": 35, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010},
       {"type": "월세", "price": 300, "rent": 30, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
@@ -380,6 +378,24 @@
     ]
   },
   {
+    "name": "경기도 안산시 상록구 이동 529",
+    "address": "경기도 안산시 상록구 이동 529",
+    "coords": [126.859441027342, 37.3107086602529],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [100000, 100000], "rep_area": 543.2, "rep_avg_price": 100000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 100000, "rent": 0, "area": 543.22, "land": 269.3, "floor": "", "dong": "", "date": "2025-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이동 529 (추정)", "by": 1996}
+    ]
+  },
+  {
+    "name": "경기도 안산시 상록구 이동 573-6",
+    "address": "경기도 안산시 상록구 이동 573-6",
+    "coords": [126.862582587706, 37.3046105421256],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [71000, 71000], "rep_area": 361.6, "rep_avg_price": 71000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 71000, "rent": 0, "area": 361.62, "land": 231.8, "floor": "", "dong": "", "date": "2025-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이동 573-6 (추정)", "by": 1995}
+    ]
+  },
+  {
     "name": "경기도 안산시 상록구 일동",
     "address": "경기도 안산시 상록구 일동",
     "coords": [126.866154804189, 37.3102980036068],
@@ -449,11 +465,19 @@
     "name": "경기도 안산시 상록구 장상동",
     "address": "경기도 안산시 상록구 장상동",
     "coords": [126.875867756654, 37.3525381261027],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 196.3, "rep_avg_price": 85000}, "jeonse": {"count": 2, "range": [4500, 4500], "rep_area": 20.0, "rep_avg_price": 4500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [4500, 4500], "rep_area": 20.0, "rep_avg_price": 4500}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 85000, "rent": 0, "area": 196.3, "land": 496.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장상동 2**", "by": 1982},
       {"type": "전세", "price": 4500, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-31", "period": "25.03~26.03", "renew": "갱신", "p_dep": 4500, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "전세", "price": 4500, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-31", "period": "25.03~26.03", "renew": "갱신", "p_dep": 4500, "p_rent": 0, "jibun": "", "by": 2017}
+    ]
+  },
+  {
+    "name": "경기도 안산시 상록구 장상동 292-5",
+    "address": "경기도 안산시 상록구 장상동 292-5",
+    "coords": [126.877679581951, 37.3517306198439],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 196.3, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 85000, "rent": 0, "area": 196.3, "land": 496.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장상동 292-5 (추정)", "by": 1982}
     ]
   },
   {

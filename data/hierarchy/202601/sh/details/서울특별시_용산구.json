@@ -17,21 +17,28 @@
     "name": "서울특별시 용산구 남영동",
     "address": "서울특별시 용산구 남영동",
     "coords": [126.973322683547, 37.5430061454345],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [637586, 962470], "rep_area": 343.2, "rep_avg_price": 637586}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 13000], "rep_area": 25.3, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [637586, 637586], "rep_area": 343.2, "rep_avg_price": 637586}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 13000], "rep_area": 25.3, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 962470, "rent": 0, "area": 659.38, "land": 269.8, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남영동 *", "by": 1965},
       {"type": "매매", "price": 637586, "rent": 0, "area": 343.22, "land": 185.8, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남영동 *", "by": 1960},
       {"type": "월세", "price": 1000, "rent": 65, "area": 25.32, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-08", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1953},
       {"type": "월세", "price": 13000, "rent": 10, "area": 55.97, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-03", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1965}
     ]
   },
   {
+    "name": "서울특별시 용산구 남영동 5-1",
+    "address": "서울특별시 용산구 남영동 5-1",
+    "coords": [126.97336467973, 37.5448699622337],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [962470, 962470], "rep_area": 659.4, "rep_avg_price": 962470}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 962470, "rent": 0, "area": 659.38, "land": 269.8, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남영동 5-1 (추정)", "by": 1965}
+    ]
+  },
+  {
     "name": "서울특별시 용산구 동빙고동",
     "address": "서울특별시 용산구 동빙고동",
     "coords": [126.995112936884, 37.5244123976895],
-    "stats": {"total": 10, "sale": {"count": 1, "range": [800000, 800000], "rep_area": 290.8, "rep_avg_price": 800000}, "jeonse": {"count": 6, "range": [4000, 20000], "rep_area": 16.0, "rep_avg_price": 5000}, "monthly": {"count": 3, "range": [200, 1500], "rep_area": 16.0, "rep_avg_price": 200}},
+    "stats": {"total": 9, "sale": null, "jeonse": {"count": 6, "range": [4000, 20000], "rep_area": 16.0, "rep_avg_price": 5000}, "monthly": {"count": 3, "range": [200, 1500], "rep_area": 16.0, "rep_avg_price": 200}},
     "deals": [
-      {"type": "매매", "price": 800000, "rent": 0, "area": 290.8, "land": 181.0, "floor": "", "dong": "", "date": "2026-01-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동빙고동 2*", "by": 1980},
       {"type": "전세", "price": 5000, "rent": 0, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-28", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 1500, "rent": 110, "area": 64.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1978},
       {"type": "전세", "price": 16000, "rent": 0, "area": 42.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-29", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
@@ -41,6 +48,15 @@
       {"type": "전세", "price": 13000, "rent": 0, "area": 49.72, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-20", "period": "26.05~28.05", "renew": "갱신", "p_dep": 13000, "p_rent": 0, "jibun": "", "by": 1966},
       {"type": "전세", "price": 20000, "rent": 0, "area": 50.95, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-14", "period": "26.01~28.01", "renew": "갱신", "p_dep": 20000, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "월세", "price": 200, "rent": 23, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-06", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 동빙고동 28-7",
+    "address": "서울특별시 용산구 동빙고동 28-7",
+    "coords": [126.996043365046, 37.5251126014417],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [800000, 800000], "rep_area": 290.8, "rep_avg_price": 800000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 800000, "rent": 0, "area": 290.8, "land": 181.0, "floor": "", "dong": "", "date": "2026-01-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동빙고동 28-7 (추정)", "by": 1980}
     ]
   },
   {
@@ -107,13 +123,29 @@
     "name": "서울특별시 용산구 서빙고동",
     "address": "서울특별시 용산구 서빙고동",
     "coords": [126.994638088433, 37.5204623812775],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [190000, 600000], "rep_area": 54.8, "rep_avg_price": 190000}, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 47.3, "rep_avg_price": 10000}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 45.0, "rep_avg_price": 2000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [600000, 600000], "rep_area": 188.1, "rep_avg_price": 600000}, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 47.3, "rep_avg_price": 10000}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 45.0, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 370000, "rent": 0, "area": 139.3, "land": 175.0, "floor": "", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 2**", "by": 1980},
-      {"type": "매매", "price": 190000, "rent": 0, "area": 54.79, "land": 79.0, "floor": "", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 6*", "by": 1937},
       {"type": "매매", "price": 600000, "rent": 0, "area": 188.1, "land": 119.0, "floor": "", "dong": "", "date": "2026-01-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 1**", "by": 1990},
       {"type": "전세", "price": 10000, "rent": 0, "area": 47.28, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-14", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 2000, "rent": 130, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-02", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 서빙고동 213",
+    "address": "서울특별시 용산구 서빙고동 213",
+    "coords": [126.993170983197, 37.5209617315021],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [370000, 370000], "rep_area": 139.3, "rep_avg_price": 370000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 370000, "rent": 0, "area": 139.3, "land": 175.0, "floor": "", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 213 (추정)", "by": 1980}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 서빙고동 60-7",
+    "address": "서울특별시 용산구 서빙고동 60-7",
+    "coords": [126.994149803678, 37.5226372888308],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [190000, 190000], "rep_area": 54.8, "rep_avg_price": 190000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 190000, "rent": 0, "area": 54.79, "land": 79.0, "floor": "", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 60-7 (추정)", "by": 1937}
     ]
   },
   {
@@ -232,6 +264,15 @@
       {"type": "전세", "price": 22000, "rent": 0, "area": 34.05, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-15", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1967},
       {"type": "월세", "price": 3000, "rent": 85, "area": 65.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-24", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 1000, "rent": 85, "area": 16.56, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-27", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1981}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 원효로3가 7",
+    "address": "서울특별시 용산구 원효로3가 7",
+    "coords": [126.956059749755, 37.534652406659],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 39.7, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 120000, "rent": 0, "area": 39.67, "land": 49.6, "floor": "", "dong": "", "date": "2026-01-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원효로3가 7 (추정)", "by": 1934}
     ]
   },
   {
@@ -443,6 +484,15 @@
     ]
   },
   {
+    "name": "서울특별시 용산구 청파동3가 121-16",
+    "address": "서울특별시 용산구 청파동3가 121-16",
+    "coords": [126.968771536943, 37.5434470599077],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [159000, 159000], "rep_area": 150.2, "rep_avg_price": 159000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 159000, "rent": 0, "area": 150.16, "land": 92.6, "floor": "", "dong": "", "date": "2026-01-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 121-16 (추정)", "by": 1973}
+    ]
+  },
+  {
     "name": "서울특별시 용산구 한강로1가",
     "address": "서울특별시 용산구 한강로1가",
     "coords": [126.973054361529, 37.5339780623762],
@@ -563,15 +613,6 @@
     ]
   },
   {
-    "name": "용산구 원효로3가",
-    "address": "용산구 원효로3가",
-    "coords": [126.95763533429, 37.5343051059798],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 39.7, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 120000, "rent": 0, "area": 39.67, "land": 49.6, "floor": "", "dong": "", "date": "2026-01-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원효로3가 *", "by": 1934}
-    ]
-  },
-  {
     "name": "용산구 청파동1가",
     "address": "용산구 청파동1가",
     "coords": [126.967458773793, 37.548767465152],
@@ -579,15 +620,6 @@
     "deals": [
       {"type": "매매", "price": 120000, "rent": 0, "area": 180.09, "land": 115.7, "floor": "", "dong": "", "date": "2026-01-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동1가 *", "by": 1989},
       {"type": "매매", "price": 116500, "rent": 0, "area": 100.55, "land": 92.6, "floor": "", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동1가 *", "by": 1960}
-    ]
-  },
-  {
-    "name": "용산구 청파동3가",
-    "address": "용산구 청파동3가",
-    "coords": [126.966972344614, 37.543246007914],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [159000, 159000], "rep_area": 150.2, "rep_avg_price": 159000}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 159000, "rent": 0, "area": 150.16, "land": 92.6, "floor": "", "dong": "", "date": "2026-01-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 1**", "by": 1973}
     ]
   },
   {

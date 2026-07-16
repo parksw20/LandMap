@@ -324,15 +324,23 @@
     "name": "서울특별시 성동구 옥수동",
     "address": "서울특별시 성동구 옥수동",
     "coords": [127.013438338877, 37.5435886378543],
-    "stats": {"total": 7, "sale": {"count": 1, "range": [117000, 117000], "rep_area": 219.4, "rep_avg_price": 117000}, "jeonse": null, "monthly": {"count": 6, "range": [1000, 74750], "rep_area": 25.0, "rep_avg_price": 5000}},
+    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [1000, 74750], "rep_area": 25.0, "rep_avg_price": 5000}},
     "deals": [
-      {"type": "매매", "price": 117000, "rent": 0, "area": 219.38, "land": 145.0, "floor": "", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "옥수동 3**", "by": 1993},
       {"type": "월세", "price": 74750, "rent": 135, "area": 84.92, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-14", "period": "26.03~27.10", "renew": "갱신", "p_dep": 99750, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 4000, "rent": 70, "area": 49.58, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "월세", "price": 5000, "rent": 80, "area": 44.6, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984},
       {"type": "월세", "price": 5000, "rent": 30, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1975},
       {"type": "월세", "price": 1000, "rent": 60, "area": 130.73, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1980},
       {"type": "월세", "price": 2000, "rent": 90, "area": 58.16, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-05", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985}
+    ]
+  },
+  {
+    "name": "서울특별시 성동구 옥수동 321-6",
+    "address": "서울특별시 성동구 옥수동 321-6",
+    "coords": [127.01624630389, 37.5441701503335],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [117000, 117000], "rep_area": 219.4, "rep_avg_price": 117000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 117000, "rent": 0, "area": 219.38, "land": 145.0, "floor": "", "dong": "", "date": "2026-03-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "옥수동 321-6 (추정)", "by": 1993}
     ]
   },
   {
@@ -513,9 +521,8 @@
     "name": "서울특별시 성동구 홍익동",
     "address": "서울특별시 성동구 홍익동",
     "coords": [127.032213833438, 37.5663550219259],
-    "stats": {"total": 11, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 425.4, "rep_avg_price": 200000}, "jeonse": {"count": 5, "range": [15000, 30000], "rep_area": 35.5, "rep_avg_price": 22000}, "monthly": {"count": 5, "range": [2000, 16000], "rep_area": 39.5, "rep_avg_price": 2000}},
+    "stats": {"total": 10, "sale": null, "jeonse": {"count": 5, "range": [15000, 30000], "rep_area": 35.5, "rep_avg_price": 22000}, "monthly": {"count": 5, "range": [2000, 16000], "rep_area": 39.5, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 200000, "rent": 0, "area": 425.42, "land": 172.3, "floor": "", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍익동 5*", "by": 1997},
       {"type": "월세", "price": 16000, "rent": 40, "area": 53.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1977},
       {"type": "월세", "price": 5000, "rent": 100, "area": 51.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 2000, "rent": 70, "area": 39.48, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1986},
@@ -526,6 +533,15 @@
       {"type": "전세", "price": 30000, "rent": 0, "area": 70.36, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-05", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "전세", "price": 23000, "rent": 0, "area": 49.98, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-03", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "전세", "price": 22000, "rent": 0, "area": 35.48, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "갱신", "p_dep": 19000, "p_rent": 0, "jibun": "", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 성동구 홍익동 55",
+    "address": "서울특별시 성동구 홍익동 55",
+    "coords": [127.031489699274, 37.5678289761679],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 425.4, "rep_avg_price": 200000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 200000, "rent": 0, "area": 425.42, "land": 172.3, "floor": "", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍익동 55 (추정)", "by": 1997}
     ]
   },
   {

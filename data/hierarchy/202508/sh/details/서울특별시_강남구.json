@@ -32,10 +32,8 @@
     "name": "서울특별시 강남구 논현동",
     "address": "서울특별시 강남구 논현동",
     "coords": [127.030154778539, 37.512645150688],
-    "stats": {"total": 132, "sale": {"count": 2, "range": [625000, 685000], "rep_area": 237.6, "rep_avg_price": 685000}, "jeonse": {"count": 16, "range": [5000, 62000], "rep_area": 40.0, "rep_avg_price": 18000}, "monthly": {"count": 114, "range": [0, 15000], "rep_area": 33.0, "rep_avg_price": 3681}},
+    "stats": {"total": 130, "sale": null, "jeonse": {"count": 16, "range": [5000, 62000], "rep_area": 40.0, "rep_avg_price": 18000}, "monthly": {"count": 114, "range": [0, 15000], "rep_area": 33.0, "rep_avg_price": 3681}},
     "deals": [
-      {"type": "매매", "price": 685000, "rent": 0, "area": 237.56, "land": 168.8, "floor": "", "dong": "", "date": "2025-08-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 3*", "by": 1982},
-      {"type": "매매", "price": 625000, "rent": 0, "area": 286.5, "land": 264.7, "floor": "", "dong": "", "date": "2025-08-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 1**", "by": 1983},
       {"type": "월세", "price": 3000, "rent": 148, "area": 59.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 1000, "rent": 62, "area": 33.3, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-29", "period": "25.09~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 120, "rent": 110, "area": 22.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-28", "period": "25.08~25.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -166,6 +164,24 @@
       {"type": "월세", "price": 500, "rent": 45, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 4000, "rent": 90, "area": 33.05, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-03", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 7000, "rent": 40, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~26.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 논현동 190-10",
+    "address": "서울특별시 강남구 논현동 190-10",
+    "coords": [127.031909587671, 37.5084900679378],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [625000, 625000], "rep_area": 286.5, "rep_avg_price": 625000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 625000, "rent": 0, "area": 286.5, "land": 264.7, "floor": "", "dong": "", "date": "2025-08-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 190-10 (추정)", "by": 1983}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 논현동 34-7",
+    "address": "서울특별시 강남구 논현동 34-7",
+    "coords": [127.029465791028, 37.5157018902946],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [685000, 685000], "rep_area": 237.6, "rep_avg_price": 685000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 685000, "rent": 0, "area": 237.56, "land": 168.8, "floor": "", "dong": "", "date": "2025-08-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 34-7 (추정)", "by": 1982}
     ]
   },
   {

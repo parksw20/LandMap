@@ -301,9 +301,8 @@
     "name": "서울특별시 중구 황학동",
     "address": "서울특별시 중구 황학동",
     "coords": [127.021415848975, 37.5674999372117],
-    "stats": {"total": 14, "sale": {"count": 1, "range": [170000, 170000], "rep_area": 338.4, "rep_avg_price": 170000}, "jeonse": {"count": 3, "range": [6000, 20000], "rep_area": 23.2, "rep_avg_price": 6000}, "monthly": {"count": 10, "range": [300, 5000], "rep_area": 30.0, "rep_avg_price": 1000}},
+    "stats": {"total": 13, "sale": null, "jeonse": {"count": 3, "range": [6000, 20000], "rep_area": 23.2, "rep_avg_price": 6000}, "monthly": {"count": 10, "range": [300, 5000], "rep_area": 30.0, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 170000, "rent": 0, "area": 338.37, "land": 109.0, "floor": "", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "황학동 1***", "by": 1997},
       {"type": "월세", "price": 1500, "rent": 96, "area": 80.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985},
       {"type": "월세", "price": 1000, "rent": 60, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-12", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1974},
       {"type": "월세", "price": 5000, "rent": 130, "area": 41.31, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -317,6 +316,15 @@
       {"type": "월세", "price": 3000, "rent": 80, "area": 52.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-12", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984},
       {"type": "월세", "price": 2000, "rent": 100, "area": 57.12, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-16", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 20000, "rent": 0, "area": 28.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "서울특별시 중구 황학동 1923",
+    "address": "서울특별시 중구 황학동 1923",
+    "coords": [127.021092205788, 37.5698076254306],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [170000, 170000], "rep_area": 338.4, "rep_avg_price": 170000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 170000, "rent": 0, "area": 338.37, "land": 109.0, "floor": "", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "황학동 1923 (추정)", "by": 1997}
     ]
   },
   {

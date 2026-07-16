@@ -31,10 +31,8 @@
     "name": "경기도 군포시 당동",
     "address": "경기도 군포시 당동",
     "coords": [126.941302738524, 37.3484980211549],
-    "stats": {"total": 37, "sale": {"count": 2, "range": [92000, 99500], "rep_area": 157.8, "rep_avg_price": 99500}, "jeonse": {"count": 8, "range": [6000, 17500], "rep_area": 22.0, "rep_avg_price": 6000}, "monthly": {"count": 27, "range": [200, 25000], "rep_area": 25.0, "rep_avg_price": 325}},
+    "stats": {"total": 35, "sale": null, "jeonse": {"count": 8, "range": [6000, 17500], "rep_area": 22.0, "rep_avg_price": 6000}, "monthly": {"count": 27, "range": [200, 25000], "rep_area": 25.0, "rep_avg_price": 325}},
     "deals": [
-      {"type": "매매", "price": 92000, "rent": 0, "area": 178.455, "land": 139.1, "floor": "", "dong": "", "date": "2025-11-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "당동 7**", "by": 1993},
-      {"type": "매매", "price": 99500, "rent": 0, "area": 157.81, "land": 161.9, "floor": "", "dong": "", "date": "2025-11-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "당동 7**", "by": 1977},
       {"type": "월세", "price": 1000, "rent": 45, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-17", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "월세", "price": 300, "rent": 42, "area": 20.71, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-29", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 200, "rent": 35, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-28", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
@@ -70,6 +68,24 @@
       {"type": "전세", "price": 8000, "rent": 0, "area": 35.96, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 500, "rent": 43, "area": 38.13, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-05", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "월세", "price": 3000, "rent": 50, "area": 62.26, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "25.11~27.11", "renew": "갱신", "p_dep": 3000, "p_rent": 45, "jibun": "", "by": 1986}
+    ]
+  },
+  {
+    "name": "경기도 군포시 당동 783-25",
+    "address": "경기도 군포시 당동 783-25",
+    "coords": [126.947469860468, 37.3515687436973],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [99500, 99500], "rep_area": 157.8, "rep_avg_price": 99500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 99500, "rent": 0, "area": 157.81, "land": 161.9, "floor": "", "dong": "", "date": "2025-11-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "당동 783-25 (추정)", "by": 1977}
+    ]
+  },
+  {
+    "name": "경기도 군포시 당동 783-78",
+    "address": "경기도 군포시 당동 783-78",
+    "coords": [126.947507704676, 37.3508716345455],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [92000, 92000], "rep_area": 178.5, "rep_avg_price": 92000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 92000, "rent": 0, "area": 178.455, "land": 139.1, "floor": "", "dong": "", "date": "2025-11-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "당동 783-78 (추정)", "by": 1993}
     ]
   },
   {

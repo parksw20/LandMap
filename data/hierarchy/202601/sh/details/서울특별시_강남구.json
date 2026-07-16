@@ -39,11 +39,8 @@
     "name": "서울특별시 강남구 논현동",
     "address": "서울특별시 강남구 논현동",
     "coords": [127.030154778539, 37.512645150688],
-    "stats": {"total": 133, "sale": {"count": 3, "range": [338000, 975000], "rep_area": 246.5, "rep_avg_price": 975000}, "jeonse": {"count": 13, "range": [10000, 30000], "rep_area": 19.6, "rep_avg_price": 11550}, "monthly": {"count": 117, "range": [80, 21000], "rep_area": 30.0, "rep_avg_price": 2280}},
+    "stats": {"total": 130, "sale": null, "jeonse": {"count": 13, "range": [10000, 30000], "rep_area": 19.6, "rep_avg_price": 11550}, "monthly": {"count": 117, "range": [80, 21000], "rep_area": 30.0, "rep_avg_price": 2280}},
     "deals": [
-      {"type": "매매", "price": 338000, "rent": 0, "area": 404.3, "land": 179.7, "floor": "", "dong": "", "date": "2026-01-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 1**", "by": 1994},
-      {"type": "매매", "price": 975000, "rent": 0, "area": 246.47, "land": 343.5, "floor": "", "dong": "", "date": "2026-01-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 7*", "by": 1975},
-      {"type": "매매", "price": 830000, "rent": 0, "area": 409.26, "land": 213.3, "floor": "", "dong": "", "date": "2026-01-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 1**", "by": 1981},
       {"type": "월세", "price": 10000, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2000},
       {"type": "월세", "price": 1000, "rent": 70, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "월세", "price": 8000, "rent": 43, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
@@ -174,6 +171,33 @@
       {"type": "월세", "price": 5000, "rent": 122, "area": 62.8, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-05", "period": "26.02~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 500, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-02", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 9000, "rent": 30, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-02", "period": "26.01~27.01", "renew": "갱신", "p_dep": 9000, "p_rent": 25, "jibun": "", "by": 2002}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 논현동 123-1",
+    "address": "서울특별시 강남구 논현동 123-1",
+    "coords": [127.023743395265, 37.5114378261373],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [830000, 830000], "rep_area": 409.3, "rep_avg_price": 830000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 830000, "rent": 0, "area": 409.26, "land": 213.3, "floor": "", "dong": "", "date": "2026-01-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 123-1 (추정)", "by": 1981}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 논현동 159-1",
+    "address": "서울특별시 강남구 논현동 159-1",
+    "coords": [127.025640406322, 37.5094029614045],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [338000, 338000], "rep_area": 404.3, "rep_avg_price": 338000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 338000, "rent": 0, "area": 404.3, "land": 179.7, "floor": "", "dong": "", "date": "2026-01-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 159-1 (추정)", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 논현동 75-5",
+    "address": "서울특별시 강남구 논현동 75-5",
+    "coords": [127.031539082853, 37.517673651629],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [975000, 975000], "rep_area": 246.5, "rep_avg_price": 975000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 975000, "rent": 0, "area": 246.47, "land": 343.5, "floor": "", "dong": "", "date": "2026-01-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "논현동 75-5 (추정)", "by": 1975}
     ]
   },
   {
@@ -608,19 +632,26 @@
     "name": "서울특별시 강남구 자곡동",
     "address": "서울특별시 강남구 자곡동",
     "coords": [127.092180565565, 37.4733903987968],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [395000, 395000], "rep_area": 95.8, "rep_avg_price": 395000}, "jeonse": {"count": 1, "range": [80000, 80000], "rep_area": 199.2, "rep_avg_price": 80000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [80000, 80000], "rep_area": 199.2, "rep_avg_price": 80000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 395000, "rent": 0, "area": 95.83, "land": 331.0, "floor": "", "dong": "", "date": "2026-01-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자곡동 2**", "by": 1979},
       {"type": "전세", "price": 80000, "rent": 0, "area": 199.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 자곡동 271-4",
+    "address": "서울특별시 강남구 자곡동 271-4",
+    "coords": [127.103510707707, 37.4819039326374],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [395000, 395000], "rep_area": 95.8, "rep_avg_price": 395000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 395000, "rent": 0, "area": 95.83, "land": 331.0, "floor": "", "dong": "", "date": "2026-01-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자곡동 271-4 (추정)", "by": 1979}
     ]
   },
   {
     "name": "서울특별시 강남구 청담동",
     "address": "서울특별시 강남구 청담동",
     "coords": [127.049233039691, 37.5250293348772],
-    "stats": {"total": 27, "sale": {"count": 1, "range": [539250, 539250], "rep_area": 243.3, "rep_avg_price": 539250}, "jeonse": {"count": 3, "range": [30000, 90000], "rep_area": 42.0, "rep_avg_price": 30000}, "monthly": {"count": 23, "range": [1000, 35000], "rep_area": 22.8, "rep_avg_price": 1000}},
+    "stats": {"total": 26, "sale": null, "jeonse": {"count": 3, "range": [30000, 90000], "rep_area": 42.0, "rep_avg_price": 30000}, "monthly": {"count": 23, "range": [1000, 35000], "rep_area": 22.8, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 539250, "rent": 0, "area": 243.32, "land": 129.0, "floor": "", "dong": "", "date": "2026-01-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청담동 6*", "by": 1992},
       {"type": "월세", "price": 3000, "rent": 154, "area": 83.7, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-08", "period": "26.02~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 1000, "rent": 56, "area": 16.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-22", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 2000, "rent": 120, "area": 60.96, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -647,6 +678,15 @@
       {"type": "월세", "price": 5000, "rent": 65, "area": 28.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-18", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 1000, "rent": 85, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-16", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "전세", "price": 30000, "rent": 0, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-12", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 청담동 62-29",
+    "address": "서울특별시 강남구 청담동 62-29",
+    "coords": [127.049119116526, 37.52226258407],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [539250, 539250], "rep_area": 243.3, "rep_avg_price": 539250}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 539250, "rent": 0, "area": 243.32, "land": 129.0, "floor": "", "dong": "", "date": "2026-01-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청담동 62-29 (추정)", "by": 1992}
     ]
   }
 ]

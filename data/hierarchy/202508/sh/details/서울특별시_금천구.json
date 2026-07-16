@@ -3,9 +3,8 @@
     "name": "서울특별시 금천구 가산동",
     "address": "서울특별시 금천구 가산동",
     "coords": [126.891779471155, 37.4768763179224],
-    "stats": {"total": 41, "sale": {"count": 1, "range": [49722, 49722], "rep_area": 215.4, "rep_avg_price": 49722}, "jeonse": {"count": 3, "range": [7000, 12800], "rep_area": 19.8, "rep_avg_price": 9000}, "monthly": {"count": 37, "range": [100, 12000], "rep_area": 18.0, "rep_avg_price": 1020}},
+    "stats": {"total": 40, "sale": null, "jeonse": {"count": 3, "range": [7000, 12800], "rep_area": 19.8, "rep_avg_price": 9000}, "monthly": {"count": 37, "range": [100, 12000], "rep_area": 18.0, "rep_avg_price": 1020}},
     "deals": [
-      {"type": "매매", "price": 49722, "rent": 0, "area": 215.37, "land": 97.0, "floor": "", "dong": "", "date": "2025-08-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "가산동 3*", "by": 2007},
       {"type": "월세", "price": 2000, "rent": 35, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "월세", "price": 3000, "rent": 25, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 500, "rent": 50, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -49,13 +48,21 @@
     ]
   },
   {
+    "name": "서울특별시 금천구 가산동 34-46",
+    "address": "서울특별시 금천구 가산동 34-46",
+    "coords": [126.883458129494, 37.4831045549068],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49722, 49722], "rep_area": 215.4, "rep_avg_price": 49722}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49722, "rent": 0, "area": 215.37, "land": 97.0, "floor": "", "dong": "", "date": "2025-08-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "가산동 34-46 (추정)", "by": 2007}
+    ]
+  },
+  {
     "name": "서울특별시 금천구 독산동",
     "address": "서울특별시 금천구 독산동",
     "coords": [126.899392976389, 37.4681432491734],
-    "stats": {"total": 181, "sale": {"count": 2, "range": [54000, 83000], "rep_area": 156.0, "rep_avg_price": 83000}, "jeonse": {"count": 27, "range": [3000, 29000], "rep_area": 18.0, "rep_avg_price": 3375}, "monthly": {"count": 152, "range": [0, 14000], "rep_area": 30.0, "rep_avg_price": 2505}},
+    "stats": {"total": 180, "sale": {"count": 1, "range": [83000, 83000], "rep_area": 156.0, "rep_avg_price": 83000}, "jeonse": {"count": 27, "range": [3000, 29000], "rep_area": 18.0, "rep_avg_price": 3375}, "monthly": {"count": 152, "range": [0, 14000], "rep_area": 30.0, "rep_avg_price": 2505}},
     "deals": [
       {"type": "매매", "price": 83000, "rent": 0, "area": 156.03, "land": 139.8, "floor": "", "dong": "", "date": "2025-08-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 1***", "by": 1977},
-      {"type": "매매", "price": 54000, "rent": 0, "area": 174.67, "land": 115.0, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 3**", "by": 1993},
       {"type": "월세", "price": 3000, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "월세", "price": 12600, "rent": 25, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 500, "rent": 55, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-22", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -235,6 +242,15 @@
       {"type": "월세", "price": 500, "rent": 35, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-02", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 4000, "rent": 55, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~27.08", "renew": "갱신", "p_dep": 4000, "p_rent": 55, "jibun": "", "by": 2020}
+    ]
+  },
+  {
+    "name": "서울특별시 금천구 독산동 378-414",
+    "address": "서울특별시 금천구 독산동 378-414",
+    "coords": [126.903484461604, 37.4641407670473],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 174.7, "rep_avg_price": 54000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 54000, "rent": 0, "area": 174.67, "land": 115.0, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 378-414 (추정)", "by": 1993}
     ]
   },
   {

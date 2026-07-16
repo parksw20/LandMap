@@ -198,11 +198,10 @@
     "name": "서울특별시 구로구 구로동",
     "address": "서울특별시 구로구 구로동",
     "coords": [126.882642231121, 37.495770737873],
-    "stats": {"total": 122, "sale": {"count": 5, "range": [41000, 68000], "rep_area": 127.4, "rep_avg_price": 58000}, "jeonse": {"count": 21, "range": [2500, 21000], "rep_area": 40.0, "rep_avg_price": 10000}, "monthly": {"count": 96, "range": [100, 20000], "rep_area": 30.0, "rep_avg_price": 738}},
+    "stats": {"total": 121, "sale": {"count": 4, "range": [41000, 68000], "rep_area": 148.5, "rep_avg_price": 61000}, "jeonse": {"count": 21, "range": [2500, 21000], "rep_area": 40.0, "rep_avg_price": 10000}, "monthly": {"count": 96, "range": [100, 20000], "rep_area": 30.0, "rep_avg_price": 738}},
     "deals": [
       {"type": "매매", "price": 41000, "rent": 0, "area": 160.29, "land": 79.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 2006},
       {"type": "매매", "price": 54000, "rent": 0, "area": 160.44, "land": 90.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 1994},
-      {"type": "매매", "price": 58000, "rent": 0, "area": 127.44, "land": 89.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 1993},
       {"type": "매매", "price": 61000, "rent": 0, "area": 148.53, "land": 106.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 1986},
       {"type": "매매", "price": 68000, "rent": 0, "area": 184.65, "land": 105.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 1991},
       {"type": "전세", "price": 21000, "rent": 0, "area": 49.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
@@ -325,6 +324,15 @@
     ]
   },
   {
+    "name": "서울특별시 구로구 구로동 532-158",
+    "address": "서울특별시 구로구 구로동 532-158",
+    "coords": [126.888280377996, 37.4981693666874],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 127.4, "rep_avg_price": 58000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 58000, "rent": 0, "area": 127.44, "land": 89.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 532-158 (추정)", "by": 1993}
+    ]
+  },
+  {
     "name": "서울특별시 구로구 궁동",
     "address": "서울특별시 구로구 궁동",
     "coords": [126.827457184485, 37.5018731116129],
@@ -345,12 +353,20 @@
     "name": "서울특별시 구로구 신도림동",
     "address": "서울특별시 구로구 신도림동",
     "coords": [126.880610228674, 37.5077809050365],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 140.0, "rep_avg_price": 90000}, "jeonse": null, "monthly": {"count": 3, "range": [300, 1000], "rep_area": 20.0, "rep_avg_price": 300}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [300, 1000], "rep_area": 20.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 90000, "rent": 0, "area": 140.01, "land": 109.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신도림동 2**", "by": 1970},
       {"type": "월세", "price": 300, "rent": 25, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 500, "rent": 30, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 1000, "rent": 60, "area": 59.64, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 구로구 신도림동 293-30",
+    "address": "서울특별시 구로구 신도림동 293-30",
+    "coords": [126.879402689362, 37.5101443639997],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 140.0, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 140.01, "land": 109.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신도림동 293-30 (추정)", "by": 1970}
     ]
   },
   {

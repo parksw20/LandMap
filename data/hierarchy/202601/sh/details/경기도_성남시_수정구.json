@@ -34,9 +34,8 @@
     "name": "경기도 성남시 수정구 단대동",
     "address": "경기도 성남시 수정구 단대동",
     "coords": [127.155361716912, 37.4493897577627],
-    "stats": {"total": 19, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 89.4, "rep_avg_price": 20000}, "jeonse": {"count": 3, "range": [4200, 7000], "rep_area": 38.4, "rep_avg_price": 7000}, "monthly": {"count": 15, "range": [300, 10000], "rep_area": 64.2, "rep_avg_price": 800}},
+    "stats": {"total": 18, "sale": null, "jeonse": {"count": 3, "range": [4200, 7000], "rep_area": 38.4, "rep_avg_price": 7000}, "monthly": {"count": 15, "range": [300, 10000], "rep_area": 64.2, "rep_avg_price": 800}},
     "deals": [
-      {"type": "매매", "price": 20000, "rent": 0, "area": 89.45, "land": 67.1, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단대동 7*", "by": 1979},
       {"type": "월세", "price": 500, "rent": 40, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-14", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "월세", "price": 1000, "rent": 55, "area": 35.59, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-26", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "월세", "price": 7000, "rent": 10, "area": 41.59, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
@@ -55,6 +54,15 @@
       {"type": "월세", "price": 800, "rent": 40, "area": 64.22, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-13", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 3000, "rent": 100, "area": 75.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-09", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 500, "rent": 37, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-01", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 단대동 72-3",
+    "address": "경기도 성남시 수정구 단대동 72-3",
+    "coords": [127.159533320984, 37.4542595794666],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 89.4, "rep_avg_price": 20000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 20000, "rent": 0, "area": 89.45, "land": 67.1, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단대동 72-3 (추정)", "by": 1979}
     ]
   },
   {
@@ -696,11 +704,19 @@
     "name": "경기도 성남시 수정구 심곡동",
     "address": "경기도 성남시 수정구 심곡동",
     "coords": [127.102359551351, 37.4468634389173],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [137000, 137000], "rep_area": 195.9, "rep_avg_price": 137000}, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 57.0, "rep_avg_price": 20000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 21.4, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 57.0, "rep_avg_price": 20000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 21.4, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 137000, "rent": 0, "area": 195.93, "land": 321.0, "floor": "", "dong": "", "date": "2026-01-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "심곡동 3**", "by": 2005},
       {"type": "월세", "price": 1000, "rent": 40, "area": 21.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-26", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "전세", "price": 20000, "rent": 0, "area": 57.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-23", "period": "26.03~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 심곡동 397-1",
+    "address": "경기도 성남시 수정구 심곡동 397-1",
+    "coords": [127.098175397605, 37.4490442882391],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [137000, 137000], "rep_area": 195.9, "rep_avg_price": 137000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 137000, "rent": 0, "area": 195.93, "land": 321.0, "floor": "", "dong": "", "date": "2026-01-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "심곡동 397-1 (추정)", "by": 2005}
     ]
   },
   {

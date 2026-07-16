@@ -257,9 +257,8 @@
     "name": "경기도 이천시 마장면 해월리",
     "address": "경기도 이천시 마장면 해월리",
     "coords": [127.352332607305, 37.2131714358258],
-    "stats": {"total": 10, "sale": {"count": 1, "range": [68000, 68000], "rep_area": 489.0, "rep_avg_price": 68000}, "jeonse": null, "monthly": {"count": 9, "range": [20, 1000], "rep_area": 31.4, "rep_avg_price": 300}},
+    "stats": {"total": 9, "sale": null, "jeonse": null, "monthly": {"count": 9, "range": [20, 1000], "rep_area": 31.4, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 68000, "rent": 0, "area": 489.0, "land": 677.0, "floor": "", "dong": "", "date": "2025-10-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마장면 해월리 1**", "by": 2002},
       {"type": "월세", "price": 300, "rent": 44, "area": 31.395, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-16", "period": "25.10~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2024},
       {"type": "월세", "price": 1000, "rent": 150, "area": 140.48, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-19", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 550, "rent": 54, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-29", "period": "26.02~27.02", "renew": "갱신", "p_dep": 550, "p_rent": 54, "jibun": "", "by": 2009},
@@ -269,6 +268,15 @@
       {"type": "월세", "price": 300, "rent": 44, "area": 21.84, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-28", "period": "25.12~26.12", "renew": "갱신", "p_dep": 300, "p_rent": 42, "jibun": "", "by": 2024},
       {"type": "월세", "price": 20, "rent": 40, "area": 29.75, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-19", "period": "25.10~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "월세", "price": 300, "rent": 44, "area": 31.395, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-03", "period": "25.10~26.10", "renew": "갱신", "p_dep": 300, "p_rent": 42, "jibun": "", "by": 2024}
+    ]
+  },
+  {
+    "name": "경기도 이천시 마장면 해월리 135-4",
+    "address": "경기도 이천시 마장면 해월리 135-4",
+    "coords": [127.359337467774, 37.2094954823105],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [68000, 68000], "rep_area": 489.0, "rep_avg_price": 68000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 68000, "rent": 0, "area": 489.0, "land": 677.0, "floor": "", "dong": "", "date": "2025-10-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마장면 해월리 135-4 (추정)", "by": 2002}
     ]
   },
   {
@@ -506,20 +514,36 @@
     "name": "경기도 이천시 설성면 장능리",
     "address": "경기도 이천시 설성면 장능리",
     "coords": [127.521791545674, 37.1210214317524],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [10000, 17360], "rep_area": 84.3, "rep_avg_price": 17360}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 193.5, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 10000, "rent": 0, "area": 193.46, "land": 330.0, "floor": "", "dong": "", "date": "2025-10-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "설성면 장능리 5*", "by": 1997},
-      {"type": "매매", "price": 17360, "rent": 0, "area": 84.31, "land": 300.0, "floor": "", "dong": "", "date": "2025-10-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "설성면 장능리 5**", "by": 2002}
+      {"type": "매매", "price": 10000, "rent": 0, "area": 193.46, "land": 330.0, "floor": "", "dong": "", "date": "2025-10-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "설성면 장능리 5*", "by": 1997}
+    ]
+  },
+  {
+    "name": "경기도 이천시 설성면 장능리 520-14",
+    "address": "경기도 이천시 설성면 장능리 520-14",
+    "coords": [127.510687273573, 37.119677835878],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17360, 17360], "rep_area": 84.3, "rep_avg_price": 17360}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17360, "rent": 0, "area": 84.31, "land": 300.0, "floor": "", "dong": "", "date": "2025-10-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "설성면 장능리 520-14 (추정)", "by": 2002}
     ]
   },
   {
     "name": "경기도 이천시 송정동",
     "address": "경기도 이천시 송정동",
     "coords": [127.438555848188, 37.2953212195905],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [30000, 51900], "rep_area": 99.6, "rep_avg_price": 51900}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [51900, 51900], "rep_area": 99.6, "rep_avg_price": 51900}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 30000, "rent": 0, "area": 99.8, "land": 500.0, "floor": "", "dong": "", "date": "2025-10-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송정동 3**", "by": 2014},
       {"type": "매매", "price": 51900, "rent": 0, "area": 99.59, "land": 500.0, "floor": "", "dong": "", "date": "2025-10-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송정동 2**", "by": 2017}
+    ]
+  },
+  {
+    "name": "경기도 이천시 송정동 303-4",
+    "address": "경기도 이천시 송정동 303-4",
+    "coords": [127.431786336964, 37.2973303585108],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 99.8, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 99.8, "land": 500.0, "floor": "", "dong": "", "date": "2025-10-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송정동 303-4 (추정)", "by": 2014}
     ]
   },
   {
@@ -745,10 +769,9 @@
     "name": "경기도 이천시 창전동",
     "address": "경기도 이천시 창전동",
     "coords": [127.440976195567, 37.2818039660092],
-    "stats": {"total": 45, "sale": {"count": 2, "range": [25000, 60500], "rep_area": 144.3, "rep_avg_price": 25000}, "jeonse": {"count": 5, "range": [4500, 11000], "rep_area": 23.0, "rep_avg_price": 6000}, "monthly": {"count": 38, "range": [0, 8000], "rep_area": 23.0, "rep_avg_price": 300}},
+    "stats": {"total": 44, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 144.3, "rep_avg_price": 25000}, "jeonse": {"count": 5, "range": [4500, 11000], "rep_area": 23.0, "rep_avg_price": 6000}, "monthly": {"count": 38, "range": [0, 8000], "rep_area": 23.0, "rep_avg_price": 300}},
     "deals": [
       {"type": "매매", "price": 25000, "rent": 0, "area": 144.32, "land": 108.8, "floor": "", "dong": "", "date": "2025-10-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창전동 4**", "by": 1986},
-      {"type": "매매", "price": 60500, "rent": 0, "area": 214.76, "land": 115.7, "floor": "", "dong": "", "date": "2025-10-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창전동 1**", "by": 2021},
       {"type": "월세", "price": 8000, "rent": 10, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
       {"type": "월세", "price": 300, "rent": 40, "area": 25.96, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-31", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "월세", "price": 300, "rent": 55, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-24", "period": "25.10~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -795,6 +818,15 @@
     ]
   },
   {
+    "name": "경기도 이천시 창전동 128-3",
+    "address": "경기도 이천시 창전동 128-3",
+    "coords": [127.443831329178, 37.2827089241156],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60500, 60500], "rep_area": 214.8, "rep_avg_price": 60500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60500, "rent": 0, "area": 214.76, "land": 115.7, "floor": "", "dong": "", "date": "2025-10-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창전동 128-3 (추정)", "by": 2021}
+    ]
+  },
+  {
     "name": "경기도 이천시 호법면 매곡리",
     "address": "경기도 이천시 호법면 매곡리",
     "coords": [127.388607344373, 37.1996756568797],
@@ -818,14 +850,22 @@
     "name": "경기도 이천시 호법면 후안리",
     "address": "경기도 이천시 호법면 후안리",
     "coords": [127.427685271854, 37.22462246418],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [16650, 16650], "rep_area": 121.4, "rep_avg_price": 16650}, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 53.9, "rep_avg_price": 10000}, "monthly": {"count": 4, "range": [500, 3000], "rep_area": 117.4, "rep_avg_price": 3000}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 1, "range": [10000, 10000], "rep_area": 53.9, "rep_avg_price": 10000}, "monthly": {"count": 4, "range": [500, 3000], "rep_area": 117.4, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "매매", "price": 16650, "rent": 0, "area": 121.4, "land": 431.0, "floor": "", "dong": "", "date": "2025-10-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호법면 후안리 2**", "by": 1998},
       {"type": "월세", "price": 3000, "rent": 110, "area": 117.38, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-30", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "전세", "price": 10000, "rent": 0, "area": 53.922, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-23", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "월세", "price": 500, "rent": 58, "area": 31.79, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
       {"type": "월세", "price": 3000, "rent": 110, "area": 117.38, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-30", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 500, "rent": 50, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-14", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017}
+    ]
+  },
+  {
+    "name": "경기도 이천시 호법면 후안리 291",
+    "address": "경기도 이천시 호법면 후안리 291",
+    "coords": [127.425581723193, 37.2243025129753],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16650, 16650], "rep_area": 121.4, "rep_avg_price": 16650}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16650, "rent": 0, "area": 121.4, "land": 431.0, "floor": "", "dong": "", "date": "2025-10-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호법면 후안리 291 (추정)", "by": 1998}
     ]
   }
 ]
