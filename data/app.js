@@ -35,7 +35,15 @@ const state = {
     // 주소 검색
     lastAddrQuery: null,
     lastAddrResults: [],
-    searchPin: null
+    searchPin: null,
+    // 거리/면적 측정
+    measureMode: null,           // null | 'dist' | 'area'
+    curPts: [], curLine: null, curPoly: null, curOverlays: [], curAreaLabel: null,
+    doneShapes: { dist: [], area: [] },
+    // 현위치 / 로드뷰
+    geolocOverlay: null,
+    roadviewOn: false,
+    rv: null, rvClient: null
 };
 
 const CONFIG = {
@@ -116,8 +124,17 @@ async function init() {
 }
 
 function setupEventListeners() {
-    kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); });
-    kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); });
+    kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); if (state.radiusOn) drawRadius(); });
+    kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); if (state.radiusOn) drawRadius(); });
+
+    // 지도 클릭: 로드뷰 > 측정 순으로 처리
+    kakao.maps.event.addListener(state.map, 'click', (e) => {
+        if (state.roadviewOn) { openRoadview(e.latLng); return; }
+        if (state.measureMode) onMeasureClick(e.latLng);
+    });
+    kakao.maps.event.addListener(state.map, 'rightclick', () => finishMeasure());
+    kakao.maps.event.addListener(state.map, 'dblclick', () => finishMeasure());
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') finishMeasure(); });
     
     const baseSelect = document.getElementById('base-month-select');
     const rangeSelect = document.getElementById('range-select');
@@ -168,6 +185,24 @@ function setupEventListeners() {
         if (state.cadastralOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT);
         else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT);
     };
+
+    const distBtn = document.getElementById('dist-btn');
+    if (distBtn) distBtn.onclick = () => setMeasureMode('dist');
+    const areaBtn = document.getElementById('area-btn');
+    if (areaBtn) areaBtn.onclick = () => setMeasureMode('area');
+
+    const geolocBtn = document.getElementById('geoloc-btn');
+    if (geolocBtn) geolocBtn.onclick = moveToCurrentLocation;
+
+    const roadviewBtn = document.getElementById('roadview-btn');
+    if (roadviewBtn) roadviewBtn.onclick = () => {
+        state.roadviewOn = !state.roadviewOn;
+        roadviewBtn.classList.toggle('active', state.roadviewOn);
+        if (state.roadviewOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW);
+        else { state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW); document.getElementById('roadview-panel').style.display = 'none'; }
+    };
+    const rvCloseBtn = document.getElementById('rv-close-btn');
+    if (rvCloseBtn) rvCloseBtn.onclick = () => { document.getElementById('roadview-panel').style.display = 'none'; };
 
     document.querySelectorAll('input[name="housingType"]').forEach(r => {
         r.onchange = (e) => { state.selectedType = e.target.value; state.selectedComplex = null; document.getElementById('data-section').style.display = 'none'; applyTxAvailability(); updateMap(true); };
@@ -620,15 +655,13 @@ function showClusterPicker(group, pos) {
 }
 
 // ==========================
-// 반경 동심원 (선택 장소 기준 100m 간격)
+// 반경 동심원 (화면 중앙 기준 100m 간격, 지도 이동/줌 시 갱신)
 // ==========================
 function drawRadius() {
     state.radiusOverlays.forEach(o => o.setMap(null));
     state.radiusOverlays = [];
     if (!state.radiusOn) return;
-    const c = state.selectedComplex
-        ? new kakao.maps.LatLng(state.selectedComplex.coords[1], state.selectedComplex.coords[0])
-        : state.map.getCenter();
+    const c = state.map.getCenter();
     for (let i = 1; i <= 5; i++) {
         const circle = new kakao.maps.Circle({
             center: c, radius: i * 100,
@@ -666,8 +699,6 @@ function renderComplexDetail() {
     // 주소 표시 (건물명과 주소가 같으면 중복 생략)
     const addrEl = document.getElementById('data-address');
     if (addrEl) addrEl.textContent = (item.address && item.address !== item.name) ? item.address : '';
-    // 반경 표시가 켜져 있으면 새 선택 기준으로 다시 그림
-    if (state.radiusOn) drawRadius();
     
     // 모바일: 필터 패널은 접고(FAB로 열기) 결과는 독립 하단 시트(30%)로
     const controlPanel = document.getElementById('control-panel');
@@ -707,6 +738,116 @@ function renderComplexDetail() {
         dataList.appendChild(card);
     });
     if (filtered.length === 0) dataList.innerHTML = '<div class="empty-state">해당 필터에 맞는 거래 내역이 없습니다.</div>';
+}
+
+// ==========================
+// 거리/면적 측정 도구
+// ==========================
+function fmtDist(m) { return m < 1000 ? `${Math.round(m)}m` : `${(m / 1000).toFixed(2)}km`; }
+function fmtArea(a) { return `${Math.round(a).toLocaleString()}㎡ (${Math.round(a * 0.3025).toLocaleString()}평)`; }
+
+// 버튼 클릭: 모드 ON (다른 측정 모드는 종료). 재클릭: 모드 OFF + 해당 유형 도형 전부 삭제
+function setMeasureMode(mode) {
+    finishMeasure();
+    const turnOff = state.measureMode === mode;
+    state.measureMode = turnOff ? null : mode;
+    if (turnOff) clearMeasure(mode);
+    document.getElementById('dist-btn').classList.toggle('active', state.measureMode === 'dist');
+    document.getElementById('area-btn').classList.toggle('active', state.measureMode === 'area');
+    const statusEl = document.getElementById('status-bar');
+    if (state.measureMode === 'dist') statusEl.textContent = '거리 측정: 지도를 클릭하세요 (더블클릭/우클릭/ESC로 종료)';
+    else if (state.measureMode === 'area') statusEl.textContent = '면적 측정: 꼭짓점을 클릭하세요 (더블클릭/우클릭/ESC로 종료)';
+}
+
+function addMeasureOverlay(latlng, html, yAnchor = 0.5) {
+    const div = document.createElement('div');
+    div.innerHTML = html;
+    const ov = new kakao.maps.CustomOverlay({ position: latlng, content: div.firstChild, yAnchor, zIndex: 1700 });
+    ov.setMap(state.map);
+    state.curOverlays.push(ov);
+    return ov;
+}
+
+function onMeasureClick(latlng) {
+    state.curPts.push(latlng);
+    addMeasureOverlay(latlng, '<div class="measure-dot"></div>');
+    if (state.measureMode === 'dist') {
+        if (!state.curLine) {
+            state.curLine = new kakao.maps.Polyline({ path: state.curPts, strokeWeight: 3, strokeColor: '#dc2626', strokeOpacity: 0.9 });
+            state.curLine.setMap(state.map);
+        } else {
+            state.curLine.setPath(state.curPts);
+        }
+        if (state.curPts.length >= 2) {
+            addMeasureOverlay(latlng, `<div class="measure-label total">${fmtDist(state.curLine.getLength())}</div>`, 1.6);
+        }
+    } else if (state.measureMode === 'area') {
+        if (!state.curPoly) {
+            state.curPoly = new kakao.maps.Polygon({ path: state.curPts, strokeWeight: 2, strokeColor: '#059669', strokeOpacity: 0.9, fillColor: '#059669', fillOpacity: 0.2 });
+            state.curPoly.setMap(state.map);
+        } else {
+            state.curPoly.setPath(state.curPts);
+        }
+        if (state.curPts.length >= 3) {
+            if (state.curAreaLabel) { state.curAreaLabel.setMap(null); state.curOverlays = state.curOverlays.filter(o => o !== state.curAreaLabel); }
+            state.curAreaLabel = addMeasureOverlay(latlng, `<div class="measure-label area-total">${fmtArea(state.curPoly.getArea())}</div>`, 1.6);
+        }
+    }
+}
+
+// 현재 그리던 도형을 확정(고정)하고 새로 그릴 수 있게 초기화 (모드는 유지)
+function finishMeasure() {
+    if (!state.measureMode) return;
+    const bucket = state.doneShapes[state.measureMode];
+    if (state.curLine) bucket.push(state.curLine);
+    if (state.curPoly) bucket.push(state.curPoly);
+    bucket.push(...state.curOverlays);
+    state.curPts = []; state.curLine = null; state.curPoly = null; state.curOverlays = []; state.curAreaLabel = null;
+}
+
+function clearMeasure(mode) {
+    state.doneShapes[mode].forEach(o => o.setMap(null));
+    state.doneShapes[mode] = [];
+}
+
+// ==========================
+// 현위치
+// ==========================
+function moveToCurrentLocation() {
+    const statusEl = document.getElementById('status-bar');
+    if (!navigator.geolocation) { statusEl.textContent = '이 브라우저는 위치 정보를 지원하지 않습니다'; return; }
+    statusEl.textContent = '현재 위치 확인 중...';
+    navigator.geolocation.getCurrentPosition(p => {
+        const pos = new kakao.maps.LatLng(p.coords.latitude, p.coords.longitude);
+        state.map.setCenter(pos);
+        state.map.setLevel(4);
+        if (state.geolocOverlay) state.geolocOverlay.setMap(null);
+        const div = document.createElement('div');
+        div.className = 'geoloc-dot';
+        state.geolocOverlay = new kakao.maps.CustomOverlay({ position: pos, content: div, zIndex: 1900 });
+        state.geolocOverlay.setMap(state.map);
+        statusEl.textContent = '현재 위치로 이동했습니다';
+        updateMap(true);
+    }, () => { statusEl.textContent = '현재 위치를 가져올 수 없습니다 (브라우저 위치 권한 확인)'; }, { enableHighAccuracy: true, timeout: 8000 });
+}
+
+// ==========================
+// 로드뷰
+// ==========================
+function openRoadview(latlng) {
+    if (!state.rvClient) {
+        state.rvClient = new kakao.maps.RoadviewClient();
+        state.rv = new kakao.maps.Roadview(document.getElementById('roadview'));
+    }
+    state.rvClient.getNearestPanoId(latlng, 60, (panoId) => {
+        if (panoId === null) {
+            document.getElementById('status-bar').textContent = '이 위치 주변에는 로드뷰가 없습니다';
+            return;
+        }
+        document.getElementById('roadview-panel').style.display = 'block';
+        state.rv.setPanoId(panoId, latlng);
+        setTimeout(() => { if (state.rv.relayout) state.rv.relayout(); }, 150);
+    });
 }
 
 let searchTimer = null;

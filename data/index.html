@@ -19,8 +19,18 @@
   <!-- Map Controls (Top Right) -->
   <div id="map-controls" class="map-controls">
     <button id="skyview-btn" class="control-btn">스카이뷰</button>
-    <button id="radius-btn" class="control-btn" title="선택 장소 기준 100m 간격 동심원">반경</button>
+    <button id="roadview-btn" class="control-btn" title="도로를 클릭하면 로드뷰가 열립니다">로드뷰</button>
+    <button id="dist-btn" class="control-btn" title="지도를 클릭해 거리 측정 (더블클릭/우클릭/ESC 종료)">거리</button>
+    <button id="area-btn" class="control-btn" title="지도를 클릭해 꼭짓점 지정, 면적 자동 계산">면적</button>
+    <button id="radius-btn" class="control-btn" title="화면 중앙 기준 100m 간격 동심원">반경</button>
     <button id="cadastral-btn" class="control-btn" title="지적편집도 표시">지적도</button>
+    <button id="geoloc-btn" class="control-btn" title="현재 위치로 이동">현위치</button>
+  </div>
+
+  <!-- 로드뷰 패널 -->
+  <div id="roadview-panel" class="roadview-panel" style="display:none;">
+    <div id="roadview" class="roadview-view"></div>
+    <button id="rv-close-btn" class="rv-close">&times;</button>
   </div>
 
   <!-- 모바일: 필터 열기/닫기 토글 (좌측 상단, 패널 밖 독립 버튼) -->

@@ -247,6 +247,9 @@ body {
   z-index: 10;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 60vw;
 }
 
 /* 선택된 마커 강조 보완 */
@@ -968,6 +971,88 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* 거리/면적 측정 라벨 */
+.measure-label {
+  background: rgba(17, 24, 39, 0.85);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.measure-label.total {
+  background: #dc2626;
+  font-size: 12px;
+}
+
+.measure-label.area-total {
+  background: #059669;
+  font-size: 12px;
+}
+
+.measure-dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border: 2px solid #dc2626;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* 현위치 마커 */
+.geoloc-dot {
+  width: 16px;
+  height: 16px;
+  background: #2563eb;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.25), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 로드뷰 패널 */
+.roadview-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 3000;
+  background: #111;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.roadview-view {
+  width: 100%;
+  height: 100%;
+}
+
+.rv-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3001;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .roadview-panel {
+    width: 100vw;
+    height: 60vh;
+    top: auto;
+    bottom: 0;
+  }
 }
 
 /* 정비사업 레이어 */
