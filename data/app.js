@@ -961,6 +961,12 @@ function showClickAddress(latlng) {
                 fillColor: '#3b82f6', fillOpacity: 0.15, zIndex: 45
             });
             state.clickParcelPoly.setMap(state.map);
+            // 주소 칩을 필지 상단 경계 위로 이동 (폴리곤과 겹치지 않게)
+            let maxLat = -90, sumLng = 0, n = 0;
+            rings.forEach(ring => ring.forEach(p => { if (p[1] > maxLat) maxLat = p[1]; sumLng += p[0]; n++; }));
+            if (state.clickAddrOverlay && n > 0) {
+                state.clickAddrOverlay.setPosition(new kakao.maps.LatLng(maxLat, sumLng / n));
+            }
             const area = state.clickParcelPoly.getArea();
             const jiga = parseInt(f.properties.jiga || 0);
             if (el) {
