@@ -1,0 +1,36 @@
+# TODO: 실제 프로젝트 구조에 맞게 projectRoot, paths, commands 값을 검토하세요.
+projectId: 부동산
+projectRoot: C:\CLI\PROJECT\부동산
+projectType: generic
+labelsPath: config/labels.yaml
+platformMatrix:
+  - Windows
+paths:
+  data:
+    - data
+    - config
+  scripts:
+    - src
+  tests:
+    - tests
+  build_logs:
+    - logs
+agents:
+  - data_validation
+  - build_failure
+  - bug_triage
+  - qa_testcase
+  - code_pr_helper
+policy:
+  auto_merge: false
+  forbidden_paths:
+    - .env
+    - .env.*
+    - "**/Secrets/**"
+    - "**/Payment/**"
+    - "**/Auth/**"
+  max_files_changed_by_agent: 10
+commands:
+  build: ""
+  test: ""
+  lint: ""
