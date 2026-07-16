@@ -221,8 +221,26 @@ function setupEventListeners() {
     const searchInput = document.getElementById('search-input');
     if (searchInput) searchInput.oninput = (e) => handleSearch(e.target.value);
 
-    const redevChk = document.getElementById('show-redev');
-    if (redevChk) redevChk.onchange = (e) => toggleRedev(e.target.checked);
+    const redevBtn = document.getElementById('redev-btn');
+    if (redevBtn) redevBtn.onclick = () => {
+        toggleRedev(!state.showRedev);
+        redevBtn.classList.toggle('active', state.showRedev);
+    };
+    // 호버 드롭다운용 세로 범례 채우기
+    const redevDropdown = document.getElementById('redev-dropdown');
+    if (redevDropdown) {
+        redevDropdown.innerHTML = '<div class="dropdown-title">추진단계</div>' +
+            CONFIG.REDEV_STAGES.map(s =>
+                `<div class="legend-v-item"><span class="legend-dot" style="background:${CONFIG.REDEV_COLORS[s]}"></span>${s}</div>`
+            ).join('');
+    }
+
+    // 스카이뷰 드롭다운: 카카오맵(연도별 사진)으로 현재 위치 열기
+    const skyYears = document.getElementById('skyview-years-link');
+    if (skyYears) skyYears.onclick = () => {
+        const c = state.map.getCenter();
+        window.open(`https://map.kakao.com/link/map/현재위치,${c.getLat()},${c.getLng()}`, '_blank');
+    };
 
     // 모바일 좌측 상단 필터 토글
     const filterFab = document.getElementById('filter-fab');

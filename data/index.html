@@ -18,13 +18,36 @@
 
   <!-- Map Controls (Top Right) -->
   <div id="map-controls" class="map-controls">
-    <button id="skyview-btn" class="control-btn">스카이뷰</button>
+    <div class="map-btn-wrap">
+      <button id="skyview-btn" class="control-btn">스카이뷰</button>
+      <div class="map-dropdown">
+        <div class="dropdown-title">연도별 항공사진</div>
+        <div class="dropdown-note">지도 SDK는 최신 사진만 제공됩니다.<br>과거 연도별 사진은 카카오맵에서 볼 수 있어요.</div>
+        <button id="skyview-years-link" class="dropdown-link">카카오맵에서 연도별 보기 ↗</button>
+      </div>
+    </div>
     <button id="roadview-btn" class="control-btn" title="도로를 클릭하면 로드뷰가 열립니다">로드뷰</button>
-    <button id="dist-btn" class="control-btn" title="지도를 클릭해 거리 측정 (더블클릭/우클릭/ESC 종료)">거리</button>
-    <button id="area-btn" class="control-btn" title="지도를 클릭해 꼭짓점 지정, 면적 자동 계산">면적</button>
-    <button id="radius-btn" class="control-btn" title="화면 중앙 기준 100m 간격 동심원">반경</button>
     <button id="cadastral-btn" class="control-btn" title="지적편집도 표시">지적도</button>
-    <button id="geoloc-btn" class="control-btn" title="현재 위치로 이동">현위치</button>
+    <div class="map-btn-wrap">
+      <button id="redev-btn" class="control-btn" title="재개발·재건축 구역 표시">정비사업</button>
+      <div class="map-dropdown" id="redev-dropdown"></div>
+    </div>
+  </div>
+
+  <!-- 줌 컨트롤 아래 아이콘 도구 (현위치/거리/면적/반경) -->
+  <div id="side-tools" class="side-tools">
+    <button id="geoloc-btn" class="tool-btn" title="현재 위치로 이동">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+    </button>
+    <button id="dist-btn" class="tool-btn" title="거리 측정 (클릭으로 선 그리기, 더블클릭/ESC 종료)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20L20 4"/><path d="M7 17l1.5 1.5M10.5 13.5L12 15M14 10l1.5 1.5M17.5 6.5L19 8"/></svg>
+    </button>
+    <button id="area-btn" class="tool-btn" title="면적 측정 (클릭으로 꼭짓점 지정, 자동 계산)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 6-3 11H7L4 9z"/></svg>
+    </button>
+    <button id="radius-btn" class="tool-btn" title="화면 중앙 기준 100m 간격 동심원">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+    </button>
   </div>
 
   <!-- 로드뷰 패널 -->
@@ -138,17 +161,6 @@
           <div id="tx-availability-note" class="tx-note" style="display:none;">
             ※ 선택한 유형은 <b>매매 실거래만</b> 제공됩니다 (전·월세 데이터 없음)
           </div>
-        </div>
-
-        <div class="panel-section">
-          <div class="section-title">정비사업 구역 (서울)</div>
-          <div class="checkbox-group">
-            <label class="filter-chip">
-              <input type="checkbox" id="show-redev">
-              <span class="chip-label">재개발·재건축 표시</span>
-            </label>
-          </div>
-          <div id="redev-legend" class="redev-legend" style="display:none;"></div>
         </div>
 
         <div class="panel-section">

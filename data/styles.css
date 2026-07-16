@@ -973,6 +973,114 @@ body {
   white-space: nowrap;
 }
 
+/* 우상단 버튼 호버 드롭다운 */
+.map-btn-wrap {
+  position: relative;
+}
+
+.map-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px 14px;
+  min-width: 160px;
+  z-index: 30;
+}
+
+.map-btn-wrap:hover .map-dropdown {
+  display: block;
+}
+
+.dropdown-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.dropdown-note {
+  font-size: 11px;
+  color: var(--text-sub);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.dropdown-link {
+  border: none;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-link:hover {
+  background: #dbeafe;
+}
+
+/* 정비단계 세로 범례 (호버 드롭다운 내부) */
+.legend-v-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-main);
+  padding: 3px 0;
+  white-space: nowrap;
+}
+
+/* 사이드 아이콘 도구 (줌 컨트롤 아래) */
+.side-tools {
+  position: absolute;
+  right: 4px;
+  top: 300px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tool-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  background: white;
+  color: #374151;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.tool-btn:hover {
+  background: #f3f4f6;
+}
+
+.tool-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .side-tools {
+    top: 260px;
+  }
+}
+
 /* 거리/면적 측정 라벨 */
 .measure-label {
   background: rgba(17, 24, 39, 0.85);
