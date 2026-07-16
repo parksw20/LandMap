@@ -1025,6 +1025,8 @@ function refreshBldgAge() {
 // 지적도 모드: 지도 클릭 → 주소 + VWorld 필지 경계/면적/공시지가
 // ==========================
 function clearClickParcel() {
+    const panel = document.getElementById('parcel-panel');
+    if (panel) { panel.style.display = 'none'; panel.innerHTML = ''; }
     if (state.clickAddrOverlay) { state.clickAddrOverlay.setMap(null); state.clickAddrOverlay = null; }
     if (state.clickParcelPoly) { state.clickParcelPoly.setMap(null); state.clickParcelPoly = null; }
 }
@@ -1066,20 +1068,21 @@ function showClickAddress(latlng) {
         const road = result[0].road_address ? result[0].road_address.address_name : '';
         if (!jibun && !road) return;
         clearClickParcel();
-        const div = document.createElement('div');
-        div.className = 'click-addr';
-        div.innerHTML =
+
+        // 정보는 하단 고정 패널에 — 지도 위 필지 영역을 가리지 않음
+        const panel = document.getElementById('parcel-panel');
+        if (!panel) return;
+        panel.innerHTML =
             `<span class="click-addr-close" title="닫기">×</span>` +
             `<div class="click-addr-jibun">${jibun || road}</div>` +
             (road && jibun ? `<div class="click-addr-road">${road}</div>` : '') +
             (window.VWORLD_KEY ? `<div class="click-addr-parcel">필지 조회 중...</div>` : '');
-        div.querySelector('.click-addr-close').onclick = (e) => { e.stopPropagation(); clearClickParcel(); };
-        state.clickAddrOverlay = new kakao.maps.CustomOverlay({ position: latlng, content: div, yAnchor: 1.25, zIndex: 1750 });
-        state.clickAddrOverlay.setMap(state.map);
+        panel.querySelector('.click-addr-close').onclick = (e) => { e.stopPropagation(); clearClickParcel(); };
+        panel.style.display = 'block';
 
         // VWorld 필지 경계 + 면적 + 공시지가
         vworldParcel(latlng, (resp) => {
-            const el = div.querySelector('.click-addr-parcel');
+            const el = panel.querySelector('.click-addr-parcel');
             const feats = resp && resp.response && resp.response.status === 'OK'
                 ? (resp.response.result.featureCollection.features || []) : [];
             if (!feats.length) { if (el) el.textContent = '필지 정보 없음'; return; }
@@ -1095,12 +1098,6 @@ function showClickAddress(latlng) {
                 fillColor: '#e11d48', fillOpacity: 0.3, zIndex: 300
             });
             state.clickParcelPoly.setMap(state.map);
-            // 주소 칩을 필지 상단 경계 위로 이동 (폴리곤과 겹치지 않게)
-            let maxLat = -90, sumLng = 0, n = 0;
-            rings.forEach(ring => ring.forEach(p => { if (p[1] > maxLat) maxLat = p[1]; sumLng += p[0]; n++; }));
-            if (state.clickAddrOverlay && n > 0) {
-                state.clickAddrOverlay.setPosition(new kakao.maps.LatLng(maxLat, sumLng / n));
-            }
             const area = state.clickParcelPoly.getArea();
             const jiga = parseInt(f.properties.jiga || 0);
             if (el) {
@@ -1114,7 +1111,7 @@ function showClickAddress(latlng) {
                 const luDiv = document.createElement('div');
                 luDiv.className = 'click-addr-landuse';
                 luDiv.textContent = '토지이용계획 조회 중...';
-                div.appendChild(luDiv);
+                panel.appendChild(luDiv);
                 vworldLandUse(pnu, (lu) => {
                     const items = lu && lu.landUses && lu.landUses.field ? lu.landUses.field : [];
                     if (!items.length) { luDiv.textContent = '토지이용계획 정보 없음'; return; }
