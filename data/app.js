@@ -1089,9 +1089,10 @@ function showClickAddress(latlng) {
                 ? f.geometry.coordinates.map(poly => poly[0])
                 : [f.geometry.coordinates[0]];
             const paths = rings.map(ring => ring.map(p => new kakao.maps.LatLng(p[1], p[0])));
+            // 이용계획(노랑)·지적도(검은 선) 위에서도 잘 보이도록 굵은 로즈색 + 진한 채움
             state.clickParcelPoly = new kakao.maps.Polygon({
-                path: paths, strokeWeight: 2.5, strokeColor: '#2563eb', strokeOpacity: 0.95,
-                fillColor: '#3b82f6', fillOpacity: 0.15, zIndex: 45
+                path: paths, strokeWeight: 4, strokeColor: '#e11d48', strokeOpacity: 1,
+                fillColor: '#e11d48', fillOpacity: 0.3, zIndex: 300
             });
             state.clickParcelPoly.setMap(state.map);
             // 주소 칩을 필지 상단 경계 위로 이동 (폴리곤과 겹치지 않게)
