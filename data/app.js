@@ -51,7 +51,11 @@ const state = {
     agingOn: false,
     // 토지이용계획(용도지역) 오버레이
     landuseOn: false,
-    landuseReady: false
+    landuseReady: false,
+    // 건물연령 레이어 (VWorld 건물통합정보 폴리곤)
+    bldgAgeOn: false,
+    bldgAgeOverlays: [],
+    bldgAgeToken: 0
 };
 
 const CONFIG = {
@@ -159,8 +163,8 @@ async function init() {
 }
 
 function setupEventListeners() {
-    kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); if (state.radiusOn) drawRadius(); });
-    kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); if (state.radiusOn) drawRadius(); });
+    kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); if (state.radiusOn) drawRadius(); if (state.bldgAgeOn) refreshBldgAge(); });
+    kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); if (state.radiusOn) drawRadius(); if (state.bldgAgeOn) refreshBldgAge(); });
 
     // 지도 클릭: 로드뷰 > 측정 > 지적도(주소 표시) 순으로 처리
     kakao.maps.event.addListener(state.map, 'click', (e) => {
@@ -291,15 +295,29 @@ function setupEventListeners() {
         else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE);
     };
 
+    const agingLegendHtml = (note) => '<div class="dropdown-title">건축 경과년수</div>' +
+        CONFIG.AGING_BANDS.map(b =>
+            `<div class="legend-v-item"><span class="legend-dot" style="background:${b.color}"></span>${b.label}</div>`
+        ).join('') +
+        `<div class="legend-v-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span>정보 없음</div>` +
+        `<div class="dropdown-note" style="margin:6px 0 0;">${note}</div>`;
+
     const agingDropdown = document.getElementById('aging-dropdown');
-    if (agingDropdown) {
-        agingDropdown.innerHTML = '<div class="dropdown-title">건축 경과년수</div>' +
-            CONFIG.AGING_BANDS.map(b =>
-                `<div class="legend-v-item"><span class="legend-dot" style="background:${b.color}"></span>${b.label}</div>`
-            ).join('') +
-            `<div class="legend-v-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span>정보 없음</div>` +
-            '<div class="dropdown-note" style="margin:6px 0 0;">확대(상세) 화면에서 매물 마커에 적용</div>';
-    }
+    if (agingDropdown) agingDropdown.innerHTML = agingLegendHtml('확대(상세) 화면에서 매물 마커에 적용');
+
+    // 건물연령: 화면 내 모든 건물 폴리곤을 경과년수 색으로
+    const bldgAgeBtn = document.getElementById('bldgage-btn');
+    if (bldgAgeBtn) bldgAgeBtn.onclick = () => {
+        if (!window.VWORLD_KEY) {
+            document.getElementById('status-bar').textContent = 'VWorld 키가 없어 건물연령을 표시할 수 없습니다';
+            return;
+        }
+        state.bldgAgeOn = !state.bldgAgeOn;
+        bldgAgeBtn.classList.toggle('active', state.bldgAgeOn);
+        refreshBldgAge();
+    };
+    const bldgAgeDropdown = document.getElementById('bldgage-dropdown');
+    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('확대 화면에서 모든 건물에 적용 (VWorld 건물통합정보)');
 
 
     // 모바일 좌측 상단 필터 토글
@@ -939,6 +957,71 @@ function clearMeasure(mode) {
 }
 
 // ==========================
+// 건물연령 레이어 — 화면 내 건물 폴리곤을 경과년수 색으로 (VWorld 건물통합정보)
+// ==========================
+function clearBldgAge() {
+    state.bldgAgeOverlays.forEach(o => o.setMap(null));
+    state.bldgAgeOverlays = [];
+}
+
+function refreshBldgAge() {
+    const token = ++state.bldgAgeToken;
+    clearBldgAge();
+    if (!state.bldgAgeOn) return;
+    const statusEl = document.getElementById('status-bar');
+    if (state.map.getLevel() > 4) {
+        statusEl.textContent = '건물연령: 더 확대하면 건물이 표시됩니다';
+        return;
+    }
+    const b = state.map.getBounds();
+    const sw = b.getSouthWest(), ne = b.getNorthEast();
+    const box = `BOX(${sw.getLng()},${sw.getLat()},${ne.getLng()},${ne.getLat()})`;
+    statusEl.textContent = '건물연령: 건물 정보 조회 중...';
+
+    const drawPage = (page, drawn) => {
+        vworldBuildings(box, page, (resp) => {
+            if (token !== state.bldgAgeToken || !state.bldgAgeOn) return; // 이동/해제됨 → 폐기
+            const ok = resp && resp.response && resp.response.status === 'OK';
+            const feats = ok ? (resp.response.result.featureCollection.features || []) : [];
+            feats.forEach(f => {
+                const ap = (f.properties.useapr_day || '').trim();
+                const year = ap.length >= 4 ? parseInt(ap.slice(0, 4)) : 0;
+                const color = agingColor(year);
+                const rings = f.geometry.type === 'MultiPolygon'
+                    ? f.geometry.coordinates.map(p => p[0]) : [f.geometry.coordinates[0]];
+                const paths = rings.map(ring => ring.map(p => new kakao.maps.LatLng(p[1], p[0])));
+                const poly = new kakao.maps.Polygon({
+                    path: paths, strokeWeight: 1, strokeColor: color, strokeOpacity: 0.8,
+                    fillColor: color, fillOpacity: 0.45, zIndex: 30
+                });
+                poly.setMap(state.map);
+                state.bldgAgeOverlays.push(poly);
+                kakao.maps.event.addListener(poly, 'mouseover', () => {
+                    const p = f.properties;
+                    const tot = parseFloat(p.totalarea || 0);
+                    state.tooltip.setContent(
+                        `<div class="custom-tooltip"><div class="tooltip-header">${p.bld_nm || '건물'}</div><div class="tooltip-body">` +
+                        `<div class="tooltip-row"><span>${year ? `${year}년 승인 (${new Date().getFullYear() - year}년차)` : '승인일 정보 없음'}</span></div>` +
+                        (tot ? `<div class="tooltip-row"><span>연면적 ${Math.round(tot).toLocaleString()}㎡</span></div>` : '') +
+                        `</div></div>`);
+                    state.tooltip.setPosition(paths[0][0]);
+                    state.tooltip.setMap(state.map);
+                });
+                kakao.maps.event.addListener(poly, 'mouseout', () => state.tooltip.setMap(null));
+            });
+            const total = ok && resp.response.record ? parseInt(resp.response.record.total) : 0;
+            const soFar = drawn + feats.length;
+            if (ok && soFar < total && page < 3) {
+                drawPage(page + 1, soFar); // 최대 3,000동까지
+            } else {
+                statusEl.textContent = `건물연령: ${soFar.toLocaleString()}동 표시` + (total > soFar ? ` (전체 ${total.toLocaleString()}동 중 일부 — 더 확대하세요)` : '');
+            }
+        });
+    };
+    drawPage(1, 0);
+}
+
+// ==========================
 // 지적도 모드: 지도 클릭 → 주소 + VWorld 필지 경계/면적/공시지가
 // ==========================
 function clearClickParcel() {
@@ -946,18 +1029,33 @@ function clearClickParcel() {
     if (state.clickParcelPoly) { state.clickParcelPoly.setMap(null); state.clickParcelPoly = null; }
 }
 
-// VWorld 연속지적도 JSONP 조회 (키는 config.local.js — git 미포함)
-function vworldParcel(latlng, cb) {
+// VWorld JSONP 공통 호출 (키는 config.local.js — git 미포함)
+function vworldJsonp(url, cb) {
     if (!window.VWORLD_KEY) { cb(null); return; }
-    const cbName = '__vw' + Date.now() + Math.floor(Math.random() * 1000);
+    const cbName = '__vw' + Date.now() + Math.floor(Math.random() * 10000);
     const script = document.createElement('script');
     const cleanup = () => { delete window[cbName]; script.remove(); };
     window[cbName] = (resp) => { cleanup(); cb(resp); };
     script.onerror = () => { cleanup(); cb(null); };
-    script.src = 'https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LP_PA_CBND_BUBUN'
-        + `&key=${window.VWORLD_KEY}&format=json&crs=EPSG:4326&size=1`
-        + `&geomFilter=POINT(${latlng.getLng()} ${latlng.getLat()})&callback=${cbName}`;
+    script.src = url + `&key=${window.VWORLD_KEY}&domain=${window.VWORLD_DOMAIN || 'localhost'}&callback=${cbName}`;
     document.head.appendChild(script);
+}
+
+// 연속지적도: 클릭 지점의 필지 조회
+function vworldParcel(latlng, cb) {
+    vworldJsonp('https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LP_PA_CBND_BUBUN'
+        + `&format=json&crs=EPSG:4326&size=1&geomFilter=POINT(${latlng.getLng()} ${latlng.getLat()})`, cb);
+}
+
+// 토지이용계획 속성: PNU → 용도지역지구명목록 (토지이용계획확인서 항목)
+function vworldLandUse(pnu, cb) {
+    vworldJsonp(`https://api.vworld.kr/ned/data/getLandUseAttr?pnu=${pnu}&format=json&numOfRows=100`, cb);
+}
+
+// GIS건물통합정보: 영역 내 건물 도형+속성 (건물연령 레이어용)
+function vworldBuildings(boxStr, page, cb) {
+    vworldJsonp('https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_BLDGINFO'
+        + `&format=json&crs=EPSG:4326&size=1000&page=${page}&geomFilter=${boxStr}`, cb);
 }
 
 function showClickAddress(latlng) {
@@ -1007,6 +1105,30 @@ function showClickAddress(latlng) {
             if (el) {
                 el.innerHTML = `면적: <b>${fmtArea(area)}</b>` +
                     (jiga ? `<br>공시지가: ${jiga.toLocaleString()}원/㎡` : '');
+            }
+
+            // 토지이용계획확인서 항목 (용도지역지구명목록)
+            const pnu = f.properties.pnu;
+            if (pnu) {
+                const luDiv = document.createElement('div');
+                luDiv.className = 'click-addr-landuse';
+                luDiv.textContent = '토지이용계획 조회 중...';
+                div.appendChild(luDiv);
+                vworldLandUse(pnu, (lu) => {
+                    const items = lu && lu.landUses && lu.landUses.field ? lu.landUses.field : [];
+                    if (!items.length) { luDiv.textContent = '토지이용계획 정보 없음'; return; }
+                    // 중복 제거 (같은 지구가 법령별로 반복됨)
+                    const seen = new Set();
+                    const rows = [];
+                    items.forEach(it => {
+                        const nm = (it.prposAreaDstrcCodeNm || '').trim();
+                        if (!nm || seen.has(nm)) return;
+                        seen.add(nm);
+                        const cnflc = (it.cnflcAtNm || it.cnflcAt || '').trim();
+                        rows.push(`<div class="landuse-item">${nm}${cnflc === '저촉' ? ' <span class="landuse-cnflc">저촉</span>' : ''}</div>`);
+                    });
+                    luDiv.innerHTML = `<div class="landuse-title">용도지역·지구 (${rows.length})</div>` + rows.join('');
+                });
             }
         });
     });

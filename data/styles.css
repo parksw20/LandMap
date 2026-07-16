@@ -1154,6 +1154,40 @@ body {
   line-height: 1.5;
 }
 
+/* 토지이용계획 확인서 항목 목록 */
+.click-addr-landuse {
+  font-size: 11px;
+  color: var(--text-sub);
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #f3f4f6;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.landuse-title {
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 3px;
+}
+
+.landuse-item {
+  padding: 1px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.landuse-cnflc {
+  display: inline-block;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
 .click-addr-close {
   position: absolute;
   top: 6px;
