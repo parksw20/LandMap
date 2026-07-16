@@ -185,6 +185,12 @@ function setupEventListeners() {
     const redevChk = document.getElementById('show-redev');
     if (redevChk) redevChk.onchange = (e) => toggleRedev(e.target.checked);
 
+    // 모바일 좌측 상단 필터 토글
+    const filterFab = document.getElementById('filter-fab');
+    if (filterFab) filterFab.onclick = () => {
+        document.getElementById('control-panel').classList.toggle('collapsed');
+    };
+
     const btnP = document.getElementById('unit-pyeong');
     const btnM = document.getElementById('unit-m2');
     if (btnP && btnM) {

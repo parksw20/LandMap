@@ -1210,6 +1210,12 @@ body {
     transform: translateY(100%); /* 아래로 완전히 숨김 */
   }
 
+  /* 접힌 패널 안의 토글(X) 버튼은 transform 부모 때문에 fixed가 무력화되어 보이지 않음 → 숨김.
+     열기는 좌측 상단 독립 버튼(#filter-fab)이 담당 */
+  .control-panel.collapsed .toggle-btn {
+    display: none;
+  }
+
   /* 모바일 결과 시트: 필터 패널과 분리된 독립 하단 시트 (기본 30%) */
   #data-section.mobile-sheet {
     position: fixed;
@@ -1262,26 +1268,34 @@ body {
     display: inline-block;
   }
   
-  .control-panel.collapsed .toggle-btn {
+}
+
+/* 모바일 필터 토글 버튼 (좌측 상단, 패널 밖 독립 요소) */
+.filter-fab {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .filter-fab {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     position: fixed;
-    bottom: 30px;
-    right: 24px;
-    top: auto;
-    left: auto;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    top: 14px;
+    left: 14px;
+    z-index: 1600;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 100px;
     background: var(--primary-color);
     color: white;
-    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
-    z-index: 2000;
-    transform: rotate(45deg); /* 플러스 아이콘처럼 보이게 */
-    display: flex;
-    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    cursor: pointer;
   }
-  
-  .control-panel.collapsed .toggle-btn svg {
-      width: 30px;
-      height: 30px;
+
+  .filter-fab:active {
+    transform: scale(0.96);
   }
 }
