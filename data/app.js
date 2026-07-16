@@ -57,23 +57,19 @@ const CONFIG = {
 
 const isMobile = () => window.innerWidth <= 768;
 
-// 모바일: 결과 영역(data-section)을 필터 패널에서 분리해 독립 하단 시트로.
-// 데스크톱: 원래 위치(패널 내부)로 복귀.
+// 결과 영역(data-section)은 필터 패널에서 분리된 독립 패널:
+// - 모바일: 하단 시트 (30% ↔ 전체화면)
+// - 데스크톱: 필터 패널 우측 플로팅 패널 (세로 공간 확보)
 function placeDataSection() {
     const ds = document.getElementById('data-section');
     if (!ds) return;
+    if (ds.parentElement !== document.body) document.body.appendChild(ds);
     if (isMobile()) {
-        if (ds.parentElement !== document.body) {
-            document.body.appendChild(ds);
-            ds.classList.add('mobile-sheet');
-        }
+        ds.classList.add('mobile-sheet');
+        ds.classList.remove('desktop-float');
     } else {
-        if (ds.parentElement === document.body) {
-            const wrapper = document.querySelector('.panel-content-wrapper');
-            const footer = wrapper.querySelector('.panel-footer');
-            wrapper.insertBefore(ds, footer);
-            ds.classList.remove('mobile-sheet', 'expanded');
-        }
+        ds.classList.add('desktop-float');
+        ds.classList.remove('mobile-sheet', 'expanded');
     }
 }
 
