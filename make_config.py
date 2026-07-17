@@ -33,6 +33,6 @@ if pages_key and len(pages_key) > 10:
         f"    window.VWORLD_KEY = '{pages_key}';\n"
         "    window.VWORLD_DOMAIN = 'parksw20.github.io';\n"
         "}\n", encoding="utf-8")
-    print(f"[OK] {PAGES_OUT} 생성 완료 (Pages 공개 키 포함 — 커밋 필요)")
+    print(f"[OK] {PAGES_OUT} 생성 완료 (Pages 공개 키 포함, 커밋 필요)")
 else:
-    print("[i] Pages 공개 키 없음 — config.pages.js는 현재 no-op 상태 유지")
+    print("[i] Pages 공개 키 없음: config.pages.js는 현재 no-op 상태 유지")
