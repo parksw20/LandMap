@@ -95,6 +95,12 @@ const CONFIG = {
 
 const isMobile = () => window.innerWidth <= 768;
 
+// 오버레이(마커·픽커·핀 등) 클릭 표시 — 지도 클릭 핸들러(로드뷰 점프 등)로 전파되지 않게
+function markOverlayClick(ev) {
+    if (ev && ev.stopPropagation) ev.stopPropagation();
+    state.overlayClickAt = Date.now();
+}
+
 // 결과 영역(data-section)은 필터 패널에서 분리된 독립 패널:
 // - 모바일: 하단 시트 (30% ↔ 전체화면)
 // - 데스크톱: 필터 패널 우측 플로팅 패널 (세로 공간 확보)
@@ -173,7 +179,9 @@ function setupEventListeners() {
     kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); if (state.radiusOn) drawRadius(); if (state.bldgAgeOn) refreshBldgAge(); });
 
     // 지도 클릭: 로드뷰 > 측정 > 길찾기 > 지적도(주소 표시) 순으로 처리
+    // 단, 마커 등 오버레이 UI를 클릭한 직후에는 지도 클릭으로 처리하지 않음
     kakao.maps.event.addListener(state.map, 'click', (e) => {
+        if (Date.now() - (state.overlayClickAt || 0) < 400) return;
         if (state.roadviewOn) { openRoadview(e.latLng); return; }
         if (state.measureMode) { onMeasureClick(e.latLng); return; }
         if (state.routeMode) { onRouteClick(e.latLng); return; }
@@ -579,7 +587,7 @@ function renderRedevMarkers() {
             state.tooltip.setMap(state.map);
         };
         div.onmouseleave = () => state.tooltip.setMap(null);
-        div.onclick = () => showRedevDetail(z, color);
+        div.onclick = (ev) => { markOverlayClick(ev); showRedevDetail(z, color); };
     });
 }
 
@@ -745,7 +753,8 @@ function renderMarkers(data, level) {
         const pos = new kakao.maps.LatLng(item.coords[1], item.coords[0]); if (level === 4 && !bounds.contain(pos)) return;
         const content = createOverlayContent(item, level, group.length), overlay = new kakao.maps.CustomOverlay({ position: pos, content: content, yAnchor: 1.0 });
         overlay.setMap(state.map); state.overlays.push(overlay);
-        content.onclick = () => {
+        content.onclick = (ev) => {
+            markOverlayClick(ev);
             if (level !== 4) { handleLevelMove(item, level); return; }
             closeClusterPicker();
             if (group.length === 1) {
@@ -818,7 +827,7 @@ function showClusterPicker(group, pos) {
     const header = document.createElement('div');
     header.className = 'picker-header';
     header.innerHTML = `<span>이 위치 매물 ${group.length}개</span><button class="picker-close">&times;</button>`;
-    header.querySelector('.picker-close').onclick = (e) => { e.stopPropagation(); closeClusterPicker(); };
+    header.querySelector('.picker-close').onclick = (e) => { markOverlayClick(e); closeClusterPicker(); };
     div.appendChild(header);
 
     const list = document.createElement('div');
@@ -830,7 +839,7 @@ function showClusterPicker(group, pos) {
             `<div class="picker-addr">${it.address || ''}</div>` +
             `<div class="picker-meta">거래 ${it.deals ? it.deals.length : it.stats.total}건</div>`;
         row.onclick = (e) => {
-            e.stopPropagation();
+            markOverlayClick(e);
             state.selectedComplex = it; state.selectedArea = null;
             closeClusterPicker();
             renderComplexDetail();
@@ -1669,7 +1678,7 @@ function goToAddress(lat, lng, label) {
     const div = document.createElement('div');
     div.className = 'search-pin';
     div.innerHTML = `<div class="search-pin-label">${label}</div><div class="search-pin-dot"></div>`;
-    div.onclick = () => { if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
+    div.onclick = (ev) => { markOverlayClick(ev); if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
     state.searchPin = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.0, zIndex: 1800 });
     state.searchPin.setMap(state.map);
     updateMap(true);
