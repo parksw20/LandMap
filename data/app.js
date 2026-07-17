@@ -597,6 +597,7 @@ function renderRedevMarkers() {
             state.tooltip.setMap(state.map);
         };
         div.onmouseleave = () => state.tooltip.setMap(null);
+        div.onpointerdown = (ev) => markOverlayClick(ev);
         div.onclick = (ev) => { markOverlayClick(ev); showRedevDetail(z, color); };
     });
 }
@@ -763,6 +764,8 @@ function renderMarkers(data, level) {
         const pos = new kakao.maps.LatLng(item.coords[1], item.coords[0]); if (level === 4 && !bounds.contain(pos)) return;
         const content = createOverlayContent(item, level, group.length), overlay = new kakao.maps.CustomOverlay({ position: pos, content: content, yAnchor: 1.0 });
         overlay.setMap(state.map); state.overlays.push(overlay);
+        // pointerdown 시점에 가드 — 카카오 지도 클릭 처리(필지조회·로드뷰 등)보다 항상 먼저 걸리게
+        content.onpointerdown = (ev) => markOverlayClick(ev);
         content.onclick = (ev) => {
             markOverlayClick(ev);
             if (level !== 4) { handleLevelMove(item, level); return; }
@@ -1688,6 +1691,7 @@ function goToAddress(lat, lng, label) {
     const div = document.createElement('div');
     div.className = 'search-pin';
     div.innerHTML = `<div class="search-pin-label">${label}</div><div class="search-pin-dot"></div>`;
+    div.onpointerdown = (ev) => markOverlayClick(ev);
     div.onclick = (ev) => { markOverlayClick(ev); if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
     state.searchPin = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.0, zIndex: 1800 });
     state.searchPin.setMap(state.map);
