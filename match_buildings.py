@@ -21,11 +21,14 @@ import keyring
 import requests
 import pandas as pd
 
+from geo_cache import GeoCache
+
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
 BLDG_CACHE_DIR = DATA / "bldg_cache"
 MATCH_CACHE = DATA / "match_cache.json"
 ADDR_CACHE = DATA / "address_cache.json"
+PARCEL_CACHE = DATA / "parcel_cache.json"  # 좌표→필지 조회 캐시 (재실행 비용 절감)
 
 VW_KEY = keyring.get_password("v-world", "parksw20")
 if not VW_KEY or len(VW_KEY) < 10:
@@ -78,16 +81,19 @@ def fetch_dong_buildings(center, dong_key):
         for f in feats:
             p = f["properties"]
             ap = (p.get("useapr_day") or "").strip()
+            # 비정상 승인일자('97 2' 등) 방어: 앞 4자리가 온전한 연도일 때만
+            ym = re.match(r"^(\d{4})", ap)
+            year4 = int(ym.group(1)) if ym else 0
             try:
                 tot = float(p.get("totalarea") or 0)
             except ValueError:
                 tot = 0
-            if len(ap) >= 4 and tot > 0:
+            if 1800 <= year4 <= 2100 and tot > 0:
                 g = f["geometry"]["coordinates"]
                 ring = g[0][0] if f["geometry"]["type"] == "MultiPolygon" else g[0]
                 cx = sum(pt[0] for pt in ring) / len(ring)
                 cy = sum(pt[1] for pt in ring) / len(ring)
-                out.append([int(ap[:4]), tot, round(cx, 6), round(cy, 6)])
+                out.append([year4, tot, round(cx, 6), round(cy, 6)])
         if len(feats) < 1000:
             break
         time.sleep(0.05)
@@ -96,17 +102,25 @@ def fetch_dong_buildings(center, dong_key):
     return out
 
 
+_parcel_cache = json.loads(PARCEL_CACHE.read_text(encoding="utf-8")) if PARCEL_CACHE.exists() else {}
+
 def parcel_jibun(lng, lat):
-    """건물 중심점 → 필지 (동이름 포함 주소, 본번, 부번)"""
+    """건물 중심점 → 필지 (동이름 포함 주소, 본번, 부번) — 디스크 캐시"""
+    ck = f"{lng:.6f},{lat:.6f}"
+    if ck in _parcel_cache:
+        return _parcel_cache[ck]
     d = vw_get({"data": "LP_PA_CBND_BUBUN", "geomFilter": f"POINT({lng} {lat})", "size": "1"})
     if not d:
+        _parcel_cache[ck] = None
         return None
     p = d["result"]["featureCollection"]["features"][0]["properties"]
-    return {
+    res = {
         "addr": p.get("addr", ""),
         "bonbun": (p.get("bonbun") or "").lstrip("0"),
         "bubun": (p.get("bubun") or "").lstrip("0"),
     }
+    _parcel_cache[ck] = res
+    return res
 
 
 def masked_match(masked, bonbun, bubun):
@@ -128,13 +142,15 @@ def masked_match(masked, bonbun, bubun):
         return False
     if ms is not None:
         return part_ok(ms, bubun)
-    return bubun == ""  # 부번 표기 없으면 부번 없는 필지만
+    # RTMS 마스킹은 부번을 통째로 생략함 ('26-30' → '2*') → 부번은 검사하지 않음
+    return True
 
 
 def main():
     # 0) 기존 매칭 캐시 로드 (재개)
     cache = json.loads(MATCH_CACHE.read_text(encoding="utf-8")) if MATCH_CACHE.exists() else {}
-    addr_cache = json.loads(ADDR_CACHE.read_text(encoding="utf-8"))
+    # 동 중심 좌표: GeoCache 사용 (서브캐시 폴백 + 미스 시 카카오 지오코딩)
+    geo = GeoCache(ADDR_CACHE, keyring.get_password("kakao", "api_key"))
 
     # 1) 전체 엑셀에서 마스킹 단독 매매 행 수집
     keys = {}  # mkey -> (sido, gungu, dong, masked, byear, area)
@@ -168,11 +184,7 @@ def main():
     matched_n = 0
     try:
         for di, (sido, gungu, dong) in enumerate(dongs, 1):
-            ckey = f"{sido} {gungu} {dong}".replace(" ", "")
-            center = None
-            for k, v in addr_cache.items():
-                if k.replace(" ", "") == ckey and v and v[0]:
-                    center = v; break
+            center = geo.get_coords(f"{sido} {gungu} {dong}")
             if not center:
                 for mk in [k for k, v in todo.items() if (v[0], v[1], v[2]) == (sido, gungu, dong)]:
                     cache[mk] = None
@@ -182,7 +194,8 @@ def main():
 
             for mk, (s, g, d, masked, by, area) in [(k, v) for k, v in todo.items() if (v[0], v[1], v[2]) == (sido, gungu, dong)]:
                 cands = [b for b in blds if b[0] == by and abs(b[1] - area) <= AREA_TOL]
-                if not (1 <= len(cands) <= 4):
+                # 유일성 판정은 지번패턴+동명 검사 후에 하므로 후보 상한은 여유 있게
+                if not (1 <= len(cands) <= 10):
                     cache[mk] = None
                     continue
                 hits = []
@@ -201,11 +214,13 @@ def main():
 
             if di % 20 == 0 or di == len(dongs):
                 MATCH_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+                PARCEL_CACHE.write_text(json.dumps(_parcel_cache, ensure_ascii=False), encoding="utf-8")
                 print(f"  진행 {di}/{len(dongs)}동 | 신규매칭 {matched_n} | 요청 {req_count}")
     except RuntimeError as e:
         print(f"[!] {e} — 진행분 저장 후 종료 (재실행 시 이어서 진행)")
     finally:
         MATCH_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+        PARCEL_CACHE.write_text(json.dumps(_parcel_cache, ensure_ascii=False), encoding="utf-8")
 
     total_matched = sum(1 for v in cache.values() if v)
     print(f"[완료] 전체 {len(cache)}키 중 매칭 {total_matched} ({total_matched*100//max(1,len(cache))}%) | API 요청 {req_count}건")
