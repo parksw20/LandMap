@@ -16,7 +16,12 @@ if not key or len(key) < 10:
     print("    python -c \"import keyring; keyring.set_password('v-world','parksw20','발급키')\"")
     raise SystemExit(1)
 
+# (선택) 폰 등 LAN(IP) 접속용 키 — VWorld는 키에 등록된 도메인만 허용하므로
+# PC IP를 도메인으로 등록한 별도 키를 발급받아 아래에 저장하면 폰에서도 동작:
+#   python -c "import keyring; keyring.set_password('v-world','parksw20-lan','IP용_발급키')"
+lan_key = keyring.get_password("v-world", "parksw20-lan") or ""
+
 OUT.write_text(f"// 로컬 전용 설정 (git 미포함) — make_config.py 로 생성됨\n"
                f"window.VWORLD_KEY = '{key}';\n"
-               f"window.VWORLD_DOMAIN = 'localhost';\n", encoding="utf-8")
-print(f"[OK] {OUT} 생성 완료")
+               f"window.VWORLD_KEY_LAN = '{lan_key}';\n", encoding="utf-8")
+print(f"[OK] {OUT} 생성 완료 (LAN 키: {'있음' if lan_key else '없음'})")

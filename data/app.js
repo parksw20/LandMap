@@ -95,6 +95,16 @@ const CONFIG = {
 
 const isMobile = () => window.innerWidth <= 768;
 
+// VWorld 키 선택: localhost가 아니면(폰에서 PC IP 접속 등) LAN용 키가 있을 때 그걸 사용.
+// VWorld는 인증키에 등록된 도메인(Referer)만 허용하므로, 접속 호스트에 맞는 키가 필요함.
+(function () {
+    const host = location.hostname;
+    if (host !== 'localhost' && host !== '127.0.0.1' && window.VWORLD_KEY_LAN) {
+        window.VWORLD_KEY = window.VWORLD_KEY_LAN;
+    }
+    window.VWORLD_DOMAIN = host; // domain 파라미터는 실제 접속 호스트로
+})();
+
 // 오버레이(마커·픽커·핀 등) 클릭 표시 — 지도 클릭 핸들러(로드뷰 점프 등)로 전파되지 않게
 function markOverlayClick(ev) {
     if (ev && ev.stopPropagation) ev.stopPropagation();
