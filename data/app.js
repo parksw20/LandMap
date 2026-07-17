@@ -243,11 +243,18 @@ function setupEventListeners() {
         drawRadius();
     };
 
+    // 오버레이 타일은 나중에 추가된 것이 위에 깔림 → 로드뷰 도로선(파란선)을 항상 맨 위로 유지
+    const reassertRoadviewOverlay = () => {
+        if (!state.roadviewOn) return;
+        state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW);
+        state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW);
+    };
+
     const cadastralBtn = document.getElementById('cadastral-btn');
     if (cadastralBtn) cadastralBtn.onclick = () => {
         state.cadastralOn = !state.cadastralOn;
         cadastralBtn.classList.toggle('active', state.cadastralOn);
-        if (state.cadastralOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT);
+        if (state.cadastralOn) { state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT); reassertRoadviewOverlay(); }
         else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.USE_DISTRICT);
     };
 
@@ -382,7 +389,7 @@ function setupEventListeners() {
         }
         state.landuseOn = !state.landuseOn;
         landuseBtn.classList.toggle('active', state.landuseOn);
-        if (state.landuseOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE);
+        if (state.landuseOn) { state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE); reassertRoadviewOverlay(); }
         else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE);
     };
 
