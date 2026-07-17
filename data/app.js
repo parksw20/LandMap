@@ -54,7 +54,6 @@ const state = {
     // 로드뷰 위치 핀 / 조그 패드
     rvMapPin: null,
     rvPinBound: false,
-    jogOn: false,
     jogTimer: null,
     // 토지이용계획(용도지역) 오버레이
     landuseOn: false,
@@ -251,26 +250,58 @@ function setupEventListeners() {
         else document.getElementById('status-bar').textContent = '길찾기: 출발지를 클릭하세요';
     };
 
-    // 조그(다이얼) 패드
-    const jogBtn = document.getElementById('jog-btn');
+    // 조그(다이얼) 패드 — 로드뷰 시점(pan/tilt) 조작 전용, 로드뷰 열리면 항상 표시
     const jogPad = document.getElementById('jog-pad');
-    if (jogBtn && jogPad) {
-        jogBtn.onclick = () => {
-            state.jogOn = !state.jogOn;
-            jogBtn.classList.toggle('active', state.jogOn);
-            jogPad.style.display = state.jogOn ? 'block' : 'none';
-        };
+    if (jogPad) {
         const jogStop = () => { if (state.jogTimer) { clearInterval(state.jogTimer); state.jogTimer = null; } };
+        // 로드뷰 시점 회전: dx=좌우(pan), dy=상하(tilt)
+        const applyJog = (dx, dy) => {
+            if (!state.rv || !state.rv.getViewpoint) return;
+            const vp = state.rv.getViewpoint();
+            const pan = ((vp.pan + dx * 4) % 360 + 360) % 360;
+            const tilt = Math.max(-70, Math.min(70, vp.tilt - dy * 3));
+            state.rv.setViewpoint(new kakao.maps.Viewpoint(pan, tilt, vp.zoom));
+        };
+        // 8방향 버튼: 누르는 동안 연속 회전
         jogPad.querySelectorAll('.jog-arrow').forEach(btn => {
             const dx = parseInt(btn.dataset.dx), dy = parseInt(btn.dataset.dy);
             btn.addEventListener('pointerdown', (ev) => {
                 ev.preventDefault();
                 jogStop();
-                state.map.panBy(dx * 45, dy * 45);
-                state.jogTimer = setInterval(() => state.map.panBy(dx * 45, dy * 45), 80);
+                applyJog(dx, dy);
+                state.jogTimer = setInterval(() => applyJog(dx, dy), 70);
             });
             ['pointerup', 'pointerleave', 'pointercancel'].forEach(evt => btn.addEventListener(evt, jogStop));
         });
+        // 가운데 노브 드래그 = 조이스틱 (끄는 방향·거리만큼 연속 회전)
+        const knob = document.getElementById('jog-knob');
+        if (knob) {
+            let vec = { x: 0, y: 0 };
+            knob.addEventListener('pointerdown', (ev) => {
+                ev.preventDefault();
+                knob.setPointerCapture(ev.pointerId);
+                const padRect = jogPad.getBoundingClientRect();
+                const cx = padRect.left + padRect.width / 2, cy = padRect.top + padRect.height / 2;
+                const track = (e) => {
+                    const R = padRect.width / 2;
+                    vec = { x: Math.max(-1, Math.min(1, (e.clientX - cx) / R)), y: Math.max(-1, Math.min(1, (e.clientY - cy) / R)) };
+                    knob.style.transform = `translate(calc(-50% + ${vec.x * 26}px), calc(-50% + ${vec.y * 26}px))`;
+                };
+                track(ev);
+                jogStop();
+                state.jogTimer = setInterval(() => applyJog(vec.x * 1.6, vec.y * 1.6), 70);
+                const up = () => {
+                    jogStop();
+                    knob.style.transform = 'translate(-50%, -50%)';
+                    knob.removeEventListener('pointermove', track);
+                    knob.removeEventListener('pointerup', up);
+                    knob.removeEventListener('pointercancel', up);
+                };
+                knob.addEventListener('pointermove', track);
+                knob.addEventListener('pointerup', up);
+                knob.addEventListener('pointercancel', up);
+            });
+        }
     }
 
     const roadviewBtn = document.getElementById('roadview-btn');
