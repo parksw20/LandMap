@@ -872,25 +872,33 @@ function showTooltip(item, level, pos) {
 
 function formatPrice(val) { if (val >= 10000) return `${Math.round(val / 1000) / 10}억`; return val.toLocaleString() + '만'; }
 
-// 아파트 평당가 월별 추이 차트 — 매매/전세/월세 3계열, 리스트 내 거래유형 필터 연동
-// 월세는 환산가(보증금 + 월세×100)로 평당 환산해 같은 축에 표시
+// 아파트 시세 월별 추이 차트 — 매매/전세/월세 3계열, 리스트 내 거래유형·평형 필터 연동
+// 전체 선택 시: 평당가(만원/평, 면적이 달라도 비교 가능) / 특정 평형 선택 시: 실거래가(억)
+// 월세는 환산가(보증금 + 월세×100)로 같은 축에 표시
 const CHART_SERIES = [
-    { key: '매매', color: '#dc2626', val: d => d.price / (d.area * 0.3025) },
-    { key: '전세', color: '#2563eb', val: d => d.price / (d.area * 0.3025) },
-    { key: '월세', color: '#16a34a', val: d => (d.price + (d.rent || 0) * 100) / (d.area * 0.3025) }
+    { key: '매매', color: '#dc2626', raw: d => d.price },
+    { key: '전세', color: '#2563eb', raw: d => d.price },
+    { key: '월세', color: '#16a34a', raw: d => d.price + (d.rent || 0) * 100 }
 ];
 
 function buildPriceChart(item) {
-    // 계열별 월평균 집계 (리스트 내 거래유형 필터 연동)
+    const areaSel = state.selectedArea;          // null = 전체
+    const perPyeong = areaSel === null;          // 전체 → 평당가 모드
+    const dealArea = d => state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area);
+
+    // 계열별 월평균 집계 (거래유형 + 평형 필터 연동)
     const series = [];
     CHART_SERIES.forEach(s => {
         if (!state.localFilters[s.key]) return;
-        const deals = (item.deals || []).filter(d => d.type === s.key && d.price > 0 && d.area > 0 && d.date && d.date.length >= 7);
+        const deals = (item.deals || []).filter(d =>
+            d.type === s.key && d.price > 0 && d.area > 0 && d.date && d.date.length >= 7 &&
+            (perPyeong || dealArea(d) === areaSel));
         if (!deals.length) return;
         const byMonth = {};
         deals.forEach(d => {
             const k = d.date.slice(0, 7);
-            (byMonth[k] = byMonth[k] || []).push(s.val(d));
+            const v = perPyeong ? s.raw(d) / (d.area * 0.3025) : s.raw(d);
+            (byMonth[k] = byMonth[k] || []).push(v);
         });
         const months = Object.keys(byMonth).sort();
         series.push({
@@ -909,7 +917,9 @@ function buildPriceChart(item) {
     const span = (max - min) || max * 0.1 || 1;
     const x = m => PL + (W - PL - PR) * (allMonths.indexOf(m) / (allMonths.length - 1));
     const y = v => PT + (H - PT - PB) * (1 - (v - min) / span);
-    const fmt = v => Math.round(v).toLocaleString();
+    // 축·툴팁 값 표기: 평당가 = 만원/평, 실거래가 = 억 단위
+    const fmtVal = v => perPyeong ? `${Math.round(v).toLocaleString()}` : formatPrice(v);
+    const tipUnit = perPyeong ? '만/평' : '';
     const mLabel = m => m.slice(2).replace('-', '.');
 
     let lines = '', dots = '';
@@ -918,23 +928,28 @@ function buildPriceChart(item) {
         if (s.months.length > 1) lines += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
         s.months.forEach((m, i) => {
             dots += `<circle class="chart-dot" cx="${x(m).toFixed(1)}" cy="${y(s.avgs[i]).toFixed(1)}" r="3.5" fill="${s.color}"` +
-                ` data-tip="${m.slice(2).replace('-', '.')} ${s.key}: ${fmt(s.avgs[i])}만/평 · ${s.counts[i]}건"/>`;
+                ` data-tip="${m.slice(2).replace('-', '.')} ${s.key}: ${fmtVal(s.avgs[i])}${tipUnit} · ${s.counts[i]}건"/>`;
         });
     });
     const legend = series.map(s =>
         `<span class="chart-leg"><span class="legend-dot" style="background:${s.color}"></span>${s.key}${s.key === '월세' ? '(환산)' : ''} ${s.n}건</span>`
     ).join('');
 
+    const unitLabel = state.displayUnit === 'pyeong' ? '평' : '㎡';
+    const titleHtml = perPyeong
+        ? `<span class="chart-badge py">평당가</span> 추이 <span>(만원/평 · 면적 혼합이라 평당 환산${series.some(s => s.key === '월세') ? ' · 월세=보증금+월세×100' : ''})</span>`
+        : `<span class="chart-badge raw">실거래가</span> ${areaSel}${unitLabel} 추이 <span>(${series.some(s => s.key === '월세') ? '월세=보증금+월세×100 환산' : '실제 거래금액'})</span>`;
+
     const div = document.createElement('div');
-    div.className = 'price-chart';
+    div.className = 'price-chart' + (perPyeong ? ' per-pyeong' : '');
     div.innerHTML =
-        `<div class="chart-title">평당가 추이 <span>(만원/평${series.some(s => s.key === '월세') ? ' · 월세=보증금+월세×100 환산' : ''})</span></div>` +
+        `<div class="chart-title">${titleHtml}</div>` +
         `<div class="chart-legend">${legend}</div>` +
         `<svg viewBox="0 0 ${W} ${H}" width="100%">` +
         `<line x1="${PL}" y1="${y(max)}" x2="${W - PR}" y2="${y(max)}" class="chart-grid"/>` +
         `<line x1="${PL}" y1="${y(min)}" x2="${W - PR}" y2="${y(min)}" class="chart-grid"/>` +
-        `<text x="${PL - 5}" y="${y(max) + 4}" text-anchor="end" class="chart-axis">${fmt(max)}</text>` +
-        `<text x="${PL - 5}" y="${y(min) + 4}" text-anchor="end" class="chart-axis">${fmt(min)}</text>` +
+        `<text x="${PL - 5}" y="${y(max) + 4}" text-anchor="end" class="chart-axis">${fmtVal(max)}</text>` +
+        `<text x="${PL - 5}" y="${y(min) + 4}" text-anchor="end" class="chart-axis">${fmtVal(min)}</text>` +
         lines + dots +
         `<text x="${x(allMonths[0])}" y="${H - 7}" text-anchor="start" class="chart-axis">${mLabel(allMonths[0])}</text>` +
         `<text x="${x(allMonths[allMonths.length - 1])}" y="${H - 7}" text-anchor="end" class="chart-axis">${mLabel(allMonths[allMonths.length - 1])}</text>` +
