@@ -30,6 +30,7 @@ from match_buildings import masked_match
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
 PDONG_CACHE_DIR = DATA / "parcel_dong_cache"
+BLDG_CACHE_DIR = DATA / "bldg_cache"
 MATCH_CACHE = DATA / "match_cache.json"
 ADDR_CACHE = DATA / "address_cache.json"
 
@@ -85,15 +86,20 @@ def geom_area(geom):
 
 
 def fetch_dong_parcels(center, dong, dong_key):
-    """동 중심 ±약 1km 박스의 필지 목록(동명 일치만).
-    형식: [본번, 부번, 지목, 면적㎡] (본번·부번은 선행 0 제거 문자열)"""
+    """동 중심 ±약 1.6km 박스의 필지 목록(동명 일치만).
+    v2 형식: [본번, 부번, 지목, 면적㎡, 중심경도, 중심위도] — 구형(4필드) 캐시는 재수집
+    (박스 확장: 동 외곽 필지 누락으로 '패턴 필지 0'이던 751건 해소 목적)"""
     cache_f = PDONG_CACHE_DIR / f"{dong_key}.json"
     if cache_f.exists():
-        return json.loads(cache_f.read_text(encoding="utf-8"))
+        cached = json.loads(cache_f.read_text(encoding="utf-8"))
+        if cached and len(cached[0]) == 6:
+            return cached
+        # 구형 캐시(중심좌표 없음/빈 목록) → 확장 박스로 재수집
+    # VWorld geomFilter BOX는 요청면적 10km² 제한 → 9.5km²(±1.6km×±1.5km)로 최대 확장
     lng, lat = center
-    box = f"BOX({lng-0.012},{lat-0.009},{lng+0.012},{lat+0.009})"
+    box = f"BOX({lng-0.018},{lat-0.0135},{lng+0.018},{lat+0.0135})"
     out, seen = [], set()
-    for page in range(1, 25):
+    for page in range(1, 41):
         d = vw_get({"data": "LP_PA_CBND_BUBUN", "geomFilter": box, "size": "1000", "page": str(page)})
         if not d:
             break
@@ -116,10 +122,14 @@ def fetch_dong_parcels(center, dong, dong_key):
             jimok = jm.group(0) if jm else ""
             try:
                 area = round(geom_area(f["geometry"]), 1)
+                g = f["geometry"]["coordinates"]
+                ring = g[0][0] if f["geometry"]["type"] == "MultiPolygon" else g[0]
+                cx = sum(pt[0] for pt in ring) / len(ring)
+                cy = sum(pt[1] for pt in ring) / len(ring)
             except Exception:
                 continue
             if area > 0:
-                out.append([bon, bu, jimok, area])
+                out.append([bon, bu, jimok, area, round(cx, 6), round(cy, 6)])
         if len(feats) < 1000:
             break
         time.sleep(0.05)
@@ -159,7 +169,7 @@ def main():
             if by < 1900 or area <= 0 or not dong:
                 continue
             mkey = f"{sido}|{gungu}|{dong}|{masked}|{by}|{area:.2f}"
-            keys[mkey] = (sido, gungu, dong, masked, land)
+            keys[mkey] = (sido, gungu, dong, masked, land, by)
 
     # 대상: 건물대장 방식이 못 잡았고(None/미처리) 대지면적이 있는 키만
     todo = {k: v for k, v in keys.items() if not cache.get(k) and v[4] > 0}
@@ -167,6 +177,7 @@ def main():
     print(f"[i] 전체 {len(keys)}키 / 필지매칭 대상 {len(todo)}키 / 대상 동 {len(dongs)}개")
 
     matched_n = 0
+    rule_n = [0, 0, 0]  # 계단식 / margin / 건물교차
     try:
         for di, (sido, gungu, dong) in enumerate(dongs, 1):
             center = geo.get_coords(f"{sido} {gungu} {dong}")
@@ -174,45 +185,87 @@ def main():
                 continue
             dong_key = f"{sido}_{gungu}_{dong}".replace(" ", "_").replace("/", "_")
             parcels = fetch_dong_parcels(center, dong, dong_key)
+            if not parcels:
+                continue
 
-            for mk, (s, g, d, masked, land) in [(k, v) for k, v in todo.items()
-                                                if (v[0], v[1], v[2]) == (sido, gungu, dong)]:
-                patt = [(bon, bu, jimok, pa) for bon, bu, jimok, pa in parcels
-                        if masked_match(masked, bon, bu)]
-                if not patt:
+            # 건물(대장) → 최근접 필지 배정: 50m 격자 해시로 근사 (교차 판별용, API 불필요)
+            # bldg_cache v2 형식: [연도, 연면적, 대지면적, 경도, 위도]
+            bldg_f = BLDG_CACHE_DIR / f"{dong_key}.json"
+            blds = []
+            if bldg_f.exists():
+                blds = [b for b in json.loads(bldg_f.read_text(encoding="utf-8")) if len(b) == 5]
+            grid = {}
+            CELL = 0.0005  # ≈ 44~55m
+            for i, p in enumerate(parcels):
+                gk = (int(p[4] / CELL), int(p[5] / CELL))
+                grid.setdefault(gk, []).append(i)
+            bldg_parcel = []  # [(연도, 필지 인덱스)] — 45m 내 최근접 필지만
+            for b in blds:
+                bx, by_ = b[3], b[4]
+                gk = (int(bx / CELL), int(by_ / CELL))
+                best_i, best_d = -1, 1e9
+                for dx in (-1, 0, 1):
+                    for dy in (-1, 0, 1):
+                        for i in grid.get((gk[0] + dx, gk[1] + dy), []):
+                            p = parcels[i]
+                            dd = ((p[4] - bx) * 88300) ** 2 + ((p[5] - by_) * 111320) ** 2
+                            if dd < best_d:
+                                best_d, best_i = dd, i
+                if best_i >= 0 and best_d <= 45 ** 2:
+                    bldg_parcel.append((b[0], best_i))
+
+            for mk, (s, g, d, masked, land, by) in [(k, v) for k, v in todo.items()
+                                                    if (v[0], v[1], v[2]) == (sido, gungu, dong)]:
+                patt_i = [i for i, p in enumerate(parcels) if masked_match(masked, p[0], p[1])]
+                if not patt_i:
                     continue
+                jib_of = lambda p: f"{p[0]}-{p[1]}" if p[1] else p[0]
                 tol_max = max(1.5, land * 0.02)  # 지적도형 면적 vs 대장 면적 오차 여유
                 picked = None
+                rule = -1
                 # 1) 계단식 허용오차: 가장 좁은 오차에서 유일하면 채택 (0.15 = 사실상 정확 일치)
                 for tol in (0.15, 0.5, 1.5, tol_max):
-                    hits = [(b, u, jm) for b, u, jm, pa in patt if abs(pa - land) <= tol]
-                    uniq = sorted(set(f"{b}-{u}" if u else b for b, u, _ in hits))
+                    hits = [parcels[i] for i in patt_i if abs(parcels[i][3] - land) <= tol]
+                    uniq = sorted(set(jib_of(p) for p in hits))
                     if len(uniq) > 1:
                         # 복수면 지목 '대'(주택용지)만으로 재판정
-                        uniq = sorted(set(f"{b}-{u}" if u else b for b, u, jm in hits if jm == "대"))
+                        uniq = sorted(set(jib_of(p) for p in hits if p[2] == "대"))
                         if len(uniq) != 1:
                             break
                     if len(uniq) == 1:
-                        picked = uniq[0]
+                        picked, rule = uniq[0], 0
                         break
                 # 2) margin 규칙: 최적 후보가 오차 내이고 2등과 1㎡ 이상 벌어지면 채택
                 if not picked:
                     best = {}
-                    for b, u, jm, pa in patt:
-                        jib = f"{b}-{u}" if u else b
-                        dd = abs(pa - land)
+                    for i in patt_i:
+                        p = parcels[i]
+                        jib = jib_of(p)
+                        dd = abs(p[3] - land)
                         if jib not in best or dd < best[jib]:
                             best[jib] = dd
                     ranked = sorted(best.items(), key=lambda x: x[1])
                     if ranked[0][1] <= tol_max and (len(ranked) == 1 or ranked[1][1] - ranked[0][1] >= 1.0):
-                        picked = ranked[0][0]
+                        picked, rule = ranked[0][0], 1
+                # 3) 건물 교차: 면적 후보가 복수여도 건축년도(±1) 건물이 얹힌 필지가 유일하면 채택
+                if not picked and bldg_parcel:
+                    cand_i = [i for i in patt_i if abs(parcels[i][3] - land) <= tol_max]
+                    cand_jibs = {}
+                    for i in cand_i:
+                        cand_jibs.setdefault(jib_of(parcels[i]), set()).add(i)
+                    if len(cand_jibs) >= 2:
+                        yr_hit = {jib for jib, idxs in cand_jibs.items()
+                                  if any(abs(y - by) <= 1 and pi in idxs for y, pi in bldg_parcel)}
+                        if len(yr_hit) == 1:
+                            picked, rule = yr_hit.pop(), 2
                 if picked:
                     cache[mk] = picked
                     matched_n += 1
+                    rule_n[rule] += 1
 
             if di % 20 == 0 or di == len(dongs):
                 MATCH_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
-                print(f"  진행 {di}/{len(dongs)}동 | 신규매칭 {matched_n} | 요청 {req_count}")
+                print(f"  진행 {di}/{len(dongs)}동 | 신규매칭 {matched_n} (계단식 {rule_n[0]}/margin {rule_n[1]}/건물교차 {rule_n[2]}) | 요청 {req_count}")
     except RuntimeError as e:
         print(f"[!] {e} - 진행분 저장 후 종료 (재실행 시 이어서 진행)")
     finally:
