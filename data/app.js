@@ -95,20 +95,24 @@ const CONFIG = {
 
 const isMobile = () => window.innerWidth <= 768;
 
-// VWorld 키 선택: localhost가 아니면(폰에서 PC IP 접속 등) LAN용 키가 있을 때 그걸 사용.
-// VWorld는 인증키에 등록된 도메인(Referer)만 허용하므로, 접속 호스트에 맞는 키가 필요함.
-(function () {
-    const host = location.hostname;
-    if (host !== 'localhost' && host !== '127.0.0.1' && window.VWORLD_KEY_LAN) {
-        window.VWORLD_KEY = window.VWORLD_KEY_LAN;
-    }
-    window.VWORLD_DOMAIN = host; // domain 파라미터는 실제 접속 호스트로
-})();
+// VWorld domain 파라미터는 '키에 등록된 도메인'과 일치해야 함 (접속 호스트와 무관 — 실측 확인).
+// 폰(IP 접속)에서도 localhost로 보내야 통과하므로 항상 고정.
+window.VWORLD_DOMAIN = 'localhost';
 
 // 오버레이(마커·픽커·핀 등) 클릭 표시 — 지도 클릭 핸들러(로드뷰 점프 등)로 전파되지 않게
 function markOverlayClick(ev) {
     if (ev && ev.stopPropagation) ev.stopPropagation();
     state.overlayClickAt = Date.now();
+}
+
+// 터치 기기: hover 범례가 없으므로, 버튼을 켤 때 범례를 잠깐(4초) 보여줌
+function flashLegend(btn) {
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return; // 마우스 환경은 hover로 충분
+    const dd = btn.parentElement ? btn.parentElement.querySelector('.map-dropdown') : null;
+    if (!dd) return;
+    dd.classList.add('show');
+    clearTimeout(dd._flashTimer);
+    dd._flashTimer = setTimeout(() => dd.classList.remove('show'), 4000);
 }
 
 // 결과 영역(data-section)은 필터 패널에서 분리된 독립 패널:
@@ -370,6 +374,7 @@ function setupEventListeners() {
     if (redevBtn) redevBtn.onclick = () => {
         toggleRedev(!state.showRedev);
         redevBtn.classList.toggle('active', state.showRedev);
+        if (state.showRedev) flashLegend(redevBtn);
     };
     // 호버 드롭다운용 세로 범례 채우기
     const redevDropdown = document.getElementById('redev-dropdown');
@@ -389,7 +394,7 @@ function setupEventListeners() {
         }
         state.landuseOn = !state.landuseOn;
         landuseBtn.classList.toggle('active', state.landuseOn);
-        if (state.landuseOn) { state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE); reassertRoadviewOverlay(); }
+        if (state.landuseOn) { state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE); reassertRoadviewOverlay(); flashLegend(landuseBtn); }
         else state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.LANDUSE);
     };
 
@@ -410,6 +415,7 @@ function setupEventListeners() {
         state.bldgAgeOn = !state.bldgAgeOn;
         refreshBldgAge();
         updateMap(true); // 매물 마커 색도 함께 갱신
+        if (state.bldgAgeOn) flashLegend(bldgAgeBtn);
     };
     const bldgAgeDropdown = document.getElementById('bldgage-dropdown');
     if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('최대 확대 구간(레벨 1~2)에서 건물·매물에 적용');

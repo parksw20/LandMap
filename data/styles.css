@@ -1008,6 +1008,11 @@ body {
   }
 }
 
+/* 터치 기기: 버튼 켤 때 범례를 잠깐 표시 (flashLegend) */
+.map-dropdown.show {
+  display: block;
+}
+
 .dropdown-title {
   font-size: 12px;
   font-weight: 800;
