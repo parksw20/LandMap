@@ -1340,17 +1340,21 @@ function refreshBldgAge() {
         vworldBuildings(box, page, (resp) => {
             if (token !== state.bldgAgeToken || !state.bldgAgeOn) return; // 이동/해제됨 → 폐기
             const ok = resp && resp.response && resp.response.status === 'OK';
-            const feats = ok ? (resp.response.result.featureCollection.features || []) : [];
+            let feats = ok ? (resp.response.result.featureCollection.features || []) : [];
+            // 정보 없는(회색) 건물 도형은 먼저(아래층에) 옅게 — 대장 연계된 색상 건물을 가리지 않게
+            const hasYear = f => /^\d{4}/.test((f.properties.useapr_day || '').trim());
+            feats = [...feats.filter(f => !hasYear(f)), ...feats.filter(hasYear)];
             feats.forEach(f => {
                 const ap = (f.properties.useapr_day || '').trim();
                 const year = ap.length >= 4 ? parseInt(ap.slice(0, 4)) : 0;
+                const known = year >= 1800;
                 const color = agingColor(year);
                 const rings = f.geometry.type === 'MultiPolygon'
                     ? f.geometry.coordinates.map(p => p[0]) : [f.geometry.coordinates[0]];
                 const paths = rings.map(ring => ring.map(p => new kakao.maps.LatLng(p[1], p[0])));
                 const poly = new kakao.maps.Polygon({
-                    path: paths, strokeWeight: 1, strokeColor: color, strokeOpacity: 0.8,
-                    fillColor: color, fillOpacity: 0.45, zIndex: 30
+                    path: paths, strokeWeight: known ? 1 : 0.5, strokeColor: color, strokeOpacity: known ? 0.8 : 0.4,
+                    fillColor: color, fillOpacity: known ? 0.45 : 0.18, zIndex: known ? 30 : 29
                 });
                 poly.setMap(state.map);
                 state.bldgAgeOverlays.push(poly);
@@ -1543,7 +1547,8 @@ function openRoadview(latlng) {
                 const pos = state.rv.getPosition();
                 if (!pos) return;
                 if (state.rvMapPin) state.rvMapPin.setPosition(pos);
-                centerMapForRoadview(pos);
+                // 지도는 고정 — 핀이 보이는 영역을 벗어났을 때만 재센터링
+                if (!rvPosVisible(pos)) centerMapForRoadview(pos);
             });
         }
     });
@@ -1562,6 +1567,19 @@ function centerMapForRoadview(pos) {
     } else {
         state.map.panBy(0, Math.round(window.innerHeight * 0.3));
     }
+}
+
+// 핀이 로드뷰에 가리지 않는 '보이는 지도 영역' 안에 있는지 (여유 5%)
+function rvPosVisible(pos) {
+    const b = state.map.getBounds();
+    const sw = b.getSouthWest(), ne = b.getNorthEast();
+    const lngSpan = ne.getLng() - sw.getLng(), latSpan = ne.getLat() - sw.getLat();
+    let minLng = sw.getLng(), maxLng = ne.getLng(), minLat = sw.getLat(), maxLat = ne.getLat();
+    if (window.innerWidth > 768) maxLng = sw.getLng() + lngSpan * 0.5;  // 좌측 절반만 보임
+    else minLat = ne.getLat() - latSpan * 0.4;                          // 상단 40%만 보임
+    const mLng = lngSpan * 0.05, mLat = latSpan * 0.05;
+    return pos.getLng() >= minLng + mLng && pos.getLng() <= maxLng - mLng
+        && pos.getLat() >= minLat + mLat && pos.getLat() <= maxLat - mLat;
 }
 
 let searchTimer = null;
