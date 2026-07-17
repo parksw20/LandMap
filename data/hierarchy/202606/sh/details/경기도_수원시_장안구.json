@@ -3,10 +3,8 @@
     "name": "경기도 수원시 장안구 송죽동",
     "address": "경기도 수원시 장안구 송죽동",
     "coords": [127.006983971536, 37.3005053421739],
-    "stats": {"total": 15, "sale": {"count": 2, "range": [25000, 93000], "rep_area": 111.6, "rep_avg_price": 25000}, "jeonse": {"count": 3, "range": [7980, 13000], "rep_area": 41.0, "rep_avg_price": 7980}, "monthly": {"count": 10, "range": [300, 16000], "rep_area": 40.0, "rep_avg_price": 1250}},
+    "stats": {"total": 13, "sale": null, "jeonse": {"count": 3, "range": [7980, 13000], "rep_area": 41.0, "rep_avg_price": 7980}, "monthly": {"count": 10, "range": [300, 16000], "rep_area": 40.0, "rep_avg_price": 1250}},
     "deals": [
-      {"type": "매매", "price": 93000, "rent": 0, "area": 367.8, "land": 181.1, "floor": "", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송죽동 4**", "by": 2010},
-      {"type": "매매", "price": 25000, "rent": 0, "area": 111.6, "land": 94.0, "floor": "", "dong": "", "date": "2026-06-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송죽동 1**", "by": 1985},
       {"type": "월세", "price": 2000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "월세", "price": 500, "rent": 49, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-20", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 1000, "rent": 47, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-20", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
@@ -23,12 +21,29 @@
     ]
   },
   {
+    "name": "경기도 수원시 장안구 송죽동 117",
+    "address": "경기도 수원시 장안구 송죽동 117",
+    "coords": [127.001933087933, 37.3083825693689],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 111.6, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 111.6, "land": 94.0, "floor": "", "dong": "", "date": "2026-06-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송죽동 117 (추정)", "by": 1985}
+    ]
+  },
+  {
+    "name": "경기도 수원시 장안구 송죽동 481-3",
+    "address": "경기도 수원시 장안구 송죽동 481-3",
+    "coords": [127.001056596868, 37.3069891290306],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [93000, 93000], "rep_area": 367.8, "rep_avg_price": 93000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 93000, "rent": 0, "area": 367.8, "land": 181.1, "floor": "", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송죽동 481-3 (추정)", "by": 2010}
+    ]
+  },
+  {
     "name": "경기도 수원시 장안구 연무동",
     "address": "경기도 수원시 장안구 연무동",
     "coords": [127.021472428994, 37.2905417315214],
-    "stats": {"total": 34, "sale": {"count": 2, "range": [22000, 50000], "rep_area": 99.1, "rep_avg_price": 22000}, "jeonse": {"count": 7, "range": [2000, 13000], "rep_area": 20.0, "rep_avg_price": 4000}, "monthly": {"count": 25, "range": [200, 5000], "rep_area": 21.0, "rep_avg_price": 833}},
+    "stats": {"total": 33, "sale": {"count": 1, "range": [22000, 22000], "rep_area": 99.1, "rep_avg_price": 22000}, "jeonse": {"count": 7, "range": [2000, 13000], "rep_area": 20.0, "rep_avg_price": 4000}, "monthly": {"count": 25, "range": [200, 5000], "rep_area": 21.0, "rep_avg_price": 833}},
     "deals": [
-      {"type": "매매", "price": 50000, "rent": 0, "area": 224.55, "land": 129.0, "floor": "", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연무동 6*", "by": 1995},
       {"type": "매매", "price": 22000, "rent": 0, "area": 99.12, "land": 118.0, "floor": "", "dong": "", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연무동 1**", "by": 1977},
       {"type": "월세", "price": 300, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "월세", "price": 500, "rent": 59, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-27", "period": "26.08~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -65,12 +80,20 @@
     ]
   },
   {
+    "name": "경기도 수원시 장안구 연무동 61-176",
+    "address": "경기도 수원시 장안구 연무동 61-176",
+    "coords": [127.031374998662, 37.2964942983818],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 224.6, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 50000, "rent": 0, "area": 224.55, "land": 129.0, "floor": "", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연무동 61-176 (추정)", "by": 1995}
+    ]
+  },
+  {
     "name": "경기도 수원시 장안구 영화동",
     "address": "경기도 수원시 장안구 영화동",
     "coords": [127.014029745892, 37.2931846908545],
-    "stats": {"total": 48, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 263.6, "rep_avg_price": 60000}, "jeonse": {"count": 9, "range": [2000, 21000], "rep_area": 20.0, "rep_avg_price": 2000}, "monthly": {"count": 38, "range": [200, 10000], "rep_area": 30.0, "rep_avg_price": 333}},
+    "stats": {"total": 47, "sale": null, "jeonse": {"count": 9, "range": [2000, 21000], "rep_area": 20.0, "rep_avg_price": 2000}, "monthly": {"count": 38, "range": [200, 10000], "rep_area": 30.0, "rep_avg_price": 333}},
     "deals": [
-      {"type": "매매", "price": 60000, "rent": 0, "area": 263.64, "land": 122.0, "floor": "", "dong": "", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영화동 1**", "by": 1969},
       {"type": "월세", "price": 300, "rent": 30, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-29", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
       {"type": "월세", "price": 1500, "rent": 80, "area": 75.48, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-28", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "전세", "price": 5000, "rent": 0, "area": 38.75, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-24", "period": "26.06~28.07", "renew": "갱신", "p_dep": 13000, "p_rent": 0, "jibun": "", "by": 1994},
@@ -118,6 +141,15 @@
       {"type": "전세", "price": 15000, "rent": 0, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "월세", "price": 200, "rent": 32, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-01", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 5000, "rent": 50, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014}
+    ]
+  },
+  {
+    "name": "경기도 수원시 장안구 영화동 161-3",
+    "address": "경기도 수원시 장안구 영화동 161-3",
+    "coords": [127.015257057689, 37.2917438696446],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 263.6, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 263.64, "land": 122.0, "floor": "", "dong": "", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영화동 161-3 (추정)", "by": 1969}
     ]
   },
   {
@@ -220,9 +252,8 @@
     "name": "경기도 수원시 장안구 조원동",
     "address": "경기도 수원시 장안구 조원동",
     "coords": [127.01653986805, 37.3019100094315],
-    "stats": {"total": 27, "sale": {"count": 1, "range": [51000, 51000], "rep_area": 323.0, "rep_avg_price": 51000}, "jeonse": {"count": 4, "range": [8400, 14000], "rep_area": 36.0, "rep_avg_price": 9000}, "monthly": {"count": 22, "range": [300, 12900], "rep_area": 40.0, "rep_avg_price": 475}},
+    "stats": {"total": 26, "sale": null, "jeonse": {"count": 4, "range": [8400, 14000], "rep_area": 36.0, "rep_avg_price": 9000}, "monthly": {"count": 22, "range": [300, 12900], "rep_area": 40.0, "rep_avg_price": 475}},
     "deals": [
-      {"type": "매매", "price": 51000, "rent": 0, "area": 323.05, "land": 194.0, "floor": "", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "조원동 6**", "by": 1988},
       {"type": "월세", "price": 2000, "rent": 49, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 45, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-30", "period": "26.07~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "전세", "price": 9000, "rent": 0, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-29", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
@@ -249,6 +280,15 @@
       {"type": "월세", "price": 300, "rent": 30, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-02", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "월세", "price": 2000, "rent": 50, "area": 57.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-01", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984},
       {"type": "전세", "price": 14000, "rent": 0, "area": 63.92, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-03", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992}
+    ]
+  },
+  {
+    "name": "경기도 수원시 장안구 조원동 639-36",
+    "address": "경기도 수원시 장안구 조원동 639-36",
+    "coords": [127.014657102273, 37.2947487259853],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [51000, 51000], "rep_area": 323.0, "rep_avg_price": 51000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 51000, "rent": 0, "area": 323.05, "land": 194.0, "floor": "", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "조원동 639-36 (추정)", "by": 1988}
     ]
   },
   {

@@ -77,9 +77,8 @@
     "name": "서울특별시 송파구 마천동",
     "address": "서울특별시 송파구 마천동",
     "coords": [127.149903613068, 37.4960258496317],
-    "stats": {"total": 46, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 206.0, "rep_avg_price": 121000}, "jeonse": {"count": 8, "range": [3800, 15500], "rep_area": 24.0, "rep_avg_price": 6000}, "monthly": {"count": 37, "range": [0, 13000], "rep_area": 40.0, "rep_avg_price": 1625}},
+    "stats": {"total": 45, "sale": null, "jeonse": {"count": 8, "range": [3800, 15500], "rep_area": 24.0, "rep_avg_price": 6000}, "monthly": {"count": 37, "range": [0, 13000], "rep_area": 40.0, "rep_avg_price": 1625}},
     "deals": [
-      {"type": "매매", "price": 121000, "rent": 0, "area": 206.01, "land": 140.0, "floor": "", "dong": "", "date": "2025-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 2**", "by": 1989},
       {"type": "월세", "price": 13000, "rent": 22, "area": 55.5, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-01", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1981},
       {"type": "월세", "price": 0, "rent": 15, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-06", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 300, "rent": 25, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-06", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -125,6 +124,15 @@
       {"type": "월세", "price": 2000, "rent": 50, "area": 33.81, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-10", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 100, "rent": 20, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-05", "period": "25.02~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "전세", "price": 7000, "rent": 0, "area": 33.3, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-04", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1978}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 마천동 274-2",
+    "address": "서울특별시 송파구 마천동 274-2",
+    "coords": [127.158228776605, 37.492145081073],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 206.0, "rep_avg_price": 121000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 121000, "rent": 0, "area": 206.01, "land": 140.0, "floor": "", "dong": "", "date": "2025-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 274-2 (추정)", "by": 1989}
     ]
   },
   {
@@ -320,9 +328,8 @@
     "name": "서울특별시 송파구 송파동",
     "address": "서울특별시 송파구 송파동",
     "coords": [127.109579159297, 37.50609292063],
-    "stats": {"total": 53, "sale": {"count": 1, "range": [83300, 83300], "rep_area": 141.6, "rep_avg_price": 83300}, "jeonse": {"count": 16, "range": [10000, 35000], "rep_area": 40.0, "rep_avg_price": 20900}, "monthly": {"count": 36, "range": [300, 25000], "rep_area": 21.0, "rep_avg_price": 1000}},
+    "stats": {"total": 52, "sale": null, "jeonse": {"count": 16, "range": [10000, 35000], "rep_area": 40.0, "rep_avg_price": 20900}, "monthly": {"count": 36, "range": [300, 25000], "rep_area": 21.0, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 83300, "rent": 0, "area": 141.57, "land": 88.9, "floor": "", "dong": "", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송파동 1**", "by": 1993},
       {"type": "전세", "price": 12000, "rent": 0, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 60, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 1000, "rent": 65, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
@@ -375,6 +382,15 @@
       {"type": "전세", "price": 25000, "rent": 0, "area": 37.27, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-05", "period": "25.02~26.02", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 2000, "rent": 75, "area": 43.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-05", "period": "25.02~27.02", "renew": "갱신", "p_dep": 1500, "p_rent": 70, "jibun": "", "by": 1996},
       {"type": "전세", "price": 24000, "rent": 0, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-04", "period": "25.02~27.02", "renew": "갱신", "p_dep": 23000, "p_rent": 0, "jibun": "", "by": 1995}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 송파동 156-3",
+    "address": "서울특별시 송파구 송파동 156-3",
+    "coords": [127.115769779626, 37.5030471151179],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [83300, 83300], "rep_area": 141.6, "rep_avg_price": 83300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 83300, "rent": 0, "area": 141.57, "land": 88.9, "floor": "", "dong": "", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송파동 156-3 (추정)", "by": 1993}
     ]
   },
   {

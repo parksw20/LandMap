@@ -42,11 +42,19 @@
     "name": "서울특별시 종로구 누하동",
     "address": "서울특별시 종로구 누하동",
     "coords": [126.968274190814, 37.5792826296463],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 23.1, "rep_avg_price": 66000}, "jeonse": {"count": 1, "range": [24255, 24255], "rep_area": 57.2, "rep_avg_price": 24255}, "monthly": {"count": 1, "range": [3283, 3283], "rep_area": 22.5, "rep_avg_price": 3283}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [24255, 24255], "rep_area": 57.2, "rep_avg_price": 24255}, "monthly": {"count": 1, "range": [3283, 3283], "rep_area": 22.5, "rep_avg_price": 3283}},
     "deals": [
-      {"type": "매매", "price": 66000, "rent": 0, "area": 23.14, "land": 49.6, "floor": "", "dong": "", "date": "2025-10-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "누하동 1**", "by": 1955},
       {"type": "월세", "price": 3283, "rent": 10, "area": 22.52, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-17", "period": "25.10~27.10", "renew": "갱신", "p_dep": 3000, "p_rent": 10, "jibun": "", "by": 1994},
       {"type": "전세", "price": 24255, "rent": 0, "area": 57.23, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-10", "period": "25.10~27.10", "renew": "갱신", "p_dep": 23100, "p_rent": 0, "jibun": "", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 누하동 133",
+    "address": "서울특별시 종로구 누하동 133",
+    "coords": [126.968426589038, 37.5795072882968],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 23.1, "rep_avg_price": 66000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 66000, "rent": 0, "area": 23.14, "land": 49.6, "floor": "", "dong": "", "date": "2025-10-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "누하동 133 (추정)", "by": 1955}
     ]
   },
   {
@@ -349,13 +357,11 @@
     "name": "서울특별시 종로구 창신동",
     "address": "서울특별시 종로구 창신동",
     "coords": [127.012828195947, 37.5752245135612],
-    "stats": {"total": 35, "sale": {"count": 5, "range": [45000, 94500], "rep_area": 131.6, "rep_avg_price": 94500}, "jeonse": {"count": 5, "range": [7000, 13000], "rep_area": 26.4, "rep_avg_price": 10000}, "monthly": {"count": 25, "range": [100, 12000], "rep_area": 20.0, "rep_avg_price": 500}},
+    "stats": {"total": 33, "sale": {"count": 3, "range": [63000, 94500], "rep_area": 131.6, "rep_avg_price": 94500}, "jeonse": {"count": 5, "range": [7000, 13000], "rep_area": 26.4, "rep_avg_price": 10000}, "monthly": {"count": 25, "range": [100, 12000], "rep_area": 20.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 45000, "rent": 0, "area": 19.83, "land": 51.9, "floor": "", "dong": "", "date": "2025-10-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 6**", "by": 1949},
       {"type": "매매", "price": 94500, "rent": 0, "area": 131.57, "land": 138.8, "floor": "", "dong": "", "date": "2025-10-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 2*", "by": 1974},
       {"type": "매매", "price": 94500, "rent": 0, "area": 131.57, "land": 138.8, "floor": "", "dong": "", "date": "2025-10-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 2*", "by": 1974},
       {"type": "매매", "price": 63000, "rent": 0, "area": 52.07, "land": 69.4, "floor": "", "dong": "", "date": "2025-10-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 1**", "by": 1911},
-      {"type": "매매", "price": 63900, "rent": 0, "area": 42.98, "land": 76.0, "floor": "", "dong": "", "date": "2025-10-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 5*", "by": 1935},
       {"type": "월세", "price": 8000, "rent": 20, "area": 46.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 500, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-30", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1933},
       {"type": "월세", "price": 200, "rent": 35, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-29", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -386,6 +392,24 @@
       {"type": "전세", "price": 10100, "rent": 0, "area": 26.45, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-13", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1930},
       {"type": "전세", "price": 13000, "rent": 0, "area": 41.67, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-03", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1999},
       {"type": "월세", "price": 1000, "rent": 60, "area": 145.44, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-03", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 창신동 53-1",
+    "address": "서울특별시 종로구 창신동 53-1",
+    "coords": [127.014777325039, 37.5751991479158],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [63900, 63900], "rep_area": 43.0, "rep_avg_price": 63900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 63900, "rent": 0, "area": 42.98, "land": 76.0, "floor": "", "dong": "", "date": "2025-10-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 53-1 (추정)", "by": 1935}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 창신동 651-82",
+    "address": "서울특별시 종로구 창신동 651-82",
+    "coords": [127.010299580717, 37.5728056803154],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [45000, 45000], "rep_area": 19.8, "rep_avg_price": 45000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 45000, "rent": 0, "area": 19.83, "land": 51.9, "floor": "", "dong": "", "date": "2025-10-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창신동 651-82 (추정)", "by": 1949}
     ]
   },
   {
@@ -442,15 +466,39 @@
     "name": "서울특별시 종로구 평창동",
     "address": "서울특별시 종로구 평창동",
     "coords": [126.968357810931, 37.6063916960375],
-    "stats": {"total": 7, "sale": {"count": 3, "range": [178000, 280000], "rep_area": 157.4, "rep_avg_price": 195000}, "jeonse": {"count": 2, "range": [11000, 40000], "rep_area": 83.3, "rep_avg_price": 11000}, "monthly": {"count": 2, "range": [5000, 12000], "rep_area": 41.1, "rep_avg_price": 12000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [11000, 40000], "rep_area": 83.3, "rep_avg_price": 11000}, "monthly": {"count": 2, "range": [5000, 12000], "rep_area": 41.1, "rep_avg_price": 12000}},
     "deals": [
-      {"type": "매매", "price": 280000, "rent": 0, "area": 217.52, "land": 497.0, "floor": "", "dong": "", "date": "2025-10-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 4**", "by": 1979},
-      {"type": "매매", "price": 178000, "rent": 0, "area": 164.3, "land": 411.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 5**", "by": 1979},
-      {"type": "매매", "price": 195000, "rent": 0, "area": 157.4, "land": 327.0, "floor": "", "dong": "", "date": "2025-10-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 1**", "by": 1969},
       {"type": "월세", "price": 12000, "rent": 20, "area": 41.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-30", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "전세", "price": 11000, "rent": 0, "area": 83.33, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-16", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "전세", "price": 40000, "rent": 0, "area": 110.84, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-17", "period": "25.10~31.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "월세", "price": 5000, "rent": 80, "area": 57.62, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-10", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 평창동 177-6",
+    "address": "서울특별시 종로구 평창동 177-6",
+    "coords": [126.966881245524, 37.6074257172237],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [195000, 195000], "rep_area": 157.4, "rep_avg_price": 195000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 195000, "rent": 0, "area": 157.4, "land": 327.0, "floor": "", "dong": "", "date": "2025-10-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 177-6 (추정)", "by": 1969}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 평창동 438-7",
+    "address": "서울특별시 종로구 평창동 438-7",
+    "coords": [126.978163008209, 37.6142437863117],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [280000, 280000], "rep_area": 217.5, "rep_avg_price": 280000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 280000, "rent": 0, "area": 217.52, "land": 497.0, "floor": "", "dong": "", "date": "2025-10-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 438-7 (추정)", "by": 1979}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 평창동 576-10",
+    "address": "서울특별시 종로구 평창동 576-10",
+    "coords": [126.962737532216, 37.6086547828635],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [178000, 178000], "rep_area": 164.3, "rep_avg_price": 178000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 178000, "rent": 0, "area": 164.3, "land": 411.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 576-10 (추정)", "by": 1979}
     ]
   },
   {

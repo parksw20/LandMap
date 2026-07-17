@@ -71,13 +71,10 @@
     "name": "서울특별시 관악구 봉천동",
     "address": "서울특별시 관악구 봉천동",
     "coords": [126.952165181187, 37.4825384917268],
-    "stats": {"total": 606, "sale": {"count": 5, "range": [34000, 110000], "rep_area": 47.9, "rep_avg_price": 105000}, "jeonse": {"count": 76, "range": [1000, 42000], "rep_area": 20.0, "rep_avg_price": 11000}, "monthly": {"count": 525, "range": [0, 23000], "rep_area": 18.0, "rep_avg_price": 1915}},
+    "stats": {"total": 603, "sale": {"count": 2, "range": [102000, 110000], "rep_area": 148.7, "rep_avg_price": 110000}, "jeonse": {"count": 76, "range": [1000, 42000], "rep_area": 20.0, "rep_avg_price": 11000}, "monthly": {"count": 525, "range": [0, 23000], "rep_area": 18.0, "rep_avg_price": 1915}},
     "deals": [
-      {"type": "매매", "price": 105000, "rent": 0, "area": 47.93, "land": 99.0, "floor": "", "dong": "", "date": "2025-08-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 *", "by": 1970},
       {"type": "매매", "price": 102000, "rent": 0, "area": 268.35, "land": 162.0, "floor": "", "dong": "", "date": "2025-08-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 1**", "by": 1994},
       {"type": "매매", "price": 110000, "rent": 0, "area": 148.74, "land": 109.0, "floor": "", "dong": "", "date": "2025-08-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 *", "by": 1993},
-      {"type": "매매", "price": 90000, "rent": 0, "area": 96.02, "land": 93.0, "floor": "", "dong": "", "date": "2025-08-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 *", "by": 1983},
-      {"type": "매매", "price": 34000, "rent": 0, "area": 50.64, "land": 84.0, "floor": "", "dong": "", "date": "2025-08-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 8**", "by": 1974},
       {"type": "전세", "price": 15000, "rent": 0, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 2000, "rent": 50, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 4000, "rent": 30, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
@@ -682,22 +679,45 @@
     ]
   },
   {
+    "name": "서울특별시 관악구 봉천동 1-474",
+    "address": "서울특별시 관악구 봉천동 1-474",
+    "coords": [126.959195836365, 37.4909871788023],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 47.9, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 47.93, "land": 99.0, "floor": "", "dong": "", "date": "2025-08-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 1-474 (추정)", "by": 1970}
+    ]
+  },
+  {
+    "name": "서울특별시 관악구 봉천동 3-31",
+    "address": "서울특별시 관악구 봉천동 3-31",
+    "coords": [126.959651024755, 37.49067027061],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 96.0, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 96.02, "land": 93.0, "floor": "", "dong": "", "date": "2025-08-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 3-31 (추정)", "by": 1983}
+    ]
+  },
+  {
+    "name": "서울특별시 관악구 봉천동 892-18",
+    "address": "서울특별시 관악구 봉천동 892-18",
+    "coords": [126.947304614406, 37.4831483889807],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 50.6, "rep_avg_price": 34000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34000, "rent": 0, "area": 50.64, "land": 84.0, "floor": "", "dong": "", "date": "2025-08-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 892-18 (추정)", "by": 1974}
+    ]
+  },
+  {
     "name": "서울특별시 관악구 신림동",
     "address": "서울특별시 관악구 신림동",
     "coords": [126.926185482384, 37.4894520674165],
-    "stats": {"total": 735, "sale": {"count": 11, "range": [42000, 179940], "rep_area": 32.1, "rep_avg_price": 53000}, "jeonse": {"count": 102, "range": [2000, 32000], "rep_area": 30.0, "rep_avg_price": 13714}, "monthly": {"count": 622, "range": [0, 25000], "rep_area": 18.0, "rep_avg_price": 998}},
+    "stats": {"total": 731, "sale": {"count": 7, "range": [42000, 179940], "rep_area": 32.1, "rep_avg_price": 53000}, "jeonse": {"count": 102, "range": [2000, 32000], "rep_area": 30.0, "rep_avg_price": 13714}, "monthly": {"count": 622, "range": [0, 25000], "rep_area": 18.0, "rep_avg_price": 998}},
     "deals": [
-      {"type": "매매", "price": 159770, "rent": 0, "area": 234.6, "land": 143.8, "floor": "", "dong": "", "date": "2025-08-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 5**", "by": 1991},
       {"type": "매매", "price": 179940, "rent": 0, "area": 249.48, "land": 163.0, "floor": "", "dong": "", "date": "2025-08-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 5**", "by": 1991},
       {"type": "매매", "price": 158738, "rent": 0, "area": 246.69, "land": 148.4, "floor": "", "dong": "", "date": "2025-08-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 4**", "by": 1990},
       {"type": "매매", "price": 53000, "rent": 0, "area": 32.07, "land": 63.0, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 2**", "by": 1969},
       {"type": "매매", "price": 155000, "rent": 0, "area": 524.57, "land": 183.0, "floor": "", "dong": "", "date": "2025-08-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 2**", "by": 2008},
-      {"type": "매매", "price": 178154, "rent": 0, "area": 266.22, "land": 175.5, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 5**", "by": 1994},
       {"type": "매매", "price": 42000, "rent": 0, "area": 110.85, "land": 129.0, "floor": "", "dong": "", "date": "2025-08-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 6**", "by": 1976},
-      {"type": "매매", "price": 105000, "rent": 0, "area": 185.85, "land": 124.3, "floor": "", "dong": "", "date": "2025-08-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 5**", "by": 1989},
       {"type": "매매", "price": 95000, "rent": 0, "area": 198.9, "land": 129.0, "floor": "", "dong": "", "date": "2025-08-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 3**", "by": 1991},
       {"type": "매매", "price": 57000, "rent": 0, "area": 266.93, "land": 116.0, "floor": "", "dong": "", "date": "2025-08-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 2**", "by": 1994},
-      {"type": "매매", "price": 49000, "rent": 0, "area": 177.12, "land": 116.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 8*", "by": 1990},
       {"type": "월세", "price": 200, "rent": 31, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
       {"type": "월세", "price": 3000, "rent": 75, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 4000, "rent": 0, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
@@ -1422,6 +1442,42 @@
       {"type": "월세", "price": 1000, "rent": 60, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 1000, "rent": 53, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 500, "rent": 45, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 관악구 신림동 511-11",
+    "address": "서울특별시 관악구 신림동 511-11",
+    "coords": [126.915818845388, 37.4840472874914],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [178154, 178154], "rep_area": 266.2, "rep_avg_price": 178154}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 178154, "rent": 0, "area": 266.22, "land": 175.5, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 511-11 (추정)", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 관악구 신림동 528-12",
+    "address": "서울특별시 관악구 신림동 528-12",
+    "coords": [126.915144944296, 37.482974515337],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 185.8, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 185.85, "land": 124.3, "floor": "", "dong": "", "date": "2025-08-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 528-12 (추정)", "by": 1989}
+    ]
+  },
+  {
+    "name": "서울특별시 관악구 신림동 528-33",
+    "address": "서울특별시 관악구 신림동 528-33",
+    "coords": [126.915772427123, 37.4829940657021],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [159770, 159770], "rep_area": 234.6, "rep_avg_price": 159770}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 159770, "rent": 0, "area": 234.6, "land": 143.8, "floor": "", "dong": "", "date": "2025-08-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 528-33 (추정)", "by": 1991}
+    ]
+  },
+  {
+    "name": "서울특별시 관악구 신림동 87-49",
+    "address": "서울특별시 관악구 신림동 87-49",
+    "coords": [126.934153937967, 37.4805180544492],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49000, 49000], "rep_area": 177.1, "rep_avg_price": 49000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49000, "rent": 0, "area": 177.12, "land": 116.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 87-49 (추정)", "by": 1990}
     ]
   }
 ]

@@ -205,10 +205,8 @@
     "name": "서울특별시 동작구 본동",
     "address": "서울특별시 동작구 본동",
     "coords": [126.954204316851, 37.5130293559068],
-    "stats": {"total": 10, "sale": {"count": 2, "range": [91000, 242880], "rep_area": 19.0, "rep_avg_price": 91000}, "jeonse": {"count": 2, "range": [6000, 25000], "rep_area": 30.0, "rep_avg_price": 6000}, "monthly": {"count": 6, "range": [300, 1500], "rep_area": 16.0, "rep_avg_price": 300}},
+    "stats": {"total": 8, "sale": null, "jeonse": {"count": 2, "range": [6000, 25000], "rep_area": 30.0, "rep_avg_price": 6000}, "monthly": {"count": 6, "range": [300, 1500], "rep_area": 16.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 91000, "rent": 0, "area": 19.0, "land": 30.0, "floor": "", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본동 4**", "by": 1985},
-      {"type": "매매", "price": 242880, "rent": 0, "area": 247.93, "land": 73.0, "floor": "", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본동 2**", "by": 1971},
       {"type": "월세", "price": 500, "rent": 55, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 1500, "rent": 55, "area": 51.51, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 500, "rent": 35, "area": 18.94, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-28", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
@@ -220,15 +218,31 @@
     ]
   },
   {
+    "name": "서울특별시 동작구 본동 201-3",
+    "address": "서울특별시 동작구 본동 201-3",
+    "coords": [126.951533764243, 37.5120460156226],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [242880, 242880], "rep_area": 247.9, "rep_avg_price": 242880}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 242880, "rent": 0, "area": 247.93, "land": 73.0, "floor": "", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본동 201-3 (추정)", "by": 1971}
+    ]
+  },
+  {
+    "name": "서울특별시 동작구 본동 455-159",
+    "address": "서울특별시 동작구 본동 455-159",
+    "coords": [126.950899187976, 37.5107282149567],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [91000, 91000], "rep_area": 19.0, "rep_avg_price": 91000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 91000, "rent": 0, "area": 19.0, "land": 30.0, "floor": "", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본동 455-159 (추정)", "by": 1985}
+    ]
+  },
+  {
     "name": "서울특별시 동작구 사당동",
     "address": "서울특별시 동작구 사당동",
     "coords": [126.973135661399, 37.4839326741508],
-    "stats": {"total": 199, "sale": {"count": 4, "range": [99000, 244580], "rep_area": 97.2, "rep_avg_price": 244580}, "jeonse": {"count": 38, "range": [6500, 44000], "rep_area": 15.0, "rep_avg_price": 8666}, "monthly": {"count": 157, "range": [200, 25000], "rep_area": 20.0, "rep_avg_price": 1272}},
+    "stats": {"total": 197, "sale": {"count": 2, "range": [99000, 244580], "rep_area": 97.2, "rep_avg_price": 244580}, "jeonse": {"count": 38, "range": [6500, 44000], "rep_area": 15.0, "rep_avg_price": 8666}, "monthly": {"count": 157, "range": [200, 25000], "rep_area": 20.0, "rep_avg_price": 1272}},
     "deals": [
       {"type": "매매", "price": 99000, "rent": 0, "area": 173.82, "land": 116.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 2**", "by": 1990},
       {"type": "매매", "price": 244580, "rent": 0, "area": 97.22, "land": 165.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 1**", "by": 1976},
-      {"type": "매매", "price": 129000, "rent": 0, "area": 228.54, "land": 165.0, "floor": "", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 1**", "by": 2014},
-      {"type": "매매", "price": 151600, "rent": 0, "area": 110.41, "land": 179.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 4**", "by": 1970},
       {"type": "월세", "price": 2000, "rent": 45, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "월세", "price": 5000, "rent": 40, "area": 159.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
       {"type": "전세", "price": 23000, "rent": 0, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -424,6 +438,24 @@
       {"type": "월세", "price": 1000, "rent": 74, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 2000, "rent": 55, "area": 33.06, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.05~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 13000, "rent": 15, "area": 56.37, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "갱신", "p_dep": 13000, "p_rent": 15, "jibun": "", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 동작구 사당동 182-9",
+    "address": "서울특별시 동작구 사당동 182-9",
+    "coords": [126.963572187772, 37.4915146173817],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [129000, 129000], "rep_area": 228.5, "rep_avg_price": 129000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 129000, "rent": 0, "area": 228.54, "land": 165.0, "floor": "", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 182-9 (추정)", "by": 2014}
+    ]
+  },
+  {
+    "name": "서울특별시 동작구 사당동 423-4",
+    "address": "서울특별시 동작구 사당동 423-4",
+    "coords": [126.976876439728, 37.4794986095714],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [151600, 151600], "rep_area": 110.4, "rep_avg_price": 151600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 151600, "rent": 0, "area": 110.41, "land": 179.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 423-4 (추정)", "by": 1970}
     ]
   },
   {
@@ -668,13 +700,11 @@
     "name": "서울특별시 동작구 신대방동",
     "address": "서울특별시 동작구 신대방동",
     "coords": [126.914941920386, 37.4930124961565],
-    "stats": {"total": 105, "sale": {"count": 5, "range": [51600, 126000], "rep_area": 165.4, "rep_avg_price": 70000}, "jeonse": {"count": 16, "range": [6000, 20000], "rep_area": 20.0, "rep_avg_price": 10333}, "monthly": {"count": 84, "range": [0, 25000], "rep_area": 18.0, "rep_avg_price": 1820}},
+    "stats": {"total": 103, "sale": {"count": 3, "range": [51600, 126000], "rep_area": 165.4, "rep_avg_price": 70000}, "jeonse": {"count": 16, "range": [6000, 20000], "rep_area": 20.0, "rep_avg_price": 10333}, "monthly": {"count": 84, "range": [0, 25000], "rep_area": 18.0, "rep_avg_price": 1820}},
     "deals": [
-      {"type": "매매", "price": 121000, "rent": 0, "area": 246.96, "land": 172.0, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 6**", "by": 1994},
       {"type": "매매", "price": 70000, "rent": 0, "area": 165.38, "land": 83.0, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 6**", "by": 1993},
       {"type": "매매", "price": 126000, "rent": 0, "area": 246.69, "land": 182.0, "floor": "", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 3**", "by": 1988},
       {"type": "매매", "price": 51600, "rent": 0, "area": 192.01, "land": 129.0, "floor": "", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 5**", "by": 1992},
-      {"type": "매매", "price": 120000, "rent": 0, "area": 237.04, "land": 162.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 3**", "by": 2002},
       {"type": "월세", "price": 500, "rent": 39, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "전세", "price": 10000, "rent": 0, "area": 14.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 10000, "rent": 8, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -778,12 +808,29 @@
     ]
   },
   {
+    "name": "서울특별시 동작구 신대방동 359-5",
+    "address": "서울특별시 동작구 신대방동 359-5",
+    "coords": [126.925280929827, 37.4972471910707],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 237.0, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 120000, "rent": 0, "area": 237.04, "land": 162.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 359-5 (추정)", "by": 2002}
+    ]
+  },
+  {
+    "name": "서울특별시 동작구 신대방동 632-19",
+    "address": "서울특별시 동작구 신대방동 632-19",
+    "coords": [126.912864673544, 37.4898843973807],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 247.0, "rep_avg_price": 121000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 121000, "rent": 0, "area": 246.96, "land": 172.0, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 632-19 (추정)", "by": 1994}
+    ]
+  },
+  {
     "name": "서울특별시 동작구 흑석동",
     "address": "서울특별시 동작구 흑석동",
     "coords": [126.966590753167, 37.5057750153538],
-    "stats": {"total": 38, "sale": {"count": 2, "range": [85000, 175000], "rep_area": 56.2, "rep_avg_price": 175000}, "jeonse": {"count": 4, "range": [2000, 30000], "rep_area": 20.0, "rep_avg_price": 8500}, "monthly": {"count": 32, "range": [100, 20000], "rep_area": 20.0, "rep_avg_price": 1316}},
+    "stats": {"total": 37, "sale": {"count": 1, "range": [175000, 175000], "rep_area": 56.2, "rep_avg_price": 175000}, "jeonse": {"count": 4, "range": [2000, 30000], "rep_area": 20.0, "rep_avg_price": 8500}, "monthly": {"count": 32, "range": [100, 20000], "rep_area": 20.0, "rep_avg_price": 1316}},
     "deals": [
-      {"type": "매매", "price": 85000, "rent": 0, "area": 201.42, "land": 136.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "흑석동 1**", "by": 1987},
       {"type": "매매", "price": 175000, "rent": 0, "area": 56.2, "land": 122.0, "floor": "", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "흑석동 1**", "by": 1978},
       {"type": "월세", "price": 300, "rent": 42, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 200, "rent": 40, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1959},
@@ -821,6 +868,15 @@
       {"type": "월세", "price": 3000, "rent": 52, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 1000, "rent": 80, "area": 49.17, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984},
       {"type": "전세", "price": 2000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-06", "period": "26.04~31.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987}
+    ]
+  },
+  {
+    "name": "서울특별시 동작구 흑석동 198-89",
+    "address": "서울특별시 동작구 흑석동 198-89",
+    "coords": [126.957890880533, 37.5088133063335],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 201.4, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 85000, "rent": 0, "area": 201.42, "land": 136.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "흑석동 198-89 (추정)", "by": 1987}
     ]
   }
 ]

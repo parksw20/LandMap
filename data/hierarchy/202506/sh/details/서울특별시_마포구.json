@@ -220,9 +220,8 @@
     "name": "서울특별시 마포구 망원동",
     "address": "서울특별시 마포구 망원동",
     "coords": [126.901347294861, 37.5567856576913],
-    "stats": {"total": 92, "sale": {"count": 1, "range": [320000, 320000], "rep_area": 507.2, "rep_avg_price": 320000}, "jeonse": {"count": 14, "range": [7700, 28000], "rep_area": 19.6, "rep_avg_price": 7700}, "monthly": {"count": 77, "range": [500, 22000], "rep_area": 30.0, "rep_avg_price": 5600}},
+    "stats": {"total": 91, "sale": null, "jeonse": {"count": 14, "range": [7700, 28000], "rep_area": 19.6, "rep_avg_price": 7700}, "monthly": {"count": 77, "range": [500, 22000], "rep_area": 30.0, "rep_avg_price": 5600}},
     "deals": [
-      {"type": "매매", "price": 320000, "rent": 0, "area": 507.16, "land": 189.8, "floor": "", "dong": "", "date": "2025-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "망원동 4**", "by": 1990},
       {"type": "월세", "price": 5000, "rent": 180, "area": 74.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "전세", "price": 22000, "rent": 0, "area": 71.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 3000, "rent": 150, "area": 66.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1999},
@@ -314,6 +313,15 @@
       {"type": "월세", "price": 1000, "rent": 75, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 100, "area": 45.03, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1974},
       {"type": "월세", "price": 5000, "rent": 45, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "25.06~26.06", "renew": "갱신", "p_dep": 5000, "p_rent": 45, "jibun": "", "by": 1991}
+    ]
+  },
+  {
+    "name": "서울특별시 마포구 망원동 417-20",
+    "address": "서울특별시 마포구 망원동 417-20",
+    "coords": [126.900505948707, 37.5562754378424],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [320000, 320000], "rep_area": 507.2, "rep_avg_price": 320000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 320000, "rent": 0, "area": 507.16, "land": 189.8, "floor": "", "dong": "", "date": "2025-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "망원동 417-20 (추정)", "by": 1990}
     ]
   },
   {
@@ -525,9 +533,8 @@
     "name": "서울특별시 마포구 신수동",
     "address": "서울특별시 마포구 신수동",
     "coords": [126.935226865858, 37.5470206619261],
-    "stats": {"total": 37, "sale": {"count": 2, "range": [113000, 157000], "rep_area": 145.6, "rep_avg_price": 113000}, "jeonse": {"count": 3, "range": [8000, 26000], "rep_area": 15.0, "rep_avg_price": 8000}, "monthly": {"count": 32, "range": [333, 3000], "rep_area": 17.0, "rep_avg_price": 1000}},
+    "stats": {"total": 36, "sale": {"count": 1, "range": [113000, 113000], "rep_area": 145.6, "rep_avg_price": 113000}, "jeonse": {"count": 3, "range": [8000, 26000], "rep_area": 15.0, "rep_avg_price": 8000}, "monthly": {"count": 32, "range": [333, 3000], "rep_area": 17.0, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 157000, "rent": 0, "area": 199.68, "land": 145.0, "floor": "", "dong": "", "date": "2025-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신수동 4*", "by": 1992},
       {"type": "매매", "price": 113000, "rent": 0, "area": 145.56, "land": 99.0, "floor": "", "dong": "", "date": "2025-06-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신수동 1**", "by": 1900},
       {"type": "월세", "price": 3000, "rent": 80, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 75, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
@@ -579,8 +586,9 @@
     "name": "서울특별시 마포구 신수동 47-7",
     "address": "서울특별시 마포구 신수동 47-7",
     "coords": [126.939058891114, 37.5465203048339],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [201000, 201000], "rep_area": 150.1, "rep_avg_price": 201000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [157000, 201000], "rep_area": 150.1, "rep_avg_price": 201000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 157000, "rent": 0, "area": 199.68, "land": 145.0, "floor": "", "dong": "", "date": "2025-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신수동 47-7 (추정)", "by": 1992},
       {"type": "매매", "price": 201000, "rent": 0, "area": 150.08, "land": 162.0, "floor": "", "dong": "", "date": "2025-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신수동 47-7 (추정)", "by": 1974}
     ]
   },
@@ -767,9 +775,8 @@
     "name": "서울특별시 마포구 합정동",
     "address": "서울특별시 마포구 합정동",
     "coords": [126.911756414276, 37.5516618139957],
-    "stats": {"total": 36, "sale": {"count": 1, "range": [338000, 338000], "rep_area": 208.2, "rep_avg_price": 338000}, "jeonse": {"count": 7, "range": [9000, 25000], "rep_area": 29.9, "rep_avg_price": 9000}, "monthly": {"count": 28, "range": [300, 20000], "rep_area": 33.0, "rep_avg_price": 2600}},
+    "stats": {"total": 35, "sale": null, "jeonse": {"count": 7, "range": [9000, 25000], "rep_area": 29.9, "rep_avg_price": 9000}, "monthly": {"count": 28, "range": [300, 20000], "rep_area": 33.0, "rep_avg_price": 2600}},
     "deals": [
-      {"type": "매매", "price": 338000, "rent": 0, "area": 208.25, "land": 174.2, "floor": "", "dong": "", "date": "2025-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "합정동 3**", "by": 1974},
       {"type": "월세", "price": 15000, "rent": 275, "area": 105.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "월세", "price": 3000, "rent": 90, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 1000, "rent": 60, "area": 25.74, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-09", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
@@ -805,6 +812,15 @@
       {"type": "월세", "price": 500, "rent": 65, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-02", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 6000, "rent": 30, "area": 45.21, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-04", "period": "25.07~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "전세", "price": 19900, "rent": 0, "area": 47.52, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-10", "period": "25.06~27.06", "renew": "갱신", "p_dep": 19000, "p_rent": 0, "jibun": "", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 마포구 합정동 391-20",
+    "address": "서울특별시 마포구 합정동 391-20",
+    "coords": [126.909939404792, 37.5502431721641],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [338000, 338000], "rep_area": 208.2, "rep_avg_price": 338000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 338000, "rent": 0, "area": 208.25, "land": 174.2, "floor": "", "dong": "", "date": "2025-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "합정동 391-20 (추정)", "by": 1974}
     ]
   },
   {

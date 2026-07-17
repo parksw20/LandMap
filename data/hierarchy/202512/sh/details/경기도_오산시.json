@@ -274,10 +274,8 @@
     "name": "경기도 오산시 오산동",
     "address": "경기도 오산시 오산동",
     "coords": [127.072855925403, 37.1531330002418],
-    "stats": {"total": 15, "sale": {"count": 2, "range": [13800, 30000], "rep_area": 57.0, "rep_avg_price": 13800}, "jeonse": {"count": 2, "range": [9500, 9500], "rep_area": 40.0, "rep_avg_price": 9500}, "monthly": {"count": 11, "range": [200, 2000], "rep_area": 20.0, "rep_avg_price": 300}},
+    "stats": {"total": 13, "sale": null, "jeonse": {"count": 2, "range": [9500, 9500], "rep_area": 40.0, "rep_avg_price": 9500}, "monthly": {"count": 11, "range": [200, 2000], "rep_area": 20.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 30000, "rent": 0, "area": 114.94, "land": 208.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오산동 2**", "by": 1982},
-      {"type": "매매", "price": 13800, "rent": 0, "area": 56.95, "land": 104.8, "floor": "", "dong": "", "date": "2025-12-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오산동 4**", "by": 1987},
       {"type": "전세", "price": 9500, "rent": 0, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "월세", "price": 2000, "rent": 60, "area": 142.92, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 500, "rent": 33, "area": 24.44, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -291,6 +289,24 @@
       {"type": "월세", "price": 300, "rent": 30, "area": 22.375, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 200, "rent": 44, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-07", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "월세", "price": 300, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016}
+    ]
+  },
+  {
+    "name": "경기도 오산시 오산동 287-6",
+    "address": "경기도 오산시 오산동 287-6",
+    "coords": [127.072293553718, 37.1541133361604],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 114.9, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 114.94, "land": 208.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오산동 287-6 (추정)", "by": 1982}
+    ]
+  },
+  {
+    "name": "경기도 오산시 오산동 489-1",
+    "address": "경기도 오산시 오산동 489-1",
+    "coords": [127.066404365128, 37.1513229586049],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13800, 13800], "rep_area": 57.0, "rep_avg_price": 13800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13800, "rent": 0, "area": 56.95, "land": 104.8, "floor": "", "dong": "", "date": "2025-12-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오산동 489-1 (추정)", "by": 1987}
     ]
   },
   {

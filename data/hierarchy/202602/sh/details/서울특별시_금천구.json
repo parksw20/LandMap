@@ -207,13 +207,11 @@
     "name": "서울특별시 금천구 시흥동",
     "address": "서울특별시 금천구 시흥동",
     "coords": [126.908452220723, 37.4476688042386],
-    "stats": {"total": 114, "sale": {"count": 6, "range": [73178, 114904], "rep_area": 120.0, "rep_avg_price": 73178}, "jeonse": {"count": 19, "range": [2000, 20000], "rep_area": 18.0, "rep_avg_price": 3500}, "monthly": {"count": 89, "range": [0, 16000], "rep_area": 18.0, "rep_avg_price": 1175}},
+    "stats": {"total": 112, "sale": {"count": 4, "range": [73178, 114904], "rep_area": 120.0, "rep_avg_price": 73178}, "jeonse": {"count": 19, "range": [2000, 20000], "rep_area": 18.0, "rep_avg_price": 3500}, "monthly": {"count": 89, "range": [0, 16000], "rep_area": 18.0, "rep_avg_price": 1175}},
     "deals": [
-      {"type": "매매", "price": 104000, "rent": 0, "area": 287.28, "land": 199.4, "floor": "", "dong": "", "date": "2026-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 8**", "by": 1986},
       {"type": "매매", "price": 114904, "rent": 0, "area": 254.92, "land": 161.9, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 9**", "by": 1996},
       {"type": "매매", "price": 73178, "rent": 0, "area": 119.99, "land": 105.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 9**", "by": 1974},
       {"type": "매매", "price": 87991, "rent": 0, "area": 179.82, "land": 122.6, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 9**", "by": 1988},
-      {"type": "매매", "price": 101599, "rent": 0, "area": 209.82, "land": 138.9, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 9**", "by": 1989},
       {"type": "매매", "price": 78952, "rent": 0, "area": 169.38, "land": 113.5, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 9**", "by": 1988},
       {"type": "월세", "price": 1000, "rent": 50, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 200, "rent": 43, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -323,6 +321,24 @@
       {"type": "월세", "price": 1000, "rent": 33, "area": 22.8, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "전세", "price": 13000, "rent": 0, "area": 39.13, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 500, "rent": 30, "area": 29.92, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 금천구 시흥동 826-13",
+    "address": "서울특별시 금천구 시흥동 826-13",
+    "coords": [126.909489462978, 37.4524281255342],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [104000, 104000], "rep_area": 287.3, "rep_avg_price": 104000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 104000, "rent": 0, "area": 287.28, "land": 199.4, "floor": "", "dong": "", "date": "2026-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 826-13 (추정)", "by": 1986}
+    ]
+  },
+  {
+    "name": "서울특별시 금천구 시흥동 917-18",
+    "address": "서울특별시 금천구 시흥동 917-18",
+    "coords": [126.908950083778, 37.4496784493156],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [101599, 101599], "rep_area": 209.8, "rep_avg_price": 101599}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 101599, "rent": 0, "area": 209.82, "land": 138.9, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 917-18 (추정)", "by": 1989}
     ]
   }
 ]

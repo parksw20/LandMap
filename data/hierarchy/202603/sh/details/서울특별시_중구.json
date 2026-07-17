@@ -29,20 +29,36 @@
     "name": "서울특별시 중구 남창동",
     "address": "서울특별시 중구 남창동",
     "coords": [126.977559311953, 37.5576969045757],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [146000, 146000], "rep_area": 299.6, "rep_avg_price": 146000}, "jeonse": null, "monthly": {"count": 1, "range": [800, 800], "rep_area": 25.0, "rep_avg_price": 800}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [800, 800], "rep_area": 25.0, "rep_avg_price": 800}},
     "deals": [
-      {"type": "매매", "price": 146000, "rent": 0, "area": 299.61, "land": 158.3, "floor": "", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남창동 2**", "by": 1994},
       {"type": "월세", "price": 800, "rent": 60, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "서울특별시 중구 남창동 203-7",
+    "address": "서울특별시 중구 남창동 203-7",
+    "coords": [126.979456855669, 37.5563793611018],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [146000, 146000], "rep_area": 299.6, "rep_avg_price": 146000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 146000, "rent": 0, "area": 299.61, "land": 158.3, "floor": "", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남창동 203-7 (추정)", "by": 1994}
     ]
   },
   {
     "name": "서울특별시 중구 남학동",
     "address": "서울특별시 중구 남학동",
     "coords": [126.990814223458, 37.5605530385659],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [120000, 130000], "rep_area": 39.6, "rep_avg_price": 130000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 39.6, "rep_avg_price": 130000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 130000, "rent": 0, "area": 39.64, "land": 123.0, "floor": "", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남학동 2*", "by": 0},
-      {"type": "매매", "price": 120000, "rent": 0, "area": 77.22, "land": 116.0, "floor": "", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남학동 2*", "by": 1963}
+      {"type": "매매", "price": 130000, "rent": 0, "area": 39.64, "land": 123.0, "floor": "", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남학동 2*", "by": 0}
+    ]
+  },
+  {
+    "name": "서울특별시 중구 남학동 23-11",
+    "address": "서울특별시 중구 남학동 23-11",
+    "coords": [126.990615736513, 37.5602925447582],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 77.2, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 120000, "rent": 0, "area": 77.22, "land": 116.0, "floor": "", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남학동 23-11 (추정)", "by": 1963}
     ]
   },
   {
@@ -71,12 +87,11 @@
     "name": "서울특별시 중구 신당동",
     "address": "서울특별시 중구 신당동",
     "coords": [127.014442188261, 37.5620157313143],
-    "stats": {"total": 127, "sale": {"count": 7, "range": [85000, 370000], "rep_area": 145.1, "rep_avg_price": 85000}, "jeonse": {"count": 26, "range": [4500, 39000], "rep_area": 27.7, "rep_avg_price": 13000}, "monthly": {"count": 94, "range": [0, 35000], "rep_area": 30.0, "rep_avg_price": 812}},
+    "stats": {"total": 126, "sale": {"count": 6, "range": [85000, 370000], "rep_area": 145.1, "rep_avg_price": 85000}, "jeonse": {"count": 26, "range": [4500, 39000], "rep_area": 27.7, "rep_avg_price": 13000}, "monthly": {"count": 94, "range": [0, 35000], "rep_area": 30.0, "rep_avg_price": 812}},
     "deals": [
       {"type": "매매", "price": 370000, "rent": 0, "area": 491.72, "land": 202.0, "floor": "", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 3**", "by": 1990},
       {"type": "매매", "price": 172800, "rent": 0, "area": 166.86, "land": 106.0, "floor": "", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 3**", "by": 1991},
       {"type": "매매", "price": 233700, "rent": 0, "area": 313.95, "land": 136.0, "floor": "", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 3**", "by": 1991},
-      {"type": "매매", "price": 290000, "rent": 0, "area": 552.53, "land": 248.0, "floor": "", "dong": "", "date": "2026-03-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 2**", "by": 2002},
       {"type": "매매", "price": 320000, "rent": 0, "area": 491.98, "land": 169.0, "floor": "", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 3**", "by": 1993},
       {"type": "매매", "price": 370000, "rent": 0, "area": 528.52, "land": 212.0, "floor": "", "dong": "", "date": "2026-03-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 2**", "by": 1989},
       {"type": "매매", "price": 85000, "rent": 0, "area": 145.09, "land": 118.4, "floor": "", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 8**", "by": 1980},
@@ -203,6 +218,15 @@
     ]
   },
   {
+    "name": "서울특별시 중구 신당동 236-77",
+    "address": "서울특별시 중구 신당동 236-77",
+    "coords": [127.01110767224, 37.5618606701945],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [290000, 290000], "rep_area": 552.5, "rep_avg_price": 290000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 290000, "rent": 0, "area": 552.53, "land": 248.0, "floor": "", "dong": "", "date": "2026-03-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신당동 236-77 (추정)", "by": 2002}
+    ]
+  },
+  {
     "name": "서울특별시 중구 쌍림동",
     "address": "서울특별시 중구 쌍림동",
     "coords": [127.004210503561, 37.5635266097207],
@@ -267,6 +291,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 40.0, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1968}
+    ]
+  },
+  {
+    "name": "서울특별시 중구 충무로4가 99-4",
+    "address": "서울특별시 중구 충무로4가 99-4",
+    "coords": [126.996946074083, 37.5623656212158],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [155011, 155011], "rep_area": 38.2, "rep_avg_price": 155011}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 155011, "rent": 0, "area": 38.21, "land": 58.5, "floor": "", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "충무로4가 99-4 (추정)", "by": 1955}
     ]
   },
   {
@@ -371,9 +404,8 @@
     "name": "중구 충무로4가",
     "address": "중구 충무로4가",
     "coords": [126.994327234401, 37.5622651534103],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [107203, 155011], "rep_area": 38.2, "rep_avg_price": 155011}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [107203, 107203], "rep_area": 77.8, "rep_avg_price": 107203}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 155011, "rent": 0, "area": 38.21, "land": 58.5, "floor": "", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "충무로4가 9*", "by": 1955},
       {"type": "매매", "price": 107203, "rent": 0, "area": 77.78, "land": 41.7, "floor": "", "dong": "", "date": "2026-03-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "충무로4가 9*", "by": 1970}
     ]
   }

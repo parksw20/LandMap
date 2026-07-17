@@ -298,9 +298,8 @@
     "name": "경기도 용인시 기흥구 신갈동",
     "address": "경기도 용인시 기흥구 신갈동",
     "coords": [127.107034404588, 37.272546586554],
-    "stats": {"total": 19, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 129.1, "rep_avg_price": 43000}, "jeonse": {"count": 3, "range": [6000, 9000], "rep_area": 45.0, "rep_avg_price": 7500}, "monthly": {"count": 15, "range": [200, 3000], "rep_area": 25.0, "rep_avg_price": 266}},
+    "stats": {"total": 18, "sale": null, "jeonse": {"count": 3, "range": [6000, 9000], "rep_area": 45.0, "rep_avg_price": 7500}, "monthly": {"count": 15, "range": [200, 3000], "rep_area": 25.0, "rep_avg_price": 266}},
     "deals": [
-      {"type": "매매", "price": 43000, "rent": 0, "area": 129.07, "land": 155.0, "floor": "", "dong": "", "date": "2026-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신갈동 4**", "by": 1984},
       {"type": "월세", "price": 500, "rent": 40, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-29", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 500, "rent": 40, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-25", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985},
       {"type": "월세", "price": 1000, "rent": 45, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-18", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
@@ -319,6 +318,15 @@
       {"type": "월세", "price": 3000, "rent": 25, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-01", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "전세", "price": 6000, "rent": 0, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-05", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "전세", "price": 9000, "rent": 0, "area": 38.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-03", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997}
+    ]
+  },
+  {
+    "name": "경기도 용인시 기흥구 신갈동 429-24",
+    "address": "경기도 용인시 기흥구 신갈동 429-24",
+    "coords": [127.101486870514, 37.2737439090702],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 129.1, "rep_avg_price": 43000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43000, "rent": 0, "area": 129.07, "land": 155.0, "floor": "", "dong": "", "date": "2026-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신갈동 429-24 (추정)", "by": 1984}
     ]
   },
   {
@@ -431,10 +439,18 @@
     "name": "경기도 용인시 기흥구 하갈동",
     "address": "경기도 용인시 기흥구 하갈동",
     "coords": [127.092690974644, 37.2526600728182],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 240.9, "rep_avg_price": 85000}, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 153.1, "rep_avg_price": 10000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 153.1, "rep_avg_price": 10000}},
     "deals": [
-      {"type": "매매", "price": 85000, "rent": 0, "area": 240.91, "land": 354.0, "floor": "", "dong": "", "date": "2026-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하갈동 3**", "by": 2018},
       {"type": "월세", "price": 10000, "rent": 150, "area": 153.14, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-27", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017}
+    ]
+  },
+  {
+    "name": "경기도 용인시 기흥구 하갈동 323-43",
+    "address": "경기도 용인시 기흥구 하갈동 323-43",
+    "coords": [127.087017854604, 37.2614965810788],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 240.9, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 85000, "rent": 0, "area": 240.91, "land": 354.0, "floor": "", "dong": "", "date": "2026-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하갈동 323-43 (추정)", "by": 2018}
     ]
   }
 ]

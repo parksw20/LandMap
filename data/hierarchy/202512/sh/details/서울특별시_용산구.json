@@ -59,9 +59,8 @@
     "name": "서울특별시 용산구 보광동",
     "address": "서울특별시 용산구 보광동",
     "coords": [127.000171956489, 37.5262721673188],
-    "stats": {"total": 15, "sale": {"count": 1, "range": [1000000, 1000000], "rep_area": 340.5, "rep_avg_price": 1000000}, "jeonse": {"count": 3, "range": [13000, 35000], "rep_area": 65.4, "rep_avg_price": 35000}, "monthly": {"count": 11, "range": [300, 16500], "rep_area": 39.6, "rep_avg_price": 1000}},
+    "stats": {"total": 14, "sale": null, "jeonse": {"count": 3, "range": [13000, 35000], "rep_area": 65.4, "rep_avg_price": 35000}, "monthly": {"count": 11, "range": [300, 16500], "rep_area": 39.6, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 1000000, "rent": 0, "area": 340.51, "land": 294.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "보광동 2**", "by": 1969},
       {"type": "월세", "price": 1000, "rent": 70, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-15", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 2000, "rent": 100, "area": 82.53, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "26.02~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985},
       {"type": "전세", "price": 30000, "rent": 0, "area": 75.87, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-21", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1977},
@@ -76,6 +75,15 @@
       {"type": "월세", "price": 500, "rent": 45, "area": 39.46, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 1000, "rent": 70, "area": 42.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1971},
       {"type": "전세", "price": 13000, "rent": 0, "area": 84.31, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~27.12", "renew": "갱신", "p_dep": 12500, "p_rent": 0, "jibun": "", "by": 1988}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 보광동 284",
+    "address": "서울특별시 용산구 보광동 284",
+    "coords": [126.999683008094, 37.5271449676963],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1000000, 1000000], "rep_area": 340.5, "rep_avg_price": 1000000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1000000, "rent": 0, "area": 340.51, "land": 294.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "보광동 284 (추정)", "by": 1969}
     ]
   },
   {
@@ -242,12 +250,9 @@
     "name": "서울특별시 용산구 이태원동",
     "address": "서울특별시 용산구 이태원동",
     "coords": [126.991527297365, 37.5402662116134],
-    "stats": {"total": 59, "sale": {"count": 5, "range": [68300, 1080000], "rep_area": 58.3, "rep_avg_price": 78000}, "jeonse": {"count": 10, "range": [6300, 40000], "rep_area": 10.0, "rep_avg_price": 10000}, "monthly": {"count": 44, "range": [0, 15000], "rep_area": 47.8, "rep_avg_price": 4500}},
+    "stats": {"total": 56, "sale": {"count": 2, "range": [68300, 78000], "rep_area": 58.3, "rep_avg_price": 78000}, "jeonse": {"count": 10, "range": [6300, 40000], "rep_area": 10.0, "rep_avg_price": 10000}, "monthly": {"count": 44, "range": [0, 15000], "rep_area": 47.8, "rep_avg_price": 4500}},
     "deals": [
-      {"type": "매매", "price": 604200, "rent": 0, "area": 238.25, "land": 235.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 4*", "by": 1970},
-      {"type": "매매", "price": 1080000, "rent": 0, "area": 652.62, "land": 443.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 4*", "by": 2000},
       {"type": "매매", "price": 68300, "rent": 0, "area": 91.53, "land": 60.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 2**", "by": 1998},
-      {"type": "매매", "price": 105000, "rent": 0, "area": 79.63, "land": 109.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 3**", "by": 2006},
       {"type": "매매", "price": 78000, "rent": 0, "area": 58.31, "land": 79.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 3**", "by": 1961},
       {"type": "월세", "price": 800, "rent": 123, "area": 59.59, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "26.02~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 250, "area": 96.57, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-12", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
@@ -303,6 +308,33 @@
       {"type": "월세", "price": 6000, "rent": 11, "area": 29.63, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "전세", "price": 6300, "rent": 0, "area": 32.33, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-06", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "전세", "price": 24500, "rent": 0, "area": 98.07, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "26.01~28.01", "renew": "갱신", "p_dep": 24500, "p_rent": 0, "jibun": "", "by": 1998}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 이태원동 393",
+    "address": "서울특별시 용산구 이태원동 393",
+    "coords": [126.989081210702, 37.536394052261],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 79.6, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 79.63, "land": 109.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 393 (추정)", "by": 2006}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 이태원동 44-58",
+    "address": "서울특별시 용산구 이태원동 44-58",
+    "coords": [126.991569641507, 37.5319956598577],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1080000, 1080000], "rep_area": 652.6, "rep_avg_price": 1080000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1080000, "rent": 0, "area": 652.62, "land": 443.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 44-58 (추정)", "by": 2000}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 이태원동 44-59",
+    "address": "서울특별시 용산구 이태원동 44-59",
+    "coords": [126.991696704162, 37.531916470851],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [604200, 604200], "rep_area": 238.2, "rep_avg_price": 604200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 604200, "rent": 0, "area": 238.25, "land": 235.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 44-59 (추정)", "by": 1970}
     ]
   },
   {
@@ -520,10 +552,8 @@
     "name": "서울특별시 용산구 후암동",
     "address": "서울특별시 용산구 후암동",
     "coords": [126.978150463736, 37.5486798277286],
-    "stats": {"total": 44, "sale": {"count": 4, "range": [69000, 132000], "rep_area": 20.7, "rep_avg_price": 70000}, "jeonse": {"count": 10, "range": [14000, 49000], "rep_area": 26.4, "rep_avg_price": 14000}, "monthly": {"count": 30, "range": [200, 15000], "rep_area": 59.4, "rep_avg_price": 12000}},
+    "stats": {"total": 42, "sale": {"count": 2, "range": [69000, 97500], "rep_area": 30.0, "rep_avg_price": 97500}, "jeonse": {"count": 10, "range": [14000, 49000], "rep_area": 26.4, "rep_avg_price": 14000}, "monthly": {"count": 30, "range": [200, 15000], "rep_area": 59.4, "rep_avg_price": 12000}},
     "deals": [
-      {"type": "매매", "price": 132000, "rent": 0, "area": 160.65, "land": 123.7, "floor": "", "dong": "", "date": "2025-12-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 4**", "by": 1986},
-      {"type": "매매", "price": 70000, "rent": 0, "area": 20.66, "land": 34.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 1**", "by": 1973},
       {"type": "매매", "price": 69000, "rent": 0, "area": 33.06, "land": 33.0, "floor": "", "dong": "", "date": "2025-12-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 1**", "by": 1959},
       {"type": "매매", "price": 97500, "rent": 0, "area": 30.02, "land": 59.5, "floor": "", "dong": "", "date": "2025-12-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 1**", "by": 1958},
       {"type": "월세", "price": 15000, "rent": 60, "area": 52.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -566,6 +596,24 @@
       {"type": "월세", "price": 3000, "rent": 65, "area": 24.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 500, "rent": 40, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 500, "rent": 40, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "25.12~27.11", "renew": "갱신", "p_dep": 500, "p_rent": 30, "jibun": "", "by": 1966}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 후암동 142-74",
+    "address": "서울특별시 용산구 후암동 142-74",
+    "coords": [126.974308663349, 37.5477649911344],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 20.7, "rep_avg_price": 70000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 70000, "rent": 0, "area": 20.66, "land": 34.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 142-74 (추정)", "by": 1973}
+    ]
+  },
+  {
+    "name": "서울특별시 용산구 후암동 402-29",
+    "address": "서울특별시 용산구 후암동 402-29",
+    "coords": [126.983113159533, 37.5480002976055],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [132000, 132000], "rep_area": 160.6, "rep_avg_price": 132000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 132000, "rent": 0, "area": 160.65, "land": 123.7, "floor": "", "dong": "", "date": "2025-12-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 402-29 (추정)", "by": 1986}
     ]
   }
 ]

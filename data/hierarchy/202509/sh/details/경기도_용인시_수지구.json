@@ -150,11 +150,8 @@
     "name": "경기도 용인시 수지구 풍덕천동",
     "address": "경기도 용인시 수지구 풍덕천동",
     "coords": [127.094949785208, 37.3279850450601],
-    "stats": {"total": 98, "sale": {"count": 3, "range": [105000, 365680], "rep_area": 150.2, "rep_avg_price": 256570}, "jeonse": {"count": 12, "range": [3700, 16000], "rep_area": 42.9, "rep_avg_price": 16000}, "monthly": {"count": 83, "range": [250, 13000], "rep_area": 20.0, "rep_avg_price": 576}},
+    "stats": {"total": 95, "sale": null, "jeonse": {"count": 12, "range": [3700, 16000], "rep_area": 42.9, "rep_avg_price": 16000}, "monthly": {"count": 83, "range": [250, 13000], "rep_area": 20.0, "rep_avg_price": 576}},
     "deals": [
-      {"type": "매매", "price": 105000, "rent": 0, "area": 417.48, "land": 176.2, "floor": "", "dong": "", "date": "2025-09-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 6**", "by": 1997},
-      {"type": "매매", "price": 256570, "rent": 0, "area": 150.15, "land": 205.0, "floor": "", "dong": "", "date": "2025-09-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 8*", "by": 1990},
-      {"type": "매매", "price": 365680, "rent": 0, "area": 469.42, "land": 314.0, "floor": "", "dong": "", "date": "2025-09-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 8*", "by": 1995},
       {"type": "월세", "price": 1000, "rent": 55, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 500, "rent": 55, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "전세", "price": 5000, "rent": 0, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
@@ -250,6 +247,33 @@
       {"type": "월세", "price": 300, "rent": 35, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-01", "period": "25.09~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 500, "rent": 38, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-02", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "전세", "price": 9500, "rent": 0, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-02", "period": "25.09~27.09", "renew": "갱신", "p_dep": 9000, "p_rent": 0, "jibun": "", "by": 2002}
+    ]
+  },
+  {
+    "name": "경기도 용인시 수지구 풍덕천동 676-3",
+    "address": "경기도 용인시 수지구 풍덕천동 676-3",
+    "coords": [127.101499755586, 37.3320133464705],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 417.5, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 417.48, "land": 176.2, "floor": "", "dong": "", "date": "2025-09-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 676-3 (추정)", "by": 1997}
+    ]
+  },
+  {
+    "name": "경기도 용인시 수지구 풍덕천동 85-23",
+    "address": "경기도 용인시 수지구 풍덕천동 85-23",
+    "coords": [127.101822857435, 37.3231863783391],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [256570, 256570], "rep_area": 150.2, "rep_avg_price": 256570}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 256570, "rent": 0, "area": 150.15, "land": 205.0, "floor": "", "dong": "", "date": "2025-09-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 85-23 (추정)", "by": 1990}
+    ]
+  },
+  {
+    "name": "경기도 용인시 수지구 풍덕천동 85-27",
+    "address": "경기도 용인시 수지구 풍덕천동 85-27",
+    "coords": [127.101581363577, 37.3232328088814],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [365680, 365680], "rep_area": 469.4, "rep_avg_price": 365680}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 365680, "rent": 0, "area": 469.42, "land": 314.0, "floor": "", "dong": "", "date": "2025-09-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 85-27 (추정)", "by": 1995}
     ]
   }
 ]

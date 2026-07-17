@@ -92,10 +92,9 @@
     "name": "서울특별시 송파구 마천동",
     "address": "서울특별시 송파구 마천동",
     "coords": [127.149903613068, 37.4960258496317],
-    "stats": {"total": 61, "sale": {"count": 2, "range": [44000, 69000], "rep_area": 21.8, "rep_avg_price": 44000}, "jeonse": {"count": 21, "range": [4000, 30000], "rep_area": 30.5, "rep_avg_price": 8000}, "monthly": {"count": 38, "range": [50, 14500], "rep_area": 30.0, "rep_avg_price": 775}},
+    "stats": {"total": 60, "sale": {"count": 1, "range": [44000, 44000], "rep_area": 21.8, "rep_avg_price": 44000}, "jeonse": {"count": 21, "range": [4000, 30000], "rep_area": 30.5, "rep_avg_price": 8000}, "monthly": {"count": 38, "range": [50, 14500], "rep_area": 30.0, "rep_avg_price": 775}},
     "deals": [
       {"type": "매매", "price": 44000, "rent": 0, "area": 21.76, "land": 31.7, "floor": "", "dong": "", "date": "2025-09-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 3**", "by": 1985},
-      {"type": "매매", "price": 69000, "rent": 0, "area": 41.41, "land": 91.5, "floor": "", "dong": "", "date": "2025-09-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 3**", "by": 1983},
       {"type": "전세", "price": 5500, "rent": 0, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "전세", "price": 13000, "rent": 0, "area": 61.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "전세", "price": 13000, "rent": 0, "area": 61.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -155,6 +154,15 @@
       {"type": "전세", "price": 8000, "rent": 0, "area": 30.54, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-03", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 3300, "rent": 15, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-01", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "전세", "price": 4000, "rent": 0, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-02", "period": "25.09~27.09", "renew": "갱신", "p_dep": 4000, "p_rent": 0, "jibun": "", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 마천동 341-18",
+    "address": "서울특별시 송파구 마천동 341-18",
+    "coords": [127.154068712226, 37.5008729464053],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [69000, 69000], "rep_area": 41.4, "rep_avg_price": 69000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 69000, "rent": 0, "area": 41.41, "land": 91.5, "floor": "", "dong": "", "date": "2025-09-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 341-18 (추정)", "by": 1983}
     ]
   },
   {
@@ -428,11 +436,9 @@
     "name": "서울특별시 송파구 잠실동",
     "address": "서울특별시 송파구 잠실동",
     "coords": [127.088282780728, 37.5119564733931],
-    "stats": {"total": 65, "sale": {"count": 3, "range": [129000, 531000], "rep_area": 120.1, "rep_avg_price": 129000}, "jeonse": {"count": 9, "range": [5512, 28000], "rep_area": 17.2, "rep_avg_price": 17000}, "monthly": {"count": 53, "range": [500, 41000], "rep_area": 30.0, "rep_avg_price": 2083}},
+    "stats": {"total": 63, "sale": {"count": 1, "range": [129000, 129000], "rep_area": 120.1, "rep_avg_price": 129000}, "jeonse": {"count": 9, "range": [5512, 28000], "rep_area": 17.2, "rep_avg_price": 17000}, "monthly": {"count": 53, "range": [500, 41000], "rep_area": 30.0, "rep_avg_price": 2083}},
     "deals": [
-      {"type": "매매", "price": 531000, "rent": 0, "area": 779.71, "land": 295.8, "floor": "", "dong": "", "date": "2025-09-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 2**", "by": 1990},
       {"type": "매매", "price": 129000, "rent": 0, "area": 120.1, "land": 103.6, "floor": "", "dong": "", "date": "2025-09-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 2**", "by": 1979},
-      {"type": "매매", "price": 133000, "rent": 0, "area": 126.24, "land": 101.2, "floor": "", "dong": "", "date": "2025-09-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 2**", "by": 1979},
       {"type": "월세", "price": 25000, "rent": 9, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 6000, "rent": 43, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 2500, "rent": 86, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -495,6 +501,24 @@
       {"type": "전세", "price": 7000, "rent": 0, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-01", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 20000, "rent": 30, "area": 46.28, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-03", "period": "25.11~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 12000, "rent": 8, "area": 38.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-03", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1979}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 잠실동 213-26",
+    "address": "서울특별시 송파구 잠실동 213-26",
+    "coords": [127.083752020677, 37.5086088476955],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [133000, 133000], "rep_area": 126.2, "rep_avg_price": 133000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 133000, "rent": 0, "area": 126.24, "land": 101.2, "floor": "", "dong": "", "date": "2025-09-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 213-26 (추정)", "by": 1979}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 잠실동 224-8",
+    "address": "서울특별시 송파구 잠실동 224-8",
+    "coords": [127.081202149738, 37.5074849128675],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [531000, 531000], "rep_area": 779.7, "rep_avg_price": 531000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 531000, "rent": 0, "area": 779.71, "land": 295.8, "floor": "", "dong": "", "date": "2025-09-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 224-8 (추정)", "by": 1990}
     ]
   },
   {

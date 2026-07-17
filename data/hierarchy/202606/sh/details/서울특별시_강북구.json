@@ -3,14 +3,12 @@
     "name": "서울특별시 강북구 미아동",
     "address": "서울특별시 강북구 미아동",
     "coords": [127.027060776679, 37.6270831294021],
-    "stats": {"total": 135, "sale": {"count": 6, "range": [29700, 110000], "rep_area": 49.6, "rep_avg_price": 35000}, "jeonse": {"count": 40, "range": [2000, 28300], "rep_area": 20.0, "rep_avg_price": 5950}, "monthly": {"count": 89, "range": [50, 13000], "rep_area": 14.0, "rep_avg_price": 366}},
+    "stats": {"total": 133, "sale": {"count": 4, "range": [29700, 66000], "rep_area": 49.6, "rep_avg_price": 35000}, "jeonse": {"count": 40, "range": [2000, 28300], "rep_area": 20.0, "rep_avg_price": 5950}, "monthly": {"count": 89, "range": [50, 13000], "rep_area": 14.0, "rep_avg_price": 366}},
     "deals": [
       {"type": "매매", "price": 35000, "rent": 0, "area": 49.58, "land": 73.0, "floor": "", "dong": "", "date": "2026-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 *", "by": 1968},
-      {"type": "매매", "price": 40500, "rent": 0, "area": 72.26, "land": 99.0, "floor": "", "dong": "", "date": "2026-06-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 8**", "by": 1967},
       {"type": "매매", "price": 29700, "rent": 0, "area": 58.02, "land": 99.0, "floor": "", "dong": "", "date": "2026-06-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 8**", "by": 1970},
       {"type": "매매", "price": 66000, "rent": 0, "area": 174.42, "land": 111.1, "floor": "", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 3**", "by": 1993},
       {"type": "매매", "price": 49000, "rent": 0, "area": 148.72, "land": 99.0, "floor": "", "dong": "", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 4**", "by": 1991},
-      {"type": "매매", "price": 110000, "rent": 0, "area": 280.12, "land": 124.6, "floor": "", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 2**", "by": 1996},
       {"type": "전세", "price": 5513, "rent": 0, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "전세", "price": 8000, "rent": 0, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "전세", "price": 6900, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
@@ -143,6 +141,24 @@
     ]
   },
   {
+    "name": "서울특별시 강북구 미아동 217-55",
+    "address": "서울특별시 강북구 미아동 217-55",
+    "coords": [127.023819808281, 37.6292952995155],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [110000, 110000], "rep_area": 280.1, "rep_avg_price": 110000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 110000, "rent": 0, "area": 280.12, "land": 124.6, "floor": "", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 217-55 (추정)", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 강북구 미아동 839-208",
+    "address": "서울특별시 강북구 미아동 839-208",
+    "coords": [127.015526251815, 37.6208510105362],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40500, 40500], "rep_area": 72.3, "rep_avg_price": 40500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40500, "rent": 0, "area": 72.26, "land": 99.0, "floor": "", "dong": "", "date": "2026-06-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 839-208 (추정)", "by": 1967}
+    ]
+  },
+  {
     "name": "서울특별시 강북구 번동",
     "address": "서울특별시 강북구 번동",
     "coords": [127.04133717608, 37.6241057350223],
@@ -201,10 +217,9 @@
     "name": "서울특별시 강북구 수유동",
     "address": "서울특별시 강북구 수유동",
     "coords": [127.022094520762, 37.6424621841481],
-    "stats": {"total": 157, "sale": {"count": 3, "range": [47700, 118743], "rep_area": 45.4, "rep_avg_price": 83000}, "jeonse": {"count": 25, "range": [2000, 24000], "rep_area": 30.0, "rep_avg_price": 12950}, "monthly": {"count": 129, "range": [100, 17000], "rep_area": 18.0, "rep_avg_price": 300}},
+    "stats": {"total": 156, "sale": {"count": 2, "range": [47700, 83000], "rep_area": 45.4, "rep_avg_price": 83000}, "jeonse": {"count": 25, "range": [2000, 24000], "rep_area": 30.0, "rep_avg_price": 12950}, "monthly": {"count": 129, "range": [100, 17000], "rep_area": 18.0, "rep_avg_price": 300}},
     "deals": [
       {"type": "매매", "price": 83000, "rent": 0, "area": 45.45, "land": 109.0, "floor": "", "dong": "", "date": "2026-06-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 4**", "by": 1971},
-      {"type": "매매", "price": 118743, "rent": 0, "area": 284.6, "land": 145.0, "floor": "", "dong": "", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 2**", "by": 2016},
       {"type": "매매", "price": 47700, "rent": 0, "area": 171.2, "land": 99.0, "floor": "", "dong": "", "date": "2026-06-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 3**", "by": 1994},
       {"type": "월세", "price": 6000, "rent": 20, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-26", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 1000, "rent": 51, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-17", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -363,13 +378,20 @@
     ]
   },
   {
+    "name": "서울특별시 강북구 수유동 270-4",
+    "address": "서울특별시 강북구 수유동 270-4",
+    "coords": [127.018669027788, 37.647698573654],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [118743, 118743], "rep_area": 284.6, "rep_avg_price": 118743}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 118743, "rent": 0, "area": 284.6, "land": 145.0, "floor": "", "dong": "", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 270-4 (추정)", "by": 2016}
+    ]
+  },
+  {
     "name": "서울특별시 강북구 우이동",
     "address": "서울특별시 강북구 우이동",
     "coords": [127.001890452891, 37.6630390800112],
-    "stats": {"total": 10, "sale": {"count": 2, "range": [59000, 59000], "rep_area": 200.0, "rep_avg_price": 59000}, "jeonse": {"count": 2, "range": [7000, 18000], "rep_area": 30.2, "rep_avg_price": 7000}, "monthly": {"count": 6, "range": [300, 4000], "rep_area": 19.5, "rep_avg_price": 4000}},
+    "stats": {"total": 8, "sale": null, "jeonse": {"count": 2, "range": [7000, 18000], "rep_area": 30.2, "rep_avg_price": 7000}, "monthly": {"count": 6, "range": [300, 4000], "rep_area": 19.5, "rep_avg_price": 4000}},
     "deals": [
-      {"type": "매매", "price": 59000, "rent": 0, "area": 200.02, "land": 136.0, "floor": "", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우이동 2*", "by": 2006},
-      {"type": "매매", "price": 59000, "rent": 0, "area": 200.02, "land": 136.0, "floor": "", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우이동 2*", "by": 2006},
       {"type": "월세", "price": 4000, "rent": 45, "area": 19.54, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-16", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "전세", "price": 18000, "rent": 0, "area": 39.58, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-20", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1968},
       {"type": "전세", "price": 7000, "rent": 0, "area": 30.15, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-01", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1977},
@@ -378,6 +400,16 @@
       {"type": "월세", "price": 300, "rent": 35, "area": 30.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-08", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 70, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-03", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 2000, "rent": 55, "area": 46.55, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-02", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016}
+    ]
+  },
+  {
+    "name": "서울특별시 강북구 우이동 21-39",
+    "address": "서울특별시 강북구 우이동 21-39",
+    "coords": [127.013007769896, 37.6612394786591],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [59000, 59000], "rep_area": 200.0, "rep_avg_price": 59000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 59000, "rent": 0, "area": 200.02, "land": 136.0, "floor": "", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우이동 21-39 (추정)", "by": 2006},
+      {"type": "매매", "price": 59000, "rent": 0, "area": 200.02, "land": 136.0, "floor": "", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우이동 21-39 (추정)", "by": 2006}
     ]
   }
 ]

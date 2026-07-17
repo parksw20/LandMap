@@ -110,10 +110,8 @@
     "name": "서울특별시 영등포구 대림동",
     "address": "서울특별시 영등포구 대림동",
     "coords": [126.902006335554, 37.4925087229046],
-    "stats": {"total": 123, "sale": {"count": 2, "range": [82000, 82000], "rep_area": 240.0, "rep_avg_price": 82000}, "jeonse": {"count": 22, "range": [5000, 20000], "rep_area": 30.0, "rep_avg_price": 8333}, "monthly": {"count": 99, "range": [100, 8000], "rep_area": 25.0, "rep_avg_price": 730}},
+    "stats": {"total": 121, "sale": null, "jeonse": {"count": 22, "range": [5000, 20000], "rep_area": 30.0, "rep_avg_price": 8333}, "monthly": {"count": 99, "range": [100, 8000], "rep_area": 25.0, "rep_avg_price": 730}},
     "deals": [
-      {"type": "매매", "price": 82000, "rent": 0, "area": 240.05, "land": 188.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대림동 8**", "by": 1990},
-      {"type": "매매", "price": 82000, "rent": 0, "area": 240.05, "land": 188.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대림동 8**", "by": 1990},
       {"type": "월세", "price": 5000, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 3000, "rent": 71, "area": 42.9, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
       {"type": "전세", "price": 20000, "rent": 0, "area": 56.94, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -238,14 +236,23 @@
     ]
   },
   {
+    "name": "서울특별시 영등포구 대림동 856-13",
+    "address": "서울특별시 영등포구 대림동 856-13",
+    "coords": [126.903177568722, 37.4934092538502],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [82000, 82000], "rep_area": 240.0, "rep_avg_price": 82000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 82000, "rent": 0, "area": 240.05, "land": 188.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대림동 856-13 (추정)", "by": 1990},
+      {"type": "매매", "price": 82000, "rent": 0, "area": 240.05, "land": 188.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대림동 856-13 (추정)", "by": 1990}
+    ]
+  },
+  {
     "name": "서울특별시 영등포구 도림동",
     "address": "서울특별시 영등포구 도림동",
     "coords": [126.895944463887, 37.5094388403258],
-    "stats": {"total": 43, "sale": {"count": 3, "range": [65000, 70000], "rep_area": 41.6, "rep_avg_price": 65000}, "jeonse": {"count": 7, "range": [5500, 19500], "rep_area": 13.0, "rep_avg_price": 6000}, "monthly": {"count": 33, "range": [200, 20000], "rep_area": 20.0, "rep_avg_price": 500}},
+    "stats": {"total": 42, "sale": {"count": 2, "range": [65000, 65000], "rep_area": 41.6, "rep_avg_price": 65000}, "jeonse": {"count": 7, "range": [5500, 19500], "rep_area": 13.0, "rep_avg_price": 6000}, "monthly": {"count": 33, "range": [200, 20000], "rep_area": 20.0, "rep_avg_price": 500}},
     "deals": [
       {"type": "매매", "price": 65000, "rent": 0, "area": 41.65, "land": 66.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도림동 6*", "by": 1971},
       {"type": "매매", "price": 65000, "rent": 0, "area": 145.47, "land": 76.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도림동 2**", "by": 1992},
-      {"type": "매매", "price": 70000, "rent": 0, "area": 171.57, "land": 133.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도림동 9*", "by": 1985},
       {"type": "월세", "price": 500, "rent": 30, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
       {"type": "전세", "price": 6000, "rent": 0, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1978},
       {"type": "월세", "price": 2000, "rent": 80, "area": 31.23, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -289,6 +296,15 @@
     ]
   },
   {
+    "name": "서울특별시 영등포구 도림동 99-1",
+    "address": "서울특별시 영등포구 도림동 99-1",
+    "coords": [126.907389829255, 37.5109539463178],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 171.6, "rep_avg_price": 70000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 70000, "rent": 0, "area": 171.57, "land": 133.0, "floor": "", "dong": "", "date": "2026-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도림동 99-1 (추정)", "by": 1985}
+    ]
+  },
+  {
     "name": "서울특별시 영등포구 문래동3가",
     "address": "서울특별시 영등포구 문래동3가",
     "coords": [126.896816819326, 37.5165971793933],
@@ -310,18 +326,12 @@
     "name": "서울특별시 영등포구 신길동",
     "address": "서울특별시 영등포구 신길동",
     "coords": [126.91406973946, 37.5041663202167],
-    "stats": {"total": 193, "sale": {"count": 11, "range": [66000, 215170], "rep_area": 39.7, "rep_avg_price": 215170}, "jeonse": {"count": 31, "range": [2500, 25000], "rep_area": 30.0, "rep_avg_price": 6833}, "monthly": {"count": 151, "range": [0, 18000], "rep_area": 18.0, "rep_avg_price": 1020}},
+    "stats": {"total": 187, "sale": {"count": 5, "range": [75000, 182000], "rep_area": 149.4, "rep_avg_price": 182000}, "jeonse": {"count": 31, "range": [2500, 25000], "rep_area": 30.0, "rep_avg_price": 6833}, "monthly": {"count": 151, "range": [0, 18000], "rep_area": 18.0, "rep_avg_price": 1020}},
     "deals": [
       {"type": "매매", "price": 75000, "rent": 0, "area": 172.59, "land": 106.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 3**", "by": 1983},
       {"type": "매매", "price": 180000, "rent": 0, "area": 229.0, "land": 126.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 1**", "by": 1994},
-      {"type": "매매", "price": 69200, "rent": 0, "area": 98.28, "land": 70.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 3**", "by": 1992},
       {"type": "매매", "price": 122500, "rent": 0, "area": 172.85, "land": 116.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 2**", "by": 1992},
-      {"type": "매매", "price": 66000, "rent": 0, "area": 79.0, "land": 58.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 2**", "by": 1970},
-      {"type": "매매", "price": 215170, "rent": 0, "area": 39.67, "land": 129.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 1**", "by": 1957},
-      {"type": "매매", "price": 120000, "rent": 0, "area": 154.04, "land": 103.3, "floor": "", "dong": "", "date": "2026-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 1**", "by": 1988},
       {"type": "매매", "price": 105000, "rent": 0, "area": 187.08, "land": 116.0, "floor": "", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 4**", "by": 1991},
-      {"type": "매매", "price": 178002, "rent": 0, "area": 405.62, "land": 202.9, "floor": "", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 9**", "by": 1995},
-      {"type": "매매", "price": 106200, "rent": 0, "area": 185.49, "land": 116.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 1**", "by": 1992},
       {"type": "매매", "price": 182000, "rent": 0, "area": 149.35, "land": 109.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 3***", "by": 1991},
       {"type": "월세", "price": 5000, "rent": 84, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 300, "rent": 45, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1966},
@@ -505,6 +515,60 @@
       {"type": "월세", "price": 500, "rent": 46, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 5500, "rent": 15, "area": 29.7, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~28.02", "renew": "갱신", "p_dep": 5500, "p_rent": 15, "jibun": "", "by": 1993},
       {"type": "월세", "price": 500, "rent": 50, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 신길동 120-42",
+    "address": "서울특별시 영등포구 신길동 120-42",
+    "coords": [126.920572683595, 37.5094618424999],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 154.0, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 120000, "rent": 0, "area": 154.04, "land": 103.3, "floor": "", "dong": "", "date": "2026-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 120-42 (추정)", "by": 1988}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 신길동 166-29",
+    "address": "서울특별시 영등포구 신길동 166-29",
+    "coords": [126.915903038811, 37.5123190283153],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [106200, 106200], "rep_area": 185.5, "rep_avg_price": 106200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 106200, "rent": 0, "area": 185.49, "land": 116.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 166-29 (추정)", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 신길동 194-53",
+    "address": "서울특별시 영등포구 신길동 194-53",
+    "coords": [126.914168545462, 37.5118072718032],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [215170, 215170], "rep_area": 39.7, "rep_avg_price": 215170}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 215170, "rent": 0, "area": 39.67, "land": 129.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 194-53 (추정)", "by": 1957}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 신길동 278-71",
+    "address": "서울특별시 영등포구 신길동 278-71",
+    "coords": [126.908707492171, 37.5091156618924],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 79.0, "rep_avg_price": 66000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 66000, "rent": 0, "area": 79.0, "land": 58.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 278-71 (추정)", "by": 1970}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 신길동 347-29",
+    "address": "서울특별시 영등포구 신길동 347-29",
+    "coords": [126.904733632064, 37.5053575867429],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [69200, 69200], "rep_area": 98.3, "rep_avg_price": 69200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 69200, "rent": 0, "area": 98.28, "land": 70.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 347-29 (추정)", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 신길동 937",
+    "address": "서울특별시 영등포구 신길동 937",
+    "coords": [126.921130034172, 37.5071208653116],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [178002, 178002], "rep_area": 405.6, "rep_avg_price": 178002}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 178002, "rent": 0, "area": 405.62, "land": 202.9, "floor": "", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 937 (추정)", "by": 1995}
     ]
   },
   {

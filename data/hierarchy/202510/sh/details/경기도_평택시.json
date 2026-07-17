@@ -660,9 +660,8 @@
     "name": "경기도 평택시 서정동",
     "address": "경기도 평택시 서정동",
     "coords": [127.054711085274, 37.067768614195],
-    "stats": {"total": 17, "sale": {"count": 1, "range": [56000, 56000], "rep_area": 227.0, "rep_avg_price": 56000}, "jeonse": {"count": 3, "range": [5000, 10000], "rep_area": 41.4, "rep_avg_price": 10000}, "monthly": {"count": 13, "range": [200, 800], "rep_area": 19.0, "rep_avg_price": 300}},
+    "stats": {"total": 16, "sale": null, "jeonse": {"count": 3, "range": [5000, 10000], "rep_area": 41.4, "rep_avg_price": 10000}, "monthly": {"count": 13, "range": [200, 800], "rep_area": 19.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 56000, "rent": 0, "area": 226.95, "land": 238.0, "floor": "", "dong": "", "date": "2025-10-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서정동 6*", "by": 1976},
       {"type": "월세", "price": 300, "rent": 53, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 5000, "rent": 0, "area": 78.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "월세", "price": 200, "rent": 31, "area": 25.29, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-23", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
@@ -679,6 +678,15 @@
       {"type": "월세", "price": 300, "rent": 33, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-04", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "전세", "price": 10000, "rent": 0, "area": 102.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-02", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 500, "rent": 60, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-02", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018}
+    ]
+  },
+  {
+    "name": "경기도 평택시 서정동 66-1",
+    "address": "경기도 평택시 서정동 66-1",
+    "coords": [127.056368115316, 37.0716284799112],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [56000, 56000], "rep_area": 227.0, "rep_avg_price": 56000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 56000, "rent": 0, "area": 226.95, "land": 238.0, "floor": "", "dong": "", "date": "2025-10-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서정동 66-1 (추정)", "by": 1976}
     ]
   },
   {
@@ -1463,12 +1471,12 @@
     ]
   },
   {
-    "name": "경기도 평택시 팽성읍 노양리",
-    "address": "경기도 평택시 팽성읍 노양리",
-    "coords": [126.998536205152, 36.938317374557],
+    "name": "경기도 평택시 팽성읍 노양리 203",
+    "address": "경기도 평택시 팽성읍 노양리 203",
+    "coords": [126.996136442079, 36.9359481697538],
     "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 72.4, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 10000, "rent": 0, "area": 72.42, "land": 241.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팽성읍 노양리 2**", "by": 1980}
+      {"type": "매매", "price": 10000, "rent": 0, "area": 72.42, "land": 241.0, "floor": "", "dong": "", "date": "2025-10-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팽성읍 노양리 203 (추정)", "by": 1980}
     ]
   },
   {
@@ -1562,9 +1570,8 @@
     "name": "경기도 평택시 평택동",
     "address": "경기도 평택시 평택동",
     "coords": [127.085861850038, 36.9910828663656],
-    "stats": {"total": 15, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 71.7, "rep_avg_price": 21000}, "jeonse": null, "monthly": {"count": 14, "range": [100, 1000], "rep_area": 30.0, "rep_avg_price": 340}},
+    "stats": {"total": 14, "sale": null, "jeonse": null, "monthly": {"count": 14, "range": [100, 1000], "rep_area": 30.0, "rep_avg_price": 340}},
     "deals": [
-      {"type": "매매", "price": 21000, "rent": 0, "area": 71.72, "land": 126.0, "floor": "", "dong": "", "date": "2025-10-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평택동 2**", "by": 1974},
       {"type": "월세", "price": 500, "rent": 60, "area": 64.28, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-21", "period": "25.11~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 300, "rent": 30, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-29", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
       {"type": "월세", "price": 500, "rent": 85, "area": 48.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-20", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
@@ -1579,6 +1586,15 @@
       {"type": "월세", "price": 600, "rent": 71, "area": 52.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-01", "period": "25.10~26.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 300, "rent": 30, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-10", "period": "25.11~26.10", "renew": "갱신", "p_dep": 300, "p_rent": 35, "jibun": "", "by": 2006},
       {"type": "월세", "price": 1000, "rent": 36, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-01", "period": "25.10~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018}
+    ]
+  },
+  {
+    "name": "경기도 평택시 평택동 206-12",
+    "address": "경기도 평택시 평택동 206-12",
+    "coords": [127.083136831448, 36.9881221329258],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 71.7, "rep_avg_price": 21000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21000, "rent": 0, "area": 71.72, "land": 126.0, "floor": "", "dong": "", "date": "2025-10-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평택동 206-12 (추정)", "by": 1974}
     ]
   },
   {

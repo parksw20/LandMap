@@ -228,9 +228,8 @@
     "name": "서울특별시 서대문구 북가좌동",
     "address": "서울특별시 서대문구 북가좌동",
     "coords": [126.91039845202, 37.5780815956198],
-    "stats": {"total": 53, "sale": {"count": 2, "range": [60000, 114000], "rep_area": 130.2, "rep_avg_price": 114000}, "jeonse": {"count": 8, "range": [7000, 23000], "rep_area": 43.0, "rep_avg_price": 16800}, "monthly": {"count": 43, "range": [0, 13000], "rep_area": 16.0, "rep_avg_price": 1800}},
+    "stats": {"total": 52, "sale": {"count": 1, "range": [114000, 114000], "rep_area": 130.2, "rep_avg_price": 114000}, "jeonse": {"count": 8, "range": [7000, 23000], "rep_area": 43.0, "rep_avg_price": 16800}, "monthly": {"count": 43, "range": [0, 13000], "rep_area": 16.0, "rep_avg_price": 1800}},
     "deals": [
-      {"type": "매매", "price": 60000, "rent": 0, "area": 164.84, "land": 106.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북가좌동 8*", "by": 1989},
       {"type": "매매", "price": 114000, "rent": 0, "area": 130.25, "land": 132.8, "floor": "", "dong": "", "date": "2026-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북가좌동 3**", "by": 1978},
       {"type": "월세", "price": 1000, "rent": 60, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 3000, "rent": 25, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -283,6 +282,15 @@
       {"type": "월세", "price": 13000, "rent": 30, "area": 51.36, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 550, "rent": 50, "area": 43.16, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 3000, "rent": 50, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 북가좌동 80-35",
+    "address": "서울특별시 서대문구 북가좌동 80-35",
+    "coords": [126.913293205266, 37.5776603802663],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 164.8, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 164.84, "land": 106.0, "floor": "", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북가좌동 80-35 (추정)", "by": 1989}
     ]
   },
   {
@@ -553,14 +561,22 @@
     "name": "서울특별시 서대문구 옥천동",
     "address": "서울특별시 서대문구 옥천동",
     "coords": [126.95890126611, 37.569559807873],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 199.6, "rep_avg_price": 118000}, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 33.9, "rep_avg_price": 24000}, "monthly": {"count": 4, "range": [1000, 3000], "rep_area": 17.5, "rep_avg_price": 1000}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 33.9, "rep_avg_price": 24000}, "monthly": {"count": 4, "range": [1000, 3000], "rep_area": 17.5, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 118000, "rent": 0, "area": 199.62, "land": 115.7, "floor": "", "dong": "", "date": "2026-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "옥천동 1**", "by": 1992},
       {"type": "월세", "price": 1000, "rent": 60, "area": 48.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1998},
       {"type": "월세", "price": 3000, "rent": 40, "area": 24.85, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 1000, "rent": 45, "area": 32.31, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "전세", "price": 24000, "rent": 0, "area": 33.94, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 1000, "rent": 50, "area": 17.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-05", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 옥천동 126-110",
+    "address": "서울특별시 서대문구 옥천동 126-110",
+    "coords": [126.960294024607, 37.5695392913189],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 199.6, "rep_avg_price": 118000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 118000, "rent": 0, "area": 199.62, "land": 115.7, "floor": "", "dong": "", "date": "2026-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "옥천동 126-110 (추정)", "by": 1992}
     ]
   },
   {
@@ -966,10 +982,8 @@
     "name": "서울특별시 서대문구 홍제동",
     "address": "서울특별시 서대문구 홍제동",
     "coords": [126.948725215733, 37.585845800944],
-    "stats": {"total": 49, "sale": {"count": 2, "range": [48000, 76000], "rep_area": 48.8, "rep_avg_price": 48000}, "jeonse": {"count": 10, "range": [5000, 19800], "rep_area": 34.4, "rep_avg_price": 6250}, "monthly": {"count": 37, "range": [30, 15000], "rep_area": 15.0, "rep_avg_price": 520}},
+    "stats": {"total": 47, "sale": null, "jeonse": {"count": 10, "range": [5000, 19800], "rep_area": 34.4, "rep_avg_price": 6250}, "monthly": {"count": 37, "range": [30, 15000], "rep_area": 15.0, "rep_avg_price": 520}},
     "deals": [
-      {"type": "매매", "price": 48000, "rent": 0, "area": 48.8, "land": 46.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍제동 1**", "by": 1972},
-      {"type": "매매", "price": 76000, "rent": 0, "area": 127.2, "land": 93.0, "floor": "", "dong": "", "date": "2026-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍제동 2**", "by": 1988},
       {"type": "전세", "price": 5000, "rent": 0, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "월세", "price": 30, "rent": 60, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-12", "period": "26.02~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2020},
       {"type": "월세", "price": 1000, "rent": 40, "area": 36.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -1017,6 +1031,24 @@
       {"type": "월세", "price": 3000, "rent": 120, "area": 53.08, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "전세", "price": 12000, "rent": 0, "area": 60.29, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~28.01", "renew": "갱신", "p_dep": 6000, "p_rent": 0, "jibun": "", "by": 2000},
       {"type": "월세", "price": 3000, "rent": 60, "area": 44.14, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 홍제동 110",
+    "address": "서울특별시 서대문구 홍제동 110",
+    "coords": [126.948683686568, 37.5854834035413],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [48000, 48000], "rep_area": 48.8, "rep_avg_price": 48000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 48000, "rent": 0, "area": 48.8, "land": 46.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍제동 110 (추정)", "by": 1972}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 홍제동 268-54",
+    "address": "서울특별시 서대문구 홍제동 268-54",
+    "coords": [126.947712315303, 37.5910824655938],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [76000, 76000], "rep_area": 127.2, "rep_avg_price": 76000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 76000, "rent": 0, "area": 127.2, "land": 93.0, "floor": "", "dong": "", "date": "2026-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍제동 268-54 (추정)", "by": 1988}
     ]
   }
 ]

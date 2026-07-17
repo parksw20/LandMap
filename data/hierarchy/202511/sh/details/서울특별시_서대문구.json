@@ -224,10 +224,8 @@
     "name": "서울특별시 서대문구 연희동",
     "address": "서울특별시 서대문구 연희동",
     "coords": [126.935230751932, 37.5739100104158],
-    "stats": {"total": 71, "sale": {"count": 2, "range": [121500, 365000], "rep_area": 81.1, "rep_avg_price": 121500}, "jeonse": {"count": 6, "range": [7000, 10000], "rep_area": 28.0, "rep_avg_price": 10000}, "monthly": {"count": 63, "range": [300, 14500], "rep_area": 20.0, "rep_avg_price": 666}},
+    "stats": {"total": 69, "sale": null, "jeonse": {"count": 6, "range": [7000, 10000], "rep_area": 28.0, "rep_avg_price": 10000}, "monthly": {"count": 63, "range": [300, 14500], "rep_area": 20.0, "rep_avg_price": 666}},
     "deals": [
-      {"type": "매매", "price": 121500, "rent": 0, "area": 81.12, "land": 121.0, "floor": "", "dong": "", "date": "2025-11-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연희동 1**", "by": 1969},
-      {"type": "매매", "price": 365000, "rent": 0, "area": 269.09, "land": 330.6, "floor": "", "dong": "", "date": "2025-11-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연희동 6*", "by": 1974},
       {"type": "월세", "price": 5000, "rent": 100, "area": 58.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 1000, "rent": 70, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 300, "rent": 60, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-23", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -297,6 +295,24 @@
       {"type": "전세", "price": 9000, "rent": 0, "area": 54.07, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-03", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "월세", "price": 1000, "rent": 50, "area": 11.22, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-01", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 2000, "rent": 42, "area": 36.3, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-01", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 연희동 115-25",
+    "address": "서울특별시 서대문구 연희동 115-25",
+    "coords": [126.926524301506, 37.5693289392865],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [121500, 121500], "rep_area": 81.1, "rep_avg_price": 121500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 121500, "rent": 0, "area": 81.12, "land": 121.0, "floor": "", "dong": "", "date": "2025-11-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연희동 115-25 (추정)", "by": 1969}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 연희동 69-52",
+    "address": "서울특별시 서대문구 연희동 69-52",
+    "coords": [126.938029795816, 37.5734649799399],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [365000, 365000], "rep_area": 269.1, "rep_avg_price": 365000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 365000, "rent": 0, "area": 269.09, "land": 330.6, "floor": "", "dong": "", "date": "2025-11-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연희동 69-52 (추정)", "by": 1974}
     ]
   },
   {

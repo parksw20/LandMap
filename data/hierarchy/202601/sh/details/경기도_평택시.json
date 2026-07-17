@@ -346,9 +346,8 @@
     "name": "경기도 평택시 동삭동",
     "address": "경기도 평택시 동삭동",
     "coords": [127.097667874173, 37.0138927319355],
-    "stats": {"total": 295, "sale": {"count": 1, "range": [139000, 139000], "rep_area": 605.5, "rep_avg_price": 139000}, "jeonse": {"count": 10, "range": [6000, 16000], "rep_area": 61.3, "rep_avg_price": 10000}, "monthly": {"count": 284, "range": [0, 5000], "rep_area": 30.0, "rep_avg_price": 159}},
+    "stats": {"total": 294, "sale": null, "jeonse": {"count": 10, "range": [6000, 16000], "rep_area": 61.3, "rep_avg_price": 10000}, "monthly": {"count": 284, "range": [0, 5000], "rep_area": 30.0, "rep_avg_price": 159}},
     "deals": [
-      {"type": "매매", "price": 139000, "rent": 0, "area": 605.46, "land": 347.5, "floor": "", "dong": "", "date": "2026-01-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동삭동 7**", "by": 2014},
       {"type": "월세", "price": 300, "rent": 50, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 200, "rent": 45, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 15000, "rent": 0, "area": 78.82, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-14", "period": "26.04~27.07", "renew": "갱신", "p_dep": 15000, "p_rent": 0, "jibun": "", "by": 2016},
@@ -646,6 +645,15 @@
     ]
   },
   {
+    "name": "경기도 평택시 동삭동 712-18",
+    "address": "경기도 평택시 동삭동 712-18",
+    "coords": [127.100135976781, 37.010552984189],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [139000, 139000], "rep_area": 605.5, "rep_avg_price": 139000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 139000, "rent": 0, "area": 605.46, "land": 347.5, "floor": "", "dong": "", "date": "2026-01-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동삭동 712-18 (추정)", "by": 2014}
+    ]
+  },
+  {
     "name": "경기도 평택시 모곡동",
     "address": "경기도 평택시 모곡동",
     "coords": [127.075664631417, 37.0344065332417],
@@ -658,9 +666,8 @@
     "name": "경기도 평택시 비전동",
     "address": "경기도 평택시 비전동",
     "coords": [127.095251177566, 37.0006091586058],
-    "stats": {"total": 121, "sale": {"count": 1, "range": [19000, 19000], "rep_area": 91.8, "rep_avg_price": 19000}, "jeonse": {"count": 10, "range": [4500, 21000], "rep_area": 55.0, "rep_avg_price": 11000}, "monthly": {"count": 110, "range": [60, 12000], "rep_area": 60.0, "rep_avg_price": 540}},
+    "stats": {"total": 120, "sale": null, "jeonse": {"count": 10, "range": [4500, 21000], "rep_area": 55.0, "rep_avg_price": 11000}, "monthly": {"count": 110, "range": [60, 12000], "rep_area": 60.0, "rep_avg_price": 540}},
     "deals": [
-      {"type": "매매", "price": 19000, "rent": 0, "area": 91.8, "land": 179.3, "floor": "", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비전동 5**", "by": 2014},
       {"type": "월세", "price": 300, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2013},
       {"type": "월세", "price": 1500, "rent": 85, "area": 103.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 1500, "rent": 40, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
@@ -784,12 +791,20 @@
     ]
   },
   {
+    "name": "경기도 평택시 비전동 581",
+    "address": "경기도 평택시 비전동 581",
+    "coords": [127.090729976069, 36.9978042976937],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19000, 19000], "rep_area": 91.8, "rep_avg_price": 19000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19000, "rent": 0, "area": 91.8, "land": 179.3, "floor": "", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비전동 581 (추정)", "by": 2014}
+    ]
+  },
+  {
     "name": "경기도 평택시 서정동",
     "address": "경기도 평택시 서정동",
     "coords": [127.054711085274, 37.067768614195],
-    "stats": {"total": 48, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 417.3, "rep_avg_price": 50000}, "jeonse": null, "monthly": {"count": 47, "range": [10, 2000], "rep_area": 23.0, "rep_avg_price": 300}},
+    "stats": {"total": 47, "sale": null, "jeonse": null, "monthly": {"count": 47, "range": [10, 2000], "rep_area": 23.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 50000, "rent": 0, "area": 417.31, "land": 199.0, "floor": "", "dong": "", "date": "2026-01-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서정동 5**", "by": 2005},
       {"type": "월세", "price": 200, "rent": 45, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010},
       {"type": "월세", "price": 300, "rent": 65, "area": 69.76, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-19", "period": "26.03~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 300, "rent": 55, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-31", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2025},
@@ -837,6 +852,15 @@
       {"type": "월세", "price": 300, "rent": 40, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-05", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 10, "rent": 10, "area": 19.25, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-05", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 1000, "rent": 61, "area": 42.97, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-02", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "경기도 평택시 서정동 596-269",
+    "address": "경기도 평택시 서정동 596-269",
+    "coords": [127.044249163092, 37.0740363263974],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 417.3, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 50000, "rent": 0, "area": 417.31, "land": 199.0, "floor": "", "dong": "", "date": "2026-01-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "서정동 596-269 (추정)", "by": 2005}
     ]
   },
   {
@@ -939,9 +963,8 @@
     "name": "경기도 평택시 신장동",
     "address": "경기도 평택시 신장동",
     "coords": [127.051097700349, 37.0854023760524],
-    "stats": {"total": 17, "sale": {"count": 2, "range": [16700, 48000], "rep_area": 112.9, "rep_avg_price": 48000}, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 196.2, "rep_avg_price": 8000}, "monthly": {"count": 14, "range": [100, 1000], "rep_area": 24.0, "rep_avg_price": 200}},
+    "stats": {"total": 16, "sale": {"count": 1, "range": [16700, 16700], "rep_area": 137.9, "rep_avg_price": 16700}, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 196.2, "rep_avg_price": 8000}, "monthly": {"count": 14, "range": [100, 1000], "rep_area": 24.0, "rep_avg_price": 200}},
     "deals": [
-      {"type": "매매", "price": 48000, "rent": 0, "area": 112.91, "land": 149.3424, "floor": "", "dong": "", "date": "2026-01-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신장동 3**", "by": 1981},
       {"type": "매매", "price": 16700, "rent": 0, "area": 137.92, "land": 115.0, "floor": "", "dong": "", "date": "2026-01-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신장동 2**", "by": 1983},
       {"type": "월세", "price": 200, "rent": 35, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984},
       {"type": "월세", "price": 300, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -958,6 +981,15 @@
       {"type": "전세", "price": 8000, "rent": 0, "area": 196.22, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-10", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1979},
       {"type": "월세", "price": 1000, "rent": 70, "area": 75.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
       {"type": "월세", "price": 100, "rent": 50, "area": 56.19, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-01", "period": "26.01~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "경기도 평택시 신장동 300-182",
+    "address": "경기도 평택시 신장동 300-182",
+    "coords": [127.051298446365, 37.0795393889994],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [48000, 48000], "rep_area": 112.9, "rep_avg_price": 48000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 48000, "rent": 0, "area": 112.91, "land": 149.3424, "floor": "", "dong": "", "date": "2026-01-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신장동 300-182 (추정)", "by": 1981}
     ]
   },
   {
@@ -1877,10 +1909,9 @@
     "name": "경기도 평택시 팽성읍 안정리",
     "address": "경기도 평택시 팽성읍 안정리",
     "coords": [127.045372674994, 36.9602340398327],
-    "stats": {"total": 13, "sale": {"count": 2, "range": [4400, 26500], "rep_area": 50.4, "rep_avg_price": 4400}, "jeonse": {"count": 4, "range": [6000, 12000], "rep_area": 104.2, "rep_avg_price": 12000}, "monthly": {"count": 7, "range": [200, 1000], "rep_area": 27.0, "rep_avg_price": 200}},
+    "stats": {"total": 12, "sale": {"count": 1, "range": [4400, 4400], "rep_area": 50.4, "rep_avg_price": 4400}, "jeonse": {"count": 4, "range": [6000, 12000], "rep_area": 104.2, "rep_avg_price": 12000}, "monthly": {"count": 7, "range": [200, 1000], "rep_area": 27.0, "rep_avg_price": 200}},
     "deals": [
       {"type": "매매", "price": 4400, "rent": 0, "area": 50.41, "land": 112.0, "floor": "", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팽성읍 안정리 1**", "by": 2011},
-      {"type": "매매", "price": 26500, "rent": 0, "area": 189.54, "land": 192.0, "floor": "", "dong": "", "date": "2026-01-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팽성읍 안정리 2**", "by": 2005},
       {"type": "월세", "price": 500, "rent": 65, "area": 41.13, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-22", "period": "26.02~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2023},
       {"type": "월세", "price": 300, "rent": 40, "area": 32.12, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-31", "period": "26.02~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 300, "rent": 38, "area": 27.46, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-13", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
@@ -1892,6 +1923,15 @@
       {"type": "월세", "price": 300, "rent": 40, "area": 49.79, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-10", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985},
       {"type": "월세", "price": 1000, "rent": 110, "area": 152.91, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-02", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "전세", "price": 12000, "rent": 0, "area": 104.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-08", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002}
+    ]
+  },
+  {
+    "name": "경기도 평택시 팽성읍 안정리 208-1",
+    "address": "경기도 평택시 팽성읍 안정리 208-1",
+    "coords": [127.049187313672, 36.956290978999],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [26500, 26500], "rep_area": 189.5, "rep_avg_price": 26500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 26500, "rent": 0, "area": 189.54, "land": 192.0, "floor": "", "dong": "", "date": "2026-01-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팽성읍 안정리 208-1 (추정)", "by": 2005}
     ]
   },
   {
