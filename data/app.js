@@ -377,7 +377,7 @@ function setupEventListeners() {
         updateMap(true); // 매물 마커 색도 함께 갱신
     };
     const bldgAgeDropdown = document.getElementById('bldgage-dropdown');
-    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('동 축척부터 최대 확대까지 건물·매물에 적용');
+    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('최대 확대 구간(레벨 1~3)에서 건물·매물에 적용');
 
 
     // 모바일 좌측 상단 필터 토글
@@ -1304,7 +1304,7 @@ function updateBldgAgeBtn() {
     btn.classList.toggle('on-idle', state.bldgAgeOn && !usable);
 }
 
-const BLDG_AGE_MAX_LEVEL = 6; // 동 축척(~레벨6)부터 최대 확대까지 표시
+const BLDG_AGE_MAX_LEVEL = 3; // 레벨 1~3 (최대 확대 구간)에서만 표시
 
 function refreshBldgAge() {
     const token = ++state.bldgAgeToken;
@@ -1313,7 +1313,7 @@ function refreshBldgAge() {
     if (!state.bldgAgeOn) return;
     const statusEl = document.getElementById('status-bar');
     if (state.map.getLevel() > BLDG_AGE_MAX_LEVEL) {
-        statusEl.textContent = '건물연령: 동 축척 이상으로 확대하면 표시됩니다 (버튼 회색 = 대기 상태)';
+        statusEl.textContent = '건물연령: 더 확대하면 표시됩니다 (버튼 회색 = 대기 상태)';
         return;
     }
     const b = state.map.getBounds();
