@@ -254,26 +254,35 @@ function setupEventListeners() {
     const jogPad = document.getElementById('jog-pad');
     if (jogPad) {
         const jogStop = () => { if (state.jogTimer) { clearInterval(state.jogTimer); state.jogTimer = null; } };
-        // 로드뷰 시점 회전: dx=좌우(pan), dy=상하(tilt)
+        // 로드뷰 '이동': 현재 바라보는 방향 기준으로 한 걸음(약 14m) 옮겨 인접 파노라마로 점프
+        // ▲=전진, ▼=후진, ◀▶=옆걸음 (대각선 조합 가능)
         const applyJog = (dx, dy) => {
-            if (!state.rv || !state.rv.getViewpoint) return;
-            const vp = state.rv.getViewpoint();
-            const pan = ((vp.pan + dx * 4) % 360 + 360) % 360;
-            const tilt = Math.max(-70, Math.min(70, vp.tilt - dy * 3));
-            state.rv.setViewpoint(new kakao.maps.Viewpoint(pan, tilt, vp.zoom));
+            if (!state.rv || !state.rv.getPosition || !state.rvClient) return;
+            const pos = state.rv.getPosition();
+            if (!pos) return;
+            const heading = state.rv.getViewpoint ? (state.rv.getViewpoint().pan || 0) : 0;
+            const ang = (heading + Math.atan2(dx, -dy) * 180 / Math.PI) * Math.PI / 180;
+            const dist = 14; // m/걸음
+            const lat = pos.getLat(), lng = pos.getLng();
+            const nLat = lat + (dist * Math.cos(ang)) / 111320;
+            const nLng = lng + (dist * Math.sin(ang)) / (111320 * Math.cos(lat * Math.PI / 180));
+            const np = new kakao.maps.LatLng(nLat, nLng);
+            state.rvClient.getNearestPanoId(np, 12, (panoId) => {
+                if (panoId !== null) state.rv.setPanoId(panoId, np);
+            });
         };
-        // 8방향 버튼: 누르는 동안 연속 회전
+        // 8방향 버튼: 누르는 동안 걸음 반복
         jogPad.querySelectorAll('.jog-arrow').forEach(btn => {
             const dx = parseInt(btn.dataset.dx), dy = parseInt(btn.dataset.dy);
             btn.addEventListener('pointerdown', (ev) => {
                 ev.preventDefault();
                 jogStop();
                 applyJog(dx, dy);
-                state.jogTimer = setInterval(() => applyJog(dx, dy), 70);
+                state.jogTimer = setInterval(() => applyJog(dx, dy), 650);
             });
             ['pointerup', 'pointerleave', 'pointercancel'].forEach(evt => btn.addEventListener(evt, jogStop));
         });
-        // 가운데 노브 드래그 = 조이스틱 (끄는 방향·거리만큼 연속 회전)
+        // 가운데 노브 드래그 = 조이스틱 (끄는 방향으로 걸음 반복)
         const knob = document.getElementById('jog-knob');
         if (knob) {
             let vec = { x: 0, y: 0 };
@@ -289,7 +298,8 @@ function setupEventListeners() {
                 };
                 track(ev);
                 jogStop();
-                state.jogTimer = setInterval(() => applyJog(vec.x * 1.6, vec.y * 1.6), 70);
+                applyJog(vec.x, vec.y);
+                state.jogTimer = setInterval(() => applyJog(vec.x, vec.y), 650);
                 const up = () => {
                     jogStop();
                     knob.style.transform = 'translate(-50%, -50%)';
@@ -377,7 +387,7 @@ function setupEventListeners() {
         updateMap(true); // 매물 마커 색도 함께 갱신
     };
     const bldgAgeDropdown = document.getElementById('bldgage-dropdown');
-    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('최대 확대 구간(레벨 1~3)에서 건물·매물에 적용');
+    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('최대 확대 구간(레벨 1~2)에서 건물·매물에 적용');
 
 
     // 모바일 좌측 상단 필터 토글
@@ -1319,7 +1329,7 @@ function updateBldgAgeBtn() {
     btn.classList.toggle('on-idle', state.bldgAgeOn && !usable);
 }
 
-const BLDG_AGE_MAX_LEVEL = 3; // 레벨 1~3 (최대 확대 구간)에서만 표시
+const BLDG_AGE_MAX_LEVEL = 2; // 레벨 1~2 (최대 확대 구간)에서만 표시
 
 function refreshBldgAge() {
     const token = ++state.bldgAgeToken;
