@@ -1560,9 +1560,10 @@ function showClickAddress(latlng) {
                 if (st) rows.push(['구조', BLDG_STRCT_MAP[st] || `코드 ${st}`]);
                 const gf = num(p.grnd_flr), uf = num(p.ugrnd_flr);
                 if (gf || uf) rows.push(['층수', `지상 ${gf}층${uf ? ` / 지하 ${uf}층` : ''}`]);
-                if (num(p.totalarea)) rows.push(['연면적', `${num(p.totalarea).toLocaleString()}㎡`]);
-                if (num(p.archarea)) rows.push(['건축면적', `${num(p.archarea).toLocaleString()}㎡`]);
-                if (num(p.platarea)) rows.push(['대지면적', `${num(p.platarea).toLocaleString()}㎡`]);
+                const m2py = v => `${v.toLocaleString()}㎡ (${(v * 0.3025).toFixed(1)}평)`;
+                if (num(p.totalarea)) rows.push(['연면적', m2py(num(p.totalarea))]);
+                if (num(p.archarea)) rows.push(['건축면적', m2py(num(p.archarea))]);
+                if (num(p.platarea)) rows.push(['대지면적', m2py(num(p.platarea))]);
                 if (num(p.height)) rows.push(['건물높이', `${num(p.height)}m`]);
                 if (num(p.vl_rat)) rows.push(['용적률', `${num(p.vl_rat)}%`]);
                 if (num(p.bc_rat)) rows.push(['건폐율', `${num(p.bc_rat)}%`]);
