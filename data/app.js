@@ -1208,26 +1208,30 @@ function renderAreaAnalysis(ring, drawnArea, feats) {
         if (!oldest || b.year < oldest) oldest = b.year;
         if (b.year > newest) newest = b.year;
     });
+    const total = included.length;
     const avgAge = aged ? Math.round(ageSum / aged) : 0;
-    const over30pct = aged ? Math.round(over30 * 100 / aged) : 0;
+    // 비율은 '전체 동수' 기준 (정비 노후도 산정 실무와 동일 — 정보 없는 건물도 분모 포함)
+    const over30pctAll = Math.round(over30 * 100 / total);
+    const over30pctKnown = aged ? Math.round(over30 * 100 / aged) : 0;
     const totSum = included.reduce((a, b) => a + b.tot, 0);
     const flrs = included.filter(b => b.flr > 0);
     const avgFlr = flrs.length ? (flrs.reduce((a, b) => a + b.flr, 0) / flrs.length).toFixed(1) : '-';
 
     const bandRows = bands.map(b =>
-        `<div class="landuse-item"><span class="legend-dot" style="background:${b.color}"></span> ${b.label}: <b>${b.n}동</b> (${aged ? Math.round(b.n * 100 / aged) : 0}%)</div>`
+        `<div class="landuse-item"><span class="legend-dot" style="background:${b.color}"></span> ${b.label}: <b>${b.n}동</b> (${Math.round(b.n * 100 / total)}%)</div>`
     ).join('') +
-        (unknown ? `<div class="landuse-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span> 정보 없음: <b>${unknown}동</b></div>` : '');
+        (unknown ? `<div class="landuse-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span> 정보 없음: <b>${unknown}동</b> (${Math.round(unknown * 100 / total)}%)</div>` : '');
 
-    // 재개발 노후도 참고 (통상 30년 이상 2/3 = 67% 기준)
-    const redevOk = over30pct >= 67;
+    // 재개발 노후도 참고 (통상 30년 이상 2/3 = 67%, 전체 동수 기준 — 보수적 판정)
+    const redevOk = over30pctAll >= 67;
 
     panel.innerHTML =
         `<span class="click-addr-close" title="닫기">×</span>` +
         `<div class="click-addr-jibun">영역 노후도 분석</div>` +
-        `<div class="click-addr-road">영역 ${fmtArea(drawnArea)} · 절반 이상 걸친 건물 ${included.length}동</div>` +
+        `<div class="click-addr-road">영역 ${fmtArea(drawnArea)} · 절반 이상 걸친 건물 ${total}동</div>` +
         `<div class="click-addr-parcel">` +
-        `평균 경과년수 <b>${avgAge}년</b> · 30년 이상 <b>${over30pct}%</b> (${over30}/${aged}동)<br>` +
+        `평균 경과년수 <b>${avgAge}년</b> (확인 ${aged}동 기준)<br>` +
+        `30년 이상 <b>${over30pctAll}%</b> (${over30}/${total}동${unknown ? ` · 연식 확인분 기준 ${over30pctKnown}%` : ''})<br>` +
         `<span class="redev-badge ${redevOk ? 'ok' : 'no'}">정비 노후도 요건(67%) ${redevOk ? '충족' : '미달'}</span></div>` +
         `<div class="click-addr-landuse"><div class="landuse-title">경과년수 분포</div>${bandRows}</div>` +
         `<div class="click-addr-parcel">총 연면적 ${Math.round(totSum).toLocaleString()}㎡ · 평균 지상 ${avgFlr}층` +
