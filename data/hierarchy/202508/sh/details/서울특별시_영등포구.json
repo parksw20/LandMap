@@ -296,9 +296,8 @@
     "name": "서울특별시 영등포구 도림동",
     "address": "서울특별시 영등포구 도림동",
     "coords": [126.895944463887, 37.5094388403258],
-    "stats": {"total": 44, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 126.1, "rep_avg_price": 65000}, "jeonse": {"count": 10, "range": [2500, 19000], "rep_area": 63.0, "rep_avg_price": 15000}, "monthly": {"count": 33, "range": [0, 7000], "rep_area": 20.0, "rep_avg_price": 850}},
+    "stats": {"total": 43, "sale": null, "jeonse": {"count": 10, "range": [2500, 19000], "rep_area": 63.0, "rep_avg_price": 15000}, "monthly": {"count": 33, "range": [0, 7000], "rep_area": 20.0, "rep_avg_price": 850}},
     "deals": [
-      {"type": "매매", "price": 65000, "rent": 0, "area": 126.12, "land": 79.0, "floor": "", "dong": "", "date": "2025-08-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도림동 2**", "by": 1992},
       {"type": "전세", "price": 15000, "rent": 0, "area": 63.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 3000, "rent": 70, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-03", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1998},
       {"type": "월세", "price": 400, "rent": 35, "area": 119.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-10", "period": "25.08~27.07", "renew": "갱신", "p_dep": 500, "p_rent": 30, "jibun": "", "by": 1993},
@@ -354,12 +353,29 @@
     ]
   },
   {
+    "name": "서울특별시 영등포구 도림동 247-29",
+    "address": "서울특별시 영등포구 도림동 247-29",
+    "coords": [126.899409615374, 37.5070862558336],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 126.1, "rep_avg_price": 65000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 65000, "rent": 0, "area": 126.12, "land": 79.0, "floor": "", "dong": "", "date": "2025-08-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도림동 247-29 (추정)", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 영등포구 문래동4가 29-15",
+    "address": "서울특별시 영등포구 문래동4가 29-15",
+    "coords": [126.88941202949, 37.5152724009103],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [151500, 151500], "rep_area": 31.8, "rep_avg_price": 151500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 151500, "rent": 0, "area": 31.82, "land": 81.7, "floor": "", "dong": "", "date": "2025-08-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문래동4가 29-15 (추정)", "by": 1987}
+    ]
+  },
+  {
     "name": "서울특별시 영등포구 신길동",
     "address": "서울특별시 영등포구 신길동",
     "coords": [126.91406973946, 37.5041663202167],
-    "stats": {"total": 143, "sale": {"count": 3, "range": [80000, 117000], "rep_area": 50.2, "rep_avg_price": 80000}, "jeonse": {"count": 34, "range": [3500, 30000], "rep_area": 18.0, "rep_avg_price": 7250}, "monthly": {"count": 106, "range": [100, 20500], "rep_area": 18.0, "rep_avg_price": 612}},
+    "stats": {"total": 142, "sale": {"count": 2, "range": [80000, 107050], "rep_area": 50.2, "rep_avg_price": 80000}, "jeonse": {"count": 34, "range": [3500, 30000], "rep_area": 18.0, "rep_avg_price": 7250}, "monthly": {"count": 106, "range": [100, 20500], "rep_area": 18.0, "rep_avg_price": 612}},
     "deals": [
-      {"type": "매매", "price": 117000, "rent": 0, "area": 194.22, "land": 137.0, "floor": "", "dong": "", "date": "2025-08-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 9*", "by": 1991},
       {"type": "매매", "price": 107050, "rent": 0, "area": 157.98, "land": 99.0, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 3***", "by": 1991},
       {"type": "매매", "price": 80000, "rent": 0, "area": 50.22, "land": 43.0, "floor": "", "dong": "", "date": "2025-08-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 1**", "by": 1985},
       {"type": "월세", "price": 3000, "rent": 20, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
@@ -505,6 +521,15 @@
     ]
   },
   {
+    "name": "서울특별시 영등포구 신길동 95-117",
+    "address": "서울특별시 영등포구 신길동 95-117",
+    "coords": [126.919875767273, 37.5130316008745],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [117000, 117000], "rep_area": 194.2, "rep_avg_price": 117000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 117000, "rent": 0, "area": 194.22, "land": 137.0, "floor": "", "dong": "", "date": "2025-08-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신길동 95-117 (추정)", "by": 1991}
+    ]
+  },
+  {
     "name": "서울특별시 영등포구 양평동1가",
     "address": "서울특별시 영등포구 양평동1가",
     "coords": [126.888223442468, 37.5234622076971],
@@ -642,15 +667,6 @@
       {"type": "월세", "price": 3700, "rent": 44, "area": 17.74, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-14", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 2000, "rent": 95, "area": 54.36, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-09", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 2000, "rent": 95, "area": 54.36, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-09", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991}
-    ]
-  },
-  {
-    "name": "영등포구 문래동4가",
-    "address": "영등포구 문래동4가",
-    "coords": [126.889829482109, 37.5144572928255],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [151500, 151500], "rep_area": 31.8, "rep_avg_price": 151500}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 151500, "rent": 0, "area": 31.82, "land": 81.7, "floor": "", "dong": "", "date": "2025-08-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문래동4가 2*", "by": 1987}
     ]
   }
 ]

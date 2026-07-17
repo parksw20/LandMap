@@ -1,11 +1,41 @@
 [
   {
+    "name": "행운주택 (다세대)",
+    "address": "구리시 교문동 208",
+    "coords": [127.132071367793, 37.5998718529875],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24000, 24000], "rep_area": 48.2, "rep_avg_price": 24000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24000, "rent": 0, "area": 48.24, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 208", "by": 1995}
+    ]
+  },
+  {
     "name": "해담채 (다세대)",
     "address": "구리시 교문동 212-5",
     "coords": [127.132615846407, 37.5998820543332],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 48.3, "rep_avg_price": 3000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [3000, 4000], "rep_area": 48.3, "rep_avg_price": 3500}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 131, "area": 44.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-21", "period": "26.05~28.05", "renew": "갱신", "p_dep": 3000, "p_rent": 125, "jibun": "교문동 212-5", "by": 2022},
+      {"type": "월세", "price": 4000, "rent": 137, "area": 48.31, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-21", "period": "26.06~28.06", "renew": "갱신", "p_dep": 4000, "p_rent": 130, "jibun": "교문동 212-5", "by": 2022},
       {"type": "월세", "price": 3000, "rent": 165, "area": 48.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-18", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 212-5", "by": 2022}
+    ]
+  },
+  {
+    "name": "드림하우스 (다세대)",
+    "address": "구리시 교문동 233-19",
+    "coords": [127.134124818415, 37.6012299422389],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 20.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 44, "area": 20.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-07", "period": "26.06~27.06", "renew": "갱신", "p_dep": 1000, "p_rent": 42, "jibun": "교문동 233-19", "by": 2013},
+      {"type": "월세", "price": 1000, "rent": 44, "area": 20.8, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-07", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 233-19", "by": 2013}
+    ]
+  },
+  {
+    "name": "부영맨션(C동) (연립)",
+    "address": "구리시 교문동 261-2",
+    "coords": [127.129022286279, 37.6013993405],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [27500, 27500], "rep_area": 93.4, "rep_avg_price": 27500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 27500, "rent": 0, "area": 93.4, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 261-2", "by": 1998}
     ]
   },
   {
@@ -15,6 +45,33 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [25500, 25500], "rep_area": 47.8, "rep_avg_price": 25500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 25500, "rent": 0, "area": 47.76, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 283-2", "by": 2014}
+    ]
+  },
+  {
+    "name": "힐하우스A동 (다세대)",
+    "address": "구리시 교문동 327-142",
+    "coords": [127.120599622587, 37.6032938393744],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 56.1, "rep_avg_price": 30000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30000, "rent": 0, "area": 56.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-17", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 327-142", "by": 2022}
+    ]
+  },
+  {
+    "name": "힐하우스B동 (다세대)",
+    "address": "구리시 교문동 327-203",
+    "coords": [127.120798841797, 37.6030260416551],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 61.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 150, "area": 61.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-31", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 327-203", "by": 2023}
+    ]
+  },
+  {
+    "name": "정일아트빌 (다세대)",
+    "address": "구리시 교문동 328-101",
+    "coords": [127.119124476095, 37.6029340406061],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 37.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 50, "area": 37.2, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-10", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 328-101", "by": 2003}
     ]
   },
   {
@@ -50,16 +107,90 @@
     "coords": [127.129806257493, 37.5904428825561],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.7, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "월세", "price": 2000, "rent": 115, "area": 59.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-05", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 426-44", "by": 2016}
+      {"type": "월세", "price": 2000, "rent": 125, "area": 59.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-05", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 426-44", "by": 2016}
+    ]
+  },
+  {
+    "name": "천상재빌리지 (다세대)",
+    "address": "구리시 교문동 426-6",
+    "coords": [127.12935408691, 37.5906709694544],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 45.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 84, "area": 45.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-21", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 426-6", "by": 2015}
+    ]
+  },
+  {
+    "name": "네이처빌 (다세대)",
+    "address": "구리시 교문동 426-9",
+    "coords": [127.129096343679, 37.5905170018594],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26000, 26000], "rep_area": 51.4, "rep_avg_price": 26000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 26000, "rent": 0, "area": 51.41, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-23", "period": "26.05~28.05", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "교문동 426-9", "by": 2016}
+    ]
+  },
+  {
+    "name": "그린빌 (연립)",
+    "address": "구리시 교문동 434-28",
+    "coords": [127.129675227162, 37.5891870440258],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7000, 7000], "rep_area": 66.5, "rep_avg_price": 7000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7000, "rent": 0, "area": 66.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 434-28", "by": 2005}
     ]
   },
   {
     "name": "타운하우스더힐(1102동) (연립)",
     "address": "구리시 교문동 712-13",
     "coords": [127.124564229609, 37.5826342244346],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 56.1, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 56.1, "rep_avg_price": 28500}, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 55.4, "rep_avg_price": 24000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 28500, "rent": 0, "area": 56.07, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 712-13", "by": 2012}
+      {"type": "매매", "price": 28500, "rent": 0, "area": 56.07, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 712-13", "by": 2012},
+      {"type": "전세", "price": 24000, "rent": 0, "area": 55.4, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-05", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 712-13", "by": 2012}
+    ]
+  },
+  {
+    "name": "대명 (연립)",
+    "address": "구리시 교문동 765",
+    "coords": [127.13372231276, 37.5928544295207],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [82000, 82000], "rep_area": 94.3, "rep_avg_price": 82000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 82000, "rent": 0, "area": 94.27, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 765", "by": 1993}
+    ]
+  },
+  {
+    "name": "성봉빌라 (연립)",
+    "address": "구리시 교문동 767-1",
+    "coords": [127.138029944836, 37.5935434140738],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [53000, 53000], "rep_area": 84.3, "rep_avg_price": 53000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 53000, "rent": 0, "area": 84.28, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 767-1", "by": 1990}
+    ]
+  },
+  {
+    "name": "삼용주택 (연립)",
+    "address": "구리시 교문동 768",
+    "coords": [127.13827874989, 37.5928900844366],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [59000, 59000], "rep_area": 67.9, "rep_avg_price": 59000}, "jeonse": {"count": 1, "range": [27500, 27500], "rep_area": 67.9, "rep_avg_price": 27500}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 59000, "rent": 0, "area": 67.86, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교문동 768", "by": 1994},
+      {"type": "전세", "price": 27500, "rent": 0, "area": 67.86, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-30", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교문동 768", "by": 1994}
+    ]
+  },
+  {
+    "name": "남양4동 (다세대)",
+    "address": "구리시 수택동 272-4",
+    "coords": [127.149241882493, 37.5925980550113],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 53.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 53.58, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-05-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 272-4", "by": 1987}
+    ]
+  },
+  {
+    "name": "송이 (연립)",
+    "address": "구리시 수택동 273-14",
+    "coords": [127.148914873537, 37.5926537888919],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 63.2, "rep_avg_price": 21000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 63.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 273-14", "by": 1985}
     ]
   },
   {
@@ -81,12 +212,32 @@
     ]
   },
   {
+    "name": "풍림주택 (연립)",
+    "address": "구리시 수택동 290-5",
+    "coords": [127.148594074521, 37.5953204056564],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 58.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 65, "area": 58.7, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 290-5", "by": 1985},
+      {"type": "월세", "price": 1000, "rent": 65, "area": 58.7, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 290-5", "by": 1985}
+    ]
+  },
+  {
     "name": "노블레스 (연립다세대)",
     "address": "구리시 수택동 377-29",
     "coords": [127.137973125554, 37.5984005415489],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.0, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [5500, 5500], "rep_area": 16.3, "rep_avg_price": 5500}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.0, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "전세", "price": 5500, "rent": 0, "area": 16.28, "land": 0.0, "floor": "6", "dong": "", "date": "2026-05-19", "period": "26.05~28.05", "renew": "갱신", "p_dep": 5500, "p_rent": 0, "jibun": "수택동 377-29", "by": 2012},
       {"type": "월세", "price": 1000, "rent": 35, "area": 14.03, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-08", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 377-29", "by": 2012}
+    ]
+  },
+  {
+    "name": "재인빌 (다세대)",
+    "address": "구리시 수택동 380-11",
+    "coords": [127.138482604814, 37.5982892131442],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 14.1, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 44, "area": 14.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 380-11", "by": 2015}
     ]
   },
   {
@@ -117,6 +268,15 @@
     ]
   },
   {
+    "name": "삼우438-67 (다세대)",
+    "address": "구리시 수택동 438-67",
+    "coords": [127.138966451969, 37.5939556898898],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 45.4, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16000, "rent": 0, "area": 45.39, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 438-67", "by": 1986}
+    ]
+  },
+  {
     "name": "유창뉴튼하우스 (다세대)",
     "address": "구리시 수택동 440-12",
     "coords": [127.139833043333, 37.5935482293242],
@@ -126,12 +286,40 @@
     ]
   },
   {
+    "name": "성림444-1 (연립)",
+    "address": "구리시 수택동 444-1",
+    "coords": [127.14139178967, 37.5937326072237],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 45.1, "rep_avg_price": 20000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 45.1, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-30", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 444-1", "by": 1990}
+    ]
+  },
+  {
+    "name": "동흥A (다세대)",
+    "address": "구리시 수택동 444-19",
+    "coords": [127.141553342003, 37.5934185983857],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 30.4, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29000, "rent": 0, "area": 30.36, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-05-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 444-19", "by": 1988}
+    ]
+  },
+  {
     "name": "서현빌II (다세대)",
     "address": "구리시 수택동 444-27",
     "coords": [127.141770326076, 37.5936155649137],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13230, 13230], "rep_area": 23.6, "rep_avg_price": 13230}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [41500, 41500], "rep_area": 21.1, "rep_avg_price": 41500}, "jeonse": {"count": 1, "range": [13230, 13230], "rep_area": 23.6, "rep_avg_price": 13230}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 41500, "rent": 0, "area": 21.08, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 444-27", "by": 2022},
       {"type": "전세", "price": 13230, "rent": 0, "area": 23.65, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-07", "period": "26.05~28.05", "renew": "갱신", "p_dep": 12600, "p_rent": 0, "jibun": "수택동 444-27", "by": 2022}
+    ]
+  },
+  {
+    "name": "삼도빌라 (다세대)",
+    "address": "구리시 수택동 445-9",
+    "coords": [127.140458855537, 37.593238896792],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14300, 14300], "rep_area": 35.0, "rep_avg_price": 14300}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 14300, "rent": 0, "area": 35.04, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 445-9", "by": 1993}
     ]
   },
   {
@@ -144,12 +332,40 @@
     ]
   },
   {
+    "name": "조은맨션 (다세대)",
+    "address": "구리시 수택동 453-17",
+    "coords": [127.143669033072, 37.5924629736376],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [44700, 44700], "rep_area": 39.2, "rep_avg_price": 44700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 44700, "rent": 0, "area": 39.24, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 453-17", "by": 2007}
+    ]
+  },
+  {
     "name": "미화453-3 (다세대)",
     "address": "구리시 수택동 453-3",
     "coords": [127.142669534125, 37.5925690613782],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 49.6, "rep_avg_price": 15000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [15000, 15000], "rep_area": 49.6, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 15000, "rent": 0, "area": 49.59, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 453-3", "by": 1987},
       {"type": "전세", "price": 15000, "rent": 0, "area": 49.59, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-13", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 453-3", "by": 1987}
+    ]
+  },
+  {
+    "name": "강부(라동) (다세대)",
+    "address": "구리시 수택동 454-1",
+    "coords": [127.143234151102, 37.5938974295814],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15750, 15750], "rep_area": 37.9, "rep_avg_price": 15750}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15750, "rent": 0, "area": 37.92, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 454-1", "by": 1988}
+    ]
+  },
+  {
+    "name": "광진454-16 (연립)",
+    "address": "구리시 수택동 454-16",
+    "coords": [127.145093087966, 37.5943721436876],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [47000, 47000], "rep_area": 64.9, "rep_avg_price": 47000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 47000, "rent": 0, "area": 64.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 454-16", "by": 1984}
     ]
   },
   {
@@ -165,8 +381,9 @@
     "name": "서현캐슬Ⅱ (다세대)",
     "address": "구리시 수택동 456-65",
     "coords": [127.144017213401, 37.5941082996992],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9000, 9000], "rep_area": 36.0, "rep_avg_price": 9000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [9000, 13000], "rep_area": 36.0, "rep_avg_price": 9000}},
     "deals": [
+      {"type": "월세", "price": 13000, "rent": 39, "area": 40.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-20", "period": "26.07~28.07", "renew": "갱신", "p_dep": 13000, "p_rent": 35, "jibun": "수택동 456-65", "by": 2022},
       {"type": "월세", "price": 9000, "rent": 75, "area": 36.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-04", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 456-65", "by": 2022}
     ]
   },
@@ -183,9 +400,10 @@
     "name": "서현캐슬Ⅰ (다세대)",
     "address": "구리시 수택동 460-10",
     "coords": [127.141824589076, 37.5948221969706],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [57000, 57000], "rep_area": 36.8, "rep_avg_price": 57000}, "jeonse": {"count": 3, "range": [23000, 27000], "rep_area": 37.1, "rep_avg_price": 24000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [57000, 57000], "rep_area": 36.8, "rep_avg_price": 57000}, "jeonse": {"count": 4, "range": [23000, 27000], "rep_area": 36.8, "rep_avg_price": 27000}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 57000, "rent": 0, "area": 36.85, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 460-10", "by": 2022},
+      {"type": "전세", "price": 27000, "rent": 0, "area": 36.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-21", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 460-10", "by": 2022},
       {"type": "전세", "price": 27000, "rent": 0, "area": 36.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-21", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 460-10", "by": 2022},
       {"type": "전세", "price": 25000, "rent": 0, "area": 37.11, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-03", "period": "26.05~28.05", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "수택동 460-10", "by": 2022},
       {"type": "전세", "price": 23000, "rent": 0, "area": 37.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 460-10", "by": 2022}
@@ -195,8 +413,9 @@
     "name": "이화빌라 (연립)",
     "address": "구리시 수택동 465-11",
     "coords": [127.142189257754, 37.5949721336013],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 51.5, "rep_avg_price": 28000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [64500, 64500], "rep_area": 51.5, "rep_avg_price": 64500}, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 51.5, "rep_avg_price": 28000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 64500, "rent": 0, "area": 51.46, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 465-11", "by": 2022},
       {"type": "전세", "price": 28000, "rent": 0, "area": 51.46, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-06", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 465-11", "by": 2022}
     ]
   },
@@ -210,12 +429,48 @@
     ]
   },
   {
+    "name": "오상466-29 (다세대)",
+    "address": "구리시 수택동 466-29",
+    "coords": [127.141708111308, 37.5954995216008],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12500, 12500], "rep_area": 40.6, "rep_avg_price": 12500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12500, "rent": 0, "area": 40.56, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-30", "period": "26.05~28.05", "renew": "갱신", "p_dep": 11000, "p_rent": 0, "jibun": "수택동 466-29", "by": 1993}
+    ]
+  },
+  {
+    "name": "화이트빌리지466-30 (다세대)",
+    "address": "구리시 수택동 466-30",
+    "coords": [127.14202769449, 37.5955190493667],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 51.3, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 51.305, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-26", "period": "26.05~28.05", "renew": "갱신", "p_dep": 18000, "p_rent": 0, "jibun": "수택동 466-30", "by": 2002}
+    ]
+  },
+  {
     "name": "트레져 (연립)",
     "address": "구리시 수택동 472-1",
     "coords": [127.143314924963, 37.5961027769721],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 50.5, "rep_avg_price": 25000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 50.49, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 472-1", "by": 2015}
+    ]
+  },
+  {
+    "name": "대영주택 (다세대)",
+    "address": "구리시 수택동 477-1",
+    "coords": [127.145900111203, 37.5946130649264],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [44900, 44900], "rep_area": 52.0, "rep_avg_price": 44900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 44900, "rent": 0, "area": 52.02, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 477-1", "by": 1995}
+    ]
+  },
+  {
+    "name": "보성477-11 (다세대)",
+    "address": "구리시 수택동 477-11",
+    "coords": [127.145269114029, 37.5945794253799],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 34.8, "rep_avg_price": 13000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 34.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-20", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 477-11", "by": 1988}
     ]
   },
   {
@@ -228,12 +483,31 @@
     ]
   },
   {
+    "name": "양주빌라가동 (다세대)",
+    "address": "구리시 수택동 492-4",
+    "coords": [127.146855206564, 37.5963884540081],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 38.1, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 38.12, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 492-4", "by": 1987}
+    ]
+  },
+  {
     "name": "더로즈빌 (다세대)",
     "address": "구리시 수택동 493-12",
     "coords": [127.147443761573, 37.5965394470543],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [38160, 38160], "rep_area": 56.4, "rep_avg_price": 38160}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [38160, 38160], "rep_area": 56.4, "rep_avg_price": 38160}, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 56.4, "rep_avg_price": 25000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 38160, "rent": 0, "area": 56.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 493-12", "by": 2017}
+      {"type": "매매", "price": 38160, "rent": 0, "area": 56.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 493-12", "by": 2017},
+      {"type": "전세", "price": 25000, "rent": 0, "area": 56.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-28", "period": "26.05~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 493-12", "by": 2017}
+    ]
+  },
+  {
+    "name": "비.제이빌 (다세대)",
+    "address": "구리시 수택동 493-13",
+    "coords": [127.147344443249, 37.5964191086407],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14300, 14300], "rep_area": 22.8, "rep_avg_price": 14300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 14300, "rent": 0, "area": 22.815, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 493-13", "by": 2002}
     ]
   },
   {
@@ -266,11 +540,21 @@
     ]
   },
   {
+    "name": "(518-21) (다세대)",
+    "address": "구리시 수택동 518-21",
+    "coords": [127.146366267955, 37.5994001712398],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 64.0, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 64.02, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 518-21", "by": 2003}
+    ]
+  },
+  {
     "name": "씨티캐슬 (다세대)",
     "address": "구리시 수택동 518-6",
     "coords": [127.146163507264, 37.5996581957954],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [67500, 67500], "rep_area": 59.0, "rep_avg_price": 67500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [67500, 69000], "rep_area": 59.0, "rep_avg_price": 68250}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 69000, "rent": 0, "area": 58.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 518-6", "by": 2016},
       {"type": "매매", "price": 67500, "rent": 0, "area": 58.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 518-6", "by": 2016}
     ]
   },
@@ -281,6 +565,33 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 14.6, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 52, "area": 14.59, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 531-4", "by": 2014}
+    ]
+  },
+  {
+    "name": "성우공동주택 (연립)",
+    "address": "구리시 수택동 589",
+    "coords": [127.147583231811, 37.5948012616453],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 61.0, "rep_avg_price": 24000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 24000, "rent": 0, "area": 61.05, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 589", "by": 1983}
+    ]
+  },
+  {
+    "name": "다림 (연립)",
+    "address": "구리시 수택동 591",
+    "coords": [127.147851892936, 37.5939223691662],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49500, 49500], "rep_area": 65.9, "rep_avg_price": 49500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49500, "rent": 0, "area": 65.925, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 591", "by": 1985}
+    ]
+  },
+  {
+    "name": "성우 (연립)",
+    "address": "구리시 수택동 653-4",
+    "coords": [127.143450158006, 37.5921665434228],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49500, 49500], "rep_area": 63.0, "rep_avg_price": 49500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49500, "rent": 0, "area": 63.0, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 653-4", "by": 1986}
     ]
   },
   {
@@ -321,6 +632,24 @@
     ]
   },
   {
+    "name": "행운아트빌라 (다세대)",
+    "address": "구리시 수택동 669",
+    "coords": [127.146091272171, 37.5934091946114],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 46.6, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 46.62, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-26", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 669", "by": 1997}
+    ]
+  },
+  {
+    "name": "삼화 (연립)",
+    "address": "구리시 수택동 670-39",
+    "coords": [127.145446295876, 37.5931692463345],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [59900, 59900], "rep_area": 84.1, "rep_avg_price": 59900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 59900, "rent": 0, "area": 84.08, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 670-39", "by": 1982}
+    ]
+  },
+  {
     "name": "한림빌리지 (다세대)",
     "address": "구리시 수택동 670-47",
     "coords": [127.144916148378, 37.593167736048],
@@ -333,9 +662,19 @@
     "name": "한림빌리지 (다세대)",
     "address": "구리시 수택동 670-49",
     "coords": [127.144794293071, 37.5931577043961],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 19.8, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [29500, 29500], "rep_area": 21.0, "rep_avg_price": 29500}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 19.8, "rep_avg_price": 500}},
     "deals": [
+      {"type": "매매", "price": 29500, "rent": 0, "area": 20.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 670-49", "by": 2002},
       {"type": "월세", "price": 500, "rent": 40, "area": 19.79, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-01", "period": "26.05~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 670-49", "by": 2002}
+    ]
+  },
+  {
+    "name": "우림빌라(101~103동) (연립)",
+    "address": "구리시 수택동 684-1",
+    "coords": [127.148725896357, 37.5931104692712],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 59.7, "rep_avg_price": 21000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 59.712, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-31", "period": "26.07~28.07", "renew": "갱신", "p_dep": 20000, "p_rent": 0, "jibun": "수택동 684-1", "by": 2000}
     ]
   },
   {
@@ -348,6 +687,24 @@
     ]
   },
   {
+    "name": "다세대 (다세대)",
+    "address": "구리시 수택동 698",
+    "coords": [127.145235018677, 37.5918928920309],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 20.5, "rep_avg_price": 9000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 9000, "rent": 0, "area": 20.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수택동 698", "by": 2007}
+    ]
+  },
+  {
+    "name": "은진 (다세대)",
+    "address": "구리시 수택동 698-1",
+    "coords": [127.145434774891, 37.5919038183619],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [44300, 44300], "rep_area": 63.0, "rep_avg_price": 44300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 44300, "rent": 0, "area": 63.0, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수택동 698-1", "by": 1987}
+    ]
+  },
+  {
     "name": "(754-3) (다세대)",
     "address": "구리시 수택동 754-3",
     "coords": [127.138951665739, 37.593311138252],
@@ -357,12 +714,57 @@
     ]
   },
   {
+    "name": "현진빌 (연립)",
+    "address": "구리시 아천동 302-1",
+    "coords": [127.11425377194, 37.5635046481759],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [39700, 39700], "rep_area": 66.1, "rep_avg_price": 39700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 39700, "rent": 0, "area": 66.07, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "아천동 302-1", "by": 2018}
+    ]
+  },
+  {
+    "name": "ACHIULMEMBERSCOUNTY2 (다세대)",
+    "address": "구리시 아천동 343-1",
+    "coords": [127.118828815595, 37.5732493503111],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 84.9, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "아천동 343-1", "by": 2017}
+    ]
+  },
+  {
+    "name": "백합 (다세대)",
+    "address": "구리시 인창동 277-13",
+    "coords": [127.139583372189, 37.6016120294995],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34200, 34200], "rep_area": 35.8, "rep_avg_price": 34200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34200, "rent": 0, "area": 35.81, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 277-13", "by": 1987}
+    ]
+  },
+  {
     "name": "정명로얄빌라(277-29) (다세대)",
     "address": "구리시 인창동 277-29",
     "coords": [127.139314470667, 37.6015786501967],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 48.0, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 15000, "rent": 0, "area": 47.97, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-06", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 277-29", "by": 1994}
+    ]
+  },
+  {
+    "name": "성일그린빌라 (다세대)",
+    "address": "구리시 인창동 307-14",
+    "coords": [127.137274157595, 37.6034827600723],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 39.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 39.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-12", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 307-14", "by": 1995}
+    ]
+  },
+  {
+    "name": "정명힐탑빌라 (다세대)",
+    "address": "구리시 인창동 309-35",
+    "coords": [127.136817699173, 37.6044300499432],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 41.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 70, "area": 41.04, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-19", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 309-35", "by": 1993}
     ]
   },
   {
@@ -381,6 +783,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [36500, 36500], "rep_area": 63.0, "rep_avg_price": 36500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 36500, "rent": 0, "area": 62.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 383-86", "by": 1992}
+    ]
+  },
+  {
+    "name": "동부그린빌라(395-4) (연립)",
+    "address": "구리시 인창동 395-4",
+    "coords": [127.137441635438, 37.6077227109074],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15500, 15500], "rep_area": 44.1, "rep_avg_price": 15500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15500, "rent": 0, "area": 44.1, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-11", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 395-4", "by": 1995}
+    ]
+  },
+  {
+    "name": "구구하우스 (다세대)",
+    "address": "구리시 인창동 401-4",
+    "coords": [127.137632094714, 37.6077671779975],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 23.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 40, "area": 23.7, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-29", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 401-4", "by": 2013}
     ]
   },
   {
@@ -420,6 +840,15 @@
     ]
   },
   {
+    "name": "신동흥 (다세대)",
+    "address": "구리시 인창동 576-52",
+    "coords": [127.13585482456, 37.6040317535999],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 32.9, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16000, "rent": 0, "area": 32.88, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 576-52", "by": 1992}
+    ]
+  },
+  {
     "name": "유광빌라 (다세대)",
     "address": "구리시 인창동 582-12",
     "coords": [127.136272070169, 37.6049251442318],
@@ -441,8 +870,9 @@
     "name": "영진씨티빌Ⅱ (연립)",
     "address": "구리시 인창동 605-5",
     "coords": [127.134971443487, 37.60205779771],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 63.2, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [18900, 18900], "rep_area": 51.6, "rep_avg_price": 18900}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 63.2, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "전세", "price": 18900, "rent": 0, "area": 51.58, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 605-5", "by": 2003},
       {"type": "월세", "price": 3000, "rent": 70, "area": 63.18, "land": 0.0, "floor": "5", "dong": "", "date": "2026-05-01", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인창동 605-5", "by": 2003}
     ]
   },
@@ -450,8 +880,10 @@
     "name": "채움더힐 (연립)",
     "address": "구리시 인창동 616-15",
     "coords": [127.129950923529, 37.6027928738434],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [44300, 44300], "rep_area": 64.1, "rep_avg_price": 44300}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [44300, 53000], "rep_area": 64.1, "rep_avg_price": 44300}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 44300, "rent": 0, "area": 64.141, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-15", "by": 2022},
+      {"type": "매매", "price": 53000, "rent": 0, "area": 70.185, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-15", "by": 2022},
       {"type": "매매", "price": 44300, "rent": 0, "area": 64.141, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-15", "by": 2022}
     ]
   },
@@ -459,8 +891,12 @@
     "name": "채움더힐 (연립)",
     "address": "구리시 인창동 616-4",
     "coords": [127.12952717713, 37.6028022594607],
-    "stats": {"total": 3, "sale": {"count": 3, "range": [44700, 56000], "rep_area": 64.1, "rep_avg_price": 45850}, "jeonse": null, "monthly": null},
+    "stats": {"total": 7, "sale": {"count": 7, "range": [44700, 61000], "rep_area": 64.1, "rep_avg_price": 46440}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 61000, "rent": 0, "area": 64.903, "land": 0.0, "floor": "6", "dong": "", "date": "2026-05-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022},
+      {"type": "매매", "price": 46500, "rent": 0, "area": 64.141, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022},
+      {"type": "매매", "price": 47000, "rent": 0, "area": 64.141, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022},
+      {"type": "매매", "price": 47000, "rent": 0, "area": 64.141, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022},
       {"type": "매매", "price": 56000, "rent": 0, "area": 82.256, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022},
       {"type": "매매", "price": 44700, "rent": 0, "area": 64.141, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022},
       {"type": "매매", "price": 47000, "rent": 0, "area": 64.141, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 616-4", "by": 2022}
@@ -470,8 +906,9 @@
     "name": "클레시움더테라스하우스 (연립)",
     "address": "구리시 인창동 715",
     "coords": [127.142393395116, 37.6171799193173],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [39500, 39500], "rep_area": 65.2, "rep_avg_price": 39500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [39500, 39800], "rep_area": 60.4, "rep_avg_price": 39800}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 39800, "rent": 0, "area": 60.4189, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 715", "by": 2017},
       {"type": "매매", "price": 39500, "rent": 0, "area": 65.1954, "land": 0.0, "floor": "3", "dong": "", "date": "2026-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인창동 715", "by": 2017}
     ]
   },

@@ -212,9 +212,8 @@
     "name": "서울특별시 강동구 성내동",
     "address": "서울특별시 강동구 성내동",
     "coords": [127.130026914568, 37.5292748071425],
-    "stats": {"total": 150, "sale": {"count": 1, "range": [136000, 136000], "rep_area": 198.1, "rep_avg_price": 136000}, "jeonse": {"count": 33, "range": [2500, 55000], "rep_area": 40.0, "rep_avg_price": 14000}, "monthly": {"count": 116, "range": [200, 27000], "rep_area": 20.0, "rep_avg_price": 909}},
+    "stats": {"total": 149, "sale": null, "jeonse": {"count": 33, "range": [2500, 55000], "rep_area": 40.0, "rep_avg_price": 14000}, "monthly": {"count": 116, "range": [200, 27000], "rep_area": 20.0, "rep_avg_price": 909}},
     "deals": [
-      {"type": "매매", "price": 136000, "rent": 0, "area": 198.06, "land": 129.0, "floor": "", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성내동 8*", "by": 1993},
       {"type": "월세", "price": 7000, "rent": 40, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
       {"type": "월세", "price": 500, "rent": 50, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 3000, "rent": 29, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -376,6 +375,15 @@
     ]
   },
   {
+    "name": "서울특별시 강동구 성내동 84-15",
+    "address": "서울특별시 강동구 성내동 84-15",
+    "coords": [127.124206582347, 37.5352457861501],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [136000, 136000], "rep_area": 198.1, "rep_avg_price": 136000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 136000, "rent": 0, "area": 198.06, "land": 129.0, "floor": "", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성내동 84-15 (추정)", "by": 1993}
+    ]
+  },
+  {
     "name": "서울특별시 강동구 암사동",
     "address": "서울특별시 강동구 암사동",
     "coords": [127.13168588897, 37.5591140475274],
@@ -457,9 +465,8 @@
     "name": "서울특별시 강동구 천호동",
     "address": "서울특별시 강동구 천호동",
     "coords": [127.12866892591, 37.5422218634248],
-    "stats": {"total": 143, "sale": {"count": 3, "range": [74000, 205000], "rep_area": 146.1, "rep_avg_price": 74000}, "jeonse": {"count": 28, "range": [2500, 33000], "rep_area": 24.0, "rep_avg_price": 8500}, "monthly": {"count": 112, "range": [0, 27000], "rep_area": 33.0, "rep_avg_price": 833}},
+    "stats": {"total": 142, "sale": {"count": 2, "range": [74000, 99000], "rep_area": 146.1, "rep_avg_price": 74000}, "jeonse": {"count": 28, "range": [2500, 33000], "rep_area": 24.0, "rep_avg_price": 8500}, "monthly": {"count": 112, "range": [0, 27000], "rep_area": 33.0, "rep_avg_price": 833}},
     "deals": [
-      {"type": "매매", "price": 205000, "rent": 0, "area": 218.28, "land": 216.9, "floor": "", "dong": "", "date": "2026-01-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 2*", "by": 1978},
       {"type": "매매", "price": 99000, "rent": 0, "area": 239.16, "land": 158.0, "floor": "", "dong": "", "date": "2026-01-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 2**", "by": 1993},
       {"type": "매매", "price": 74000, "rent": 0, "area": 146.13, "land": 109.0, "floor": "", "dong": "", "date": "2026-01-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 1**", "by": 1989},
       {"type": "월세", "price": 500, "rent": 35, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -602,6 +609,15 @@
       {"type": "전세", "price": 19000, "rent": 0, "area": 55.08, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-01", "period": "26.01~28.01", "renew": "갱신", "p_dep": 17000, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 500, "rent": 35, "area": 21.075, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 700, "rent": 55, "area": 41.235, "land": 0.0, "floor": "", "dong": "", "date": "2026-01-02", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 강동구 천호동 21-208",
+    "address": "서울특별시 강동구 천호동 21-208",
+    "coords": [127.138487538243, 37.5456271636904],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [205000, 205000], "rep_area": 218.3, "rep_avg_price": 205000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 205000, "rent": 0, "area": 218.28, "land": 216.9, "floor": "", "dong": "", "date": "2026-01-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 21-208 (추정)", "by": 1978}
     ]
   },
   {

@@ -478,12 +478,10 @@
     "name": "서울특별시 광진구 자양동",
     "address": "서울특별시 광진구 자양동",
     "coords": [127.073018338792, 37.5311077958687],
-    "stats": {"total": 281, "sale": {"count": 5, "range": [135400, 230000], "rep_area": 122.2, "rep_avg_price": 160000}, "jeonse": {"count": 30, "range": [5000, 35000], "rep_area": 42.0, "rep_avg_price": 21500}, "monthly": {"count": 246, "range": [100, 18370], "rep_area": 20.0, "rep_avg_price": 1106}},
+    "stats": {"total": 279, "sale": {"count": 3, "range": [135400, 181800], "rep_area": 122.2, "rep_avg_price": 160000}, "jeonse": {"count": 30, "range": [5000, 35000], "rep_area": 42.0, "rep_avg_price": 21500}, "monthly": {"count": 246, "range": [100, 18370], "rep_area": 20.0, "rep_avg_price": 1106}},
     "deals": [
       {"type": "매매", "price": 135400, "rent": 0, "area": 159.68, "land": 104.1, "floor": "", "dong": "", "date": "2026-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 6**", "by": 1976},
-      {"type": "매매", "price": 230000, "rent": 0, "area": 299.89, "land": 152.9, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 5**", "by": 1995},
       {"type": "매매", "price": 181800, "rent": 0, "area": 282.22, "land": 126.6, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 6**", "by": 1994},
-      {"type": "매매", "price": 160000, "rent": 0, "area": 186.3, "land": 139.8, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 2**", "by": 1983},
       {"type": "매매", "price": 160000, "rent": 0, "area": 122.15, "land": 106.1, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 6**", "by": 1977},
       {"type": "월세", "price": 1000, "rent": 65, "area": 39.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 4000, "rent": 45, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
@@ -761,6 +759,24 @@
       {"type": "월세", "price": 500, "rent": 25, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "월세", "price": 2000, "rent": 120, "area": 49.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1986},
       {"type": "월세", "price": 1000, "rent": 45, "area": 34.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-02", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1000, "p_rent": 40, "jibun": "", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 광진구 자양동 217-6도",
+    "address": "서울특별시 광진구 자양동 217-6도",
+    "coords": [127.081113471861, 37.5357967273951],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [160000, 160000], "rep_area": 186.3, "rep_avg_price": 160000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 160000, "rent": 0, "area": 186.3, "land": 139.8, "floor": "", "dong": "", "date": "2026-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 217-6도 (추정)", "by": 1983}
+    ]
+  },
+  {
+    "name": "서울특별시 광진구 자양동 597-36",
+    "address": "서울특별시 광진구 자양동 597-36",
+    "coords": [127.077251664787, 37.5303231236539],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [230000, 230000], "rep_area": 299.9, "rep_avg_price": 230000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 230000, "rent": 0, "area": 299.89, "land": 152.9, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "자양동 597-36 (추정)", "by": 1995}
     ]
   },
   {

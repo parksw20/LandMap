@@ -3,9 +3,8 @@
     "name": "경기도 안성시 공도읍 마정리",
     "address": "경기도 안성시 공도읍 마정리",
     "coords": [127.205708148124, 37.0168327300545],
-    "stats": {"total": 18, "sale": {"count": 1, "range": [148000, 148000], "rep_area": 492.2, "rep_avg_price": 148000}, "jeonse": {"count": 2, "range": [6500, 6500], "rep_area": 60.0, "rep_avg_price": 6500}, "monthly": {"count": 15, "range": [100, 1000], "rep_area": 25.0, "rep_avg_price": 175}},
+    "stats": {"total": 17, "sale": null, "jeonse": {"count": 2, "range": [6500, 6500], "rep_area": 60.0, "rep_avg_price": 6500}, "monthly": {"count": 15, "range": [100, 1000], "rep_area": 25.0, "rep_avg_price": 175}},
     "deals": [
-      {"type": "매매", "price": 148000, "rent": 0, "area": 492.18, "land": 474.0, "floor": "", "dong": "", "date": "2025-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "공도읍 마정리 1**", "by": 1900},
       {"type": "월세", "price": 200, "rent": 35, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-16", "period": "25.04~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 200, "rent": 37, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-22", "period": "25.05~25.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 100, "rent": 35, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-05", "period": "25.04~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2008},
@@ -23,6 +22,15 @@
       {"type": "전세", "price": 6500, "rent": 0, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-08", "period": "25.05~27.05", "renew": "갱신", "p_dep": 6500, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 300, "rent": 40, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-09", "period": "25.04~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "전세", "price": 6500, "rent": 0, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-08", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011}
+    ]
+  },
+  {
+    "name": "경기도 안성시 공도읍 마정리 112-108",
+    "address": "경기도 안성시 공도읍 마정리 112-108",
+    "coords": [127.203474065381, 37.014995407907],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [148000, 148000], "rep_area": 492.2, "rep_avg_price": 148000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 148000, "rent": 0, "area": 492.18, "land": 474.0, "floor": "", "dong": "", "date": "2025-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "공도읍 마정리 112-108 (추정)", "by": 1900}
     ]
   },
   {
@@ -182,12 +190,12 @@
     ]
   },
   {
-    "name": "경기도 안성시 대덕면 삼한리",
-    "address": "경기도 안성시 대덕면 삼한리",
-    "coords": [127.275814828924, 37.0570838464151],
+    "name": "경기도 안성시 대덕면 삼한리 566-3임",
+    "address": "경기도 안성시 대덕면 삼한리 566-3임",
+    "coords": [127.270980997251, 37.0603814615057],
     "stats": {"total": 1, "sale": {"count": 1, "range": [13500, 13500], "rep_area": 98.6, "rep_avg_price": 13500}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 13500, "rent": 0, "area": 98.57, "land": 416.0, "floor": "", "dong": "", "date": "2025-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대덕면 삼한리 5**", "by": 1900}
+      {"type": "매매", "price": 13500, "rent": 0, "area": 98.57, "land": 416.0, "floor": "", "dong": "", "date": "2025-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대덕면 삼한리 566-3임 (추정)", "by": 1900}
     ]
   },
   {
@@ -203,12 +211,20 @@
     "name": "경기도 안성시 도기동",
     "address": "경기도 안성시 도기동",
     "coords": [127.261485555038, 36.9976669306643],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [34200, 34200], "rep_area": 145.2, "rep_avg_price": 34200}, "jeonse": {"count": 2, "range": [3000, 7000], "rep_area": 23.0, "rep_avg_price": 3000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 36.0, "rep_avg_price": 3000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [3000, 7000], "rep_area": 23.0, "rep_avg_price": 3000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 36.0, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "매매", "price": 34200, "rent": 0, "area": 145.22, "land": 385.0, "floor": "", "dong": "", "date": "2025-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도기동 3**", "by": 2022},
       {"type": "월세", "price": 3000, "rent": 17, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "전세", "price": 3000, "rent": 0, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-23", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2013},
       {"type": "전세", "price": 7000, "rent": 0, "area": 36.15, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-03", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019}
+    ]
+  },
+  {
+    "name": "경기도 안성시 도기동 358-6",
+    "address": "경기도 안성시 도기동 358-6",
+    "coords": [127.262860153539, 36.9979587280236],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34200, 34200], "rep_area": 145.2, "rep_avg_price": 34200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34200, "rent": 0, "area": 145.22, "land": 385.0, "floor": "", "dong": "", "date": "2025-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도기동 358-6 (추정)", "by": 2022}
     ]
   },
   {
@@ -546,12 +562,12 @@
     ]
   },
   {
-    "name": "경기도 안성시 죽산면 두현리",
-    "address": "경기도 안성시 죽산면 두현리",
-    "coords": [127.407724292332, 37.0712794725165],
+    "name": "경기도 안성시 죽산면 두현리 481-3",
+    "address": "경기도 안성시 죽산면 두현리 481-3",
+    "coords": [127.400020799213, 37.0746301825547],
     "stats": {"total": 1, "sale": {"count": 1, "range": [22500, 22500], "rep_area": 55.9, "rep_avg_price": 22500}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 22500, "rent": 0, "area": 55.9, "land": 291.0, "floor": "", "dong": "", "date": "2025-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "죽산면 두현리 4**", "by": 2015}
+      {"type": "매매", "price": 22500, "rent": 0, "area": 55.9, "land": 291.0, "floor": "", "dong": "", "date": "2025-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "죽산면 두현리 481-3 (추정)", "by": 2015}
     ]
   },
   {

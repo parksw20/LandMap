@@ -53,9 +53,8 @@
     "name": "경기도 성남시 수정구 복정동",
     "address": "경기도 성남시 수정구 복정동",
     "coords": [127.127149746638, 37.4658074787091],
-    "stats": {"total": 100, "sale": {"count": 1, "range": [284000, 284000], "rep_area": 746.8, "rep_avg_price": 284000}, "jeonse": {"count": 21, "range": [4000, 45000], "rep_area": 50.0, "rep_avg_price": 18666}, "monthly": {"count": 78, "range": [300, 27000], "rep_area": 45.0, "rep_avg_price": 7071}},
+    "stats": {"total": 99, "sale": null, "jeonse": {"count": 21, "range": [4000, 45000], "rep_area": 50.0, "rep_avg_price": 18666}, "monthly": {"count": 78, "range": [300, 27000], "rep_area": 45.0, "rep_avg_price": 7071}},
     "deals": [
-      {"type": "매매", "price": 284000, "rent": 0, "area": 746.82, "land": 386.3, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "복정동 6**", "by": 2003},
       {"type": "전세", "price": 35000, "rent": 0, "area": 100.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "전세", "price": 16000, "rent": 0, "area": 48.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "월세", "price": 3000, "rent": 45, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
@@ -158,6 +157,15 @@
     ]
   },
   {
+    "name": "경기도 성남시 수정구 복정동 658-3",
+    "address": "경기도 성남시 수정구 복정동 658-3",
+    "coords": [127.128219289797, 37.4630141801433],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [284000, 284000], "rep_area": 746.8, "rep_avg_price": 284000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 284000, "rent": 0, "area": 746.82, "land": 386.3, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "복정동 658-3 (추정)", "by": 2003}
+    ]
+  },
+  {
     "name": "경기도 성남시 수정구 사송동",
     "address": "경기도 성남시 수정구 사송동",
     "coords": [127.112730888795, 37.4147670113406],
@@ -196,7 +204,7 @@
     "name": "경기도 성남시 수정구 수진동",
     "address": "경기도 성남시 수정구 수진동",
     "coords": [127.139027108809, 37.4385763091096],
-    "stats": {"total": 120, "sale": {"count": 34, "range": [40000, 131000], "rep_area": 121.9, "rep_avg_price": 97000}, "jeonse": {"count": 38, "range": [3000, 30000], "rep_area": 41.4, "rep_avg_price": 12500}, "monthly": {"count": 48, "range": [50, 16000], "rep_area": 20.0, "rep_avg_price": 516}},
+    "stats": {"total": 113, "sale": {"count": 27, "range": [40000, 105000], "rep_area": 121.9, "rep_avg_price": 97000}, "jeonse": {"count": 38, "range": [3000, 30000], "rep_area": 41.4, "rep_avg_price": 12500}, "monthly": {"count": 48, "range": [50, 16000], "rep_area": 20.0, "rep_avg_price": 516}},
     "deals": [
       {"type": "매매", "price": 96000, "rent": 0, "area": 140.13, "land": 67.8, "floor": "", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2***", "by": 1993},
       {"type": "매매", "price": 78000, "rent": 0, "area": 123.56, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 3***", "by": 1991},
@@ -207,29 +215,22 @@
       {"type": "매매", "price": 89000, "rent": 0, "area": 72.96, "land": 55.2, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1985},
       {"type": "매매", "price": 96000, "rent": 0, "area": 123.58, "land": 64.5, "floor": "", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1990},
       {"type": "매매", "price": 78000, "rent": 0, "area": 116.05, "land": 65.8, "floor": "", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 3***", "by": 1990},
-      {"type": "매매", "price": 131000, "rent": 0, "area": 85.83, "land": 124.6, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2**", "by": 1973},
       {"type": "매매", "price": 96000, "rent": 0, "area": 142.35, "land": 65.5, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1994},
       {"type": "매매", "price": 105000, "rent": 0, "area": 48.99, "land": 57.2, "floor": "", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1**", "by": 1972},
       {"type": "매매", "price": 100000, "rent": 0, "area": 121.86, "land": 68.1, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1991},
-      {"type": "매매", "price": 95000, "rent": 0, "area": 101.86, "land": 61.8, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 8**", "by": 1991},
       {"type": "매매", "price": 95000, "rent": 0, "area": 129.37, "land": 66.1, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2***", "by": 1990},
       {"type": "매매", "price": 90000, "rent": 0, "area": 111.6, "land": 64.1, "floor": "", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 7**", "by": 1990},
       {"type": "매매", "price": 94500, "rent": 0, "area": 131.3, "land": 72.4, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 6**", "by": 1989},
       {"type": "매매", "price": 98000, "rent": 0, "area": 101.37, "land": 67.8, "floor": "", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 8**", "by": 1988},
       {"type": "매매", "price": 82000, "rent": 0, "area": 121.29, "land": 71.1, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 3***", "by": 1989},
-      {"type": "매매", "price": 90000, "rent": 0, "area": 105.15, "land": 60.5, "floor": "", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 9**", "by": 1991},
       {"type": "매매", "price": 96000, "rent": 0, "area": 120.28, "land": 65.1, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2***", "by": 1989},
       {"type": "매매", "price": 90000, "rent": 0, "area": 67.48, "land": 65.5, "floor": "", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2***", "by": 1984},
       {"type": "매매", "price": 78000, "rent": 0, "area": 156.73, "land": 67.8, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 4***", "by": 1991},
-      {"type": "매매", "price": 99000, "rent": 0, "area": 37.59, "land": 79.7, "floor": "", "dong": "", "date": "2026-04-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1974},
-      {"type": "매매", "price": 105000, "rent": 0, "area": 106.84, "land": 69.8, "floor": "", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 4**", "by": 1984},
       {"type": "매매", "price": 90000, "rent": 0, "area": 108.18, "land": 60.5, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 7**", "by": 1991},
       {"type": "매매", "price": 69500, "rent": 0, "area": 72.0, "land": 61.8, "floor": "", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1990},
       {"type": "매매", "price": 95000, "rent": 0, "area": 126.66, "land": 65.1, "floor": "", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1989},
       {"type": "매매", "price": 90000, "rent": 0, "area": 106.08, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1992},
-      {"type": "매매", "price": 92500, "rent": 0, "area": 132.13, "land": 65.5, "floor": "", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 6**", "by": 2007},
       {"type": "매매", "price": 83000, "rent": 0, "area": 28.08, "land": 49.3, "floor": "", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 2007},
-      {"type": "매매", "price": 104000, "rent": 0, "area": 155.64, "land": 74.0, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1997},
       {"type": "매매", "price": 94000, "rent": 0, "area": 121.89, "land": 68.8, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1990},
       {"type": "매매", "price": 95000, "rent": 0, "area": 125.36, "land": 68.1, "floor": "", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1***", "by": 1991},
       {"type": "월세", "price": 50, "rent": 20, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1972},
@@ -321,6 +322,33 @@
     ]
   },
   {
+    "name": "경기도 성남시 수정구 수진동 1528",
+    "address": "경기도 성남시 수정구 수진동 1528",
+    "coords": [127.135559989587, 37.4373062110588],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [104000, 104000], "rep_area": 155.6, "rep_avg_price": 104000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 104000, "rent": 0, "area": 155.64, "land": 74.0, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1528 (추정)", "by": 1997}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 수진동 1903",
+    "address": "경기도 성남시 수정구 수진동 1903",
+    "coords": [127.137821593286, 37.4382954329409],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [99000, 99000], "rep_area": 37.6, "rep_avg_price": 99000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 99000, "rent": 0, "area": 37.59, "land": 79.7, "floor": "", "dong": "", "date": "2026-04-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1903 (추정)", "by": 1974}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 수진동 259",
+    "address": "경기도 성남시 수정구 수진동 259",
+    "coords": [127.133944755042, 37.4398595463605],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [131000, 131000], "rep_area": 85.8, "rep_avg_price": 131000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 131000, "rent": 0, "area": 85.83, "land": 124.6, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 259 (추정)", "by": 1973}
+    ]
+  },
+  {
     "name": "경기도 성남시 수정구 수진동 2824",
     "address": "경기도 성남시 수정구 수진동 2824",
     "coords": [127.135504538438, 37.4363824638422],
@@ -345,6 +373,42 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [84700, 84700], "rep_area": 174.4, "rep_avg_price": 84700}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 84700, "rent": 0, "area": 174.44, "land": 95.5, "floor": "", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 4611-9 (추정)", "by": 1989}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 수진동 473",
+    "address": "경기도 성남시 수정구 수진동 473",
+    "coords": [127.13525155972, 37.4402204463255],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 106.8, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 106.84, "land": 69.8, "floor": "", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 473 (추정)", "by": 1984}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 수진동 625",
+    "address": "경기도 성남시 수정구 수진동 625",
+    "coords": [127.136471626223, 37.440101912035],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [92500, 92500], "rep_area": 132.1, "rep_avg_price": 92500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 92500, "rent": 0, "area": 132.13, "land": 65.5, "floor": "", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 625 (추정)", "by": 2007}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 수진동 851",
+    "address": "경기도 성남시 수정구 수진동 851",
+    "coords": [127.136117381659, 37.4389211803414],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 101.9, "rep_avg_price": 95000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 95000, "rent": 0, "area": 101.86, "land": 61.8, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 851 (추정)", "by": 1991}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 수진동 940",
+    "address": "경기도 성남시 수정구 수진동 940",
+    "coords": [127.135306999628, 37.4394435280328],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 105.2, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 105.15, "land": 60.5, "floor": "", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 940 (추정)", "by": 1991}
     ]
   },
   {
@@ -373,7 +437,7 @@
     "name": "경기도 성남시 수정구 신흥동",
     "address": "경기도 성남시 수정구 신흥동",
     "coords": [127.141137377657, 37.4431149209874],
-    "stats": {"total": 94, "sale": {"count": 18, "range": [50000, 90000], "rep_area": 94.9, "rep_avg_price": 74900}, "jeonse": {"count": 40, "range": [1000, 25000], "rep_area": 32.0, "rep_avg_price": 10250}, "monthly": {"count": 36, "range": [200, 8700], "rep_area": 37.0, "rep_avg_price": 1166}},
+    "stats": {"total": 93, "sale": {"count": 17, "range": [50000, 90000], "rep_area": 95.1, "rep_avg_price": 79000}, "jeonse": {"count": 40, "range": [1000, 25000], "rep_area": 32.0, "rep_avg_price": 10250}, "monthly": {"count": 36, "range": [200, 8700], "rep_area": 37.0, "rep_avg_price": 1166}},
     "deals": [
       {"type": "매매", "price": 83000, "rent": 0, "area": 123.31, "land": 68.8, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4***", "by": 1991},
       {"type": "매매", "price": 90000, "rent": 0, "area": 131.57, "land": 71.1, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 6***", "by": 1992},
@@ -382,7 +446,6 @@
       {"type": "매매", "price": 79000, "rent": 0, "area": 95.13, "land": 61.5, "floor": "", "dong": "", "date": "2026-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 5***", "by": 1991},
       {"type": "매매", "price": 77000, "rent": 0, "area": 103.38, "land": 57.5, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 6***", "by": 1993},
       {"type": "매매", "price": 83000, "rent": 0, "area": 108.66, "land": 63.5, "floor": "", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 6***", "by": 1989},
-      {"type": "매매", "price": 74900, "rent": 0, "area": 94.9, "land": 53.2, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4***", "by": 1989},
       {"type": "매매", "price": 83000, "rent": 0, "area": 104.93, "land": 64.1, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4***", "by": 1988},
       {"type": "매매", "price": 77000, "rent": 0, "area": 110.86, "land": 62.1, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 6***", "by": 1985},
       {"type": "매매", "price": 84000, "rent": 0, "area": 136.99, "land": 62.8, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4***", "by": 1985},
@@ -488,6 +551,15 @@
     "deals": [
       {"type": "매매", "price": 76000, "rent": 0, "area": 64.9, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 2890 (추정)", "by": 1973},
       {"type": "매매", "price": 76000, "rent": 0, "area": 64.9, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 2890 (추정)", "by": 1973}
+    ]
+  },
+  {
+    "name": "경기도 성남시 수정구 신흥동 4439",
+    "address": "경기도 성남시 수정구 신흥동 4439",
+    "coords": [127.141710165724, 37.4404632713609],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [74900, 74900], "rep_area": 94.9, "rep_avg_price": 74900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 74900, "rent": 0, "area": 94.9, "land": 53.2, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4439 (추정)", "by": 1989}
     ]
   },
   {

@@ -3,9 +3,8 @@
     "name": "서울특별시 노원구 공릉동",
     "address": "서울특별시 노원구 공릉동",
     "coords": [127.073821318894, 37.6248431089168],
-    "stats": {"total": 88, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 158.6, "rep_avg_price": 120000}, "jeonse": {"count": 17, "range": [3000, 27000], "rep_area": 35.0, "rep_avg_price": 10500}, "monthly": {"count": 70, "range": [0, 15000], "rep_area": 15.0, "rep_avg_price": 728}},
+    "stats": {"total": 87, "sale": null, "jeonse": {"count": 17, "range": [3000, 27000], "rep_area": 35.0, "rep_avg_price": 10500}, "monthly": {"count": 70, "range": [0, 15000], "rep_area": 15.0, "rep_avg_price": 728}},
     "deals": [
-      {"type": "매매", "price": 120000, "rent": 0, "area": 158.55, "land": 152.0, "floor": "", "dong": "", "date": "2025-05-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "공릉동 3**", "by": 1978},
       {"type": "월세", "price": 3000, "rent": 57, "area": 32.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 300, "rent": 30, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 500, "rent": 35, "area": 18.48, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-02", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -93,6 +92,15 @@
       {"type": "월세", "price": 1000, "rent": 50, "area": 21.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010},
       {"type": "월세", "price": 12000, "rent": 20, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
       {"type": "전세", "price": 5000, "rent": 0, "area": 199.56, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993}
+    ]
+  },
+  {
+    "name": "서울특별시 노원구 공릉동 351-30",
+    "address": "서울특별시 노원구 공릉동 351-30",
+    "coords": [127.078101961986, 37.6232922774901],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [120000, 120000], "rep_area": 158.6, "rep_avg_price": 120000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 120000, "rent": 0, "area": 158.55, "land": 152.0, "floor": "", "dong": "", "date": "2025-05-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "공릉동 351-30 (추정)", "by": 1978}
     ]
   },
   {
@@ -246,14 +254,22 @@
     "name": "서울특별시 노원구 중계동",
     "address": "서울특별시 노원구 중계동",
     "coords": [127.077488598779, 37.6525550467646],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [59700, 59700], "rep_area": 44.0, "rep_avg_price": 59700}, "jeonse": null, "monthly": {"count": 5, "range": [30, 4000], "rep_area": 13.2, "rep_avg_price": 1000}},
+    "stats": {"total": 5, "sale": null, "jeonse": null, "monthly": {"count": 5, "range": [30, 4000], "rep_area": 13.2, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 59700, "rent": 0, "area": 44.0, "land": 54.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중계동 2*", "by": 1989},
       {"type": "월세", "price": 1000, "rent": 55, "area": 17.86, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-02", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 30, "rent": 40, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-29", "period": "25.05~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
       {"type": "월세", "price": 500, "rent": 48, "area": 24.69, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-12", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1971},
       {"type": "월세", "price": 4000, "rent": 10, "area": 35.382, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-21", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 1000, "rent": 40, "area": 13.2, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "25.05~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017}
+    ]
+  },
+  {
+    "name": "서울특별시 노원구 중계동 27-20도",
+    "address": "서울특별시 노원구 중계동 27-20도",
+    "coords": [127.083275287513, 37.6440079811523],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [59700, 59700], "rep_area": 44.0, "rep_avg_price": 59700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 59700, "rent": 0, "area": 44.0, "land": 54.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중계동 27-20도 (추정)", "by": 1989}
     ]
   },
   {

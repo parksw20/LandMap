@@ -122,9 +122,8 @@
     "name": "서울특별시 노원구 상계동",
     "address": "서울특별시 노원구 상계동",
     "coords": [127.060252770712, 37.6612505755399],
-    "stats": {"total": 132, "sale": {"count": 1, "range": [78000, 78000], "rep_area": 219.7, "rep_avg_price": 78000}, "jeonse": {"count": 25, "range": [500, 25000], "rep_area": 40.0, "rep_avg_price": 6850}, "monthly": {"count": 106, "range": [30, 17000], "rep_area": 48.0, "rep_avg_price": 1175}},
+    "stats": {"total": 131, "sale": null, "jeonse": {"count": 25, "range": [500, 25000], "rep_area": 40.0, "rep_avg_price": 6850}, "monthly": {"count": 106, "range": [30, 17000], "rep_area": 48.0, "rep_avg_price": 1175}},
     "deals": [
-      {"type": "매매", "price": 78000, "rent": 0, "area": 219.71, "land": 163.8, "floor": "", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상계동 1***", "by": 1998},
       {"type": "월세", "price": 6000, "rent": 25, "area": 31.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "월세", "price": 1000, "rent": 50, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "전세", "price": 4500, "rent": 0, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
@@ -256,6 +255,15 @@
       {"type": "월세", "price": 200, "rent": 25, "area": 29.55, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-02", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 500, "rent": 40, "area": 76.86, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 7000, "rent": 10, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995}
+    ]
+  },
+  {
+    "name": "서울특별시 노원구 상계동 120전",
+    "address": "서울특별시 노원구 상계동 120전",
+    "coords": [127.071601756314, 37.6691234887312],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [78000, 78000], "rep_area": 219.7, "rep_avg_price": 78000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 78000, "rent": 0, "area": 219.71, "land": 163.8, "floor": "", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상계동 120전 (추정)", "by": 1998}
     ]
   },
   {

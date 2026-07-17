@@ -297,10 +297,8 @@
     "name": "서울특별시 서대문구 북아현동",
     "address": "서울특별시 서대문구 북아현동",
     "coords": [126.956901214305, 37.559565244981],
-    "stats": {"total": 42, "sale": {"count": 2, "range": [114200, 123000], "rep_area": 40.0, "rep_avg_price": 114200}, "jeonse": {"count": 11, "range": [8000, 48000], "rep_area": 50.4, "rep_avg_price": 8000}, "monthly": {"count": 29, "range": [150, 3000], "rep_area": 20.0, "rep_avg_price": 150}},
+    "stats": {"total": 40, "sale": null, "jeonse": {"count": 11, "range": [8000, 48000], "rep_area": 50.4, "rep_avg_price": 8000}, "monthly": {"count": 29, "range": [150, 3000], "rep_area": 20.0, "rep_avg_price": 150}},
     "deals": [
-      {"type": "매매", "price": 123000, "rent": 0, "area": 46.28, "land": 86.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북아현동 *", "by": 1939},
-      {"type": "매매", "price": 114200, "rent": 0, "area": 40.0, "land": 44.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북아현동 1**", "by": 1970},
       {"type": "월세", "price": 2000, "rent": 61, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 1500, "rent": 50, "area": 44.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "전세", "price": 8000, "rent": 0, "area": 50.37, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.03~28.03", "renew": "갱신", "p_dep": 8000, "p_rent": 0, "jibun": "", "by": 1993},
@@ -341,6 +339,24 @@
       {"type": "월세", "price": 1000, "rent": 55, "area": 31.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "전세", "price": 16000, "rent": 0, "area": 68.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "전세", "price": 10000, "rent": 0, "area": 16.21, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.02~27.02", "renew": "갱신", "p_dep": 10000, "p_rent": 0, "jibun": "", "by": 2020}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 북아현동 1-464",
+    "address": "서울특별시 서대문구 북아현동 1-464",
+    "coords": [126.954676006964, 37.5638354960937],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [123000, 123000], "rep_area": 46.3, "rep_avg_price": 123000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 123000, "rent": 0, "area": 46.28, "land": 86.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북아현동 1-464 (추정)", "by": 1939}
+    ]
+  },
+  {
+    "name": "서울특별시 서대문구 북아현동 110",
+    "address": "서울특별시 서대문구 북아현동 110",
+    "coords": [126.957274162118, 37.5581408140799],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [114200, 114200], "rep_area": 40.0, "rep_avg_price": 114200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 114200, "rent": 0, "area": 40.0, "land": 44.0, "floor": "", "dong": "", "date": "2026-02-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "북아현동 110 (추정)", "by": 1970}
     ]
   },
   {

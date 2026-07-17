@@ -15,9 +15,8 @@
     "name": "서울특별시 서초구 반포동",
     "address": "서울특별시 서초구 반포동",
     "coords": [127.013359062646, 37.50514467674],
-    "stats": {"total": 55, "sale": {"count": 1, "range": [420000, 420000], "rep_area": 370.7, "rep_avg_price": 420000}, "jeonse": {"count": 3, "range": [17850, 27500], "rep_area": 26.4, "rep_avg_price": 17850}, "monthly": {"count": 51, "range": [10, 30000], "rep_area": 23.0, "rep_avg_price": 2900}},
+    "stats": {"total": 54, "sale": null, "jeonse": {"count": 3, "range": [17850, 27500], "rep_area": 26.4, "rep_avg_price": 17850}, "monthly": {"count": 51, "range": [10, 30000], "rep_area": 23.0, "rep_avg_price": 2900}},
     "deals": [
-      {"type": "매매", "price": 420000, "rent": 0, "area": 370.72, "land": 158.5, "floor": "", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "반포동 7**", "by": 1997},
       {"type": "월세", "price": 1000, "rent": 80, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 1000, "rent": 42, "area": 21.6, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-12", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 2000, "rent": 48, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-05", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
@@ -75,13 +74,20 @@
     ]
   },
   {
+    "name": "서울특별시 서초구 반포동 727",
+    "address": "서울특별시 서초구 반포동 727",
+    "coords": [127.019460294533, 37.5067623949303],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [420000, 420000], "rep_area": 370.7, "rep_avg_price": 420000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 420000, "rent": 0, "area": 370.72, "land": 158.5, "floor": "", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "반포동 727 (추정)", "by": 1997}
+    ]
+  },
+  {
     "name": "서울특별시 서초구 방배동",
     "address": "서울특별시 서초구 방배동",
     "coords": [126.994486969319, 37.4834130146568],
-    "stats": {"total": 112, "sale": {"count": 2, "range": [135000, 260000], "rep_area": 68.9, "rep_avg_price": 135000}, "jeonse": {"count": 36, "range": [9000, 68000], "rep_area": 40.0, "rep_avg_price": 13363}, "monthly": {"count": 74, "range": [300, 42000], "rep_area": 20.0, "rep_avg_price": 1300}},
+    "stats": {"total": 110, "sale": null, "jeonse": {"count": 36, "range": [9000, 68000], "rep_area": 40.0, "rep_avg_price": 13363}, "monthly": {"count": 74, "range": [300, 42000], "rep_area": 20.0, "rep_avg_price": 1300}},
     "deals": [
-      {"type": "매매", "price": 260000, "rent": 0, "area": 243.44, "land": 160.3, "floor": "", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방배동 7**", "by": 2008},
-      {"type": "매매", "price": 135000, "rent": 0, "area": 68.89, "land": 159.0, "floor": "", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방배동 5**", "by": 1972},
       {"type": "월세", "price": 13000, "rent": 20, "area": 39.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 12000, "rent": 45, "area": 39.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 30000, "rent": 120, "area": 87.72, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-03", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1998},
@@ -192,6 +198,24 @@
       {"type": "전세", "price": 32000, "rent": 0, "area": 52.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-01", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "월세", "price": 5000, "rent": 180, "area": 78.35, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "전세", "price": 13200, "rent": 0, "area": 37.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-06-03", "period": "26.06~28.06", "renew": "갱신", "p_dep": 12600, "p_rent": 0, "jibun": "", "by": 2002}
+    ]
+  },
+  {
+    "name": "서울특별시 서초구 방배동 528-104",
+    "address": "서울특별시 서초구 방배동 528-104",
+    "coords": [126.986761519933, 37.4793997581969],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [135000, 135000], "rep_area": 68.9, "rep_avg_price": 135000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 135000, "rent": 0, "area": 68.89, "land": 159.0, "floor": "", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방배동 528-104 (추정)", "by": 1972}
+    ]
+  },
+  {
+    "name": "서울특별시 서초구 방배동 783-9",
+    "address": "서울특별시 서초구 방배동 783-9",
+    "coords": [126.983426701209, 37.4923913361779],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [260000, 260000], "rep_area": 243.4, "rep_avg_price": 260000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 260000, "rent": 0, "area": 243.44, "land": 160.3, "floor": "", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방배동 783-9 (추정)", "by": 2008}
     ]
   },
   {

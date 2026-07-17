@@ -16,11 +16,19 @@
     "name": "서울특별시 종로구 계동",
     "address": "서울특별시 종로구 계동",
     "coords": [126.986903381874, 37.5824324365826],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [55500, 55500], "rep_area": 28.8, "rep_avg_price": 55500}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 10000], "rep_area": 45.4, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 10000], "rep_area": 45.4, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 55500, "rent": 0, "area": 28.83, "land": 46.3, "floor": "", "dong": "", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "계동 1*", "by": 1911},
       {"type": "월세", "price": 1000, "rent": 65, "area": 45.42, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-28", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 10000, "rent": 100, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-26", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 계동 11",
+    "address": "서울특별시 종로구 계동 11",
+    "coords": [126.986926783953, 37.5826226389039],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [55500, 55500], "rep_area": 28.8, "rep_avg_price": 55500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 55500, "rent": 0, "area": 28.83, "land": 46.3, "floor": "", "dong": "", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "계동 11 (추정)", "by": 1911}
     ]
   },
   {
@@ -36,12 +44,12 @@
     ]
   },
   {
-    "name": "서울특별시 종로구 권농동",
-    "address": "서울특별시 종로구 권농동",
-    "coords": [126.991763428362, 37.5743239285345],
+    "name": "서울특별시 종로구 권농동 140-1",
+    "address": "서울특별시 종로구 권농동 140-1",
+    "coords": [126.991617750229, 37.5772400771819],
     "stats": {"total": 1, "sale": {"count": 1, "range": [145000, 145000], "rep_area": 128.5, "rep_avg_price": 145000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 145000, "rent": 0, "area": 128.47, "land": 77.8, "floor": "", "dong": "", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "권농동 1**", "by": 1911}
+      {"type": "매매", "price": 145000, "rent": 0, "area": 128.47, "land": 77.8, "floor": "", "dong": "", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "권농동 140-1 (추정)", "by": 1911}
     ]
   },
   {
@@ -604,13 +612,21 @@
     "name": "서울특별시 종로구 평창동",
     "address": "서울특별시 종로구 평창동",
     "coords": [126.968357810931, 37.6063916960375],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [309000, 309000], "rep_area": 423.4, "rep_avg_price": 309000}, "jeonse": {"count": 2, "range": [27000, 27000], "rep_area": 54.3, "rep_avg_price": 27000}, "monthly": {"count": 2, "range": [5000, 20000], "rep_area": 41.1, "rep_avg_price": 5000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [27000, 27000], "rep_area": 54.3, "rep_avg_price": 27000}, "monthly": {"count": 2, "range": [5000, 20000], "rep_area": 41.1, "rep_avg_price": 5000}},
     "deals": [
-      {"type": "매매", "price": 309000, "rent": 0, "area": 423.4, "land": 585.0, "floor": "", "dong": "", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 1**", "by": 2009},
       {"type": "월세", "price": 20000, "rent": 50, "area": 73.72, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-15", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2005},
       {"type": "전세", "price": 27000, "rent": 0, "area": 67.23, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-12", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "전세", "price": 27000, "rent": 0, "area": 54.27, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-11", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 5000, "rent": 60, "area": 41.08, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-08", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994}
+    ]
+  },
+  {
+    "name": "서울특별시 종로구 평창동 150-1",
+    "address": "서울특별시 종로구 평창동 150-1",
+    "coords": [126.971191094939, 37.6076100191887],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [309000, 309000], "rep_area": 423.4, "rep_avg_price": 309000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 309000, "rent": 0, "area": 423.4, "land": 585.0, "floor": "", "dong": "", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평창동 150-1 (추정)", "by": 2009}
     ]
   },
   {

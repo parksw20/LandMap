@@ -133,10 +133,8 @@
     "name": "서울특별시 중랑구 면목동",
     "address": "서울특별시 중랑구 면목동",
     "coords": [127.087661590766, 37.5803715762429],
-    "stats": {"total": 284, "sale": {"count": 2, "range": [97000, 142000], "rep_area": 165.4, "rep_avg_price": 97000}, "jeonse": {"count": 54, "range": [3000, 23500], "rep_area": 30.0, "rep_avg_price": 9166}, "monthly": {"count": 228, "range": [0, 22000], "rep_area": 30.0, "rep_avg_price": 1944}},
+    "stats": {"total": 282, "sale": null, "jeonse": {"count": 54, "range": [3000, 23500], "rep_area": 30.0, "rep_avg_price": 9166}, "monthly": {"count": 228, "range": [0, 22000], "rep_area": 30.0, "rep_avg_price": 1944}},
     "deals": [
-      {"type": "매매", "price": 97000, "rent": 0, "area": 165.42, "land": 102.0, "floor": "", "dong": "", "date": "2025-09-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "면목동 1***", "by": 1992},
-      {"type": "매매", "price": 142000, "rent": 0, "area": 279.54, "land": 139.9, "floor": "", "dong": "", "date": "2025-09-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "면목동 1**", "by": 2015},
       {"type": "전세", "price": 16000, "rent": 0, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 300, "rent": 30, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 5000, "rent": 15, "area": 61.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -419,6 +417,24 @@
       {"type": "월세", "price": 10000, "rent": 30, "area": 49.56, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-03", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 5000, "rent": 45, "area": 19.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-02", "period": "25.09~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2023},
       {"type": "전세", "price": 3000, "rent": 0, "area": 33.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-01", "period": "25.09~27.09", "renew": "갱신", "p_dep": 200, "p_rent": 20, "jibun": "", "by": 1988}
+    ]
+  },
+  {
+    "name": "서울특별시 중랑구 면목동 1086-30",
+    "address": "서울특별시 중랑구 면목동 1086-30",
+    "coords": [127.092476937545, 37.5804861124612],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [97000, 97000], "rep_area": 165.4, "rep_avg_price": 97000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 97000, "rent": 0, "area": 165.42, "land": 102.0, "floor": "", "dong": "", "date": "2025-09-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "면목동 1086-30 (추정)", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 중랑구 면목동 179-85",
+    "address": "서울특별시 중랑구 면목동 179-85",
+    "coords": [127.078385098141, 37.5887051677326],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [142000, 142000], "rep_area": 279.5, "rep_avg_price": 142000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 142000, "rent": 0, "area": 279.54, "land": 139.9, "floor": "", "dong": "", "date": "2025-09-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "면목동 179-85 (추정)", "by": 2015}
     ]
   },
   {

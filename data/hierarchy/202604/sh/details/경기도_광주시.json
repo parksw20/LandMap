@@ -175,9 +175,8 @@
     "name": "경기도 광주시 곤지암읍 오향리",
     "address": "경기도 광주시 곤지암읍 오향리",
     "coords": [127.370998029554, 37.3748497831228],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [92000, 92000], "rep_area": 584.2, "rep_avg_price": 92000}, "jeonse": {"count": 3, "range": [8000, 8000], "rep_area": 36.1, "rep_avg_price": 8000}, "monthly": {"count": 2, "range": [0, 1500], "rep_area": 46.7, "rep_avg_price": 0}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 3, "range": [8000, 8000], "rep_area": 36.1, "rep_avg_price": 8000}, "monthly": {"count": 2, "range": [0, 1500], "rep_area": 46.7, "rep_avg_price": 0}},
     "deals": [
-      {"type": "매매", "price": 92000, "rent": 0, "area": 584.22, "land": 406.0, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "곤지암읍 오향리 4**", "by": 2012},
       {"type": "월세", "price": 0, "rent": 40, "area": 46.73, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 8000, "rent": 0, "area": 36.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "전세", "price": 8000, "rent": 0, "area": 38.1, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
@@ -186,13 +185,30 @@
     ]
   },
   {
+    "name": "경기도 광주시 곤지암읍 오향리 459-1전",
+    "address": "경기도 광주시 곤지암읍 오향리 459-1전",
+    "coords": [127.381265517123, 37.3757987905187],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [92000, 92000], "rep_area": 584.2, "rep_avg_price": 92000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 92000, "rent": 0, "area": 584.22, "land": 406.0, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "곤지암읍 오향리 459-1전 (추정)", "by": 2012}
+    ]
+  },
+  {
     "name": "경기도 광주시 곤지암읍 장심리",
     "address": "경기도 광주시 곤지암읍 장심리",
     "coords": [127.384915836496, 37.3871024116588],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 177.0, "rep_avg_price": 33000}, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 177.0, "rep_avg_price": 20000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 177.0, "rep_avg_price": 20000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 33000, "rent": 0, "area": 177.03, "land": 493.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "곤지암읍 장심리 *", "by": 2003},
       {"type": "전세", "price": 20000, "rent": 0, "area": 177.03, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003}
+    ]
+  },
+  {
+    "name": "경기도 광주시 곤지암읍 장심리 2-6",
+    "address": "경기도 광주시 곤지암읍 장심리 2-6",
+    "coords": [127.386350801714, 37.3952195925028],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 177.0, "rep_avg_price": 33000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 177.03, "land": 493.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "곤지암읍 장심리 2-6 (추정)", "by": 2003}
     ]
   },
   {
@@ -316,11 +332,19 @@
     "name": "경기도 광주시 도척면 진우리",
     "address": "경기도 광주시 도척면 진우리",
     "coords": [127.341942030099, 37.3201370103939],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [23200, 23200], "rep_area": 90.0, "rep_avg_price": 23200}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 120.6, "rep_avg_price": 12000}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.5, "rep_avg_price": 2000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 120.6, "rep_avg_price": 12000}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.5, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 23200, "rent": 0, "area": 89.96, "land": 780.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도척면 진우리 8**", "by": 2014},
       {"type": "월세", "price": 2000, "rent": 80, "area": 59.54, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 12000, "rent": 0, "area": 120.55, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995}
+    ]
+  },
+  {
+    "name": "경기도 광주시 도척면 진우리 845-1",
+    "address": "경기도 광주시 도척면 진우리 845-1",
+    "coords": [127.352673700382, 37.3132525516386],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [23200, 23200], "rep_area": 90.0, "rep_avg_price": 23200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 23200, "rent": 0, "area": 89.96, "land": 780.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도척면 진우리 845-1 (추정)", "by": 2014}
     ]
   },
   {
@@ -395,9 +419,8 @@
     "name": "경기도 광주시 송정동",
     "address": "경기도 광주시 송정동",
     "coords": [127.25602447921, 37.4174412093663],
-    "stats": {"total": 37, "sale": {"count": 1, "range": [32807, 32807], "rep_area": 48.6, "rep_avg_price": 32807}, "jeonse": {"count": 6, "range": [4500, 14500], "rep_area": 30.0, "rep_avg_price": 4500}, "monthly": {"count": 30, "range": [300, 12000], "rep_area": 28.0, "rep_avg_price": 600}},
+    "stats": {"total": 36, "sale": null, "jeonse": {"count": 6, "range": [4500, 14500], "rep_area": 30.0, "rep_avg_price": 4500}, "monthly": {"count": 30, "range": [300, 12000], "rep_area": 28.0, "rep_avg_price": 600}},
     "deals": [
-      {"type": "매매", "price": 32807, "rent": 0, "area": 48.6, "land": 145.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송정동 5**", "by": 1976},
       {"type": "월세", "price": 1000, "rent": 55, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
       {"type": "월세", "price": 2000, "rent": 70, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "월세", "price": 3000, "rent": 12, "area": 48.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2008},
@@ -434,6 +457,15 @@
       {"type": "월세", "price": 1000, "rent": 60, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2005},
       {"type": "월세", "price": 2000, "rent": 30, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "월세", "price": 500, "rent": 40, "area": 96.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "갱신", "p_dep": 500, "p_rent": 40, "jibun": "", "by": 1998}
+    ]
+  },
+  {
+    "name": "경기도 광주시 송정동 583-4",
+    "address": "경기도 광주시 송정동 583-4",
+    "coords": [127.253788680427, 37.4157690581208],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32807, 32807], "rep_area": 48.6, "rep_avg_price": 32807}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32807, "rent": 0, "area": 48.6, "land": 145.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송정동 583-4 (추정)", "by": 1976}
     ]
   },
   {
@@ -603,9 +635,8 @@
     "name": "경기도 광주시 역동",
     "address": "경기도 광주시 역동",
     "coords": [127.251331835509, 37.3991606163855],
-    "stats": {"total": 30, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 99.1, "rep_avg_price": 30000}, "jeonse": {"count": 6, "range": [7000, 15000], "rep_area": 55.4, "rep_avg_price": 8500}, "monthly": {"count": 23, "range": [100, 10000], "rep_area": 19.8, "rep_avg_price": 400}},
+    "stats": {"total": 29, "sale": null, "jeonse": {"count": 6, "range": [7000, 15000], "rep_area": 55.4, "rep_avg_price": 8500}, "monthly": {"count": 23, "range": [100, 10000], "rep_area": 19.8, "rep_avg_price": 400}},
     "deals": [
-      {"type": "매매", "price": 30000, "rent": 0, "area": 99.12, "land": 92.0, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "역동 1*", "by": 1984},
       {"type": "전세", "price": 13000, "rent": 0, "area": 56.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 500, "rent": 50, "area": 44.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 500, "rent": 50, "area": 36.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -635,6 +666,15 @@
       {"type": "월세", "price": 500, "rent": 45, "area": 19.8348, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "전세", "price": 12000, "rent": 0, "area": 33.22, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1985},
       {"type": "월세", "price": 500, "rent": 42, "area": 26.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010}
+    ]
+  },
+  {
+    "name": "경기도 광주시 역동 11-5",
+    "address": "경기도 광주시 역동 11-5",
+    "coords": [127.257180634047, 37.4069221178782],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 99.1, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30000, "rent": 0, "area": 99.12, "land": 92.0, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "역동 11-5 (추정)", "by": 1984}
     ]
   },
   {
@@ -810,12 +850,12 @@
     ]
   },
   {
-    "name": "경기도 광주시 초월읍 학동리",
-    "address": "경기도 광주시 초월읍 학동리",
-    "coords": [127.339615166112, 37.3866609300785],
+    "name": "경기도 광주시 초월읍 학동리 277-14",
+    "address": "경기도 광주시 초월읍 학동리 277-14",
+    "coords": [127.337998860939, 37.3788651614238],
     "stats": {"total": 1, "sale": {"count": 1, "range": [46600, 46600], "rep_area": 132.0, "rep_avg_price": 46600}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 46600, "rent": 0, "area": 132.05, "land": 480.0, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "초월읍 학동리 2**", "by": 2025}
+      {"type": "매매", "price": 46600, "rent": 0, "area": 132.05, "land": 480.0, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "초월읍 학동리 277-14 (추정)", "by": 2025}
     ]
   },
   {
@@ -941,12 +981,12 @@
     ]
   },
   {
-    "name": "경기도 광주시 퇴촌면 원당리",
-    "address": "경기도 광주시 퇴촌면 원당리",
-    "coords": [127.320643403191, 37.4382664107853],
+    "name": "경기도 광주시 퇴촌면 원당리 187-1답",
+    "address": "경기도 광주시 퇴촌면 원당리 187-1답",
+    "coords": [127.319426002926, 37.4364368683687],
     "stats": {"total": 1, "sale": {"count": 1, "range": [35450, 35450], "rep_area": 102.5, "rep_avg_price": 35450}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 35450, "rent": 0, "area": 102.52, "land": 164.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "퇴촌면 원당리 1**", "by": 2023}
+      {"type": "매매", "price": 35450, "rent": 0, "area": 102.52, "land": 164.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "퇴촌면 원당리 187-1답 (추정)", "by": 2023}
     ]
   },
   {

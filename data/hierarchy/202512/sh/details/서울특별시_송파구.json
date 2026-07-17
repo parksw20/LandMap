@@ -37,10 +37,9 @@
     "name": "서울특별시 송파구 거여동",
     "address": "서울특별시 송파구 거여동",
     "coords": [127.143310298223, 37.4969242257404],
-    "stats": {"total": 27, "sale": {"count": 2, "range": [130000, 170000], "rep_area": 159.0, "rep_avg_price": 130000}, "jeonse": {"count": 9, "range": [4000, 45000], "rep_area": 22.1, "rep_avg_price": 15000}, "monthly": {"count": 16, "range": [200, 13000], "rep_area": 20.0, "rep_avg_price": 650}},
+    "stats": {"total": 26, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 159.0, "rep_avg_price": 130000}, "jeonse": {"count": 9, "range": [4000, 45000], "rep_area": 22.1, "rep_avg_price": 15000}, "monthly": {"count": 16, "range": [200, 13000], "rep_area": 20.0, "rep_avg_price": 650}},
     "deals": [
       {"type": "매매", "price": 130000, "rent": 0, "area": 159.03, "land": 93.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "거여동 2**", "by": 1991},
-      {"type": "매매", "price": 170000, "rent": 0, "area": 249.28, "land": 165.4, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "거여동 5**", "by": 1991},
       {"type": "월세", "price": 500, "rent": 40, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-19", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 2000, "rent": 40, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-31", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "전세", "price": 20000, "rent": 0, "area": 42.18, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "26.01~28.01", "renew": "갱신", "p_dep": 20000, "p_rent": 0, "jibun": "", "by": 2016},
@@ -87,14 +86,21 @@
     ]
   },
   {
+    "name": "서울특별시 송파구 거여동 548-6",
+    "address": "서울특별시 송파구 거여동 548-6",
+    "coords": [127.148710719693, 37.4914757438087],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [170000, 170000], "rep_area": 249.3, "rep_avg_price": 170000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 170000, "rent": 0, "area": 249.28, "land": 165.4, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "거여동 548-6 (추정)", "by": 1991}
+    ]
+  },
+  {
     "name": "서울특별시 송파구 마천동",
     "address": "서울특별시 송파구 마천동",
     "coords": [127.149903613068, 37.4960258496317],
-    "stats": {"total": 45, "sale": {"count": 5, "range": [70000, 125000], "rep_area": 24.2, "rep_avg_price": 81000}, "jeonse": {"count": 14, "range": [966, 13000], "rep_area": 12.8, "rep_avg_price": 10000}, "monthly": {"count": 26, "range": [50, 13000], "rep_area": 20.0, "rep_avg_price": 300}},
+    "stats": {"total": 43, "sale": {"count": 3, "range": [70000, 125000], "rep_area": 82.7, "rep_avg_price": 70000}, "jeonse": {"count": 14, "range": [966, 13000], "rep_area": 12.8, "rep_avg_price": 10000}, "monthly": {"count": 26, "range": [50, 13000], "rep_area": 20.0, "rep_avg_price": 300}},
     "deals": [
-      {"type": "매매", "price": 81000, "rent": 0, "area": 24.16, "land": 49.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 3**", "by": 1985},
       {"type": "매매", "price": 125000, "rent": 0, "area": 164.2, "land": 90.1, "floor": "", "dong": "", "date": "2025-12-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 3**", "by": 1981},
-      {"type": "매매", "price": 86000, "rent": 0, "area": 44.88, "land": 45.39, "floor": "", "dong": "", "date": "2025-12-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 3**", "by": 1985},
       {"type": "매매", "price": 122000, "rent": 0, "area": 190.8, "land": 132.0, "floor": "", "dong": "", "date": "2025-12-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 1**", "by": 1987},
       {"type": "매매", "price": 70000, "rent": 0, "area": 82.72, "land": 50.9, "floor": "", "dong": "", "date": "2025-12-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 3**", "by": 1984},
       {"type": "월세", "price": 3000, "rent": 40, "area": 38.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
@@ -158,12 +164,30 @@
     ]
   },
   {
+    "name": "서울특별시 송파구 마천동 300-61도",
+    "address": "서울특별시 송파구 마천동 300-61도",
+    "coords": [127.154081015786, 37.4946421161174],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 44.9, "rep_avg_price": 86000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 86000, "rent": 0, "area": 44.88, "land": 45.39, "floor": "", "dong": "", "date": "2025-12-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 300-61도 (추정)", "by": 1985}
+    ]
+  },
+  {
     "name": "서울특별시 송파구 마천동 307-14",
     "address": "서울특별시 송파구 마천동 307-14",
     "coords": [127.15190092419, 37.4945331245088],
     "stats": {"total": 1, "sale": {"count": 1, "range": [405200, 405200], "rep_area": 673.3, "rep_avg_price": 405200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 405200, "rent": 0, "area": 673.3, "land": 165.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 307-14 (추정)", "by": 2004}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 마천동 351-7",
+    "address": "서울특별시 송파구 마천동 351-7",
+    "coords": [127.152495773557, 37.500893457986],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [81000, 81000], "rep_area": 24.2, "rep_avg_price": 81000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 81000, "rent": 0, "area": 24.16, "land": 49.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 351-7 (추정)", "by": 1985}
     ]
   },
   {
@@ -239,9 +263,8 @@
     "name": "서울특별시 송파구 삼전동",
     "address": "서울특별시 송파구 삼전동",
     "coords": [127.092519707191, 37.5027233386057],
-    "stats": {"total": 49, "sale": {"count": 4, "range": [280000, 630000], "rep_area": 262.4, "rep_avg_price": 330000}, "jeonse": {"count": 11, "range": [9000, 41670], "rep_area": 50.0, "rep_avg_price": 20000}, "monthly": {"count": 34, "range": [700, 30450], "rep_area": 30.0, "rep_avg_price": 1233}},
+    "stats": {"total": 48, "sale": {"count": 3, "range": [280000, 630000], "rep_area": 419.3, "rep_avg_price": 280000}, "jeonse": {"count": 11, "range": [9000, 41670], "rep_area": 50.0, "rep_avg_price": 20000}, "monthly": {"count": 34, "range": [700, 30450], "rep_area": 30.0, "rep_avg_price": 1233}},
     "deals": [
-      {"type": "매매", "price": 330000, "rent": 0, "area": 262.44, "land": 192.3, "floor": "", "dong": "", "date": "2025-12-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 4*", "by": 2026},
       {"type": "매매", "price": 309139, "rent": 0, "area": 522.8, "land": 227.1, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 1**", "by": 1996},
       {"type": "매매", "price": 280000, "rent": 0, "area": 419.34, "land": 198.3, "floor": "", "dong": "", "date": "2025-12-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 4*", "by": 1996},
       {"type": "매매", "price": 630000, "rent": 0, "area": 492.18, "land": 247.2, "floor": "", "dong": "", "date": "2025-12-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 1**", "by": 2025},
@@ -299,6 +322,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [305000, 305000], "rep_area": 427.9, "rep_avg_price": 305000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 305000, "rent": 0, "area": 427.88, "land": 185.2, "floor": "", "dong": "", "date": "2025-12-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 36-13 (추정)", "by": 1996}
+    ]
+  },
+  {
+    "name": "서울특별시 송파구 삼전동 40-3",
+    "address": "서울특별시 송파구 삼전동 40-3",
+    "coords": [127.089258303886, 37.5004370234082],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [330000, 330000], "rep_area": 262.4, "rep_avg_price": 330000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 330000, "rent": 0, "area": 262.44, "land": 192.3, "floor": "", "dong": "", "date": "2025-12-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 40-3 (추정)", "by": 2026}
     ]
   },
   {

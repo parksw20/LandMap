@@ -105,9 +105,8 @@
     "name": "서울특별시 도봉구 쌍문동",
     "address": "서울특별시 도봉구 쌍문동",
     "coords": [127.029190894368, 37.6513191127046],
-    "stats": {"total": 43, "sale": {"count": 1, "range": [75000, 75000], "rep_area": 163.2, "rep_avg_price": 75000}, "jeonse": {"count": 8, "range": [6000, 16000], "rep_area": 20.0, "rep_avg_price": 6000}, "monthly": {"count": 34, "range": [100, 13000], "rep_area": 30.0, "rep_avg_price": 525}},
+    "stats": {"total": 42, "sale": null, "jeonse": {"count": 8, "range": [6000, 16000], "rep_area": 20.0, "rep_avg_price": 6000}, "monthly": {"count": 34, "range": [100, 13000], "rep_area": 30.0, "rep_avg_price": 525}},
     "deals": [
-      {"type": "매매", "price": 75000, "rent": 0, "area": 163.24, "land": 97.0, "floor": "", "dong": "", "date": "2025-08-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 5**", "by": 2024},
       {"type": "월세", "price": 2000, "rent": 70, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
       {"type": "월세", "price": 6000, "rent": 50, "area": 63.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1984},
       {"type": "전세", "price": 6000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-18", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
@@ -162,13 +161,21 @@
     ]
   },
   {
+    "name": "서울특별시 도봉구 쌍문동 524-35",
+    "address": "서울특별시 도봉구 쌍문동 524-35",
+    "coords": [127.018111130397, 37.6567976861002],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [75000, 75000], "rep_area": 163.2, "rep_avg_price": 75000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 75000, "rent": 0, "area": 163.24, "land": 97.0, "floor": "", "dong": "", "date": "2025-08-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 524-35 (추정)", "by": 2024}
+    ]
+  },
+  {
     "name": "서울특별시 도봉구 창동",
     "address": "서울특별시 도봉구 창동",
     "coords": [127.045432300312, 37.6522582058479],
-    "stats": {"total": 53, "sale": {"count": 2, "range": [43000, 44010], "rep_area": 73.0, "rep_avg_price": 43000}, "jeonse": {"count": 12, "range": [3000, 24000], "rep_area": 35.7, "rep_avg_price": 3500}, "monthly": {"count": 39, "range": [200, 12000], "rep_area": 23.1, "rep_avg_price": 1766}},
+    "stats": {"total": 52, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 73.0, "rep_avg_price": 43000}, "jeonse": {"count": 12, "range": [3000, 24000], "rep_area": 35.7, "rep_avg_price": 3500}, "monthly": {"count": 39, "range": [200, 12000], "rep_area": 23.1, "rep_avg_price": 1766}},
     "deals": [
       {"type": "매매", "price": 43000, "rent": 0, "area": 73.05, "land": 132.0, "floor": "", "dong": "", "date": "2025-08-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 5**", "by": 1975},
-      {"type": "매매", "price": 44010, "rent": 0, "area": 117.75, "land": 167.0, "floor": "", "dong": "", "date": "2025-08-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 4**", "by": 1979},
       {"type": "전세", "price": 5000, "rent": 0, "area": 29.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "전세", "price": 5000, "rent": 0, "area": 31.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 2000, "rent": 57, "area": 23.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-09", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
@@ -220,6 +227,15 @@
       {"type": "월세", "price": 2000, "rent": 60, "area": 52.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-06", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "전세", "price": 4000, "rent": 0, "area": 34.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-05", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 2000, "rent": 60, "area": 192.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-08-01", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991}
+    ]
+  },
+  {
+    "name": "서울특별시 도봉구 창동 445-26도",
+    "address": "서울특별시 도봉구 창동 445-26도",
+    "coords": [127.03421880879, 37.6460547573835],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [44010, 44010], "rep_area": 117.8, "rep_avg_price": 44010}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 44010, "rent": 0, "area": 117.75, "land": 167.0, "floor": "", "dong": "", "date": "2025-08-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 445-26도 (추정)", "by": 1979}
     ]
   }
 ]

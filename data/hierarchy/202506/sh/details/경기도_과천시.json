@@ -44,10 +44,8 @@
     "name": "경기도 과천시 문원동",
     "address": "경기도 과천시 문원동",
     "coords": [127.001866408137, 37.4263177351364],
-    "stats": {"total": 26, "sale": {"count": 2, "range": [145500, 145500], "rep_area": 198.2, "rep_avg_price": 145500}, "jeonse": {"count": 9, "range": [7000, 46000], "rep_area": 61.9, "rep_avg_price": 28000}, "monthly": {"count": 15, "range": [1000, 20000], "rep_area": 38.0, "rep_avg_price": 3000}},
+    "stats": {"total": 24, "sale": null, "jeonse": {"count": 9, "range": [7000, 46000], "rep_area": 61.9, "rep_avg_price": 28000}, "monthly": {"count": 15, "range": [1000, 20000], "rep_area": 38.0, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "매매", "price": 145500, "rent": 0, "area": 198.24, "land": 305.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문원동 1**", "by": 2012},
-      {"type": "매매", "price": 145500, "rent": 0, "area": 198.24, "land": 305.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문원동 1**", "by": 2012},
       {"type": "월세", "price": 3000, "rent": 30, "area": 38.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "전세", "price": 31000, "rent": 0, "area": 77.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 3000, "rent": 30, "area": 38.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-24", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
@@ -84,6 +82,16 @@
     ]
   },
   {
+    "name": "경기도 과천시 문원동 167-1",
+    "address": "경기도 과천시 문원동 167-1",
+    "coords": [127.007479700736, 37.423502013438],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [145500, 145500], "rep_area": 198.2, "rep_avg_price": 145500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 145500, "rent": 0, "area": 198.24, "land": 305.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문원동 167-1 (추정)", "by": 2012},
+      {"type": "매매", "price": 145500, "rent": 0, "area": 198.24, "land": 305.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문원동 167-1 (추정)", "by": 2012}
+    ]
+  },
+  {
     "name": "경기도 과천시 별양동",
     "address": "경기도 과천시 별양동",
     "coords": [126.993763748511, 37.4242344328093],
@@ -105,13 +113,21 @@
     "name": "경기도 과천시 부림동",
     "address": "경기도 과천시 부림동",
     "coords": [126.99861248972, 37.4334610032566],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [295000, 295000], "rep_area": 327.2, "rep_avg_price": 295000}, "jeonse": null, "monthly": {"count": 4, "range": [2000, 75000], "rep_area": 54.2, "rep_avg_price": 2000}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [2000, 75000], "rep_area": 54.2, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 295000, "rent": 0, "area": 327.18, "land": 255.4, "floor": "", "dong": "", "date": "2025-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "부림동 3*", "by": 1988},
       {"type": "월세", "price": 27000, "rent": 250, "area": 179.71, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-30", "period": "25.07~27.06", "renew": "갱신", "p_dep": 27000, "p_rent": 150, "jibun": "", "by": 1987},
       {"type": "월세", "price": 75000, "rent": 25, "area": 115.26, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-11", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 10000, "rent": 90, "area": 87.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-06", "period": "25.06~27.06", "renew": "갱신", "p_dep": 10000, "p_rent": 75, "jibun": "", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 60, "area": 54.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-11", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1986}
+    ]
+  },
+  {
+    "name": "경기도 과천시 부림동 39-4",
+    "address": "경기도 과천시 부림동 39-4",
+    "coords": [126.999533213112, 37.4378933782825],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [295000, 295000], "rep_area": 327.2, "rep_avg_price": 295000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 295000, "rent": 0, "area": 327.18, "land": 255.4, "floor": "", "dong": "", "date": "2025-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "부림동 39-4 (추정)", "by": 1988}
     ]
   },
   {

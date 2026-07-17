@@ -297,9 +297,8 @@
     "name": "서울특별시 강남구 삼성동",
     "address": "서울특별시 강남구 삼성동",
     "coords": [127.062831022499, 37.5143225723289],
-    "stats": {"total": 43, "sale": {"count": 1, "range": [936000, 936000], "rep_area": 492.5, "rep_avg_price": 936000}, "jeonse": {"count": 11, "range": [8000, 38000], "rep_area": 27.0, "rep_avg_price": 15000}, "monthly": {"count": 31, "range": [200, 21000], "rep_area": 20.0, "rep_avg_price": 1666}},
+    "stats": {"total": 42, "sale": null, "jeonse": {"count": 11, "range": [8000, 38000], "rep_area": 27.0, "rep_avg_price": 15000}, "monthly": {"count": 31, "range": [200, 21000], "rep_area": 20.0, "rep_avg_price": 1666}},
     "deals": [
-      {"type": "매매", "price": 936000, "rent": 0, "area": 492.52, "land": 198.3, "floor": "", "dong": "", "date": "2025-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼성동 1**", "by": 2003},
       {"type": "월세", "price": 1000, "rent": 80, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
       {"type": "전세", "price": 15000, "rent": 0, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-12", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "월세", "price": 500, "rent": 105, "area": 53.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-28", "period": "25.03~27.03", "renew": "갱신", "p_dep": 500, "p_rent": 105, "jibun": "", "by": 1997},
@@ -342,6 +341,15 @@
       {"type": "월세", "price": 1000, "rent": 70, "area": 26.9, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-07", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 200, "rent": 85, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-01", "period": "25.03~25.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "월세", "price": 5000, "rent": 290, "area": 72.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-01", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 삼성동 130-1",
+    "address": "서울특별시 강남구 삼성동 130-1",
+    "coords": [127.053307693425, 37.5083770219184],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [936000, 936000], "rep_area": 492.5, "rep_avg_price": 936000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 936000, "rent": 0, "area": 492.52, "land": 198.3, "floor": "", "dong": "", "date": "2025-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼성동 130-1 (추정)", "by": 2003}
     ]
   },
   {
@@ -576,9 +584,8 @@
     "name": "서울특별시 강남구 율현동",
     "address": "서울특별시 강남구 율현동",
     "coords": [127.115817745643, 37.470976512434],
-    "stats": {"total": 16, "sale": {"count": 1, "range": [290000, 290000], "rep_area": 198.7, "rep_avg_price": 290000}, "jeonse": {"count": 11, "range": [20000, 105000], "rep_area": 45.5, "rep_avg_price": 30000}, "monthly": {"count": 4, "range": [400, 10000], "rep_area": 25.0, "rep_avg_price": 400}},
+    "stats": {"total": 15, "sale": null, "jeonse": {"count": 11, "range": [20000, 105000], "rep_area": 45.5, "rep_avg_price": 30000}, "monthly": {"count": 4, "range": [400, 10000], "rep_area": 25.0, "rep_avg_price": 400}},
     "deals": [
-      {"type": "매매", "price": 290000, "rent": 0, "area": 198.72, "land": 319.0, "floor": "", "dong": "", "date": "2025-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "율현동 3**", "by": 1992},
       {"type": "전세", "price": 30000, "rent": 0, "area": 45.51, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "25.04~27.04", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "전세", "price": 30000, "rent": 0, "area": 45.51, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "25.04~27.04", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 10000, "rent": 100, "area": 60.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-06", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -594,6 +601,15 @@
       {"type": "전세", "price": 37000, "rent": 0, "area": 70.5, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-03", "period": "25.03~27.03", "renew": "갱신", "p_dep": 35500, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 70, "area": 38.85, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-06", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 20000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-06", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 율현동 300-20",
+    "address": "서울특별시 강남구 율현동 300-20",
+    "coords": [127.104817125415, 37.4720161865589],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [290000, 290000], "rep_area": 198.7, "rep_avg_price": 290000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 290000, "rent": 0, "area": 198.72, "land": 319.0, "floor": "", "dong": "", "date": "2025-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "율현동 300-20 (추정)", "by": 1992}
     ]
   },
   {

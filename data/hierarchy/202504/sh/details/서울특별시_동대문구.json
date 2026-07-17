@@ -93,11 +93,10 @@
     "name": "서울특별시 동대문구 용두동",
     "address": "서울특별시 동대문구 용두동",
     "coords": [127.033598820976, 37.575418648042],
-    "stats": {"total": 52, "sale": {"count": 3, "range": [16100, 175000], "rep_area": 36.0, "rep_avg_price": 16100}, "jeonse": {"count": 16, "range": [3500, 30000], "rep_area": 21.4, "rep_avg_price": 8750}, "monthly": {"count": 33, "range": [200, 5000], "rep_area": 18.0, "rep_avg_price": 1000}},
+    "stats": {"total": 51, "sale": {"count": 2, "range": [175000, 175000], "rep_area": 152.8, "rep_avg_price": 175000}, "jeonse": {"count": 16, "range": [3500, 30000], "rep_area": 21.4, "rep_avg_price": 8750}, "monthly": {"count": 33, "range": [200, 5000], "rep_area": 18.0, "rep_avg_price": 1000}},
     "deals": [
       {"type": "매매", "price": 175000, "rent": 0, "area": 157.92, "land": 135.5, "floor": "", "dong": "", "date": "2025-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 3*", "by": 1976},
       {"type": "매매", "price": 175000, "rent": 0, "area": 152.76, "land": 135.5, "floor": "", "dong": "", "date": "2025-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 3*", "by": 1976},
-      {"type": "매매", "price": 16100, "rent": 0, "area": 36.015, "land": 5.597, "floor": "", "dong": "", "date": "2025-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 7**", "by": 2005},
       {"type": "월세", "price": 1000, "rent": 60, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "전세", "price": 6000, "rent": 0, "area": 19.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-25", "period": "25.05~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 65, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-24", "period": "25.04~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -150,12 +149,20 @@
     ]
   },
   {
+    "name": "서울특별시 동대문구 용두동 712-46",
+    "address": "서울특별시 동대문구 용두동 712-46",
+    "coords": [127.035339195397, 37.578017058073],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16100, 16100], "rep_area": 36.0, "rep_avg_price": 16100}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16100, "rent": 0, "area": 36.015, "land": 5.597, "floor": "", "dong": "", "date": "2025-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 712-46 (추정)", "by": 2005}
+    ]
+  },
+  {
     "name": "서울특별시 동대문구 이문동",
     "address": "서울특별시 동대문구 이문동",
     "coords": [127.066373060068, 37.6004055110661],
-    "stats": {"total": 46, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 280.2, "rep_avg_price": 121000}, "jeonse": {"count": 11, "range": [7000, 21000], "rep_area": 41.6, "rep_avg_price": 11000}, "monthly": {"count": 34, "range": [200, 4000], "rep_area": 18.0, "rep_avg_price": 575}},
+    "stats": {"total": 45, "sale": null, "jeonse": {"count": 11, "range": [7000, 21000], "rep_area": 41.6, "rep_avg_price": 11000}, "monthly": {"count": 34, "range": [200, 4000], "rep_area": 18.0, "rep_avg_price": 575}},
     "deals": [
-      {"type": "매매", "price": 121000, "rent": 0, "area": 280.22, "land": 146.0, "floor": "", "dong": "", "date": "2025-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이문동 3**", "by": 1996},
       {"type": "전세", "price": 7000, "rent": 0, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1970},
       {"type": "월세", "price": 500, "rent": 50, "area": 124.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "월세", "price": 1000, "rent": 71, "area": 19.5, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-01", "period": "25.04~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
@@ -228,6 +235,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [59300, 59300], "rep_area": 114.6, "rep_avg_price": 59300}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 59300, "rent": 0, "area": 114.57, "land": 79.0, "floor": "", "dong": "", "date": "2025-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이문동 305-113 (추정)", "by": 1990}
+    ]
+  },
+  {
+    "name": "서울특별시 동대문구 이문동 324-48도",
+    "address": "서울특별시 동대문구 이문동 324-48도",
+    "coords": [127.058710141796, 37.5945151077546],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [121000, 121000], "rep_area": 280.2, "rep_avg_price": 121000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 121000, "rent": 0, "area": 280.22, "land": 146.0, "floor": "", "dong": "", "date": "2025-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이문동 324-48도 (추정)", "by": 1996}
     ]
   },
   {
@@ -320,9 +336,8 @@
     "name": "서울특별시 동대문구 전농동",
     "address": "서울특별시 동대문구 전농동",
     "coords": [127.053978285554, 37.5793286114285],
-    "stats": {"total": 48, "sale": {"count": 2, "range": [85000, 88000], "rep_area": 113.4, "rep_avg_price": 85000}, "jeonse": {"count": 18, "range": [6000, 20000], "rep_area": 17.5, "rep_avg_price": 10000}, "monthly": {"count": 28, "range": [200, 12000], "rep_area": 48.1, "rep_avg_price": 4000}},
+    "stats": {"total": 47, "sale": {"count": 1, "range": [88000, 88000], "rep_area": 141.9, "rep_avg_price": 88000}, "jeonse": {"count": 18, "range": [6000, 20000], "rep_area": 17.5, "rep_avg_price": 10000}, "monthly": {"count": 28, "range": [200, 12000], "rep_area": 48.1, "rep_avg_price": 4000}},
     "deals": [
-      {"type": "매매", "price": 85000, "rent": 0, "area": 113.37, "land": 83.0, "floor": "", "dong": "", "date": "2025-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "전농동 1**", "by": 1995},
       {"type": "매매", "price": 88000, "rent": 0, "area": 141.94, "land": 86.0, "floor": "", "dong": "", "date": "2025-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "전농동 2**", "by": 1993},
       {"type": "월세", "price": 1000, "rent": 60, "area": 16.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 3000, "rent": 30, "area": 48.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-17", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
@@ -373,6 +388,15 @@
     ]
   },
   {
+    "name": "서울특별시 동대문구 전농동 137-19",
+    "address": "서울특별시 동대문구 전농동 137-19",
+    "coords": [127.054381824171, 37.5817458824165],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 113.4, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 85000, "rent": 0, "area": 113.37, "land": 83.0, "floor": "", "dong": "", "date": "2025-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "전농동 137-19 (추정)", "by": 1995}
+    ]
+  },
+  {
     "name": "서울특별시 동대문구 전농동 257-14",
     "address": "서울특별시 동대문구 전농동 257-14",
     "coords": [127.053116779792, 37.5788764329701],
@@ -385,11 +409,8 @@
     "name": "서울특별시 동대문구 제기동",
     "address": "서울특별시 동대문구 제기동",
     "coords": [127.037818414722, 37.5831154639891],
-    "stats": {"total": 49, "sale": {"count": 3, "range": [35000, 50000], "rep_area": 63.1, "rep_avg_price": 49805}, "jeonse": {"count": 9, "range": [3000, 17000], "rep_area": 20.0, "rep_avg_price": 6100}, "monthly": {"count": 37, "range": [0, 13000], "rep_area": 12.0, "rep_avg_price": 250}},
+    "stats": {"total": 46, "sale": null, "jeonse": {"count": 9, "range": [3000, 17000], "rep_area": 20.0, "rep_avg_price": 6100}, "monthly": {"count": 37, "range": [0, 13000], "rep_area": 12.0, "rep_avg_price": 250}},
     "deals": [
-      {"type": "매매", "price": 35000, "rent": 0, "area": 48.79, "land": 58.8, "floor": "", "dong": "", "date": "2025-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 5**", "by": 1960},
-      {"type": "매매", "price": 49610, "rent": 0, "area": 63.08, "land": 108.4, "floor": "", "dong": "", "date": "2025-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 9**", "by": 1959},
-      {"type": "매매", "price": 50000, "rent": 0, "area": 63.08, "land": 108.4, "floor": "", "dong": "", "date": "2025-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 9**", "by": 1959},
       {"type": "월세", "price": 1000, "rent": 70, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2013},
       {"type": "전세", "price": 3000, "rent": 0, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1959},
       {"type": "월세", "price": 500, "rent": 20, "area": 10.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1968},
@@ -439,12 +460,31 @@
     ]
   },
   {
+    "name": "서울특별시 동대문구 제기동 519-1",
+    "address": "서울특별시 동대문구 제기동 519-1",
+    "coords": [127.042699790419, 37.5823018239079],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 48.8, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35000, "rent": 0, "area": 48.79, "land": 58.8, "floor": "", "dong": "", "date": "2025-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 519-1 (추정)", "by": 1960}
+    ]
+  },
+  {
     "name": "서울특별시 동대문구 제기동 621-12",
     "address": "서울특별시 동대문구 제기동 621-12",
     "coords": [127.041701554356, 37.5810332214318],
     "stats": {"total": 1, "sale": {"count": 1, "range": [110000, 110000], "rep_area": 162.7, "rep_avg_price": 110000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 110000, "rent": 0, "area": 162.7, "land": 94.4, "floor": "", "dong": "", "date": "2025-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 621-12 (추정)", "by": 1967}
+    ]
+  },
+  {
+    "name": "서울특별시 동대문구 제기동 961-1",
+    "address": "서울특별시 동대문구 제기동 961-1",
+    "coords": [127.037622654016, 37.5817425927],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [49610, 50000], "rep_area": 63.1, "rep_avg_price": 49805}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49610, "rent": 0, "area": 63.08, "land": 108.4, "floor": "", "dong": "", "date": "2025-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 961-1 (추정)", "by": 1959},
+      {"type": "매매", "price": 50000, "rent": 0, "area": 63.08, "land": 108.4, "floor": "", "dong": "", "date": "2025-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 961-1 (추정)", "by": 1959}
     ]
   },
   {
@@ -485,11 +525,9 @@
     "name": "서울특별시 동대문구 회기동",
     "address": "서울특별시 동대문구 회기동",
     "coords": [127.05537245757, 37.5907885967281],
-    "stats": {"total": 31, "sale": {"count": 3, "range": [40000, 135000], "rep_area": 50.4, "rep_avg_price": 40000}, "jeonse": {"count": 6, "range": [10000, 20000], "rep_area": 197.6, "rep_avg_price": 10000}, "monthly": {"count": 22, "range": [200, 13000], "rep_area": 16.0, "rep_avg_price": 750}},
+    "stats": {"total": 29, "sale": {"count": 1, "range": [135000, 135000], "rep_area": 183.2, "rep_avg_price": 135000}, "jeonse": {"count": 6, "range": [10000, 20000], "rep_area": 197.6, "rep_avg_price": 10000}, "monthly": {"count": 22, "range": [200, 13000], "rep_area": 16.0, "rep_avg_price": 750}},
     "deals": [
-      {"type": "매매", "price": 40000, "rent": 0, "area": 50.36, "land": 84.05, "floor": "", "dong": "", "date": "2025-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 1**", "by": 1992},
       {"type": "매매", "price": 135000, "rent": 0, "area": 183.17, "land": 131.0, "floor": "", "dong": "", "date": "2025-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 5*", "by": 0},
-      {"type": "매매", "price": 58000, "rent": 0, "area": 119.67, "land": 82.0, "floor": "", "dong": "", "date": "2025-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 1**", "by": 1994},
       {"type": "월세", "price": 7000, "rent": 70, "area": 78.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "월세", "price": 1000, "rent": 70, "area": 198.71, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-04", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 7000, "rent": 70, "area": 78.46, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-24", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
@@ -518,6 +556,24 @@
       {"type": "전세", "price": 14000, "rent": 0, "area": 244.89, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-13", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 300, "rent": 55, "area": 166.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-07", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 1000, "rent": 65, "area": 198.71, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-04", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991}
+    ]
+  },
+  {
+    "name": "서울특별시 동대문구 회기동 103-109",
+    "address": "서울특별시 동대문구 회기동 103-109",
+    "coords": [127.051057540811, 37.5910200247746],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 50.4, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40000, "rent": 0, "area": 50.36, "land": 84.05, "floor": "", "dong": "", "date": "2025-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 103-109 (추정)", "by": 1992}
+    ]
+  },
+  {
+    "name": "서울특별시 동대문구 회기동 110-15도",
+    "address": "서울특별시 동대문구 회기동 110-15도",
+    "coords": [127.049968688733, 37.5941488246398],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 119.7, "rep_avg_price": 58000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 58000, "rent": 0, "area": 119.67, "land": 82.0, "floor": "", "dong": "", "date": "2025-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 110-15도 (추정)", "by": 1994}
     ]
   },
   {

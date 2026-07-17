@@ -127,9 +127,8 @@
     "name": "서울특별시 구로구 구로동",
     "address": "서울특별시 구로구 구로동",
     "coords": [126.882642231121, 37.495770737873],
-    "stats": {"total": 116, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 36.4, "rep_avg_price": 21000}, "jeonse": {"count": 19, "range": [4000, 30000], "rep_area": 22.8, "rep_avg_price": 9600}, "monthly": {"count": 96, "range": [0, 13000], "rep_area": 15.0, "rep_avg_price": 825}},
+    "stats": {"total": 115, "sale": null, "jeonse": {"count": 19, "range": [4000, 30000], "rep_area": 22.8, "rep_avg_price": 9600}, "monthly": {"count": 96, "range": [0, 13000], "rep_area": 15.0, "rep_avg_price": 825}},
     "deals": [
-      {"type": "매매", "price": 21000, "rent": 0, "area": 36.36, "land": 61.0, "floor": "", "dong": "", "date": "2025-11-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 4**", "by": 1968},
       {"type": "월세", "price": 1500, "rent": 20, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 500, "rent": 30, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-18", "period": "25.12~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 500, "rent": 38, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-07", "period": "25.12~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
@@ -245,6 +244,15 @@
       {"type": "월세", "price": 300, "rent": 25, "area": 19.8, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-03", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "전세", "price": 20500, "rent": 0, "area": 51.87, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-03", "period": "25.11~27.11", "renew": "갱신", "p_dep": 20500, "p_rent": 0, "jibun": "", "by": 2007},
       {"type": "월세", "price": 4000, "rent": 20, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-03", "period": "25.12~28.12", "renew": "갱신", "p_dep": 4000, "p_rent": 20, "jibun": "", "by": 2007}
+    ]
+  },
+  {
+    "name": "서울특별시 구로구 구로동 479-22",
+    "address": "서울특별시 구로구 구로동 479-22",
+    "coords": [126.880172738448, 37.496891993761],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 36.4, "rep_avg_price": 21000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21000, "rent": 0, "area": 36.36, "land": 61.0, "floor": "", "dong": "", "date": "2025-11-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 479-22 (추정)", "by": 1968}
     ]
   },
   {

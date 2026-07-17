@@ -75,9 +75,8 @@
     "name": "경기도 파주시 금촌동",
     "address": "경기도 파주시 금촌동",
     "coords": [126.768817063648, 37.7606436758234],
-    "stats": {"total": 31, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 66.0, "rep_avg_price": 13000}, "jeonse": {"count": 4, "range": [3300, 10000], "rep_area": 21.0, "rep_avg_price": 5000}, "monthly": {"count": 26, "range": [100, 3000], "rep_area": 25.0, "rep_avg_price": 260}},
+    "stats": {"total": 30, "sale": null, "jeonse": {"count": 4, "range": [3300, 10000], "rep_area": 21.0, "rep_avg_price": 5000}, "monthly": {"count": 26, "range": [100, 3000], "rep_area": 25.0, "rep_avg_price": 260}},
     "deals": [
-      {"type": "매매", "price": 13000, "rent": 0, "area": 66.0, "land": 127.0, "floor": "", "dong": "", "date": "2025-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "금촌동 4**", "by": 2000},
       {"type": "월세", "price": 300, "rent": 33, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-01", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "월세", "price": 200, "rent": 25, "area": 33.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-24", "period": "25.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 100, "rent": 28, "area": 53.1, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-31", "period": "25.03~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -108,6 +107,15 @@
       {"type": "월세", "price": 200, "rent": 32, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-17", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 300, "rent": 35, "area": 35.28, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-07", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 10000, "rent": 0, "area": 65.18, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-05", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012}
+    ]
+  },
+  {
+    "name": "경기도 파주시 금촌동 467-5천",
+    "address": "경기도 파주시 금촌동 467-5천",
+    "coords": [126.767565503366, 37.7648656542287],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13000, 13000], "rep_area": 66.0, "rep_avg_price": 13000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13000, "rent": 0, "area": 66.0, "land": 127.0, "floor": "", "dong": "", "date": "2025-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "금촌동 467-5천 (추정)", "by": 2000}
     ]
   },
   {
@@ -575,19 +583,27 @@
     "name": "경기도 파주시 조리읍 장곡리",
     "address": "경기도 파주시 조리읍 장곡리",
     "coords": [126.841629002265, 37.7479126290072],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [12900, 12900], "rep_area": 34.0, "rep_avg_price": 12900}, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 105.6, "rep_avg_price": 500}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 105.6, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 12900, "rent": 0, "area": 34.0, "land": 321.0, "floor": "", "dong": "", "date": "2025-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "조리읍 장곡리 5**", "by": 1999},
       {"type": "월세", "price": 500, "rent": 40, "area": 105.61, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-17", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
     ]
   },
   {
-    "name": "경기도 파주시 진동면 동파리",
-    "address": "경기도 파주시 진동면 동파리",
-    "coords": [126.790767298155, 37.9175081189792],
+    "name": "경기도 파주시 조리읍 장곡리 598-184잡",
+    "address": "경기도 파주시 조리읍 장곡리 598-184잡",
+    "coords": [126.846161393759, 37.7408394567427],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12900, 12900], "rep_area": 34.0, "rep_avg_price": 12900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12900, "rent": 0, "area": 34.0, "land": 321.0, "floor": "", "dong": "", "date": "2025-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "조리읍 장곡리 598-184잡 (추정)", "by": 1999}
+    ]
+  },
+  {
+    "name": "경기도 파주시 진동면 동파리 1755-1",
+    "address": "경기도 파주시 진동면 동파리 1755-1",
+    "coords": [126.788472936596, 37.9266219803971],
     "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 112.1, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 30000, "rent": 0, "area": 112.11, "land": 660.6, "floor": "", "dong": "", "date": "2025-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "진동면 동파리 1***", "by": 2004}
+      {"type": "매매", "price": 30000, "rent": 0, "area": 112.11, "land": 660.6, "floor": "", "dong": "", "date": "2025-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "진동면 동파리 1755-1 (추정)", "by": 2004}
     ]
   },
   {
@@ -642,9 +658,8 @@
     "name": "경기도 파주시 탄현면 법흥리",
     "address": "경기도 파주시 탄현면 법흥리",
     "coords": [126.697449386782, 37.7816330418858],
-    "stats": {"total": 25, "sale": {"count": 1, "range": [14180, 14180], "rep_area": 79.5, "rep_avg_price": 14180}, "jeonse": {"count": 3, "range": [3000, 7000], "rep_area": 24.0, "rep_avg_price": 3500}, "monthly": {"count": 21, "range": [0, 5000], "rep_area": 27.0, "rep_avg_price": 500}},
+    "stats": {"total": 24, "sale": null, "jeonse": {"count": 3, "range": [3000, 7000], "rep_area": 24.0, "rep_avg_price": 3500}, "monthly": {"count": 21, "range": [0, 5000], "rep_area": 27.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 14180, "rent": 0, "area": 79.5, "land": 334.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "탄현면 법흥리 4**", "by": 1999},
       {"type": "월세", "price": 5000, "rent": 20, "area": 82.644, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-04", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2023},
       {"type": "월세", "price": 500, "rent": 38, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-29", "period": "25.05~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "월세", "price": 100, "rent": 27, "area": 222.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-28", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010},
@@ -669,6 +684,15 @@
       {"type": "월세", "price": 0, "rent": 40, "area": 27.69, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-01", "period": "25.03~25.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 500, "rent": 35, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-03", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
       {"type": "월세", "price": 100, "rent": 23, "area": 43.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-03-04", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002}
+    ]
+  },
+  {
+    "name": "경기도 파주시 탄현면 법흥리 483-10",
+    "address": "경기도 파주시 탄현면 법흥리 483-10",
+    "coords": [126.708659474676, 37.7787253331399],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14180, 14180], "rep_area": 79.5, "rep_avg_price": 14180}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 14180, "rent": 0, "area": 79.5, "land": 334.0, "floor": "", "dong": "", "date": "2025-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "탄현면 법흥리 483-10 (추정)", "by": 1999}
     ]
   },
   {

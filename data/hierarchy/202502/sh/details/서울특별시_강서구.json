@@ -23,9 +23,8 @@
     "name": "서울특별시 강서구 공항동",
     "address": "서울특별시 강서구 공항동",
     "coords": [126.810109136838, 37.5588726032731],
-    "stats": {"total": 55, "sale": {"count": 1, "range": [63500, 63500], "rep_area": 149.9, "rep_avg_price": 63500}, "jeonse": {"count": 9, "range": [10000, 25000], "rep_area": 35.0, "rep_avg_price": 10500}, "monthly": {"count": 45, "range": [100, 13000], "rep_area": 20.0, "rep_avg_price": 4600}},
+    "stats": {"total": 54, "sale": null, "jeonse": {"count": 9, "range": [10000, 25000], "rep_area": 35.0, "rep_avg_price": 10500}, "monthly": {"count": 45, "range": [100, 13000], "rep_area": 20.0, "rep_avg_price": 4600}},
     "deals": [
-      {"type": "매매", "price": 63500, "rent": 0, "area": 149.91, "land": 93.0, "floor": "", "dong": "", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "공항동 5*", "by": 1993},
       {"type": "월세", "price": 500, "rent": 55, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
       {"type": "전세", "price": 12000, "rent": 0, "area": 63.52, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-06", "period": "25.02~27.02", "renew": "갱신", "p_dep": 12000, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "월세", "price": 500, "rent": 40, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-16", "period": "25.02~26.02", "renew": "갱신", "p_dep": 500, "p_rent": 35, "jibun": "", "by": 1989},
@@ -83,6 +82,15 @@
     ]
   },
   {
+    "name": "서울특별시 강서구 공항동 57-5",
+    "address": "서울특별시 강서구 공항동 57-5",
+    "coords": [126.811455238279, 37.5571825098936],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [63500, 63500], "rep_area": 149.9, "rep_avg_price": 63500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 63500, "rent": 0, "area": 149.91, "land": 93.0, "floor": "", "dong": "", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "공항동 57-5 (추정)", "by": 1993}
+    ]
+  },
+  {
     "name": "서울특별시 강서구 내발산동",
     "address": "서울특별시 강서구 내발산동",
     "coords": [126.83326640676, 37.5543737621716],
@@ -124,9 +132,8 @@
     "name": "서울특별시 강서구 등촌동",
     "address": "서울특별시 강서구 등촌동",
     "coords": [126.843670821456, 37.5622374761139],
-    "stats": {"total": 35, "sale": {"count": 1, "range": [213000, 213000], "rep_area": 474.1, "rep_avg_price": 213000}, "jeonse": {"count": 5, "range": [12000, 22500], "rep_area": 26.0, "rep_avg_price": 15300}, "monthly": {"count": 29, "range": [300, 6000], "rep_area": 20.0, "rep_avg_price": 2000}},
+    "stats": {"total": 34, "sale": null, "jeonse": {"count": 5, "range": [12000, 22500], "rep_area": 26.0, "rep_avg_price": 15300}, "monthly": {"count": 29, "range": [300, 6000], "rep_area": 20.0, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 213000, "rent": 0, "area": 474.14, "land": 160.1, "floor": "", "dong": "", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "등촌동 6**", "by": 1993},
       {"type": "월세", "price": 2000, "rent": 65, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
       {"type": "전세", "price": 15300, "rent": 0, "area": 26.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 2000, "rent": 50, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
@@ -161,6 +168,15 @@
       {"type": "전세", "price": 22500, "rent": 0, "area": 29.96, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-07", "period": "25.02~27.02", "renew": "갱신", "p_dep": 21500, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 6000, "rent": 50, "area": 87.17, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-03", "period": "25.02~27.02", "renew": "갱신", "p_dep": 5000, "p_rent": 500, "jibun": "", "by": 1993},
       {"type": "월세", "price": 500, "rent": 60, "area": 21.89, "land": 0.0, "floor": "", "dong": "", "date": "2025-02-01", "period": "25.02~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017}
+    ]
+  },
+  {
+    "name": "서울특별시 강서구 등촌동 655-41",
+    "address": "서울특별시 강서구 등촌동 655-41",
+    "coords": [126.855011808812, 37.5555798896792],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [213000, 213000], "rep_area": 474.1, "rep_avg_price": 213000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 213000, "rent": 0, "area": 474.14, "land": 160.1, "floor": "", "dong": "", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "등촌동 655-41 (추정)", "by": 1993}
     ]
   },
   {

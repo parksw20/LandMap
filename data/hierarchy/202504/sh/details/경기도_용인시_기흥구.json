@@ -113,9 +113,8 @@
     "name": "경기도 용인시 기흥구 동백동",
     "address": "경기도 용인시 기흥구 동백동",
     "coords": [127.160945196776, 37.2869057949406],
-    "stats": {"total": 35, "sale": {"count": 1, "range": [61500, 61500], "rep_area": 144.0, "rep_avg_price": 61500}, "jeonse": {"count": 9, "range": [4000, 50000], "rep_area": 18.9, "rep_avg_price": 12000}, "monthly": {"count": 25, "range": [500, 18000], "rep_area": 66.0, "rep_avg_price": 2250}},
+    "stats": {"total": 34, "sale": null, "jeonse": {"count": 9, "range": [4000, 50000], "rep_area": 18.9, "rep_avg_price": 12000}, "monthly": {"count": 25, "range": [500, 18000], "rep_area": 66.0, "rep_avg_price": 2250}},
     "deals": [
-      {"type": "매매", "price": 61500, "rent": 0, "area": 144.01, "land": 490.0, "floor": "", "dong": "", "date": "2025-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동백동 7*", "by": 2000},
       {"type": "전세", "price": 13000, "rent": 0, "area": 62.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 53, "area": 33.45, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-24", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "월세", "price": 500, "rent": 35, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-25", "period": "25.05~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
@@ -162,6 +161,15 @@
     ]
   },
   {
+    "name": "경기도 용인시 기흥구 동백동 73-204임",
+    "address": "경기도 용인시 기흥구 동백동 73-204임",
+    "coords": [127.164152278102, 37.2904452611033],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [61500, 61500], "rep_area": 144.0, "rep_avg_price": 61500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 61500, "rent": 0, "area": 144.01, "land": 490.0, "floor": "", "dong": "", "date": "2025-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동백동 73-204임 (추정)", "by": 2000}
+    ]
+  },
+  {
     "name": "경기도 용인시 기흥구 동백동 81-111",
     "address": "경기도 용인시 기흥구 동백동 81-111",
     "coords": [127.163427235941, 37.2936726973493],
@@ -174,14 +182,22 @@
     "name": "경기도 용인시 기흥구 마북동",
     "address": "경기도 용인시 기흥구 마북동",
     "coords": [127.117425207334, 37.30151412293],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [178216, 178216], "rep_area": 126.7, "rep_avg_price": 178216}, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 30.0, "rep_avg_price": 8000}, "monthly": {"count": 4, "range": [500, 1000], "rep_area": 23.0, "rep_avg_price": 500}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 30.0, "rep_avg_price": 8000}, "monthly": {"count": 4, "range": [500, 1000], "rep_area": 23.0, "rep_avg_price": 500}},
     "deals": [
-      {"type": "매매", "price": 178216, "rent": 0, "area": 126.7, "land": 329.0, "floor": "", "dong": "", "date": "2025-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마북동 1**", "by": 1988},
       {"type": "월세", "price": 500, "rent": 55, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-23", "period": "25.04~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 1000, "rent": 55, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-29", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
       {"type": "전세", "price": 8000, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-25", "period": "25.04~26.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 500, "rent": 50, "area": 39.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-01", "period": "25.04~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 1000, "rent": 40, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-15", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010}
+    ]
+  },
+  {
+    "name": "경기도 용인시 기흥구 마북동 182-16",
+    "address": "경기도 용인시 기흥구 마북동 182-16",
+    "coords": [127.124326975072, 37.303597026354],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [178216, 178216], "rep_area": 126.7, "rep_avg_price": 178216}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 178216, "rent": 0, "area": 126.7, "land": 329.0, "floor": "", "dong": "", "date": "2025-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마북동 182-16 (추정)", "by": 1988}
     ]
   },
   {
@@ -396,9 +412,8 @@
     "name": "경기도 용인시 기흥구 영덕동",
     "address": "경기도 용인시 기흥구 영덕동",
     "coords": [127.074495882949, 37.2778227962424],
-    "stats": {"total": 66, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 355.9, "rep_avg_price": 118000}, "jeonse": {"count": 20, "range": [8000, 46000], "rep_area": 60.0, "rep_avg_price": 16333}, "monthly": {"count": 45, "range": [500, 12000], "rep_area": 30.0, "rep_avg_price": 1100}},
+    "stats": {"total": 65, "sale": null, "jeonse": {"count": 20, "range": [8000, 46000], "rep_area": 60.0, "rep_avg_price": 16333}, "monthly": {"count": 45, "range": [500, 12000], "rep_area": 30.0, "rep_avg_price": 1100}},
     "deals": [
-      {"type": "매매", "price": 118000, "rent": 0, "area": 355.92, "land": 242.4, "floor": "", "dong": "", "date": "2025-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영덕동 1***", "by": 2015},
       {"type": "월세", "price": 3000, "rent": 80, "area": 68.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 3000, "rent": 70, "area": 48.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 2000, "rent": 30, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2013},
@@ -467,6 +482,15 @@
     ]
   },
   {
+    "name": "경기도 용인시 기흥구 영덕동 1009-1",
+    "address": "경기도 용인시 기흥구 영덕동 1009-1",
+    "coords": [127.069781993498, 37.2736728646542],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 355.9, "rep_avg_price": 118000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 118000, "rent": 0, "area": 355.92, "land": 242.4, "floor": "", "dong": "", "date": "2025-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "영덕동 1009-1 (추정)", "by": 2015}
+    ]
+  },
+  {
     "name": "경기도 용인시 기흥구 중동",
     "address": "경기도 용인시 기흥구 중동",
     "coords": [127.158731907203, 37.2682933144575],
@@ -513,12 +537,20 @@
     "name": "경기도 용인시 기흥구 하갈동",
     "address": "경기도 용인시 기흥구 하갈동",
     "coords": [127.092690974644, 37.2526600728182],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [65100, 65100], "rep_area": 142.0, "rep_avg_price": 65100}, "jeonse": null, "monthly": {"count": 3, "range": [2000, 20000], "rep_area": 69.2, "rep_avg_price": 2000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [2000, 20000], "rep_area": 69.2, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 65100, "rent": 0, "area": 141.95, "land": 222.0, "floor": "", "dong": "", "date": "2025-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하갈동 2**", "by": 2019},
       {"type": "월세", "price": 2000, "rent": 65, "area": 75.78, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-29", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 20000, "rent": 150, "area": 218.98, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-27", "period": "25.06~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 2000, "rent": 65, "area": 69.15, "land": 0.0, "floor": "", "dong": "", "date": "2025-04-29", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "경기도 용인시 기흥구 하갈동 261-34",
+    "address": "경기도 용인시 기흥구 하갈동 261-34",
+    "coords": [127.097173399874, 37.2579631727016],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [65100, 65100], "rep_area": 142.0, "rep_avg_price": 65100}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 65100, "rent": 0, "area": 141.95, "land": 222.0, "floor": "", "dong": "", "date": "2025-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하갈동 261-34 (추정)", "by": 2019}
     ]
   }
 ]

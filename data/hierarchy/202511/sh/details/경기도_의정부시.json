@@ -210,12 +210,8 @@
     "name": "경기도 의정부시 의정부동",
     "address": "경기도 의정부시 의정부동",
     "coords": [127.034033667251, 37.7346401263968],
-    "stats": {"total": 39, "sale": {"count": 4, "range": [12500, 65000], "rep_area": 26.8, "rep_avg_price": 12500}, "jeonse": {"count": 3, "range": [5000, 14000], "rep_area": 40.0, "rep_avg_price": 5000}, "monthly": {"count": 32, "range": [30, 2000], "rep_area": 20.0, "rep_avg_price": 207}},
+    "stats": {"total": 35, "sale": null, "jeonse": {"count": 3, "range": [5000, 14000], "rep_area": 40.0, "rep_avg_price": 5000}, "monthly": {"count": 32, "range": [30, 2000], "rep_area": 20.0, "rep_avg_price": 207}},
     "deals": [
-      {"type": "매매", "price": 65000, "rent": 0, "area": 299.62, "land": 154.8, "floor": "", "dong": "", "date": "2025-11-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 2**", "by": 1990},
-      {"type": "매매", "price": 12500, "rent": 0, "area": 26.81, "land": 34.04, "floor": "", "dong": "", "date": "2025-11-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 3**", "by": 1975},
-      {"type": "매매", "price": 38000, "rent": 0, "area": 29.36, "land": 218.0, "floor": "", "dong": "", "date": "2025-11-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 3**", "by": 1958},
-      {"type": "매매", "price": 36600, "rent": 0, "area": 233.4, "land": 153.5, "floor": "", "dong": "", "date": "2025-11-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 4**", "by": 2001},
       {"type": "전세", "price": 5000, "rent": 0, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 300, "rent": 35, "area": 16.5, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-21", "period": "25.12~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 500, "rent": 40, "area": 51.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-25", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
@@ -251,6 +247,42 @@
       {"type": "월세", "price": 100, "rent": 50, "area": 17.2, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2020},
       {"type": "월세", "price": 500, "rent": 35, "area": 59.74, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 400, "rent": 35, "area": 33.315, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995}
+    ]
+  },
+  {
+    "name": "경기도 의정부시 의정부동 240-223",
+    "address": "경기도 의정부시 의정부동 240-223",
+    "coords": [127.045068426791, 37.7434753849586],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 299.6, "rep_avg_price": 65000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 65000, "rent": 0, "area": 299.62, "land": 154.8, "floor": "", "dong": "", "date": "2025-11-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 240-223 (추정)", "by": 1990}
+    ]
+  },
+  {
+    "name": "경기도 의정부시 의정부동 335-31",
+    "address": "경기도 의정부시 의정부동 335-31",
+    "coords": [127.036318862278, 37.7433576758039],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12500, 12500], "rep_area": 26.8, "rep_avg_price": 12500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12500, "rent": 0, "area": 26.81, "land": 34.04, "floor": "", "dong": "", "date": "2025-11-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 335-31 (추정)", "by": 1975}
+    ]
+  },
+  {
+    "name": "경기도 의정부시 의정부동 354-1답",
+    "address": "경기도 의정부시 의정부동 354-1답",
+    "coords": [127.034038303688, 37.7323774281415],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 29.4, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 29.36, "land": 218.0, "floor": "", "dong": "", "date": "2025-11-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 354-1답 (추정)", "by": 1958}
+    ]
+  },
+  {
+    "name": "경기도 의정부시 의정부동 435-12",
+    "address": "경기도 의정부시 의정부동 435-12",
+    "coords": [127.044258229705, 37.7408309875822],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36600, 36600], "rep_area": 233.4, "rep_avg_price": 36600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36600, "rent": 0, "area": 233.4, "land": 153.5, "floor": "", "dong": "", "date": "2025-11-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "의정부동 435-12 (추정)", "by": 2001}
     ]
   },
   {

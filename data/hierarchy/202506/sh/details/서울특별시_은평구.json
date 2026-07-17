@@ -3,9 +3,8 @@
     "name": "서울특별시 은평구 갈현동",
     "address": "서울특별시 은평구 갈현동",
     "coords": [126.914367182376, 37.6198652831792],
-    "stats": {"total": 61, "sale": {"count": 1, "range": [85900, 85900], "rep_area": 67.3, "rep_avg_price": 85900}, "jeonse": {"count": 11, "range": [2500, 17000], "rep_area": 18.0, "rep_avg_price": 8000}, "monthly": {"count": 49, "range": [300, 18000], "rep_area": 15.0, "rep_avg_price": 650}},
+    "stats": {"total": 60, "sale": null, "jeonse": {"count": 11, "range": [2500, 17000], "rep_area": 18.0, "rep_avg_price": 8000}, "monthly": {"count": 49, "range": [300, 18000], "rep_area": 15.0, "rep_avg_price": 650}},
     "deals": [
-      {"type": "매매", "price": 85900, "rent": 0, "area": 67.34, "land": 125.0, "floor": "", "dong": "", "date": "2025-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "갈현동 2**", "by": 1967},
       {"type": "전세", "price": 14500, "rent": 0, "area": 42.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 5000, "rent": 65, "area": 62.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 5000, "rent": 30, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -66,6 +65,15 @@
       {"type": "월세", "price": 500, "rent": 35, "area": 34.43, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-04", "period": "25.07~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "전세", "price": 8000, "rent": 0, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-01", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "전세", "price": 10000, "rent": 0, "area": 19.84, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-04", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019}
+    ]
+  },
+  {
+    "name": "서울특별시 은평구 갈현동 241-11",
+    "address": "서울특별시 은평구 갈현동 241-11",
+    "coords": [126.912194196949, 37.6212106624545],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85900, 85900], "rep_area": 67.3, "rep_avg_price": 85900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 85900, "rent": 0, "area": 67.34, "land": 125.0, "floor": "", "dong": "", "date": "2025-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "갈현동 241-11 (추정)", "by": 1967}
     ]
   },
   {
@@ -165,9 +173,8 @@
     "name": "서울특별시 은평구 대조동",
     "address": "서울특별시 은평구 대조동",
     "coords": [126.920825111083, 37.6141899645264],
-    "stats": {"total": 54, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 62.9, "rep_avg_price": 54000}, "jeonse": {"count": 9, "range": [5226, 28000], "rep_area": 69.4, "rep_avg_price": 8000}, "monthly": {"count": 44, "range": [100, 17000], "rep_area": 30.0, "rep_avg_price": 900}},
+    "stats": {"total": 53, "sale": null, "jeonse": {"count": 9, "range": [5226, 28000], "rep_area": 69.4, "rep_avg_price": 8000}, "monthly": {"count": 44, "range": [100, 17000], "rep_area": 30.0, "rep_avg_price": 900}},
     "deals": [
-      {"type": "매매", "price": 54000, "rent": 0, "area": 62.87, "land": 110.4, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대조동 2**", "by": 1967},
       {"type": "전세", "price": 5226, "rent": 0, "area": 38.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "월세", "price": 1000, "rent": 51, "area": 12.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
       {"type": "월세", "price": 3000, "rent": 40, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -224,14 +231,21 @@
     ]
   },
   {
+    "name": "서울특별시 은평구 대조동 219-14",
+    "address": "서울특별시 은평구 대조동 219-14",
+    "coords": [126.919173441292, 37.6159372126069],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 62.9, "rep_avg_price": 54000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 54000, "rent": 0, "area": 62.87, "land": 110.4, "floor": "", "dong": "", "date": "2025-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대조동 219-14 (추정)", "by": 1967}
+    ]
+  },
+  {
     "name": "서울특별시 은평구 불광동",
     "address": "서울특별시 은평구 불광동",
     "coords": [126.937059476367, 37.617652326817],
-    "stats": {"total": 84, "sale": {"count": 3, "range": [69000, 118000], "rep_area": 80.1, "rep_avg_price": 105000}, "jeonse": {"count": 28, "range": [3300, 35000], "rep_area": 42.3, "rep_avg_price": 13250}, "monthly": {"count": 53, "range": [300, 15000], "rep_area": 13.0, "rep_avg_price": 1150}},
+    "stats": {"total": 82, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 179.4, "rep_avg_price": 118000}, "jeonse": {"count": 28, "range": [3300, 35000], "rep_area": 42.3, "rep_avg_price": 13250}, "monthly": {"count": 53, "range": [300, 15000], "rep_area": 13.0, "rep_avg_price": 1150}},
     "deals": [
-      {"type": "매매", "price": 69000, "rent": 0, "area": 149.15, "land": 102.0, "floor": "", "dong": "", "date": "2025-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "불광동 6**", "by": 1993},
       {"type": "매매", "price": 118000, "rent": 0, "area": 179.4, "land": 123.0, "floor": "", "dong": "", "date": "2025-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "불광동 2**", "by": 1995},
-      {"type": "매매", "price": 105000, "rent": 0, "area": 80.07, "land": 142.0, "floor": "", "dong": "", "date": "2025-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "불광동 2**", "by": 1967},
       {"type": "월세", "price": 3000, "rent": 60, "area": 62.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 2000, "rent": 50, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2023},
       {"type": "전세", "price": 9000, "rent": 0, "area": 49.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -322,6 +336,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [98000, 98000], "rep_area": 123.2, "rep_avg_price": 98000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 98000, "rent": 0, "area": 123.24, "land": 83.0, "floor": "", "dong": "", "date": "2025-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "불광동 259-25 (추정)", "by": 1997}
+    ]
+  },
+  {
+    "name": "서울특별시 은평구 불광동 281-123",
+    "address": "서울특별시 은평구 불광동 281-123",
+    "coords": [126.931793805007, 37.6103094977755],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 80.1, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 80.07, "land": 142.0, "floor": "", "dong": "", "date": "2025-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "불광동 281-123 (추정)", "by": 1967}
+    ]
+  },
+  {
+    "name": "서울특별시 은평구 불광동 600-10",
+    "address": "서울특별시 은평구 불광동 600-10",
+    "coords": [126.932753127094, 37.6116484674609],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [69000, 69000], "rep_area": 149.2, "rep_avg_price": 69000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 69000, "rent": 0, "area": 149.15, "land": 102.0, "floor": "", "dong": "", "date": "2025-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "불광동 600-10 (추정)", "by": 1993}
     ]
   },
   {
@@ -481,9 +513,8 @@
     "name": "서울특별시 은평구 응암동",
     "address": "서울특별시 은평구 응암동",
     "coords": [126.924109745075, 37.5963272964126],
-    "stats": {"total": 72, "sale": {"count": 1, "range": [34900, 34900], "rep_area": 186.4, "rep_avg_price": 34900}, "jeonse": {"count": 11, "range": [4500, 35000], "rep_area": 31.0, "rep_avg_price": 4500}, "monthly": {"count": 60, "range": [300, 13000], "rep_area": 33.0, "rep_avg_price": 4012}},
+    "stats": {"total": 71, "sale": null, "jeonse": {"count": 11, "range": [4500, 35000], "rep_area": 31.0, "rep_avg_price": 4500}, "monthly": {"count": 60, "range": [300, 13000], "rep_area": 33.0, "rep_avg_price": 4012}},
     "deals": [
-      {"type": "매매", "price": 34900, "rent": 0, "area": 186.39, "land": 134.1, "floor": "", "dong": "", "date": "2025-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "응암동 7**", "by": 1988},
       {"type": "월세", "price": 4000, "rent": 51, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-19", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "전세", "price": 4500, "rent": 0, "area": 31.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-16", "period": "25.06~27.06", "renew": "갱신", "p_dep": 4000, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 300, "rent": 53, "area": 19.26, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-11", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -555,6 +586,15 @@
       {"type": "월세", "price": 1000, "rent": 50, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2010},
       {"type": "전세", "price": 15000, "rent": 0, "area": 107.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "25.08~27.08", "renew": "갱신", "p_dep": 15000, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 12000, "rent": 5, "area": 65.61, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-03", "period": "25.08~27.08", "renew": "갱신", "p_dep": 12000, "p_rent": 5, "jibun": "", "by": 1991}
+    ]
+  },
+  {
+    "name": "서울특별시 은평구 응암동 721-2",
+    "address": "서울특별시 은평구 응암동 721-2",
+    "coords": [126.918139678129, 37.5876133287522],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34900, 34900], "rep_area": 186.4, "rep_avg_price": 34900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34900, "rent": 0, "area": 186.39, "land": 134.1, "floor": "", "dong": "", "date": "2025-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "응암동 721-2 (추정)", "by": 1988}
     ]
   },
   {

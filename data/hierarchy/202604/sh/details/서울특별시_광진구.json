@@ -20,10 +20,8 @@
     "name": "서울특별시 광진구 구의동",
     "address": "서울특별시 광진구 구의동",
     "coords": [127.093135225891, 37.5502741239801],
-    "stats": {"total": 165, "sale": {"count": 4, "range": [180000, 550000], "rep_area": 189.0, "rep_avg_price": 180000}, "jeonse": {"count": 27, "range": [6000, 50000], "rep_area": 19.8, "rep_avg_price": 10500}, "monthly": {"count": 134, "range": [100, 23000], "rep_area": 35.0, "rep_avg_price": 5136}},
+    "stats": {"total": 163, "sale": {"count": 2, "range": [180000, 203000], "rep_area": 189.0, "rep_avg_price": 180000}, "jeonse": {"count": 27, "range": [6000, 50000], "rep_area": 19.8, "rep_avg_price": 10500}, "monthly": {"count": 134, "range": [100, 23000], "rep_area": 35.0, "rep_avg_price": 5136}},
     "deals": [
-      {"type": "매매", "price": 500000, "rent": 0, "area": 619.74, "land": 424.8, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구의동 2**", "by": 1987},
-      {"type": "매매", "price": 550000, "rent": 0, "area": 742.31, "land": 33.5, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구의동 2**", "by": 2003},
       {"type": "매매", "price": 203000, "rent": 0, "area": 278.91, "land": 140.5, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구의동 2**", "by": 2016},
       {"type": "매매", "price": 180000, "rent": 0, "area": 189.03, "land": 229.4, "floor": "", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구의동 2**", "by": 1975},
       {"type": "월세", "price": 5000, "rent": 30, "area": 22.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
@@ -190,6 +188,24 @@
     ]
   },
   {
+    "name": "서울특별시 광진구 구의동 203-16",
+    "address": "서울특별시 광진구 구의동 203-16",
+    "coords": [127.092269163486, 37.5435665986996],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [550000, 550000], "rep_area": 742.3, "rep_avg_price": 550000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 550000, "rent": 0, "area": 742.31, "land": 33.5, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구의동 203-16 (추정)", "by": 2003}
+    ]
+  },
+  {
+    "name": "서울특별시 광진구 구의동 230-19",
+    "address": "서울특별시 광진구 구의동 230-19",
+    "coords": [127.088507289878, 37.544695186492],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [500000, 500000], "rep_area": 619.7, "rep_avg_price": 500000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 500000, "rent": 0, "area": 619.74, "land": 424.8, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구의동 230-19 (추정)", "by": 1987}
+    ]
+  },
+  {
     "name": "서울특별시 광진구 구의동 61-3",
     "address": "서울특별시 광진구 구의동 61-3",
     "coords": [127.091093707777, 37.5471022200937],
@@ -202,9 +218,8 @@
     "name": "서울특별시 광진구 군자동",
     "address": "서울특별시 광진구 군자동",
     "coords": [127.075350846159, 37.5554765598173],
-    "stats": {"total": 98, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 146.9, "rep_avg_price": 86000}, "jeonse": {"count": 18, "range": [7000, 33000], "rep_area": 65.8, "rep_avg_price": 25000}, "monthly": {"count": 79, "range": [200, 22000], "rep_area": 20.0, "rep_avg_price": 2976}},
+    "stats": {"total": 97, "sale": null, "jeonse": {"count": 18, "range": [7000, 33000], "rep_area": 65.8, "rep_avg_price": 25000}, "monthly": {"count": 79, "range": [200, 22000], "rep_area": 20.0, "rep_avg_price": 2976}},
     "deals": [
-      {"type": "매매", "price": 86000, "rent": 0, "area": 146.88, "land": 96.0, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "군자동 3**", "by": 1988},
       {"type": "전세", "price": 7000, "rent": 0, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 6000, "rent": 53, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
       {"type": "월세", "price": 4000, "rent": 50, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2013},
@@ -302,6 +317,15 @@
       {"type": "월세", "price": 500, "rent": 55, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-02", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 7500, "rent": 65, "area": 47.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "갱신", "p_dep": 7000, "p_rent": 65, "jibun": "", "by": 2012},
       {"type": "월세", "price": 3000, "rent": 80, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989}
+    ]
+  },
+  {
+    "name": "서울특별시 광진구 군자동 341-28",
+    "address": "서울특별시 광진구 군자동 341-28",
+    "coords": [127.070638795768, 37.5519180991571],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 146.9, "rep_avg_price": 86000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 86000, "rent": 0, "area": 146.88, "land": 96.0, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "군자동 341-28 (추정)", "by": 1988}
     ]
   },
   {
@@ -660,13 +684,11 @@
     "name": "서울특별시 광진구 중곡동",
     "address": "서울특별시 광진구 중곡동",
     "coords": [127.090401426965, 37.5617477458583],
-    "stats": {"total": 229, "sale": {"count": 7, "range": [65000, 173000], "rep_area": 129.2, "rep_avg_price": 71000}, "jeonse": {"count": 42, "range": [3500, 40000], "rep_area": 40.0, "rep_avg_price": 14500}, "monthly": {"count": 180, "range": [0, 25000], "rep_area": 40.0, "rep_avg_price": 2646}},
+    "stats": {"total": 227, "sale": {"count": 5, "range": [65000, 173000], "rep_area": 129.2, "rep_avg_price": 71000}, "jeonse": {"count": 42, "range": [3500, 40000], "rep_area": 40.0, "rep_avg_price": 14500}, "monthly": {"count": 180, "range": [0, 25000], "rep_area": 40.0, "rep_avg_price": 2646}},
     "deals": [
       {"type": "매매", "price": 173000, "rent": 0, "area": 249.39, "land": 175.5, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 2**", "by": 1991},
       {"type": "매매", "price": 75000, "rent": 0, "area": 166.32, "land": 101.8, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 9*", "by": 1996},
       {"type": "매매", "price": 71000, "rent": 0, "area": 129.17, "land": 77.7, "floor": "", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 1**", "by": 1989},
-      {"type": "매매", "price": 105000, "rent": 0, "area": 197.94, "land": 144.5, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 6**", "by": 1993},
-      {"type": "매매", "price": 142000, "rent": 0, "area": 249.66, "land": 223.8, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 6**", "by": 1991},
       {"type": "매매", "price": 65000, "rent": 0, "area": 163.59, "land": 99.5, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 1**", "by": 1988},
       {"type": "매매", "price": 98000, "rent": 0, "area": 199.5, "land": 131.9, "floor": "", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 2**", "by": 1991},
       {"type": "전세", "price": 4000, "rent": 0, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
@@ -909,6 +931,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [99000, 99000], "rep_area": 131.4, "rep_avg_price": 99000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 99000, "rent": 0, "area": 131.44, "land": 80.0, "floor": "", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 232-16 (추정)", "by": 2017}
+    ]
+  },
+  {
+    "name": "서울특별시 광진구 중곡동 648-4",
+    "address": "서울특별시 광진구 중곡동 648-4",
+    "coords": [127.078749397244, 37.5584446594832],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [142000, 142000], "rep_area": 249.7, "rep_avg_price": 142000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 142000, "rent": 0, "area": 249.66, "land": 223.8, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 648-4 (추정)", "by": 1991}
+    ]
+  },
+  {
+    "name": "서울특별시 광진구 중곡동 648-6",
+    "address": "서울특별시 광진구 중곡동 648-6",
+    "coords": [127.079036966409, 37.5583225624405],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 197.9, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105000, "rent": 0, "area": 197.94, "land": 144.5, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중곡동 648-6 (추정)", "by": 1993}
     ]
   },
   {
