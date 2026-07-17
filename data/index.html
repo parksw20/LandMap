@@ -60,6 +60,25 @@
     <button id="radius-btn" class="tool-btn" title="화면 중앙 기준 100m 간격 동심원">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
     </button>
+    <button id="route-btn" class="tool-btn" title="길찾기: 출발지 → 도착지 클릭 (카카오맵 경로 열기)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8 17.5C11 15 9 12 12 10s7-2 7.5-2.7" stroke-dasharray="3 2"/></svg>
+    </button>
+    <button id="jog-btn" class="tool-btn" title="조그 이동: 방향 패드로 지도 이동">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 6l2 3h-4zM12 18l-2-3h4zM6 12l3-2v4zM18 12l-3 2v-4z" fill="currentColor" stroke="none"/></svg>
+    </button>
+  </div>
+
+  <!-- 조그(다이얼) 방향 패드 -->
+  <div id="jog-pad" class="jog-pad" style="display:none;">
+    <button class="jog-arrow" data-dx="0" data-dy="-1" style="top:4px;left:50%;transform:translateX(-50%);">▲</button>
+    <button class="jog-arrow" data-dx="1" data-dy="-1" style="top:16px;right:14px;">◥</button>
+    <button class="jog-arrow" data-dx="1" data-dy="0" style="top:50%;right:4px;transform:translateY(-50%);">▶</button>
+    <button class="jog-arrow" data-dx="1" data-dy="1" style="bottom:16px;right:14px;">◢</button>
+    <button class="jog-arrow" data-dx="0" data-dy="1" style="bottom:4px;left:50%;transform:translateX(-50%);">▼</button>
+    <button class="jog-arrow" data-dx="-1" data-dy="1" style="bottom:16px;left:14px;">◣</button>
+    <button class="jog-arrow" data-dx="-1" data-dy="0" style="top:50%;left:4px;transform:translateY(-50%);">◀</button>
+    <button class="jog-arrow" data-dx="-1" data-dy="-1" style="top:16px;left:14px;">◤</button>
+    <div class="jog-center"></div>
   </div>
 
   <!-- 로드뷰 패널 -->

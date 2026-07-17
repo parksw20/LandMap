@@ -1081,6 +1081,129 @@ body {
   }
 }
 
+/* 길찾기 출발/도착 핀 */
+.route-pin {
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 9px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.route-pin.start {
+  background: #16a34a;
+}
+
+.route-pin.end {
+  background: #dc2626;
+}
+
+.route-label .route-open {
+  display: inline-block;
+  margin-left: 7px;
+  background: #ede9fe;
+  color: #7c3aed;
+  padding: 1px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* 로드뷰 현재 위치 핀 (지도 위) */
+.rv-map-pin {
+  width: 16px;
+  height: 16px;
+  background: #f97316;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(249, 115, 22, 0.3), 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* 조그(다이얼) 패드 */
+.jog-pad {
+  position: fixed;
+  right: 52px;
+  bottom: 46px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 1700;
+}
+
+.jog-arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  touch-action: none;
+  user-select: none;
+}
+
+.jog-arrow:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.jog-arrow:active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.jog-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+/* 아파트 시세(평당가) 차트 */
+.price-chart {
+  margin: 14px 16px 6px;
+  padding: 12px 12px 6px;
+  background: #f8faff;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+}
+
+.chart-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.chart-title span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-sub);
+}
+
+.chart-axis {
+  font-size: 9px;
+  fill: #6b7280;
+}
+
+.chart-grid {
+  stroke: #e5e7eb;
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
 /* 거리/면적 측정 라벨 */
 .measure-label {
   background: rgba(17, 24, 39, 0.85);

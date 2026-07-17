@@ -47,6 +47,15 @@ const state = {
     // 지적도 모드 클릭 주소 표시 + VWorld 필지 폴리곤
     clickAddrOverlay: null,
     clickParcelPoly: null,
+    // 길찾기 (출발→도착)
+    routeMode: false,
+    routePts: [],
+    routeOverlays: [],
+    // 로드뷰 위치 핀 / 조그 패드
+    rvMapPin: null,
+    rvPinBound: false,
+    jogOn: false,
+    jogTimer: null,
     // 노후도 모드
     agingOn: false,
     // 토지이용계획(용도지역) 오버레이
@@ -166,10 +175,11 @@ function setupEventListeners() {
     kakao.maps.event.addListener(state.map, 'zoom_changed', () => { state.tooltip.setMap(null); updateMap(); if (state.radiusOn) drawRadius(); if (state.bldgAgeOn) refreshBldgAge(); });
     kakao.maps.event.addListener(state.map, 'dragend', () => { if (state.currentLevel === 4) updateMap(true); if (state.radiusOn) drawRadius(); if (state.bldgAgeOn) refreshBldgAge(); });
 
-    // 지도 클릭: 로드뷰 > 측정 > 지적도(주소 표시) 순으로 처리
+    // 지도 클릭: 로드뷰 > 측정 > 길찾기 > 지적도(주소 표시) 순으로 처리
     kakao.maps.event.addListener(state.map, 'click', (e) => {
         if (state.roadviewOn) { openRoadview(e.latLng); return; }
         if (state.measureMode) { onMeasureClick(e.latLng); return; }
+        if (state.routeMode) { onRouteClick(e.latLng); return; }
         if (state.cadastralOn) showClickAddress(e.latLng);
     });
     kakao.maps.event.addListener(state.map, 'rightclick', () => finishMeasure());
@@ -234,15 +244,46 @@ function setupEventListeners() {
     const geolocBtn = document.getElementById('geoloc-btn');
     if (geolocBtn) geolocBtn.onclick = moveToCurrentLocation;
 
+    // 길찾기 모드
+    const routeBtn = document.getElementById('route-btn');
+    if (routeBtn) routeBtn.onclick = () => {
+        state.routeMode = !state.routeMode;
+        routeBtn.classList.toggle('active', state.routeMode);
+        if (!state.routeMode) clearRoute();
+        else document.getElementById('status-bar').textContent = '길찾기: 출발지를 클릭하세요';
+    };
+
+    // 조그(다이얼) 패드
+    const jogBtn = document.getElementById('jog-btn');
+    const jogPad = document.getElementById('jog-pad');
+    if (jogBtn && jogPad) {
+        jogBtn.onclick = () => {
+            state.jogOn = !state.jogOn;
+            jogBtn.classList.toggle('active', state.jogOn);
+            jogPad.style.display = state.jogOn ? 'block' : 'none';
+        };
+        const jogStop = () => { if (state.jogTimer) { clearInterval(state.jogTimer); state.jogTimer = null; } };
+        jogPad.querySelectorAll('.jog-arrow').forEach(btn => {
+            const dx = parseInt(btn.dataset.dx), dy = parseInt(btn.dataset.dy);
+            btn.addEventListener('pointerdown', (ev) => {
+                ev.preventDefault();
+                jogStop();
+                state.map.panBy(dx * 45, dy * 45);
+                state.jogTimer = setInterval(() => state.map.panBy(dx * 45, dy * 45), 80);
+            });
+            ['pointerup', 'pointerleave', 'pointercancel'].forEach(evt => btn.addEventListener(evt, jogStop));
+        });
+    }
+
     const roadviewBtn = document.getElementById('roadview-btn');
     if (roadviewBtn) roadviewBtn.onclick = () => {
         state.roadviewOn = !state.roadviewOn;
         roadviewBtn.classList.toggle('active', state.roadviewOn);
         if (state.roadviewOn) state.map.addOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW);
-        else { state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW); document.getElementById('roadview-panel').style.display = 'none'; }
+        else { state.map.removeOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW); document.getElementById('roadview-panel').style.display = 'none'; hideRvMapPin(); }
     };
     const rvCloseBtn = document.getElementById('rv-close-btn');
-    if (rvCloseBtn) rvCloseBtn.onclick = () => { document.getElementById('roadview-panel').style.display = 'none'; };
+    if (rvCloseBtn) rvCloseBtn.onclick = () => { document.getElementById('roadview-panel').style.display = 'none'; hideRvMapPin(); };
 
     document.querySelectorAll('input[name="housingType"]').forEach(r => {
         r.onchange = (e) => { state.selectedType = e.target.value; state.selectedComplex = null; document.getElementById('data-section').style.display = 'none'; applyTxAvailability(); updateMap(true); };
@@ -807,6 +848,44 @@ function showTooltip(item, level, pos) {
 
 function formatPrice(val) { if (val >= 10000) return `${Math.round(val / 1000) / 10}억`; return val.toLocaleString() + '만'; }
 
+// 아파트 매매 평당가 월별 추이 차트 (외부 라이브러리 없이 SVG)
+function buildPriceChart(item) {
+    const sales = (item.deals || []).filter(d => d.type === '매매' && d.price > 0 && d.area > 0 && d.date && d.date.length >= 7);
+    const byMonth = {};
+    sales.forEach(d => {
+        const k = d.date.slice(0, 7);
+        (byMonth[k] = byMonth[k] || []).push(d.price / (d.area * 0.3025));
+    });
+    const months = Object.keys(byMonth).sort();
+    if (months.length < 2) return null; // 추이라 할 게 없으면 생략
+    const avgs = months.map(k => byMonth[k].reduce((a, b) => a + b, 0) / byMonth[k].length);
+    const W = 320, H = 132, PL = 40, PR = 12, PT = 14, PB = 24;
+    const min = Math.min(...avgs), max = Math.max(...avgs);
+    const span = (max - min) || max * 0.1 || 1;
+    const x = i => PL + (W - PL - PR) * (i / (months.length - 1));
+    const y = v => PT + (H - PT - PB) * (1 - (v - min) / span);
+    const pts = avgs.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    const dots = avgs.map((v, i) =>
+        `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="#2563eb"><title>${months[i]}: ${Math.round(v).toLocaleString()}만/평 (${byMonth[months[i]].length}건)</title></circle>`).join('');
+    const fmt = v => Math.round(v).toLocaleString();
+    const mLabel = m => m.slice(2).replace('-', '.');
+    const div = document.createElement('div');
+    div.className = 'price-chart';
+    div.innerHTML =
+        `<div class="chart-title">매매 평당가 추이 <span>(만원/평 · ${sales.length}건)</span></div>` +
+        `<svg viewBox="0 0 ${W} ${H}" width="100%">` +
+        `<line x1="${PL}" y1="${y(max)}" x2="${W - PR}" y2="${y(max)}" class="chart-grid"/>` +
+        `<line x1="${PL}" y1="${y(min)}" x2="${W - PR}" y2="${y(min)}" class="chart-grid"/>` +
+        `<text x="${PL - 5}" y="${y(max) + 4}" text-anchor="end" class="chart-axis">${fmt(max)}</text>` +
+        `<text x="${PL - 5}" y="${y(min) + 4}" text-anchor="end" class="chart-axis">${fmt(min)}</text>` +
+        `<polyline points="${pts}" fill="none" stroke="#2563eb" stroke-width="2"/>` +
+        dots +
+        `<text x="${x(0)}" y="${H - 7}" text-anchor="start" class="chart-axis">${mLabel(months[0])}</text>` +
+        `<text x="${x(months.length - 1)}" y="${H - 7}" text-anchor="end" class="chart-axis">${mLabel(months[months.length - 1])}</text>` +
+        `</svg>`;
+    return div;
+}
+
 function renderComplexDetail() {
     const item = state.selectedComplex; if (!item || !item.deals) return;
     const sidePanel = document.getElementById('data-section'), dataList = document.getElementById('data-list'), areaFilter = document.getElementById('area-filter');
@@ -832,7 +911,13 @@ function renderComplexDetail() {
         uniqueAreas.forEach(area => { const chip = document.createElement('div'); chip.className = `area-chip ${state.selectedArea === area ? 'active' : ''}`; chip.textContent = state.displayUnit === 'pyeong' ? `${area}평` : `${area}㎡`; chip.onclick = () => { state.selectedArea = area; renderComplexDetail(); }; areaFilter.appendChild(chip); });
         areaFilter.style.display = 'flex';
     } else areaFilter.style.display = 'none';
-    dataList.innerHTML = ''; const priority = { '매매': 1, '전세': 2, '월세': 3 };
+    dataList.innerHTML = '';
+    // 아파트 한정: 매매 평당가 추이 차트
+    if (state.selectedType === 'apt') {
+        const chart = buildPriceChart(item);
+        if (chart) dataList.appendChild(chart);
+    }
+    const priority = { '매매': 1, '전세': 2, '월세': 3 };
     
     // localFilters 적용
     let filtered = validInGlobal.filter(d => state.localFilters[d.type]);
@@ -861,6 +946,8 @@ function renderComplexDetail() {
 // ==========================
 function fmtDist(m) { return m < 1000 ? `${Math.round(m)}m` : `${(m / 1000).toFixed(2)}km`; }
 function fmtArea(a) { return `${Math.round(a).toLocaleString()}㎡ (${Math.round(a * 0.3025).toLocaleString()}평)`; }
+// 도보 소요시간 (보행속도 약 4km/h = 67m/분)
+function fmtWalk(m) { const min = Math.max(1, Math.round(m / 67)); return min < 60 ? `${min}분` : `${Math.floor(min / 60)}시간 ${min % 60}분`; }
 
 // 버튼 클릭: 모드 ON (다른 측정 모드는 종료). 재클릭: 모드 OFF + 해당 유형 도형 전부 삭제
 function setMeasureMode(mode) {
@@ -895,7 +982,8 @@ function onMeasureClick(latlng) {
             state.curLine.setPath(state.curPts);
         }
         if (state.curPts.length >= 2) {
-            addMeasureOverlay(latlng, `<div class="measure-label total">${fmtDist(state.curLine.getLength())}</div>`, 1.6);
+            const len = state.curLine.getLength();
+            addMeasureOverlay(latlng, `<div class="measure-label total">${fmtDist(len)} · 도보 ${fmtWalk(len)}</div>`, 1.6);
         }
     } else if (state.measureMode === 'area') {
         if (!state.curPoly) {
@@ -954,6 +1042,52 @@ function finishMeasure() {
 function clearMeasure(mode) {
     state.doneShapes[mode].forEach(group => group.forEach(o => o.setMap(null)));
     state.doneShapes[mode] = [];
+}
+
+// ==========================
+// 길찾기 — 출발/도착 클릭 → 직선거리·도보시간 + 카카오맵 길찾기 열기
+// ==========================
+function clearRoute() {
+    state.routeOverlays.forEach(o => o.setMap(null));
+    state.routeOverlays = [];
+    state.routePts = [];
+}
+
+function kakaoRouteUrl(s, e) {
+    return `https://map.kakao.com/link/from/출발,${s.getLat()},${s.getLng()}/to/도착,${e.getLat()},${e.getLng()}`;
+}
+
+function onRouteClick(latlng) {
+    if (state.routePts.length >= 2) clearRoute();
+    state.routePts.push(latlng);
+    const isStart = state.routePts.length === 1;
+    const pin = document.createElement('div');
+    pin.className = 'route-pin ' + (isStart ? 'start' : 'end');
+    pin.textContent = isStart ? '출발' : '도착';
+    const ov = new kakao.maps.CustomOverlay({ position: latlng, content: pin, yAnchor: 1.3, zIndex: 1850 });
+    ov.setMap(state.map);
+    state.routeOverlays.push(ov);
+
+    const statusEl = document.getElementById('status-bar');
+    if (isStart) { statusEl.textContent = '길찾기: 도착지를 클릭하세요'; return; }
+
+    const [s, e] = state.routePts;
+    const line = new kakao.maps.Polyline({ path: [s, e], strokeWeight: 3, strokeColor: '#7c3aed', strokeOpacity: 0.85, strokeStyle: 'shortdash' });
+    line.setMap(state.map);
+    state.routeOverlays.push(line);
+    const len = line.getLength();
+    const mid = new kakao.maps.LatLng((s.getLat() + e.getLat()) / 2, (s.getLng() + e.getLng()) / 2);
+    const lbl = document.createElement('div');
+    lbl.className = 'measure-label total closable route-label';
+    lbl.innerHTML = `직선 ${fmtDist(len)} · 도보 ${fmtWalk(len)} <span class="route-open">카카오맵 경로 ↗</span><span class="measure-close">×</span>`;
+    lbl.querySelector('.route-open').onclick = (ev) => { ev.stopPropagation(); window.open(kakaoRouteUrl(s, e), '_blank'); };
+    lbl.querySelector('.measure-close').onclick = (ev) => { ev.stopPropagation(); clearRoute(); };
+    const lov = new kakao.maps.CustomOverlay({ position: mid, content: lbl, yAnchor: 1.4, zIndex: 1850 });
+    lov.setMap(state.map);
+    state.routeOverlays.push(lov);
+    statusEl.textContent = `길찾기: 직선 ${fmtDist(len)}, 도보 약 ${fmtWalk(len)} — 카카오맵에서 상세 경로 확인`;
+    // 카카오맵 길찾기 새 창 (도보/대중교통/자동차 선택 가능)
+    window.open(kakaoRouteUrl(s, e), '_blank');
 }
 
 // ==========================
@@ -1169,7 +1303,29 @@ function openRoadview(latlng) {
         document.getElementById('roadview-panel').style.display = 'block';
         state.rv.setPanoId(panoId, latlng);
         setTimeout(() => { if (state.rv.relayout) state.rv.relayout(); }, 150);
+
+        // 지도에 로드뷰 현재 위치 핀 표시 (로드뷰 안에서 이동하면 따라옴)
+        if (!state.rvMapPin) {
+            const d = document.createElement('div');
+            d.className = 'rv-map-pin';
+            state.rvMapPin = new kakao.maps.CustomOverlay({ position: latlng, content: d, zIndex: 1950 });
+        }
+        state.rvMapPin.setPosition(latlng);
+        state.rvMapPin.setMap(state.map);
+        if (!state.rvPinBound) {
+            state.rvPinBound = true;
+            kakao.maps.event.addListener(state.rv, 'position_changed', () => {
+                const pos = state.rv.getPosition();
+                if (!pos) return;
+                if (state.rvMapPin) state.rvMapPin.setPosition(pos);
+                state.map.setCenter(pos);
+            });
+        }
     });
+}
+
+function hideRvMapPin() {
+    if (state.rvMapPin) state.rvMapPin.setMap(null);
 }
 
 let searchTimer = null;
