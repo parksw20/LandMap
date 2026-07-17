@@ -1128,10 +1128,10 @@ body {
   box-shadow: 0 0 0 6px rgba(249, 115, 22, 0.3), 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
-/* 조그(다이얼) 패드 — 로드뷰 패널 안 우하단, 로드뷰 위에 항상 표시 */
+/* 조그(다이얼) 패드 — 로드뷰 우하단, 카카오 줌/나침반 컨트롤 왼쪽에 배치 (겹침 방지) */
 .jog-pad {
   position: absolute;
-  right: 16px;
+  right: 76px;
   bottom: 16px;
   width: 128px;
   height: 128px;
