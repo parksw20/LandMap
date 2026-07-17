@@ -56,9 +56,8 @@
     "name": "서울특별시 구로구 개봉동",
     "address": "서울특별시 구로구 개봉동",
     "coords": [126.857746551058, 37.4930115322773],
-    "stats": {"total": 62, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 179.1, "rep_avg_price": 60000}, "jeonse": {"count": 13, "range": [3500, 24000], "rep_area": 33.0, "rep_avg_price": 6000}, "monthly": {"count": 48, "range": [100, 16000], "rep_area": 40.0, "rep_avg_price": 900}},
+    "stats": {"total": 61, "sale": null, "jeonse": {"count": 13, "range": [3500, 24000], "rep_area": 33.0, "rep_avg_price": 6000}, "monthly": {"count": 48, "range": [100, 16000], "rep_area": 40.0, "rep_avg_price": 900}},
     "deals": [
-      {"type": "매매", "price": 60000, "rent": 0, "area": 179.13, "land": 102.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "개봉동 1**", "by": 1992},
       {"type": "월세", "price": 2500, "rent": 20, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
       {"type": "전세", "price": 13000, "rent": 0, "area": 41.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 3000, "rent": 90, "area": 30.82, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-28", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
@@ -123,12 +122,20 @@
     ]
   },
   {
+    "name": "서울특별시 구로구 개봉동 116-8",
+    "address": "서울특별시 구로구 개봉동 116-8",
+    "coords": [126.847654086698, 37.503836153251],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 179.1, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 179.13, "land": 102.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "개봉동 116-8 (추정)", "by": 1992}
+    ]
+  },
+  {
     "name": "서울특별시 구로구 고척동",
     "address": "서울특별시 구로구 고척동",
     "coords": [126.863557123957, 37.5013977406621],
-    "stats": {"total": 64, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 200.0, "rep_avg_price": 35000}, "jeonse": {"count": 6, "range": [2800, 25000], "rep_area": 42.0, "rep_avg_price": 9500}, "monthly": {"count": 57, "range": [0, 15000], "rep_area": 18.0, "rep_avg_price": 750}},
+    "stats": {"total": 63, "sale": null, "jeonse": {"count": 6, "range": [2800, 25000], "rep_area": 42.0, "rep_avg_price": 9500}, "monthly": {"count": 57, "range": [0, 15000], "rep_area": 18.0, "rep_avg_price": 750}},
     "deals": [
-      {"type": "매매", "price": 35000, "rent": 0, "area": 199.95, "land": 142.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고척동 2**", "by": 1989},
       {"type": "월세", "price": 3000, "rent": 60, "area": 82.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "전세", "price": 3500, "rent": 0, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "월세", "price": 400, "rent": 30, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -195,14 +202,22 @@
     ]
   },
   {
+    "name": "서울특별시 구로구 고척동 253-241",
+    "address": "서울특별시 구로구 고척동 253-241",
+    "coords": [126.849944228612, 37.5044767255799],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 200.0, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 35000, "rent": 0, "area": 199.95, "land": 142.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고척동 253-241 (추정)", "by": 1989}
+    ]
+  },
+  {
     "name": "서울특별시 구로구 구로동",
     "address": "서울특별시 구로구 구로동",
     "coords": [126.882642231121, 37.495770737873],
-    "stats": {"total": 120, "sale": {"count": 3, "range": [41000, 61000], "rep_area": 148.5, "rep_avg_price": 61000}, "jeonse": {"count": 21, "range": [2500, 21000], "rep_area": 40.0, "rep_avg_price": 10000}, "monthly": {"count": 96, "range": [100, 20000], "rep_area": 30.0, "rep_avg_price": 738}},
+    "stats": {"total": 119, "sale": {"count": 2, "range": [41000, 54000], "rep_area": 160.3, "rep_avg_price": 41000}, "jeonse": {"count": 21, "range": [2500, 21000], "rep_area": 40.0, "rep_avg_price": 10000}, "monthly": {"count": 96, "range": [100, 20000], "rep_area": 30.0, "rep_avg_price": 738}},
     "deals": [
       {"type": "매매", "price": 41000, "rent": 0, "area": 160.29, "land": 79.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 2006},
       {"type": "매매", "price": 54000, "rent": 0, "area": 160.44, "land": 90.0, "floor": "", "dong": "", "date": "2026-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 1994},
-      {"type": "매매", "price": 61000, "rent": 0, "area": 148.53, "land": 106.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 5**", "by": 1986},
       {"type": "전세", "price": 21000, "rent": 0, "area": 49.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "월세", "price": 1000, "rent": 30, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "전세", "price": 9000, "rent": 0, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
@@ -341,6 +356,15 @@
     ]
   },
   {
+    "name": "서울특별시 구로구 구로동 545-19",
+    "address": "서울특별시 구로구 구로동 545-19",
+    "coords": [126.887064580457, 37.5029007424977],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [61000, 61000], "rep_area": 148.5, "rep_avg_price": 61000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 61000, "rent": 0, "area": 148.53, "land": 106.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "구로동 545-19 (추정)", "by": 1986}
+    ]
+  },
+  {
     "name": "서울특별시 구로구 궁동",
     "address": "서울특별시 구로구 궁동",
     "coords": [126.827457184485, 37.5018731116129],
@@ -381,9 +405,8 @@
     "name": "서울특별시 구로구 오류동",
     "address": "서울특별시 구로구 오류동",
     "coords": [126.835492478188, 37.4889461307049],
-    "stats": {"total": 29, "sale": {"count": 1, "range": [28000, 28000], "rep_area": 108.0, "rep_avg_price": 28000}, "jeonse": {"count": 1, "range": [11800, 11800], "rep_area": 30.0, "rep_avg_price": 11800}, "monthly": {"count": 27, "range": [100, 8647], "rep_area": 18.0, "rep_avg_price": 600}},
+    "stats": {"total": 28, "sale": null, "jeonse": {"count": 1, "range": [11800, 11800], "rep_area": 30.0, "rep_avg_price": 11800}, "monthly": {"count": 27, "range": [100, 8647], "rep_area": 18.0, "rep_avg_price": 600}},
     "deals": [
-      {"type": "매매", "price": 28000, "rent": 0, "area": 107.95, "land": 59.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오류동 3*", "by": 2006},
       {"type": "월세", "price": 500, "rent": 45, "area": 19.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 300, "rent": 35, "area": 49.59, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 1000, "rent": 35, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1996},
@@ -412,6 +435,15 @@
       {"type": "월세", "price": 8647, "rent": 9, "area": 59.54, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-11", "period": "26.03~28.02", "renew": "갱신", "p_dep": 8531, "p_rent": 8, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 60, "area": 45.06, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "월세", "price": 1000, "rent": 35, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1975}
+    ]
+  },
+  {
+    "name": "서울특별시 구로구 오류동 31-108",
+    "address": "서울특별시 구로구 오류동 31-108",
+    "coords": [126.845201752403, 37.4982916035189],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28000, 28000], "rep_area": 108.0, "rep_avg_price": 28000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28000, "rent": 0, "area": 107.95, "land": 59.0, "floor": "", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오류동 31-108 (추정)", "by": 2006}
     ]
   },
   {

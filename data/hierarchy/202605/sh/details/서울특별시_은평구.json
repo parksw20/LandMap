@@ -127,9 +127,8 @@
     "name": "서울특별시 은평구 대조동",
     "address": "서울특별시 은평구 대조동",
     "coords": [126.920825111083, 37.6141899645264],
-    "stats": {"total": 37, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 247.3, "rep_avg_price": 85000}, "jeonse": {"count": 6, "range": [2500, 13000], "rep_area": 33.0, "rep_avg_price": 10000}, "monthly": {"count": 30, "range": [300, 6000], "rep_area": 33.0, "rep_avg_price": 433}},
+    "stats": {"total": 36, "sale": null, "jeonse": {"count": 6, "range": [2500, 13000], "rep_area": 33.0, "rep_avg_price": 10000}, "monthly": {"count": 30, "range": [300, 6000], "rep_area": 33.0, "rep_avg_price": 433}},
     "deals": [
-      {"type": "매매", "price": 85000, "rent": 0, "area": 247.26, "land": 179.0, "floor": "", "dong": "", "date": "2026-05-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대조동 8*", "by": 1991},
       {"type": "전세", "price": 9000, "rent": 0, "area": 40.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
       {"type": "월세", "price": 2000, "rent": 80, "area": 62.74, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-13", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "전세", "price": 2500, "rent": 0, "area": 50.87, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-31", "period": "26.05~27.05", "renew": "갱신", "p_dep": 2500, "p_rent": 0, "jibun": "", "by": 0},
@@ -166,6 +165,15 @@
       {"type": "월세", "price": 6000, "rent": 33, "area": 35.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-10", "period": "26.05~28.05", "renew": "갱신", "p_dep": 6000, "p_rent": 30, "jibun": "", "by": 1993},
       {"type": "전세", "price": 10000, "rent": 0, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
       {"type": "월세", "price": 500, "rent": 40, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-05-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019}
+    ]
+  },
+  {
+    "name": "서울특별시 은평구 대조동 84-79",
+    "address": "서울특별시 은평구 대조동 84-79",
+    "coords": [126.925798600004, 37.6127937811],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 247.3, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 85000, "rent": 0, "area": 247.26, "land": 179.0, "floor": "", "dong": "", "date": "2026-05-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대조동 84-79 (추정)", "by": 1991}
     ]
   },
   {

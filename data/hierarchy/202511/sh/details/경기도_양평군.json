@@ -43,9 +43,8 @@
     "name": "경기도 양평군 강하면 동오리",
     "address": "경기도 양평군 강하면 동오리",
     "coords": [127.387851719269, 37.4598153298062],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 296.8, "rep_avg_price": 65000}, "jeonse": null, "monthly": {"count": 2, "range": [0, 1000], "rep_area": 85.7, "rep_avg_price": 0}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [0, 1000], "rep_area": 85.7, "rep_avg_price": 0}},
     "deals": [
-      {"type": "매매", "price": 65000, "rent": 0, "area": 296.79, "land": 991.0, "floor": "", "dong": "", "date": "2025-11-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "강하면 동오리 *", "by": 2008},
       {"type": "월세", "price": 0, "rent": 50, "area": 85.73, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-19", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
       {"type": "월세", "price": 1000, "rent": 50, "area": 159.88, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-05", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022}
     ]
@@ -57,6 +56,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 66.6, "rep_avg_price": 18000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 18000, "rent": 0, "area": 66.6, "land": 355.0, "floor": "", "dong": "", "date": "2025-11-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "강하면 동오리 123 (추정)", "by": 1993}
+    ]
+  },
+  {
+    "name": "경기도 양평군 강하면 동오리 4-2전",
+    "address": "경기도 양평군 강하면 동오리 4-2전",
+    "coords": [127.405661835486, 37.4728923727949],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 296.8, "rep_avg_price": 65000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 65000, "rent": 0, "area": 296.79, "land": 991.0, "floor": "", "dong": "", "date": "2025-11-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "강하면 동오리 4-2전 (추정)", "by": 2008}
     ]
   },
   {
@@ -170,13 +178,21 @@
     ]
   },
   {
-    "name": "경기도 양평군 단월면 산음리",
-    "address": "경기도 양평군 단월면 산음리",
-    "coords": [127.59403661958, 37.5972425774393],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [14800, 65000], "rep_area": 55.7, "rep_avg_price": 14800}, "jeonse": null, "monthly": null},
+    "name": "경기도 양평군 단월면 산음리 256-30임",
+    "address": "경기도 양평군 단월면 산음리 256-30임",
+    "coords": [127.603081246294, 37.6094297285282],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14800, 14800], "rep_area": 55.7, "rep_avg_price": 14800}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 14800, "rent": 0, "area": 55.74, "land": 553.0, "floor": "", "dong": "", "date": "2025-11-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단월면 산음리 2**", "by": 2013},
-      {"type": "매매", "price": 65000, "rent": 0, "area": 195.3, "land": 2181.0, "floor": "", "dong": "", "date": "2025-11-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단월면 산음리 3**", "by": 2010}
+      {"type": "매매", "price": 14800, "rent": 0, "area": 55.74, "land": 553.0, "floor": "", "dong": "", "date": "2025-11-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단월면 산음리 256-30임 (추정)", "by": 2013}
+    ]
+  },
+  {
+    "name": "경기도 양평군 단월면 산음리 340-7전",
+    "address": "경기도 양평군 단월면 산음리 340-7전",
+    "coords": [127.60037344921, 37.6075816669578],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 195.3, "rep_avg_price": 65000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 65000, "rent": 0, "area": 195.3, "land": 2181.0, "floor": "", "dong": "", "date": "2025-11-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단월면 산음리 340-7전 (추정)", "by": 2010}
     ]
   },
   {
@@ -246,19 +262,27 @@
     "name": "경기도 양평군 양동면 고송리",
     "address": "경기도 양평군 양동면 고송리",
     "coords": [127.700327016131, 37.4902285302984],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [25042, 25042], "rep_area": 207.8, "rep_avg_price": 25042}, "jeonse": {"count": 1, "range": [1500, 1500], "rep_area": 36.8, "rep_avg_price": 1500}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [1500, 1500], "rep_area": 36.8, "rep_avg_price": 1500}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 25042, "rent": 0, "area": 207.76, "land": 660.0, "floor": "", "dong": "", "date": "2025-11-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양동면 고송리 4**", "by": 2010},
       {"type": "전세", "price": 1500, "rent": 0, "area": 36.84, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-01", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007}
     ]
   },
   {
-    "name": "경기도 양평군 양동면 단석리",
-    "address": "경기도 양평군 양동면 단석리",
-    "coords": [127.731827929858, 37.3945140383837],
+    "name": "경기도 양평군 양동면 고송리 441",
+    "address": "경기도 양평군 양동면 고송리 441",
+    "coords": [127.717877454738, 37.5026777358954],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25042, 25042], "rep_area": 207.8, "rep_avg_price": 25042}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25042, "rent": 0, "area": 207.76, "land": 660.0, "floor": "", "dong": "", "date": "2025-11-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양동면 고송리 441 (추정)", "by": 2010}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양동면 단석리 1107-3전",
+    "address": "경기도 양평군 양동면 단석리 1107-3전",
+    "coords": [127.713803953495, 37.3872481475745],
     "stats": {"total": 1, "sale": {"count": 1, "range": [6000, 6000], "rep_area": 90.7, "rep_avg_price": 6000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 6000, "rent": 0, "area": 90.68, "land": 370.0, "floor": "", "dong": "", "date": "2025-11-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양동면 단석리 1***", "by": 2006}
+      {"type": "매매", "price": 6000, "rent": 0, "area": 90.68, "land": 370.0, "floor": "", "dong": "", "date": "2025-11-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양동면 단석리 1107-3전 (추정)", "by": 2006}
     ]
   },
   {
@@ -316,12 +340,12 @@
     ]
   },
   {
-    "name": "경기도 양평군 양서면 부용리",
-    "address": "경기도 양평군 양서면 부용리",
-    "coords": [127.348526685597, 37.5570837225096],
+    "name": "경기도 양평군 양서면 부용리 714-7",
+    "address": "경기도 양평군 양서면 부용리 714-7",
+    "coords": [127.33742124279, 37.54736875795],
     "stats": {"total": 1, "sale": {"count": 1, "range": [9500, 9500], "rep_area": 21.1, "rep_avg_price": 9500}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 9500, "rent": 0, "area": 21.11, "land": 196.0, "floor": "", "dong": "", "date": "2025-11-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양서면 부용리 7**", "by": 1970}
+      {"type": "매매", "price": 9500, "rent": 0, "area": 21.11, "land": 196.0, "floor": "", "dong": "", "date": "2025-11-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양서면 부용리 714-7 (추정)", "by": 1970}
     ]
   },
   {
@@ -342,9 +366,8 @@
     "name": "경기도 양평군 양평읍 공흥리",
     "address": "경기도 양평군 양평읍 공흥리",
     "coords": [127.513955338698, 37.5060852224815],
-    "stats": {"total": 10, "sale": {"count": 1, "range": [39000, 39000], "rep_area": 124.3, "rep_avg_price": 39000}, "jeonse": null, "monthly": {"count": 9, "range": [200, 4000], "rep_area": 20.0, "rep_avg_price": 366}},
+    "stats": {"total": 9, "sale": null, "jeonse": null, "monthly": {"count": 9, "range": [200, 4000], "rep_area": 20.0, "rep_avg_price": 366}},
     "deals": [
-      {"type": "매매", "price": 39000, "rent": 0, "area": 124.3, "land": 337.0, "floor": "", "dong": "", "date": "2025-11-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양평읍 공흥리 *", "by": 2017},
       {"type": "월세", "price": 300, "rent": 40, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "월세", "price": 200, "rent": 50, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-28", "period": "25.11~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
       {"type": "월세", "price": 500, "rent": 44, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-28", "period": "25.11~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -354,6 +377,15 @@
       {"type": "월세", "price": 500, "rent": 40, "area": 13.32, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-19", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
       {"type": "월세", "price": 500, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-11", "period": "25.11~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
       {"type": "월세", "price": 4000, "rent": 50, "area": 55.755, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-01", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018}
+    ]
+  },
+  {
+    "name": "경기도 양평군 양평읍 공흥리 6-17",
+    "address": "경기도 양평군 양평읍 공흥리 6-17",
+    "coords": [127.512190165124, 37.5074505098954],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [39000, 39000], "rep_area": 124.3, "rep_avg_price": 39000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 39000, "rent": 0, "area": 124.3, "land": 337.0, "floor": "", "dong": "", "date": "2025-11-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양평읍 공흥리 6-17 (추정)", "by": 2017}
     ]
   },
   {
@@ -503,21 +535,21 @@
     ]
   },
   {
-    "name": "경기도 양평군 용문면 조현리",
-    "address": "경기도 양평군 용문면 조현리",
-    "coords": [127.615031917378, 37.5258348249219],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [27604, 27604], "rep_area": 51.2, "rep_avg_price": 27604}, "jeonse": null, "monthly": null},
-    "deals": [
-      {"type": "매매", "price": 27604, "rent": 0, "area": 51.22, "land": 466.0, "floor": "", "dong": "", "date": "2025-11-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 조현리 5**", "by": 2022}
-    ]
-  },
-  {
     "name": "경기도 양평군 용문면 조현리 448-11",
     "address": "경기도 양평군 용문면 조현리 448-11",
     "coords": [127.603548501964, 37.5244571713371],
     "stats": {"total": 1, "sale": {"count": 1, "range": [36800, 36800], "rep_area": 135.5, "rep_avg_price": 36800}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 36800, "rent": 0, "area": 135.51, "land": 370.0, "floor": "", "dong": "", "date": "2025-11-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 조현리 448-11 (추정)", "by": 2012}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 조현리 501-4답",
+    "address": "경기도 양평군 용문면 조현리 501-4답",
+    "coords": [127.604399538739, 37.5164075196509],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27604, 27604], "rep_area": 51.2, "rep_avg_price": 27604}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 27604, "rent": 0, "area": 51.22, "land": 466.0, "floor": "", "dong": "", "date": "2025-11-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 조현리 501-4답 (추정)", "by": 2022}
     ]
   },
   {
@@ -533,12 +565,20 @@
     "name": "경기도 양평군 용문면 중원리",
     "address": "경기도 양평군 용문면 중원리",
     "coords": [127.616396505532, 37.5525329525891],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [20000, 32000], "rep_area": 81.2, "rep_avg_price": 20000}, "jeonse": null, "monthly": {"count": 1, "range": [9300, 9300], "rep_area": 57.8, "rep_avg_price": 9300}},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [20000, 20000], "rep_area": 81.2, "rep_avg_price": 20000}, "jeonse": null, "monthly": {"count": 1, "range": [9300, 9300], "rep_area": 57.8, "rep_avg_price": 9300}},
     "deals": [
-      {"type": "매매", "price": 32000, "rent": 0, "area": 166.32, "land": 299.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 중원리 3**", "by": 2019},
       {"type": "매매", "price": 20000, "rent": 0, "area": 81.25, "land": 384.0, "floor": "", "dong": "", "date": "2025-11-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 중원리 5*", "by": 2014},
       {"type": "매매", "price": 20000, "rent": 0, "area": 81.25, "land": 384.0, "floor": "", "dong": "", "date": "2025-11-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 중원리 5*", "by": 2014},
       {"type": "월세", "price": 9300, "rent": 25, "area": 57.77, "land": 0.0, "floor": "", "dong": "", "date": "2025-11-11", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011}
+    ]
+  },
+  {
+    "name": "경기도 양평군 용문면 중원리 361-32",
+    "address": "경기도 양평군 용문면 중원리 361-32",
+    "coords": [127.621653324377, 37.5411658628662],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32000, 32000], "rep_area": 166.3, "rep_avg_price": 32000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32000, "rent": 0, "area": 166.32, "land": 299.0, "floor": "", "dong": "", "date": "2025-11-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문면 중원리 361-32 (추정)", "by": 2019}
     ]
   },
   {
@@ -569,12 +609,12 @@
     ]
   },
   {
-    "name": "경기도 양평군 청운면 갈운리",
-    "address": "경기도 양평군 청운면 갈운리",
-    "coords": [127.771741458367, 37.5308864480927],
+    "name": "경기도 양평군 청운면 갈운리 421-3전",
+    "address": "경기도 양평군 청운면 갈운리 421-3전",
+    "coords": [127.77419216132, 37.5442375114784],
     "stats": {"total": 1, "sale": {"count": 1, "range": [22300, 22300], "rep_area": 99.2, "rep_avg_price": 22300}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 22300, "rent": 0, "area": 99.19, "land": 500.0, "floor": "", "dong": "", "date": "2025-11-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청운면 갈운리 4**", "by": 2005}
+      {"type": "매매", "price": 22300, "rent": 0, "area": 99.19, "land": 500.0, "floor": "", "dong": "", "date": "2025-11-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청운면 갈운리 421-3전 (추정)", "by": 2005}
     ]
   },
   {

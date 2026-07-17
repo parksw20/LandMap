@@ -473,9 +473,8 @@
     "name": "서울특별시 강남구 일원동",
     "address": "서울특별시 강남구 일원동",
     "coords": [127.080430036811, 37.4795654903149],
-    "stats": {"total": 34, "sale": {"count": 1, "range": [280000, 280000], "rep_area": 249.8, "rep_avg_price": 280000}, "jeonse": {"count": 11, "range": [11570, 60000], "rep_area": 24.0, "rep_avg_price": 12000}, "monthly": {"count": 22, "range": [500, 50000], "rep_area": 17.0, "rep_avg_price": 1000}},
+    "stats": {"total": 33, "sale": null, "jeonse": {"count": 11, "range": [11570, 60000], "rep_area": 24.0, "rep_avg_price": 12000}, "monthly": {"count": 22, "range": [500, 50000], "rep_area": 17.0, "rep_avg_price": 1000}},
     "deals": [
-      {"type": "매매", "price": 280000, "rent": 0, "area": 249.76, "land": 193.7, "floor": "", "dong": "", "date": "2025-10-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "일원동 6**", "by": 1987},
       {"type": "전세", "price": 12000, "rent": 0, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 1000, "rent": 50, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
       {"type": "월세", "price": 1000, "rent": 50, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
@@ -509,6 +508,15 @@
       {"type": "월세", "price": 42000, "rent": 90, "area": 125.61, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-04", "period": "25.12~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
       {"type": "월세", "price": 10000, "rent": 54, "area": 48.97, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-13", "period": "25.12~27.12", "renew": "갱신", "p_dep": 10000, "p_rent": 50, "jibun": "", "by": 1987},
       {"type": "월세", "price": 2000, "rent": 80, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-10-10", "period": "25.11~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "서울특별시 강남구 일원동 649-13",
+    "address": "서울특별시 강남구 일원동 649-13",
+    "coords": [127.08605268134, 37.4922862850584],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [280000, 280000], "rep_area": 249.8, "rep_avg_price": 280000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 280000, "rent": 0, "area": 249.76, "land": 193.7, "floor": "", "dong": "", "date": "2025-10-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "일원동 649-13 (추정)", "by": 1987}
     ]
   },
   {

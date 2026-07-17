@@ -22,12 +22,28 @@
     "name": "경기도 시흥시 대야동",
     "address": "경기도 시흥시 대야동",
     "coords": [126.788538285881, 37.4430460656539],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [45600, 77551], "rep_area": 37.0, "rep_avg_price": 45600}, "jeonse": {"count": 1, "range": [6500, 6500], "rep_area": 44.6, "rep_avg_price": 6500}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 55.7, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [6500, 6500], "rep_area": 44.6, "rep_avg_price": 6500}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 55.7, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "매매", "price": 45600, "rent": 0, "area": 37.02, "land": 251.0, "floor": "", "dong": "", "date": "2026-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대야동 1**", "by": 1989},
-      {"type": "매매", "price": 77551, "rent": 0, "area": 81.96, "land": 280.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대야동 1**", "by": 2008},
       {"type": "월세", "price": 3000, "rent": 90, "area": 55.7, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-06", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2020},
       {"type": "전세", "price": 6500, "rent": 0, "area": 44.58, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988}
+    ]
+  },
+  {
+    "name": "경기도 시흥시 대야동 111-2",
+    "address": "경기도 시흥시 대야동 111-2",
+    "coords": [126.786993015409, 37.4555820474899],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [77551, 77551], "rep_area": 82.0, "rep_avg_price": 77551}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 77551, "rent": 0, "area": 81.96, "land": 280.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대야동 111-2 (추정)", "by": 2008}
+    ]
+  },
+  {
+    "name": "경기도 시흥시 대야동 117-3",
+    "address": "경기도 시흥시 대야동 117-3",
+    "coords": [126.787064445801, 37.455502256512],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [45600, 45600], "rep_area": 37.0, "rep_avg_price": 45600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 45600, "rent": 0, "area": 37.02, "land": 251.0, "floor": "", "dong": "", "date": "2026-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대야동 117-3 (추정)", "by": 1989}
     ]
   },
   {
@@ -96,9 +112,8 @@
     "name": "경기도 시흥시 정왕동",
     "address": "경기도 시흥시 정왕동",
     "coords": [126.722129562609, 37.3472707997811],
-    "stats": {"total": 14, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 393.2, "rep_avg_price": 66000}, "jeonse": null, "monthly": {"count": 13, "range": [60, 1000], "rep_area": 26.0, "rep_avg_price": 180}},
+    "stats": {"total": 13, "sale": null, "jeonse": null, "monthly": {"count": 13, "range": [60, 1000], "rep_area": 26.0, "rep_avg_price": 180}},
     "deals": [
-      {"type": "매매", "price": 66000, "rent": 0, "area": 393.21, "land": 228.6, "floor": "", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "정왕동 1***", "by": 2002},
       {"type": "월세", "price": 200, "rent": 27, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "월세", "price": 500, "rent": 45, "area": 49.5, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-11", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 500, "rent": 50, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
@@ -112,6 +127,15 @@
       {"type": "월세", "price": 80, "rent": 30, "area": 21.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-01", "period": "26.07~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 200, "rent": 27, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "월세", "price": 500, "rent": 50, "area": 43.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-03", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003}
+    ]
+  },
+  {
+    "name": "경기도 시흥시 정왕동 1621-10",
+    "address": "경기도 시흥시 정왕동 1621-10",
+    "coords": [126.740212676723, 37.3454258622786],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 393.2, "rep_avg_price": 66000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 66000, "rent": 0, "area": 393.21, "land": 228.6, "floor": "", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "정왕동 1621-10 (추정)", "by": 2002}
     ]
   },
   {

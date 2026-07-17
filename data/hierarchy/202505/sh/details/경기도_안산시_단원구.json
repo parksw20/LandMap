@@ -3,9 +3,8 @@
     "name": "경기도 안산시 단원구 고잔동",
     "address": "경기도 안산시 단원구 고잔동",
     "coords": [126.832292027071, 37.3219394584907],
-    "stats": {"total": 46, "sale": {"count": 1, "range": [49200, 49200], "rep_area": 461.9, "rep_avg_price": 49200}, "jeonse": {"count": 10, "range": [5000, 15000], "rep_area": 23.1, "rep_avg_price": 5000}, "monthly": {"count": 35, "range": [300, 5000], "rep_area": 30.0, "rep_avg_price": 1100}},
+    "stats": {"total": 45, "sale": null, "jeonse": {"count": 10, "range": [5000, 15000], "rep_area": 23.1, "rep_avg_price": 5000}, "monthly": {"count": 35, "range": [300, 5000], "rep_area": 30.0, "rep_avg_price": 1100}},
     "deals": [
-      {"type": "매매", "price": 49200, "rent": 0, "area": 461.91, "land": 243.0, "floor": "", "dong": "", "date": "2025-05-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고잔동 6**", "by": 1995},
       {"type": "전세", "price": 5000, "rent": 0, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
       {"type": "전세", "price": 5000, "rent": 0, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
       {"type": "월세", "price": 1000, "rent": 35, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-30", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
@@ -63,6 +62,15 @@
     ]
   },
   {
+    "name": "경기도 안산시 단원구 고잔동 653-8",
+    "address": "경기도 안산시 단원구 고잔동 653-8",
+    "coords": [126.822013076238, 37.3284729616805],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49200, 49200], "rep_area": 461.9, "rep_avg_price": 49200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 49200, "rent": 0, "area": 461.91, "land": 243.0, "floor": "", "dong": "", "date": "2025-05-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고잔동 653-8 (추정)", "by": 1995}
+    ]
+  },
+  {
     "name": "경기도 안산시 단원구 고잔동 698-9",
     "address": "경기도 안산시 단원구 고잔동 698-9",
     "coords": [126.824689590756, 37.3135489240279],
@@ -75,15 +83,23 @@
     "name": "경기도 안산시 단원구 대부남동",
     "address": "경기도 안산시 단원구 대부남동",
     "coords": [126.577969105871, 37.2298291404631],
-    "stats": {"total": 7, "sale": {"count": 4, "range": [40250, 113816], "rep_area": 146.1, "rep_avg_price": 41125}, "jeonse": {"count": 3, "range": [2500, 22000], "rep_area": 77.2, "rep_avg_price": 2500}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [40250, 113816], "rep_area": 146.1, "rep_avg_price": 41125}, "jeonse": {"count": 3, "range": [2500, 22000], "rep_area": 77.2, "rep_avg_price": 2500}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 40250, "rent": 0, "area": 146.06, "land": 366.0, "floor": "", "dong": "", "date": "2025-05-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대부남동 *", "by": 2018},
       {"type": "매매", "price": 42000, "rent": 0, "area": 146.06, "land": 431.0, "floor": "", "dong": "", "date": "2025-05-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대부남동 *", "by": 2018},
-      {"type": "매매", "price": 40700, "rent": 0, "area": 98.75, "land": 334.0, "floor": "", "dong": "", "date": "2025-05-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대부남동 2**", "by": 2022},
       {"type": "매매", "price": 113816, "rent": 0, "area": 229.04, "land": 666.0, "floor": "", "dong": "", "date": "2025-05-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대부남동 *", "by": 2025},
       {"type": "전세", "price": 22000, "rent": 0, "area": 146.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-25", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "전세", "price": 2500, "rent": 0, "area": 77.25, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-20", "period": "25.05~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
       {"type": "전세", "price": 5000, "rent": 0, "area": 227.06, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-01", "period": "25.05~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "경기도 안산시 단원구 대부남동 220-6",
+    "address": "경기도 안산시 단원구 대부남동 220-6",
+    "coords": [126.581150815043, 37.2357231484454],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40700, 40700], "rep_area": 98.8, "rep_avg_price": 40700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 40700, "rent": 0, "area": 98.75, "land": 334.0, "floor": "", "dong": "", "date": "2025-05-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대부남동 220-6 (추정)", "by": 2022}
     ]
   },
   {
@@ -362,10 +378,9 @@
     "name": "경기도 안산시 단원구 초지동",
     "address": "경기도 안산시 단원구 초지동",
     "coords": [126.816873385207, 37.3100013406105],
-    "stats": {"total": 10, "sale": {"count": 2, "range": [93000, 103000], "rep_area": 219.5, "rep_avg_price": 93000}, "jeonse": {"count": 2, "range": [5000, 14000], "rep_area": 23.0, "rep_avg_price": 5000}, "monthly": {"count": 6, "range": [300, 2000], "rep_area": 25.0, "rep_avg_price": 400}},
+    "stats": {"total": 9, "sale": {"count": 1, "range": [103000, 103000], "rep_area": 488.1, "rep_avg_price": 103000}, "jeonse": {"count": 2, "range": [5000, 14000], "rep_area": 23.0, "rep_avg_price": 5000}, "monthly": {"count": 6, "range": [300, 2000], "rep_area": 25.0, "rep_avg_price": 400}},
     "deals": [
       {"type": "매매", "price": 103000, "rent": 0, "area": 488.06, "land": 248.2, "floor": "", "dong": "", "date": "2025-05-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "초지동 7**", "by": 2011},
-      {"type": "매매", "price": 93000, "rent": 0, "area": 219.48, "land": 220.0, "floor": "", "dong": "", "date": "2025-05-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "초지동 6**", "by": 2015},
       {"type": "월세", "price": 300, "rent": 35, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-25", "period": "25.06~26.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "월세", "price": 1000, "rent": 60, "area": 50.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-28", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 500, "rent": 35, "area": 27.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-27", "period": "25.06~26.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
@@ -383,6 +398,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [79000, 79000], "rep_area": 204.1, "rep_avg_price": 79000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 79000, "rent": 0, "area": 204.1, "land": 236.8, "floor": "", "dong": "", "date": "2025-05-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "초지동 675 (추정)", "by": 2008}
+    ]
+  },
+  {
+    "name": "경기도 안산시 단원구 초지동 681",
+    "address": "경기도 안산시 단원구 초지동 681",
+    "coords": [126.81380848032, 37.3148095188148],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [93000, 93000], "rep_area": 219.5, "rep_avg_price": 93000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 93000, "rent": 0, "area": 219.48, "land": 220.0, "floor": "", "dong": "", "date": "2025-05-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "초지동 681 (추정)", "by": 2015}
     ]
   }
 ]

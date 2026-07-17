@@ -247,9 +247,8 @@
     "name": "서울특별시 동대문구 장안동",
     "address": "서울특별시 동대문구 장안동",
     "coords": [127.071439570463, 37.5696967138505],
-    "stats": {"total": 59, "sale": {"count": 1, "range": [59500, 59500], "rep_area": 174.0, "rep_avg_price": 59500}, "jeonse": {"count": 13, "range": [5000, 30000], "rep_area": 30.0, "rep_avg_price": 10250}, "monthly": {"count": 45, "range": [100, 13000], "rep_area": 25.0, "rep_avg_price": 2433}},
+    "stats": {"total": 58, "sale": null, "jeonse": {"count": 13, "range": [5000, 30000], "rep_area": 30.0, "rep_avg_price": 10250}, "monthly": {"count": 45, "range": [100, 13000], "rep_area": 25.0, "rep_avg_price": 2433}},
     "deals": [
-      {"type": "매매", "price": 59500, "rent": 0, "area": 173.96, "land": 148.0, "floor": "", "dong": "", "date": "2025-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 9*", "by": 1975},
       {"type": "월세", "price": 1000, "rent": 55, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "전세", "price": 15000, "rent": 0, "area": 38.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
       {"type": "전세", "price": 5000, "rent": 0, "area": 24.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
@@ -308,6 +307,15 @@
       {"type": "월세", "price": 13000, "rent": 30, "area": 42.12, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-08", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
       {"type": "전세", "price": 12500, "rent": 0, "area": 39.65, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-08", "period": "25.05~26.12", "renew": "갱신", "p_dep": 12500, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "전세", "price": 25000, "rent": 0, "area": 103.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-06", "period": "25.05~27.05", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "", "by": 1998}
+    ]
+  },
+  {
+    "name": "서울특별시 동대문구 장안동 92-3전",
+    "address": "서울특별시 동대문구 장안동 92-3전",
+    "coords": [127.071064752554, 37.5793147865904],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [59500, 59500], "rep_area": 174.0, "rep_avg_price": 59500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 59500, "rent": 0, "area": 173.96, "land": 148.0, "floor": "", "dong": "", "date": "2025-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 92-3전 (추정)", "by": 1975}
     ]
   },
   {
@@ -451,9 +459,8 @@
     "name": "서울특별시 동대문구 청량리동",
     "address": "서울특별시 동대문구 청량리동",
     "coords": [127.048170770368, 37.5830468218369],
-    "stats": {"total": 40, "sale": {"count": 3, "range": [67500, 90000], "rep_area": 49.6, "rep_avg_price": 67500}, "jeonse": {"count": 13, "range": [2500, 25110], "rep_area": 17.0, "rep_avg_price": 3500}, "monthly": {"count": 24, "range": [0, 13000], "rep_area": 24.2, "rep_avg_price": 13000}},
+    "stats": {"total": 39, "sale": {"count": 2, "range": [67500, 87000], "rep_area": 49.6, "rep_avg_price": 67500}, "jeonse": {"count": 13, "range": [2500, 25110], "rep_area": 17.0, "rep_avg_price": 3500}, "monthly": {"count": 24, "range": [0, 13000], "rep_area": 24.2, "rep_avg_price": 13000}},
     "deals": [
-      {"type": "매매", "price": 90000, "rent": 0, "area": 87.85, "land": 89.0, "floor": "", "dong": "", "date": "2025-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청량리동 2**", "by": 1960},
       {"type": "매매", "price": 67500, "rent": 0, "area": 49.58, "land": 56.0, "floor": "", "dong": "", "date": "2025-05-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청량리동 2**", "by": 1980},
       {"type": "매매", "price": 87000, "rent": 0, "area": 132.33, "land": 93.0, "floor": "", "dong": "", "date": "2025-05-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청량리동 2**", "by": 1980},
       {"type": "전세", "price": 6000, "rent": 0, "area": 31.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
@@ -493,6 +500,15 @@
       {"type": "전세", "price": 3500, "rent": 0, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-09", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "전세", "price": 11000, "rent": 0, "area": 19.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-05", "period": "25.06~27.06", "renew": "갱신", "p_dep": 9000, "p_rent": 0, "jibun": "", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 30, "area": 41.23, "land": 0.0, "floor": "", "dong": "", "date": "2025-05-05", "period": "25.05~27.05", "renew": "갱신", "p_dep": 6000, "p_rent": 0, "jibun": "", "by": 0}
+    ]
+  },
+  {
+    "name": "서울특별시 동대문구 청량리동 203-152",
+    "address": "서울특별시 동대문구 청량리동 203-152",
+    "coords": [127.042203361868, 37.5877427391105],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 87.8, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 87.85, "land": 89.0, "floor": "", "dong": "", "date": "2025-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청량리동 203-152 (추정)", "by": 1960}
     ]
   },
   {

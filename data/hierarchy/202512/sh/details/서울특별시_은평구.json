@@ -476,11 +476,19 @@
     "name": "서울특별시 은평구 진관동",
     "address": "서울특별시 은평구 진관동",
     "coords": [126.92106591289, 37.6349668825061],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [115000, 115000], "rep_area": 228.5, "rep_avg_price": 115000}, "jeonse": null, "monthly": {"count": 2, "range": [5000, 40000], "rep_area": 83.6, "rep_avg_price": 5000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 40000], "rep_area": 83.6, "rep_avg_price": 5000}},
     "deals": [
-      {"type": "매매", "price": 115000, "rent": 0, "area": 228.47, "land": 330.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "진관동 3**", "by": 2017},
       {"type": "월세", "price": 5000, "rent": 150, "area": 83.625, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-26", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "월세", "price": 40000, "rent": 30, "area": 198.24, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-03", "period": "25.12~27.12", "renew": "갱신", "p_dep": 40000, "p_rent": 30, "jibun": "", "by": 2015}
+    ]
+  },
+  {
+    "name": "서울특별시 은평구 진관동 335-21전",
+    "address": "서울특별시 은평구 진관동 335-21전",
+    "coords": [126.939043669977, 37.6475059081672],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [115000, 115000], "rep_area": 228.5, "rep_avg_price": 115000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 115000, "rent": 0, "area": 228.47, "land": 330.0, "floor": "", "dong": "", "date": "2025-12-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "진관동 335-21전 (추정)", "by": 2017}
     ]
   }
 ]

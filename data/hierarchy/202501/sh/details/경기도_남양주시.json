@@ -50,9 +50,8 @@
     "name": "경기도 남양주시 별내동",
     "address": "경기도 남양주시 별내동",
     "coords": [127.121972451813, 37.6462466000952],
-    "stats": {"total": 128, "sale": {"count": 1, "range": [58760, 58760], "rep_area": 230.3, "rep_avg_price": 58760}, "jeonse": {"count": 66, "range": [11000, 70000], "rep_area": 60.0, "rep_avg_price": 18800}, "monthly": {"count": 61, "range": [500, 40000], "rep_area": 60.0, "rep_avg_price": 3166}},
+    "stats": {"total": 127, "sale": null, "jeonse": {"count": 66, "range": [11000, 70000], "rep_area": 60.0, "rep_avg_price": 18800}, "monthly": {"count": 61, "range": [500, 40000], "rep_area": 60.0, "rep_avg_price": 3166}},
     "deals": [
-      {"type": "매매", "price": 58760, "rent": 0, "area": 230.34, "land": 180.0, "floor": "", "dong": "", "date": "2025-01-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "별내동 7**", "by": 2005},
       {"type": "전세", "price": 22000, "rent": 0, "area": 70.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-01-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "전세", "price": 20000, "rent": 0, "area": 53.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-01-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2025},
       {"type": "월세", "price": 10000, "rent": 150, "area": 89.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2022},
@@ -183,6 +182,15 @@
     ]
   },
   {
+    "name": "경기도 남양주시 별내동 719",
+    "address": "경기도 남양주시 별내동 719",
+    "coords": [127.106342875121, 37.6472558689168],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [58760, 58760], "rep_area": 230.3, "rep_avg_price": 58760}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 58760, "rent": 0, "area": 230.34, "land": 180.0, "floor": "", "dong": "", "date": "2025-01-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "별내동 719 (추정)", "by": 2005}
+    ]
+  },
+  {
     "name": "경기도 남양주시 별내면 광전리",
     "address": "경기도 남양주시 별내면 광전리",
     "coords": [127.128933958795, 37.6827577336442],
@@ -275,11 +283,19 @@
     "name": "경기도 남양주시 수동면 지둔리",
     "address": "경기도 남양주시 수동면 지둔리",
     "coords": [127.293556876516, 37.7130346728837],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 126.3, "rep_avg_price": 28500}, "jeonse": {"count": 2, "range": [12000, 30000], "rep_area": 128.0, "rep_avg_price": 30000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [12000, 30000], "rep_area": 128.0, "rep_avg_price": 30000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 28500, "rent": 0, "area": 126.28, "land": 425.0, "floor": "", "dong": "", "date": "2025-01-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수동면 지둔리 5*", "by": 2003},
       {"type": "전세", "price": 12000, "rent": 0, "area": 198.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-01-26", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2001},
       {"type": "전세", "price": 30000, "rent": 0, "area": 128.03, "land": 0.0, "floor": "", "dong": "", "date": "2025-01-06", "period": "25.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016}
+    ]
+  },
+  {
+    "name": "경기도 남양주시 수동면 지둔리 53-23",
+    "address": "경기도 남양주시 수동면 지둔리 53-23",
+    "coords": [127.306707800371, 37.7128656000168],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 126.3, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28500, "rent": 0, "area": 126.28, "land": 425.0, "floor": "", "dong": "", "date": "2025-01-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수동면 지둔리 53-23 (추정)", "by": 2003}
     ]
   },
   {
@@ -355,10 +371,18 @@
     "name": "경기도 남양주시 진건읍 배양리",
     "address": "경기도 남양주시 진건읍 배양리",
     "coords": [127.168457938802, 37.6345702959398],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [63300, 63300], "rep_area": 132.9, "rep_avg_price": 63300}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 33.2, "rep_avg_price": 12000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 33.2, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 63300, "rent": 0, "area": 132.86, "land": 242.0, "floor": "", "dong": "", "date": "2025-01-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "진건읍 배양리 1**", "by": 1988},
       {"type": "전세", "price": 12000, "rent": 0, "area": 33.21, "land": 0.0, "floor": "", "dong": "", "date": "2025-01-13", "period": "25.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021}
+    ]
+  },
+  {
+    "name": "경기도 남양주시 진건읍 배양리 182-5",
+    "address": "경기도 남양주시 진건읍 배양리 182-5",
+    "coords": [127.183238172744, 37.63522202352],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [63300, 63300], "rep_area": 132.9, "rep_avg_price": 63300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 63300, "rent": 0, "area": 132.86, "land": 242.0, "floor": "", "dong": "", "date": "2025-01-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "진건읍 배양리 182-5 (추정)", "by": 1988}
     ]
   },
   {
