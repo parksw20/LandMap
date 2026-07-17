@@ -1000,8 +1000,12 @@ body {
   z-index: 30;
 }
 
-.map-btn-wrap:hover .map-dropdown {
-  display: block;
+/* hover 드롭다운은 실제 마우스 환경에서만 — 터치에선 첫 탭이 hover로 소비되어
+   버튼 클릭이 안 먹는 문제(범례만 열림) 방지 */
+@media (hover: hover) and (pointer: fine) {
+  .map-btn-wrap:hover .map-dropdown {
+    display: block;
+  }
 }
 
 .dropdown-title {

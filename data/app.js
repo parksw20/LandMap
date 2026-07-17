@@ -1378,6 +1378,11 @@ function refreshBldgAge() {
     const drawPage = (page, drawn) => {
         vworldBuildings(box, page, (resp) => {
             if (token !== state.bldgAgeToken || !state.bldgAgeOn) return; // 이동/해제됨 → 폐기
+            if (!resp && page === 1) {
+                // JSONP 실패 = 주로 VWorld 인증키 도메인 불일치 (폰에서 IP 접속 등)
+                statusEl.textContent = `건물연령: VWorld 응답 없음 — 접속 주소(${location.hostname})가 인증키 도메인에 등록됐는지 확인`;
+                return;
+            }
             const ok = resp && resp.response && resp.response.status === 'OK';
             let feats = ok ? (resp.response.result.featureCollection.features || []) : [];
             // 정보 없는(회색) 건물 도형은 먼저(아래층에) 옅게 — 대장 연계된 색상 건물을 가리지 않게
