@@ -802,6 +802,16 @@ function renderMarkers(data, level) {
     }
 }
 
+// 위치 미확정 묶음 판별: 이름이 '시도 구 동' 형태로 끝나면 동 단위 그룹(동 중심 표시)
+// (마스킹 매매 미매칭 + 지번이 제공되지 않는 전월세가 여기에 묶인다)
+// 아파트 단지명(숫자 없는 이름) 오탐 방지: 3토큰 이상 + 끝이 행정구역 접미사일 때만
+function isApproxGroup(item) {
+    const parts = (item.name || '').trim().split(' ');
+    if (parts.length < 3) return false;
+    const last = parts[parts.length - 1];
+    return !/\d/.test(last) && /(동|리|가|읍|면)$/.test(last);
+}
+
 // 매물 그룹의 대표 건축년도 (거래들 중 유효값의 최빈)
 function repBuildYear(item) {
     if (!item.deals) return 0;
@@ -833,9 +843,17 @@ function createOverlayContent(item, level, groupCount = 1) {
         else { label = "내역없음"; subLabel = "-"; } 
     } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${state.displayUnit === 'pyeong' ? Math.round(stats.rep_area * 0.3025)+'평' : Math.round(stats.rep_area)+'㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
     
-    const markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
+    let markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
+    let arrowColor = isSelected ? '#1e3a8a' : themeColor;
+    // 위치 미확정 묶음(동 중심): 회색 빗금 + 점선 테두리로 실위치 마커와 구분
+    if (level === 4 && isApproxGroup(item)) {
+        div.classList.add('approx-group');
+        if (!isSelected) { markerBg = 'repeating-linear-gradient(135deg, #94a3b8 0 5px, #64748b 5px 10px)'; arrowColor = '#64748b'; }
+        label = (item.name.split(' ').pop() || '') + ' 일대';
+        subLabel = `위치미상 ${item.stats.total}건`;
+    }
     const badge = groupCount > 1 ? `<div class="marker-badge">${groupCount}</div>` : '';
-    div.innerHTML = `${badge}<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${isSelected ? '#1e3a8a' : themeColor}"></div>`;
+    div.innerHTML = `${badge}<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${arrowColor}"></div>`;
     return div;
 }
 
@@ -911,7 +929,8 @@ function handleLevelMove(item, level) { state.map.setCenter(new kakao.maps.LatLn
 function showTooltip(item, level, pos) {
     const stats = item.stats; const fmtR = (s) => (!s) ? "" : (s.range[0] === s.range[1] ? formatPrice(s.range[0]) : `${formatPrice(s.range[0])}~${formatPrice(s.range[1])}`);
     const row = (type, key, cls) => (state.filters[type] && stats[key]) ? `<div class="tooltip-row ${cls}"><span>${type}</span><span>${stats[key].count}건</span><b>${fmtR(stats[key])}</b></div>` : "";
-    state.tooltip.setContent(`<div class="custom-tooltip"><div class="tooltip-header">${item.name}</div><div class="tooltip-body">${row('매매', 'sale', 'sale')}${row('전세', 'jeonse', 'jeonse')}${row('월세', 'monthly', 'monthly')}</div></div>`);
+    const approxNote = (level === 4 && isApproxGroup(item)) ? `<div class="tooltip-note">※ 위치 미확정 매물 묶음 — 동 중심에 표시됨</div>` : '';
+    state.tooltip.setContent(`<div class="custom-tooltip"><div class="tooltip-header">${item.name}</div><div class="tooltip-body">${row('매매', 'sale', 'sale')}${row('전세', 'jeonse', 'jeonse')}${row('월세', 'monthly', 'monthly')}${approxNote}</div></div>`);
     state.tooltip.setPosition(pos); state.tooltip.setMap(state.map);
 }
 
@@ -1021,7 +1040,10 @@ function renderComplexDetail() {
     sidePanel.scrollTop = 0; document.getElementById('data-title').textContent = item.name;
     // 주소 표시 (건물명과 주소가 같으면 중복 생략)
     const addrEl = document.getElementById('data-address');
-    if (addrEl) addrEl.textContent = (item.address && item.address !== item.name) ? item.address : '';
+    if (addrEl) {
+        addrEl.textContent = (item.address && item.address !== item.name) ? item.address : '';
+        if (isApproxGroup(item)) addrEl.innerHTML = `<span class="approx-badge">위치미상</span> 지번이 공개되지 않아 동 중심에 묶어 표시한 매물입니다` + (addrEl.textContent ? ` · ${addrEl.textContent}` : '');
+    }
     
     // 모바일: 필터 패널은 접고(FAB로 열기) 결과는 독립 하단 시트(30%)로
     const controlPanel = document.getElementById('control-panel');

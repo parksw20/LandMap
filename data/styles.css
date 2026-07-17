@@ -777,6 +777,29 @@ body {
   font-weight: 800;
 }
 
+/* 위치 미확정 묶음(동 중심) 구분 표시 */
+.level-marker.approx-group .marker-body {
+  border: 1.5px dashed rgba(255, 255, 255, 0.9);
+  opacity: 0.88;
+}
+.tooltip-note {
+  margin-top: 6px;
+  padding-top: 5px;
+  border-top: 1px dashed #d1d5db;
+  font-size: 11px;
+  color: #6b7280;
+}
+.approx-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #64748b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
 /* 기존 스타일 유지 및 보정 */
 .control-panel.collapsed {
   transform: translateX(-370px);
