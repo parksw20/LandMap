@@ -1454,6 +1454,26 @@ function vworldBuildings(boxStr, page, cb) {
         + `&format=json&crs=EPSG:4326&size=1000&page=${page}&geomFilter=${boxStr}`, cb);
 }
 
+// 클릭 지점의 건물 1동 조회 (필지 정보 패널용)
+function vworldBuildingAt(latlng, cb) {
+    vworldJsonp('https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_BLDGINFO'
+        + `&format=json&crs=EPSG:4326&size=1&geomFilter=POINT(${latlng.getLng()} ${latlng.getLat()})`, cb);
+}
+
+// 건축물대장 주용도/구조 코드 → 명칭 (주요 코드만, 미등재는 코드 표기)
+const BLDG_USE_MAP = {
+    '01000': '단독주택', '02000': '공동주택', '03000': '제1종근린생활시설', '04000': '제2종근린생활시설',
+    '05000': '문화및집회시설', '06000': '종교시설', '07000': '판매시설', '08000': '운수시설',
+    '09000': '의료시설', '10000': '교육연구시설', '11000': '노유자시설', '12000': '수련시설',
+    '13000': '운동시설', '14000': '업무시설', '15000': '숙박시설', '16000': '위락시설',
+    '17000': '공장', '18000': '창고시설', '20000': '자동차관련시설', '21000': '동식물관련시설'
+};
+const BLDG_STRCT_MAP = {
+    '11': '벽돌구조', '12': '블록구조', '13': '석구조', '14': '기타조적구조',
+    '21': '철근콘크리트구조', '22': '철골철근콘크리트구조', '29': '기타콘크리트구조',
+    '31': '일반철골구조', '32': '경량철골구조', '39': '기타강구조', '41': '일반목구조', '42': '통나무구조'
+};
+
 function showClickAddress(latlng) {
     if (!state.geocoder || !state.geocoder.coord2Address) return;
     state.geocoder.coord2Address(latlng.getLng(), latlng.getLat(), (result, status) => {
@@ -1470,9 +1490,45 @@ function showClickAddress(latlng) {
             `<span class="click-addr-close" title="닫기">×</span>` +
             `<div class="click-addr-jibun">${jibun || road}</div>` +
             (road && jibun ? `<div class="click-addr-road">${road}</div>` : '') +
-            (window.VWORLD_KEY ? `<div class="click-addr-parcel">필지 조회 중...</div>` : '');
+            (window.VWORLD_KEY ? `<div class="click-addr-parcel">필지 조회 중...</div>` : '') +
+            `<div class="click-addr-bldg" style="display:none;"></div>`;
         panel.querySelector('.click-addr-close').onclick = (e) => { e.stopPropagation(); clearClickParcel(); };
         panel.style.display = 'block';
+
+        // 클릭 지점 건물 정보 (건물통합정보 — 용도/구조/층수/면적/승인일자)
+        if (window.VWORLD_KEY) {
+            vworldBuildingAt(latlng, (resp) => {
+                const el = panel.querySelector('.click-addr-bldg');
+                if (!el) return;
+                const feats = resp && resp.response && resp.response.status === 'OK'
+                    ? (resp.response.result.featureCollection.features || []) : [];
+                if (!feats.length) return; // 건물 없는 지점(마당·도로)은 섹션 생략
+                const p = feats[0].properties;
+                const num = v => { const n = parseFloat(v); return isFinite(n) && n > 0 ? n : 0; };
+                const ap = (p.useapr_day || '').trim();
+                const apFmt = /^\d{8}$/.test(ap) ? `${ap.slice(0, 4)}-${ap.slice(4, 6)}-${ap.slice(6, 8)}` : (ap || '');
+                const rows = [];
+                if ((p.bld_nm || '').trim()) rows.push(['건물명칭', p.bld_nm.trim()]);
+                if ((p.dong_nm || '').trim()) rows.push(['동명칭', p.dong_nm.trim()]);
+                const use = (p.usability || '').trim();
+                if (use) rows.push(['건물용도', BLDG_USE_MAP[use] || `코드 ${use}`]);
+                const st = (p.strct_cd || '').trim();
+                if (st) rows.push(['구조', BLDG_STRCT_MAP[st] || `코드 ${st}`]);
+                const gf = num(p.grnd_flr), uf = num(p.ugrnd_flr);
+                if (gf || uf) rows.push(['층수', `지상 ${gf}층${uf ? ` / 지하 ${uf}층` : ''}`]);
+                if (num(p.totalarea)) rows.push(['연면적', `${num(p.totalarea).toLocaleString()}㎡`]);
+                if (num(p.archarea)) rows.push(['건축면적', `${num(p.archarea).toLocaleString()}㎡`]);
+                if (num(p.platarea)) rows.push(['대지면적', `${num(p.platarea).toLocaleString()}㎡`]);
+                if (num(p.height)) rows.push(['건물높이', `${num(p.height)}m`]);
+                if (num(p.vl_rat)) rows.push(['용적률', `${num(p.vl_rat)}%`]);
+                if (num(p.bc_rat)) rows.push(['건폐율', `${num(p.bc_rat)}%`]);
+                if (apFmt) rows.push(['사용승인일자', apFmt + (ap.length >= 4 ? ` (${new Date().getFullYear() - parseInt(ap.slice(0, 4))}년차)` : '')]);
+                if (!rows.length) return;
+                el.innerHTML = `<div class="landuse-title">건물 정보</div>` +
+                    rows.map(([k, v]) => `<div class="bldg-row"><span>${k}</span><b>${v}</b></div>`).join('');
+                el.style.display = 'block';
+            });
+        }
 
         // VWorld 필지 경계 + 면적 + 공시지가
         vworldParcel(latlng, (resp) => {

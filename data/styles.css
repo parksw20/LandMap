@@ -1471,6 +1471,31 @@ body {
   cursor: pointer;
 }
 
+/* 필지 패널 건물 정보 표 */
+.click-addr-bldg {
+  font-size: 12px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.bldg-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 1.5px 0;
+}
+
+.bldg-row span {
+  color: var(--text-sub);
+  flex-shrink: 0;
+}
+
+.bldg-row b {
+  color: var(--text-main);
+  text-align: right;
+}
+
 .click-addr-close:hover {
   color: #374151;
 }
