@@ -56,8 +56,6 @@ const state = {
     rvPinBound: false,
     jogOn: false,
     jogTimer: null,
-    // 노후도 모드
-    agingOn: false,
     // 토지이용계획(용도지역) 오버레이
     landuseOn: false,
     landuseReady: false,
@@ -316,13 +314,6 @@ function setupEventListeners() {
             ).join('');
     }
 
-    // 노후도 모드: 상세 마커를 건축 경과년수 색으로
-    const agingBtn = document.getElementById('aging-btn');
-    if (agingBtn) agingBtn.onclick = () => {
-        state.agingOn = !state.agingOn;
-        agingBtn.classList.toggle('active', state.agingOn);
-        updateMap(true);
-    };
     // 토지이용계획(용도지역) 오버레이 토글
     const landuseBtn = document.getElementById('landuse-btn');
     if (landuseBtn) landuseBtn.onclick = () => {
@@ -343,10 +334,7 @@ function setupEventListeners() {
         `<div class="legend-v-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span>정보 없음</div>` +
         `<div class="dropdown-note" style="margin:6px 0 0;">${note}</div>`;
 
-    const agingDropdown = document.getElementById('aging-dropdown');
-    if (agingDropdown) agingDropdown.innerHTML = agingLegendHtml('확대(상세) 화면에서 매물 마커에 적용');
-
-    // 건물연령: 화면 내 모든 건물 폴리곤을 경과년수 색으로
+    // 건물연령 (통합): 건물 폴리곤(동 축척~최대 확대) + 상세 매물 마커를 경과년수 색으로
     const bldgAgeBtn = document.getElementById('bldgage-btn');
     if (bldgAgeBtn) bldgAgeBtn.onclick = () => {
         if (!window.VWORLD_KEY) {
@@ -354,11 +342,11 @@ function setupEventListeners() {
             return;
         }
         state.bldgAgeOn = !state.bldgAgeOn;
-        bldgAgeBtn.classList.toggle('active', state.bldgAgeOn);
         refreshBldgAge();
+        updateMap(true); // 매물 마커 색도 함께 갱신
     };
     const bldgAgeDropdown = document.getElementById('bldgage-dropdown');
-    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('확대 화면에서 모든 건물에 적용 (VWorld 건물통합정보)');
+    if (bldgAgeDropdown) bldgAgeDropdown.innerHTML = agingLegendHtml('동 축척부터 최대 확대까지 건물·매물에 적용');
 
 
     // 모바일 좌측 상단 필터 토글
@@ -760,8 +748,8 @@ function createOverlayContent(item, level, groupCount = 1) {
     const div = document.createElement('div');
     div.className = `level-marker level-${level} ${isSelected ? 'selected' : ''}`;
     let themeColor = CONFIG.TYPE_COLORS[state.selectedType] || '#2563eb';
-    // 노후도 모드: 상세 레벨 마커를 건축 경과년수 색으로
-    if (state.agingOn && level === 4) themeColor = agingColor(repBuildYear(item));
+    // 건물연령 모드: 상세 레벨 매물 마커도 건축 경과년수 색으로
+    if (state.bldgAgeOn && level === 4) themeColor = agingColor(repBuildYear(item));
     let targetType = state.filters['매매'] && item.stats.sale ? "sale" : (state.filters['전세'] && item.stats.jeonse ? "jeonse" : (state.filters['월세'] && item.stats.monthly ? "monthly" : ""));
     const stats = item.stats[targetType]; let label = "", subLabel = "";
     if (level === 4) { 
@@ -1227,13 +1215,25 @@ function clearBldgAge() {
     state.bldgAgeOverlays = [];
 }
 
+// 건물연령 버튼 상태: 켜짐+표시중 = 파랑(active), 켜짐+축척 초과 = 회색(on-idle), 꺼짐 = 기본
+function updateBldgAgeBtn() {
+    const btn = document.getElementById('bldgage-btn');
+    if (!btn) return;
+    const usable = state.map.getLevel() <= BLDG_AGE_MAX_LEVEL;
+    btn.classList.toggle('active', state.bldgAgeOn && usable);
+    btn.classList.toggle('on-idle', state.bldgAgeOn && !usable);
+}
+
+const BLDG_AGE_MAX_LEVEL = 6; // 동 축척(~레벨6)부터 최대 확대까지 표시
+
 function refreshBldgAge() {
     const token = ++state.bldgAgeToken;
     clearBldgAge();
+    updateBldgAgeBtn();
     if (!state.bldgAgeOn) return;
     const statusEl = document.getElementById('status-bar');
-    if (state.map.getLevel() > 4) {
-        statusEl.textContent = '건물연령: 더 확대하면 건물이 표시됩니다';
+    if (state.map.getLevel() > BLDG_AGE_MAX_LEVEL) {
+        statusEl.textContent = '건물연령: 동 축척 이상으로 확대하면 표시됩니다 (버튼 회색 = 대기 상태)';
         return;
     }
     const b = state.map.getBounds();

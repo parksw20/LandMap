@@ -963,6 +963,13 @@ body {
   color: white;
 }
 
+/* 켜져 있으나 현재 축척에서 비활성(대기) 상태 — 회색 */
+.control-btn.on-idle {
+  background: #9ca3af;
+  border-color: #9ca3af;
+  color: white;
+}
+
 /* 상세 헤더 주소 */
 .data-address {
   font-size: 12px;
