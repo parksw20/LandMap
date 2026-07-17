@@ -1500,9 +1500,13 @@ function showClickAddress(latlng) {
             vworldBuildingAt(latlng, (resp) => {
                 const el = panel.querySelector('.click-addr-bldg');
                 if (!el) return;
+                const showEmpty = () => {
+                    el.innerHTML = `<div class="landuse-title">건물 정보</div><div class="bldg-empty">해당 지점 건물 정보 없음</div>`;
+                    el.style.display = 'block';
+                };
                 const feats = resp && resp.response && resp.response.status === 'OK'
                     ? (resp.response.result.featureCollection.features || []) : [];
-                if (!feats.length) return; // 건물 없는 지점(마당·도로)은 섹션 생략
+                if (!feats.length) { showEmpty(); return; }
                 const p = feats[0].properties;
                 const num = v => { const n = parseFloat(v); return isFinite(n) && n > 0 ? n : 0; };
                 const ap = (p.useapr_day || '').trim();
@@ -1523,7 +1527,7 @@ function showClickAddress(latlng) {
                 if (num(p.vl_rat)) rows.push(['용적률', `${num(p.vl_rat)}%`]);
                 if (num(p.bc_rat)) rows.push(['건폐율', `${num(p.bc_rat)}%`]);
                 if (apFmt) rows.push(['사용승인일자', apFmt + (ap.length >= 4 ? ` (${new Date().getFullYear() - parseInt(ap.slice(0, 4))}년차)` : '')]);
-                if (!rows.length) return;
+                if (!rows.length) { showEmpty(); return; }
                 el.innerHTML = `<div class="landuse-title">건물 정보</div>` +
                     rows.map(([k, v]) => `<div class="bldg-row"><span>${k}</span><b>${v}</b></div>`).join('');
                 el.style.display = 'block';
