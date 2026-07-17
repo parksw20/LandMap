@@ -1521,13 +1521,14 @@ function openRoadview(latlng) {
         }
         state.rvMapPin.setPosition(latlng);
         state.rvMapPin.setMap(state.map);
+        centerMapForRoadview(latlng);
         if (!state.rvPinBound) {
             state.rvPinBound = true;
             kakao.maps.event.addListener(state.rv, 'position_changed', () => {
                 const pos = state.rv.getPosition();
                 if (!pos) return;
                 if (state.rvMapPin) state.rvMapPin.setPosition(pos);
-                state.map.setCenter(pos);
+                centerMapForRoadview(pos);
             });
         }
     });
@@ -1535,6 +1536,17 @@ function openRoadview(latlng) {
 
 function hideRvMapPin() {
     if (state.rvMapPin) state.rvMapPin.setMap(null);
+}
+
+// 로드뷰 패널이 화면을 가리므로, 위치 핀이 '보이는 영역'의 중앙에 오도록 지도 센터를 보정
+// (데스크톱: 우측 50%가 로드뷰 → 좌측 절반 중앙 / 모바일: 하단 60%가 로드뷰 → 상단 40% 중앙)
+function centerMapForRoadview(pos) {
+    state.map.setCenter(pos);
+    if (window.innerWidth > 768) {
+        state.map.panBy(Math.round(window.innerWidth / 4), 0);
+    } else {
+        state.map.panBy(0, Math.round(window.innerHeight * 0.3));
+    }
 }
 
 let searchTimer = null;
