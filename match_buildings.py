@@ -66,10 +66,14 @@ def vw_get(params, retries=3):
 
 
 def fetch_dong_buildings(center, dong_key):
-    """동 중심 ±약 1km 박스의 건물 목록 (건축년도·연면적 있는 것만, 캐시)"""
+    """동 중심 ±약 1km 박스의 건물 목록 (건축년도·연면적 있는 것만, 캐시)
+    v2 형식: [연도, 연면적, 대지면적, 경도, 위도] — 구형(4필드) 캐시는 재수집"""
     cache_f = BLDG_CACHE_DIR / f"{dong_key}.json"
     if cache_f.exists():
-        return json.loads(cache_f.read_text(encoding="utf-8"))
+        cached = json.loads(cache_f.read_text(encoding="utf-8"))
+        if not cached or len(cached[0]) == 5:
+            return cached
+        # 구형 캐시(대지면적 없음) → 재수집
     lng, lat = center
     box = f"BOX({lng-0.012},{lat-0.009},{lng+0.012},{lat+0.009})"
     out = []
@@ -89,11 +93,15 @@ def fetch_dong_buildings(center, dong_key):
             except ValueError:
                 tot = 0
             if 1800 <= year4 <= 2100 and tot > 0:
+                try:
+                    plat = float(p.get("platarea") or 0)
+                except ValueError:
+                    plat = 0
                 g = f["geometry"]["coordinates"]
                 ring = g[0][0] if f["geometry"]["type"] == "MultiPolygon" else g[0]
                 cx = sum(pt[0] for pt in ring) / len(ring)
                 cy = sum(pt[1] for pt in ring) / len(ring)
-                out.append([year4, tot, round(cx, 6), round(cy, 6)])
+                out.append([year4, tot, round(plat, 2), round(cx, 6), round(cy, 6)])
         if len(feats) < 1000:
             break
         time.sleep(0.05)
@@ -159,7 +167,7 @@ def main():
     for f in files:
         try:
             df = pd.read_excel(f, sheet_name="단독다가구_매매", engine="openpyxl",
-                               usecols=["시/도", "구/시", "법정동", "지번", "건축년도", "전용면적"])
+                               usecols=["시/도", "구/시", "법정동", "지번", "건축년도", "전용면적", "대지면적"])
         except Exception:
             continue
         for _, r in df.iterrows():
@@ -172,10 +180,14 @@ def main():
                 by = int(float(r["건축년도"])); area = round(float(r["전용면적"]), 2)
             except (ValueError, TypeError):
                 continue
+            try:
+                land = round(float(r["대지면적"]), 2)
+            except (ValueError, TypeError):
+                land = 0.0
             if by < 1900 or area <= 0 or not dong:
                 continue
             mkey = f"{sido}|{gungu}|{dong}|{masked}|{by}|{area:.2f}"
-            keys[mkey] = (sido, gungu, dong, masked, by, area)
+            keys[mkey] = (sido, gungu, dong, masked, by, area, land)
     todo = {k: v for k, v in keys.items() if k not in cache}
     dongs = sorted(set((v[0], v[1], v[2]) for v in todo.values()))
     print(f"[i] 마스킹 매물 고유키 {len(keys)}개 / 미처리 {len(todo)}개 / 대상 동 {len(dongs)}개")
@@ -192,14 +204,16 @@ def main():
             dong_key = f"{sido}_{gungu}_{dong}".replace(" ", "_").replace("/", "_")
             blds = fetch_dong_buildings(center, dong_key)
 
-            for mk, (s, g, d, masked, by, area) in [(k, v) for k, v in todo.items() if (v[0], v[1], v[2]) == (sido, gungu, dong)]:
-                cands = [b for b in blds if b[0] == by and abs(b[1] - area) <= AREA_TOL]
+            for mk, (s, g, d, masked, by, area, land) in [(k, v) for k, v in todo.items() if (v[0], v[1], v[2]) == (sido, gungu, dong)]:
+                # 연도 ±1년 허용(허가/승인 기준 차이) + 연면적 또는 대지면적 중 하나라도 부합
+                cands = [b for b in blds if abs(b[0] - by) <= 1 and
+                         (abs(b[1] - area) <= AREA_TOL or (land > 0 and b[2] > 0 and abs(b[2] - land) <= AREA_TOL))]
                 # 유일성 판정은 지번패턴+동명 검사 후에 하므로 후보 상한은 여유 있게
                 if not (1 <= len(cands) <= 10):
                     cache[mk] = None
                     continue
                 hits = []
-                for _, _, cx, cy in cands:
+                for _, _, _, cx, cy in cands:
                     pj = parcel_jibun(cx, cy)
                     time.sleep(0.03)
                     if not pj or dong not in pj["addr"]:
