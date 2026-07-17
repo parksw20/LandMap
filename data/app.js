@@ -841,41 +841,86 @@ function showTooltip(item, level, pos) {
 
 function formatPrice(val) { if (val >= 10000) return `${Math.round(val / 1000) / 10}억`; return val.toLocaleString() + '만'; }
 
-// 아파트 매매 평당가 월별 추이 차트 (외부 라이브러리 없이 SVG)
+// 아파트 평당가 월별 추이 차트 — 매매/전세/월세 3계열, 리스트 내 거래유형 필터 연동
+// 월세는 환산가(보증금 + 월세×100)로 평당 환산해 같은 축에 표시
+const CHART_SERIES = [
+    { key: '매매', color: '#dc2626', val: d => d.price / (d.area * 0.3025) },
+    { key: '전세', color: '#2563eb', val: d => d.price / (d.area * 0.3025) },
+    { key: '월세', color: '#16a34a', val: d => (d.price + (d.rent || 0) * 100) / (d.area * 0.3025) }
+];
+
 function buildPriceChart(item) {
-    const sales = (item.deals || []).filter(d => d.type === '매매' && d.price > 0 && d.area > 0 && d.date && d.date.length >= 7);
-    const byMonth = {};
-    sales.forEach(d => {
-        const k = d.date.slice(0, 7);
-        (byMonth[k] = byMonth[k] || []).push(d.price / (d.area * 0.3025));
+    // 계열별 월평균 집계 (리스트 내 거래유형 필터 연동)
+    const series = [];
+    CHART_SERIES.forEach(s => {
+        if (!state.localFilters[s.key]) return;
+        const deals = (item.deals || []).filter(d => d.type === s.key && d.price > 0 && d.area > 0 && d.date && d.date.length >= 7);
+        if (!deals.length) return;
+        const byMonth = {};
+        deals.forEach(d => {
+            const k = d.date.slice(0, 7);
+            (byMonth[k] = byMonth[k] || []).push(s.val(d));
+        });
+        const months = Object.keys(byMonth).sort();
+        series.push({
+            ...s, n: deals.length, months,
+            avgs: months.map(k => byMonth[k].reduce((a, b) => a + b, 0) / byMonth[k].length),
+            counts: months.map(k => byMonth[k].length)
+        });
     });
-    const months = Object.keys(byMonth).sort();
-    if (months.length < 2) return null; // 추이라 할 게 없으면 생략
-    const avgs = months.map(k => byMonth[k].reduce((a, b) => a + b, 0) / byMonth[k].length);
-    const W = 320, H = 132, PL = 40, PR = 12, PT = 14, PB = 24;
-    const min = Math.min(...avgs), max = Math.max(...avgs);
+    if (!series.length) return null;
+    const allMonths = [...new Set(series.flatMap(s => s.months))].sort();
+    if (allMonths.length < 2) return null; // 추이라 할 게 없으면 생략
+
+    const W = 320, H = 140, PL = 42, PR = 12, PT = 12, PB = 24;
+    const allVals = series.flatMap(s => s.avgs);
+    const min = Math.min(...allVals), max = Math.max(...allVals);
     const span = (max - min) || max * 0.1 || 1;
-    const x = i => PL + (W - PL - PR) * (i / (months.length - 1));
+    const x = m => PL + (W - PL - PR) * (allMonths.indexOf(m) / (allMonths.length - 1));
     const y = v => PT + (H - PT - PB) * (1 - (v - min) / span);
-    const pts = avgs.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
-    const dots = avgs.map((v, i) =>
-        `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="#2563eb"><title>${months[i]}: ${Math.round(v).toLocaleString()}만/평 (${byMonth[months[i]].length}건)</title></circle>`).join('');
     const fmt = v => Math.round(v).toLocaleString();
     const mLabel = m => m.slice(2).replace('-', '.');
+
+    let lines = '', dots = '';
+    series.forEach(s => {
+        const pts = s.months.map((m, i) => `${x(m).toFixed(1)},${y(s.avgs[i]).toFixed(1)}`).join(' ');
+        if (s.months.length > 1) lines += `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
+        s.months.forEach((m, i) => {
+            dots += `<circle class="chart-dot" cx="${x(m).toFixed(1)}" cy="${y(s.avgs[i]).toFixed(1)}" r="3.5" fill="${s.color}"` +
+                ` data-tip="${m.slice(2).replace('-', '.')} ${s.key}: ${fmt(s.avgs[i])}만/평 · ${s.counts[i]}건"/>`;
+        });
+    });
+    const legend = series.map(s =>
+        `<span class="chart-leg"><span class="legend-dot" style="background:${s.color}"></span>${s.key}${s.key === '월세' ? '(환산)' : ''} ${s.n}건</span>`
+    ).join('');
+
     const div = document.createElement('div');
     div.className = 'price-chart';
     div.innerHTML =
-        `<div class="chart-title">매매 평당가 추이 <span>(만원/평 · ${sales.length}건)</span></div>` +
+        `<div class="chart-title">평당가 추이 <span>(만원/평${series.some(s => s.key === '월세') ? ' · 월세=보증금+월세×100 환산' : ''})</span></div>` +
+        `<div class="chart-legend">${legend}</div>` +
         `<svg viewBox="0 0 ${W} ${H}" width="100%">` +
         `<line x1="${PL}" y1="${y(max)}" x2="${W - PR}" y2="${y(max)}" class="chart-grid"/>` +
         `<line x1="${PL}" y1="${y(min)}" x2="${W - PR}" y2="${y(min)}" class="chart-grid"/>` +
         `<text x="${PL - 5}" y="${y(max) + 4}" text-anchor="end" class="chart-axis">${fmt(max)}</text>` +
         `<text x="${PL - 5}" y="${y(min) + 4}" text-anchor="end" class="chart-axis">${fmt(min)}</text>` +
-        `<polyline points="${pts}" fill="none" stroke="#2563eb" stroke-width="2"/>` +
-        dots +
-        `<text x="${x(0)}" y="${H - 7}" text-anchor="start" class="chart-axis">${mLabel(months[0])}</text>` +
-        `<text x="${x(months.length - 1)}" y="${H - 7}" text-anchor="end" class="chart-axis">${mLabel(months[months.length - 1])}</text>` +
-        `</svg>`;
+        lines + dots +
+        `<text x="${x(allMonths[0])}" y="${H - 7}" text-anchor="start" class="chart-axis">${mLabel(allMonths[0])}</text>` +
+        `<text x="${x(allMonths[allMonths.length - 1])}" y="${H - 7}" text-anchor="end" class="chart-axis">${mLabel(allMonths[allMonths.length - 1])}</text>` +
+        `</svg><div class="chart-tip" style="display:none;"></div>`;
+
+    // 점 호버 툴팁
+    const tip = div.querySelector('.chart-tip');
+    div.querySelectorAll('.chart-dot').forEach(c => {
+        c.addEventListener('mouseenter', () => {
+            tip.textContent = c.dataset.tip;
+            const cr = c.getBoundingClientRect(), dr = div.getBoundingClientRect();
+            tip.style.display = 'block';
+            tip.style.left = Math.max(4, Math.min(cr.left - dr.left - 60, dr.width - 130)) + 'px';
+            tip.style.top = (cr.top - dr.top - 30) + 'px';
+        });
+        c.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+    });
     return div;
 }
 
