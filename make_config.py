@@ -16,12 +16,23 @@ if not key or len(key) < 10:
     print("    python -c \"import keyring; keyring.set_password('v-world','parksw20','발급키')\"")
     raise SystemExit(1)
 
-# (선택) 폰 등 LAN(IP) 접속용 키 — VWorld는 키에 등록된 도메인만 허용하므로
-# PC IP를 도메인으로 등록한 별도 키를 발급받아 아래에 저장하면 폰에서도 동작:
-#   python -c "import keyring; keyring.set_password('v-world','parksw20-lan','IP용_발급키')"
-lan_key = keyring.get_password("v-world", "parksw20-lan") or ""
-
 OUT.write_text(f"// 로컬 전용 설정 (git 미포함) — make_config.py 로 생성됨\n"
-               f"window.VWORLD_KEY = '{key}';\n"
-               f"window.VWORLD_KEY_LAN = '{lan_key}';\n", encoding="utf-8")
-print(f"[OK] {OUT} 생성 완료 (LAN 키: {'있음' if lan_key else '없음'})")
+               f"window.VWORLD_KEY = '{key}';\n", encoding="utf-8")
+print(f"[OK] {OUT} 생성 완료")
+
+# (선택) GitHub Pages 배포용 공개 키 — parksw20.github.io 도메인으로 발급받은 키를
+#   python -c "import keyring; keyring.set_password('v-world','parksw20-pages','발급키')"
+# 로 저장하면 config.pages.js(커밋되는 파일)를 생성해 Pages에서도 VWorld 기능 동작.
+pages_key = keyring.get_password("v-world", "parksw20-pages")
+PAGES_OUT = Path(__file__).parent / "data" / "config.pages.js"
+if pages_key and len(pages_key) > 10:
+    PAGES_OUT.write_text(
+        "// GitHub Pages 배포용 VWorld 공개 키 (커밋되는 파일 — 로컬 키와 별개)\n"
+        "// 갱신: make_config.py  (keyring 'v-world'/'parksw20-pages')\n"
+        "if (!window.VWORLD_KEY) {\n"
+        f"    window.VWORLD_KEY = '{pages_key}';\n"
+        "    window.VWORLD_DOMAIN = 'parksw20.github.io';\n"
+        "}\n", encoding="utf-8")
+    print(f"[OK] {PAGES_OUT} 생성 완료 (Pages 공개 키 포함 — 커밋 필요)")
+else:
+    print("[i] Pages 공개 키 없음 — config.pages.js는 현재 no-op 상태 유지")

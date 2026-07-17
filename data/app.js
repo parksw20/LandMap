@@ -96,8 +96,8 @@ const CONFIG = {
 const isMobile = () => window.innerWidth <= 768;
 
 // VWorld domain 파라미터는 '키에 등록된 도메인'과 일치해야 함 (접속 호스트와 무관 — 실측 확인).
-// 폰(IP 접속)에서도 localhost로 보내야 통과하므로 항상 고정.
-window.VWORLD_DOMAIN = 'localhost';
+// config.pages.js(공개 키)가 자체 도메인을 지정했으면 그대로, 아니면 로컬 키 기준 localhost.
+window.VWORLD_DOMAIN = window.VWORLD_DOMAIN || 'localhost';
 
 // 오버레이(마커·픽커·핀 등) 클릭 표시 — 지도 클릭 핸들러(로드뷰 점프 등)로 전파되지 않게
 function markOverlayClick(ev) {
