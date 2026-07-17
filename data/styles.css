@@ -1757,6 +1757,20 @@ body {
     display: none;
   }
 
+  /* 열린 시트의 닫기(X) 버튼: 화면 밖으로 삐져나가지 않게 시트 '안쪽' 우상단으로 */
+  .control-panel .toggle-btn {
+    left: auto;
+    right: 10px;
+    top: 10px;
+    margin-left: 0;
+    width: 34px;
+    height: 34px;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    box-shadow: none;
+    z-index: 25;
+  }
+
   /* 모바일 결과 시트: 필터 패널과 분리된 독립 하단 시트 (기본 30%) */
   #data-section.mobile-sheet {
     position: fixed;
@@ -1824,7 +1838,7 @@ body {
     position: fixed;
     top: 14px;
     left: 14px;
-    z-index: 1600;
+    z-index: 2100; /* 시트·결과창보다 항상 위 — 열림/닫힘 언제든 좌상단에서 토글 */
     padding: 10px 16px;
     border: none;
     border-radius: 100px;
