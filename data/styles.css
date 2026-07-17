@@ -1171,6 +1171,33 @@ body {
   border: 1px solid #e5e7eb;
 }
 
+/* 영역 노후도 분석: 정비 요건 배지 */
+.redev-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 9px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.redev-badge.ok {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.redev-badge.no {
+  background: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.parcel-panel .landuse-item .legend-dot {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 /* 아파트 시세(평당가) 차트 */
 .price-chart {
   margin: 14px 16px 6px;

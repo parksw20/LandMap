@@ -608,9 +608,14 @@ async function updateMap(force = false) {
         let newLevel = zoom >= CONFIG.ZOOM_LEVELS[1] ? 1 : (zoom >= CONFIG.ZOOM_LEVELS[2] ? 2 : (zoom >= CONFIG.ZOOM_LEVELS[3] ? 3 : 4));
         
         if (newLevel === 4) {
+            // 구 데이터 로딩: 구 '중심점'이 화면 밖이어도 가장자리 매물이 빠지지 않도록
+            // 뷰포트의 절반만큼 사방으로 여유를 두고 판정
             const bounds = state.map.getBounds(), gungusInView = new Set();
+            const sw = bounds.getSouthWest(), ne = bounds.getNorthEast();
+            const mLng = (ne.getLng() - sw.getLng()) * 0.5, mLat = (ne.getLat() - sw.getLat()) * 0.5;
+            const inExpanded = (c) => c[0] >= sw.getLng() - mLng && c[0] <= ne.getLng() + mLng && c[1] >= sw.getLat() - mLat && c[1] <= ne.getLat() + mLat;
             for (const ym of state.selectedMonths) {
-                (await loadSummaryData(ym, 2)).forEach(g => { if (bounds.contain(new kakao.maps.LatLng(g.coords[1], g.coords[0]))) gungusInView.add(`${g.sido}_${g.name.split(' ')[1] || g.name}`.replace(/ /g, '_')); });
+                (await loadSummaryData(ym, 2)).forEach(g => { if (inExpanded(g.coords)) gungusInView.add(`${g.sido}_${g.name.split(' ')[1] || g.name}`.replace(/ /g, '_')); });
             }
             state.geocoder.coord2RegionCode(state.map.getCenter().getLng(), state.map.getCenter().getLat(), async (result, status) => {
                 if (status === kakao.maps.services.Status.OK) {
@@ -1035,6 +1040,12 @@ function finishMeasure() {
             el.appendChild(x);
         }
         state.doneShapes[mode].push(group);
+        // 면적 확정 시: 영역 내 건물 노후도 자동 분석
+        if (mode === 'area' && window.VWORLD_KEY) {
+            const ring = state.curPts.map(p => [p.getLng(), p.getLat()]);
+            const drawnArea = state.curPoly ? state.curPoly.getArea() : 0;
+            analyzeAreaBuildings(ring, drawnArea);
+        }
     }
     state.curPts = []; state.curLine = null; state.curPoly = null; state.curOverlays = []; state.curAreaLabel = null;
 }
@@ -1042,6 +1053,124 @@ function finishMeasure() {
 function clearMeasure(mode) {
     state.doneShapes[mode].forEach(group => group.forEach(o => o.setMap(null)));
     state.doneShapes[mode] = [];
+}
+
+// ==========================
+// 면적 영역 노후도 분석 — 영역에 절반 이상 걸친 건물 대상
+// ==========================
+function pointInRing(x, y, ring) {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+        if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+}
+
+// 건물 도형이 그린 영역에 얼마나 걸치는지 (건물 bbox 7×7 격자 샘플링)
+function overlapFraction(bRing, clipRing) {
+    const xs = bRing.map(p => p[0]), ys = bRing.map(p => p[1]);
+    const minx = Math.min(...xs), maxx = Math.max(...xs);
+    const miny = Math.min(...ys), maxy = Math.max(...ys);
+    let inB = 0, inBoth = 0;
+    const N = 7;
+    for (let i = 0; i < N; i++) {
+        for (let j = 0; j < N; j++) {
+            const x = minx + (maxx - minx) * (i + 0.5) / N;
+            const y = miny + (maxy - miny) * (j + 0.5) / N;
+            if (pointInRing(x, y, bRing)) {
+                inB++;
+                if (pointInRing(x, y, clipRing)) inBoth++;
+            }
+        }
+    }
+    if (!inB) {
+        const cx = xs.reduce((a, b) => a + b, 0) / xs.length, cy = ys.reduce((a, b) => a + b, 0) / ys.length;
+        return pointInRing(cx, cy, clipRing) ? 1 : 0;
+    }
+    return inBoth / inB;
+}
+
+function analyzeAreaBuildings(ring, drawnArea) {
+    const statusEl = document.getElementById('status-bar');
+    statusEl.textContent = '영역 노후도 분석 중...';
+    const lngs = ring.map(p => p[0]), lats = ring.map(p => p[1]);
+    const box = `BOX(${Math.min(...lngs)},${Math.min(...lats)},${Math.max(...lngs)},${Math.max(...lats)})`;
+    const feats = [];
+    const fetchPage = (page) => vworldBuildings(box, page, (resp) => {
+        const ok = resp && resp.response && resp.response.status === 'OK';
+        const batch = ok ? (resp.response.result.featureCollection.features || []) : [];
+        feats.push(...batch);
+        const total = ok && resp.response.record ? parseInt(resp.response.record.total) : 0;
+        if (ok && feats.length < total && page < 3) fetchPage(page + 1);
+        else renderAreaAnalysis(ring, drawnArea, feats);
+    });
+    fetchPage(1);
+}
+
+function renderAreaAnalysis(ring, drawnArea, feats) {
+    const nowYear = new Date().getFullYear();
+    const included = [];
+    feats.forEach(f => {
+        const bRing = f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates[0][0] : f.geometry.coordinates[0];
+        if (overlapFraction(bRing, ring) < 0.5) return; // 절반 이상 걸친 건물만
+        const p = f.properties;
+        const ym = ((p.useapr_day || '').match(/^(\d{4})/) || [])[1];
+        included.push({
+            year: ym ? parseInt(ym) : 0,
+            tot: parseFloat(p.totalarea || 0) || 0,
+            flr: parseInt(p.grnd_flr || 0) || 0
+        });
+    });
+
+    const panel = document.getElementById('parcel-panel');
+    const statusEl = document.getElementById('status-bar');
+    if (!panel) return;
+    if (!included.length) {
+        statusEl.textContent = '영역 내 건물 정보 없음';
+        return;
+    }
+
+    // 밴드 집계 (경과년수)
+    const bands = CONFIG.AGING_BANDS.map(b => ({ ...b, n: 0 }));
+    let unknown = 0, ageSum = 0, aged = 0, over30 = 0;
+    let oldest = 0, newest = 0;
+    included.forEach(b => {
+        if (!b.year || b.year < 1800) { unknown++; return; }
+        const age = nowYear - b.year;
+        ageSum += age; aged++;
+        if (age >= 30) over30++;
+        for (const band of bands) if (age >= band.min) { band.n++; break; }
+        if (!oldest || b.year < oldest) oldest = b.year;
+        if (b.year > newest) newest = b.year;
+    });
+    const avgAge = aged ? Math.round(ageSum / aged) : 0;
+    const over30pct = aged ? Math.round(over30 * 100 / aged) : 0;
+    const totSum = included.reduce((a, b) => a + b.tot, 0);
+    const flrs = included.filter(b => b.flr > 0);
+    const avgFlr = flrs.length ? (flrs.reduce((a, b) => a + b.flr, 0) / flrs.length).toFixed(1) : '-';
+
+    const bandRows = bands.map(b =>
+        `<div class="landuse-item"><span class="legend-dot" style="background:${b.color}"></span> ${b.label}: <b>${b.n}동</b> (${aged ? Math.round(b.n * 100 / aged) : 0}%)</div>`
+    ).join('') +
+        (unknown ? `<div class="landuse-item"><span class="legend-dot" style="background:${CONFIG.AGING_UNKNOWN}"></span> 정보 없음: <b>${unknown}동</b></div>` : '');
+
+    // 재개발 노후도 참고 (통상 30년 이상 2/3 = 67% 기준)
+    const redevOk = over30pct >= 67;
+
+    panel.innerHTML =
+        `<span class="click-addr-close" title="닫기">×</span>` +
+        `<div class="click-addr-jibun">영역 노후도 분석</div>` +
+        `<div class="click-addr-road">영역 ${fmtArea(drawnArea)} · 절반 이상 걸친 건물 ${included.length}동</div>` +
+        `<div class="click-addr-parcel">` +
+        `평균 경과년수 <b>${avgAge}년</b> · 30년 이상 <b>${over30pct}%</b> (${over30}/${aged}동)<br>` +
+        `<span class="redev-badge ${redevOk ? 'ok' : 'no'}">정비 노후도 요건(67%) ${redevOk ? '충족' : '미달'}</span></div>` +
+        `<div class="click-addr-landuse"><div class="landuse-title">경과년수 분포</div>${bandRows}</div>` +
+        `<div class="click-addr-parcel">총 연면적 ${Math.round(totSum).toLocaleString()}㎡ · 평균 지상 ${avgFlr}층` +
+        (oldest ? `<br>최고령 ${oldest}년 · 최신 ${newest}년` : '') + `</div>`;
+    panel.querySelector('.click-addr-close').onclick = () => { panel.style.display = 'none'; };
+    panel.style.display = 'block';
+    statusEl.textContent = `영역 노후도 분석 완료: ${included.length}동`;
 }
 
 // ==========================
