@@ -675,21 +675,38 @@ async function updateMap(force = false) {
             const sw = bounds.getSouthWest(), ne = bounds.getNorthEast();
             const mLng = (ne.getLng() - sw.getLng()) * 0.5, mLat = (ne.getLat() - sw.getLat()) * 0.5;
             const inExpanded = (c) => c[0] >= sw.getLng() - mLng && c[0] <= ne.getLng() + mLng && c[1] >= sw.getLat() - mLat && c[1] <= ne.getLat() + mLat;
+            const cLng = state.map.getCenter().getLng(), cLat = state.map.getCenter().getLat();
+            let nearest = null, nearestD = Infinity;
             for (const ym of state.selectedMonths) {
-                (await loadSummaryData(ym, 2)).forEach(g => { if (inExpanded(g.coords)) gungusInView.add(`${g.sido}_${g.name.split(' ')[1] || g.name}`.replace(/ /g, '_')); });
+                (await loadSummaryData(ym, 2)).forEach(g => {
+                    const key = `${g.sido}_${g.name.split(' ')[1] || g.name}`.replace(/ /g, '_');
+                    if (inExpanded(g.coords)) gungusInView.add(key);
+                    const d = (g.coords[0] - cLng) ** 2 + (g.coords[1] - cLat) ** 2;
+                    if (d < nearestD) { nearestD = d; nearest = key; }
+                });
             }
-            state.geocoder.coord2RegionCode(state.map.getCenter().getLng(), state.map.getCenter().getLat(), async (result, status) => {
-                if (status === kakao.maps.services.Status.OK) {
-                    const reg = result.find(r => r.region_type === 'H' || r.region_type === 'B');
-                    gungusInView.add(`${reg.region_1depth_name}_${reg.region_2depth_name}`.replace(/ /g, '_'));
-                    const gunguKeyStr = Array.from(gungusInView).sort().join('|');
-                    if (state.activeGungus !== gunguKeyStr || state.currentLevel !== 4 || force) {
-                        state.activeGungus = gunguKeyStr; state.currentLevel = 4;
-                        renderMarkers(await fetchAndMergeData(4, Array.from(gungusInView)), 4);
-                    }
+            // 화면이 좁아 어떤 구 중심도 안 들어오는 경우(철도·하천 위 등) 최근접 구를 보장
+            if (nearest) gungusInView.add(nearest);
+            // 렌더는 지오코더에 의존하지 않고 즉시 실행 (모바일 지역코드 조회 실패/지연에도 마커 표시)
+            const renderFor = async (extraForce) => {
+                const gunguKeyStr = Array.from(gungusInView).sort().join('|');
+                if (state.activeGungus !== gunguKeyStr || state.currentLevel !== 4 || extraForce) {
+                    state.activeGungus = gunguKeyStr; state.currentLevel = 4;
+                    renderMarkers(await fetchAndMergeData(4, Array.from(gungusInView)), 4);
                 }
-                resolve();
-            });
+            };
+            await renderFor(force);
+            resolve();
+            // 보조: 지역코드로 정확한 구 보정 (경계 근처에서 최근접 구가 어긋날 때만 재렌더)
+            try {
+                state.geocoder.coord2RegionCode(cLng, cLat, (result, status) => {
+                    if (status !== kakao.maps.services.Status.OK) return;
+                    const reg = result.find(r => r.region_type === 'H' || r.region_type === 'B');
+                    if (!reg) return;
+                    const k = `${reg.region_1depth_name}_${reg.region_2depth_name}`.replace(/ /g, '_');
+                    if (!gungusInView.has(k)) { gungusInView.add(k); renderFor(false); }
+                });
+            } catch (e) { /* 지오코더 미가용이어도 무시 */ }
         } else {
             if (state.currentLevel === newLevel && !force) { resolve(); return; }
             state.currentLevel = newLevel; state.activeGungus = null;
