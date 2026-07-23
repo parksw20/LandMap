@@ -1051,9 +1051,21 @@ function buildPriceChart(item) {
     return div;
 }
 
-// 단지 헤더 메타: 건축년도·용적률·건폐율 (카드마다 반복하던 주소/건축년도를 상단 1곳으로 통합)
-// 용적률/건폐율은 VWorld 건물정보에서 좌표 기준으로 조회하고 단지별로 캐시한다.
+// 단지 헤더 메타: 건축년도·용적률·건폐율·세대수·주차대수
+// (카드마다 반복하던 주소/건축년도를 상단 1곳으로 통합)
+//  - 용적률/건폐율: VWorld 건물정보를 좌표로 조회, 단지별 캐시
+//  - 세대수/주차대수: apt_info.py가 만든 data/apt_info.json 룩업 (없으면 해당 항목만 생략)
 const complexMetaCache = {};
+let aptInfoTable = null;
+
+async function loadAptInfo() {
+    if (aptInfoTable !== null) return aptInfoTable;
+    try {
+        const res = await fetch(`./apt_info.json?v=${DATA_VER}`);
+        aptInfoTable = res.ok ? await res.json() : {};
+    } catch (e) { aptInfoTable = {}; }
+    return aptInfoTable;
+}
 
 function renderComplexMeta(item) {
     const el = document.getElementById('data-meta');
@@ -1067,8 +1079,22 @@ function renderComplexMeta(item) {
         if (cached.vl) parts.push(`용적률 <b>${cached.vl}%</b>`);
         if (cached.bc) parts.push(`건폐율 <b>${cached.bc}%</b>`);
     }
+    // 세대수·주차대수 (아파트 단지정보 테이블이 있을 때만)
+    const ai = aptInfoTable && aptInfoTable[key];
+    if (ai) {
+        if (ai.hh) parts.push(`세대수 <b>${ai.hh.toLocaleString()}세대</b>${ai.dg ? ` (${ai.dg}개동)` : ''}`);
+        if (ai.pk) parts.push(`주차 <b>${ai.pk.toLocaleString()}대</b>${ai.hh ? ` (세대당 ${(ai.pk / ai.hh).toFixed(2)})` : ''}`);
+    }
     el.innerHTML = parts.join(' · ');
     el.style.display = parts.length ? 'block' : 'none';
+
+    // 테이블 최초 1회 로드 후 재렌더
+    if (aptInfoTable === null && state.selectedType === 'apt') {
+        loadAptInfo().then(() => {
+            const cur = state.selectedComplex;
+            if (cur && `${cur.name}|${cur.address}` === key) renderComplexMeta(cur);
+        });
+    }
 
     // 아직 조회 전이면 VWorld에서 1회 조회 후 다시 그린다 (위치미상 묶음은 좌표가 동 중심이라 제외)
     if (cached === undefined && item.coords && !isApproxGroup(item) && window.VWORLD_KEY) {
