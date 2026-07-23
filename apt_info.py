@@ -82,14 +82,17 @@ def api(path, params, retries=3):
 
 
 def items_of(resp):
-    """data.go.kr 표준 응답에서 item 리스트 추출 (단건이면 dict로 오는 것 방어)"""
+    """data.go.kr 응답에서 item 리스트 추출.
+    목록 API는 body.items.item, 단지 기본/상세는 body.item 으로 형태가 다르다."""
     if not resp:
         return []
     body = (resp.get("response") or {}).get("body") or {}
     it = body.get("items")
     if not it:
+        it = body.get("item")     # 기본/상세 정보 형태
+    if not it:
         return []
-    if isinstance(it, dict):
+    if isinstance(it, dict) and "item" in it:
         it = it.get("item") or []
     if isinstance(it, dict):
         it = [it]
@@ -122,7 +125,7 @@ def fetch_sigungu_list(sigungu_code):
 def fetch_detail(kapt_code):
     """단지 기본+상세 → 세대수·주차대수·사용승인일 등"""
     d = {}
-    b = items_of(api("AptBasisInfoServiceV3/getAphusBassInfoV3", {"kaptCode": kapt_code}))
+    b = items_of(api("AptBasisInfoServiceV4/getAphusBassInfoV4", {"kaptCode": kapt_code}))
     if b:
         p = b[0]
         d["households"] = _int(p.get("kaptdaCnt"))       # 세대수
@@ -130,7 +133,7 @@ def fetch_detail(kapt_code):
         d["approval"] = (p.get("kaptUsedate") or "").strip()  # 사용승인일
         d["builder"] = (p.get("kaptBcompany") or "").strip()  # 시공사
     time.sleep(0.03)
-    s = items_of(api("AptBasisInfoServiceV3/getAphusDtlInfoV3", {"kaptCode": kapt_code}))
+    s = items_of(api("AptBasisInfoServiceV4/getAphusDtlInfoV4", {"kaptCode": kapt_code}))
     if s:
         p = s[0]
         # 지하 + 지상 주차대수
@@ -146,11 +149,46 @@ def _int(v):
 
 
 def norm_name(s):
-    """단지명 정규화: 공백/괄호/'아파트' 접미사 제거 후 비교용 키"""
+    """단지명 정규화: 공백/괄호/접미사 제거 + 브랜드 표기 통일 (RTMS와 K-apt 표기가 다름)"""
     s = re.sub(r"\(.*?\)", "", str(s))
     s = re.sub(r"\s+", "", s)
-    s = re.sub(r"아파트$", "", s)
+    s = s.replace("e편한세상", "이편한세상").replace("E편한세상", "이편한세상")
+    s = re.sub(r"(아파트|APT)$", "", s, flags=re.I)
+    s = re.sub(r"(단지|타운)$", "", s)
     return s
+
+
+# 법정동 추출: 아파트 주소는 '성동구 금호동1가 1500'(시도 없음),
+# 단독 등은 '서울특별시 성동구 금호동2가 676' 형태라 토큰 위치가 다르다.
+# → 뒤에서부터 동/가/리로 끝나는 한글 토큰을 찾는다.
+_DONG_RE = re.compile(r"^[가-힣0-9]+(동|가|리)$")
+
+def extract_dong(addr):
+    for t in reversed(str(addr).split()):
+        if _DONG_RE.match(t) and not t.endswith(("시", "군", "구", "도")):
+            return t
+    return ""
+
+
+def build_kapt_index(listc):
+    """K-apt 단지목록 → (법정동, 정규화단지명) 색인"""
+    idx = {}
+    for lst in listc.values():
+        for c in lst:
+            idx.setdefault((c["dong"], norm_name(c["name"])), c["code"])
+    return idx
+
+
+def lookup_kapt(idx_by_dong, kapt_idx, dong, nname):
+    """단지 매칭: 정확 일치 우선, 없으면 같은 동 내 포함관계가 '유일'할 때만 채택.
+    (RTMS는 지역명 접두어·'단지' 표기를 생략하는 경우가 많다: '삼성'↔'고양삼성')"""
+    code = kapt_idx.get((dong, nname))
+    if code:
+        return code
+    if not nname:
+        return None
+    cands = [c for kn, c in idx_by_dong.get(dong, []) if nname in kn or kn in nname]
+    return cands[0] if len(set(cands)) == 1 else None
 
 
 def load_our_complexes():
@@ -159,8 +197,7 @@ def load_our_complexes():
     for f in glob.glob(str(DATA / "hierarchy" / "*" / "apt" / "details" / "*.json")):
         for x in json.loads(Path(f).read_text(encoding="utf-8")):
             name, addr = x.get("name", ""), x.get("address", "")
-            parts = addr.split()
-            dong = parts[2] if len(parts) >= 3 else ""
+            dong = extract_dong(addr)
             if not name or not dong:
                 continue
             k = (dong, norm_name(name))
@@ -197,15 +234,15 @@ def main():
         LIST_CACHE.write_text(json.dumps(listc, ensure_ascii=False), encoding="utf-8")
 
         # 2) K-apt 단지 → (동, 정규화명) 색인
-        kapt_idx = {}
-        for lst in listc.values():
-            for c in lst:
-                kapt_idx.setdefault((c["dong"], norm_name(c["name"])), c["code"])
+        kapt_idx = build_kapt_index(listc)
 
         # 3) 매칭되는 단지만, 거래 많은 순으로 상세 조회
+        idx_by_dong = {}
+        for (d, kn), c in kapt_idx.items():
+            idx_by_dong.setdefault(d, []).append((kn, c))
         targets = []
-        for k, (name, addr, n) in ours.items():
-            code = kapt_idx.get(k)
+        for (dong, nname), (name, addr, n) in ours.items():
+            code = lookup_kapt(idx_by_dong, kapt_idx, dong, nname)
             if code:
                 targets.append((n, code, name, addr))
         targets.sort(reverse=True)
@@ -226,13 +263,13 @@ def main():
         DETAIL_CACHE.write_text(json.dumps(detailc, ensure_ascii=False), encoding="utf-8")
 
     # 4) 프론트엔드 룩업 테이블 저장: "단지명|주소" → 정보
-    kapt_idx = {}
-    for lst in listc.values():
-        for c in lst:
-            kapt_idx.setdefault((c["dong"], norm_name(c["name"])), c["code"])
+    kapt_idx = build_kapt_index(listc)
+    idx_by_dong = {}
+    for (d_, kn), c in kapt_idx.items():
+        idx_by_dong.setdefault(d_, []).append((kn, c))
     out = {}
-    for k, (name, addr, n) in ours.items():
-        code = kapt_idx.get(k)
+    for (dong, nname), (name, addr, n) in ours.items():
+        code = lookup_kapt(idx_by_dong, kapt_idx, dong, nname)
         d = detailc.get(code) if code else None
         if not d:
             continue
