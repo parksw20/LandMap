@@ -1051,6 +1051,42 @@ function buildPriceChart(item) {
     return div;
 }
 
+// 단지 헤더 메타: 건축년도·용적률·건폐율 (카드마다 반복하던 주소/건축년도를 상단 1곳으로 통합)
+// 용적률/건폐율은 VWorld 건물정보에서 좌표 기준으로 조회하고 단지별로 캐시한다.
+const complexMetaCache = {};
+
+function renderComplexMeta(item) {
+    const el = document.getElementById('data-meta');
+    if (!el) return;
+    const parts = [];
+    const by = repBuildYear(item);
+    if (by) parts.push(`건축년도 <b>${by}년</b> (${new Date().getFullYear() - by}년차)`);
+    const key = `${item.name}|${item.address}`;
+    const cached = complexMetaCache[key];
+    if (cached && (cached.vl || cached.bc)) {
+        if (cached.vl) parts.push(`용적률 <b>${cached.vl}%</b>`);
+        if (cached.bc) parts.push(`건폐율 <b>${cached.bc}%</b>`);
+    }
+    el.innerHTML = parts.join(' · ');
+    el.style.display = parts.length ? 'block' : 'none';
+
+    // 아직 조회 전이면 VWorld에서 1회 조회 후 다시 그린다 (위치미상 묶음은 좌표가 동 중심이라 제외)
+    if (cached === undefined && item.coords && !isApproxGroup(item) && window.VWORLD_KEY) {
+        complexMetaCache[key] = null; // 중복 요청 방지
+        const ll = new kakao.maps.LatLng(item.coords[1], item.coords[0]);
+        vworldBuildingAt(ll, (resp) => {
+            const feats = resp && resp.response && resp.response.status === 'OK'
+                ? (resp.response.result.featureCollection.features || []) : [];
+            const p = feats.length ? feats[0].properties : null;
+            const n = v => { const x = parseFloat(v); return isFinite(x) && x > 0 ? Math.round(x * 100) / 100 : 0; };
+            complexMetaCache[key] = p ? { vl: n(p.vl_rat), bc: n(p.bc_rat) } : { vl: 0, bc: 0 };
+            // 조회 중 다른 단지로 바뀌었으면 덮어쓰지 않음
+            const cur = state.selectedComplex;
+            if (cur && `${cur.name}|${cur.address}` === key) renderComplexMeta(cur);
+        });
+    }
+}
+
 function renderComplexDetail() {
     const item = state.selectedComplex; if (!item || !item.deals) return;
     const sidePanel = document.getElementById('data-section'), dataList = document.getElementById('data-list'), areaFilter = document.getElementById('area-filter');
@@ -1061,7 +1097,8 @@ function renderComplexDetail() {
         addrEl.textContent = (item.address && item.address !== item.name) ? item.address : '';
         if (isApproxGroup(item)) addrEl.innerHTML = `<span class="approx-badge">위치미상</span> 지번이 공개되지 않아 동 중심에 묶어 표시한 매물입니다` + (addrEl.textContent ? ` · ${addrEl.textContent}` : '');
     }
-    
+    renderComplexMeta(item);
+
     // 모바일: 필터 패널은 접고(FAB로 열기) 결과는 독립 하단 시트(30%)로
     const controlPanel = document.getElementById('control-panel');
     if (isMobile()) {
@@ -1099,10 +1136,12 @@ function renderComplexDetail() {
         if (pLand > 0) info += `, 대지: ${pLand}평 (${deal.land}㎡)`;
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
-        // 지번 표시: 마스킹('2*')이면 그대로 표기, 없으면 그룹 주소로 대체
-        const jibunTxt = (deal.jibun && deal.jibun !== "nan") ? deal.jibun : (item.address || "");
-        const addrInfo = jibunTxt ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>` : "";
-        const byInfo = (deal.by && deal.by > 1900) ? `<div class="card-row-sub">건축년도: ${deal.by}년 (${new Date().getFullYear() - deal.by}년차)</div>` : "";
+        // 주소·건축년도는 상단 헤더에 1회 표시 — 카드에는 헤더와 다를 때만 남긴다
+        // (동 중심 묶음은 매물마다 지번이 달라 카드 표기가 필요하고, 단지는 헤더와 중복이라 생략)
+        const jibunTxt = (deal.jibun && deal.jibun !== "nan") ? deal.jibun : "";
+        const addrInfo = (jibunTxt && jibunTxt !== item.address) ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>` : "";
+        const headerBy = repBuildYear(item);
+        const byInfo = (deal.by && deal.by > 1900 && deal.by !== headerBy) ? `<div class="card-row-sub">건축년도: ${deal.by}년 (${new Date().getFullYear() - deal.by}년차)</div>` : "";
         card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${byInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
     });
