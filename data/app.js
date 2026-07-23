@@ -1067,6 +1067,32 @@ async function loadAptInfo() {
     return aptInfoTable;
 }
 
+// 공급면적 테이블: "단지명|주소" → [[전용㎡, 공급㎡], ...] (supply_area.py 생성)
+// 실거래는 전용면적만 제공하므로, 주택인허가의 전유+주거공용으로 산출한 공급면적을 병기한다.
+let supplyTable = null;
+
+async function loadSupplyArea() {
+    if (supplyTable !== null) return supplyTable;
+    try {
+        const res = await fetch(`./supply_area.json?v=${DATA_VER}`);
+        supplyTable = res.ok ? await res.json() : {};
+    } catch (e) { supplyTable = {}; }
+    return supplyTable;
+}
+
+// 전용면적 → 공급면적 (같은 단지 내 가장 가까운 주택형, 1㎡ 이내일 때만)
+function supplyAreaOf(item, exclusiveArea) {
+    if (!supplyTable || !item) return 0;
+    const list = supplyTable[`${item.name}|${item.address}`];
+    if (!list) return 0;
+    let best = 0, bestD = 1.0;
+    for (const [ex, sup] of list) {
+        const d = Math.abs(ex - exclusiveArea);
+        if (d <= bestD) { bestD = d; best = sup; }
+    }
+    return best;
+}
+
 function renderComplexMeta(item) {
     const el = document.getElementById('data-meta');
     if (!el) return;
@@ -1088,11 +1114,11 @@ function renderComplexMeta(item) {
     el.innerHTML = parts.join(' · ');
     el.style.display = parts.length ? 'block' : 'none';
 
-    // 테이블 최초 1회 로드 후 재렌더
-    if (aptInfoTable === null && state.selectedType === 'apt') {
-        loadAptInfo().then(() => {
+    // 테이블 최초 1회 로드 후 재렌더 (세대수/주차 + 공급면적)
+    if (state.selectedType === 'apt' && (aptInfoTable === null || supplyTable === null)) {
+        Promise.all([loadAptInfo(), loadSupplyArea()]).then(() => {
             const cur = state.selectedComplex;
-            if (cur && `${cur.name}|${cur.address}` === key) renderComplexMeta(cur);
+            if (cur && `${cur.name}|${cur.address}` === key) { renderComplexMeta(cur); renderComplexDetail(); }
         });
     }
 
@@ -1159,6 +1185,9 @@ function renderComplexDetail() {
         const pArea = Math.round(deal.area * 0.3025);
         const pLand = deal.land ? Math.round(deal.land * 0.3025) : 0;
         let info = `전용: ${pArea}평 (${deal.area}㎡)`;
+        // 공급면적(=전용+주거공용) 병기 — 시중에서 쓰는 'N평형' 기준
+        const sup = supplyAreaOf(item, deal.area);
+        if (sup > 0) info += ` <span class="supply-area">· 공급 ${Math.round(sup * 0.3025)}평 (${sup}㎡)</span>`;
         if (pLand > 0) info += `, 대지: ${pLand}평 (${deal.land}㎡)`;
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
