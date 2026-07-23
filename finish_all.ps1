@@ -1,4 +1,4 @@
-# finish_all.ps1 — 남은 수집 작업을 순차 완주하고 커밋·푸시 후 PC 종료
+﻿# finish_all.ps1 — 남은 수집 작업을 순차 완주하고 커밋·푸시 후 PC 종료
 #
 # 순서: (1) 단지정보 수집 완료 대기 → 검증·커밋 → (2) 공급면적 수집 → 검증·커밋 → (3) 종료
 #
@@ -62,6 +62,37 @@ Data: 주택인허가 기반 아파트 공급면적 테이블 생성
 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
 '@
 
-# 3) 종료 (취소: shutdown /a)
-Say '=== 전체 완료 — 300초 후 PC를 종료합니다 (취소: shutdown /a) ==='
+# 3) 최종 안전망: 남은 변경 전부 커밋 + 푸시 (종료 전 미푸시 상태를 남기지 않는다)
+Say '3단계: 남은 변경 최종 커밋·푸시'
+$dirty = git status --porcelain 2>&1
+if ($dirty) {
+    Say ("미커밋 변경 {0}건 — 커밋합니다" -f ($dirty | Measure-Object).Count)
+    git add -A 2>&1 | Out-Null
+    git commit -m @'
+Data: 수집 마무리 - 남은 변경 반영
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
+'@ 2>&1 | Select-Object -Last 1 | ForEach-Object { Say $_ }
+} else {
+    Say '미커밋 변경 없음'
+}
+
+# 푸시는 항상 시도 (앞 단계에서 커밋만 되고 푸시가 실패했을 수 있음)
+for ($i = 1; $i -le 3; $i++) {
+    $r = git push origin master 2>&1
+    $r | Select-Object -Last 1 | ForEach-Object { Say $_ }
+    $ahead = git status -sb 2>&1 | Select-String 'ahead'
+    if (-not $ahead) { Say '푸시 확인 완료 — 원격과 동기화됨'; break }
+    Say ("푸시 미완료 — 재시도 {0}/3" -f $i)
+    Start-Sleep -Seconds 20
+}
+
+$ahead = git status -sb 2>&1 | Select-String 'ahead'
+if ($ahead) {
+    Say '!!! 푸시 실패 — 종료를 취소합니다. 수동으로 git push 후 확인하세요'
+    exit 1
+}
+
+# 4) 종료 (취소: shutdown /a)
+Say '=== 전체 완료 + 푸시 확인 — 300초 후 PC를 종료합니다 (취소: shutdown /a) ==='
 shutdown /s /t 300 /c "부동산 데이터 수집 완료 - 자동 종료 (취소: shutdown /a)"
