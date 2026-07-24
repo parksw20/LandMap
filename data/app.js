@@ -1186,16 +1186,35 @@ function renderComplexMeta(item) {
     // 아직 조회 전이면 VWorld에서 1회 조회 후 다시 그린다 (위치미상 묶음은 좌표가 동 중심이라 제외)
     if (cached === undefined && item.coords && !isApproxGroup(item) && window.VWORLD_KEY) {
         complexMetaCache[key] = null; // 중복 요청 방지
-        const ll = new kakao.maps.LatLng(item.coords[1], item.coords[0]);
-        vworldBuildingAt(ll, (resp) => {
-            const feats = resp && resp.response && resp.response.status === 'OK'
-                ? (resp.response.result.featureCollection.features || []) : [];
-            const p = feats.length ? feats[0].properties : null;
-            const n = v => { const x = parseFloat(v); return isFinite(x) && x > 0 ? Math.round(x * 100) / 100 : 0; };
-            complexMetaCache[key] = p ? { vl: n(p.vl_rat), bc: n(p.bc_rat) } : { vl: 0, bc: 0 };
+        const n = v => { const x = parseFloat(v); return isFinite(x) && x > 0 ? Math.round(x * 100) / 100 : 0; };
+        const feats = r => (r && r.response && r.response.status === 'OK')
+            ? (r.response.result.featureCollection.features || []) : [];
+        const done = (rec) => {
+            complexMetaCache[key] = rec;
             // 조회 중 다른 단지로 바뀌었으면 덮어쓰지 않음
             const cur = state.selectedComplex;
             if (cur && `${cur.name}|${cur.address}` === key) renderComplexMeta(cur);
+        };
+        const ll = new kakao.maps.LatLng(item.coords[1], item.coords[0]);
+        vworldBuildingAt(ll, (resp) => {
+            const f = feats(resp);
+            const p = f.length ? f[0].properties : null;
+            if (p && (n(p.vl_rat) || n(p.bc_rat))) { done({ vl: n(p.vl_rat), bc: n(p.bc_rat) }); return; }
+            // 단지 좌표가 건물 밖이면 점 조회가 빈다 → 주변 건물 중 '이 단지의 건물'만 채택.
+            // 용도(공동주택)와 건축년도(±1)가 맞는 것만 봐야 이웃 건물 값이 섞이지 않는다.
+            const by = repBuildYear(item);
+            vworldBuildingsNear(item.coords[0], item.coords[1], (resp2) => {
+                let best = null;
+                feats(resp2).forEach(ft => {
+                    const q = ft.properties;
+                    const ap = parseInt((q.useapr_day || '').slice(0, 4));
+                    if (q.usability !== '02000' || !by || !(Math.abs(ap - by) <= 1)) return;
+                    if (!n(q.vl_rat) && !n(q.bc_rat)) return;
+                    const area = parseFloat(q.totalarea || 0);
+                    if (!best || area > best.area) best = { area, vl: n(q.vl_rat), bc: n(q.bc_rat) };
+                });
+                done(best ? { vl: best.vl, bc: best.bc } : { vl: 0, bc: 0 });
+            });
         });
     }
 }
@@ -1697,6 +1716,13 @@ function vworldLandUse(pnu, cb) {
 function vworldBuildings(boxStr, page, cb) {
     vworldJsonp('https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_BLDGINFO'
         + `&format=json&crs=EPSG:4326&size=1000&page=${page}&geomFilter=${boxStr}`, cb);
+}
+
+// 좌표 주변 건물들 (약 ±50m) — 단지 좌표가 건물 폴리곤 밖일 때의 보완 조회용
+function vworldBuildingsNear(lng, lat, cb) {
+    const d = 0.0006;
+    vworldJsonp('https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_BLDGINFO'
+        + `&format=json&crs=EPSG:4326&size=50&geomFilter=BOX(${lng - d},${lat - d},${lng + d},${lat + d})`, cb);
 }
 
 // 클릭 지점의 건물 1동 조회 (필지 정보 패널용)

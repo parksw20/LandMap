@@ -170,12 +170,26 @@ def extract_dong(addr):
     return ""
 
 
+def strip_region_prefix(nname, dong):
+    """K-apt 단지명 앞에 붙은 지역명을 뗀다.
+    K-apt는 '청량리홍릉동부'처럼 동 이름을 접두어로 붙이는데 RTMS는 '홍릉동부'로만 쓴다."""
+    base = re.sub(r"(동|가|리|읍|면)$", "", str(dong))
+    if base and nname.startswith(base) and len(nname) > len(base):
+        return nname[len(base):]
+    return nname
+
+
 def build_kapt_index(listc):
-    """K-apt 단지목록 → (법정동, 정규화단지명) 색인"""
+    """K-apt 단지목록 → (법정동, 정규화단지명) 색인.
+    지역명 접두어를 뗀 형태도 함께 등록해 '홍릉동부'↔'청량리홍릉동부'가 정확 매칭되게 한다."""
     idx = {}
     for lst in listc.values():
         for c in lst:
-            idx.setdefault((c["dong"], norm_name(c["name"])), c["code"])
+            nn = norm_name(c["name"])
+            idx.setdefault((c["dong"], nn), c["code"])
+            stripped = strip_region_prefix(nn, c["dong"])
+            if stripped != nn:
+                idx.setdefault((c["dong"], stripped), c["code"])
     return idx
 
 
