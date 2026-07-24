@@ -46,6 +46,35 @@ def dist_km(a, b):
     return math.hypot(dx, dy)
 
 
+def point_in_ring(pt, ring):
+    """레이캐스팅 — 점이 링 내부인지"""
+    x, y = pt
+    inside = False
+    n = len(ring)
+    for i in range(n):
+        x1, y1 = ring[i]
+        x2, y2 = ring[(i + 1) % n]
+        if (y1 > y) != (y2 > y):
+            xin = (x2 - x1) * (y - y1) / ((y2 - y1) or 1e-12) + x1
+            if x < xin:
+                inside = not inside
+    return inside
+
+
+def contains(rings, pt):
+    """첫 링(외곽) 기준 포함 여부"""
+    return any(point_in_ring(pt, r) for r in rings)
+
+
+def ring_area(rings):
+    """대략적인 크기 비교용 (경위도 신발끈) — 작은 구역을 우선 채택하기 위함"""
+    r = rings[0]
+    s = 0.0
+    for i in range(len(r) - 1):
+        s += r[i][0] * r[i + 1][1] - r[i + 1][0] * r[i][1]
+    return abs(s) / 2
+
+
 def main():
     shp_path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SHP
     zones = json.load(open(ZONES_PATH, encoding='utf-8'))
@@ -61,9 +90,9 @@ def main():
         rec = dict(zip(flds, sr.record))
         if rec.get('LCLAS_CL') != 'UQ1200':
             continue
+        # 이름이 정규화 후 비더라도('주택재개발사업구역' → 접미사가 모두 제거됨)
+        # 좌표 포함 매칭에는 쓸 수 있으므로 후보에서 빼지 않는다. (청량리8이 이 경우)
         name = norm(rec.get('DGM_NM', ''))
-        if not name:
-            continue
         shape = sr.shape
         pts = shape.points
         parts = list(shape.parts) + [len(pts)]
@@ -83,9 +112,10 @@ def main():
     # 이름 인덱스
     by_name = {}
     for i, (n, _, _) in enumerate(cands):
-        by_name.setdefault(n, []).append(i)
+        if n:
+            by_name.setdefault(n, []).append(i)
 
-    out, exact, fuzzy = {}, 0, 0
+    out, exact, fuzzy, inside_n = {}, 0, 0, 0
     for z in zones:
         zn = norm(z['name'])
         if not zn:
@@ -105,16 +135,26 @@ def main():
         # 2차: 포함관계 매칭 + 거리 검증
         if len(zn) >= 3:
             pool = [i for i, (n, _, _) in enumerate(cands)
-                    if (zn in n or n in zn) and dist_km(cands[i][2], zc) < 2.0]
+                    if n and (zn in n or n in zn) and dist_km(cands[i][2], zc) < 2.0]
             if pool:
                 best = min(pool, key=lambda i: dist_km(cands[i][2], zc))
                 out[key] = cands[best][1]
                 fuzzy += 1
+                continue
+
+        # 3차: 좌표 포함 매칭.
+        # SHP에 '주택재개발사업구역'처럼 일반명으로 등록된 구역은 이름으로 못 찾는다
+        # (청량리8이 이 경우). 구역 좌표를 품은 도형 중 가장 작은 것을 채택한다.
+        holders = [i for i in range(len(cands)) if contains(cands[i][1], zc)]
+        if holders:
+            best = min(holders, key=lambda i: ring_area(cands[i][1]))
+            out[key] = cands[best][1]
+            inside_n += 1
 
     json.dump(out, open(OUT_PATH, 'w', encoding='utf-8'), ensure_ascii=False,
               separators=(',', ':'))
     size_mb = OUT_PATH.stat().st_size / 1e6
-    print(f"[완료] 매칭 {len(out)}/{len(zones)} (정확 {exact} + 유사 {fuzzy}) → {OUT_PATH} ({size_mb:.1f}MB)")
+    print(f"[완료] 매칭 {len(out)}/{len(zones)} (정확 {exact} + 유사 {fuzzy} + 좌표포함 {inside_n}) → {OUT_PATH} ({size_mb:.1f}MB)")
 
 
 if __name__ == "__main__":
