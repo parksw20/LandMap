@@ -233,7 +233,13 @@ def main():
     try:
         bjds = fetch_bjd_codes()
         print(f"[i] 대상 법정동 {len(bjds)}개")
-        todo = [b for b in bjds if b not in areac]
+        # 기본은 증분(미수집 동만). 이미 수집한 동에 새 아파트가 지어지면 반영되지 않으므로
+        # 주기적으로 --refresh 로 전 동을 다시 받아 신축을 반영한다.
+        if "--refresh" in sys.argv:
+            print("[i] --refresh: 전 동 재수집")
+            todo = list(bjds)
+        else:
+            todo = [b for b in bjds if b not in areac]
         for i, b in enumerate(todo, 1):
             areac[b] = fetch_dong_areas(b)
             if i % 25 == 0 or i == len(todo):

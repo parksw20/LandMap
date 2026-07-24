@@ -235,17 +235,29 @@ def main():
     lawd = pd.read_csv(LAWD, dtype=str)
     codes = [c.strip() for c in lawd["LAWD_CD"].tolist() if c and str(c).strip()]
 
+    # 단지목록은 매번 갱신한다(시군구 67회로 저렴).
+    # 캐시를 그대로 쓰면 K-apt에 새로 등록된 단지의 코드를 영영 모르게 되어
+    # 신규 아파트가 세대수·주차 정보에서 계속 누락된다.
+    # (--keep-list 로 갱신을 건너뛸 수 있음)
+    skip_list = "--keep-list" in sys.argv
+
     stop = None
     try:
         # 1) 시군구 단지목록
+        before = sum(len(v) for v in listc.values())
         for i, sgg in enumerate(codes, 1):
-            if sgg in listc:
+            if skip_list and sgg in listc:
                 continue
-            listc[sgg] = fetch_sigungu_list(sgg)
+            fresh = fetch_sigungu_list(sgg)
+            if fresh or sgg not in listc:      # 조회 실패 시 기존 캐시 유지
+                listc[sgg] = fresh
             if i % 5 == 0 or i == len(codes):
                 LIST_CACHE.write_text(json.dumps(listc, ensure_ascii=False), encoding="utf-8")
                 print(f"  목록 {i}/{len(codes)} 시군구 | 누적단지 {sum(len(v) for v in listc.values())} | 요청 {req_count}")
         LIST_CACHE.write_text(json.dumps(listc, ensure_ascii=False), encoding="utf-8")
+        after = sum(len(v) for v in listc.values())
+        if not skip_list:
+            print(f"[i] 단지목록 갱신: {before} → {after} (신규 {max(0, after - before)})")
 
         # 2) K-apt 단지 → (동, 정규화명) 색인
         kapt_idx = build_kapt_index(listc)
