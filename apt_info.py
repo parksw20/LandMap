@@ -62,6 +62,10 @@ def api(path, params, retries=3):
             if r.status_code == 403:
                 raise Unauthorized("403 Forbidden — 활용신청 미승인 또는 반영 대기")
             txt = r.text
+            # 429는 쿼터 소진. 이걸 일반 실패로 처리하면 빈 응답이 '데이터 없음'으로
+            # 캐시에 저장되어 이후 재실행에서도 영영 비어 있게 된다.
+            if r.status_code == 429 or "quota exceeded" in txt.lower():
+                raise QuotaExceeded("일일 트래픽 초과 (HTTP 429)")
             if "LIMITED_NUMBER_OF_SERVICE_REQUESTS" in txt or "요청횟수" in txt:
                 raise QuotaExceeded("일일 트래픽 초과")
             if r.status_code != 200:
