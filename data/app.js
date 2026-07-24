@@ -66,8 +66,8 @@ const state = {
 
 const CONFIG = {
     ZOOM_LEVELS: { 1: 9, 2: 7, 3: 5, 4: 0 },
-    // 마커·필터 색은 '거래 유형' 기준으로 통일 (카드 색과 동일)
-    DEAL_COLORS: { sale: '#ef4444', jeonse: '#2563eb', monthly: '#16a34a' },
+    // 마커·필터 색은 '거래 유형' 기준으로 통일 (카드 색과 동일) — 톤다운 팔레트
+    DEAL_COLORS: { sale: '#9b1932', jeonse: '#234a70', monthly: '#1b5c37' },
     // 면적 슬라이더 상한(평) — 이 값이면 '이상' 무제한으로 취급
     AREA_MAX: 200,
     // 전월세(전세/월세) 실거래가 제공되는 유형. 나머지는 국토부가 매매만 공개함.
@@ -895,8 +895,9 @@ function createOverlayContent(item, level, groupCount = 1) {
         subLabel = `위치미상 ${item.stats.total}건`;
     }
     const badge = groupCount > 1 ? `<div class="marker-badge">${groupCount}</div>` : '';
-    const ageStyle = ageBorder ? `border:3px solid ${ageBorder};` : '';
-    div.innerHTML = `${badge}<div class="marker-body" style="background:${markerBg};${ageStyle}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${arrowColor}"></div>`;
+    // 건물연령은 마커 위쪽 마름모 표식으로 (테두리를 쓰면 거래유형 색과 헷갈림)
+    const ageMark = ageBorder ? `<div class="marker-age" style="background:${ageBorder}" title="건축 경과년수"></div>` : '';
+    div.innerHTML = `${badge}${ageMark}<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${arrowColor}"></div>`;
     return div;
 }
 
@@ -983,9 +984,9 @@ function formatPrice(val) { if (val >= 10000) return `${Math.round(val / 1000) /
 // 전체 선택 시: 평당가(만원/평, 면적이 달라도 비교 가능) / 특정 평형 선택 시: 실거래가(억)
 // 월세는 환산가(보증금 + 월세×100)로 같은 축에 표시
 const CHART_SERIES = [
-    { key: '매매', color: '#dc2626', raw: d => d.price },
-    { key: '전세', color: '#2563eb', raw: d => d.price },
-    { key: '월세', color: '#16a34a', raw: d => d.price + (d.rent || 0) * 100 }
+    { key: '매매', color: '#9b1932', raw: d => d.price },
+    { key: '전세', color: '#234a70', raw: d => d.price },
+    { key: '월세', color: '#1b5c37', raw: d => d.price + (d.rent || 0) * 100 }
 ];
 
 function buildPriceChart(item) {

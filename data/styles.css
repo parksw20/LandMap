@@ -467,11 +467,11 @@ body {
 }
 
 .deal-jeonse {
-  color: #2563eb;
+  color: #234a70;
 }
 
 .deal-monthly {
-  color: #16a34a;
+  color: #1b5c37;
 }
 
 /* Panel Animation */
@@ -586,9 +586,9 @@ body {
   color: white;
 }
 
-.card-sale .card-badge { background: #ef4444; }
-.card-jeonse .card-badge { background: #2563eb; }
-.card-monthly .card-badge { background: #16a34a; }
+.card-sale .card-badge { background: #9b1932; }
+.card-jeonse .card-badge { background: #234a70; }
+.card-monthly .card-badge { background: #1b5c37; }
 
 .card-date {
   font-size: 12px;
@@ -632,36 +632,36 @@ body {
 /* Card Themes */
 /* Sale (Red) */
 .badge-sale {
-  background-color: #ef4444 !important;
+  background-color: #9b1932 !important;
   color: white !important;
 }
 
 .card-sale {
-  border-left-color: #ef4444 !important;
+  border-left-color: #9b1932 !important;
   background: linear-gradient(to right, #fef2f2, #ffffff 30%) !important;
   border-left-width: 4px !important;
 }
 
 /* Jeonse (Blue) */
 .badge-jeonse {
-  background-color: #3b82f6 !important;
+  background-color: #234a70 !important;
   color: white !important;
 }
 
 .card-jeonse {
-  border-left-color: #3b82f6 !important;
+  border-left-color: #234a70 !important;
   background: linear-gradient(to right, #eff6ff, #ffffff 30%) !important;
   border-left-width: 4px !important;
 }
 
 /* Monthly (Green) */
 .badge-monthly {
-  background-color: #22c55e !important;
+  background-color: #1b5c37 !important;
   color: white !important;
 }
 
 .card-monthly {
-  border-left-color: #22c55e !important;
+  border-left-color: #1b5c37 !important;
   background: linear-gradient(to right, #f0fdf4, #ffffff 30%) !important;
   border-left-width: 4px !important;
 }
@@ -769,12 +769,26 @@ body {
   font-family: 'Pretendard', monospace; /* 숫자 정렬을 위해 */
 }
 
-.tooltip-row.sale span, .tooltip-row.sale b { color: #ef4444 !important; }
-.tooltip-row.jeonse span, .tooltip-row.jeonse b { color: #2563eb !important; }
-.tooltip-row.monthly span, .tooltip-row.monthly b { color: #16a34a !important; }
+.tooltip-row.sale span, .tooltip-row.sale b { color: #9b1932 !important; }
+.tooltip-row.jeonse span, .tooltip-row.jeonse b { color: #234a70 !important; }
+.tooltip-row.monthly span, .tooltip-row.monthly b { color: #1b5c37 !important; }
 
 .tooltip-row span:nth-child(1) {
   font-weight: 800;
+}
+
+/* 건물연령 표식: 마커 위쪽 마름모 (경과년수 색) */
+.marker-age {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  border: 2px solid white;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  z-index: 3;
 }
 
 /* 카드 면적 표기: 전용 강조 / 공급·대지는 보조 */
@@ -790,7 +804,7 @@ body {
 }
 
 .supply-area {
-  color: #2563eb;
+  color: #234a70;
   font-weight: 700;
 }
 
@@ -836,22 +850,22 @@ body {
 
 /* 거래 유형 색상 — 매물 카드·마커와 동일 (부동산 유형별 색 구분은 사용하지 않음) */
 .filter-chip input[name="transactionType"][value="매매"]:checked + .chip-label {
-  background: #ef4444;
-  border-color: #ef4444;
+  background: #9b1932;
+  border-color: #9b1932;
   color: white;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
 }
 
 .filter-chip input[name="transactionType"][value="전세"]:checked + .chip-label {
-  background: #2563eb;
-  border-color: #2563eb;
+  background: #234a70;
+  border-color: #234a70;
   color: white;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .filter-chip input[name="transactionType"][value="월세"]:checked + .chip-label {
-  background: #16a34a;
-  border-color: #16a34a;
+  background: #1b5c37;
+  border-color: #1b5c37;
   color: white;
   box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
 }
