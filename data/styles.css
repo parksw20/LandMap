@@ -2036,3 +2036,8 @@ body {
     transform: scale(0.96);
   }
 }
+
+/* 경계 도면이 없는 정비구역 — 점선으로 구분 (영역 없이 위치만 표시) */
+.redev-marker.no-area {
+  border-style: dashed;
+}

@@ -597,7 +597,7 @@ function renderRedevMarkers() {
         }
 
         const div = document.createElement('div');
-        div.className = 'redev-marker';
+        div.className = 'redev-marker' + (rings ? '' : ' no-area');
         div.innerHTML = `<div class="redev-dot" style="background:${color}"></div>`;
         const overlay = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 0.5, zIndex: 50 });
         overlay.setMap(state.map);
@@ -624,6 +624,11 @@ function showRedevDetail(z, color) {
     const areaFilter = document.getElementById('area-filter');
     state.selectedComplex = null;
     document.getElementById('data-title').textContent = `${z.name} (${z.stage})`;
+    // 이전에 선택한 단지의 주소·건축년도·세대수가 남지 않도록 비운다
+    const addrEl = document.getElementById('data-address');
+    if (addrEl) addrEl.textContent = `${z.district} ${z.addr}`;
+    const metaEl = document.getElementById('data-meta');
+    if (metaEl) { metaEl.innerHTML = ''; metaEl.style.display = 'none'; }
     areaFilter.style.display = 'none';
 
     const controlPanel = document.getElementById('control-panel');
@@ -649,7 +654,11 @@ function showRedevDetail(z, color) {
         `<div class="card-row-main">${z.district} ${z.addr}</div>` +
         (hh.length ? `<div class="card-row-highlight">${hh.join(' → ')}</div>` : '') +
         dates.map(([k, v]) => `<div class="card-row-sub">${k}: ${v}</div>`).join('') +
-        `</div>`;
+        `</div>` +
+        // 서울시 의제처리구역 도면에 없는 구역은 경계를 그릴 수 없다 (472개 중 154개)
+        (state.redevPolys && state.redevPolys[`${z.district}|${z.name}`]
+            ? ''
+            : `<div class="empty-state" style="padding:12px 16px;font-size:12px;">이 구역은 경계 도면이 제공되지 않아<br>지도에 영역이 표시되지 않습니다.</div>`);
 }
 
 async function renderMonthSelect() {
