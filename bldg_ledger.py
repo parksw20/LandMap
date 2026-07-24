@@ -35,8 +35,12 @@ BJD_MAP = DATA / "hspms_cache" / "bjd_map.json"
 SUPPLY_OUT = DATA / "supply_area.json"
 RATIO_OUT = DATA / "bldg_ratio.json"
 
-# 건축물대장 주용도코드 → 공급면적 대상 여부 (02000 = 공동주택)
+# 전유공용면적의 세부 용도 (호별 용도는 '아파트'처럼 구체적으로 온다)
 APT_PURPS = {"아파트", "연립주택", "다세대주택", "오피스텔", "도시형생활주택"}
+
+# 표제부의 주용도는 상위 분류('공동주택')로 오므로 별도 집합이 필요하다.
+# (여기서 APT_PURPS를 쓰면 아파트가 한 건도 안 걸린다 — 실측 확인)
+TITLE_PURPS = {"공동주택", "오피스텔", "업무시설"}
 
 
 def fetch_area(bjd):
@@ -102,7 +106,7 @@ def fetch_title(bjd):
         if not its:
             break
         for x in its:
-            if (x.get("mainPurpsCdNm") or "") not in APT_PURPS:
+            if (x.get("mainPurpsCdNm") or "") not in TITLE_PURPS:
                 continue
             plc = (x.get("platPlc") or "").strip()
             vl, bc = sane(rnum(x.get("vlRat")), rnum(x.get("bcRat")))
