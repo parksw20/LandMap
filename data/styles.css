@@ -467,11 +467,11 @@ body {
 }
 
 .deal-jeonse {
-  color: #234a70;
+  color: #1f66b5;
 }
 
 .deal-monthly {
-  color: #1b5c37;
+  color: #158a4f;
 }
 
 /* Panel Animation */
@@ -586,9 +586,9 @@ body {
   color: white;
 }
 
-.card-sale .card-badge { background: #9b1932; }
-.card-jeonse .card-badge { background: #234a70; }
-.card-monthly .card-badge { background: #1b5c37; }
+.card-sale .card-badge { background: #c81e41; }
+.card-jeonse .card-badge { background: #1f66b5; }
+.card-monthly .card-badge { background: #158a4f; }
 
 .card-date {
   font-size: 12px;
@@ -632,36 +632,36 @@ body {
 /* Card Themes */
 /* Sale (Red) */
 .badge-sale {
-  background-color: #9b1932 !important;
+  background-color: #c81e41 !important;
   color: white !important;
 }
 
 .card-sale {
-  border-left-color: #9b1932 !important;
+  border-left-color: #c81e41 !important;
   background: linear-gradient(to right, #fef2f2, #ffffff 30%) !important;
   border-left-width: 4px !important;
 }
 
 /* Jeonse (Blue) */
 .badge-jeonse {
-  background-color: #234a70 !important;
+  background-color: #1f66b5 !important;
   color: white !important;
 }
 
 .card-jeonse {
-  border-left-color: #234a70 !important;
+  border-left-color: #1f66b5 !important;
   background: linear-gradient(to right, #eff6ff, #ffffff 30%) !important;
   border-left-width: 4px !important;
 }
 
 /* Monthly (Green) */
 .badge-monthly {
-  background-color: #1b5c37 !important;
+  background-color: #158a4f !important;
   color: white !important;
 }
 
 .card-monthly {
-  border-left-color: #1b5c37 !important;
+  border-left-color: #158a4f !important;
   background: linear-gradient(to right, #f0fdf4, #ffffff 30%) !important;
   border-left-width: 4px !important;
 }
@@ -769,9 +769,9 @@ body {
   font-family: 'Pretendard', monospace; /* 숫자 정렬을 위해 */
 }
 
-.tooltip-row.sale span, .tooltip-row.sale b { color: #9b1932 !important; }
-.tooltip-row.jeonse span, .tooltip-row.jeonse b { color: #234a70 !important; }
-.tooltip-row.monthly span, .tooltip-row.monthly b { color: #1b5c37 !important; }
+.tooltip-row.sale span, .tooltip-row.sale b { color: #c81e41 !important; }
+.tooltip-row.jeonse span, .tooltip-row.jeonse b { color: #1f66b5 !important; }
+.tooltip-row.monthly span, .tooltip-row.monthly b { color: #158a4f !important; }
 
 .tooltip-row span:nth-child(1) {
   font-weight: 800;
@@ -804,7 +804,7 @@ body {
 }
 
 .supply-area {
-  color: #234a70;
+  color: #1f66b5;
   font-weight: 700;
 }
 
@@ -850,22 +850,22 @@ body {
 
 /* 거래 유형 색상 — 매물 카드·마커와 동일 (부동산 유형별 색 구분은 사용하지 않음) */
 .filter-chip input[name="transactionType"][value="매매"]:checked + .chip-label {
-  background: #9b1932;
-  border-color: #9b1932;
+  background: #c81e41;
+  border-color: #c81e41;
   color: white;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
 }
 
 .filter-chip input[name="transactionType"][value="전세"]:checked + .chip-label {
-  background: #234a70;
-  border-color: #234a70;
+  background: #1f66b5;
+  border-color: #1f66b5;
   color: white;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .filter-chip input[name="transactionType"][value="월세"]:checked + .chip-label {
-  background: #1b5c37;
-  border-color: #1b5c37;
+  background: #158a4f;
+  border-color: #158a4f;
   color: white;
   box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
 }
@@ -1803,22 +1803,32 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
+/* 면적 선택 제목줄: 한 줄 고정 (float+큰 여백이면 좁은 폭에서 안내 문구가 줄바꿈됨) */
+.area-title {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+  min-width: 0;
+}
+
 .range-value-text {
-  float: right;
   color: var(--primary-color);
   font-weight: 800;
   font-size: 12px;
-  margin-left: 3em;   /* '면적 선택' 문구와 값 사이 여백 */
+  margin-left: auto;   /* 값은 오른쪽 끝으로 — '면적 선택'과 자연스럽게 벌어짐 */
 }
 
-/* 면적 기준 안내 (공급면적) */
+/* 면적 기준 안내 (공급면적) — 폭이 부족하면 이 문구부터 줄어든다 */
 .area-basis-note {
-  margin-left: 8px;
   font-size: 10px;
   font-weight: 600;
   color: #9ca3af;
   text-transform: none;
   letter-spacing: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 /* Dong Aggregate Marker */
