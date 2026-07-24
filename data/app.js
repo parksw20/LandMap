@@ -808,13 +808,13 @@ async function loadDetailShard(ym, gunguKey) {
 function renderMarkers(data, level) {
     clearOverlays(); const bounds = state.map.getBounds();
     const filtered = data.filter(item => {
+        // 레벨4는 실제 거래를 필터링해 집계 — 면적 필터가 이미 반영되어 있다
+        if (level === 4) item.__fs = filteredStats(item);
         const enabled = enabledTypes(item);
         // 선택한 거래유형에 해당 거래가 없어도 단지는 계속 표시한다(회색 마커).
         // 상세 레벨에서만 — 상위 레벨은 지역 요약이라 빈 지역을 띄울 이유가 없다.
         if (!enabled.length) return level === 4 && !isApproxGroup(item);
-        // 면적 필터는 공급면적 기준(없으면 전용) — 표시할 유형의 면적으로 판정한다.
-        // 다른 유형으로 통과시키면 30~34평 필터에 24평 마커가 뜬다.
-        return inAreaFilter(markerPyeong(item));
+        return level === 4 ? true : inAreaFilter(markerPyeong(item));
     });
     // 레벨4: 동일 좌표에 여러 그룹이 겹치면 하나의 마커 + 개수 배지로 묶는다
     let renderList; // [ [대표item, 그룹배열] ]
@@ -912,10 +912,49 @@ function inAreaFilter(pyeong) {
            (state.globalArea.max >= CONFIG.AREA_MAX || pyeong <= state.globalArea.max);
 }
 
+// 면적·거래유형 필터를 적용한 '실제 거래' 기준 통계 (레벨4 전용).
+// stats.rep_area는 월별 대표면적 하나뿐이라 26/31/41/50평이 섞인 단지에서는
+// 필터 결과와 어긋난다 — 매매 3건인데 툴팁에 18건으로 뜨거나,
+// 매매 대표면적이 범위 밖이라 월세가 대신 표시되는 문제가 생긴다.
+const DEAL_KEY = { '매매': 'sale', '전세': 'jeonse', '월세': 'monthly' };
+
+function filteredStats(item) {
+    if (!item.deals) return null;
+    const acc = {};
+    item.deals.forEach(d => {
+        const k = DEAL_KEY[d.type];
+        if (!k || !state.filters[d.type]) return;
+        if (!inAreaFilter(Math.round(basisArea(item, d.area) * 0.3025))) return;
+        const e = acc[k] || (acc[k] = { count: 0, sum: 0, lo: Infinity, hi: -Infinity, areas: {} });
+        const price = d.price || 0;
+        e.count++; e.sum += price;
+        if (price < e.lo) e.lo = price;
+        if (price > e.hi) e.hi = price;
+        e.areas[d.area] = (e.areas[d.area] || 0) + 1;
+    });
+    const out = { total: 0 };
+    ['sale', 'jeonse', 'monthly'].forEach(k => {
+        const e = acc[k];
+        if (!e || !e.count) { out[k] = null; return; }
+        let repA = 0, best = 0;   // 대표 면적 = 필터 결과 중 가장 많이 거래된 면적
+        for (const a in e.areas) if (e.areas[a] > best) { best = e.areas[a]; repA = parseFloat(a); }
+        out[k] = { count: e.count, range: [e.lo, e.hi], rep_area: repA,
+                   rep_avg_price: Math.round(e.sum / e.count) };
+        out.total += e.count;
+    });
+    return out;
+}
+
+// 표시에 쓸 통계 — 레벨4는 필터 반영본, 상위 레벨은 요약본
+function statsOf(item) {
+    return item.__fs || item.stats;
+}
+
 // 활성화된 거래유형 중 데이터가 있는 것들
 function enabledTypes(item) {
+    const s = statsOf(item);
     return [['sale', '매매'], ['jeonse', '전세'], ['monthly', '월세']]
-        .filter(([k, ko]) => state.filters[ko] && item.stats[k]);
+        .filter(([k, ko]) => state.filters[ko] && s[k]);
 }
 
 // 마커에 표시할 거래유형 — 매매 > 전세 > 월세 우선순위.
@@ -930,7 +969,7 @@ function pickTargetType(item) {
 // 마커에 실제로 표시될 면적(평) — 필터 판정도 이 값으로 한다
 function markerPyeong(item) {
     const t = pickTargetType(item);
-    return t ? Math.round(basisArea(item, item.stats[t].rep_area) * 0.3025) : 0;
+    return t ? Math.round(basisArea(item, statsOf(item)[t].rep_area) * 0.3025) : 0;
 }
 
 function createOverlayContent(item, level, groupCount = 1) {
@@ -942,7 +981,7 @@ function createOverlayContent(item, level, groupCount = 1) {
     let themeColor = CONFIG.DEAL_COLORS[targetType] || '#64748b';
     // 건물연령 모드: 경과년수를 '테두리' 색으로 표시 (내부 색은 거래 유형 유지)
     const ageBorder = (state.bldgAgeOn && level === 4) ? agingColor(repBuildYear(item)) : '';
-    const stats = item.stats[targetType]; let label = "", subLabel = "";
+    const stats = statsOf(item)[targetType]; let label = "", subLabel = "";
     // 마커 표기 면적도 공급면적 기준 (없으면 전용)
     if (level === 4) {
         if (stats) { label = `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'}`; subLabel = formatPrice(stats.rep_avg_price); }
@@ -1042,7 +1081,7 @@ function drawRadius() {
 
 function handleLevelMove(item, level) { state.map.setCenter(new kakao.maps.LatLng(item.coords[1], item.coords[0])); state.map.setLevel((level === 1) ? 8 : (level === 2 ? 6 : 4), { animate: true }); }
 function showTooltip(item, level, pos) {
-    const stats = item.stats; const fmtR = (s) => (!s) ? "" : (s.range[0] === s.range[1] ? formatPrice(s.range[0]) : `${formatPrice(s.range[0])}~${formatPrice(s.range[1])}`);
+    const stats = statsOf(item); const fmtR = (s) => (!s) ? "" : (s.range[0] === s.range[1] ? formatPrice(s.range[0]) : `${formatPrice(s.range[0])}~${formatPrice(s.range[1])}`);
     const row = (type, key, cls) => (state.filters[type] && stats[key]) ? `<div class="tooltip-row ${cls}"><span>${type}</span><span>${stats[key].count}건</span><b>${fmtR(stats[key])}</b></div>` : "";
     const approxNote = (level === 4 && isApproxGroup(item)) ? `<div class="tooltip-note">※ 위치 미확정 매물 묶음 — 동 중심에 표시됨</div>` : '';
     state.tooltip.setContent(`<div class="custom-tooltip"><div class="tooltip-header">${item.name}</div><div class="tooltip-body">${row('매매', 'sale', 'sale')}${row('전세', 'jeonse', 'jeonse')}${row('월세', 'monthly', 'monthly')}${approxNote}</div></div>`);

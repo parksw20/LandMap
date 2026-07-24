@@ -58,10 +58,16 @@ def addr_key(addr, name=""):
     return re.sub(r"시(?=[가-힣]+구)", "", s, count=1)
 
 
+# 거래가 잡히는 주거 유형 전부. 아파트만 보면 K-apt에 아파트로 등록된 빌라가
+# '거래없음'으로 남아, 연립/다세대에는 거래가 있는데 아파트 지도에도 회색으로 뜬다.
+REAL_TYPES = ("apt", "rh", "off")
+
+
 def real_addr_keys():
-    """실거래 아파트 단지의 주소 키 집합 — 이 주소면 '거래 있는 단지'다"""
+    """실거래가 있는 단지의 주소 키 집합 — 주거 유형 전체를 본다"""
     keys = set()
-    for f in glob.glob(str(DATA / "hierarchy" / "*" / "apt" / "details" / "*.json")):
+    pats = [str(DATA / "hierarchy" / "*" / t / "details" / "*.json") for t in REAL_TYPES]
+    for f in [x for pat in pats for x in glob.glob(pat)]:
         try:
             rows = json.loads(Path(f).read_text(encoding="utf-8"))
         except Exception:
