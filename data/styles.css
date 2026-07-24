@@ -1696,6 +1696,13 @@ body {
   transition: all 0.2s;
 }
 
+/* 거래 없는 평형: 단지에는 존재하지만 해당 기간 거래가 없음 */
+.area-chip.no-deal {
+  border-style: dashed;
+  color: #9ca3af;
+  background: #fafafa;
+}
+
 .area-chip:hover {
   background: #f9fafb;
 }

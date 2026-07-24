@@ -1224,12 +1224,33 @@ function renderComplexDetail() {
     sidePanel.style.display = 'block';
 
     // 면적 필터·평형 칩 모두 공급면적 기준 (공급 정보가 없으면 전용으로 대체)
-    const validInGlobal = item.deals.filter(d => { const p = Math.round(basisArea(item, d.area) * 0.3025); return p >= state.globalArea.min && (state.globalArea.max >= CONFIG.AREA_MAX || p <= state.globalArea.max); });
-    const uniqueAreas = [...new Set(validInGlobal.map(d => basisDisplay(item, d.area)))].sort((a, b) => a - b);
+    const inGlobal = p => p >= state.globalArea.min && (state.globalArea.max >= CONFIG.AREA_MAX || p <= state.globalArea.max);
+    const validInGlobal = item.deals.filter(d => inGlobal(Math.round(basisArea(item, d.area) * 0.3025)));
+    const dealAreas = new Set(validInGlobal.map(d => basisDisplay(item, d.area)));
+    // 인허가에 등록된 단지의 '모든 주택형'을 칩으로 노출 (해당 기간에 거래가 없어도 표시)
+    const allAreas = new Set(dealAreas);
+    const supList = supplyTable && supplyTable[`${item.name}|${item.address}`];
+    if (supList) {
+        supList.forEach(([, sup]) => {
+            if (inGlobal(Math.round(sup * 0.3025))) {
+                allAreas.add(state.displayUnit === 'pyeong' ? Math.round(sup * 0.3025) : Math.round(sup));
+            }
+        });
+    }
+    const uniqueAreas = [...allAreas].sort((a, b) => a - b);
     areaFilter.innerHTML = '';
     if (uniqueAreas.length > 0) {
         const allChip = document.createElement('div'); allChip.className = `area-chip ${state.selectedArea === null ? 'active' : ''}`; allChip.textContent = '전체'; allChip.onclick = () => { state.selectedArea = null; renderComplexDetail(); }; areaFilter.appendChild(allChip);
-        uniqueAreas.forEach(area => { const chip = document.createElement('div'); chip.className = `area-chip ${state.selectedArea === area ? 'active' : ''}`; chip.textContent = state.displayUnit === 'pyeong' ? `${area}평` : `${area}㎡`; chip.onclick = () => { state.selectedArea = area; renderComplexDetail(); }; areaFilter.appendChild(chip); });
+        uniqueAreas.forEach(area => {
+            const chip = document.createElement('div');
+            // 거래가 없는 평형은 흐리게 — 단지에 존재하지만 이 기간엔 거래가 없다는 뜻
+            const noDeal = !dealAreas.has(area);
+            chip.className = `area-chip ${state.selectedArea === area ? 'active' : ''}${noDeal ? ' no-deal' : ''}`;
+            chip.textContent = state.displayUnit === 'pyeong' ? `${area}평` : `${area}㎡`;
+            if (noDeal) chip.title = '이 기간에 거래 내역이 없는 평형입니다';
+            chip.onclick = () => { state.selectedArea = area; renderComplexDetail(); };
+            areaFilter.appendChild(chip);
+        });
         areaFilter.style.display = 'flex';
     } else areaFilter.style.display = 'none';
     dataList.innerHTML = '';
@@ -1264,7 +1285,12 @@ function renderComplexDetail() {
         card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${byInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
     });
-    if (filtered.length === 0) dataList.innerHTML = '<div class="empty-state">해당 필터에 맞는 거래 내역이 없습니다.</div>';
+    if (filtered.length === 0) {
+        const noDealChip = state.selectedArea !== null && !dealAreas.has(state.selectedArea);
+        dataList.innerHTML = `<div class="empty-state">${noDealChip
+            ? '단지에 있는 평형이지만 선택한 기간에 거래가 없습니다.<br>기간을 넓혀 보세요.'
+            : '해당 필터에 맞는 거래 내역이 없습니다.'}</div>`;
+    }
 }
 
 // ==========================
