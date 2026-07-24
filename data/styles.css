@@ -787,6 +787,15 @@ body {
   font-size: 11px;
 }
 
+/* 서브라벨이 비어 있으므로 세로 여백을 줄여 작은 알약 형태로 */
+.level-marker.no-deal-marker .marker-body {
+  padding: 4px 10px;
+}
+
+.level-marker.no-deal-marker .marker-count {
+  display: none;
+}
+
 /* 건물연령 표식: 마커 위쪽 마름모 (경과년수 색) */
 .marker-age {
   position: absolute;
@@ -809,6 +818,15 @@ body {
 
 .level-marker.no-deal-marker .marker-label {
   font-size: 11px;
+}
+
+/* 서브라벨이 비어 있으므로 세로 여백을 줄여 작은 알약 형태로 */
+.level-marker.no-deal-marker .marker-body {
+  padding: 4px 10px;
+}
+
+.level-marker.no-deal-marker .marker-count {
+  display: none;
 }
 
 /* 건물연령 표식: 마커 위쪽 마름모 (경과년수 색) */
@@ -866,21 +884,24 @@ body {
 }
 
 /* 거래 유형 색상 — 매물 카드·마커와 동일 (부동산 유형별 색 구분은 사용하지 않음) */
-.filter-chip input[name="transactionType"][value="매매"]:checked + .chip-label {
+.filter-chip input[name="transactionType"][value="매매"]:checked + .chip-label,
+.filter-chip input[name="localTransactionType"][value="매매"]:checked + .chip-label {
   background: #c81e41;
   border-color: #c81e41;
   color: white;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
 }
 
-.filter-chip input[name="transactionType"][value="전세"]:checked + .chip-label {
+.filter-chip input[name="transactionType"][value="전세"]:checked + .chip-label,
+.filter-chip input[name="localTransactionType"][value="전세"]:checked + .chip-label {
   background: #1f66b5;
   border-color: #1f66b5;
   color: white;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-.filter-chip input[name="transactionType"][value="월세"]:checked + .chip-label {
+.filter-chip input[name="transactionType"][value="월세"]:checked + .chip-label,
+.filter-chip input[name="localTransactionType"][value="월세"]:checked + .chip-label {
   background: #158a4f;
   border-color: #158a4f;
   color: white;

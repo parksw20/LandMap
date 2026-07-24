@@ -704,7 +704,7 @@ async function updateMap(force = false) {
                 if (state.activeGungus !== gunguKeyStr || state.currentLevel !== 4 || extraForce) {
                     state.activeGungus = gunguKeyStr; state.currentLevel = 4;
                     const rows = await fetchAndMergeData(4, Array.from(gungusInView));
-                    renderMarkers(rows.concat(await noDealItems()), 4);
+                    renderMarkers(rows.concat(await noDealItems(rows)), 4);
                 }
             };
             await renderFor(force);
@@ -912,11 +912,10 @@ function createOverlayContent(item, level, groupCount = 1) {
     if (level === 4) {
         if (stats) { label = `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'}`; subLabel = formatPrice(stats.rep_avg_price); }
         else {
-            // 선택한 거래유형의 거래가 없는 단지 — 단지명을 보여주고 회색 처리
+            // 거래가 없는 단지 — 지도 라벨과 겹치지 않게 '거래없음'만 회색으로
             div.classList.add('no-deal-marker');
-            const nm = item.name || '';
-            label = nm.length > 9 ? nm.slice(0, 9) + '…' : nm;
-            subLabel = '거래없음';
+            label = '거래없음';
+            subLabel = '';
         }
     } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
     
@@ -1154,15 +1153,21 @@ async function loadNoDealApts() {
 
 // 화면 안의 '거래 이력 없는 아파트'를 마커용 항목 형태로 변환.
 // 실거래 기반 항목과 같은 모양(stats/deals)을 갖되 거래는 비어 있다.
-async function noDealItems() {
+async function noDealItems(existing) {
     if (state.selectedType !== 'apt' || !state.map) return [];
     await loadNoDealApts();
     const b = state.map.getBounds();
     const sw = b.getSouthWest(), ne = b.getNorthEast();
+    // 이미 실거래로 표시되는 단지는 제외한다.
+    // K-apt와 실거래의 단지명이 달라('분당 파크뷰' vs '파크뷰') 이름 비교로는 걸러지지 않으므로
+    // 좌표 근접(약 40m)으로 판정한다.
+    const near = (a, b2) => Math.abs(a[0] - b2[0]) < 0.00045 && Math.abs(a[1] - b2[1]) < 0.00036;
+    const shown = (existing || []).map(x => x.coords).filter(Boolean);
     const out = [];
     for (const a of (noDealApts || [])) {
         const [lng, lat] = a.coords;
         if (lng < sw.getLng() || lng > ne.getLng() || lat < sw.getLat() || lat > ne.getLat()) continue;
+        if (shown.some(c => near(c, a.coords))) continue;
         out.push({
             name: a.name, address: a.address, coords: a.coords,
             stats: { total: 0, sale: null, jeonse: null, monthly: null },
