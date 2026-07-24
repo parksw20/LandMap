@@ -703,7 +703,8 @@ async function updateMap(force = false) {
                 const gunguKeyStr = Array.from(gungusInView).sort().join('|');
                 if (state.activeGungus !== gunguKeyStr || state.currentLevel !== 4 || extraForce) {
                     state.activeGungus = gunguKeyStr; state.currentLevel = 4;
-                    renderMarkers(await fetchAndMergeData(4, Array.from(gungusInView)), 4);
+                    const rows = await fetchAndMergeData(4, Array.from(gungusInView));
+                    renderMarkers(rows.concat(await noDealItems()), 4);
                 }
             };
             await renderFor(force);
@@ -881,6 +882,7 @@ function sameLocation(jibun, address) {
 
 // 매물 그룹의 대표 건축년도 (거래들 중 유효값의 최빈)
 function repBuildYear(item) {
+    if (item.noDeal) return item.by || 0;   // 거래이력 없는 단지는 수집한 사용승인연도 사용
     if (!item.deals) return 0;
     const counts = {};
     item.deals.forEach(d => { if (d.by && d.by > 1900) counts[d.by] = (counts[d.by] || 0) + 1; });
@@ -1138,6 +1140,38 @@ let supplyTable = null;
 // 용적률·건폐율: 준공 후 바뀌지 않으므로 bldg_ratio.py가 미리 수집해 둔 값을 쓴다.
 // (파일에 없는 단지만 VWorld에 직접 조회 — 신축 등 수집 이후에 생긴 단지 대비)
 let ratioTable = null;
+// 실거래가 한 번도 없던 K-apt 등록 아파트 (no_deal_apts.py). 아파트 유형에서만 회색 마커로 표시.
+let noDealApts = null;
+
+async function loadNoDealApts() {
+    if (noDealApts !== null) return noDealApts;
+    try {
+        const res = await fetch(`./no_deal_apts.json?v=${DATA_VER}`);
+        noDealApts = res.ok ? await res.json() : [];
+    } catch (e) { noDealApts = []; }
+    return noDealApts;
+}
+
+// 화면 안의 '거래 이력 없는 아파트'를 마커용 항목 형태로 변환.
+// 실거래 기반 항목과 같은 모양(stats/deals)을 갖되 거래는 비어 있다.
+async function noDealItems() {
+    if (state.selectedType !== 'apt' || !state.map) return [];
+    await loadNoDealApts();
+    const b = state.map.getBounds();
+    const sw = b.getSouthWest(), ne = b.getNorthEast();
+    const out = [];
+    for (const a of (noDealApts || [])) {
+        const [lng, lat] = a.coords;
+        if (lng < sw.getLng() || lng > ne.getLng() || lat < sw.getLat() || lat > ne.getLat()) continue;
+        out.push({
+            name: a.name, address: a.address, coords: a.coords,
+            stats: { total: 0, sale: null, jeonse: null, monthly: null },
+            deals: [], noDeal: true, hh: a.hh, dg: a.dg, by: a.by
+        });
+        if (out.length >= 300) break;   // 과도한 마커 방지
+    }
+    return out;
+}
 
 async function loadBldgRatio() {
     if (ratioTable !== null) return ratioTable;
@@ -1208,7 +1242,7 @@ function renderComplexMeta(item) {
         if (cached.bc) parts.push(`건폐율 <b>${cached.bc}%</b>`);
     }
     // 세대수·주차대수 (아파트 단지정보 테이블이 있을 때만)
-    const ai = aptInfoTable && aptInfoTable[key];
+    const ai = (item.noDeal ? { hh: item.hh, dg: item.dg } : null) || (aptInfoTable && aptInfoTable[key]);
     if (ai) {
         if (ai.hh) parts.push(`세대수 <b>${ai.hh.toLocaleString()}세대</b>${ai.dg ? ` (${ai.dg}개동)` : ''}`);
         if (ai.pk) parts.push(`주차 <b>${ai.pk.toLocaleString()}대</b>${ai.hh ? ` (세대당 ${(ai.pk / ai.hh).toFixed(2)})` : ''}`);
@@ -1362,6 +1396,10 @@ function renderComplexDetail() {
         card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${byInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
     });
+    if (item.noDeal) {
+        dataList.innerHTML = '<div class="empty-state">실거래 신고 이력이 없는 단지입니다.<br>단지 정보만 표시됩니다.</div>';
+        return;
+    }
     if (filtered.length === 0) {
         const noDealChip = state.selectedArea !== null && !dealAreas.has(state.selectedArea);
         dataList.innerHTML = `<div class="empty-state">${noDealChip
