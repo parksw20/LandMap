@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>부동산 실거래가 시각화</title>
-  <link rel="stylesheet" href="./styles.css?v=14">
+  <link rel="stylesheet" href="./styles.css?v=15">
   <!-- Kakao Maps SDK -->
   <script type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=61feaec3994e05d0c9235d6b07bc5712&libraries=services,clusterer"></script>
@@ -198,14 +198,16 @@
           </div>
           <div class="range-slider-container">
             <div class="slider-track"></div>
-            <input type="range" id="area-min" min="0" max="200" value="0" step="1">
-            <input type="range" id="area-max" min="0" max="200" value="200" step="1">
+            <!-- 값이 아닌 '위치'(0~500)를 다룬다 — 구간별 비선형 스케일(app.js posToPyeong) -->
+            <input type="range" id="area-min" min="0" max="500" value="0" step="1">
+            <input type="range" id="area-max" min="0" max="500" value="500" step="1">
           </div>
           <div class="range-labels">
             <span>0평</span>
-            <span>50평</span>
+            <span>20평</span>
+            <span>40평</span>
+            <span>60평</span>
             <span>100평</span>
-            <span>150평</span>
             <span>200평+</span>
           </div>
         </div>
@@ -255,9 +257,9 @@
     </div>
   </div>
 
-  <script src="./config.local.js?v=14"></script>
-  <script src="./config.pages.js?v=14"></script>
-  <script src="./app.js?v=14"></script>
+  <script src="./config.local.js?v=15"></script>
+  <script src="./config.pages.js?v=15"></script>
+  <script src="./app.js?v=15"></script>
 </body>
 
 </html>

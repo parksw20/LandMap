@@ -70,6 +70,10 @@ const CONFIG = {
     DEAL_COLORS: { sale: '#9b1932', jeonse: '#234a70', monthly: '#1b5c37' },
     // 면적 슬라이더 상한(평) — 이 값이면 '이상' 무제한으로 취급
     AREA_MAX: 200,
+    // 구간별 비선형 눈금 — 실사용이 몰리는 20~40평에 화면 폭을 더 준다.
+    // 각 구간이 트랙의 1/5(위치 100단위)을 차지한다.
+    AREA_STOPS: [0, 20, 40, 60, 100, 200],
+    AREA_POS_MAX: 500,
     // 전월세(전세/월세) 실거래가 제공되는 유형. 나머지는 국토부가 매매만 공개함.
     RENT_SUPPORTED: new Set(['apt', 'rh', 'sh', 'off']),
     // 정비사업 추진단계별 색 — 무지개색 순서 (초기 빨강 → 착공 보라)
@@ -439,13 +443,15 @@ function setupEventListeners() {
     const minRange = document.getElementById('area-min'), maxRange = document.getElementById('area-max'), rangeText = document.getElementById('area-range-text');
     if (minRange && maxRange) {
         const updateSlider = () => {
-            let min = parseInt(minRange.value), max = parseInt(maxRange.value);
-            if (min > max) [min, max] = [max, min];
+            let p1 = parseInt(minRange.value), p2 = parseInt(maxRange.value);
+            if (p1 > p2) [p1, p2] = [p2, p1];
+            let min = posToPyeong(p1), max = posToPyeong(p2);
             state.globalArea = { min, max };
             rangeText.textContent = `${min}평 ~ ${max >= CONFIG.AREA_MAX ? CONFIG.AREA_MAX + '평+' : max + '평'}`;
             const track = document.querySelector('.slider-track');
-            const p1 = (min / CONFIG.AREA_MAX) * 100, p2 = (max / CONFIG.AREA_MAX) * 100;
-            track.style.background = `linear-gradient(to right, #e5e7eb ${p1}%, var(--primary-color) ${p1}%, var(--primary-color) ${p2}%, #e5e7eb ${p2}%)`;
+            // 트랙 채움은 화면 '위치' 기준 (값 기준으로 하면 비선형이라 손잡이와 어긋남)
+            const t1 = (p1 / CONFIG.AREA_POS_MAX) * 100, t2 = (p2 / CONFIG.AREA_POS_MAX) * 100;
+            track.style.background = `linear-gradient(to right, #e5e7eb ${t1}%, var(--primary-color) ${t1}%, var(--primary-color) ${t2}%, #e5e7eb ${t2}%)`;
             updateMap(true);
             // 매물 선택 상태에서 필터를 바꾸면 우측 상세 목록도 함께 갱신
             if (state.selectedComplex) renderComplexDetail();
@@ -1105,6 +1111,17 @@ async function loadSupplyArea() {
         supplyTable = res.ok ? await res.json() : {};
     } catch (e) { supplyTable = {}; }
     return supplyTable;
+}
+
+// 면적 슬라이더: 화면 위치(0~AREA_POS_MAX) → 평.
+// AREA_STOPS 구간이 트랙을 균등 분할하므로, 거래가 몰리는 20~40평이 넓게 잡힌다.
+// (선형 200평 스케일에서는 20~40평이 트랙의 10%뿐이라 조작이 어려움)
+function posToPyeong(pos) {
+    const stops = CONFIG.AREA_STOPS, segs = stops.length - 1;
+    const per = CONFIG.AREA_POS_MAX / segs;              // 구간당 위치 폭
+    const i = Math.min(Math.floor(pos / per), segs - 1); // 속한 구간
+    const ratio = (pos - i * per) / per;
+    return Math.round(stops[i] + (stops[i + 1] - stops[i]) * ratio);
 }
 
 // 표기·필터의 기준 면적(㎡): 공급면적이 있으면 공급, 없으면 전용으로 대체.
