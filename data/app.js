@@ -887,9 +887,9 @@ function createOverlayContent(item, level, groupCount = 1) {
     const stats = item.stats[targetType]; let label = "", subLabel = "";
     // 마커 표기 면적도 공급면적 기준 (없으면 전용)
     if (level === 4) {
-        if (stats) { label = `${basisDisplay(item, stats.rep_area)}${state.displayUnit === 'pyeong' ? '평' : '㎡'}`; subLabel = formatPrice(stats.rep_avg_price); }
+        if (stats) { label = `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'}`; subLabel = formatPrice(stats.rep_avg_price); }
         else { label = "내역없음"; subLabel = "-"; }
-    } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${basisDisplay(item, stats.rep_area)}${state.displayUnit === 'pyeong' ? '평' : '㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
+    } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
     
     let markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
     let arrowColor = isSelected ? '#1e3a8a' : themeColor;
@@ -984,7 +984,10 @@ function showTooltip(item, level, pos) {
     state.tooltip.setPosition(pos); state.tooltip.setMap(state.map);
 }
 
-function formatPrice(val) { if (val >= 10000) return `${Math.round(val / 1000) / 10}억`; return val.toLocaleString() + '만'; }
+// 숫자 천단위 콤마 (면적·금액용 — 연도에는 쓰지 않는다)
+function nf(v) { return Number(v).toLocaleString(); }
+
+function formatPrice(val) { if (val >= 10000) return `${nf(Math.round(val / 1000) / 10)}억`; return nf(val) + '만'; }
 
 // 아파트 시세 월별 추이 차트 — 매매/전세/월세 3계열, 리스트 내 거래유형·평형 필터 연동
 // 전체 선택 시: 평당가(만원/평, 면적이 달라도 비교 가능) / 특정 평형 선택 시: 실거래가(억)
@@ -1246,7 +1249,7 @@ function renderComplexDetail() {
             // 거래가 없는 평형은 흐리게 — 단지에 존재하지만 이 기간엔 거래가 없다는 뜻
             const noDeal = !dealAreas.has(area);
             chip.className = `area-chip ${state.selectedArea === area ? 'active' : ''}${noDeal ? ' no-deal' : ''}`;
-            chip.textContent = state.displayUnit === 'pyeong' ? `${area}평` : `${area}㎡`;
+            chip.textContent = state.displayUnit === 'pyeong' ? `${nf(area)}평` : `${nf(area)}㎡`;
             if (noDeal) chip.title = '이 기간에 거래 내역이 없는 평형입니다';
             chip.onclick = () => { state.selectedArea = area; renderComplexDetail(); };
             areaFilter.appendChild(chip);
@@ -1271,10 +1274,10 @@ function renderComplexDetail() {
         const pLand = deal.land ? Math.round(deal.land * 0.3025) : 0;
         // 카드는 실제 사용 면적인 '전용'을 강조하고, 공급면적은 보조로 병기
         // (필터·마커·평형 칩은 시중 표기에 맞춰 공급 기준)
-        let info = `<span class="excl-area">전용 ${pArea}평</span> <span class="area-sub">(${deal.area}㎡)</span>`;
+        let info = `<span class="excl-area">전용 ${nf(pArea)}평</span> <span class="area-sub">(${nf(deal.area)}㎡)</span>`;
         const sup = supplyAreaOf(item, deal.area);
-        if (sup > 0) info += ` <span class="supply-area">· 공급 ${Math.round(sup * 0.3025)}평 (${sup}㎡)</span>`;
-        if (pLand > 0) info += `<span class="area-sub">, 대지 ${pLand}평 (${deal.land}㎡)</span>`;
+        if (sup > 0) info += ` <span class="supply-area">· 공급 ${nf(Math.round(sup * 0.3025))}평 (${nf(sup)}㎡)</span>`;
+        if (pLand > 0) info += `<span class="area-sub">, 대지 ${nf(pLand)}평 (${nf(deal.land)}㎡)</span>`;
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
         // 주소는 상단 헤더에만 표시 (동 중심 묶음은 지역을 훑어보는 용도라 매물별 지번은 생략)
@@ -1762,13 +1765,13 @@ function showClickAddress(latlng) {
                 if (st) rows.push(['구조', BLDG_STRCT_MAP[st] || `코드 ${st}`]);
                 const gf = num(p.grnd_flr), uf = num(p.ugrnd_flr);
                 if (gf || uf) rows.push(['층수', `지상 ${gf}층${uf ? ` / 지하 ${uf}층` : ''}`]);
-                const m2py = v => `${v.toLocaleString()}㎡ (${(v * 0.3025).toFixed(1)}평)`;
+                const m2py = v => `${nf(v)}㎡ (${nf((v * 0.3025).toFixed(1))}평)`;
                 if (num(p.totalarea)) rows.push(['연면적', m2py(num(p.totalarea))]);
                 if (num(p.archarea)) rows.push(['건축면적', m2py(num(p.archarea))]);
                 if (num(p.platarea)) rows.push(['대지면적', m2py(num(p.platarea))]);
                 if (num(p.height)) rows.push(['건물높이', `${num(p.height)}m`]);
-                if (num(p.vl_rat)) rows.push(['용적률', `${num(p.vl_rat)}%`]);
-                if (num(p.bc_rat)) rows.push(['건폐율', `${num(p.bc_rat)}%`]);
+                if (num(p.vl_rat)) rows.push(['용적률', `${nf(num(p.vl_rat))}%`]);
+                if (num(p.bc_rat)) rows.push(['건폐율', `${nf(num(p.bc_rat))}%`]);
                 if (apFmt) rows.push(['사용승인일자', apFmt + (ap.length >= 4 ? ` (${new Date().getFullYear() - parseInt(ap.slice(0, 4))}년차)` : '')]);
                 if (!rows.length) { showEmpty(); return; }
                 el.innerHTML = `<div class="landuse-title">건물 정보</div>` +
