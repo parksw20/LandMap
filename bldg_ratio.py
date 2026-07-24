@@ -73,13 +73,29 @@ def num(v):
         return 0
 
 
+# 원본에 용적률 271,749%·건폐율 80,808% 같은 오류값이 섞여 있어 범위를 제한한다.
+# (실측 99.5분위: 용적률 1,032% / 건폐율 80%)
+VL_RANGE = (30, 1500)    # 건폐율은 100% 초과가 물리적으로 불가능
+BC_RANGE = (5, 100)
+
+
+def sane(vl, bc):
+    """오류값 제거 — 범위를 벗어난 항목만 0으로 떨어뜨린다"""
+    if not (VL_RANGE[0] <= vl <= VL_RANGE[1]):
+        vl = 0
+    if not (BC_RANGE[0] <= bc <= BC_RANGE[1]):
+        bc = 0
+    return vl, bc
+
+
 def fetch_ratio(lng, lat, build_year):
     """(용적률, 건폐율) — 못 찾으면 (0, 0)"""
     # 1) 점 조회: 좌표가 건물 안이면 가장 정확하다
     for f in vw({"data": "LT_C_BLDGINFO", "geomFilter": f"POINT({lng} {lat})", "size": "1"}):
         p = f["properties"]
-        if num(p.get("vl_rat")) or num(p.get("bc_rat")):
-            return num(p.get("vl_rat")), num(p.get("bc_rat"))
+        vl, bc = sane(num(p.get("vl_rat")), num(p.get("bc_rat")))
+        if vl or bc:
+            return vl, bc
     # 2) 좌표가 건물 밖(도로·공지)인 경우 — 주변에서 '이 단지의 건물'만 찾는다
     if not build_year:
         return 0, 0
@@ -93,7 +109,7 @@ def fetch_ratio(lng, lat, build_year):
             continue
         if abs(int(ap) - build_year) > 1:
             continue
-        vl, bc = num(p.get("vl_rat")), num(p.get("bc_rat"))
+        vl, bc = sane(num(p.get("vl_rat")), num(p.get("bc_rat")))
         if not vl and not bc:
             continue
         area = num(p.get("totalarea"))
