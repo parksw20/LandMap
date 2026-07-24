@@ -227,7 +227,11 @@ function setupEventListeners() {
         
         await updateMap(true); 
         
-        if (state.selectedComplex) {
+        if (state.selectedComplex && state.selectedComplex.noDeal) {
+            // 거래이력 없는 단지는 allLoadedData(실거래 단지)에 없다.
+            // 단지 정보는 기간과 무관하므로 그대로 다시 그린다.
+            renderComplexDetail();
+        } else if (state.selectedComplex) {
             const currentComplex = state.allLoadedData.find(i => 
                 i.name === state.selectedComplex.name && i.address === state.selectedComplex.address
             );

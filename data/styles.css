@@ -777,21 +777,8 @@ body {
   font-weight: 800;
 }
 
-/* 선택한 거래유형의 거래가 없는 단지 마커 — 존재는 하지만 거래는 없음 */
-.level-marker.no-deal-marker .marker-body {
-  opacity: 0.75;
-  border-style: dashed;
-}
-
-.level-marker.no-deal-marker .marker-label {
-  font-size: 11px;
-}
-
-/* 서브라벨이 비어 있으므로 세로 여백을 줄여 작은 알약 형태로 */
-.level-marker.no-deal-marker .marker-body {
-  padding: 4px 10px;
-}
-
+/* 거래 없는 단지 마커 — 형태는 일반 마커와 동일, 색만 회색(JS에서 지정).
+   서브라벨이 비어 있으므로 해당 줄만 감춘다. */
 .level-marker.no-deal-marker .marker-count {
   display: none;
 }
@@ -808,25 +795,6 @@ body {
   border-radius: 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
   z-index: 3;
-}
-
-/* 선택한 거래유형의 거래가 없는 단지 마커 — 존재는 하지만 거래는 없음 */
-.level-marker.no-deal-marker .marker-body {
-  opacity: 0.75;
-  border-style: dashed;
-}
-
-.level-marker.no-deal-marker .marker-label {
-  font-size: 11px;
-}
-
-/* 서브라벨이 비어 있으므로 세로 여백을 줄여 작은 알약 형태로 */
-.level-marker.no-deal-marker .marker-body {
-  padding: 4px 10px;
-}
-
-.level-marker.no-deal-marker .marker-count {
-  display: none;
 }
 
 /* 건물연령 표식: 마커 위쪽 마름모 (경과년수 색) */
