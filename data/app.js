@@ -812,10 +812,9 @@ function renderMarkers(data, level) {
         // 선택한 거래유형에 해당 거래가 없어도 단지는 계속 표시한다(회색 마커).
         // 상세 레벨에서만 — 상위 레벨은 지역 요약이라 빈 지역을 띄울 이유가 없다.
         if (!enabled.length) return level === 4 && !isApproxGroup(item);
-        // 면적 필터는 공급면적 기준 (공급 정보가 없으면 전용으로 대체).
-        // 최댓값 하나로 판정하면 '매매 32평·전세 45평'이 통째로 걸러지므로 유형별로 본다.
-        return enabled.some(([k]) =>
-            inAreaFilter(Math.round(basisArea(item, item.stats[k].rep_area) * 0.3025)));
+        // 면적 필터는 공급면적 기준(없으면 전용) — 표시할 유형의 면적으로 판정한다.
+        // 다른 유형으로 통과시키면 30~34평 필터에 24평 마커가 뜬다.
+        return inAreaFilter(markerPyeong(item));
     });
     // 레벨4: 동일 좌표에 여러 그룹이 겹치면 하나의 마커 + 개수 배지로 묶는다
     let renderList; // [ [대표item, 그룹배열] ]
@@ -919,15 +918,19 @@ function enabledTypes(item) {
         .filter(([k, ko]) => state.filters[ko] && item.stats[k]);
 }
 
-// 마커에 표시할 거래유형 — 면적 필터 범위에 드는 유형을 우선한다.
-// (필터는 '어느 유형이든 범위에 들면 통과'인데 라벨이 다른 유형을 쓰면
-//  30~34평 필터에 24평 매물이 뜨는 것처럼 보인다)
+// 마커에 표시할 거래유형 — 매매 > 전세 > 월세 우선순위.
+// 같은 단지라도 유형별 대표면적이 달라서(매매 41평 / 전세 26평) 범위에 드는 유형을
+// 우선하면 매매가 있는데도 월세가 표시된다. 우선순위를 기준으로 삼고,
+// 면적 필터도 '이 유형'으로 판정해 라벨과 필터가 항상 일치하게 한다.
 function pickTargetType(item) {
     const enabled = enabledTypes(item);
-    if (!enabled.length) return "";
-    const hit = enabled.find(([k]) =>
-        inAreaFilter(Math.round(basisArea(item, item.stats[k].rep_area) * 0.3025)));
-    return (hit || enabled[0])[0];
+    return enabled.length ? enabled[0][0] : "";
+}
+
+// 마커에 실제로 표시될 면적(평) — 필터 판정도 이 값으로 한다
+function markerPyeong(item) {
+    const t = pickTargetType(item);
+    return t ? Math.round(basisArea(item, item.stats[t].rep_area) * 0.3025) : 0;
 }
 
 function createOverlayContent(item, level, groupCount = 1) {
