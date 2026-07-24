@@ -106,8 +106,10 @@ class HierarchyBuilder:
             f.write("[\n")
             for i, item in enumerate(data):
                 f.write("  {\n")
-                f.write(f'    "name": "{item["name"]}",\n')
-                f.write(f'    "address": "{item["address"]}",\n')
+                # 반드시 json.dumps로 — 단지명에 따옴표가 들어가면(예: 'THE"S (다세대)')
+                # 직접 보간 시 JSON이 깨져 해당 구 전체 데이터가 로드되지 않는다
+                f.write(f'    "name": {json.dumps(item["name"], ensure_ascii=False)},\n')
+                f.write(f'    "address": {json.dumps(item["address"], ensure_ascii=False)},\n')
                 f.write(f'    "coords": {json.dumps(item["coords"])},\n')
                 f.write(f'    "stats": {json.dumps(item["stats"], ensure_ascii=False)},\n')
                 f.write('    "deals": [\n')

@@ -65,8 +65,22 @@ def fetch_bjd_codes():
     return out
 
 
+# 공급면적(전용+주거공용)으로 표기하는 용도들.
+# 단독/다가구·토지·상가·공장은 공급면적 개념을 쓰지 않으므로 제외한다.
+SUPPLY_PURPS = {"아파트", "연립주택", "다세대주택", "오피스텔", "도시형생활주택"}
+
+# 우리 부동산 유형 → 인허가 용도 (분양권은 아파트 분양이므로 아파트로 대조)
+TYPE_PURPS = {
+    "apt": {"아파트"},
+    "rh": {"연립주택", "다세대주택", "도시형생활주택"},
+    "off": {"오피스텔"},
+    "silv": {"아파트"},
+}
+
+
 def fetch_dong_areas(bjd):
-    """법정동 단위 전유공용면적 전체 → [(platPlc, 전용, 공급)] (아파트 주택형만)"""
+    """법정동 단위 전유공용면적 → [(platPlc, 전용, 공급, 용도)]
+    v2: 용도를 함께 저장해 아파트 외 유형(연립·다세대·오피스텔)도 지원"""
     sigungu, bjdong = bjd[:5], bjd[5:10]
     rows, page = [], 1
     while page <= 60:
@@ -83,7 +97,7 @@ def fetch_dong_areas(bjd):
         page += 1
         time.sleep(0.03)
 
-    g = defaultdict(lambda: {"ex": 0.0, "pub": 0.0, "plc": "", "apt": False})
+    g = defaultdict(lambda: {"ex": 0.0, "pub": 0.0, "plc": "", "purps": ""})
     for x in rows:
         key = x.get("mgmTypeOulnPk")
         if key is None:
@@ -96,15 +110,22 @@ def fetch_dong_areas(bjd):
         e["plc"] = x.get("platPlc") or e["plc"]
         if x.get("exposPubuseGbCdNm") == "전유":
             e["ex"] += a
-            if (x.get("purpsCdNm") or "") == "아파트":
-                e["apt"] = True
+            p = (x.get("purpsCdNm") or "").strip()
+            if p in SUPPLY_PURPS:
+                e["purps"] = p
         elif x.get("mainAtchGbCdNm") == "주건축물":
             # 주거공용만 공급면적에 포함 (부속건축물=지하주차장 등은 계약면적)
             e["pub"] += a
     out = []
     for v in g.values():
-        if v["apt"] and v["ex"] > 0 and v["pub"] > 0:
-            out.append([v["plc"], round(v["ex"], 2), round(v["ex"] + v["pub"], 2)])
+        if not (v["purps"] and v["ex"] > 0 and v["pub"] > 0):
+            continue
+        sup = v["ex"] + v["pub"]
+        # 전용률이 상식 범위를 벗어나면 집계 오류(부대시설이 주거공용에 섞인 경우 등) → 제외.
+        # 주거용 전용률은 통상 60~85%다.
+        if not (0.40 <= v["ex"] / sup <= 0.95):
+            continue
+        out.append([v["plc"], round(v["ex"], 2), round(sup, 2), v["purps"]])
     return out
 
 
@@ -135,12 +156,12 @@ def region_key(addr):
     return ""
 
 
-def load_our_apts():
-    """실거래 아파트 단지: (단지명, 주소) → {법정동, 전용면적 집합}
+def load_our_complexes(htype):
+    """실거래 단지: (단지명, 주소) → {지역키, 전용면적 집합}
     인허가 주소(대지 지번)와 실거래 주소(대표 지번)가 다른 경우가 많아
     주소가 아니라 '전용면적 세트'로 매칭한다. (예: 텐즈힐2단지 = 인허가 12-37 / 실거래 811)"""
     out = {}
-    for f in glob.glob(str(DATA / "hierarchy" / "*" / "apt" / "details" / "*.json")):
+    for f in glob.glob(str(DATA / "hierarchy" / "*" / htype / "details" / "*.json")):
         for x in json.loads(Path(f).read_text(encoding="utf-8")):
             name, addr = x.get("name", ""), x.get("address", "")
             if not name or not addr:
@@ -201,8 +222,12 @@ def match_by_areas(our_areas, cand_groups):
 def main():
     CACHE_DIR.mkdir(exist_ok=True)
     areac = json.loads(AREA_CACHE.read_text(encoding="utf-8")) if AREA_CACHE.exists() else {}
-    ours = load_our_apts()
-    print(f"[i] 실거래 아파트 단지 주소 {len(ours)}개")
+    # v1 캐시(용도 없음)는 재수집 대상 — 아파트만 담겨 있어 다른 유형을 지원할 수 없다
+    if areac:
+        sample = next((v for v in areac.values() if v), None)
+        if sample and len(sample[0]) < 4:
+            print("[i] 구형 캐시(용도 없음) 감지 → 전 동 재수집")
+            areac = {}
 
     stop = None
     try:
@@ -223,35 +248,56 @@ def main():
     finally:
         AREA_CACHE.write_text(json.dumps(areac, ensure_ascii=False), encoding="utf-8")
 
-    # 인허가 단지: 법정동 → {주소: [(전용, 공급)]}
-    by_region = defaultdict(lambda: defaultdict(list))
+    # 용도별 인허가 색인: 용도 → 지역키 → {주소: [(전용, 공급)]}
+    by_purps = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
     for rows in areac.values():
-        for plc, ex, sup in rows:
-            by_region[region_key(plc)][plc].append((ex, sup))
-
-    out = {}
-    for (name, addr), info in ours.items():
-        cands = by_region.get(info["region"])
-        if not cands or not info["areas"]:
-            continue
-        plc = match_by_areas(info["areas"], cands)
-        if not plc:
-            continue
-        # 같은 전용면적 중복 제거 (동일 주택형이 여러 동에 반복)
-        seen, uniq = set(), []
-        for ex, sup in sorted(cands[plc]):
-            k = round(ex, 1)
-            if k in seen:
+        for rec in rows:
+            if len(rec) < 4:
                 continue
-            seen.add(k)
-            uniq.append([ex, sup])
-        if uniq:
-            out[f"{name}|{addr}"] = uniq
+            plc, ex, sup, purps = rec
+            # 캐시에 남아 있는 비정상 전용률도 여기서 한 번 더 거른다 (재수집 불필요)
+            if not (sup > 0 and 0.40 <= ex / sup <= 0.95):
+                continue
+            by_purps[purps][region_key(plc)][plc].append((ex, sup))
+
+    out, stats = {}, {}
+    for htype, purps_set in TYPE_PURPS.items():
+        ours = load_our_complexes(htype)
+        if not ours:
+            continue
+        # 이 유형이 참조할 인허가 후보를 지역키 단위로 합친다
+        merged = defaultdict(lambda: defaultdict(list))
+        for pu in purps_set:
+            for region, plcs in by_purps.get(pu, {}).items():
+                for plc, types in plcs.items():
+                    merged[region][plc].extend(types)
+        hit = 0
+        for (name, addr), info in ours.items():
+            cands = merged.get(info["region"])
+            if not cands or not info["areas"]:
+                continue
+            plc = match_by_areas(info["areas"], cands)
+            if not plc:
+                continue
+            # 같은 전용면적 중복 제거 (동일 주택형이 여러 동에 반복)
+            seen, uniq = set(), []
+            for ex, sup in sorted(cands[plc]):
+                k = round(ex, 1)
+                if k in seen:
+                    continue
+                seen.add(k)
+                uniq.append([ex, sup])
+            if uniq:
+                out.setdefault(f"{name}|{addr}", uniq)
+                hit += 1
+        stats[htype] = (hit, len(ours))
+        print(f"  [{htype}] 공급면적 확보 {hit}/{len(ours)}")
+
     OUT.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
 
     if stop:
         print(f"[!] {stop} — 진행분 저장 후 종료 (재실행 시 이어서 진행)")
-    print(f"[완료] 공급면적 확보 단지 {len(out)}/{len(ours)} → {OUT.name} | API 요청 {apt_info.req_count}건")
+    print(f"[완료] 전체 {len(out)}개 단지 → {OUT.name} | API 요청 {apt_info.req_count}건")
 
 
 if __name__ == "__main__":
