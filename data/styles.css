@@ -777,6 +777,16 @@ body {
   font-weight: 800;
 }
 
+/* 선택한 거래유형의 거래가 없는 단지 마커 — 존재는 하지만 거래는 없음 */
+.level-marker.no-deal-marker .marker-body {
+  opacity: 0.75;
+  border-style: dashed;
+}
+
+.level-marker.no-deal-marker .marker-label {
+  font-size: 11px;
+}
+
 /* 건물연령 표식: 마커 위쪽 마름모 (경과년수 색) */
 .marker-age {
   position: absolute;

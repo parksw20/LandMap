@@ -17,6 +17,7 @@ const state = {
     filters: { '매매': true, '전세': true, '월세': true },
     localFilters: { '매매': true, '전세': true, '월세': true },
     globalArea: { min: 0, max: 200 },
+    allAreaTable: {},   // '단지명|주소' → 전 기간 전용면적 목록
     displayUnit: 'pyeong', // 'pyeong' | 'm2'
     hoveredItem: null,
     selectedComplex: null,
@@ -360,7 +361,7 @@ function setupEventListeners() {
     if (rvCloseBtn) rvCloseBtn.onclick = () => { document.getElementById('roadview-panel').style.display = 'none'; hideRvMapPin(); };
 
     document.querySelectorAll('input[name="housingType"]').forEach(r => {
-        r.onchange = (e) => { state.selectedType = e.target.value; state.selectedComplex = null; document.getElementById('data-section').style.display = 'none'; applyTxAvailability(); updateMap(true); };
+        r.onchange = (e) => { state.selectedType = e.target.value; state.selectedComplex = null; state.allAreaTable = {}; document.getElementById('data-section').style.display = 'none'; applyTxAvailability(); updateMap(true); };
     });
 
     document.querySelectorAll('input[name="transactionType"]').forEach(c => {
@@ -738,7 +739,7 @@ async function loadGlobalSearchIndex() {
 async function fetchAndMergeData(level, gunguList = []) {
     const allResults = []; if (state.selectedMonths.length === 0) return [];
     for (const ym of state.selectedMonths) {
-        if (level === 4) { for (const gunguKey of gunguList) allResults.push(...(await loadDetailShard(ym, gunguKey))); }
+        if (level === 4) { for (const gunguKey of gunguList) { await loadAreaShard(gunguKey); allResults.push(...(await loadDetailShard(ym, gunguKey))); } }
         else allResults.push(...(await loadSummaryData(ym, level)));
     }
     const mergedMap = new Map();
@@ -773,6 +774,21 @@ async function loadSummaryData(ym, level) {
     try { const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/${fileMap[level]}?v=${DATA_VER}`); const data = await res.json(); return (state.levelData[cacheKey] = data); } catch (e) { return []; }
 }
 
+// 단지별 '전 기간' 주택형 목록 (complex_areas.py 생성, 구 단위 샤드).
+// 선택 기간에 거래가 없어도 단지에 어떤 평형이 있는지 보여주기 위해 사용한다.
+const areaShardLoaded = {};
+
+async function loadAreaShard(gunguKey) {
+    const ck = `${state.selectedType}_${gunguKey}`;
+    if (areaShardLoaded[ck]) return;
+    areaShardLoaded[ck] = true;
+    try {
+        const res = await fetch(`./areas/${state.selectedType}/${gunguKey}.json?v=${DATA_VER}`);
+        if (!res.ok) return;
+        Object.assign(state.allAreaTable, await res.json());
+    } catch (e) { /* 없으면 거래 기반 평형만 사용 */ }
+}
+
 async function loadDetailShard(ym, gunguKey) {
     const cacheKey = `${ym}_${state.selectedType}_${gunguKey}`; if (state.detailShards[cacheKey]) return state.detailShards[cacheKey];
     try { const res = await fetch(`./hierarchy/${ym}/${state.selectedType}/details/${gunguKey}.json?v=${DATA_VER}`); const data = await res.json(); return (state.detailShards[cacheKey] = data); } catch (e) { return []; }
@@ -785,7 +801,12 @@ function renderMarkers(data, level) {
         ['sale', 'jeonse', 'monthly'].forEach(t => { if (state.filters[t === 'sale' ? '매매' : (t === 'jeonse' ? '전세' : '월세')] && s[t]) maxRepArea = Math.max(maxRepArea, s[t].rep_area); });
         // 면적 필터는 공급면적 기준 (공급 정보가 없으면 전용으로 대체)
         if (maxRepArea > 0) { const p = Math.round(basisArea(item, maxRepArea) * 0.3025); if (!(p >= state.globalArea.min && (state.globalArea.max >= CONFIG.AREA_MAX || p <= state.globalArea.max))) return false; }
-        return (state.filters['매매'] && s.sale) || (state.filters['전세'] && s.jeonse) || (state.filters['월세'] && s.monthly);
+        // 선택한 거래유형에 해당 거래가 없어도 단지는 계속 표시한다(회색 마커).
+        // 상세 레벨에서만 — 상위 레벨은 지역 요약이라 빈 지역을 띄울 이유가 없다.
+        if (!((state.filters['매매'] && s.sale) || (state.filters['전세'] && s.jeonse) || (state.filters['월세'] && s.monthly))) {
+            return level === 4 && !isApproxGroup(item);
+        }
+        return true;
     });
     // 레벨4: 동일 좌표에 여러 그룹이 겹치면 하나의 마커 + 개수 배지로 묶는다
     let renderList; // [ [대표item, 그룹배열] ]
@@ -888,9 +909,17 @@ function createOverlayContent(item, level, groupCount = 1) {
     // 마커 표기 면적도 공급면적 기준 (없으면 전용)
     if (level === 4) {
         if (stats) { label = `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'}`; subLabel = formatPrice(stats.rep_avg_price); }
-        else { label = "내역없음"; subLabel = "-"; }
+        else {
+            // 선택한 거래유형의 거래가 없는 단지 — 단지명을 보여주고 회색 처리
+            div.classList.add('no-deal-marker');
+            const nm = item.name || '';
+            label = nm.length > 9 ? nm.slice(0, 9) + '…' : nm;
+            subLabel = '거래없음';
+        }
     } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
     
+    const noDeal = level === 4 && !stats;
+    if (noDeal) themeColor = '#9ca3af';
     let markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
     let arrowColor = isSelected ? '#1e3a8a' : themeColor;
     // 위치 미확정 묶음(동 중심): 회색 빗금 + 점선 테두리로 실위치 마커와 구분
@@ -1251,7 +1280,8 @@ function renderComplexDetail() {
     const dealAreas = new Set(validInGlobal.map(d => basisDisplay(item, d.area)));
     // 인허가에 등록된 단지의 '모든 주택형'을 칩으로 노출 (해당 기간에 거래가 없어도 표시)
     const allAreas = new Set(dealAreas);
-    const supList = supplyTable && supplyTable[`${item.name}|${item.address}`];
+    const ckey = `${item.name}|${item.address}`;
+    const supList = supplyTable && supplyTable[ckey];
     if (supList) {
         supList.forEach(([, sup]) => {
             if (inGlobal(Math.round(sup * 0.3025))) {
@@ -1259,6 +1289,11 @@ function renderComplexDetail() {
             }
         });
     }
+    // 인허가 정보가 없는 단지도 전 기간 거래 이력으로 평형 구성을 보여준다
+    (state.allAreaTable[ckey] || []).forEach(ex => {
+        const p = Math.round(basisArea(item, ex) * 0.3025);
+        if (inGlobal(p)) allAreas.add(basisDisplay(item, ex));
+    });
     const uniqueAreas = [...allAreas].sort((a, b) => a - b);
     areaFilter.innerHTML = '';
     if (uniqueAreas.length > 0) {
