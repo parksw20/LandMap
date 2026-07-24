@@ -1135,6 +1135,18 @@ async function loadAptInfo() {
 // 공급면적 테이블: "단지명|주소" → [[전용㎡, 공급㎡], ...] (supply_area.py 생성)
 // 실거래는 전용면적만 제공하므로, 주택인허가의 전유+주거공용으로 산출한 공급면적을 병기한다.
 let supplyTable = null;
+// 용적률·건폐율: 준공 후 바뀌지 않으므로 bldg_ratio.py가 미리 수집해 둔 값을 쓴다.
+// (파일에 없는 단지만 VWorld에 직접 조회 — 신축 등 수집 이후에 생긴 단지 대비)
+let ratioTable = null;
+
+async function loadBldgRatio() {
+    if (ratioTable !== null) return ratioTable;
+    try {
+        const res = await fetch(`./bldg_ratio.json?v=${DATA_VER}`);
+        ratioTable = res.ok ? await res.json() : {};
+    } catch (e) { ratioTable = {}; }
+    return ratioTable;
+}
 
 async function loadSupplyArea() {
     if (supplyTable !== null) return supplyTable;
@@ -1205,14 +1217,21 @@ function renderComplexMeta(item) {
     el.style.display = parts.length ? 'block' : 'none';
 
     // 테이블 최초 1회 로드 후 재렌더 (세대수/주차 + 공급면적)
-    if (state.selectedType === 'apt' && (aptInfoTable === null || supplyTable === null)) {
-        Promise.all([loadAptInfo(), loadSupplyArea()]).then(() => {
+    if (aptInfoTable === null || supplyTable === null || ratioTable === null) {
+        Promise.all([loadAptInfo(), loadSupplyArea(), loadBldgRatio()]).then(() => {
             const cur = state.selectedComplex;
             if (cur && `${cur.name}|${cur.address}` === key) { renderComplexMeta(cur); renderComplexDetail(); }
         });
     }
 
-    // 아직 조회 전이면 VWorld에서 1회 조회 후 다시 그린다 (위치미상 묶음은 좌표가 동 중심이라 제외)
+    // 미리 수집해 둔 값이 있으면 API 조회 없이 사용
+    if (cached === undefined && ratioTable && ratioTable[key]) {
+        const r = ratioTable[key];
+        complexMetaCache[key] = { vl: r.vl || 0, bc: r.bc || 0 };
+        renderComplexMeta(item);
+        return;
+    }
+    // 수집 파일에 없는 단지만 VWorld 직접 조회 (위치미상 묶음은 좌표가 동 중심이라 제외)
     if (cached === undefined && item.coords && !isApproxGroup(item) && window.VWORLD_KEY) {
         complexMetaCache[key] = null; // 중복 요청 방지
         const n = v => { const x = parseFloat(v); return isFinite(x) && x > 0 ? Math.round(x * 100) / 100 : 0; };
