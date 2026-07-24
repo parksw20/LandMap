@@ -23,7 +23,7 @@ from collections import defaultdict
 import keyring
 import pandas as pd
 
-from apt_info import api, items_of, extract_dong, Unauthorized, QuotaExceeded
+from apt_info import api, items_of, extract_dong, _DONG_RE, Unauthorized, QuotaExceeded
 import apt_info
 
 ROOT = Path(__file__).parent
@@ -108,12 +108,31 @@ def fetch_dong_areas(bjd):
     return out
 
 
+_SIDO_SUFFIX = ("특별시", "광역시", "특별자치시", "특별자치도")
+
+
 def norm_addr(a):
-    """주소 정규화: 시도 접두어 제거 → '성동구 상왕십리동 12-37' 형태로 통일"""
+    """주소 정규화: 시도 접두어만 제거 → '성남시 분당구 삼평동 705' 형태로 통일.
+
+    주의: 첫 토큰이 '시'로 끝난다고 무조건 자르면 안 된다.
+    우리 실거래 주소는 경기도가 생략돼 '성남시 …'로 시작하므로,
+    그렇게 자르면 시(市)가 사라져 인허가 주소('경기도 성남시 …')와 키가 어긋난다.
+    """
     t = str(a).split()
-    if t and (t[0].endswith("시") or t[0].endswith("도")) and len(t[0]) > 2:
+    if t and (t[0].endswith(_SIDO_SUFFIX) or t[0].endswith("도")):
         t = t[1:]
     return " ".join(t)
+
+
+def region_key(addr):
+    """지번을 뺀 '시군구 + 법정동' 키.
+    동 이름만으로 묶으면 성남 정자동과 수원 정자동이 섞여 엉뚱한 단지가 매칭된다
+    (실제로 파크뷰(분당 정자동)에 수원 정자동 단지의 주택형이 붙는 사고 발생)."""
+    t = norm_addr(addr).split()
+    for i in range(len(t) - 1, -1, -1):
+        if _DONG_RE.match(t[i]) and not t[i].endswith(("시", "군", "구", "도")):
+            return " ".join(t[:i + 1])
+    return ""
 
 
 def load_our_apts():
@@ -127,7 +146,7 @@ def load_our_apts():
             if not name or not addr:
                 continue
             k = (name, addr)
-            e = out.setdefault(k, {"dong": extract_dong(addr), "areas": set()})
+            e = out.setdefault(k, {"region": region_key(addr), "areas": set()})
             for d in (x.get("deals") or []):
                 try:
                     a = float(d.get("area") or 0)
@@ -141,21 +160,42 @@ def load_our_apts():
 AREA_TOL = 0.15  # 전용면적 대조 허용 오차(㎡)
 
 
+MIN_COVERAGE = 0.5   # 우리 거래 면적 중 인허가 주택형으로 설명되는 최소 비율
+
+
 def match_by_areas(our_areas, cand_groups):
     """전용면적 세트 겹침으로 인허가 단지 선택.
-    최고 점수가 1 이상이고 2등보다 확실히 클 때만 채택 (유일 매칭 원칙)."""
+
+    점수는 '우리 거래 면적 중 몇 종류가 설명되는가'로 센다.
+    인허가 주택형 수로 세면 84.92·84.97 두 타입이 우리 84.99 하나에 걸려 2점이 되어,
+    84㎡처럼 흔한 면적 하나만 겹쳐도 엉뚱한 단지가 뽑힌다(파크뷰 오매칭 원인).
+
+    채택 조건: 2등보다 점수가 높고(유일성), 우리 면적의 절반 이상을 설명할 것.
+    """
+    total = len(our_areas)
+    if not total:
+        return None
     scored = []
     for plc, types in cand_groups.items():
-        hit = sum(1 for ex, _ in types
-                  if any(abs(ex - a) <= AREA_TOL for a in our_areas))
+        hit, err = 0, 0.0
+        for a in our_areas:
+            d = min((abs(ex - a) for ex, _ in types), default=99)
+            if d <= AREA_TOL:
+                hit += 1
+                err += d
         if hit:
-            scored.append((hit, plc))
+            scored.append((hit, err, plc))
     if not scored:
         return None
-    scored.sort(reverse=True)
-    if len(scored) > 1 and scored[0][0] == scored[1][0]:
+    # 많이 설명하는 순 → 같으면 면적이 더 정확히 맞는 순
+    scored.sort(key=lambda x: (-x[0], x[1]))
+    best_hit, best_err, plc = scored[0]
+    if best_hit / total < MIN_COVERAGE:
+        return None      # 흔한 면적 하나만 겹친 경우 — 채택 안 함(전용면적으로 대체)
+    # 동점이면서 오차까지 사실상 같으면 진짜 모호 → 보류
+    if len(scored) > 1 and scored[1][0] == best_hit and abs(scored[1][1] - best_err) < 0.01:
         return None
-    return scored[0][1]
+    return plc
 
 
 def main():
@@ -184,14 +224,14 @@ def main():
         AREA_CACHE.write_text(json.dumps(areac, ensure_ascii=False), encoding="utf-8")
 
     # 인허가 단지: 법정동 → {주소: [(전용, 공급)]}
-    by_dong = defaultdict(lambda: defaultdict(list))
+    by_region = defaultdict(lambda: defaultdict(list))
     for rows in areac.values():
         for plc, ex, sup in rows:
-            by_dong[extract_dong(plc)][plc].append((ex, sup))
+            by_region[region_key(plc)][plc].append((ex, sup))
 
     out = {}
     for (name, addr), info in ours.items():
-        cands = by_dong.get(info["dong"])
+        cands = by_region.get(info["region"])
         if not cands or not info["areas"]:
             continue
         plc = match_by_areas(info["areas"], cands)
