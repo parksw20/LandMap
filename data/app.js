@@ -66,10 +66,8 @@ const state = {
 
 const CONFIG = {
     ZOOM_LEVELS: { 1: 9, 2: 7, 3: 5, 4: 0 },
-    TYPE_COLORS: {
-        'apt': '#2563eb', 'rh': '#16a34a', 'sh': '#ef4444', 'off': '#06b6d4',
-        'nrg': '#f59e0b', 'land': '#65a30d', 'silv': '#8b5cf6', 'indu': '#64748b'
-    },
+    // 마커·필터 색은 '거래 유형' 기준으로 통일 (카드 색과 동일)
+    DEAL_COLORS: { sale: '#ef4444', jeonse: '#2563eb', monthly: '#16a34a' },
     // 전월세(전세/월세) 실거래가 제공되는 유형. 나머지는 국토부가 매매만 공개함.
     RENT_SUPPORTED: new Set(['apt', 'rh', 'sh', 'off']),
     // 정비사업 추진단계별 색 — 무지개색 순서 (초기 빨강 → 착공 보라)
@@ -819,14 +817,22 @@ function renderMarkers(data, level) {
     }
 }
 
-// 위치 미확정 묶음 판별: 이름이 '시도 구 동' 형태로 끝나면 동 단위 그룹(동 중심 표시)
+// 위치 미확정 묶음 판별: 이름이 '시도 구 동'으로 끝나는 동 단위 그룹(동 중심 표시)
 // (마스킹 매매 미매칭 + 지번이 제공되지 않는 전월세가 여기에 묶인다)
-// 아파트 단지명(숫자 없는 이름) 오탐 방지: 3토큰 이상 + 끝이 행정구역 접미사일 때만
+// 단지명 오탐 방지는 name===address로 한다 (아파트는 단지명≠주소).
+// 숫자 유무로 거르면 '충정로3가' 같은 정상 동명이 탈락하므로 접미사만 본다.
 function isApproxGroup(item) {
-    const parts = (item.name || '').trim().split(' ');
+    const name = (item.name || '').trim();
+    if (!name || name !== (item.address || '').trim()) return false;
+    const parts = name.split(' ');
     if (parts.length < 3) return false;
-    const last = parts[parts.length - 1];
-    return !/\d/.test(last) && /(동|리|가|읍|면)$/.test(last);
+    return /(동|리|가|읍|면)$/.test(parts[parts.length - 1]);
+}
+
+// 지번이 '(추정)'으로 매칭된 그룹인지 — 개별 위치지만 확정이 아님
+function isEstimatedGroup(item) {
+    const deals = item.deals || [];
+    return deals.length > 0 && deals.some(d => /추정/.test(String(d.jibun || '')));
 }
 
 // 카드 지번과 헤더 주소가 같은 위치인지 판정.
@@ -860,10 +866,11 @@ function createOverlayContent(item, level, groupCount = 1) {
     const isSelected = state.selectedComplex && state.selectedComplex.name === item.name && state.selectedComplex.address === item.address;
     const div = document.createElement('div');
     div.className = `level-marker level-${level} ${isSelected ? 'selected' : ''}`;
-    let themeColor = CONFIG.TYPE_COLORS[state.selectedType] || '#2563eb';
-    // 건물연령 모드: 상세 레벨 매물 마커도 건축 경과년수 색으로
-    if (state.bldgAgeOn && level === 4) themeColor = agingColor(repBuildYear(item));
     let targetType = state.filters['매매'] && item.stats.sale ? "sale" : (state.filters['전세'] && item.stats.jeonse ? "jeonse" : (state.filters['월세'] && item.stats.monthly ? "monthly" : ""));
+    // 마커 색 = 거래 유형 색 (카드/필터와 동일). 부동산 유형별 색 구분은 사용하지 않는다.
+    let themeColor = CONFIG.DEAL_COLORS[targetType] || '#64748b';
+    // 건물연령 모드: 경과년수를 '테두리' 색으로 표시 (내부 색은 거래 유형 유지)
+    const ageBorder = (state.bldgAgeOn && level === 4) ? agingColor(repBuildYear(item)) : '';
     const stats = item.stats[targetType]; let label = "", subLabel = "";
     if (level === 4) { 
         if (stats) { label = state.displayUnit === 'pyeong' ? `${Math.round(stats.rep_area * 0.3025)}평` : `${Math.round(stats.rep_area)}㎡`; subLabel = formatPrice(stats.rep_avg_price); } 
@@ -880,7 +887,8 @@ function createOverlayContent(item, level, groupCount = 1) {
         subLabel = `위치미상 ${item.stats.total}건`;
     }
     const badge = groupCount > 1 ? `<div class="marker-badge">${groupCount}</div>` : '';
-    div.innerHTML = `${badge}<div class="marker-body" style="background:${markerBg}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${arrowColor}"></div>`;
+    const ageStyle = ageBorder ? `border:3px solid ${ageBorder};` : '';
+    div.innerHTML = `${badge}<div class="marker-body" style="background:${markerBg};${ageStyle}"><span class="marker-label">${label}</span><span class="marker-count" style="font-size:10px">${subLabel}</span></div><div class="marker-arrow" style="border-top-color:${arrowColor}"></div>`;
     return div;
 }
 
@@ -1107,7 +1115,8 @@ function renderComplexMeta(item) {
     const el = document.getElementById('data-meta');
     if (!el) return;
     const parts = [];
-    const by = repBuildYear(item);
+    // 동 중심 묶음은 여러 건물이 섞여 있어 대표 건축년도가 오해를 부른다 → 카드별로만 표시
+    const by = isApproxGroup(item) ? 0 : repBuildYear(item);
     if (by) parts.push(`건축년도 <b>${by}년</b> (${new Date().getFullYear() - by}년차)`);
     const key = `${item.name}|${item.address}`;
     const cached = complexMetaCache[key];
@@ -1157,7 +1166,12 @@ function renderComplexDetail() {
     const addrEl = document.getElementById('data-address');
     if (addrEl) {
         addrEl.textContent = (item.address && item.address !== item.name) ? item.address : '';
-        if (isApproxGroup(item)) addrEl.innerHTML = `<span class="approx-badge">위치미상</span> 지번이 공개되지 않아 동 중심에 묶어 표시한 매물입니다` + (addrEl.textContent ? ` · ${addrEl.textContent}` : '');
+        if (isApproxGroup(item)) {
+            addrEl.innerHTML = `<span class="approx-badge">위치미상</span> 지번이 공개되지 않아 동 중심에 묶어 표시한 매물입니다` + (addrEl.textContent ? ` · ${addrEl.textContent}` : '');
+        } else if (isEstimatedGroup(item)) {
+            // 마스킹 지번을 필지/건물 대조로 찾아낸 위치 — 확정이 아님을 헤더에도 표기
+            addrEl.innerHTML = `<span class="approx-badge">위치추정</span> 공개되지 않은 지번을 면적·건축년도로 추정한 위치입니다` + (addrEl.textContent ? ` · ${addrEl.textContent}` : '');
+        }
     }
     renderComplexMeta(item);
 
@@ -1201,14 +1215,10 @@ function renderComplexDetail() {
         if (pLand > 0) info += `, 대지: ${pLand}평 (${deal.land}㎡)`;
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
-        // 주소·건축년도는 상단 헤더에 1회 표시 — 카드에는 헤더와 다를 때만 남긴다
-        // (동 중심 묶음은 매물마다 지번이 달라 카드 표기가 필요하고, 단지는 헤더와 중복이라 생략)
-        const jibunTxt = (deal.jibun && deal.jibun !== "nan") ? deal.jibun : "";
-        const sameLoc = jibunTxt && sameLocation(jibunTxt, item.address);
-        const addrInfo = (jibunTxt && !sameLoc)
-            ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>`
-            : ((sameLoc && /추정/.test(jibunTxt)) ? `<div class="card-row-sub">위치 추정</div>` : "");
-        const headerBy = repBuildYear(item);
+        // 주소는 상단 헤더에만 표시 (동 중심 묶음은 지역을 훑어보는 용도라 매물별 지번은 생략)
+        const addrInfo = "";
+        // 건축년도: 헤더에 대표값이 있으면 다를 때만, 헤더가 생략한 묶음에서는 항상 표시
+        const headerBy = isApproxGroup(item) ? 0 : repBuildYear(item);
         const byInfo = (deal.by && deal.by > 1900 && deal.by !== headerBy) ? `<div class="card-row-sub">건축년도: ${deal.by}년 (${new Date().getFullYear() - deal.by}년차)</div>` : "";
         card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${byInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
         dataList.appendChild(card);
@@ -1548,9 +1558,10 @@ function refreshBldgAge() {
                 const rings = f.geometry.type === 'MultiPolygon'
                     ? f.geometry.coordinates.map(p => p[0]) : [f.geometry.coordinates[0]];
                 const paths = rings.map(ring => ring.map(p => new kakao.maps.LatLng(p[1], p[0])));
+                // 경과년수는 '테두리' 색으로 표시 — 내부는 지도가 비치도록 최소한만 채운다
                 const poly = new kakao.maps.Polygon({
-                    path: paths, strokeWeight: known ? 1 : 0.5, strokeColor: color, strokeOpacity: known ? 0.8 : 0.4,
-                    fillColor: color, fillOpacity: known ? 0.45 : 0.18, zIndex: known ? 30 : 29
+                    path: paths, strokeWeight: known ? 3 : 1.5, strokeColor: color, strokeOpacity: known ? 1 : 0.5,
+                    fillColor: color, fillOpacity: known ? 0.06 : 0.03, zIndex: known ? 30 : 29
                 });
                 poly.setMap(state.map);
                 state.bldgAgeOverlays.push(poly);

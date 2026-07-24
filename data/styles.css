@@ -823,61 +823,34 @@ body {
   transform: translateX(-370px);
 }
 
-/* Housing Type Specific Colors */
-.filter-chip input[name="housingType"][value="apt"]:checked + .chip-label {
-  background: #2563eb;
-  border-color: #2563eb;
-  color: white;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-}
-
-.filter-chip input[name="housingType"][value="rh"]:checked + .chip-label {
-  background: #16a34a;
-  border-color: #16a34a;
-  color: white;
-  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
-}
-
-.filter-chip input[name="housingType"][value="sh"]:checked + .chip-label {
+/* 거래 유형 색상 — 매물 카드·마커와 동일 (부동산 유형별 색 구분은 사용하지 않음) */
+.filter-chip input[name="transactionType"][value="매매"]:checked + .chip-label {
   background: #ef4444;
   border-color: #ef4444;
   color: white;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
 }
 
-.filter-chip input[name="housingType"][value="off"]:checked + .chip-label {
-  background: #06b6d4;
-  border-color: #06b6d4;
+.filter-chip input[name="transactionType"][value="전세"]:checked + .chip-label {
+  background: #2563eb;
+  border-color: #2563eb;
   color: white;
-  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-.filter-chip input[name="housingType"][value="nrg"]:checked + .chip-label {
-  background: #f59e0b;
-  border-color: #f59e0b;
+.filter-chip input[name="transactionType"][value="월세"]:checked + .chip-label {
+  background: #16a34a;
+  border-color: #16a34a;
   color: white;
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
 }
 
-.filter-chip input[name="housingType"][value="land"]:checked + .chip-label {
-  background: #65a30d;
-  border-color: #65a30d;
+/* 부동산 유형 칩: 선택 시 중립 남색 (유형별 색 구분 없음) */
+.filter-chip input[name="housingType"]:checked + .chip-label {
+  background: #1e293b;
+  border-color: #1e293b;
   color: white;
-  box-shadow: 0 4px 12px rgba(101, 163, 13, 0.3);
-}
-
-.filter-chip input[name="housingType"][value="silv"]:checked + .chip-label {
-  background: #8b5cf6;
-  border-color: #8b5cf6;
-  color: white;
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-}
-
-.filter-chip input[name="housingType"][value="indu"]:checked + .chip-label {
-  background: #64748b;
-  border-color: #64748b;
-  color: white;
-  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.3);
 }
 
 /* 비활성(제공 안 되는 거래유형) 칩: 회색 + 취소선 */
