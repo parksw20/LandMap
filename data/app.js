@@ -1302,11 +1302,30 @@ function posToPyeong(pos) {
     return Math.round(stops[i] + (stops[i + 1] - stops[i]) * ratio);
 }
 
-// 표기·필터의 기준 면적(㎡): 공급면적이 있으면 공급, 없으면 전용으로 대체.
-// (시중 표기가 공급 기준이라 마커 라벨·평형 칩·면적 슬라이더를 모두 이 값으로 맞춘다)
-function basisArea(item, exclusiveArea) {
+// 전용면적 구간별 전용률 중앙값 — 실측 18.6만 주택형에서 산출.
+// 인허가·대장에 공급면적이 없는 단지(아파트의 62%)를 이 값으로 추정한다.
+// 추정을 안 하면 같은 84㎡가 어떤 단지는 34평(공급), 어떤 단지는 26평(전용)으로
+// 필터링되어 '공급면적 기준' 필터에서 34평형이 통째로 빠지는 일이 생긴다.
+const EXCL_RATIO = [[40, 0.731], [60, 0.764], [85, 0.755], [120, 0.768], [Infinity, 0.781]];
+const SUPPLY_TYPES = new Set(['apt', 'rh', 'off', 'silv']);   // 공급면적 개념을 쓰는 유형
+
+function exclRatio(ex) {
+    for (const [hi, r] of EXCL_RATIO) if (ex < hi) return r;
+    return 0.755;
+}
+
+// 공급면적(㎡)과 추정 여부 — 실측이 있으면 그것을, 없으면 전용률로 환산
+function supplyOf(item, exclusiveArea) {
     const sup = supplyAreaOf(item, exclusiveArea);
-    return sup > 0 ? sup : exclusiveArea;
+    if (sup > 0) return { area: sup, estimated: false };
+    if (!SUPPLY_TYPES.has(state.selectedType)) return { area: 0, estimated: false };
+    return { area: Math.round(exclusiveArea / exclRatio(exclusiveArea) * 100) / 100, estimated: true };
+}
+
+// 표기·필터의 기준 면적(㎡) — 공급면적 기준 (마커 라벨·평형 칩·면적 슬라이더 공통)
+function basisArea(item, exclusiveArea) {
+    const s = supplyOf(item, exclusiveArea);
+    return s.area > 0 ? s.area : exclusiveArea;
 }
 
 // 기준 면적을 화면 단위(평/㎡)의 정수로
@@ -1480,9 +1499,9 @@ function renderComplexDetail() {
         const pArea = Math.round(deal.area * 0.3025);
         const pLand = deal.land ? Math.round(deal.land * 0.3025) : 0;
         // 면적 표기 순서: 공급 → 전용 → 대지 (시중 표기가 공급 기준). 강조 없이 동일 서식.
-        const sup = supplyAreaOf(item, deal.area);
+        const sp = supplyOf(item, deal.area);
         const areaParts = [];
-        if (sup > 0) areaParts.push(`공급 ${nf(Math.round(sup * 0.3025))}평 (${nf(sup)}㎡)`);
+        if (sp.area > 0) areaParts.push(`공급 ${nf(Math.round(sp.area * 0.3025))}평 (${nf(sp.area)}㎡${sp.estimated ? ' 추정' : ''})`);
         areaParts.push(`전용 ${nf(pArea)}평 (${nf(deal.area)}㎡)`);
         if (pLand > 0) areaParts.push(`대지 ${nf(pLand)}평 (${nf(deal.land)}㎡)`);
         let info = areaParts.join(' · ');
