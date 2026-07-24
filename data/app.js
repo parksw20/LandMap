@@ -16,7 +16,7 @@ const state = {
     activeGungus: null, 
     filters: { '매매': true, '전세': true, '월세': true },
     localFilters: { '매매': true, '전세': true, '월세': true },
-    globalArea: { min: 0, max: 80 },
+    globalArea: { min: 0, max: 200 },
     displayUnit: 'pyeong', // 'pyeong' | 'm2'
     hoveredItem: null,
     selectedComplex: null,
@@ -68,6 +68,8 @@ const CONFIG = {
     ZOOM_LEVELS: { 1: 9, 2: 7, 3: 5, 4: 0 },
     // 마커·필터 색은 '거래 유형' 기준으로 통일 (카드 색과 동일)
     DEAL_COLORS: { sale: '#ef4444', jeonse: '#2563eb', monthly: '#16a34a' },
+    // 면적 슬라이더 상한(평) — 이 값이면 '이상' 무제한으로 취급
+    AREA_MAX: 200,
     // 전월세(전세/월세) 실거래가 제공되는 유형. 나머지는 국토부가 매매만 공개함.
     RENT_SUPPORTED: new Set(['apt', 'rh', 'sh', 'off']),
     // 정비사업 추진단계별 색 — 무지개색 순서 (초기 빨강 → 착공 보라)
@@ -178,6 +180,8 @@ async function init() {
     window.addEventListener('resize', placeDataSection);
     await renderMonthSelect();
     await loadGlobalSearchIndex();
+    // 공급면적 테이블: 마커 라벨·면적 필터가 이 값을 쓰므로 첫 렌더 전에 확보
+    await loadSupplyArea();
     
     const baseSelect = document.getElementById('base-month-select');
     if (baseSelect && baseSelect.value) {
@@ -438,11 +442,13 @@ function setupEventListeners() {
             let min = parseInt(minRange.value), max = parseInt(maxRange.value);
             if (min > max) [min, max] = [max, min];
             state.globalArea = { min, max };
-            rangeText.textContent = `${min}평 ~ ${max >= 80 ? '80평+' : max + '평'}`;
+            rangeText.textContent = `${min}평 ~ ${max >= CONFIG.AREA_MAX ? CONFIG.AREA_MAX + '평+' : max + '평'}`;
             const track = document.querySelector('.slider-track');
-            const p1 = (min / 80) * 100, p2 = (max / 80) * 100;
+            const p1 = (min / CONFIG.AREA_MAX) * 100, p2 = (max / CONFIG.AREA_MAX) * 100;
             track.style.background = `linear-gradient(to right, #e5e7eb ${p1}%, var(--primary-color) ${p1}%, var(--primary-color) ${p2}%, #e5e7eb ${p2}%)`;
             updateMap(true);
+            // 매물 선택 상태에서 필터를 바꾸면 우측 상세 목록도 함께 갱신
+            if (state.selectedComplex) renderComplexDetail();
         };
         minRange.oninput = updateSlider; maxRange.oninput = updateSlider; updateSlider(); 
     }
@@ -771,7 +777,8 @@ function renderMarkers(data, level) {
     const filtered = data.filter(item => {
         const s = item.stats; let maxRepArea = 0;
         ['sale', 'jeonse', 'monthly'].forEach(t => { if (state.filters[t === 'sale' ? '매매' : (t === 'jeonse' ? '전세' : '월세')] && s[t]) maxRepArea = Math.max(maxRepArea, s[t].rep_area); });
-        if (maxRepArea > 0) { const p = Math.round(maxRepArea * 0.3025); if (!(p >= state.globalArea.min && (state.globalArea.max >= 80 || p <= state.globalArea.max))) return false; }
+        // 면적 필터는 공급면적 기준 (공급 정보가 없으면 전용으로 대체)
+        if (maxRepArea > 0) { const p = Math.round(basisArea(item, maxRepArea) * 0.3025); if (!(p >= state.globalArea.min && (state.globalArea.max >= CONFIG.AREA_MAX || p <= state.globalArea.max))) return false; }
         return (state.filters['매매'] && s.sale) || (state.filters['전세'] && s.jeonse) || (state.filters['월세'] && s.monthly);
     });
     // 레벨4: 동일 좌표에 여러 그룹이 겹치면 하나의 마커 + 개수 배지로 묶는다
@@ -872,10 +879,11 @@ function createOverlayContent(item, level, groupCount = 1) {
     // 건물연령 모드: 경과년수를 '테두리' 색으로 표시 (내부 색은 거래 유형 유지)
     const ageBorder = (state.bldgAgeOn && level === 4) ? agingColor(repBuildYear(item)) : '';
     const stats = item.stats[targetType]; let label = "", subLabel = "";
-    if (level === 4) { 
-        if (stats) { label = state.displayUnit === 'pyeong' ? `${Math.round(stats.rep_area * 0.3025)}평` : `${Math.round(stats.rep_area)}㎡`; subLabel = formatPrice(stats.rep_avg_price); } 
-        else { label = "내역없음"; subLabel = "-"; } 
-    } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${state.displayUnit === 'pyeong' ? Math.round(stats.rep_area * 0.3025)+'평' : Math.round(stats.rep_area)+'㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
+    // 마커 표기 면적도 공급면적 기준 (없으면 전용)
+    if (level === 4) {
+        if (stats) { label = `${basisDisplay(item, stats.rep_area)}${state.displayUnit === 'pyeong' ? '평' : '㎡'}`; subLabel = formatPrice(stats.rep_avg_price); }
+        else { label = "내역없음"; subLabel = "-"; }
+    } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${basisDisplay(item, stats.rep_area)}${state.displayUnit === 'pyeong' ? '평' : '㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
     
     let markerBg = isSelected ? 'linear-gradient(135deg, #1e3a8a, #3b82f6)' : themeColor;
     let arrowColor = isSelected ? '#1e3a8a' : themeColor;
@@ -983,7 +991,7 @@ const CHART_SERIES = [
 function buildPriceChart(item) {
     const areaSel = state.selectedArea;          // null = 전체
     const perPyeong = areaSel === null;          // 전체 → 평당가 모드
-    const dealArea = d => state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area);
+    const dealArea = d => basisDisplay(item, d.area);   // 평형 칩과 같은 기준(공급면적)
 
     // 계열별 월평균 집계 (거래유형 + 평형 필터 연동)
     const series = [];
@@ -1098,6 +1106,19 @@ async function loadSupplyArea() {
     return supplyTable;
 }
 
+// 표기·필터의 기준 면적(㎡): 공급면적이 있으면 공급, 없으면 전용으로 대체.
+// (시중 표기가 공급 기준이라 마커 라벨·평형 칩·면적 슬라이더를 모두 이 값으로 맞춘다)
+function basisArea(item, exclusiveArea) {
+    const sup = supplyAreaOf(item, exclusiveArea);
+    return sup > 0 ? sup : exclusiveArea;
+}
+
+// 기준 면적을 화면 단위(평/㎡)의 정수로
+function basisDisplay(item, exclusiveArea) {
+    const a = basisArea(item, exclusiveArea);
+    return state.displayUnit === 'pyeong' ? Math.round(a * 0.3025) : Math.round(a);
+}
+
 // 전용면적 → 공급면적 (같은 단지 내 가장 가까운 주택형, 1㎡ 이내일 때만)
 function supplyAreaOf(item, exclusiveArea) {
     if (!supplyTable || !item) return 0;
@@ -1184,8 +1205,9 @@ function renderComplexDetail() {
     }
     sidePanel.style.display = 'block';
 
-    const validInGlobal = item.deals.filter(d => { const p = Math.round(d.area * 0.3025); return p >= state.globalArea.min && (state.globalArea.max >= 80 || p <= state.globalArea.max); });
-    const uniqueAreas = [...new Set(validInGlobal.map(d => state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area)))].sort((a, b) => a - b);
+    // 면적 필터·평형 칩 모두 공급면적 기준 (공급 정보가 없으면 전용으로 대체)
+    const validInGlobal = item.deals.filter(d => { const p = Math.round(basisArea(item, d.area) * 0.3025); return p >= state.globalArea.min && (state.globalArea.max >= CONFIG.AREA_MAX || p <= state.globalArea.max); });
+    const uniqueAreas = [...new Set(validInGlobal.map(d => basisDisplay(item, d.area)))].sort((a, b) => a - b);
     areaFilter.innerHTML = '';
     if (uniqueAreas.length > 0) {
         const allChip = document.createElement('div'); allChip.className = `area-chip ${state.selectedArea === null ? 'active' : ''}`; allChip.textContent = '전체'; allChip.onclick = () => { state.selectedArea = null; renderComplexDetail(); }; areaFilter.appendChild(allChip);
@@ -1202,17 +1224,18 @@ function renderComplexDetail() {
     
     // localFilters 적용
     let filtered = validInGlobal.filter(d => state.localFilters[d.type]);
-    if (state.selectedArea !== null) filtered = filtered.filter(d => (state.displayUnit === 'pyeong' ? Math.round(d.area * 0.3025) : Math.round(d.area)) === state.selectedArea);
+    if (state.selectedArea !== null) filtered = filtered.filter(d => basisDisplay(item, d.area) === state.selectedArea);
     filtered.sort((a, b) => (priority[a.type] || 99) - (priority[b.type] || 99) || b.date.localeCompare(a.date));
     filtered.forEach(deal => {
         const card = document.createElement('div'); card.className = `data-card card-${deal.type === '전세' ? 'jeonse' : (deal.type === '월세' ? 'monthly' : 'sale')}`;
         const pArea = Math.round(deal.area * 0.3025);
         const pLand = deal.land ? Math.round(deal.land * 0.3025) : 0;
-        let info = `전용: ${pArea}평 (${deal.area}㎡)`;
-        // 공급면적(=전용+주거공용) 병기 — 시중에서 쓰는 'N평형' 기준
+        // 카드는 실제 사용 면적인 '전용'을 강조하고, 공급면적은 보조로 병기
+        // (필터·마커·평형 칩은 시중 표기에 맞춰 공급 기준)
+        let info = `<span class="excl-area">전용 ${pArea}평</span> <span class="area-sub">(${deal.area}㎡)</span>`;
         const sup = supplyAreaOf(item, deal.area);
         if (sup > 0) info += ` <span class="supply-area">· 공급 ${Math.round(sup * 0.3025)}평 (${sup}㎡)</span>`;
-        if (pLand > 0) info += `, 대지: ${pLand}평 (${deal.land}㎡)`;
+        if (pLand > 0) info += `<span class="area-sub">, 대지 ${pLand}평 (${deal.land}㎡)</span>`;
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
         // 주소는 상단 헤더에만 표시 (동 중심 묶음은 지역을 훑어보는 용도라 매물별 지번은 생략)

@@ -777,7 +777,18 @@ body {
   font-weight: 800;
 }
 
-/* 공급면적 병기 (전용 옆) */
+/* 카드 면적 표기: 전용 강조 / 공급·대지는 보조 */
+.excl-area {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.area-sub {
+  color: var(--text-sub);
+  font-weight: 600;
+}
+
 .supply-area {
   color: #2563eb;
   font-weight: 700;
@@ -1783,6 +1794,17 @@ body {
   color: var(--primary-color);
   font-weight: 800;
   font-size: 12px;
+  margin-left: 3em;   /* '면적 선택' 문구와 값 사이 여백 */
+}
+
+/* 면적 기준 안내 (공급면적) */
+.area-basis-note {
+  margin-left: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 /* Dong Aggregate Marker */

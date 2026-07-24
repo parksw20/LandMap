@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>부동산 실거래가 시각화</title>
-  <link rel="stylesheet" href="./styles.css?v=12">
+  <link rel="stylesheet" href="./styles.css?v=13">
   <!-- Kakao Maps SDK -->
   <script type="text/javascript"
     src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=61feaec3994e05d0c9235d6b07bc5712&libraries=services,clusterer"></script>
@@ -190,7 +190,7 @@
 
         <div class="panel-section">
           <div class="section-header-flex">
-            <div class="section-title">면적 선택 <span id="area-range-text" class="range-value-text">전체</span></div>
+            <div class="section-title">면적 선택 <span id="area-range-text" class="range-value-text">전체</span> <span class="area-basis-note">공급면적 기준</span></div>
             <div class="unit-toggle-container">
               <button id="unit-pyeong" class="unit-btn active">평</button>
               <button id="unit-m2" class="unit-btn">㎡</button>
@@ -198,15 +198,15 @@
           </div>
           <div class="range-slider-container">
             <div class="slider-track"></div>
-            <input type="range" id="area-min" min="0" max="80" value="0" step="5">
-            <input type="range" id="area-max" min="0" max="80" value="80" step="5">
+            <input type="range" id="area-min" min="0" max="200" value="0" step="1">
+            <input type="range" id="area-max" min="0" max="200" value="200" step="1">
           </div>
           <div class="range-labels">
             <span>0평</span>
-            <span>20평</span>
-            <span>40평</span>
-            <span>60평</span>
-            <span>80평+</span>
+            <span>50평</span>
+            <span>100평</span>
+            <span>150평</span>
+            <span>200평+</span>
           </div>
         </div>
       </div>
@@ -255,9 +255,9 @@
     </div>
   </div>
 
-  <script src="./config.local.js?v=12"></script>
-  <script src="./config.pages.js?v=12"></script>
-  <script src="./app.js?v=12"></script>
+  <script src="./config.local.js?v=13"></script>
+  <script src="./config.pages.js?v=13"></script>
+  <script src="./app.js?v=13"></script>
 </body>
 
 </html>
