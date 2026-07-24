@@ -829,6 +829,16 @@ function isApproxGroup(item) {
     return !/\d/.test(last) && /(동|리|가|읍|면)$/.test(last);
 }
 
+// 카드 지번과 헤더 주소가 같은 위치인지 판정.
+// RTMS 지번은 구 접두어가 없고('냉천동 260') 그룹 주소는 있어서('서대문구 냉천동 260')
+// 단순 문자열 비교로는 매번 다르게 나온다 → 접미 일치 + '(추정)' 표기 무시로 비교한다.
+function sameLocation(jibun, address) {
+    const norm = s => String(s || '').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
+    const a = norm(jibun), b = norm(address);
+    if (!a || !b) return false;
+    return a === b || b.endsWith(a) || a.endsWith(b);
+}
+
 // 매물 그룹의 대표 건축년도 (거래들 중 유효값의 최빈)
 function repBuildYear(item) {
     if (!item.deals) return 0;
@@ -1194,7 +1204,10 @@ function renderComplexDetail() {
         // 주소·건축년도는 상단 헤더에 1회 표시 — 카드에는 헤더와 다를 때만 남긴다
         // (동 중심 묶음은 매물마다 지번이 달라 카드 표기가 필요하고, 단지는 헤더와 중복이라 생략)
         const jibunTxt = (deal.jibun && deal.jibun !== "nan") ? deal.jibun : "";
-        const addrInfo = (jibunTxt && jibunTxt !== item.address) ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>` : "";
+        const sameLoc = jibunTxt && sameLocation(jibunTxt, item.address);
+        const addrInfo = (jibunTxt && !sameLoc)
+            ? `<div class="card-row-sub card-addr">주소: ${jibunTxt}</div>`
+            : ((sameLoc && /추정/.test(jibunTxt)) ? `<div class="card-row-sub">위치 추정</div>` : "");
         const headerBy = repBuildYear(item);
         const byInfo = (deal.by && deal.by > 1900 && deal.by !== headerBy) ? `<div class="card-row-sub">건축년도: ${deal.by}년 (${new Date().getFullYear() - deal.by}년차)</div>` : "";
         card.innerHTML = `<div class="card-title-row"><span class="card-badge">${deal.type}</span><span class="card-date">${deal.date || ''}</span></div><div class="card-price-row"><span class="card-price">${formatPrice(deal.price || 0)}${deal.rent > 0 ? ' / ' + deal.rent : ''}</span></div><div class="card-row-main">${info}</div>${addrInfo}${byInfo}${dongInfo}${(deal.period && deal.period !== "nan") ? `<div class="card-row-sub">임차기간: ${deal.period}</div>` : ''}${(deal.renew && deal.renew !== "nan") ? `<div class="card-row-sub">갱신여부: ${deal.renew}</div>` : ''}${(deal.p_dep && deal.p_dep > 0) ? `<div class="card-row-sub">종전: ${formatPrice(deal.p_dep)}${deal.p_rent > 0 ? ' / ' + deal.p_rent : ''}</div>` : ''}`;
