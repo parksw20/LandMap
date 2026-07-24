@@ -13,7 +13,9 @@
 #
 # 실행: python no_deal_apts.py
 
+import glob
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -33,6 +35,42 @@ DETAIL_CACHE = CACHE_DIR / "detail.json"
 ADDR_CACHE = CACHE_DIR / "addr.json"
 GEO_CACHE = DATA / "address_cache.json"
 OUT = DATA / "no_deal_apts.json"
+
+
+SIDO_RE = re.compile(
+    r"^(서울특별시|부산광역시|대구광역시|인천광역시|광주광역시|대전광역시|울산광역시|"
+    r"세종특별자치시|경기도|강원특별자치도|강원도|충청북도|충청남도|전라북도|"
+    r"전북특별자치도|전라남도|경상북도|경상남도|제주특별자치도)\s*")
+
+
+def addr_key(addr, name=""):
+    """지번 주소 비교용 키 (프론트엔드 addrKey와 동일 규칙).
+    K-apt '서울특별시 성동구 용답동 253- 청계 sk view 아파트' ↔ 실거래 '성동구 용답동 253'
+    """
+    s = SIDO_RE.sub("", str(addr or ""))
+    s = re.sub(r"\s+", "", s)
+    nm = re.sub(r"\s+", "", str(name or ""))
+    if nm and s.endswith(nm):
+        s = s[:-len(nm)]
+    s = re.sub(r"번지$", "", s)
+    s = re.sub(r"-+$", "", s)
+    # K-apt는 '성남분당구'처럼 시(市)를 생략하는데 실거래는 '성남시분당구'로 쓴다
+    return re.sub(r"시(?=[가-힣]+구)", "", s, count=1)
+
+
+def real_addr_keys():
+    """실거래 아파트 단지의 주소 키 집합 — 이 주소면 '거래 있는 단지'다"""
+    keys = set()
+    for f in glob.glob(str(DATA / "hierarchy" / "*" / "apt" / "details" / "*.json")):
+        try:
+            rows = json.loads(Path(f).read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for x in rows:
+            k = addr_key(x.get("address"), x.get("name"))
+            if k:
+                keys.add(k)
+    return keys
 
 
 def fetch_addr(kapt_code):
@@ -97,12 +135,18 @@ def main():
 
     # 주소 → 좌표 (기존 지오코딩 캐시 재사용)
     geo = GeoCache(GEO_CACHE, keyring.get_password("kakao", "api_key"))
-    out, miss = [], 0
+    # 단지명 매칭만으로는 표기 차이('청계 sk view 아파트'↔'청계SKVIEW')를 못 잡아
+    # 거래가 있는 단지가 대거 '거래없음'으로 분류됐다. 주소로 한 번 더 걸러낸다.
+    real_keys = real_addr_keys()
+    out, miss, dup = [], 0, 0
     for t in targets:
         info = addrc.get(t["code"]) or {}
         addr = info.get("addr")
         if not addr:
             miss += 1
+            continue
+        if addr_key(addr, info.get("name") or t["name"]) in real_keys:
+            dup += 1
             continue
         coords = geo.get_coords(addr)
         if not coords:
@@ -128,7 +172,8 @@ def main():
     geo.save()
     if stop:
         print(f"[!] {stop} — 진행분 저장 후 종료 (재실행 시 이어서 진행)")
-    print(f"[완료] 좌표 확보 {len(out)}개 / 좌표 실패 {miss}개 → {OUT.name} | API 요청 {apt_info.req_count}건")
+    print(f"[완료] 진짜 거래없음 {len(out)}개 / 실거래 존재로 제외 {dup}개 / "
+          f"주소·좌표 실패 {miss}개 → {OUT.name} | API 요청 {apt_info.req_count}건")
 
 
 if __name__ == "__main__":
