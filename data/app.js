@@ -1326,12 +1326,13 @@ function renderComplexDetail() {
         const card = document.createElement('div'); card.className = `data-card card-${deal.type === '전세' ? 'jeonse' : (deal.type === '월세' ? 'monthly' : 'sale')}`;
         const pArea = Math.round(deal.area * 0.3025);
         const pLand = deal.land ? Math.round(deal.land * 0.3025) : 0;
-        // 카드는 실제 사용 면적인 '전용'을 강조하고, 공급면적은 보조로 병기
-        // (필터·마커·평형 칩은 시중 표기에 맞춰 공급 기준)
-        let info = `<span class="excl-area">전용 ${nf(pArea)}평</span> <span class="area-sub">(${nf(deal.area)}㎡)</span>`;
+        // 면적 표기 순서: 공급 → 전용 → 대지 (시중 표기가 공급 기준). 강조 없이 동일 서식.
         const sup = supplyAreaOf(item, deal.area);
-        if (sup > 0) info += ` <span class="supply-area">· 공급 ${nf(Math.round(sup * 0.3025))}평 (${nf(sup)}㎡)</span>`;
-        if (pLand > 0) info += `<span class="area-sub">, 대지 ${nf(pLand)}평 (${nf(deal.land)}㎡)</span>`;
+        const areaParts = [];
+        if (sup > 0) areaParts.push(`공급 ${nf(Math.round(sup * 0.3025))}평 (${nf(sup)}㎡)`);
+        areaParts.push(`전용 ${nf(pArea)}평 (${nf(deal.area)}㎡)`);
+        if (pLand > 0) areaParts.push(`대지 ${nf(pLand)}평 (${nf(deal.land)}㎡)`);
+        let info = areaParts.join(' · ');
         if (deal.floor && deal.floor !== "nan" && deal.floor !== "0") info += ` | ${deal.floor}층`;
         const dongInfo = (deal.dong && deal.dong !== "nan" && deal.dong !== "") ? `<div class="card-row-highlight">${deal.dong}동</div>` : "";
         // 주소는 상단 헤더에만 표시 (동 중심 묶음은 지역을 훑어보는 용도라 매물별 지번은 생략)

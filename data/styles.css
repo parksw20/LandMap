@@ -801,21 +801,28 @@ body {
   z-index: 3;
 }
 
-/* 카드 면적 표기: 전용 강조 / 공급·대지는 보조 */
-.excl-area {
-  font-size: 15px;
-  font-weight: 800;
-  color: #111827;
+/* 선택한 거래유형의 거래가 없는 단지 마커 — 존재는 하지만 거래는 없음 */
+.level-marker.no-deal-marker .marker-body {
+  opacity: 0.75;
+  border-style: dashed;
 }
 
-.area-sub {
-  color: var(--text-sub);
-  font-weight: 600;
+.level-marker.no-deal-marker .marker-label {
+  font-size: 11px;
 }
 
-.supply-area {
-  color: #1f66b5;
-  font-weight: 700;
+/* 건물연령 표식: 마커 위쪽 마름모 (경과년수 색) */
+.marker-age {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  border: 2px solid white;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  z-index: 3;
 }
 
 /* 단지 헤더 메타 (건축년도·용적률·건폐율) */
