@@ -227,27 +227,9 @@ function setupEventListeners() {
         
         await updateMap(true); 
         
-        if (state.selectedComplex && state.selectedComplex.noDeal) {
-            // 기간을 넓혀 이 단지의 실거래가 잡히면 실거래 항목으로 전환한다.
-            // K-apt와 실거래의 단지명이 달라('청계 sk view 아파트' vs '청계SKVIEW')
-            // 이름으로는 찾을 수 없으므로 좌표 근접으로 판정한다.
-            const real = findRealComplexAt(state.selectedComplex.address, state.selectedComplex.name);
-            if (real) {
-                state.selectedComplex = real;
-                state.selectedArea = null;
-            }
-            renderComplexDetail();
-        } else if (state.selectedComplex) {
-            const currentComplex = state.allLoadedData.find(i => 
-                i.name === state.selectedComplex.name && i.address === state.selectedComplex.address
-            );
-            if (currentComplex) {
-                state.selectedComplex = currentComplex;
-                renderComplexDetail();
-            } else {
-                document.getElementById('data-list').innerHTML = '<div class="empty-state">선택한 기간에는 거래 내역이 없습니다.</div>';
-            }
-        }
+        // 패널 갱신은 렌더 경로(resyncSelectedComplex)가 담당한다.
+        // 상위 레벨(구·동 요약)에서는 단지 데이터가 없으므로 여기서 한 번 맞춘다.
+        if (state.currentLevel !== 4) resyncSelectedComplex();
     };
     if (baseSelect) baseSelect.onchange = updatePeriod;
     if (rangeSelect) rangeSelect.onchange = updatePeriod;
@@ -684,6 +666,29 @@ async function renderMonthSelect() {
     } catch (e) { console.error("데이터 목록 로드 실패:", e); }
 }
 
+// 렌더 직후 선택 단지를 새 데이터에 다시 연결한다.
+// 레벨4의 구 데이터는 최근접 구 → 지오코더 보정 순으로 두 번에 걸쳐 들어올 수 있어,
+// 한 번만 확인하면 아직 안 실린 구의 단지가 '거래 내역 없음'으로 잘못 표시된다.
+function resyncSelectedComplex() {
+    const sel = state.selectedComplex;
+    if (!sel) return;
+    if (sel.noDeal) {
+        const real = findRealComplexAt(sel.address, sel.name);
+        if (real) { state.selectedComplex = real; state.selectedArea = null; }
+        renderComplexDetail();
+        return;
+    }
+    const cur = (state.allLoadedData || []).find(
+        i => i.name === sel.name && i.address === sel.address);
+    if (cur) {
+        state.selectedComplex = cur;
+        renderComplexDetail();
+    } else {
+        const el = document.getElementById('data-list');
+        if (el) el.innerHTML = '<div class="empty-state">선택한 기간에는 거래 내역이 없습니다.</div>';
+    }
+}
+
 async function updateMap(force = false) {
     return new Promise(async (resolve) => {
         const zoom = state.map.getLevel();
@@ -715,6 +720,7 @@ async function updateMap(force = false) {
                     state.activeGungus = gunguKeyStr; state.currentLevel = 4;
                     const rows = await fetchAndMergeData(4, Array.from(gungusInView));
                     renderMarkers(rows.concat(await noDealItems(rows)), 4);
+                    resyncSelectedComplex();
                 }
             };
             await renderFor(force);
