@@ -231,7 +231,7 @@ function setupEventListeners() {
             // 기간을 넓혀 이 단지의 실거래가 잡히면 실거래 항목으로 전환한다.
             // K-apt와 실거래의 단지명이 달라('청계 sk view 아파트' vs '청계SKVIEW')
             // 이름으로는 찾을 수 없으므로 좌표 근접으로 판정한다.
-            const real = findRealComplexAt(state.selectedComplex.coords);
+            const real = findRealComplexAt(state.selectedComplex.address, state.selectedComplex.name);
             if (real) {
                 state.selectedComplex = real;
                 state.selectedArea = null;
@@ -842,7 +842,7 @@ function renderMarkers(data, level) {
             if (level !== 4) { handleLevelMove(item, level); return; }
             closeClusterPicker();
             if (group.length === 1) {
-                state.selectedComplex = (item.noDeal && findRealComplexAt(item.coords)) || item;
+                state.selectedComplex = (item.noDeal && findRealComplexAt(item.address, item.name)) || item;
                 state.selectedArea = null; renderComplexDetail(); updateMap(true);
             } else {
                 showClusterPicker(group, pos);
@@ -1185,12 +1185,27 @@ async function loadNoDealApts() {
 
 // 화면 안의 '거래 이력 없는 아파트'를 마커용 항목 형태로 변환.
 // 실거래 기반 항목과 같은 모양(stats/deals)을 갖되 거래는 비어 있다.
-// 좌표가 겹치는 실거래 단지 찾기 (약 40m) — 단지명이 서로 달라도 같은 단지를 잇는다
-function findRealComplexAt(coords) {
-    if (!coords) return null;
-    return (state.allLoadedData || []).find(i => i.coords &&
-        Math.abs(i.coords[0] - coords[0]) < 0.00045 &&
-        Math.abs(i.coords[1] - coords[1]) < 0.00036) || null;
+// 지번 주소 비교용 키. K-apt와 실거래는 표기가 달라 정규화가 필요하다.
+//   K-apt : '서울특별시 성동구 용답동 253- 청계 sk view 아파트'
+//   실거래: '성동구 용답동 253'
+// → 시도 접두어·공백·끝에 붙은 단지명·'번지'·꼬리 하이픈을 제거해 '성동구용답동253'로 맞춘다.
+const SIDO_RE = /^(서울특별시|부산광역시|대구광역시|인천광역시|광주광역시|대전광역시|울산광역시|세종특별자치시|경기도|강원특별자치도|강원도|충청북도|충청남도|전라북도|전북특별자치도|전라남도|경상북도|경상남도|제주특별자치도)\s*/;
+
+function addrKey(addr, name) {
+    let s = String(addr || '').replace(SIDO_RE, '').replace(/\s+/g, '');
+    const nm = String(name || '').replace(/\s+/g, '');
+    if (nm && s.endsWith(nm)) s = s.slice(0, -nm.length);
+    s = s.replace(/번지$/, '').replace(/-+$/, '');
+    // K-apt는 '성남분당구'처럼 시(市)를 생략하는데 실거래는 '성남시분당구'로 쓴다
+    return s.replace(/시(?=[가-힣]+구)/, '');
+}
+
+// 같은 지번의 실거래 단지 찾기 — 단지명이 서로 달라도('청계 sk view 아파트'↔'청계SKVIEW') 잇는다.
+// 좌표 근접(40m)으로 하면 신길동 329-94와 261-22처럼 다른 단지가 붙어 오매칭이 발생한다.
+function findRealComplexAt(addr, name) {
+    const k = addrKey(addr, name);
+    if (!k) return null;
+    return (state.allLoadedData || []).find(i => addrKey(i.address, i.name) === k) || null;
 }
 
 async function noDealItems(existing) {
@@ -1199,15 +1214,13 @@ async function noDealItems(existing) {
     const b = state.map.getBounds();
     const sw = b.getSouthWest(), ne = b.getNorthEast();
     // 이미 실거래로 표시되는 단지는 제외한다.
-    // K-apt와 실거래의 단지명이 달라('분당 파크뷰' vs '파크뷰') 이름 비교로는 걸러지지 않으므로
-    // 좌표 근접(약 40m)으로 판정한다.
-    const near = (a, b2) => Math.abs(a[0] - b2[0]) < 0.00045 && Math.abs(a[1] - b2[1]) < 0.00036;
-    const shown = (existing || []).map(x => x.coords).filter(Boolean);
+    // 단지명이 달라('분당 파크뷰' vs '파크뷰') 이름 비교로는 걸러지지 않으므로 지번 주소로 판정한다.
+    const shown = new Set((existing || []).map(x => addrKey(x.address, x.name)).filter(Boolean));
     const out = [];
     for (const a of (noDealApts || [])) {
         const [lng, lat] = a.coords;
         if (lng < sw.getLng() || lng > ne.getLng() || lat < sw.getLat() || lat > ne.getLat()) continue;
-        if (shown.some(c => near(c, a.coords))) continue;
+        if (shown.has(addrKey(a.address, a.name))) continue;
         out.push({
             name: a.name, address: a.address, coords: a.coords,
             stats: { total: 0, sale: null, jeonse: null, monthly: null },
