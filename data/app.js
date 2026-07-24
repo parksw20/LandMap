@@ -228,8 +228,14 @@ function setupEventListeners() {
         await updateMap(true); 
         
         if (state.selectedComplex && state.selectedComplex.noDeal) {
-            // 거래이력 없는 단지는 allLoadedData(실거래 단지)에 없다.
-            // 단지 정보는 기간과 무관하므로 그대로 다시 그린다.
+            // 기간을 넓혀 이 단지의 실거래가 잡히면 실거래 항목으로 전환한다.
+            // K-apt와 실거래의 단지명이 달라('청계 sk view 아파트' vs '청계SKVIEW')
+            // 이름으로는 찾을 수 없으므로 좌표 근접으로 판정한다.
+            const real = findRealComplexAt(state.selectedComplex.coords);
+            if (real) {
+                state.selectedComplex = real;
+                state.selectedArea = null;
+            }
             renderComplexDetail();
         } else if (state.selectedComplex) {
             const currentComplex = state.allLoadedData.find(i => 
@@ -836,7 +842,8 @@ function renderMarkers(data, level) {
             if (level !== 4) { handleLevelMove(item, level); return; }
             closeClusterPicker();
             if (group.length === 1) {
-                state.selectedComplex = item; state.selectedArea = null; renderComplexDetail(); updateMap(true);
+                state.selectedComplex = (item.noDeal && findRealComplexAt(item.coords)) || item;
+                state.selectedArea = null; renderComplexDetail(); updateMap(true);
             } else {
                 showClusterPicker(group, pos);
             }
@@ -1178,6 +1185,14 @@ async function loadNoDealApts() {
 
 // 화면 안의 '거래 이력 없는 아파트'를 마커용 항목 형태로 변환.
 // 실거래 기반 항목과 같은 모양(stats/deals)을 갖되 거래는 비어 있다.
+// 좌표가 겹치는 실거래 단지 찾기 (약 40m) — 단지명이 서로 달라도 같은 단지를 잇는다
+function findRealComplexAt(coords) {
+    if (!coords) return null;
+    return (state.allLoadedData || []).find(i => i.coords &&
+        Math.abs(i.coords[0] - coords[0]) < 0.00045 &&
+        Math.abs(i.coords[1] - coords[1]) < 0.00036) || null;
+}
+
 async function noDealItems(existing) {
     if (state.selectedType !== 'apt' || !state.map) return [];
     await loadNoDealApts();
