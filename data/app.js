@@ -802,16 +802,14 @@ async function loadDetailShard(ym, gunguKey) {
 function renderMarkers(data, level) {
     clearOverlays(); const bounds = state.map.getBounds();
     const filtered = data.filter(item => {
-        const s = item.stats; let maxRepArea = 0;
-        ['sale', 'jeonse', 'monthly'].forEach(t => { if (state.filters[t === 'sale' ? '매매' : (t === 'jeonse' ? '전세' : '월세')] && s[t]) maxRepArea = Math.max(maxRepArea, s[t].rep_area); });
-        // 면적 필터는 공급면적 기준 (공급 정보가 없으면 전용으로 대체)
-        if (maxRepArea > 0) { const p = Math.round(basisArea(item, maxRepArea) * 0.3025); if (!(p >= state.globalArea.min && (state.globalArea.max >= CONFIG.AREA_MAX || p <= state.globalArea.max))) return false; }
+        const enabled = enabledTypes(item);
         // 선택한 거래유형에 해당 거래가 없어도 단지는 계속 표시한다(회색 마커).
         // 상세 레벨에서만 — 상위 레벨은 지역 요약이라 빈 지역을 띄울 이유가 없다.
-        if (!((state.filters['매매'] && s.sale) || (state.filters['전세'] && s.jeonse) || (state.filters['월세'] && s.monthly))) {
-            return level === 4 && !isApproxGroup(item);
-        }
-        return true;
+        if (!enabled.length) return level === 4 && !isApproxGroup(item);
+        // 면적 필터는 공급면적 기준 (공급 정보가 없으면 전용으로 대체).
+        // 최댓값 하나로 판정하면 '매매 32평·전세 45평'이 통째로 걸러지므로 유형별로 본다.
+        return enabled.some(([k]) =>
+            inAreaFilter(Math.round(basisArea(item, item.stats[k].rep_area) * 0.3025)));
     });
     // 레벨4: 동일 좌표에 여러 그룹이 겹치면 하나의 마커 + 개수 배지로 묶는다
     let renderList; // [ [대표item, 그룹배열] ]
@@ -902,11 +900,34 @@ function agingColor(buildYear) {
     return CONFIG.AGING_UNKNOWN;
 }
 
+// 면적 필터 범위에 드는지 (공급면적 기준, 평)
+function inAreaFilter(pyeong) {
+    return pyeong >= state.globalArea.min &&
+           (state.globalArea.max >= CONFIG.AREA_MAX || pyeong <= state.globalArea.max);
+}
+
+// 활성화된 거래유형 중 데이터가 있는 것들
+function enabledTypes(item) {
+    return [['sale', '매매'], ['jeonse', '전세'], ['monthly', '월세']]
+        .filter(([k, ko]) => state.filters[ko] && item.stats[k]);
+}
+
+// 마커에 표시할 거래유형 — 면적 필터 범위에 드는 유형을 우선한다.
+// (필터는 '어느 유형이든 범위에 들면 통과'인데 라벨이 다른 유형을 쓰면
+//  30~34평 필터에 24평 매물이 뜨는 것처럼 보인다)
+function pickTargetType(item) {
+    const enabled = enabledTypes(item);
+    if (!enabled.length) return "";
+    const hit = enabled.find(([k]) =>
+        inAreaFilter(Math.round(basisArea(item, item.stats[k].rep_area) * 0.3025)));
+    return (hit || enabled[0])[0];
+}
+
 function createOverlayContent(item, level, groupCount = 1) {
     const isSelected = state.selectedComplex && state.selectedComplex.name === item.name && state.selectedComplex.address === item.address;
     const div = document.createElement('div');
     div.className = `level-marker level-${level} ${isSelected ? 'selected' : ''}`;
-    let targetType = state.filters['매매'] && item.stats.sale ? "sale" : (state.filters['전세'] && item.stats.jeonse ? "jeonse" : (state.filters['월세'] && item.stats.monthly ? "monthly" : ""));
+    let targetType = pickTargetType(item);
     // 마커 색 = 거래 유형 색 (카드/필터와 동일). 부동산 유형별 색 구분은 사용하지 않는다.
     let themeColor = CONFIG.DEAL_COLORS[targetType] || '#64748b';
     // 건물연령 모드: 경과년수를 '테두리' 색으로 표시 (내부 색은 거래 유형 유지)
