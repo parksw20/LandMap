@@ -770,7 +770,13 @@ async function fetchAndMergeData(level, gunguList = []) {
     }
     const mergedMap = new Map();
     allResults.forEach(item => {
-        const key = level === 4 ? (item.address + item.name) : item.name;
+        // 동 이름만으로 묶으면 강남 신사동과 은평 신사동이 합쳐진다(동명 28개 중복).
+        // 레벨별로 상위 지역까지 포함해 구분한다.
+        //  레벨3(동): parent(구/시도) + 동명 / 레벨2(구): sido + 구명 / 레벨1(시도): 이름만
+        const key = level === 4 ? (item.address + item.name)
+            : level === 3 ? ((item.parent || '') + '|' + item.name)
+            : level === 2 ? ((item.sido || '') + '|' + item.name)
+            : item.name;
         if (!mergedMap.has(key)) mergedMap.set(key, JSON.parse(JSON.stringify(item)));
         else {
             const ex = mergedMap.get(key); ex.stats.total += item.stats.total;
