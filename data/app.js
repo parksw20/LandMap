@@ -48,8 +48,9 @@ const state = {
     // 지적도 모드 클릭 주소 표시 + VWorld 필지 폴리곤
     clickAddrOverlay: null,
     clickParcelPoly: null,
-    dongBoundary: [],          // 검색한 동의 경계 폴리곤 오버레이
-    dongBoundaryFor: null,     // 현재 경계가 표시된 동 이름(늦은 응답 무시용)
+    dongBoundary: [],          // 동 경계 폴리곤 오버레이
+    dongBoundaryFor: null,     // 클릭/검색으로 '고정'된 동 이름
+    dongHoverFor: null,        // hover 미리보기 중인 동 이름
     // 길찾기 (출발→도착)
     routeMode: false,
     routePts: [],
@@ -861,7 +862,12 @@ function renderMarkers(data, level) {
         content.onpointerdown = (ev) => markOverlayClick(ev);
         content.onclick = (ev) => {
             markOverlayClick(ev);
-            if (level !== 4) { handleLevelMove(item, level); return; }
+            if (level !== 4) {
+                // 동 마커(레벨3) 클릭: 한 단계 확대 + 그 동의 경계 '고정'
+                if (level === 3) { state.dongHoverFor = null; state.dongBoundaryFor = item.name; drawDongBoundary(item.coords[0], item.coords[1], item.name); }
+                handleLevelMove(item, level);
+                return;
+            }
             closeClusterPicker();
             if (group.length === 1) {
                 state.selectedComplex = (item.noDeal && findRealComplexAt(item.address, item.name)) || item;
@@ -870,8 +876,17 @@ function renderMarkers(data, level) {
                 showClusterPicker(group, pos);
             }
         };
-        content.onmouseenter = () => { const key = `${level}_${item.name}`; if (state.hoveredItem === key) return; state.hoveredItem = key; showTooltip(item, level, pos); };
-        content.onmouseleave = () => { state.hoveredItem = null; state.tooltip.setMap(null); };
+        content.onmouseenter = () => {
+            const key = `${level}_${item.name}`; if (state.hoveredItem === key) return; state.hoveredItem = key;
+            showTooltip(item, level, pos);
+            // 동 마커 hover: 경계 미리보기 (클릭으로 고정된 경계가 없을 때만)
+            if (level === 3 && !state.dongBoundaryFor) { state.dongHoverFor = item.name; drawDongBoundary(item.coords[0], item.coords[1], item.name, true); }
+        };
+        content.onmouseleave = () => {
+            state.hoveredItem = null; state.tooltip.setMap(null);
+            // hover로 그린 미리보기만 지운다 (클릭 고정 경계는 유지)
+            if (level === 3 && state.dongHoverFor === item.name && !state.dongBoundaryFor) { state.dongHoverFor = null; clearDongBoundary(); }
+        };
     });
     
     // 상태바 갱신: 선택된 단지가 있으면 단지 정보, 없으면 단계별 건수
@@ -1971,8 +1986,9 @@ function vworldDongBoundary(lng, lat, cb) {
         + `&format=json&crs=EPSG:4326&size=1&geometry=true&geomFilter=POINT(${lng} ${lat})`, cb);
 }
 
-// 검색으로 이동한 동의 경계를 지도에 그린다 (검색·이동 시마다 갱신)
-function drawDongBoundary(lng, lat, name) {
+// 동의 경계를 지도에 그린다 (검색·마커 hover·클릭 시).
+// hover=true면 hover 미리보기용(dongHoverFor로 늦은 응답 판정), 아니면 고정용(dongBoundaryFor)
+function drawDongBoundary(lng, lat, name, hover) {
     clearDongBoundary();
     if (!window.VWORLD_KEY) return;
     vworldDongBoundary(lng, lat, (resp) => {
@@ -1980,8 +1996,9 @@ function drawDongBoundary(lng, lat, name) {
             ? (resp.response.result.featureCollection.features || []) : [];
         if (!feats.length) return;
         const f = feats[0];
-        // 다른 동을 검색하는 사이 응답이 늦게 오면 무시
-        if (state.dongBoundaryFor !== name) return;
+        // 다른 동으로 넘어가는 사이 응답이 늦게 오면 무시
+        const cur = hover ? state.dongHoverFor : state.dongBoundaryFor;
+        if (cur !== name) return;
         const rings = f.geometry.type === 'MultiPolygon'
             ? f.geometry.coordinates.flatMap(poly => poly)   // 외곽+내부 링
             : f.geometry.coordinates;
@@ -2311,17 +2328,9 @@ function renderSearchResults(indexResults, addrResults) {
 function goToAddress(lat, lng, label) {
     document.getElementById('search-results').classList.add('hidden');
     document.getElementById('search-input').value = label;
-    const pos = new kakao.maps.LatLng(lat, lng);
-    state.map.setCenter(pos);
+    state.map.setCenter(new kakao.maps.LatLng(lat, lng));
     state.map.setLevel(3);
-    if (state.searchPin) state.searchPin.setMap(null);
-    const div = document.createElement('div');
-    div.className = 'search-pin';
-    div.innerHTML = `<div class="search-pin-label">${label}</div><div class="search-pin-dot"></div>`;
-    div.onpointerdown = (ev) => markOverlayClick(ev);
-    div.onclick = (ev) => { markOverlayClick(ev); if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
-    state.searchPin = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.0, zIndex: 1800 });
-    state.searchPin.setMap(state.map);
+    dropSearchPin(lat, lng, label);
     // 주소가 '동' 단위면(지번 없이 …동/가/리로 끝남) 그 법정동 경계도 함께 표시
     const last = label.trim().split(' ').pop();
     if (/(동|가|리)$/.test(last) && !/\d/.test(last)) {
@@ -2334,14 +2343,28 @@ function goToAddress(lat, lng, label) {
     updateMap(true);
 }
 
+// 위치 핀 표시 (검색 결과 공통) — 클릭하면 사라짐
+function dropSearchPin(lat, lng, label) {
+    if (state.searchPin) state.searchPin.setMap(null);
+    const pos = new kakao.maps.LatLng(lat, lng);
+    const div = document.createElement('div');
+    div.className = 'search-pin';
+    div.innerHTML = `<div class="search-pin-label">${label}</div><div class="search-pin-dot"></div>`;
+    div.onpointerdown = (ev) => markOverlayClick(ev);
+    div.onclick = (ev) => { markOverlayClick(ev); if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
+    state.searchPin = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.0, zIndex: 1800 });
+    state.searchPin.setMap(state.map);
+}
+
 function goToDong(name, lat, lng) {
     state.map.setCenter(new kakao.maps.LatLng(lat, lng));
     state.map.setLevel(6);
     document.getElementById('search-results').classList.add('hidden');
     document.getElementById('search-input').value = name;
-    // 검색한 동(법정동)의 경계를 지도에 표시
+    // 검색한 동(법정동)의 경계 + 위치 핀 표시
     state.dongBoundaryFor = name;
     drawDongBoundary(lng, lat, name);
+    dropSearchPin(lat, lng, name);
     updateMap(true);
 }
 function goToLocation(lat, lng, name, addr) {
