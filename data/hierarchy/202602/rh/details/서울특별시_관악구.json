@@ -224,8 +224,9 @@
     "name": "한솔빌라트 (연립)",
     "address": "관악구 남현동 602-203",
     "coords": [126.980635261413, 37.472648727916],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 84.9, "rep_avg_price": 55000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [55000, 55000], "rep_area": 84.9, "rep_avg_price": 55000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 55000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-02", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "남현동 602-203", "by": 1996},
       {"type": "전세", "price": 55000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-02", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "남현동 602-203", "by": 1996}
     ]
   },
@@ -402,6 +403,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [41000, 41000], "rep_area": 46.5, "rep_avg_price": 41000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 41000, "rent": 0, "area": 46.54, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 148-55", "by": 2015}
+    ]
+  },
+  {
+    "name": "(1508-0) (다세대)",
+    "address": "관악구 봉천동 1508",
+    "coords": [126.928342562961, 37.4926754876647],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 60.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 110, "area": 60.24, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 1508", "by": 2002}
     ]
   },
   {
@@ -1334,6 +1344,15 @@
     ]
   },
   {
+    "name": "드림하우스(41-231) (다세대)",
+    "address": "관악구 봉천동 41-231",
+    "coords": [126.953080741167, 37.4863777854399],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 12.1, "rep_avg_price": 8000}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 3, "area": 12.09, "land": 0.0, "floor": "1", "dong": "", "date": "2026-02-16", "period": "26.03~28.03", "renew": "갱신", "p_dep": 8000, "p_rent": 29, "jibun": "봉천동 41-231", "by": 2012}
+    ]
+  },
+  {
     "name": "보은빌라 (다세대)",
     "address": "관악구 봉천동 41-337",
     "coords": [126.952869061488, 37.4867606296295],
@@ -1557,8 +1576,9 @@
     "name": "와이즈힐(635-343) (다세대)",
     "address": "관악구 봉천동 635-343",
     "coords": [126.940688195354, 37.4880300687743],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [25000, 28300], "rep_area": 29.8, "rep_avg_price": 26650}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [25000, 28300], "rep_area": 29.8, "rep_avg_price": 26650}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 26500, "rent": 0, "area": 28.14, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 635-343", "by": 2020},
       {"type": "전세", "price": 25000, "rent": 0, "area": 29.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "봉천동 635-343", "by": 2020},
       {"type": "전세", "price": 28300, "rent": 0, "area": 29.83, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 635-343", "by": 2020}
     ]
@@ -1571,6 +1591,15 @@
     "deals": [
       {"type": "월세", "price": 5000, "rent": 80, "area": 22.32, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 635-430", "by": 2025},
       {"type": "월세", "price": 5000, "rent": 80, "area": 22.32, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 635-430", "by": 2025}
+    ]
+  },
+  {
+    "name": "석우빌라 (다세대)",
+    "address": "관악구 봉천동 635-442",
+    "coords": [126.940602056001, 37.4897169822164],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 32.9, "rep_avg_price": 15000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15000, "rent": 0, "area": 32.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-28", "period": "26.06~28.06", "renew": "갱신", "p_dep": 15000, "p_rent": 0, "jibun": "봉천동 635-442", "by": 1991}
     ]
   },
   {
@@ -1673,6 +1702,15 @@
     ]
   },
   {
+    "name": "유엔I파크빌 (연립)",
+    "address": "관악구 봉천동 649-104",
+    "coords": [126.936631035487, 37.4891474644291],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32370, 32370], "rep_area": 78.1, "rep_avg_price": 32370}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 32370, "rent": 0, "area": 78.12, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 649-104", "by": 2008}
+    ]
+  },
+  {
     "name": "대한빌라 (다세대)",
     "address": "관악구 봉천동 649-117",
     "coords": [126.935465683373, 37.4891698994198],
@@ -1723,8 +1761,9 @@
     "name": "선우아트빌A (다세대)",
     "address": "관악구 봉천동 672-3",
     "coords": [126.931918261712, 37.4900132337323],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 72.6, "rep_avg_price": 7000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [6000, 7000], "rep_area": 72.6, "rep_avg_price": 6500}},
     "deals": [
+      {"type": "월세", "price": 6000, "rent": 110, "area": 72.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 672-3", "by": 2004},
       {"type": "월세", "price": 7000, "rent": 110, "area": 72.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 672-3", "by": 2004}
     ]
   },
@@ -1793,6 +1832,16 @@
     ]
   },
   {
+    "name": "서정쉐르빌(706-11) (다세대)",
+    "address": "관악구 봉천동 706-11",
+    "coords": [126.928394297716, 37.4909565775099],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3400, 3400], "rep_area": 26.0, "rep_avg_price": 3400}},
+    "deals": [
+      {"type": "월세", "price": 3400, "rent": 42, "area": 25.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-26", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 706-11", "by": 2016},
+      {"type": "월세", "price": 3400, "rent": 42, "area": 25.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-26", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 706-11", "by": 2016}
+    ]
+  },
+  {
     "name": "보라매아트빌 (다세대)",
     "address": "관악구 봉천동 711-17",
     "coords": [126.92929171581, 37.4910264054857],
@@ -1808,6 +1857,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 29.8, "rep_avg_price": 5000}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 98, "area": 29.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-07", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 711-2", "by": 2021}
+    ]
+  },
+  {
+    "name": "한마음빌 (다세대)",
+    "address": "관악구 봉천동 712-55",
+    "coords": [126.929308600161, 37.4919480559037],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23000, 23000], "rep_area": 55.5, "rep_avg_price": 23000}},
+    "deals": [
+      {"type": "월세", "price": 23000, "rent": 50, "area": 55.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 712-55", "by": 2003}
     ]
   },
   {
@@ -1906,6 +1964,15 @@
     ]
   },
   {
+    "name": "동방타운 (연립)",
+    "address": "관악구 봉천동 734-20",
+    "coords": [126.925929014785, 37.4909574002106],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 45.6, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 113, "area": 45.57, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 734-20", "by": 1995}
+    ]
+  },
+  {
     "name": "비전하우스 (다세대)",
     "address": "관악구 봉천동 738-196",
     "coords": [126.960572406904, 37.47380603985],
@@ -1931,6 +1998,15 @@
     "deals": [
       {"type": "월세", "price": 1000, "rent": 95, "area": 39.26, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-25", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 871-13", "by": 2002},
       {"type": "월세", "price": 2000, "rent": 60, "area": 19.93, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-05", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 871-13", "by": 2002}
+    ]
+  },
+  {
+    "name": "장흥빌라A동 (다세대)",
+    "address": "관악구 봉천동 871-6",
+    "coords": [126.951436880227, 37.4833304515295],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30500, 30500], "rep_area": 79.6, "rep_avg_price": 30500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30500, "rent": 0, "area": 79.62, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 871-6", "by": 1993}
     ]
   },
   {
@@ -2170,6 +2246,15 @@
     ]
   },
   {
+    "name": "(959-16) (다세대)",
+    "address": "관악구 봉천동 959-16",
+    "coords": [126.935386763933, 37.4853560699475],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 12.2, "rep_avg_price": 200}},
+    "deals": [
+      {"type": "월세", "price": 200, "rent": 44, "area": 12.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-07", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 959-16", "by": 2011}
+    ]
+  },
+  {
     "name": "제영빌딩 (다세대)",
     "address": "관악구 봉천동 961-2",
     "coords": [126.934794623503, 37.4861433158593],
@@ -2300,6 +2385,15 @@
     ]
   },
   {
+    "name": "신림하이츠빌라4동 (연립)",
+    "address": "관악구 신림동 10-693",
+    "coords": [126.932670735568, 37.4818653079902],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [63500, 63500], "rep_area": 75.7, "rep_avg_price": 63500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 63500, "rent": 0, "area": 75.72, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 10-693", "by": 1989}
+    ]
+  },
+  {
     "name": "청용빌라(102-27) (다세대)",
     "address": "관악구 신림동 102-27",
     "coords": [126.941261193334, 37.4737933328925],
@@ -2339,8 +2433,11 @@
     "name": "프라임빌 (다세대)",
     "address": "관악구 신림동 103-185",
     "coords": [126.941215599454, 37.4721054479288],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2500, 3465], "rep_area": 61.0, "rep_avg_price": 3465}},
+    "stats": {"total": 5, "sale": null, "jeonse": null, "monthly": {"count": 5, "range": [2500, 11390], "rep_area": 61.0, "rep_avg_price": 4512}},
     "deals": [
+      {"type": "월세", "price": 11390, "rent": 9, "area": 82.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-185", "by": 2025},
+      {"type": "월세", "price": 5560, "rent": 24, "area": 60.95, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-185", "by": 2025},
+      {"type": "월세", "price": 4599, "rent": 47, "area": 82.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-185", "by": 2025},
       {"type": "월세", "price": 2500, "rent": 45, "area": 72.52, "land": 0.0, "floor": "6", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-185", "by": 2025},
       {"type": "월세", "price": 3465, "rent": 36, "area": 60.95, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-185", "by": 2025}
     ]
@@ -2349,12 +2446,32 @@
     "name": "좋은집 (다세대)",
     "address": "관악구 신림동 103-207",
     "coords": [126.941549991502, 37.4710926078797],
-    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [500, 1000], "rep_area": 12.4, "rep_avg_price": 1000}},
+    "stats": {"total": 5, "sale": null, "jeonse": null, "monthly": {"count": 5, "range": [500, 1000], "rep_area": 12.4, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 45, "area": 12.75, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-09", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-207", "by": 2014},
       {"type": "월세", "price": 500, "rent": 42, "area": 15.43, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-207", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 37, "area": 12.4, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-27", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-207", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 47, "area": 12.9, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-07", "period": "26.03~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-207", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 47, "area": 14.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-207", "by": 2014}
+    ]
+  },
+  {
+    "name": "신림어반스빌 (다세대)",
+    "address": "관악구 신림동 103-222",
+    "coords": [126.94128996004, 37.4718479761589],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 29.2, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 39, "area": 29.16, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-11", "period": "26.02~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-222", "by": 2023}
+    ]
+  },
+  {
+    "name": "103-231 (다세대)",
+    "address": "관악구 신림동 103-231",
+    "coords": [126.941944242949, 37.4721844663671],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 2173], "rep_area": 47.5, "rep_avg_price": 1586}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 31, "area": 47.46, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-10", "period": "26.03~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-231", "by": 2019},
+      {"type": "월세", "price": 2173, "rent": 28, "area": 47.46, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-10", "period": "26.03~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 103-231", "by": 2019}
     ]
   },
   {
@@ -2370,8 +2487,9 @@
     "name": "채석가 (다세대)",
     "address": "관악구 신림동 105-13",
     "coords": [126.93731526218, 37.4734234230677],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [17000, 17000], "rep_area": 23.4, "rep_avg_price": 17000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 23.2, "rep_avg_price": 21000}, "monthly": {"count": 1, "range": [17000, 17000], "rep_area": 23.4, "rep_avg_price": 17000}},
     "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 23.24, "land": 0.0, "floor": "6", "dong": "", "date": "2026-02-27", "period": "26.02~27.11", "renew": "갱신", "p_dep": 21000, "p_rent": 0, "jibun": "신림동 105-13", "by": 2021},
       {"type": "월세", "price": 17000, "rent": 20, "area": 23.35, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 105-13", "by": 2021}
     ]
   },
@@ -2421,12 +2539,31 @@
     ]
   },
   {
+    "name": "미켈란 (다세대)",
+    "address": "관악구 신림동 1410-1",
+    "coords": [126.933993800288, 37.4853239448659],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [25500, 25500], "rep_area": 29.5, "rep_avg_price": 25500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25500, "rent": 0, "area": 29.49, "land": 0.0, "floor": "8", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "갱신", "p_dep": 24500, "p_rent": 0, "jibun": "신림동 1410-1", "by": 2016},
+      {"type": "전세", "price": 25500, "rent": 0, "area": 29.49, "land": 0.0, "floor": "8", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "갱신", "p_dep": 24500, "p_rent": 0, "jibun": "신림동 1410-1", "by": 2016}
+    ]
+  },
+  {
     "name": "가온누리 (다세대)",
     "address": "관악구 신림동 1413-33",
     "coords": [126.933005389394, 37.4858024545808],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 17.7, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 52, "area": 17.67, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-25", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1413-33", "by": 2015}
+    ]
+  },
+  {
+    "name": "해피타워 (다세대)",
+    "address": "관악구 신림동 1414-26",
+    "coords": [126.932878363868, 37.4859846564269],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20948, 20948], "rep_area": 26.8, "rep_avg_price": 20948}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20948, "rent": 0, "area": 26.77, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-12", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1414-26", "by": 2016}
     ]
   },
   {
@@ -2824,8 +2961,9 @@
     "name": "(1562-10) (다세대)",
     "address": "관악구 신림동 1562-10",
     "coords": [126.934875925508, 37.4668546380077],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [200, 200], "rep_area": 32.1, "rep_avg_price": 200}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [200, 5078], "rep_area": 32.1, "rep_avg_price": 2639}},
     "deals": [
+      {"type": "월세", "price": 5078, "rent": 24, "area": 32.09, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1562-10", "by": 2024},
       {"type": "월세", "price": 200, "rent": 51, "area": 32.09, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1562-10", "by": 2024}
     ]
   },
@@ -2892,6 +3030,15 @@
       {"type": "월세", "price": 1039, "rent": 30, "area": 26.65, "land": 0.0, "floor": "7", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1577-33", "by": 2023},
       {"type": "월세", "price": 2712, "rent": 28, "area": 27.84, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1577-33", "by": 2023},
       {"type": "월세", "price": 2599, "rent": 27, "area": 26.65, "land": 0.0, "floor": "7", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1577-33", "by": 2023}
+    ]
+  },
+  {
+    "name": "써니빌 (다세대)",
+    "address": "관악구 신림동 1578-1",
+    "coords": [126.923403933894, 37.483187209952],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4500, 4500], "rep_area": 13.1, "rep_avg_price": 4500}},
+    "deals": [
+      {"type": "월세", "price": 4500, "rent": 70, "area": 13.12, "land": 0.0, "floor": "9", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1578-1", "by": 2020}
     ]
   },
   {
@@ -3000,8 +3147,9 @@
     "name": "(1635-46) (다세대)",
     "address": "관악구 신림동 1635-46",
     "coords": [126.928911573469, 37.4801469544766],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 18.9, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 4200], "rep_area": 18.9, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 4200, "rent": 70, "area": 43.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-08", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1635-46", "by": 2012},
       {"type": "월세", "price": 1000, "rent": 53, "area": 18.93, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1635-46", "by": 2012}
     ]
   },
@@ -3033,6 +3181,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 39.9, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 80, "area": 39.86, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1650-9", "by": 1992}
+    ]
+  },
+  {
+    "name": "더마인드 (다세대)",
+    "address": "관악구 신림동 1655-14",
+    "coords": [126.902356222456, 37.4829353557094],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 26.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 160, "area": 26.69, "land": 0.0, "floor": "9", "dong": "", "date": "2026-02-28", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1655-14", "by": 2022}
     ]
   },
   {
@@ -3068,8 +3225,9 @@
     "name": "jk럭스빌 (다세대)",
     "address": "관악구 신림동 1657-44",
     "coords": [126.903802510057, 37.4818085695861],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 14.2, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 14.0, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 14.04, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-10", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1657-44", "by": 2015},
       {"type": "월세", "price": 500, "rent": 55, "area": 14.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1657-44", "by": 2015}
     ]
   },
@@ -3162,6 +3320,15 @@
     ]
   },
   {
+    "name": "다담빌101동&102동 (다세대)",
+    "address": "관악구 신림동 244-170",
+    "coords": [126.939686254398, 37.4687755334577],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.6, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 85, "area": 59.59, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-15", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 244-170", "by": 2016}
+    ]
+  },
+  {
     "name": "양지리츠타운 (다세대)",
     "address": "관악구 신림동 244-18",
     "coords": [126.939546202349, 37.4690467562266],
@@ -3175,9 +3342,10 @@
     "name": "희준빌 (다세대)",
     "address": "관악구 신림동 250-12",
     "coords": [126.936772088911, 37.4677511826017],
-    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [3267, 13485], "rep_area": 49.8, "rep_avg_price": 7399}},
+    "stats": {"total": 5, "sale": null, "jeonse": null, "monthly": {"count": 5, "range": [3267, 13485], "rep_area": 49.8, "rep_avg_price": 7399}},
     "deals": [
       {"type": "월세", "price": 3267, "rent": 34, "area": 49.82, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 250-12", "by": 2024},
+      {"type": "월세", "price": 12494, "rent": 27, "area": 56.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 250-12", "by": 2024},
       {"type": "월세", "price": 13485, "rent": 11, "area": 49.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 250-12", "by": 2024},
       {"type": "월세", "price": 6090, "rent": 63, "area": 56.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 250-12", "by": 2024},
       {"type": "월세", "price": 5445, "rent": 56, "area": 49.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-24", "period": "26.03~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 250-12", "by": 2024}
@@ -3210,6 +3378,15 @@
       {"type": "월세", "price": 7000, "rent": 100, "area": 84.6, "land": 0.0, "floor": "1", "dong": "", "date": "2026-02-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 254-301", "by": 1991},
       {"type": "월세", "price": 3700, "rent": 110, "area": 84.72, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-05", "period": "26.03~28.03", "renew": "갱신", "p_dep": 3700, "p_rent": 104, "jibun": "신림동 254-301", "by": 1991},
       {"type": "월세", "price": 7000, "rent": 100, "area": 84.6, "land": 0.0, "floor": "1", "dong": "", "date": "2026-02-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 254-301", "by": 1991}
+    ]
+  },
+  {
+    "name": "(255-120) (다세대)",
+    "address": "관악구 신림동 255-120",
+    "coords": [126.936929942445, 37.4651370733166],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 36.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 36.0, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 255-120", "by": 1991}
     ]
   },
   {
@@ -3572,6 +3749,15 @@
     ]
   },
   {
+    "name": "한송빌 (다세대)",
+    "address": "관악구 신림동 495-26",
+    "coords": [126.917053077293, 37.487005449184],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 20.7, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 90, "area": 20.71, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 495-26", "by": 2016}
+    ]
+  },
+  {
     "name": "헤븐빌리지 (다세대)",
     "address": "관악구 신림동 501-12",
     "coords": [126.916205564698, 37.4863442321343],
@@ -3584,8 +3770,10 @@
     "name": "네모하우스 (다세대)",
     "address": "관악구 신림동 501-21",
     "coords": [126.91571773905, 37.4862845087194],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23000, 23000], "rep_area": 26.5, "rep_avg_price": 23000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [23000, 25725], "rep_area": 29.5, "rep_avg_price": 25525}},
     "deals": [
+      {"type": "월세", "price": 25326, "rent": 11, "area": 29.47, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-19", "period": "26.05~28.05", "renew": "갱신", "p_dep": 25725, "p_rent": 10, "jibun": "신림동 501-21", "by": 2018},
+      {"type": "월세", "price": 25725, "rent": 10, "area": 29.47, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-19", "period": "26.05~28.05", "renew": "갱신", "p_dep": 24500, "p_rent": 10, "jibun": "신림동 501-21", "by": 2018},
       {"type": "월세", "price": 23000, "rent": 10, "area": 26.5, "land": 0.0, "floor": "5", "dong": "", "date": "2026-02-13", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 501-21", "by": 2018}
     ]
   },
@@ -3716,8 +3904,9 @@
     "name": "아리아빌딩 (다세대)",
     "address": "관악구 신림동 537-32",
     "coords": [126.913815162222, 37.4826132395231],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [13800, 14680], "rep_area": 11.8, "rep_avg_price": 13800}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [13500, 14680], "rep_area": 11.8, "rep_avg_price": 13650}},
     "deals": [
+      {"type": "월세", "price": 13500, "rent": 26, "area": 11.76, "land": 0.0, "floor": "13", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 537-32", "by": 2025},
       {"type": "월세", "price": 13800, "rent": 26, "area": 11.76, "land": 0.0, "floor": "13", "dong": "", "date": "2026-02-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 537-32", "by": 2025},
       {"type": "월세", "price": 14680, "rent": 20, "area": 13.05, "land": 0.0, "floor": "13", "dong": "", "date": "2026-02-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 537-32", "by": 2025}
     ]
@@ -3790,8 +3979,9 @@
     "name": "청춘가옥 (다세대)",
     "address": "관악구 신림동 598-129",
     "coords": [126.92024982465, 37.4759116376306],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2535, 2535], "rep_area": 23.3, "rep_avg_price": 2535}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2535, 4326], "rep_area": 23.3, "rep_avg_price": 3430}},
     "deals": [
+      {"type": "월세", "price": 4326, "rent": 16, "area": 23.29, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 598-129", "by": 2024},
       {"type": "월세", "price": 2535, "rent": 26, "area": 23.29, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-03", "period": "26.02~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 598-129", "by": 2024}
     ]
   },
@@ -4013,6 +4203,15 @@
     ]
   },
   {
+    "name": "금성쉐르빌 (다세대)",
+    "address": "관악구 신림동 611-91",
+    "coords": [126.921152364443, 37.4745865877917],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15500, 15500], "rep_area": 61.0, "rep_avg_price": 15500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15500, "rent": 0, "area": 61.02, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 611-91", "by": 2002}
+    ]
+  },
+  {
     "name": "성은빌라나동 (다세대)",
     "address": "관악구 신림동 612-52",
     "coords": [126.92095730274, 37.4742029876899],
@@ -4201,8 +4400,9 @@
     "name": "푸름네이쳐빌(661-46) (다세대)",
     "address": "관악구 신림동 661-46",
     "coords": [126.920438241169, 37.4659267680187],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [23400, 23400], "rep_area": 28.1, "rep_avg_price": 23400}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [23400, 23400], "rep_area": 28.1, "rep_avg_price": 23400}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 23400, "rent": 0, "area": 28.13, "land": 0.0, "floor": "6", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 661-46", "by": 2016},
       {"type": "매매", "price": 23400, "rent": 0, "area": 28.13, "land": 0.0, "floor": "6", "dong": "", "date": "2026-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 661-46", "by": 2016}
     ]
   },
@@ -4398,6 +4598,15 @@
     ]
   },
   {
+    "name": "송광빌라 (다세대)",
+    "address": "관악구 신림동 90-74",
+    "coords": [126.931947342412, 37.4802675850534],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 40.7, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 40.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 90-74", "by": 2002}
+    ]
+  },
+  {
     "name": "동서주택 (다세대)",
     "address": "관악구 신림동 92",
     "coords": [126.933049170766, 37.4790597811598],
@@ -4473,8 +4682,9 @@
     "name": "(95-68) (다세대)",
     "address": "관악구 신림동 95-68",
     "coords": [126.939412843295, 37.4768505168589],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 25.2, "rep_avg_price": 9000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 25.2, "rep_avg_price": 15000}, "jeonse": {"count": 1, "range": [9000, 9000], "rep_area": 25.2, "rep_avg_price": 9000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 15000, "rent": 0, "area": 25.2, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 95-68", "by": 1992},
       {"type": "전세", "price": 9000, "rent": 0, "area": 25.2, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-02-05", "period": "26.02~30.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신림동 95-68", "by": 1992}
     ]
   },

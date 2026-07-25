@@ -3,9 +3,19 @@
     "name": "더프레젠트259 (다세대)",
     "address": "동대문구 답십리동 259-10",
     "coords": [127.056927391143, 37.5702554721429],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25800, 25800], "rep_area": 28.1, "rep_avg_price": 25800}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [25000, 25800], "rep_area": 27.2, "rep_avg_price": 25000}},
     "deals": [
+      {"type": "월세", "price": 25000, "rent": 25, "area": 27.21, "land": 0.0, "floor": "8", "dong": "", "date": "2026-07-15", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "답십리동 259-10", "by": 2022},
       {"type": "월세", "price": 25800, "rent": 20, "area": 28.13, "land": 0.0, "floor": "6", "dong": "", "date": "2026-07-06", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "답십리동 259-10", "by": 2022}
+    ]
+  },
+  {
+    "name": "골드빌리지 (다세대)",
+    "address": "동대문구 답십리동 260",
+    "coords": [127.056701582856, 37.5696809260047],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [43000, 43000], "rep_area": 54.8, "rep_avg_price": 43000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 43000, "rent": 0, "area": 54.8, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-17", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "답십리동 260", "by": 2021}
     ]
   },
   {
@@ -27,6 +37,25 @@
     ]
   },
   {
+    "name": "브릭핸즈9 (다세대)",
+    "address": "동대문구 답십리동 477-10",
+    "coords": [127.050897381565, 37.5716466594176],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 30.0, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 125, "area": 29.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-24", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "답십리동 477-10", "by": 2022},
+      {"type": "월세", "price": 5000, "rent": 125, "area": 29.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-09", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "답십리동 477-10", "by": 2022}
+    ]
+  },
+  {
+    "name": "(483-32) (다세대)",
+    "address": "동대문구 답십리동 483-32",
+    "coords": [127.052122588105, 37.5694675183499],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 46.7, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 75, "area": 46.71, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-16", "period": "26.09~28.09", "renew": "갱신", "p_dep": 2000, "p_rent": 70, "jibun": "답십리동 483-32", "by": 1998}
+    ]
+  },
+  {
     "name": "캐슬루체 (다세대)",
     "address": "동대문구 신설동 6",
     "coords": [127.027003687653, 37.5779087972368],
@@ -36,12 +65,80 @@
     ]
   },
   {
+    "name": "제스트하우스 (다세대)",
+    "address": "동대문구 용두동 118-60",
+    "coords": [127.031769701478, 37.574142354942],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 25.7, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 130, "area": 25.69, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-15", "period": "26.07~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 118-60", "by": 2022}
+    ]
+  },
+  {
+    "name": "로얄팰리스(129-231) (다세대)",
+    "address": "동대문구 용두동 129-231",
+    "coords": [127.032444255836, 37.5715001839905],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 26.3, "rep_avg_price": 24000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 24000, "rent": 0, "area": 26.27, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-15", "period": "26.09~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 129-231", "by": 2017}
+    ]
+  },
+  {
+    "name": "빌드아르떼 (다세대)",
+    "address": "동대문구 용두동 129-270",
+    "coords": [127.034408987192, 37.5728893224397],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [18640, 18640], "rep_area": 41.5, "rep_avg_price": 18640}},
+    "deals": [
+      {"type": "월세", "price": 18640, "rent": 19, "area": 41.49, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-22", "period": "26.10~28.09", "renew": "갱신", "p_dep": 17752, "p_rent": 18, "jibun": "용두동 129-270", "by": 2020}
+    ]
+  },
+  {
     "name": "연희타워 (다세대)",
     "address": "동대문구 용두동 130-12",
     "coords": [127.031050166117, 37.5781699014463],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 13.8, "rep_avg_price": 11000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 11000, "rent": 0, "area": 13.76, "land": 0.0, "floor": "13", "dong": "", "date": "2026-07-11", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 130-12", "by": 2017}
+    ]
+  },
+  {
+    "name": "탑스하우징A동 (다세대)",
+    "address": "동대문구 용두동 138-50",
+    "coords": [127.03194875059, 37.5801524791252],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [46000, 46000], "rep_area": 29.7, "rep_avg_price": 46000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 46000, "rent": 0, "area": 29.73, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 138-50", "by": 2021}
+    ]
+  },
+  {
+    "name": "대명아트빌라 (다세대)",
+    "address": "동대문구 용두동 20-54",
+    "coords": [127.040231585671, 37.5769925032645],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 76.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 25, "area": 76.03, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-16", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 20-54", "by": 1991}
+    ]
+  },
+  {
+    "name": "베르트라움119 (다세대)",
+    "address": "동대문구 용두동 39-119",
+    "coords": [127.041000769912, 37.5735973812569],
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 6, "range": [27000, 28500], "rep_area": 27.1, "rep_avg_price": 27750}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 28000, "rent": 0, "area": 29.49, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-119", "by": 2026},
+      {"type": "전세", "price": 28000, "rent": 0, "area": 27.11, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-24", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-119", "by": 2026},
+      {"type": "전세", "price": 27000, "rent": 0, "area": 29.72, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-20", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-119", "by": 2026},
+      {"type": "전세", "price": 28500, "rent": 0, "area": 27.79, "land": 0.0, "floor": "8", "dong": "", "date": "2026-07-22", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-119", "by": 2026},
+      {"type": "전세", "price": 28500, "rent": 0, "area": 27.49, "land": 0.0, "floor": "8", "dong": "", "date": "2026-07-20", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-119", "by": 2026},
+      {"type": "전세", "price": 27500, "rent": 0, "area": 27.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-15", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-119", "by": 2026}
+    ]
+  },
+  {
+    "name": "로얄팰리스(39-391) (다세대)",
+    "address": "동대문구 용두동 39-391",
+    "coords": [127.043071718234, 37.5752612314967],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 29.5, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 18, "area": 29.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-18", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-391", "by": 2016}
     ]
   },
   {
@@ -101,12 +198,40 @@
     ]
   },
   {
+    "name": "키움하우스 (다세대)",
+    "address": "동대문구 용두동 39-853",
+    "coords": [127.041377301524, 37.5771219405162],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 26.8, "rep_avg_price": 66000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 66000, "rent": 0, "area": 26.82, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-853", "by": 2025}
+    ]
+  },
+  {
     "name": "39-941 (다세대)",
     "address": "동대문구 용두동 39-941",
     "coords": [127.039517811838, 37.5754734875896],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 47.0, "rep_avg_price": 28000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 28000, "rent": 0, "area": 46.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 39-941", "by": 2014}
+    ]
+  },
+  {
+    "name": "광영빌라나동 (다세대)",
+    "address": "동대문구 이문동 237-158",
+    "coords": [127.065543626595, 37.6033134705923],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [33000, 33000], "rep_area": 50.0, "rep_avg_price": 33000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 33000, "rent": 0, "area": 49.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이문동 237-158", "by": 1991}
+    ]
+  },
+  {
+    "name": "256-151 (다세대)",
+    "address": "동대문구 이문동 256-151",
+    "coords": [127.063238108516, 37.6012360536481],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3000, 4000], "rep_area": 29.1, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 73, "area": 29.89, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-11", "period": "26.07~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 256-151", "by": 2019},
+      {"type": "월세", "price": 4000, "rent": 75, "area": 29.14, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-12", "period": "26.07~28.07", "renew": "갱신", "p_dep": 4000, "p_rent": 71, "jibun": "이문동 256-151", "by": 2019}
     ]
   },
   {
@@ -122,9 +247,20 @@
     "name": "성원빌딩 (다세대)",
     "address": "동대문구 이문동 288-87",
     "coords": [127.061251501417, 37.5964122952395],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3700, 3700], "rep_area": 16.0, "rep_avg_price": 3700}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 3700], "rep_area": 16.0, "rep_avg_price": 2233}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 100, "area": 15.96, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-21", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 288-87", "by": 2019},
+      {"type": "월세", "price": 2000, "rent": 93, "area": 15.96, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-14", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 288-87", "by": 2019},
       {"type": "월세", "price": 3700, "rent": 80, "area": 15.96, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-07", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 288-87", "by": 2019}
+    ]
+  },
+  {
+    "name": "(320-2) (다세대)",
+    "address": "동대문구 이문동 320-2",
+    "coords": [127.060351244346, 37.5941244209838],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 28.5, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 107, "area": 28.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-02", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 320-2", "by": 2016}
     ]
   },
   {
@@ -134,6 +270,33 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.4, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 77, "area": 14.45, "land": 0.0, "floor": "14", "dong": "", "date": "2026-07-01", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 341-41", "by": 2017}
+    ]
+  },
+  {
+    "name": "현대그린빌라B (연립)",
+    "address": "동대문구 이문동 348-1",
+    "coords": [127.056019041277, 37.5960025109567],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [34500, 34500], "rep_area": 66.1, "rep_avg_price": 34500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 34500, "rent": 0, "area": 66.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-04", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 348-1", "by": 1984}
+    ]
+  },
+  {
+    "name": "77-4 (다세대)",
+    "address": "동대문구 이문동 77-4",
+    "coords": [127.064120529326, 37.5953376007159],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 55.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 80, "area": 55.58, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-15", "period": "26.07~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이문동 77-4", "by": 2019}
+    ]
+  },
+  {
+    "name": "화성(163-16) (연립)",
+    "address": "동대문구 장안동 163-16",
+    "coords": [127.065643182785, 37.5700646217996],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 79.6, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 79.63, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-11", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 163-16", "by": 1996}
     ]
   },
   {
@@ -155,12 +318,49 @@
     ]
   },
   {
+    "name": "까사벨로2 (다세대)",
+    "address": "동대문구 장안동 316-23",
+    "coords": [127.07599577369, 37.5790497961995],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [26000, 26000], "rep_area": 46.7, "rep_avg_price": 26000}},
+    "deals": [
+      {"type": "월세", "price": 26000, "rent": 15, "area": 46.73, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-16", "period": "26.11~28.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 316-23", "by": 2018}
+    ]
+  },
+  {
     "name": "삼환파크빌 (다세대)",
     "address": "동대문구 장안동 327-11",
     "coords": [127.074011369224, 37.5773715141763],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 46.3, "rep_avg_price": 33000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 33000, "rent": 0, "area": 46.27, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-07", "period": "26.07~28.07", "renew": "갱신", "p_dep": 31500, "p_rent": 0, "jibun": "장안동 327-11", "by": 2018}
+    ]
+  },
+  {
+    "name": "(333-4) (다세대)",
+    "address": "동대문구 장안동 333-4",
+    "coords": [127.07635871214, 37.5715013912678],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [20035, 22897], "rep_area": 57.1, "rep_avg_price": 21466}},
+    "deals": [
+      {"type": "월세", "price": 20035, "rent": 23, "area": 57.11, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-21", "period": "26.07~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 333-4", "by": 2019},
+      {"type": "월세", "price": 22897, "rent": 25, "area": 57.11, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-21", "period": "26.07~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 333-4", "by": 2019}
+    ]
+  },
+  {
+    "name": "자이리버빌 (다세대)",
+    "address": "동대문구 장안동 358-7",
+    "coords": [127.071995061797, 37.564920558878],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [22843, 22843], "rep_area": 73.0, "rep_avg_price": 22843}},
+    "deals": [
+      {"type": "월세", "price": 22843, "rent": 27, "area": 72.97, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-21", "period": "26.07~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 358-7", "by": 2020}
+    ]
+  },
+  {
+    "name": "칠성(378-8) (연립)",
+    "address": "동대문구 장안동 378-8",
+    "coords": [127.066951862873, 37.5673131477396],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34500, 34500], "rep_area": 55.2, "rep_avg_price": 34500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34500, "rent": 0, "area": 55.17, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 378-8", "by": 1982}
     ]
   },
   {
@@ -173,12 +373,75 @@
     ]
   },
   {
+    "name": "THE하우스 (다세대)",
+    "address": "동대문구 장안동 381-7",
+    "coords": [127.06798145543, 37.5689373246258],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28200, 28200], "rep_area": 42.6, "rep_avg_price": 28200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28200, "rent": 0, "area": 42.6, "land": 0.0, "floor": "6", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 381-7", "by": 2016}
+    ]
+  },
+  {
+    "name": "미래타운 (다세대)",
+    "address": "동대문구 장안동 387-9",
+    "coords": [127.06883468893, 37.5721124778004],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 48.2, "rep_avg_price": 15000}},
+    "deals": [
+      {"type": "월세", "price": 15000, "rent": 40, "area": 48.2, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-06", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 387-9", "by": 2009}
+    ]
+  },
+  {
+    "name": "삼화에코빌6차 (다세대)",
+    "address": "동대문구 장안동 389-2",
+    "coords": [127.068453781814, 37.5715006533965],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3928, 3928], "rep_area": 51.9, "rep_avg_price": 3928}},
+    "deals": [
+      {"type": "월세", "price": 3928, "rent": 16, "area": 51.855, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-16", "period": "26.08~28.07", "renew": "갱신", "p_dep": 3928, "p_rent": 16, "jibun": "장안동 389-2", "by": 2018}
+    ]
+  },
+  {
+    "name": "골든캐슬2 (다세대)",
+    "address": "동대문구 장안동 392-6",
+    "coords": [127.067554854534, 37.5694678052856],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 25.6, "rep_avg_price": 21000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21000, "rent": 0, "area": 25.61, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 392-6", "by": 2019}
+    ]
+  },
+  {
     "name": "대광(397-8) (연립)",
     "address": "동대문구 장안동 397-8",
     "coords": [127.066230658916, 37.5673706776584],
     "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 63.9, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 63.88, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 397-8", "by": 1991}
+    ]
+  },
+  {
+    "name": "더헤리움 (다세대)",
+    "address": "동대문구 장안동 409-7",
+    "coords": [127.061036572787, 37.5632576374073],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [37000, 37000], "rep_area": 34.4, "rep_avg_price": 37000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 37000, "rent": 0, "area": 34.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 409-7", "by": 2016}
+    ]
+  },
+  {
+    "name": "포에버빌 (다세대)",
+    "address": "동대문구 장안동 419-2",
+    "coords": [127.063568114396, 37.5633075682035],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [27300, 27300], "rep_area": 43.0, "rep_avg_price": 27300}},
+    "deals": [
+      {"type": "월세", "price": 27300, "rent": 5, "area": 43.03, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-16", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 419-2", "by": 2015}
+    ]
+  },
+  {
+    "name": "대명B (연립)",
+    "address": "동대문구 장안동 426-7",
+    "coords": [127.066047413234, 37.5655885205193],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 62.9, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 30, "area": 62.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-17", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 426-7", "by": 1982}
     ]
   },
   {
@@ -191,12 +454,48 @@
     ]
   },
   {
+    "name": "동양캐슬 (다세대)",
+    "address": "동대문구 장안동 443-6",
+    "coords": [127.069973037505, 37.5637888620988],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 35.8, "rep_avg_price": 22000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 22000, "rent": 0, "area": 35.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-15", "period": "26.08~27.08", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "장안동 443-6", "by": 2016}
+    ]
+  },
+  {
+    "name": "부영팰리스 (다세대)",
+    "address": "동대문구 장안동 444-10",
+    "coords": [127.069502703014, 37.5636165991423],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 24.9, "rep_avg_price": 4000}},
+    "deals": [
+      {"type": "월세", "price": 4000, "rent": 58, "area": 24.94, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-18", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 444-10", "by": 2015}
+    ]
+  },
+  {
+    "name": "대명(448-1) (연립)",
+    "address": "동대문구 장안동 448-1",
+    "coords": [127.067324189163, 37.5635846147481],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 57.1, "rep_avg_price": 20000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 57.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-20", "period": "26.07~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장안동 448-1", "by": 1981}
+    ]
+  },
+  {
     "name": "로얄빌라트(452-4) (다세대)",
     "address": "동대문구 장안동 452-4",
     "coords": [127.068935783558, 37.5626639477344],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11000, 11000], "rep_area": 28.6, "rep_avg_price": 11000}},
     "deals": [
       {"type": "월세", "price": 11000, "rent": 7, "area": 28.56, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-06", "period": "26.08~28.08", "renew": "갱신", "p_dep": 11000, "p_rent": 5, "jibun": "장안동 452-4", "by": 2003}
+    ]
+  },
+  {
+    "name": "화성(93-116) (다세대)",
+    "address": "동대문구 장안동 93-116",
+    "coords": [127.072260829339, 37.5809743215425],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31000, 31000], "rep_area": 59.6, "rep_avg_price": 31000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 31000, "rent": 0, "area": 59.65, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장안동 93-116", "by": 1997}
     ]
   },
   {
@@ -212,8 +511,9 @@
     "name": "그린빌리지 (다세대)",
     "address": "동대문구 전농동 103-116",
     "coords": [127.051334203254, 37.5840013522626],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 28.3, "rep_avg_price": 16000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [15000, 16000], "rep_area": 22.5, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 15000, "rent": 0, "area": 22.48, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-17", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 103-116", "by": 2019},
       {"type": "전세", "price": 16000, "rent": 0, "area": 28.28, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 103-116", "by": 2019}
     ]
   },
@@ -230,8 +530,9 @@
     "name": "샤인파크 (다세대)",
     "address": "동대문구 전농동 103-233",
     "coords": [127.051514133874, 37.5837155689318],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 30.0, "rep_avg_price": 22000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [22000, 22000], "rep_area": 30.0, "rep_avg_price": 22000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 22000, "rent": 0, "area": 29.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-06", "period": "26.07~28.07", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "전농동 103-233", "by": 2018},
       {"type": "전세", "price": 22000, "rent": 0, "area": 29.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-06", "period": "26.07~28.07", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "전농동 103-233", "by": 2018}
     ]
   },
@@ -245,6 +546,24 @@
     ]
   },
   {
+    "name": "은덕지가 (다세대)",
+    "address": "동대문구 전농동 103-282",
+    "coords": [127.05392583253, 37.5868112046902],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 13.0, "rep_avg_price": 8000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 13.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-21", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 103-282", "by": 2013}
+    ]
+  },
+  {
+    "name": "The조은캐슬 (다세대)",
+    "address": "동대문구 전농동 103-33",
+    "coords": [127.054482336495, 37.5854455845818],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [39900, 39900], "rep_area": 26.9, "rep_avg_price": 39900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 39900, "rent": 0, "area": 26.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "전농동 103-33", "by": 2016}
+    ]
+  },
+  {
     "name": "(103-377) (다세대)",
     "address": "동대문구 전농동 103-377",
     "coords": [127.05124283679, 37.5838351587162],
@@ -254,12 +573,31 @@
     ]
   },
   {
+    "name": "골든빌 (다세대)",
+    "address": "동대문구 전농동 103-68",
+    "coords": [127.052699690408, 37.5852609695619],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8800, 8800], "rep_area": 12.1, "rep_avg_price": 8800}},
+    "deals": [
+      {"type": "월세", "price": 8800, "rent": 10, "area": 12.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-16", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 103-68", "by": 2013}
+    ]
+  },
+  {
     "name": "센트럴21 (다세대)",
     "address": "동대문구 전농동 127-156",
     "coords": [127.052231024577, 37.5829141807707],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 29.4, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 29.4, "rep_avg_price": 17000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 29.4, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 29.43, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-21", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 127-156", "by": 2019},
       {"type": "월세", "price": 3000, "rent": 85, "area": 29.43, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-10", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 127-156", "by": 2019}
+    ]
+  },
+  {
+    "name": "(127-41) (다세대)",
+    "address": "동대문구 전농동 127-41",
+    "coords": [127.05232961139, 37.5822337969927],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 16.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 54, "area": 16.15, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-21", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 127-41", "by": 2013}
     ]
   },
   {
@@ -284,8 +622,9 @@
     "name": "(130-128) (다세대)",
     "address": "동대문구 전농동 130-128",
     "coords": [127.052980534983, 37.5816751609729],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 28.6, "rep_avg_price": 5000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 28.6, "rep_avg_price": 21000}, "jeonse": null, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 28.6, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "매매", "price": 21000, "rent": 0, "area": 28.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "전농동 130-128", "by": 2015},
       {"type": "월세", "price": 5000, "rent": 20, "area": 28.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-08", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 130-128", "by": 2015},
       {"type": "월세", "price": 5000, "rent": 20, "area": 28.63, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-08", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 130-128", "by": 2015}
     ]
@@ -300,12 +639,58 @@
     ]
   },
   {
+    "name": "배봉그린빌 (다세대)",
+    "address": "동대문구 전농동 20-424",
+    "coords": [127.063463264183, 37.5779343803726],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [29000, 29000], "rep_area": 59.2, "rep_avg_price": 29000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 29000, "rent": 0, "area": 59.25, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-16", "period": "26.07~28.07", "renew": "갱신", "p_dep": 28000, "p_rent": 0, "jibun": "전농동 20-424", "by": 2014}
+    ]
+  },
+  {
     "name": "(206-40) (다세대)",
     "address": "동대문구 전농동 206-40",
     "coords": [127.053391852709, 37.5793177959007],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9450, 9450], "rep_area": 41.6, "rep_avg_price": 9450}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [9450, 9450], "rep_area": 41.6, "rep_avg_price": 9450}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 9450, "rent": 0, "area": 41.65, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-09", "period": "26.08~28.08", "renew": "갱신", "p_dep": 9000, "p_rent": 0, "jibun": "전농동 206-40", "by": 1991},
       {"type": "전세", "price": 9450, "rent": 0, "area": 41.65, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-09", "period": "26.08~28.08", "renew": "갱신", "p_dep": 9000, "p_rent": 0, "jibun": "전농동 206-40", "by": 1991}
+    ]
+  },
+  {
+    "name": "양지하이츠빌라 (연립)",
+    "address": "동대문구 전농동 209-119",
+    "coords": [127.052771004106, 37.581071048534],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 40.6, "rep_avg_price": 22000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 22000, "rent": 0, "area": 40.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-21", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 209-119", "by": 1995}
+    ]
+  },
+  {
+    "name": "벨루스전농 (다세대)",
+    "address": "동대문구 전농동 213-28",
+    "coords": [127.052888871917, 37.5794903824539],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [53000, 53000], "rep_area": 25.2, "rep_avg_price": 53000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 53000, "rent": 0, "area": 25.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "전농동 213-28", "by": 2023}
+    ]
+  },
+  {
+    "name": "(221-6) (다세대)",
+    "address": "동대문구 전농동 221-6",
+    "coords": [127.052718398442, 37.578234743421],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13650, 13650], "rep_area": 42.9, "rep_avg_price": 13650}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13650, "rent": 0, "area": 42.89, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-18", "period": "26.08~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 221-6", "by": 1991}
+    ]
+  },
+  {
+    "name": "배봉하이츠빌라 (다세대)",
+    "address": "동대문구 전농동 43-1",
+    "coords": [127.062136590921, 37.5788926625608],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8500, 8500], "rep_area": 61.6, "rep_avg_price": 8500}},
+    "deals": [
+      {"type": "월세", "price": 8500, "rent": 40, "area": 61.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-21", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 43-1", "by": 2002}
     ]
   },
   {
@@ -321,8 +706,9 @@
     "name": "벨류트리 (다세대)",
     "address": "동대문구 전농동 648-137",
     "coords": [127.047280576172, 37.5748369642871],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16500, 16500], "rep_area": 17.8, "rep_avg_price": 16500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [16000, 16500], "rep_area": 17.5, "rep_avg_price": 16000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 17.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-16", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 648-137", "by": 2026},
       {"type": "전세", "price": 16500, "rent": 0, "area": 17.76, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "전농동 648-137", "by": 2026}
     ]
   },
@@ -336,6 +722,33 @@
     ]
   },
   {
+    "name": "카사데메트로 (다세대)",
+    "address": "동대문구 제기동 1146-14",
+    "coords": [127.037710568753, 37.5908414213983],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 29.9, "rep_avg_price": 25000}},
+    "deals": [
+      {"type": "월세", "price": 25000, "rent": 30, "area": 29.93, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-17", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "제기동 1146-14", "by": 2025}
+    ]
+  },
+  {
+    "name": "청양 (다세대)",
+    "address": "동대문구 제기동 1149-4",
+    "coords": [127.036915714194, 37.5903798240582],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.2, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 54, "area": 17.24, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-08", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "제기동 1149-4", "by": 2001}
+    ]
+  },
+  {
+    "name": "(1174-0) (다세대)",
+    "address": "동대문구 제기동 1174",
+    "coords": [127.03609689053, 37.5841082668867],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 73.5, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 53, "area": 73.49, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-11", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "제기동 1174", "by": 1981}
+    ]
+  },
+  {
     "name": "동광팰리스(1214) (다세대)",
     "address": "동대문구 제기동 1214",
     "coords": [127.032143959049, 37.5804929116894],
@@ -345,12 +758,57 @@
     ]
   },
   {
+    "name": "목화 (다세대)",
+    "address": "동대문구 제기동 134-22",
+    "coords": [127.034773971626, 37.585851905438],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 25.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 52, "area": 25.6, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-09", "period": "26.07~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "제기동 134-22", "by": 2002}
+    ]
+  },
+  {
+    "name": "뉴케슬 (다세대)",
+    "address": "동대문구 제기동 134-34",
+    "coords": [127.035419215847, 37.5858667601706],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [21500, 21500], "rep_area": 38.0, "rep_avg_price": 21500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21500, "rent": 0, "area": 37.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "제기동 134-34", "by": 2008}
+    ]
+  },
+  {
+    "name": "더푸른빌2 (다세대)",
+    "address": "동대문구 제기동 135-90",
+    "coords": [127.034764975464, 37.5862273518384],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20805, 20805], "rep_area": 56.0, "rep_avg_price": 20805}},
+    "deals": [
+      {"type": "월세", "price": 20805, "rent": 24, "area": 56.03, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-21", "period": "26.07~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "제기동 135-90", "by": 2019}
+    ]
+  },
+  {
+    "name": "(136-300) (다세대)",
+    "address": "동대문구 제기동 136-300",
+    "coords": [127.036042345379, 37.5874482644507],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 72.2, "rep_avg_price": 19000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 19000, "rent": 0, "area": 72.15, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-15", "period": "26.07~28.07", "renew": "갱신", "p_dep": 19000, "p_rent": 0, "jibun": "제기동 136-300", "by": 1991}
+    ]
+  },
+  {
     "name": "BuildingSW (다세대)",
     "address": "동대문구 제기동 148-20",
     "coords": [127.030475138254, 37.5825016691093],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17325, 17325], "rep_area": 18.3, "rep_avg_price": 17325}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 17325, "rent": 0, "area": 18.3, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-13", "period": "26.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "제기동 148-20", "by": 2013}
+    ]
+  },
+  {
+    "name": "금강빌라 (다세대)",
+    "address": "동대문구 제기동 185-3",
+    "coords": [127.033472040044, 37.5835269086288],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 45.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 59, "area": 45.81, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-10", "period": "26.07~28.07", "renew": "갱신", "p_dep": 2000, "p_rent": 53, "jibun": "제기동 185-3", "by": 2004}
     ]
   },
   {
@@ -372,12 +830,31 @@
     ]
   },
   {
+    "name": "대고샤인빌 (다세대)",
+    "address": "동대문구 청량리동 199-195",
+    "coords": [127.044301309617, 37.5878322498242],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [33000, 35000], "rep_area": 38.8, "rep_avg_price": 34000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 33000, "rent": 0, "area": 38.75, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-21", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청량리동 199-195", "by": 2017},
+      {"type": "전세", "price": 35000, "rent": 0, "area": 38.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-14", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청량리동 199-195", "by": 2017}
+    ]
+  },
+  {
     "name": "동일아트빌라 (연립)",
     "address": "동대문구 회기동 101-23",
     "coords": [127.050919521529, 37.5903620898214],
     "stats": {"total": 1, "sale": {"count": 1, "range": [27500, 27500], "rep_area": 53.0, "rep_avg_price": 27500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 27500, "rent": 0, "area": 52.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 101-23", "by": 1996}
+    ]
+  },
+  {
+    "name": "동일아트맨션19차나동 (다세대)",
+    "address": "동대문구 회기동 60-218",
+    "coords": [127.047933168608, 37.5914026347738],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [37500, 37500], "rep_area": 52.5, "rep_avg_price": 37500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 37500, "rent": 0, "area": 52.53, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회기동 60-218", "by": 2003}
     ]
   },
   {
@@ -393,8 +870,9 @@
     "name": "수정파크빌(183-234) (다세대)",
     "address": "동대문구 휘경동 183-234",
     "coords": [127.057964955603, 37.5911532449488],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 12.0, "rep_avg_price": 4000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [4000, 4000], "rep_area": 12.0, "rep_avg_price": 4000}},
     "deals": [
+      {"type": "월세", "price": 4000, "rent": 45, "area": 12.045, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-22", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 183-234", "by": 2015},
       {"type": "월세", "price": 4000, "rent": 40, "area": 12.045, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-04", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 183-234", "by": 2015}
     ]
   },
@@ -426,6 +904,15 @@
     ]
   },
   {
+    "name": "휘경타운 (다세대)",
+    "address": "동대문구 휘경동 281-72",
+    "coords": [127.058244578894, 37.5877493385038],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [16000, 16000], "rep_area": 40.1, "rep_avg_price": 16000}},
+    "deals": [
+      {"type": "월세", "price": 16000, "rent": 20, "area": 40.06, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-19", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 281-72", "by": 1997}
+    ]
+  },
+  {
     "name": "(286-181) (다세대)",
     "address": "동대문구 휘경동 286-181",
     "coords": [127.062020881394, 37.5880239293277],
@@ -444,6 +931,15 @@
     ]
   },
   {
+    "name": "286-247 (다세대)",
+    "address": "동대문구 휘경동 286-247",
+    "coords": [127.062171009924, 37.5881544041647],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 10.9, "rep_avg_price": 18000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18000, "rent": 0, "area": 10.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 286-247", "by": 2014}
+    ]
+  },
+  {
     "name": "286-375 (다세대)",
     "address": "동대문구 휘경동 286-375",
     "coords": [127.062334519118, 37.5881728783756],
@@ -451,6 +947,15 @@
     "deals": [
       {"type": "전세", "price": 17800, "rent": 0, "area": 22.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-01", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 286-375", "by": 2014},
       {"type": "전세", "price": 17800, "rent": 0, "area": 22.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-01", "period": "26.08~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 286-375", "by": 2014}
+    ]
+  },
+  {
+    "name": "(294-212) (다세대)",
+    "address": "동대문구 휘경동 294-212",
+    "coords": [127.060519985619, 37.5863256164482],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 13.0, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 15, "area": 12.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-15", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "휘경동 294-212", "by": 2012}
     ]
   },
   {

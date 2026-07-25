@@ -158,8 +158,9 @@
     "name": "그린하우스 (다세대)",
     "address": "용인시 기흥구 공세동 290-6",
     "coords": [127.10929370026, 37.2344961656924],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11000, 11000], "rep_area": 34.7, "rep_avg_price": 11000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 11000], "rep_area": 16.3, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 16.285, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "공세동 290-6", "by": 2021},
       {"type": "월세", "price": 11000, "rent": 10, "area": 34.732, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "공세동 290-6", "by": 2021}
     ]
   },
@@ -434,6 +435,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 59.6, "rep_avg_price": 20000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 20000, "rent": 0, "area": 59.62, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마북동 474-15", "by": 1992}
+    ]
+  },
+  {
+    "name": "남양빌라 (다세대)",
+    "address": "용인시 기흥구 마북동 474-25",
+    "coords": [127.109944727128, 37.2978565235292],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13500, 13500], "rep_area": 59.9, "rep_avg_price": 13500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13500, "rent": 0, "area": 59.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마북동 474-25", "by": 1992}
     ]
   },
   {
@@ -1055,8 +1065,9 @@
     "name": "우남퍼스트빌리젠트 (연립)",
     "address": "용인시 기흥구 영덕동 953",
     "coords": [127.080718554067, 37.2801327667991],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [78000, 78000], "rep_area": 205.8, "rep_avg_price": 78000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [120000, 120000], "rep_area": 230.0, "rep_avg_price": 120000}, "monthly": {"count": 1, "range": [78000, 78000], "rep_area": 205.8, "rep_avg_price": 78000}},
     "deals": [
+      {"type": "전세", "price": 120000, "rent": 0, "area": 230.0058, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-13", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "영덕동 953", "by": 2009},
       {"type": "월세", "price": 78000, "rent": 100, "area": 205.8253, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "영덕동 953", "by": 2009}
     ]
   },
@@ -1078,6 +1089,15 @@
       {"type": "월세", "price": 4000, "rent": 50, "area": 24.54, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 38-9", "by": 2024},
       {"type": "월세", "price": 1000, "rent": 60, "area": 19.63, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 38-9", "by": 2024},
       {"type": "월세", "price": 1000, "rent": 60, "area": 19.63, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 38-9", "by": 2024}
+    ]
+  },
+  {
+    "name": "로얄캐빈스위트하우스 (연립)",
+    "address": "용인시 기흥구 중동 460-1",
+    "coords": [127.152626740998, 37.2679230857],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 80.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 100, "area": 80.6, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-24", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 460-1", "by": 2024}
     ]
   },
   {
@@ -1227,6 +1247,15 @@
       {"type": "월세", "price": 500, "rent": 40, "area": 16.563, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "26.03~27.03", "renew": "갱신", "p_dep": 500, "p_rent": 40, "jibun": "중동 705-3", "by": 2012},
       {"type": "월세", "price": 500, "rent": 45, "area": 16.563, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 705-3", "by": 2012},
       {"type": "월세", "price": 1000, "rent": 40, "area": 16.563, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 705-3", "by": 2012}
+    ]
+  },
+  {
+    "name": "카멜리아(725) (다세대)",
+    "address": "용인시 기흥구 중동 725",
+    "coords": [127.148892979777, 37.2662115376479],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 43.6, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 43.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "중동 725", "by": 2018}
     ]
   },
   {

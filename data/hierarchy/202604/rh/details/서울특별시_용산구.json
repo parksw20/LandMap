@@ -30,9 +30,19 @@
     "name": "준하우스 (다세대)",
     "address": "용산구 갈월동 7-171",
     "coords": [126.973092147014, 37.5472122276985],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 103.5, "rep_avg_price": 45000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 103.5, "rep_avg_price": 45000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 33.0, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 10000, "rent": 30, "area": 33.03, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-14", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "갈월동 7-171", "by": 2003},
       {"type": "전세", "price": 45000, "rent": 0, "area": 103.5, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "갈월동 7-171", "by": 2003}
+    ]
+  },
+  {
+    "name": "아로마빌리지(E) (다세대)",
+    "address": "용산구 갈월동 7-211",
+    "coords": [126.973340299212, 37.5469216217397],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 48.5, "rep_avg_price": 38000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 38000, "rent": 0, "area": 48.455, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "갈월동 7-211", "by": 2003}
     ]
   },
   {
@@ -203,8 +213,10 @@
     "name": "(38-1) (연립)",
     "address": "용산구 산천동 38-1",
     "coords": [126.952435059539, 37.5345935185272],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 50.4, "rep_avg_price": 25000}},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [90000, 90000], "rep_area": 53.3, "rep_avg_price": 90000}, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 50.4, "rep_avg_price": 25000}},
     "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 53.28, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "산천동 38-1", "by": 2007},
+      {"type": "매매", "price": 90000, "rent": 0, "area": 53.28, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "산천동 38-1", "by": 2007},
       {"type": "월세", "price": 25000, "rent": 20, "area": 50.4, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "산천동 38-1", "by": 2007}
     ]
   },
@@ -364,6 +376,15 @@
     ]
   },
   {
+    "name": "도담빌 (다세대)",
+    "address": "용산구 서계동 96-16",
+    "coords": [126.968104980331, 37.5513190888403],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 29.8, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 29.84, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-08", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서계동 96-16", "by": 2020}
+    ]
+  },
+  {
     "name": "(104-0) (연립)",
     "address": "용산구 서빙고동 104",
     "coords": [126.99438042571, 37.5216270957567],
@@ -385,8 +406,10 @@
     "name": "한울마루 (다세대)",
     "address": "용산구 서빙고동 198-4",
     "coords": [126.992744125004, 37.520327580162],
-    "stats": {"total": 8, "sale": null, "jeonse": {"count": 7, "range": [25000, 25000], "rep_area": 15.6, "rep_avg_price": 25000}, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 17.1, "rep_avg_price": 12000}},
+    "stats": {"total": 10, "sale": null, "jeonse": {"count": 9, "range": [25000, 25000], "rep_area": 15.6, "rep_avg_price": 25000}, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 17.1, "rep_avg_price": 12000}},
     "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 15.6, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 198-4", "by": 2026},
+      {"type": "전세", "price": 25000, "rent": 0, "area": 17.79, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-20", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 198-4", "by": 2026},
       {"type": "월세", "price": 12000, "rent": 50, "area": 17.13, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 198-4", "by": 2026},
       {"type": "전세", "price": 25000, "rent": 0, "area": 15.6, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 198-4", "by": 2026},
       {"type": "전세", "price": 25000, "rent": 0, "area": 17.79, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서빙고동 198-4", "by": 2026},
@@ -583,12 +606,30 @@
     ]
   },
   {
+    "name": "골든하우스 (다세대)",
+    "address": "용산구 용문동 32-34",
+    "coords": [126.959400625247, 37.538161738003],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 29.9, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 83, "area": 29.92, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.08~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용문동 32-34", "by": 2014}
+    ]
+  },
+  {
     "name": "금강프라임빌 (다세대)",
     "address": "용산구 용문동 36-9",
     "coords": [126.958612426075, 37.5385994405871],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [27000, 27000], "rep_area": 30.0, "rep_avg_price": 27000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 27000, "rent": 0, "area": 29.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-21", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용문동 36-9", "by": 2020}
+    ]
+  },
+  {
+    "name": "대성용문연립주택 (연립)",
+    "address": "용산구 용문동 38-13",
+    "coords": [126.956926180075, 37.5378180307777],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 65.3, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 93, "area": 65.28, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "갱신", "p_dep": 3000, "p_rent": 89, "jibun": "용문동 38-13", "by": 2009}
     ]
   },
   {
@@ -631,8 +672,9 @@
     "name": "해비치 (다세대)",
     "address": "용산구 용문동 38-186",
     "coords": [126.957459912829, 37.5371857220213],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [92500, 92500], "rep_area": 61.3, "rep_avg_price": 92500}, "jeonse": {"count": 1, "range": [28665, 28665], "rep_area": 45.6, "rep_avg_price": 28665}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [92500, 92500], "rep_area": 61.3, "rep_avg_price": 92500}, "jeonse": {"count": 1, "range": [28665, 28665], "rep_area": 45.6, "rep_avg_price": 28665}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 92500, "rent": 0, "area": 61.29, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문동 38-186", "by": 2014},
       {"type": "매매", "price": 92500, "rent": 0, "area": 61.29, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용문동 38-186", "by": 2014},
       {"type": "전세", "price": 28665, "rent": 0, "area": 45.625, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "갱신", "p_dep": 27300, "p_rent": 0, "jibun": "용문동 38-186", "by": 2014}
     ]
@@ -650,8 +692,9 @@
     "name": "(38-205) (다세대)",
     "address": "용산구 용문동 38-205",
     "coords": [126.958024320326, 37.5379279878505],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26300, 26300], "rep_area": 24.0, "rep_avg_price": 26300}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [19000, 26300], "rep_area": 19.1, "rep_avg_price": 19000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 19000, "rent": 0, "area": 19.13, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-25", "period": "26.05~28.05", "renew": "갱신", "p_dep": 13000, "p_rent": 8, "jibun": "용문동 38-205", "by": 2018},
       {"type": "전세", "price": 26300, "rent": 0, "area": 24.05, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-03", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용문동 38-205", "by": 2018}
     ]
   },
@@ -881,6 +924,15 @@
     ]
   },
   {
+    "name": "한빛창빌 (다세대)",
+    "address": "용산구 용문동 8-44",
+    "coords": [126.961366376529, 37.5371980568289],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 22.0, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 120, "area": 22.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용문동 8-44", "by": 2020}
+    ]
+  },
+  {
     "name": "넥스빌1 (다세대)",
     "address": "용산구 용산동2가 1-1248",
     "coords": [126.983155639968, 37.5462931810476],
@@ -904,8 +956,9 @@
     "name": "금강빌(1-1569) (다세대)",
     "address": "용산구 용산동2가 1-1569",
     "coords": [126.98115182585, 37.5444373605022],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 33.5, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3000, 3000], "rep_area": 33.5, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 147, "area": 33.54, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용산동2가 1-1569", "by": 2007},
       {"type": "월세", "price": 3000, "rent": 147, "area": 33.54, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용산동2가 1-1569", "by": 2007}
     ]
   },
@@ -1118,12 +1171,30 @@
     ]
   },
   {
+    "name": "수호 (연립)",
+    "address": "용산구 용산동2가 46-3",
+    "coords": [126.987069218804, 37.5406461196745],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 43.7, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 72, "area": 43.7, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-02", "period": "26.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용산동2가 46-3", "by": 1981}
+    ]
+  },
+  {
     "name": "신주빌라 (다세대)",
     "address": "용산구 용산동2가 5-1453",
     "coords": [126.988900061949, 37.5455823417726],
     "stats": {"total": 1, "sale": {"count": 1, "range": [57000, 57000], "rep_area": 84.5, "rep_avg_price": 57000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 57000, "rent": 0, "area": 84.5, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용산동2가 5-1453", "by": 2003}
+    ]
+  },
+  {
+    "name": "(5-1465) (다세대)",
+    "address": "용산구 용산동2가 5-1465",
+    "coords": [126.988730483954, 37.5452733730938],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 42.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 42.84, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용산동2가 5-1465", "by": 2000}
     ]
   },
   {
@@ -1286,6 +1357,15 @@
     ]
   },
   {
+    "name": "삼성맨션 (연립)",
+    "address": "용산구 원효로1가 29-3",
+    "coords": [126.966634902162, 37.5392158311343],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 53.8, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 120, "area": 53.75, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-11", "period": "26.07~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로1가 29-3", "by": 1996}
+    ]
+  },
+  {
     "name": "행운빌라 (다세대)",
     "address": "용산구 원효로1가 29-34",
     "coords": [126.966584548459, 37.5397284859247],
@@ -1301,6 +1381,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8500, 8500], "rep_area": 32.1, "rep_avg_price": 8500}},
     "deals": [
       {"type": "월세", "price": 8500, "rent": 50, "area": 32.07, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "갱신", "p_dep": 7500, "p_rent": 50, "jibun": "원효로1가 29-39", "by": 2014}
+    ]
+  },
+  {
+    "name": "폴라리스 (다세대)",
+    "address": "용산구 원효로1가 4",
+    "coords": [126.968459513963, 37.5416951634965],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 29.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 95, "area": 29.9, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-11", "period": "26.05~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로1가 4", "by": 2016}
     ]
   },
   {
@@ -1494,11 +1583,21 @@
     ]
   },
   {
+    "name": "85-2 (다세대)",
+    "address": "용산구 원효로4가 85-2",
+    "coords": [126.952362565254, 37.534191192456],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 27.3, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 130, "area": 27.34, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-07", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로4가 85-2", "by": 2022}
+    ]
+  },
+  {
     "name": "이화주택 (연립)",
     "address": "용산구 원효로4가 85-7",
     "coords": [126.951909063542, 37.5342405636961],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 56.1, "rep_avg_price": 25000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 56.1, "rep_avg_price": 25000}, "monthly": {"count": 1, "range": [3150, 3150], "rep_area": 56.1, "rep_avg_price": 3150}},
     "deals": [
+      {"type": "월세", "price": 3150, "rent": 68, "area": 56.1, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "26.05~27.05", "renew": "갱신", "p_dep": 3000, "p_rent": 65, "jibun": "원효로4가 85-7", "by": 1981},
       {"type": "전세", "price": 25000, "rent": 0, "area": 56.1, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로4가 85-7", "by": 1981}
     ]
   },
@@ -1509,6 +1608,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 22.4, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 90000, "rent": 0, "area": 22.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원효로4가 94-7", "by": 2026}
+    ]
+  },
+  {
+    "name": "(99-6) (다세대)",
+    "address": "용산구 원효로4가 99-6",
+    "coords": [126.953900271342, 37.5330822201099],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 36.6, "rep_avg_price": 18000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 18000, "rent": 0, "area": 36.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로4가 99-6", "by": 1995}
     ]
   },
   {
@@ -1603,6 +1711,15 @@
     ]
   },
   {
+    "name": "탑맨션 (연립다세대)",
+    "address": "용산구 이태원동 135-3",
+    "coords": [126.994866037342, 37.5384575561538],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 102.8, "rep_avg_price": 2500}},
+    "deals": [
+      {"type": "월세", "price": 2500, "rent": 420, "area": 102.81, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 135-3", "by": 1971}
+    ]
+  },
+  {
     "name": "파크루13 (다세대)",
     "address": "용산구 이태원동 155-13",
     "coords": [126.990630296389, 37.5362058762086],
@@ -1624,9 +1741,10 @@
     "name": "한양빌라 (다세대)",
     "address": "용산구 이태원동 181-29",
     "coords": [126.990410339993, 37.5353529713361],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 97.7, "rep_avg_price": 130000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 97.7, "rep_avg_price": 130000}, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 46.9, "rep_avg_price": 33000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 130000, "rent": 0, "area": 97.68, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 181-29", "by": 1991}
+      {"type": "매매", "price": 130000, "rent": 0, "area": 97.68, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 181-29", "by": 1991},
+      {"type": "전세", "price": 33000, "rent": 0, "area": 46.92, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-25", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 181-29", "by": 1991}
     ]
   },
   {
@@ -1642,8 +1760,9 @@
     "name": "제이더블유베르데 (다세대)",
     "address": "용산구 이태원동 181-45",
     "coords": [126.989786980861, 37.5349224209144],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [80000, 80000], "rep_area": 77.8, "rep_avg_price": 80000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [80000, 80000], "rep_area": 77.8, "rep_avg_price": 80000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 80000, "rent": 0, "area": 77.82, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 181-45", "by": 2022},
       {"type": "전세", "price": 80000, "rent": 0, "area": 77.82, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 181-45", "by": 2022}
     ]
   },
@@ -1663,6 +1782,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 205.8, "rep_avg_price": 0}},
     "deals": [
       {"type": "월세", "price": 0, "rent": 600, "area": 205.796, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 193-3", "by": 1985}
+    ]
+  },
+  {
+    "name": "RICHVILLAGE (다세대)",
+    "address": "용산구 이태원동 194",
+    "coords": [126.989642597522, 37.5374758440003],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 98.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 219, "area": 98.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-30", "period": "26.05~27.05", "renew": "갱신", "p_dep": 2000, "p_rent": 208, "jibun": "이태원동 194", "by": 2004}
     ]
   },
   {
@@ -1699,6 +1827,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28650, 28650], "rep_area": 47.4, "rep_avg_price": 28650}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 28650, "rent": 0, "area": 47.36, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-26", "period": "26.05~28.05", "renew": "갱신", "p_dep": 27300, "p_rent": 0, "jibun": "이태원동 206-10", "by": 2016}
+    ]
+  },
+  {
+    "name": "(207-13) (다세대)",
+    "address": "용산구 이태원동 207-13",
+    "coords": [126.993676098491, 37.5380400649991],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 64.9, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 64.92, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 207-13", "by": 1992}
     ]
   },
   {
@@ -1777,8 +1914,9 @@
     "name": "(226-3) (연립)",
     "address": "용산구 이태원동 226-3",
     "coords": [126.991232849772, 37.5395580041053],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 107.8, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 3000], "rep_area": 84.5, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 230, "area": 84.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.07~28.07", "renew": "갱신", "p_dep": 1000, "p_rent": 220, "jibun": "이태원동 226-3", "by": 1998},
       {"type": "월세", "price": 3000, "rent": 300, "area": 107.85, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 226-3", "by": 1998}
     ]
   },
@@ -1792,12 +1930,30 @@
     ]
   },
   {
+    "name": "남산테라스빌 (연립)",
+    "address": "용산구 이태원동 243-15",
+    "coords": [126.994732446044, 37.5395527159644],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 172.2, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 550, "area": 172.19, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-24", "period": "26.05~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 243-15", "by": 2004}
+    ]
+  },
+  {
     "name": "HYATTHILLS (다세대)",
     "address": "용산구 이태원동 243-27",
     "coords": [126.99516534568, 37.5397030212918],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 148.0, "rep_avg_price": 20000}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 585, "area": 147.97, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 243-27", "by": 1999}
+    ]
+  },
+  {
+    "name": "드림빌 (다세대)",
+    "address": "용산구 이태원동 247-21",
+    "coords": [126.992154791937, 37.5406250331435],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 46.6, "rep_avg_price": 1500}},
+    "deals": [
+      {"type": "월세", "price": 1500, "rent": 120, "area": 46.63, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 247-21", "by": 2003}
     ]
   },
   {
@@ -1852,6 +2008,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 77.6, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 135, "area": 77.58, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 34-95", "by": 1991}
+    ]
+  },
+  {
+    "name": "경일빌라 (연립)",
+    "address": "용산구 이태원동 36-3",
+    "coords": [126.991910088132, 37.5318600829828],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [34000, 34000], "rep_area": 60.0, "rep_avg_price": 34000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 34000, "rent": 0, "area": 60.03, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이태원동 36-3", "by": 1996}
     ]
   },
   {
@@ -1912,8 +2077,9 @@
     "name": "(43-9) (다세대)",
     "address": "용산구 주성동 43-9",
     "coords": [126.998283585872, 37.5220698796411],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 103.7, "rep_avg_price": 20000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [20000, 20000], "rep_area": 103.7, "rep_avg_price": 20000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 103.74, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "주성동 43-9", "by": 1995},
       {"type": "전세", "price": 20000, "rent": 0, "area": 103.74, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "주성동 43-9", "by": 1995}
     ]
   },
@@ -1982,11 +2148,21 @@
     ]
   },
   {
+    "name": "(1-65) (다세대)",
+    "address": "용산구 청파동1가 1-65",
+    "coords": [126.96597338478, 37.5502790120559],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [99500, 99500], "rep_area": 68.8, "rep_avg_price": 99500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 99500, "rent": 0, "area": 68.85, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동1가 1-65", "by": 2009}
+    ]
+  },
+  {
     "name": "미래스위트하우스 (다세대)",
     "address": "용산구 청파동1가 100-7",
     "coords": [126.968108763293, 37.5474868727984],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [27930, 27930], "rep_area": 29.9, "rep_avg_price": 27930}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [27930, 28000], "rep_area": 29.6, "rep_avg_price": 28000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 28000, "rent": 0, "area": 29.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-03", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동1가 100-7", "by": 2017},
       {"type": "전세", "price": 27930, "rent": 0, "area": 29.93, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "갱신", "p_dep": 26600, "p_rent": 0, "jibun": "청파동1가 100-7", "by": 2017}
     ]
   },
@@ -2019,6 +2195,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26600, 26600], "rep_area": 25.3, "rep_avg_price": 26600}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 26600, "rent": 0, "area": 25.33, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.06~28.06", "renew": "갱신", "p_dep": 25350, "p_rent": 0, "jibun": "청파동1가 132-14", "by": 2019}
+    ]
+  },
+  {
+    "name": "(200-12) (다세대)",
+    "address": "용산구 청파동1가 200-12",
+    "coords": [126.964025177117, 37.549232645644],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 94.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 94.75, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-26", "period": "26.06~28.06", "renew": "갱신", "p_dep": 500, "p_rent": 50, "jibun": "청파동1가 200-12", "by": 1979}
     ]
   },
   {
@@ -2089,8 +2274,9 @@
     "name": "청파리치빌(89-17) (다세대)",
     "address": "용산구 청파동1가 89-17",
     "coords": [126.967236971139, 37.5485150340964],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [23000, 23100], "rep_area": 24.4, "rep_avg_price": 23000}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [23000, 23100], "rep_area": 24.4, "rep_avg_price": 23000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 26.9, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 71, "area": 26.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동1가 89-17", "by": 2018},
       {"type": "전세", "price": 23100, "rent": 0, "area": 25.17, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-26", "period": "26.06~28.06", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "청파동1가 89-17", "by": 2018},
       {"type": "전세", "price": 23000, "rent": 0, "area": 24.45, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-11", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동1가 89-17", "by": 2018}
     ]
@@ -2207,8 +2393,9 @@
     "name": "동진주택 (연립)",
     "address": "용산구 청파동2가 11-1",
     "coords": [126.968738441942, 37.5468274199033],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 64.2, "rep_avg_price": 130000}, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 64.1, "rep_avg_price": 30000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [129000, 130000], "rep_area": 56.1, "rep_avg_price": 129000}, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 64.1, "rep_avg_price": 30000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 129000, "rent": 0, "area": 56.07, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동2가 11-1", "by": 1991},
       {"type": "매매", "price": 130000, "rent": 0, "area": 64.17, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청파동2가 11-1", "by": 1991},
       {"type": "전세", "price": 30000, "rent": 0, "area": 64.08, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-07", "period": "26.04~28.04", "renew": "갱신", "p_dep": 24000, "p_rent": 0, "jibun": "청파동2가 11-1", "by": 1991}
     ]
@@ -2251,6 +2438,15 @@
     ]
   },
   {
+    "name": "케렌시아용산A (다세대)",
+    "address": "용산구 청파동3가 118-133",
+    "coords": [126.967068289018, 37.5430136669412],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [34000, 34000], "rep_area": 37.6, "rep_avg_price": 34000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 34000, "rent": 0, "area": 37.62, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 118-133", "by": 2023}
+    ]
+  },
+  {
     "name": "용산미래빌 (다세대)",
     "address": "용산구 청파동3가 118-135",
     "coords": [126.966916986107, 37.5430482230301],
@@ -2275,6 +2471,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26250, 26250], "rep_area": 52.6, "rep_avg_price": 26250}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 26250, "rent": 0, "area": 52.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "26.05~28.05", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "청파동3가 118-22", "by": 1986}
+    ]
+  },
+  {
+    "name": "Y.H빌리지3 (다세대)",
+    "address": "용산구 청파동3가 118-226",
+    "coords": [126.966575586917, 37.5435814284713],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26000, 26000], "rep_area": 22.6, "rep_avg_price": 26000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 26000, "rent": 0, "area": 22.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-11", "period": "26.06~28.06", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "청파동3가 118-226", "by": 2024}
     ]
   },
   {
@@ -2379,8 +2584,9 @@
     "name": "더클래스용산G (다세대)",
     "address": "용산구 청파동3가 134-15",
     "coords": [126.967998275272, 37.5414979006608],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 6, "range": [27000, 33000], "rep_area": 28.2, "rep_avg_price": 28250}, "monthly": null},
+    "stats": {"total": 7, "sale": null, "jeonse": {"count": 7, "range": [27000, 33000], "rep_area": 28.2, "rep_avg_price": 28250}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 33000, "rent": 0, "area": 29.91, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-15", "by": 2026},
       {"type": "전세", "price": 32000, "rent": 0, "area": 29.98, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-15", "by": 2026},
       {"type": "전세", "price": 30000, "rent": 0, "area": 28.47, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-05", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-15", "by": 2026},
       {"type": "전세", "price": 28500, "rent": 0, "area": 28.2, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-15", "by": 2026},
@@ -2403,8 +2609,9 @@
     "name": "더클래스용산C (다세대)",
     "address": "용산구 청파동3가 134-66",
     "coords": [126.968041147408, 37.54179244908],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [19000, 35500], "rep_area": 32.2, "rep_avg_price": 35500}, "monthly": null},
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 5, "range": [19000, 35500], "rep_area": 32.2, "rep_avg_price": 35500}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 27.2, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "월세", "price": 5000, "rent": 100, "area": 27.21, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-28", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-66", "by": 2026},
       {"type": "전세", "price": 30000, "rent": 0, "area": 28.33, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-66", "by": 2026},
       {"type": "전세", "price": 35500, "rent": 0, "area": 32.18, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-08", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-66", "by": 2026},
       {"type": "전세", "price": 19000, "rent": 0, "area": 23.33, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-66", "by": 2026},
@@ -2448,6 +2655,24 @@
       {"type": "전세", "price": 22000, "rent": 0, "area": 19.81, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-02", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-69", "by": 2026},
       {"type": "전세", "price": 23000, "rent": 0, "area": 18.54, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-69", "by": 2026},
       {"type": "전세", "price": 17000, "rent": 0, "area": 16.54, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-02", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 134-69", "by": 2026}
+    ]
+  },
+  {
+    "name": "시티파크용산 (다세대)",
+    "address": "용산구 청파동3가 24-14",
+    "coords": [126.970108049132, 37.5444905828632],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [32500, 32500], "rep_area": 29.9, "rep_avg_price": 32500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 32500, "rent": 0, "area": 29.89, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 24-14", "by": 2024}
+    ]
+  },
+  {
+    "name": "(81-1) (다세대)",
+    "address": "용산구 청파동3가 81-1",
+    "coords": [126.970143988207, 37.5417653387734],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 106.3, "rep_avg_price": 40000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 40000, "rent": 0, "area": 106.3, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청파동3가 81-1", "by": 2001}
     ]
   },
   {
@@ -2634,6 +2859,24 @@
     ]
   },
   {
+    "name": "힐탑빌 (다세대)",
+    "address": "용산구 한남동 726-332",
+    "coords": [127.003131288391, 37.5448157112282],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 63.6, "rep_avg_price": 55000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 55000, "rent": 0, "area": 63.56, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-29", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "한남동 726-332", "by": 2010}
+    ]
+  },
+  {
+    "name": "이레빌라 (다세대)",
+    "address": "용산구 한남동 726-342",
+    "coords": [127.003269434627, 37.5443850298167],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [6000, 6000], "rep_area": 42.0, "rep_avg_price": 6000}},
+    "deals": [
+      {"type": "월세", "price": 6000, "rent": 130, "area": 42.04, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "한남동 726-342", "by": 2002}
+    ]
+  },
+  {
     "name": "숲속의아침 (다세대)",
     "address": "용산구 한남동 726-350",
     "coords": [127.003225974307, 37.5441953706484],
@@ -2691,8 +2934,9 @@
     "name": "H파크빌 (다세대)",
     "address": "용산구 효창동 2-15",
     "coords": [126.963066987839, 37.5431006911211],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [27000, 27000], "rep_area": 29.0, "rep_avg_price": 27000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [27000, 27000], "rep_area": 29.0, "rep_avg_price": 27000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 27000, "rent": 0, "area": 32.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-25", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "효창동 2-15", "by": 2019},
       {"type": "전세", "price": 27000, "rent": 0, "area": 29.05, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "효창동 2-15", "by": 2019}
     ]
   },
@@ -2735,6 +2979,15 @@
     ]
   },
   {
+    "name": "한울빌라 (다세대)",
+    "address": "용산구 효창동 5-136",
+    "coords": [126.959992403982, 37.5429972458343],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [103850, 103850], "rep_area": 76.6, "rep_avg_price": 103850}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 103850, "rent": 0, "area": 76.65, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "효창동 5-136", "by": 2003}
+    ]
+  },
+  {
     "name": "송원빌딩 (다세대)",
     "address": "용산구 효창동 5-160",
     "coords": [126.960917846345, 37.54200636612],
@@ -2756,8 +3009,9 @@
     "name": "비버빌 (다세대)",
     "address": "용산구 효창동 5-190",
     "coords": [126.95865129158, 37.542186605053],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [22000, 22500], "rep_area": 26.3, "rep_avg_price": 22000}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [22000, 26000], "rep_area": 26.3, "rep_avg_price": 24000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 26000, "rent": 0, "area": 26.33, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-11", "period": "26.06~28.06", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "효창동 5-190", "by": 2019},
       {"type": "전세", "price": 22000, "rent": 0, "area": 26.34, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "갱신", "p_dep": 21000, "p_rent": 0, "jibun": "효창동 5-190", "by": 2019},
       {"type": "전세", "price": 22500, "rent": 0, "area": 29.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "효창동 5-190", "by": 2019}
     ]
@@ -3088,6 +3342,15 @@
     ]
   },
   {
+    "name": "스카이빌 (다세대)",
+    "address": "용산구 후암동 123-24",
+    "coords": [126.974975756936, 37.5491036580549],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11000, 11000], "rep_area": 76.5, "rep_avg_price": 11000}},
+    "deals": [
+      {"type": "월세", "price": 11000, "rent": 150, "area": 76.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 123-24", "by": 2002}
+    ]
+  },
+  {
     "name": "(142-13) (다세대)",
     "address": "용산구 후암동 142-13",
     "coords": [126.973947453184, 37.548409216196],
@@ -3109,8 +3372,9 @@
     "name": "용산더힐(101) (다세대)",
     "address": "용산구 후암동 244-101",
     "coords": [126.978646146981, 37.5485790065585],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 53.4, "rep_avg_price": 30000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 53.4, "rep_avg_price": 30000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 18.0, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 18.04, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "후암동 244-101", "by": 2012},
       {"type": "전세", "price": 30000, "rent": 0, "area": 53.35, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "후암동 244-101", "by": 2012}
     ]
   },
@@ -3178,6 +3442,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [84800, 84800], "rep_area": 29.6, "rep_avg_price": 84800}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 84800, "rent": 0, "area": 29.6, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 254-50", "by": 2012}
+    ]
+  },
+  {
+    "name": "아인하우스3동 (다세대)",
+    "address": "용산구 후암동 254-67",
+    "coords": [126.979334537094, 37.5464579074657],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 20.0, "rep_avg_price": 22000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 22000, "rent": 0, "area": 19.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "후암동 254-67", "by": 2021}
     ]
   },
   {
@@ -3404,6 +3677,15 @@
     ]
   },
   {
+    "name": "(409-62) (다세대)",
+    "address": "용산구 후암동 409-62",
+    "coords": [126.983824539977, 37.5467516127631],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 50.0, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 50.02, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-02", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "후암동 409-62", "by": 1999}
+    ]
+  },
+  {
     "name": "(409-97) (다세대)",
     "address": "용산구 후암동 409-97",
     "coords": [126.983349457237, 37.5469142671391],
@@ -3478,12 +3760,30 @@
     ]
   },
   {
+    "name": "남산빌라(45-3) (연립)",
+    "address": "용산구 후암동 45-3",
+    "coords": [126.980829044424, 37.5508517894813],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30240, 30240], "rep_area": 74.3, "rep_avg_price": 30240}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30240, "rent": 0, "area": 74.34, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-28", "period": "26.06~28.06", "renew": "갱신", "p_dep": 28800, "p_rent": 0, "jibun": "후암동 45-3", "by": 1984}
+    ]
+  },
+  {
     "name": "후암신비빌B (다세대)",
     "address": "용산구 후암동 47-2",
     "coords": [126.98018660815, 37.5508161840938],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 30.0, "rep_avg_price": 25000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 29.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "후암동 47-2", "by": 2020}
+    ]
+  },
+  {
+    "name": "후암신비빌A (다세대)",
+    "address": "용산구 후암동 60-16",
+    "coords": [126.977932806971, 37.5503647446121],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [89000, 89000], "rep_area": 29.8, "rep_avg_price": 89000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 89000, "rent": 0, "area": 29.85, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "후암동 60-16", "by": 2019}
     ]
   },
   {

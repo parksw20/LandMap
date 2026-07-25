@@ -14,8 +14,10 @@
     "name": "정발마을3 (연립)",
     "address": "고양시 일산동구 마두동 861",
     "coords": [126.789613597, 37.6633902596543],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 135.0, "rep_avg_price": 40000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 134.7, "rep_avg_price": 5000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [40000, 40000], "rep_area": 135.0, "rep_avg_price": 40000}, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 134.7, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "전세", "price": 40000, "rent": 0, "area": 135.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마두동 861", "by": 1996},
+      {"type": "월세", "price": 5000, "rent": 180, "area": 134.67, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마두동 861", "by": 1996},
       {"type": "전세", "price": 40000, "rent": 0, "area": 135.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-28", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마두동 861", "by": 1996},
       {"type": "월세", "price": 5000, "rent": 180, "area": 134.67, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마두동 861", "by": 1996}
     ]
@@ -215,20 +217,31 @@
     ]
   },
   {
+    "name": "명성르보헴2차 (다세대)",
+    "address": "고양시 일산동구 성석동 1338-5",
+    "coords": [126.779925176432, 37.7066497979622],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 57.8, "rep_avg_price": 14000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 14000, "rent": 0, "area": 57.811, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성석동 1338-5", "by": 2017}
+    ]
+  },
+  {
     "name": "성석동삼성캐슬1빌리지1동2동 (다세대)",
     "address": "고양시 일산동구 성석동 1406",
     "coords": [126.781537980085, 37.7084300559058],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 44.1, "rep_avg_price": 11000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [11000, 11000], "rep_area": 44.1, "rep_avg_price": 11000}, "monthly": null},
     "deals": [
-      {"type": "전세", "price": 11000, "rent": 0, "area": 44.13, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성석동 1406", "by": 2017}
+      {"type": "전세", "price": 11000, "rent": 0, "area": 44.13, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성석동 1406", "by": 2017},
+      {"type": "전세", "price": 11000, "rent": 0, "area": 44.13, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "26.05~28.05", "renew": "갱신", "p_dep": 11000, "p_rent": 0, "jibun": "성석동 1406", "by": 2017}
     ]
   },
   {
     "name": "헤리티지6동 (다세대)",
     "address": "고양시 일산동구 성석동 1439",
     "coords": [126.775235788115, 37.7080263777568],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19500, 19500], "rep_area": 64.6, "rep_avg_price": 19500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [19500, 19500], "rep_area": 64.6, "rep_avg_price": 19500}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 19500, "rent": 0, "area": 64.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "갱신", "p_dep": 21000, "p_rent": 0, "jibun": "성석동 1439", "by": 2019},
       {"type": "전세", "price": 19500, "rent": 0, "area": 64.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "갱신", "p_dep": 21000, "p_rent": 0, "jibun": "성석동 1439", "by": 2019}
     ]
   },
@@ -275,6 +288,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 54.1, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 15000, "rent": 0, "area": 54.0919, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성석동 195-18", "by": 2019}
+    ]
+  },
+  {
+    "name": "골든힐스빌(B101,102,103동) (다세대)",
+    "address": "고양시 일산동구 성석동 195-31",
+    "coords": [126.804573442836, 37.6889524078609],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 58.9, "rep_avg_price": 16000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16000, "rent": 0, "area": 58.865, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성석동 195-31", "by": 2018}
     ]
   },
   {
@@ -408,6 +430,15 @@
     ]
   },
   {
+    "name": "밤가시마을2 (연립)",
+    "address": "고양시 일산동구 정발산동 1144",
+    "coords": [126.774791501436, 37.6738615441966],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.9, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 90, "area": 59.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "정발산동 1144", "by": 1996}
+    ]
+  },
+  {
     "name": "밤가시마을7 (연립)",
     "address": "고양시 일산동구 정발산동 1266",
     "coords": [126.784002399075, 37.6732473668406],
@@ -454,6 +485,16 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [38500, 38500], "rep_area": 59.9, "rep_avg_price": 38500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 38500, "rent": 0, "area": 59.88, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "정발산동 696", "by": 1996}
+    ]
+  },
+  {
+    "name": "양지마을2 (연립)",
+    "address": "고양시 일산동구 정발산동 720",
+    "coords": [126.770689204096, 37.6655195002697],
+    "stats": {"total": 2, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 132.2, "rep_avg_price": 60000}, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 132.2, "rep_avg_price": 55000}, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 60000, "rent": 0, "area": 132.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "정발산동 720", "by": 1996},
+      {"type": "전세", "price": 55000, "rent": 0, "area": 132.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-04", "period": "26.04~28.04", "renew": "갱신", "p_dep": 60000, "p_rent": 0, "jibun": "정발산동 720", "by": 1996}
     ]
   },
   {

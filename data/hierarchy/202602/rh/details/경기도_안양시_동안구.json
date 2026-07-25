@@ -29,6 +29,15 @@
     ]
   },
   {
+    "name": "안흥맨션 (다세대)",
+    "address": "안양시 동안구 관양동 1387-11",
+    "coords": [126.955592880168, 37.4042105664094],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 60.8, "rep_avg_price": 24000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 24000, "rent": 0, "area": 60.81, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1387-11", "by": 1997}
+    ]
+  },
+  {
     "name": "청일빌라(가동) (다세대)",
     "address": "안양시 동안구 관양동 1388-14",
     "coords": [126.955631995313, 37.4045326058811],
@@ -159,8 +168,9 @@
     "name": "남광2차 (연립다세대)",
     "address": "안양시 동안구 관양동 1412",
     "coords": [126.961113744878, 37.4077535213402],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 57.6, "rep_avg_price": 20000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 56.9, "rep_avg_price": 10000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 57.6, "rep_avg_price": 20000}, "monthly": {"count": 2, "range": [5000, 10000], "rep_area": 56.9, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 5000, "rent": 70, "area": 57.6, "land": 0.0, "floor": "1", "dong": "", "date": "2026-02-05", "period": "26.03~28.03", "renew": "갱신", "p_dep": 5000, "p_rent": 70, "jibun": "관양동 1412", "by": 1985},
       {"type": "전세", "price": 20000, "rent": 0, "area": 57.6, "land": 0.0, "floor": "1", "dong": "", "date": "2026-02-05", "period": "26.03~28.03", "renew": "갱신", "p_dep": 5000, "p_rent": 70, "jibun": "관양동 1412", "by": 1985},
       {"type": "월세", "price": 10000, "rent": 50, "area": 56.88, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1412", "by": 1985}
     ]
@@ -278,8 +288,9 @@
     "name": "삼호베스트빌 (연립)",
     "address": "안양시 동안구 관양동 1431-21",
     "coords": [126.964599016465, 37.4052225687972],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 20.6, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 22.2, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 53, "area": 22.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1431-21", "by": 2013},
       {"type": "월세", "price": 1000, "rent": 53, "area": 22.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-09", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1431-21", "by": 2013},
       {"type": "월세", "price": 1000, "rent": 52, "area": 20.615, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-05", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1431-21", "by": 2013}
     ]
@@ -428,8 +439,9 @@
     "name": "문화화이트빌라1차(가동) (다세대)",
     "address": "안양시 동안구 관양동 1460-3",
     "coords": [126.965197885046, 37.4037065089799],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [36000, 36000], "rep_area": 63.2, "rep_avg_price": 36000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [36000, 36000], "rep_area": 63.2, "rep_avg_price": 36000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 36000, "rent": 0, "area": 63.22, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1460-3", "by": 2000},
       {"type": "매매", "price": 36000, "rent": 0, "area": 63.22, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1460-3", "by": 2000}
     ]
   },
@@ -500,13 +512,23 @@
     ]
   },
   {
+    "name": "대도 (연립다세대)",
+    "address": "안양시 동안구 관양동 1469",
+    "coords": [126.969198431122, 37.4030485220555],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26000, 26000], "rep_area": 62.1, "rep_avg_price": 26000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 26000, "rent": 0, "area": 62.1, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1469", "by": 1984}
+    ]
+  },
+  {
     "name": "클로버빌 (다세대)",
     "address": "안양시 동안구 관양동 1470-1",
     "coords": [126.969722387847, 37.4027413191457],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [27500, 27800], "rep_area": 14.6, "rep_avg_price": 27500}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 8000], "rep_area": 14.6, "rep_avg_price": 8000}},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [27500, 27800], "rep_area": 14.6, "rep_avg_price": 27500}, "jeonse": null, "monthly": {"count": 3, "range": [1000, 8000], "rep_area": 14.6, "rep_avg_price": 8000}},
     "deals": [
       {"type": "매매", "price": 27800, "rent": 0, "area": 14.91, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-1", "by": 2013},
       {"type": "매매", "price": 27500, "rent": 0, "area": 14.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-02-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-1", "by": 2013},
+      {"type": "월세", "price": 8000, "rent": 20, "area": 14.6, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-1", "by": 2013},
       {"type": "월세", "price": 8000, "rent": 20, "area": 14.6, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-1", "by": 2013},
       {"type": "월세", "price": 1000, "rent": 54, "area": 14.91, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-09", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-1", "by": 2013}
     ]
@@ -568,6 +590,15 @@
     ]
   },
   {
+    "name": "블루밍하우스 (다세대)",
+    "address": "안양시 동안구 관양동 1487-25",
+    "coords": [126.973857469119, 37.4027369896849],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [27000, 27000], "rep_area": 63.8, "rep_avg_price": 27000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 27000, "rent": 0, "area": 63.83, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-23", "period": "26.03~28.03", "renew": "갱신", "p_dep": 27000, "p_rent": 0, "jibun": "관양동 1487-25", "by": 2017}
+    ]
+  },
+  {
     "name": "(1488-41) (다세대)",
     "address": "안양시 동안구 관양동 1488-41",
     "coords": [126.975029109994, 37.4021550031484],
@@ -586,6 +617,17 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 26.2, "rep_avg_price": 5000}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 60, "area": 26.24, "land": 0.0, "floor": "4", "dong": "", "date": "2026-02-12", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1494-26", "by": 2009}
+    ]
+  },
+  {
+    "name": "삼인빌라 (다세대)",
+    "address": "안양시 동안구 관양동 1494-29",
+    "coords": [126.973391353925, 37.3992183977888],
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [18000, 18000], "rep_area": 33.2, "rep_avg_price": 18000}},
+    "deals": [
+      {"type": "월세", "price": 18000, "rent": 10, "area": 33.22, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-21", "period": "26.03~28.03", "renew": "갱신", "p_dep": 18000, "p_rent": 15, "jibun": "관양동 1494-29", "by": 1990},
+      {"type": "월세", "price": 18000, "rent": 15, "area": 33.22, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-21", "period": "26.03~28.03", "renew": "갱신", "p_dep": 18000, "p_rent": 15, "jibun": "관양동 1494-29", "by": 1990},
+      {"type": "월세", "price": 18000, "rent": 15, "area": 33.22, "land": 0.0, "floor": "3", "dong": "", "date": "2026-02-21", "period": "26.03~28.03", "renew": "갱신", "p_dep": 18000, "p_rent": 10, "jibun": "관양동 1494-29", "by": 1990}
     ]
   },
   {

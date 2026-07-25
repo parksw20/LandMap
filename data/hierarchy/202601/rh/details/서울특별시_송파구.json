@@ -248,8 +248,9 @@
     "name": "버들빌 (다세대)",
     "address": "송파구 가락동 131-3",
     "coords": [127.126293086698, 37.4939876223236],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 10000], "rep_area": 39.1, "rep_avg_price": 7500}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [5000, 10000], "rep_area": 39.1, "rep_avg_price": 8333}},
     "deals": [
+      {"type": "월세", "price": 10000, "rent": 68, "area": 39.12, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "가락동 131-3", "by": 2010},
       {"type": "월세", "price": 10000, "rent": 68, "area": 39.12, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "가락동 131-3", "by": 2010},
       {"type": "월세", "price": 5000, "rent": 80, "area": 39.12, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-12", "period": "26.01~28.03", "renew": "갱신", "p_dep": 5000, "p_rent": 76, "jibun": "가락동 131-3", "by": 2010}
     ]
@@ -313,8 +314,9 @@
     "name": "리즈빌 (다세대)",
     "address": "송파구 가락동 135-8",
     "coords": [127.127393278974, 37.4939400392407],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25300, 25300], "rep_area": 42.4, "rep_avg_price": 25300}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [25300, 26500], "rep_area": 42.4, "rep_avg_price": 25900}},
     "deals": [
+      {"type": "월세", "price": 26500, "rent": 5, "area": 42.35, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-31", "period": "26.03~28.03", "renew": "갱신", "p_dep": 26500, "p_rent": 0, "jibun": "가락동 135-8", "by": 2017},
       {"type": "월세", "price": 25300, "rent": 5, "area": 42.35, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-24", "period": "26.03~28.03", "renew": "갱신", "p_dep": 25300, "p_rent": 0, "jibun": "가락동 135-8", "by": 2017}
     ]
   },
@@ -522,8 +524,9 @@
     "name": "삼안빌라 (다세대)",
     "address": "송파구 가락동 152-12",
     "coords": [127.127443484487, 37.4971995552943],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 43.2, "rep_avg_price": 16000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [15500, 16000], "rep_area": 43.2, "rep_avg_price": 15750}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 15500, "rent": 0, "area": 43.2, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-23", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "가락동 152-12", "by": 1990},
       {"type": "전세", "price": 16000, "rent": 0, "area": 43.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-19", "period": "26.01~28.01", "renew": "갱신", "p_dep": 16000, "p_rent": 0, "jibun": "가락동 152-12", "by": 1990}
     ]
   },
@@ -646,6 +649,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [27000, 27000], "rep_area": 53.3, "rep_avg_price": 27000}},
     "deals": [
       {"type": "월세", "price": 27000, "rent": 9, "area": 53.32, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "가락동 169-7", "by": 2009}
+    ]
+  },
+  {
+    "name": "삼보스위트빌(가동) (다세대)",
+    "address": "송파구 가락동 171-9",
+    "coords": [127.133926560237, 37.4973303275351],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 66.1, "rep_avg_price": 35000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 35000, "rent": 0, "area": 66.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "가락동 171-9", "by": 2003}
     ]
   },
   {
@@ -1537,8 +1549,9 @@
     "name": "성진스위트빌 (다세대)",
     "address": "송파구 마천동 14-17",
     "coords": [127.144176677994, 37.5015898394144],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 69.7, "rep_avg_price": 35000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [35000, 35000], "rep_area": 69.7, "rep_avg_price": 35000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 35000, "rent": 0, "area": 69.68, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마천동 14-17", "by": 2012},
       {"type": "전세", "price": 35000, "rent": 0, "area": 69.68, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마천동 14-17", "by": 2012}
     ]
   },
@@ -1735,6 +1748,15 @@
     ]
   },
   {
+    "name": "(277-3) (다세대)",
+    "address": "송파구 마천동 277-3",
+    "coords": [127.157839290437, 37.4909406860533],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [53500, 53500], "rep_area": 39.5, "rep_avg_price": 53500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 53500, "rent": 0, "area": 39.51, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 277-3", "by": 1986}
+    ]
+  },
+  {
     "name": "정문빌라트4차 (다세대)",
     "address": "송파구 마천동 279-25",
     "coords": [127.15717692529, 37.4928452156088],
@@ -1852,6 +1874,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 36.5, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 80, "area": 36.51, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마천동 358-16", "by": 2006}
+    ]
+  },
+  {
+    "name": "진보빌라 (다세대)",
+    "address": "송파구 마천동 359-10",
+    "coords": [127.156882450779, 37.4960264288277],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105500, 105500], "rep_area": 48.2, "rep_avg_price": 105500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 105500, "rent": 0, "area": 48.15, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마천동 359-10", "by": 1997}
     ]
   },
   {
@@ -2125,8 +2156,9 @@
     "name": "에스비펠리채 (다세대)",
     "address": "송파구 문정동 105-13",
     "coords": [127.130098119644, 37.4862221287268],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [42900, 45000], "rep_area": 41.1, "rep_avg_price": 43950}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [42900, 45000], "rep_area": 41.1, "rep_avg_price": 43950}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 45000, "rent": 0, "area": 41.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문정동 105-13", "by": 2019},
       {"type": "매매", "price": 45000, "rent": 0, "area": 41.06, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문정동 105-13", "by": 2019},
       {"type": "매매", "price": 42900, "rent": 0, "area": 41.06, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "문정동 105-13", "by": 2019}
     ]
@@ -2366,6 +2398,15 @@
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 75.67, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-31", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "문정동 28-21", "by": 1989},
       {"type": "전세", "price": 25000, "rent": 0, "area": 75.67, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-31", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "문정동 28-21", "by": 1989}
+    ]
+  },
+  {
+    "name": "(28-26) (다세대)",
+    "address": "송파구 문정동 28-26",
+    "coords": [127.124917060665, 37.4894686439419],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.5, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 104, "area": 59.46, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-23", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "문정동 28-26", "by": 2016}
     ]
   },
   {
@@ -2732,6 +2773,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 34.4, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 70, "area": 34.44, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-22", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "문정동 53-16", "by": 2004}
+    ]
+  },
+  {
+    "name": "SD펠리체빌 (다세대)",
+    "address": "송파구 문정동 59-4",
+    "coords": [127.124493511508, 37.484782139905],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 52.9, "rep_avg_price": 15000}},
+    "deals": [
+      {"type": "월세", "price": 15000, "rent": 49, "area": 52.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-31", "period": "26.04~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "문정동 59-4", "by": 2008}
     ]
   },
   {
@@ -3472,6 +3522,15 @@
     ]
   },
   {
+    "name": "청송아트빌라 (다세대)",
+    "address": "송파구 방이동 118-2",
+    "coords": [127.115510140701, 37.5104772335288],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 56.1, "rep_avg_price": 25000}},
+    "deals": [
+      {"type": "월세", "price": 25000, "rent": 5, "area": 56.1, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-07", "period": "26.02~27.04", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "방이동 118-2", "by": 1993}
+    ]
+  },
+  {
     "name": "위너스빌 (다세대)",
     "address": "송파구 방이동 118-3",
     "coords": [127.115769107318, 37.5103750764446],
@@ -3658,8 +3717,9 @@
     "name": "THEHERMAN (다세대)",
     "address": "송파구 방이동 134-2",
     "coords": [127.119013976125, 37.5099435142908],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [37600, 37600], "rep_area": 56.6, "rep_avg_price": 37600}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [36700, 37600], "rep_area": 56.6, "rep_avg_price": 37150}},
     "deals": [
+      {"type": "월세", "price": 36700, "rent": 13, "area": 56.58, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방이동 134-2", "by": 2014},
       {"type": "월세", "price": 37600, "rent": 13, "area": 56.58, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방이동 134-2", "by": 2014}
     ]
   },
@@ -3870,6 +3930,15 @@
     ]
   },
   {
+    "name": "라일락향기 (다세대)",
+    "address": "송파구 방이동 144-5",
+    "coords": [127.116457345437, 37.5124088667083],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 23.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 63, "area": 23.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-02", "period": "26.01~28.01", "renew": "갱신", "p_dep": 1000, "p_rent": 60, "jibun": "방이동 144-5", "by": 2005}
+    ]
+  },
+  {
     "name": "소담빌라 (다세대)",
     "address": "송파구 방이동 145-19",
     "coords": [127.115452842843, 37.5116089505194],
@@ -4009,8 +4078,9 @@
     "name": "예은하우스 (다세대)",
     "address": "송파구 방이동 153-7",
     "coords": [127.116224179578, 37.5131791842137],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [15000, 24750], "rep_area": 36.7, "rep_avg_price": 15000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 24750], "rep_area": 36.7, "rep_avg_price": 15000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 55, "area": 40.31, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방이동 153-7", "by": 2002},
       {"type": "월세", "price": 15000, "rent": 23, "area": 36.72, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-28", "period": "26.02~28.02", "renew": "갱신", "p_dep": 15000, "p_rent": 20, "jibun": "방이동 153-7", "by": 2002},
       {"type": "월세", "price": 24750, "rent": 60, "area": 91.65, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-28", "period": "26.02~28.02", "renew": "갱신", "p_dep": 24750, "p_rent": 53, "jibun": "방이동 153-7", "by": 2002}
     ]
@@ -4263,6 +4333,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [52000, 52000], "rep_area": 65.8, "rep_avg_price": 52000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 52000, "rent": 0, "area": 65.84, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방이동 172-1", "by": 1991}
+    ]
+  },
+  {
+    "name": "그린파크A,B (다세대)",
+    "address": "송파구 방이동 172-11",
+    "coords": [127.118679635626, 37.513870245045],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 49.5, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 49.47, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방이동 172-11", "by": 1987}
     ]
   },
   {
@@ -4676,6 +4755,15 @@
     ]
   },
   {
+    "name": "흥진맨션 (연립)",
+    "address": "송파구 방이동 93",
+    "coords": [127.110392347753, 37.5129339391339],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 69.0, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 80, "area": 69.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-15", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방이동 93", "by": 1996}
+    ]
+  },
+  {
     "name": "다솔하우스 (다세대)",
     "address": "송파구 방이동 93-2",
     "coords": [127.109852455721, 37.512069749148],
@@ -4691,6 +4779,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.7, "rep_avg_price": 3000}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 93, "area": 59.66, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-05", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방이동 98-15", "by": 2002}
+    ]
+  },
+  {
+    "name": "목화그린빌라B(99-11) (다세대)",
+    "address": "송파구 방이동 99-11",
+    "coords": [127.111519684056, 37.5138314510817],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 34.1, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 75, "area": 34.08, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-30", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방이동 99-11", "by": 1994}
     ]
   },
   {
@@ -4837,8 +4934,9 @@
     "name": "태림빌라 (다세대)",
     "address": "송파구 삼전동 106-1",
     "coords": [127.093794958903, 37.5050796328808],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [16000, 16000], "rep_area": 27.2, "rep_avg_price": 16000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [16000, 16000], "rep_area": 27.2, "rep_avg_price": 16000}},
     "deals": [
+      {"type": "월세", "price": 16000, "rent": 5, "area": 27.16, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-30", "period": "26.02~28.02", "renew": "갱신", "p_dep": 16000, "p_rent": 2, "jibun": "삼전동 106-1", "by": 2002},
       {"type": "월세", "price": 16000, "rent": 5, "area": 27.16, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-30", "period": "26.02~28.02", "renew": "갱신", "p_dep": 16000, "p_rent": 5, "jibun": "삼전동 106-1", "by": 2002}
     ]
   },
@@ -5140,8 +5238,9 @@
     "name": "임페리얼팰리스 (다세대)",
     "address": "송파구 삼전동 13-13",
     "coords": [127.09113184916, 37.5054444620382],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [49000, 49000], "rep_area": 26.3, "rep_avg_price": 49000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [49000, 53000], "rep_area": 26.3, "rep_avg_price": 51000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 53000, "rent": 0, "area": 26.32, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 13-13", "by": 2016},
       {"type": "매매", "price": 49000, "rent": 0, "area": 26.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 13-13", "by": 2016}
     ]
   },
@@ -5994,6 +6093,15 @@
     ]
   },
   {
+    "name": "(48-6) (다세대)",
+    "address": "송파구 삼전동 48-6",
+    "coords": [127.090329285844, 37.5032677093826],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 63.6, "rep_avg_price": 7000}},
+    "deals": [
+      {"type": "월세", "price": 7000, "rent": 25, "area": 63.58, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-14", "period": "26.01~28.01", "renew": "갱신", "p_dep": 7000, "p_rent": 50, "jibun": "삼전동 48-6", "by": 2004}
+    ]
+  },
+  {
     "name": "골드빌(49-8) (다세대)",
     "address": "송파구 삼전동 49-8",
     "coords": [127.090661217067, 37.5031732099415],
@@ -6192,9 +6300,10 @@
     "name": "호반디오빌 (다세대)",
     "address": "송파구 삼전동 60-10",
     "coords": [127.091054126534, 37.5024443547743],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [30400, 30400], "rep_area": 27.4, "rep_avg_price": 30400}, "jeonse": null, "monthly": {"count": 1, "range": [24600, 24600], "rep_area": 27.9, "rep_avg_price": 24600}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [30400, 30400], "rep_area": 27.4, "rep_avg_price": 30400}, "jeonse": null, "monthly": {"count": 2, "range": [24600, 24600], "rep_area": 27.9, "rep_avg_price": 24600}},
     "deals": [
       {"type": "매매", "price": 30400, "rent": 0, "area": 27.42, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 60-10", "by": 2017},
+      {"type": "월세", "price": 24600, "rent": 18, "area": 27.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 60-10", "by": 2017},
       {"type": "월세", "price": 24600, "rent": 18, "area": 27.92, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-17", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 60-10", "by": 2017}
     ]
   },
@@ -6380,6 +6489,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 26.0, "rep_avg_price": 10000}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 19, "area": 26.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-08", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 68-3", "by": 2003}
+    ]
+  },
+  {
+    "name": "삼익주택 (다세대)",
+    "address": "송파구 삼전동 68-4",
+    "coords": [127.092279932416, 37.4992182536893],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [24000, 24000], "rep_area": 29.8, "rep_avg_price": 24000}},
+    "deals": [
+      {"type": "월세", "price": 24000, "rent": 26, "area": 29.85, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-24", "period": "26.03~28.03", "renew": "갱신", "p_dep": 24000, "p_rent": 20, "jibun": "삼전동 68-4", "by": 2019}
     ]
   },
   {
@@ -6592,8 +6710,9 @@
     "name": "(96-12) (다세대)",
     "address": "송파구 삼전동 96-12",
     "coords": [127.091401651361, 37.5041981635463],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 10.8, "rep_avg_price": 2000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [2000, 3000], "rep_area": 17.7, "rep_avg_price": 2500}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 55, "area": 17.68, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-05", "period": "26.01~28.01", "renew": "갱신", "p_dep": 2000, "p_rent": 55, "jibun": "삼전동 96-12", "by": 2017},
       {"type": "월세", "price": 2000, "rent": 110, "area": 10.81, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-14", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "삼전동 96-12", "by": 2017},
       {"type": "월세", "price": 3000, "rent": 38, "area": 17.68, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-02", "period": "26.02~28.02", "renew": "갱신", "p_dep": 3000, "p_rent": 36, "jibun": "삼전동 96-12", "by": 2017}
     ]
@@ -7008,6 +7127,15 @@
     ]
   },
   {
+    "name": "석촌라온빌 (다세대)",
+    "address": "송파구 석촌동 17-3",
+    "coords": [127.099492597939, 37.5035653373893],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 24.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 78, "area": 24.75, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-16", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 17-3", "by": 2017}
+    ]
+  },
+  {
     "name": "(17-6) (다세대)",
     "address": "송파구 석촌동 17-6",
     "coords": [127.099199734988, 37.5035199027214],
@@ -7020,8 +7148,9 @@
     "name": "이마주택 (다세대)",
     "address": "송파구 석촌동 170-13",
     "coords": [127.103645887352, 37.5055218126942],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [10000, 12000], "rep_area": 19.8, "rep_avg_price": 10000}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [10000, 12000], "rep_area": 19.8, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 12000, "rent": 35, "area": 23.85, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-21", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 170-13", "by": 2011},
       {"type": "월세", "price": 10000, "rent": 36, "area": 20.52, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-12", "period": "26.02~28.02", "renew": "갱신", "p_dep": 10000, "p_rent": 33, "jibun": "석촌동 170-13", "by": 2011},
       {"type": "월세", "price": 10000, "rent": 25, "area": 19.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-10", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 170-13", "by": 2011},
       {"type": "월세", "price": 12000, "rent": 31, "area": 25.56, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-10", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 170-13", "by": 2011}
@@ -7209,8 +7338,9 @@
     "name": "제이하우스 (다세대)",
     "address": "송파구 석촌동 18-7",
     "coords": [127.099457572253, 37.503931805698],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 24.5, "rep_avg_price": 12000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 24.5, "rep_avg_price": 10000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 24.5, "rep_avg_price": 12000}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 24.5, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 10000, "rent": 12, "area": 24.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 18-7", "by": 2000},
       {"type": "월세", "price": 10000, "rent": 12, "area": 24.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 18-7", "by": 2000},
       {"type": "전세", "price": 12000, "rent": 0, "area": 24.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-24", "period": "26.02~28.02", "renew": "갱신", "p_dep": 12000, "p_rent": 0, "jibun": "석촌동 18-7", "by": 2000}
     ]
@@ -7832,9 +7962,9 @@
     "name": "(237-20) (다세대)",
     "address": "송파구 석촌동 237-20",
     "coords": [127.100152545406, 37.5011387325554],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 44.2, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 55.2, "rep_avg_price": 10000}},
     "deals": [
-      {"type": "월세", "price": 10000, "rent": 51, "area": 44.23, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-26", "period": "26.03~28.03", "renew": "갱신", "p_dep": 10000, "p_rent": 47, "jibun": "석촌동 237-20", "by": 2004},
+      {"type": "월세", "price": 10000, "rent": 51, "area": 61.43, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-26", "period": "26.03~28.03", "renew": "갱신", "p_dep": 10000, "p_rent": 47, "jibun": "석촌동 237-20", "by": 2004},
       {"type": "월세", "price": 10000, "rent": 51, "area": 55.2, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-08", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 237-20", "by": 2004}
     ]
   },
@@ -8132,8 +8262,9 @@
     "name": "석화빌라 (다세대)",
     "address": "송파구 석촌동 257-9",
     "coords": [127.104350605295, 37.5008935392252],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 54.7, "rep_avg_price": 14000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [14000, 17000], "rep_area": 54.7, "rep_avg_price": 15500}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 54.69, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-27", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 257-9", "by": 1986},
       {"type": "전세", "price": 14000, "rent": 0, "area": 54.69, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-10", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 257-9", "by": 1986}
     ]
   },
@@ -8372,8 +8503,9 @@
     "name": "278-16 (다세대)",
     "address": "송파구 석촌동 278-16",
     "coords": [127.106927379944, 37.5015266240508],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [17850, 17850], "rep_area": 23.8, "rep_avg_price": 17850}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [17850, 17850], "rep_area": 47.0, "rep_avg_price": 17850}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 17850, "rent": 0, "area": 47.01, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 278-16", "by": 2012},
       {"type": "전세", "price": 17850, "rent": 0, "area": 23.8, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 278-16", "by": 2012},
       {"type": "전세", "price": 17850, "rent": 0, "area": 47.01, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 278-16", "by": 2012}
     ]
@@ -8595,6 +8727,15 @@
     "deals": [
       {"type": "월세", "price": 9000, "rent": 40, "area": 29.82, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-31", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석촌동 5-3", "by": 2011},
       {"type": "월세", "price": 17860, "rent": 3, "area": 35.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-08", "period": "26.03~28.03", "renew": "갱신", "p_dep": 17860, "p_rent": 0, "jibun": "석촌동 5-3", "by": 2011}
+    ]
+  },
+  {
+    "name": "터엘림 (다세대)",
+    "address": "송파구 석촌동 53-10",
+    "coords": [127.100609389662, 37.5059095274196],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11576, 11576], "rep_area": 23.0, "rep_avg_price": 11576}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 11576, "rent": 0, "area": 23.01, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-01", "period": "26.04~27.04", "renew": "갱신", "p_dep": 11025, "p_rent": 0, "jibun": "석촌동 53-10", "by": 2002}
     ]
   },
   {
@@ -8860,9 +9001,10 @@
     "name": "동성빌라(100-30) (연립)",
     "address": "송파구 송파동 100-30",
     "coords": [127.115567959169, 37.5031546224508],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 51.9, "rep_avg_price": 30000}, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 80.2, "rep_avg_price": 45000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 51.9, "rep_avg_price": 30000}, "jeonse": {"count": 2, "range": [45000, 45000], "rep_area": 80.2, "rep_avg_price": 45000}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 51.91, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송파동 100-30", "by": 1990},
+      {"type": "전세", "price": 45000, "rent": 0, "area": 80.21, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 100-30", "by": 1990},
       {"type": "전세", "price": 45000, "rent": 0, "area": 80.21, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 100-30", "by": 1990}
     ]
   },
@@ -9341,8 +9483,9 @@
     "name": "송파캐슬 (다세대)",
     "address": "송파구 송파동 130-1",
     "coords": [127.112363350153, 37.5077788778194],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [26500, 26500], "rep_area": 54.3, "rep_avg_price": 26500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [26400, 26500], "rep_area": 54.3, "rep_avg_price": 26450}},
     "deals": [
+      {"type": "월세", "price": 26400, "rent": 5, "area": 54.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 26500, "p_rent": 0, "jibun": "송파동 130-1", "by": 2003},
       {"type": "월세", "price": 26500, "rent": 5, "area": 54.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-28", "period": "26.04~28.04", "renew": "갱신", "p_dep": 26500, "p_rent": 0, "jibun": "송파동 130-1", "by": 2003}
     ]
   },
@@ -9403,6 +9546,15 @@
     ]
   },
   {
+    "name": "(131-9) (다세대)",
+    "address": "송파구 송파동 131-9",
+    "coords": [127.112645890416, 37.5078629427393],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 21.8, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 46, "area": 21.83, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-18", "period": "26.03~27.03", "renew": "갱신", "p_dep": 5000, "p_rent": 43, "jibun": "송파동 131-9", "by": 2012}
+    ]
+  },
+  {
     "name": "(132-3) (다세대)",
     "address": "송파구 송파동 132-3",
     "coords": [127.111808401776, 37.5075021653123],
@@ -9438,6 +9590,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 32.5, "rep_avg_price": 15000}},
     "deals": [
       {"type": "월세", "price": 15000, "rent": 37, "area": 32.5, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-21", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 133-11", "by": 2002}
+    ]
+  },
+  {
+    "name": "루미에 (다세대)",
+    "address": "송파구 송파동 135-10",
+    "coords": [127.112958068758, 37.5094513855873],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 19.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 18.95, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-06", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 135-10", "by": 2012}
     ]
   },
   {
@@ -9517,9 +9678,10 @@
     "name": "현대아트빌리지 (연립)",
     "address": "송파구 송파동 141-29",
     "coords": [127.114762849302, 37.508332040197],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [76000, 76000], "rep_area": 84.4, "rep_avg_price": 76000}, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 68.7, "rep_avg_price": 25000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [76000, 76000], "rep_area": 84.4, "rep_avg_price": 76000}, "jeonse": null, "monthly": {"count": 2, "range": [100, 25000], "rep_area": 68.7, "rep_avg_price": 12550}},
     "deals": [
       {"type": "매매", "price": 76000, "rent": 0, "area": 84.42, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송파동 141-29", "by": 1990},
+      {"type": "월세", "price": 100, "rent": 20, "area": 68.67, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-17", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 141-29", "by": 1990},
       {"type": "월세", "price": 25000, "rent": 25, "area": 68.67, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-17", "period": "26.04~28.03", "renew": "갱신", "p_dep": 25000, "p_rent": 25, "jibun": "송파동 141-29", "by": 1990}
     ]
   },
@@ -9546,8 +9708,9 @@
     "name": "동광팰리스 (다세대)",
     "address": "송파구 송파동 143-1",
     "coords": [127.115968584788, 37.5073516509814],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 25.5, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 10000], "rep_area": 25.5, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 99, "area": 26.61, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-19", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 143-1", "by": 2016},
       {"type": "월세", "price": 10000, "rent": 60, "area": 25.46, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 143-1", "by": 2016}
     ]
   },
@@ -10204,8 +10367,9 @@
     "name": "(52-2) (다세대)",
     "address": "송파구 송파동 52-2",
     "coords": [127.109952210835, 37.5099838320575],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8900, 8900], "rep_area": 13.4, "rep_avg_price": 8900}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [8900, 8900], "rep_area": 13.4, "rep_avg_price": 8900}},
     "deals": [
+      {"type": "월세", "price": 8900, "rent": 12, "area": 13.43, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-17", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 52-2", "by": 2010},
       {"type": "월세", "price": 8900, "rent": 14, "area": 13.43, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-17", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "송파동 52-2", "by": 2010}
     ]
   },
@@ -11118,6 +11282,15 @@
     ]
   },
   {
+    "name": "(68-6) (다세대)",
+    "address": "송파구 오금동 68-6",
+    "coords": [127.135397083057, 37.5031322074903],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 52.5, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 165, "area": 52.53, "land": 0.0, "floor": "6", "dong": "", "date": "2026-01-15", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 68-6", "by": 2023}
+    ]
+  },
+  {
     "name": "보성 (다세대)",
     "address": "송파구 오금동 70-12",
     "coords": [127.13462675361, 37.5034853808566],
@@ -11810,8 +11983,9 @@
     "name": "르하임 (다세대)",
     "address": "송파구 잠실동 237",
     "coords": [127.085856654557, 37.5065534964954],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 33.3, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 33.3, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 79, "area": 33.34, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 237", "by": 2018},
       {"type": "월세", "price": 1000, "rent": 79, "area": 33.34, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-14", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 237", "by": 2018}
     ]
   },
@@ -12738,9 +12912,10 @@
     "name": "효성빌라(327-1) (다세대)",
     "address": "송파구 잠실동 327-1",
     "coords": [127.084060054304, 37.5021016604947],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [91500, 91500], "rep_area": 80.9, "rep_avg_price": 91500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [91500, 91500], "rep_area": 80.9, "rep_avg_price": 91500}, "jeonse": {"count": 1, "range": [46000, 46000], "rep_area": 80.9, "rep_avg_price": 46000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 91500, "rent": 0, "area": 80.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 327-1", "by": 1992}
+      {"type": "매매", "price": 91500, "rent": 0, "area": 80.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 327-1", "by": 1992},
+      {"type": "전세", "price": 46000, "rent": 0, "area": 80.94, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-27", "period": "26.04~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "잠실동 327-1", "by": 1992}
     ]
   },
   {
@@ -13020,12 +13195,30 @@
     ]
   },
   {
+    "name": "샤인빌 (다세대)",
+    "address": "송파구 풍납동 394-4",
+    "coords": [127.115005158002, 37.5273770240988],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3500, 3500], "rep_area": 19.6, "rep_avg_price": 3500}},
+    "deals": [
+      {"type": "월세", "price": 3500, "rent": 40, "area": 19.56, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-13", "period": "26.01~27.01", "renew": "갱신", "p_dep": 3500, "p_rent": 40, "jibun": "풍납동 394-4", "by": 2012}
+    ]
+  },
+  {
     "name": "어산빌 (다세대)",
     "address": "송파구 풍납동 394-5",
     "coords": [127.11494710678, 37.5272934676764],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 35.2, "rep_avg_price": 22000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 22000, "rent": 0, "area": 35.16, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-28", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "풍납동 394-5", "by": 2018}
+    ]
+  },
+  {
+    "name": "다보빌 (다세대)",
+    "address": "송파구 풍납동 398-1",
+    "coords": [127.116092180928, 37.528511672812],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 46.9, "rep_avg_price": 30000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 30000, "rent": 0, "area": 46.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-14", "period": "26.02~28.02", "renew": "갱신", "p_dep": 30000, "p_rent": 0, "jibun": "풍납동 398-1", "by": 2015}
     ]
   },
   {

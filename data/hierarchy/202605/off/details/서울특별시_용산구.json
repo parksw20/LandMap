@@ -302,8 +302,9 @@
     "name": "e테크밸리",
     "address": "용산구 원효로3가 51-37",
     "coords": [126.95767358317, 37.5332915837904],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 38.1, "rep_avg_price": 15000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 38.1, "rep_avg_price": 15000}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 38.1, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 38.12, "land": 0.0, "floor": "10", "dong": "", "date": "2026-05-13", "period": "26.06~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로3가 51-37", "by": 2003},
       {"type": "전세", "price": 15000, "rent": 0, "area": 38.12, "land": 0.0, "floor": "6", "dong": "", "date": "2026-05-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원효로3가 51-37", "by": 2003}
     ]
   },
@@ -324,10 +325,11 @@
     "name": "용산파크자이",
     "address": "용산구 한강로1가 50-1",
     "coords": [126.97266226677, 37.5366261935205],
-    "stats": {"total": 15, "sale": {"count": 2, "range": [53000, 55000], "rep_area": 42.4, "rep_avg_price": 54000}, "jeonse": {"count": 8, "range": [26000, 38000], "rep_area": 28.5, "rep_avg_price": 26000}, "monthly": {"count": 5, "range": [10000, 20000], "rep_area": 36.1, "rep_avg_price": 15000}},
+    "stats": {"total": 16, "sale": {"count": 2, "range": [53000, 55000], "rep_area": 42.4, "rep_avg_price": 54000}, "jeonse": {"count": 9, "range": [26000, 38000], "rep_area": 28.5, "rep_avg_price": 26000}, "monthly": {"count": 5, "range": [10000, 20000], "rep_area": 36.1, "rep_avg_price": 15000}},
     "deals": [
       {"type": "매매", "price": 55000, "rent": 0, "area": 42.39, "land": 0.0, "floor": "23", "dong": "", "date": "2026-05-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "한강로1가 50-1", "by": 2005},
       {"type": "매매", "price": 53000, "rent": 0, "area": 42.39, "land": 0.0, "floor": "17", "dong": "", "date": "2026-05-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "한강로1가 50-1", "by": 2005},
+      {"type": "전세", "price": 29900, "rent": 0, "area": 36.13, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-30", "period": "26.05~28.05", "renew": "갱신", "p_dep": 28600, "p_rent": 0, "jibun": "한강로1가 50-1", "by": 2005},
       {"type": "전세", "price": 36200, "rent": 0, "area": 42.39, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-22", "period": "26.07~27.07", "renew": "갱신", "p_dep": 36200, "p_rent": 0, "jibun": "한강로1가 50-1", "by": 2005},
       {"type": "전세", "price": 34600, "rent": 0, "area": 37.26, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-17", "period": "26.07~28.07", "renew": "갱신", "p_dep": 33000, "p_rent": 0, "jibun": "한강로1가 50-1", "by": 2005},
       {"type": "전세", "price": 26000, "rent": 0, "area": 28.46, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-09", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "한강로1가 50-1", "by": 2005},

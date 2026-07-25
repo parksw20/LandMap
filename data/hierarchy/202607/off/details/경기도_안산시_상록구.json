@@ -12,18 +12,32 @@
     "name": "우남센스빌",
     "address": "안산시 상록구 본오동 877-5",
     "coords": [126.861569077259, 37.3024147990668],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [2500, 2500], "rep_area": 11.2, "rep_avg_price": 2500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [2500, 2600], "rep_area": 11.2, "rep_avg_price": 2550}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 2600, "rent": 0, "area": 11.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본오동 877-5", "by": 2003},
       {"type": "매매", "price": 2500, "rent": 0, "area": 11.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본오동 877-5", "by": 2003}
+    ]
+  },
+  {
+    "name": "e편한세상 상록",
+    "address": "안산시 상록구 사동 1423",
+    "coords": [126.847903996142, 37.2844245043661],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26250, 26250], "rep_area": 84.1, "rep_avg_price": 26250}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 26250, "rent": 0, "area": 84.14, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-07", "period": "26.08~28.02", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "사동 1423", "by": 2019}
     ]
   },
   {
     "name": "그랑시티자이 2차",
     "address": "안산시 상록구 사동 1639",
     "coords": [126.832156241054, 37.2800935561064],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [27000, 27000], "rep_area": 59.8, "rep_avg_price": 27000}, "jeonse": {"count": 1, "range": [10300, 10300], "rep_area": 27.3, "rep_avg_price": 10300}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 27.3, "rep_avg_price": 1000}},
+    "stats": {"total": 7, "sale": {"count": 1, "range": [27000, 27000], "rep_area": 59.8, "rep_avg_price": 27000}, "jeonse": {"count": 4, "range": [10300, 23800], "rep_area": 27.3, "rep_avg_price": 10300}, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 27.3, "rep_avg_price": 1000}},
     "deals": [
       {"type": "매매", "price": 27000, "rent": 0, "area": 59.8435, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639", "by": 2020},
+      {"type": "전세", "price": 23800, "rent": 0, "area": 59.84, "land": 0.0, "floor": "10", "dong": "", "date": "2026-07-22", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639", "by": 2020},
+      {"type": "전세", "price": 23000, "rent": 0, "area": 54.5, "land": 0.0, "floor": "27", "dong": "", "date": "2026-07-20", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639", "by": 2020},
+      {"type": "월세", "price": 1000, "rent": 65, "area": 27.26, "land": 0.0, "floor": "22", "dong": "", "date": "2026-07-18", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639", "by": 2020},
+      {"type": "전세", "price": 23800, "rent": 0, "area": 59.6, "land": 0.0, "floor": "11", "dong": "", "date": "2026-07-18", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639", "by": 2020},
       {"type": "월세", "price": 1000, "rent": 67, "area": 27.26, "land": 0.0, "floor": "18", "dong": "", "date": "2026-07-08", "period": "26.08~27.08", "renew": "갱신", "p_dep": 1000, "p_rent": 64, "jibun": "사동 1639", "by": 2020},
       {"type": "전세", "price": 10300, "rent": 0, "area": 27.26, "land": 0.0, "floor": "24", "dong": "", "date": "2026-07-01", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639", "by": 2020}
     ]
@@ -32,8 +46,13 @@
     "name": "그랑시티자이",
     "address": "안산시 상록구 사동 1639-7",
     "coords": [126.829744023373, 37.2826747400862],
-    "stats": {"total": 7, "sale": null, "jeonse": {"count": 4, "range": [22000, 22500], "rep_area": 54.9, "rep_avg_price": 22000}, "monthly": {"count": 3, "range": [1000, 17325], "rep_area": 27.6, "rep_avg_price": 1000}},
+    "stats": {"total": 12, "sale": null, "jeonse": {"count": 6, "range": [12600, 22500], "rep_area": 54.9, "rep_avg_price": 22166}, "monthly": {"count": 6, "range": [1000, 20000], "rep_area": 54.9, "rep_avg_price": 10331}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 105, "area": 54.93, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-08", "period": "26.10~27.10", "renew": "갱신", "p_dep": 2000, "p_rent": 100, "jibun": "사동 1639-7", "by": 2020},
+      {"type": "월세", "price": 2000, "rent": 110, "area": 54.86, "land": 0.0, "floor": "17", "dong": "", "date": "2026-07-24", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639-7", "by": 2020},
+      {"type": "월세", "price": 20000, "rent": 4, "area": 54.93, "land": 0.0, "floor": "14", "dong": "", "date": "2026-07-17", "period": "26.08~28.08", "renew": "갱신", "p_dep": 20000, "p_rent": 4, "jibun": "사동 1639-7", "by": 2020},
+      {"type": "전세", "price": 22500, "rent": 0, "area": 54.93, "land": 0.0, "floor": "17", "dong": "", "date": "2026-07-16", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639-7", "by": 2020},
+      {"type": "전세", "price": 12600, "rent": 0, "area": 27.63, "land": 0.0, "floor": "14", "dong": "", "date": "2026-07-14", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639-7", "by": 2020},
       {"type": "전세", "price": 22000, "rent": 0, "area": 54.93, "land": 0.0, "floor": "16", "dong": "", "date": "2026-07-14", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639-7", "by": 2020},
       {"type": "전세", "price": 22000, "rent": 0, "area": 54.98, "land": 0.0, "floor": "17", "dong": "", "date": "2026-07-11", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639-7", "by": 2020},
       {"type": "월세", "price": 2000, "rent": 110, "area": 54.98, "land": 0.0, "floor": "14", "dong": "", "date": "2026-07-04", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사동 1639-7", "by": 2020},
@@ -53,11 +72,23 @@
     ]
   },
   {
+    "name": "베스코아트빌",
+    "address": "안산시 상록구 월피동 508-3",
+    "coords": [126.844394057443, 37.3348819187099],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [3750, 3750], "rep_area": 26.9, "rep_avg_price": 3750}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 3750, "rent": 0, "area": 26.91, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "월피동 508-3", "by": 2003}
+    ]
+  },
+  {
     "name": "(508-8)",
     "address": "안산시 상록구 월피동 508-8",
     "coords": [126.845223411603, 37.3344569993317],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7900, 7900], "rep_area": 23.4, "rep_avg_price": 7900}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [8900, 8900], "rep_area": 23.4, "rep_avg_price": 8900}, "jeonse": {"count": 2, "range": [7900, 13400], "rep_area": 23.4, "rep_avg_price": 7900}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 23.4, "rep_avg_price": 500}},
     "deals": [
+      {"type": "매매", "price": 8900, "rent": 0, "area": 23.3544, "land": 0.0, "floor": "12", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "월피동 508-8", "by": 2020},
+      {"type": "전세", "price": 13400, "rent": 0, "area": 35.2, "land": 0.0, "floor": "12", "dong": "", "date": "2026-07-24", "period": "26.07~28.07", "renew": "갱신", "p_dep": 13400, "p_rent": 0, "jibun": "월피동 508-8", "by": 2020},
+      {"type": "월세", "price": 500, "rent": 60, "area": 23.35, "land": 0.0, "floor": "15", "dong": "", "date": "2026-07-04", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "월피동 508-8", "by": 2020},
       {"type": "전세", "price": 7900, "rent": 0, "area": 23.35, "land": 0.0, "floor": "14", "dong": "", "date": "2026-07-05", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "월피동 508-8", "by": 2020}
     ]
   },
@@ -65,10 +96,20 @@
     "name": "데코스포텔",
     "address": "안산시 상록구 이동 714-3",
     "coords": [126.849074515497, 37.307284036432],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [6900, 6900], "rep_area": 31.2, "rep_avg_price": 6900}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 23.2, "rep_avg_price": 500}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [6900, 6900], "rep_area": 31.2, "rep_avg_price": 6900}, "monthly": {"count": 2, "range": [500, 500], "rep_area": 23.2, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 60, "area": 33.93, "land": 0.0, "floor": "8", "dong": "", "date": "2026-07-01", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이동 714-3", "by": 2004},
       {"type": "전세", "price": 6900, "rent": 0, "area": 31.2, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-02", "period": "27.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이동 714-3", "by": 2004},
       {"type": "월세", "price": 500, "rent": 38, "area": 23.25, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-04", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이동 714-3", "by": 2004}
+    ]
+  },
+  {
+    "name": "한미오피스텔",
+    "address": "안산시 상록구 이동 716-2",
+    "coords": [126.852409544007, 37.3078157082994],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [5900, 5900], "rep_area": 24.6, "rep_avg_price": 5900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 5900, "rent": 0, "area": 24.57, "land": 0.0, "floor": "7", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "이동 716-2", "by": 2002}
     ]
   },
   {
@@ -78,6 +119,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 22.9, "rep_avg_price": 500}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 45, "area": 22.88, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-02", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이동 717-5", "by": 2003}
+    ]
+  },
+  {
+    "name": "동영센트럴타워",
+    "address": "안산시 상록구 이동 720-2",
+    "coords": [126.84833645993, 37.3064433284754],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 57.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 62, "area": 56.98, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-15", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "이동 720-2", "by": 2007}
     ]
   }
 ]

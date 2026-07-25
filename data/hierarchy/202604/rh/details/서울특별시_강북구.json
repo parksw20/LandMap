@@ -105,9 +105,10 @@
     "name": "정우파크빌 (다세대)",
     "address": "강북구 미아동 158-75",
     "coords": [127.025713351226, 37.633512147223],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [22300, 22300], "rep_area": 40.2, "rep_avg_price": 22300}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [22300, 22300], "rep_area": 40.2, "rep_avg_price": 22300}, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 47.9, "rep_avg_price": 4000}},
     "deals": [
-      {"type": "매매", "price": 22300, "rent": 0, "area": 40.185, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 158-75", "by": 2013}
+      {"type": "매매", "price": 22300, "rent": 0, "area": 40.185, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 158-75", "by": 2013},
+      {"type": "월세", "price": 4000, "rent": 85, "area": 47.86, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 158-75", "by": 2013}
     ]
   },
   {
@@ -126,6 +127,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [9600, 9600], "rep_area": 24.8, "rep_avg_price": 9600}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 9600, "rent": 0, "area": 24.75, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 164-27", "by": 1991}
+    ]
+  },
+  {
+    "name": "한영홈타운 (다세대)",
+    "address": "강북구 미아동 164-62",
+    "coords": [127.026162081476, 37.6324915020159],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 38.1, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 73, "area": 38.13, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 164-62", "by": 2013}
+    ]
+  },
+  {
+    "name": "소백그랑빌A동 (다세대)",
+    "address": "강북구 미아동 198-13",
+    "coords": [127.02775179884, 37.6267856432977],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 67.1, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38000, "rent": 0, "area": 67.09, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 198-13", "by": 2002}
     ]
   },
   {
@@ -282,6 +301,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8690, 8690], "rep_area": 43.0, "rep_avg_price": 8690}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 8690, "rent": 0, "area": 42.95, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 232-4", "by": 1992}
+    ]
+  },
+  {
+    "name": "휴가하우스 (다세대)",
+    "address": "강북구 미아동 234-7",
+    "coords": [127.021496824133, 37.628264656757],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28000, 28000], "rep_area": 37.1, "rep_avg_price": 28000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28000, "rent": 0, "area": 37.14, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 234-7", "by": 2013}
+    ]
+  },
+  {
+    "name": "미아동대원빌 (다세대)",
+    "address": "강북구 미아동 235-61",
+    "coords": [127.020901709838, 37.6285437090869],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 16.9, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 65, "area": 16.92, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-25", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 235-61", "by": 2015}
     ]
   },
   {
@@ -468,6 +505,15 @@
     ]
   },
   {
+    "name": "한스애비뉴 (다세대)",
+    "address": "강북구 미아동 314-94",
+    "coords": [127.023685147675, 37.6219101172892],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 30.0, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 70, "area": 30.0, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 314-94", "by": 2017}
+    ]
+  },
+  {
     "name": "에덴타운(가) (다세대)",
     "address": "강북구 미아동 319-51",
     "coords": [127.025711473277, 37.6214837062847],
@@ -513,6 +559,15 @@
     ]
   },
   {
+    "name": "경일리치빌4차 (다세대)",
+    "address": "강북구 미아동 328-11",
+    "coords": [127.025914669197, 37.6188253876677],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 54.8, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 50000, "rent": 0, "area": 54.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 328-11", "by": 2023}
+    ]
+  },
+  {
     "name": "은진하이빌(351-0) (다세대)",
     "address": "강북구 미아동 351",
     "coords": [127.024301774058, 37.6193591156776],
@@ -548,6 +603,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [57000, 57000], "rep_area": 38.5, "rep_avg_price": 57000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 57000, "rent": 0, "area": 38.5, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 423-5", "by": 1993}
+    ]
+  },
+  {
+    "name": "승재빌라 (다세대)",
+    "address": "강북구 미아동 428-4",
+    "coords": [127.025463310991, 37.6168916952283],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [63500, 63500], "rep_area": 34.3, "rep_avg_price": 63500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 63500, "rent": 0, "area": 34.28, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 428-4", "by": 1992}
     ]
   },
   {
@@ -714,6 +778,15 @@
     ]
   },
   {
+    "name": "화이트빌 (다세대)",
+    "address": "강북구 미아동 791-1103",
+    "coords": [127.01600356101, 37.627622946078],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12850, 12850], "rep_area": 28.9, "rep_avg_price": 12850}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12850, "rent": 0, "area": 28.87, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 791-1103", "by": 2016}
+    ]
+  },
+  {
     "name": "삼성아트빌(791-1125) (다세대)",
     "address": "강북구 미아동 791-1125",
     "coords": [127.017696389689, 37.6273359202994],
@@ -785,6 +858,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 40.4, "rep_avg_price": 8000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 8000, "rent": 0, "area": 40.38, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-06", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "미아동 791-1529", "by": 1999}
+    ]
+  },
+  {
+    "name": "정은빌라 (다세대)",
+    "address": "강북구 미아동 791-1530",
+    "coords": [127.012660739741, 37.6258437231215],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [16500, 16500], "rep_area": 23.4, "rep_avg_price": 16500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 16500, "rent": 0, "area": 23.4, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 791-1530", "by": 1994}
     ]
   },
   {
@@ -881,6 +963,15 @@
     ]
   },
   {
+    "name": "미건빌라(A동) (다세대)",
+    "address": "강북구 미아동 791-3347",
+    "coords": [127.012758136836, 37.6243794285933],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 83.7, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 83.72, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 791-3347", "by": 1998}
+    ]
+  },
+  {
     "name": "초원빌라3차 (다세대)",
     "address": "강북구 미아동 791-3882",
     "coords": [127.020630273546, 37.6276965592435],
@@ -950,6 +1041,16 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [39500, 39500], "rep_area": 34.4, "rep_avg_price": 39500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 39500, "rent": 0, "area": 34.45, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 836-78", "by": 2023}
+    ]
+  },
+  {
+    "name": "(84-21) (다세대)",
+    "address": "강북구 미아동 84-21",
+    "coords": [127.034398353983, 37.6149714950699],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [21000, 25500], "rep_area": 33.5, "rep_avg_price": 21000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25500, "rent": 0, "area": 43.56, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 84-21", "by": 2005},
+      {"type": "매매", "price": 21000, "rent": 0, "area": 33.54, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "미아동 84-21", "by": 2005}
     ]
   },
   {
@@ -1028,8 +1129,9 @@
     "name": "한성빌라1 (다세대)",
     "address": "강북구 번동 148-196",
     "coords": [127.035203443663, 37.6267694198389],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6500, 6500], "rep_area": 42.5, "rep_avg_price": 6500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [6500, 6500], "rep_area": 42.5, "rep_avg_price": 6500}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 6500, "rent": 0, "area": 42.54, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-06", "period": "26.04~28.04", "renew": "갱신", "p_dep": 6500, "p_rent": 0, "jibun": "번동 148-196", "by": 1991},
       {"type": "전세", "price": 6500, "rent": 0, "area": 42.54, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-06", "period": "26.04~28.04", "renew": "갱신", "p_dep": 6500, "p_rent": 0, "jibun": "번동 148-196", "by": 1991}
     ]
   },
@@ -1046,8 +1148,9 @@
     "name": "진주CD동 (다세대)",
     "address": "강북구 번동 148-236",
     "coords": [127.034803067973, 37.6279000965969],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 50.5, "rep_avg_price": 11000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 50.5, "rep_avg_price": 11000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 41.8, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 41.75, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "번동 148-236", "by": 1989},
       {"type": "전세", "price": 11000, "rent": 0, "area": 50.49, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "번동 148-236", "by": 1989}
     ]
   },
@@ -1353,6 +1456,15 @@
     ]
   },
   {
+    "name": "중앙아트빌라5차 (연립)",
+    "address": "강북구 수유동 165-2",
+    "coords": [127.018200073812, 37.6386123112719],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 40.7, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 40.68, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-11", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 165-2", "by": 1996}
+    ]
+  },
+  {
     "name": "월드빌리지(167-50) (다세대)",
     "address": "강북구 수유동 167-50",
     "coords": [127.028029881833, 37.6436145434881],
@@ -1427,6 +1539,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 36.8, "rep_avg_price": 4000}},
     "deals": [
       {"type": "월세", "price": 4000, "rent": 60, "area": 36.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 199-2", "by": 1991}
+    ]
+  },
+  {
+    "name": "성우빌라(216-27) (다세대)",
+    "address": "강북구 수유동 216-27",
+    "coords": [127.020681850219, 37.642122408759],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12000, 12000], "rep_area": 33.1, "rep_avg_price": 12000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12000, "rent": 0, "area": 33.1, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 216-27", "by": 1994}
+    ]
+  },
+  {
+    "name": "은진스톤하우스A동 (다세대)",
+    "address": "강북구 수유동 222-10",
+    "coords": [127.023745958862, 37.6400154201162],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 63.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 115, "area": 63.18, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-25", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 222-10", "by": 2003}
     ]
   },
   {
@@ -1560,6 +1690,15 @@
     ]
   },
   {
+    "name": "신건영빌리지8,9동 (다세대)",
+    "address": "강북구 수유동 276-21",
+    "coords": [127.016153236504, 37.6471205135014],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29500, 29500], "rep_area": 66.6, "rep_avg_price": 29500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29500, "rent": 0, "area": 66.62, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 276-21", "by": 1993}
+    ]
+  },
+  {
     "name": "부성빌라 (다세대)",
     "address": "강북구 수유동 279-68",
     "coords": [127.014499390771, 37.648598791779],
@@ -1599,8 +1738,9 @@
     "name": "로벨리아 (다세대)",
     "address": "강북구 수유동 281-19",
     "coords": [127.01330895848, 37.6463413375891],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 27.5, "rep_avg_price": 2000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [2000, 2000], "rep_area": 27.5, "rep_avg_price": 2000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 120, "area": 29.62, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 281-19", "by": 2024},
       {"type": "월세", "price": 2000, "rent": 120, "area": 27.49, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-27", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 281-19", "by": 2024},
       {"type": "월세", "price": 2000, "rent": 120, "area": 27.78, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-06", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 281-19", "by": 2024}
     ]
@@ -1684,6 +1824,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [38500, 38500], "rep_area": 52.4, "rep_avg_price": 38500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 38500, "rent": 0, "area": 52.42, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 296-23", "by": 2023}
+    ]
+  },
+  {
+    "name": "신성에어빌A동(300-7) (다세대)",
+    "address": "강북구 수유동 300-7",
+    "coords": [127.013218711444, 37.6428543594788],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 72.9, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 30, "area": 72.89, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 300-7", "by": 2001}
     ]
   },
   {
@@ -1789,10 +1938,18 @@
     "name": "르레브수유 (다세대)",
     "address": "강북구 수유동 391-236",
     "coords": [127.014478216618, 37.6399226784178],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [43600, 44300], "rep_area": 55.2, "rep_avg_price": 43950}, "jeonse": null, "monthly": null},
+    "stats": {"total": 10, "sale": {"count": 10, "range": [40700, 57200], "rep_area": 50.2, "rep_avg_price": 41233}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 43600, "rent": 0, "area": 55.16, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
-      {"type": "매매", "price": 44300, "rent": 0, "area": 55.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026}
+      {"type": "매매", "price": 42800, "rent": 0, "area": 54.11, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 40700, "rent": 0, "area": 50.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 44300, "rent": 0, "area": 55.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 43500, "rent": 0, "area": 54.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 41400, "rent": 0, "area": 50.21, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 57200, "rent": 0, "area": 67.99, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 47650, "rent": 0, "area": 57.52, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 45250, "rent": 0, "area": 54.92, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026},
+      {"type": "매매", "price": 41600, "rent": 0, "area": 50.21, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 391-236", "by": 2026}
     ]
   },
   {
@@ -1857,6 +2014,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 52.5, "rep_avg_price": 5000}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 50, "area": 52.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-09", "period": "26.04~28.04", "renew": "갱신", "p_dep": 5000, "p_rent": 50, "jibun": "수유동 408-15", "by": 2002}
+    ]
+  },
+  {
+    "name": "신한국하이츠빌라 (다세대)",
+    "address": "강북구 수유동 409-123",
+    "coords": [127.015490469452, 37.6378281204302],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18000, 18000], "rep_area": 54.3, "rep_avg_price": 18000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18000, "rent": 0, "area": 54.34, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 409-123", "by": 1994}
     ]
   },
   {
@@ -2017,8 +2183,9 @@
     "name": "미원하이츠빌라 (다세대)",
     "address": "강북구 수유동 468-226",
     "coords": [127.014528111609, 37.6308299275731],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 46.1, "rep_avg_price": 12000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [12000, 12000], "rep_area": 46.1, "rep_avg_price": 12000}},
     "deals": [
+      {"type": "월세", "price": 12000, "rent": 15, "area": 46.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 468-226", "by": 1993},
       {"type": "월세", "price": 12000, "rent": 15, "area": 46.09, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 468-226", "by": 1993}
     ]
   },
@@ -2029,6 +2196,24 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2729, 2729], "rep_area": 54.9, "rep_avg_price": 2729}},
     "deals": [
       {"type": "월세", "price": 2729, "rent": 24, "area": 54.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.05~28.04", "renew": "갱신", "p_dep": 3781, "p_rent": 21, "jibun": "수유동 468-28", "by": 2013}
+    ]
+  },
+  {
+    "name": "청솔아트빌 (다세대)",
+    "address": "강북구 수유동 469-249",
+    "coords": [127.014458301858, 37.6330419467101],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 51.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 100, "area": 51.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-24", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 469-249", "by": 2008}
+    ]
+  },
+  {
+    "name": "삼성S클래스 (다세대)",
+    "address": "강북구 수유동 469-265",
+    "coords": [127.015049348587, 37.6325195713337],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 29.9, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 80, "area": 29.89, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-07", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 469-265", "by": 2017}
     ]
   },
   {
@@ -2217,9 +2402,10 @@
     "name": "우광타운(18) (다세대)",
     "address": "강북구 수유동 486-784",
     "coords": [127.012669806541, 37.6298738350223],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [8000, 8000], "rep_area": 30.3, "rep_avg_price": 8000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [8000, 8000], "rep_area": 30.3, "rep_avg_price": 8000}, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 30.3, "rep_avg_price": 7000}},
     "deals": [
-      {"type": "매매", "price": 8000, "rent": 0, "area": 30.27, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 486-784", "by": 1989}
+      {"type": "매매", "price": 8000, "rent": 0, "area": 30.27, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 486-784", "by": 1989},
+      {"type": "월세", "price": 7000, "rent": 30, "area": 30.27, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 486-784", "by": 1989}
     ]
   },
   {
@@ -2278,6 +2464,24 @@
     ]
   },
   {
+    "name": "신안펠리스(A,B동) (다세대)",
+    "address": "강북구 수유동 508-61",
+    "coords": [127.011337556179, 37.6358027273947],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18500, 18500], "rep_area": 28.8, "rep_avg_price": 18500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 18500, "rent": 0, "area": 28.76, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 508-61", "by": 2016}
+    ]
+  },
+  {
+    "name": "현대빌라(519-32) (다세대)",
+    "address": "강북구 수유동 519-32",
+    "coords": [127.010268367511, 37.6372850360935],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 61.5, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 90, "area": 61.5, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 519-32", "by": 1998}
+    ]
+  },
+  {
     "name": "진주하이츠빌라 (다세대)",
     "address": "강북구 수유동 519-35",
     "coords": [127.010765999362, 37.6374914975195],
@@ -2293,6 +2497,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 59.3, "rep_avg_price": 15000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 15000, "rent": 0, "area": 59.3, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-01", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 519-39", "by": 2002}
+    ]
+  },
+  {
+    "name": "설악빌라트 (다세대)",
+    "address": "강북구 수유동 519-44",
+    "coords": [127.011987391246, 37.6377580713249],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 53.4, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 110, "area": 53.4, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-25", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 519-44", "by": 2021}
     ]
   },
   {
@@ -2424,6 +2637,15 @@
     ]
   },
   {
+    "name": "청포빌라(1) (다세대)",
+    "address": "강북구 수유동 530-55",
+    "coords": [127.008178522021, 37.6427981446264],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 29.5, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 30, "area": 29.53, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 530-55", "by": 1990}
+    ]
+  },
+  {
     "name": "장미빌라(530-56) (다세대)",
     "address": "강북구 수유동 530-56",
     "coords": [127.008329222896, 37.6428360655211],
@@ -2493,6 +2715,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [9900, 9900], "rep_area": 25.9, "rep_avg_price": 9900}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 9900, "rent": 0, "area": 25.93, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 530-96", "by": 1990}
+    ]
+  },
+  {
+    "name": "백운빌라(532-1) (다세대)",
+    "address": "강북구 수유동 532-1",
+    "coords": [127.007386438975, 37.6431760696689],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 33.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 33.87, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 532-1", "by": 1991}
     ]
   },
   {
@@ -2636,8 +2867,9 @@
     "name": "하나파크빌(564-1) (다세대)",
     "address": "강북구 수유동 564-1",
     "coords": [127.008612966887, 37.6460075089168],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 77.1, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [28500, 28500], "rep_area": 77.1, "rep_avg_price": 28500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 28500, "rent": 0, "area": 77.14, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 564-1", "by": 2001},
       {"type": "매매", "price": 28500, "rent": 0, "area": 77.14, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 564-1", "by": 2001}
     ]
   },
@@ -2688,6 +2920,15 @@
     ]
   },
   {
+    "name": "동송파크빌리지 (연립)",
+    "address": "강북구 수유동 573-1",
+    "coords": [127.010025341213, 37.6490629929535],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 108.4, "rep_avg_price": 33000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 33000, "rent": 0, "area": 108.42, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 573-1", "by": 1996}
+    ]
+  },
+  {
     "name": "남경빌리지가동 (다세대)",
     "address": "강북구 수유동 573-51",
     "coords": [127.012328563975, 37.6489223114404],
@@ -2700,8 +2941,9 @@
     "name": "하늘미소 (다세대)",
     "address": "강북구 수유동 58-54",
     "coords": [127.019013795432, 37.6306302621591],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [18700, 18700], "rep_area": 36.1, "rep_avg_price": 18700}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [18700, 18700], "rep_area": 36.1, "rep_avg_price": 18700}},
     "deals": [
+      {"type": "월세", "price": 18700, "rent": 15, "area": 36.06, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 58-54", "by": 2018},
       {"type": "월세", "price": 18700, "rent": 15, "area": 36.06, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 58-54", "by": 2018}
     ]
   },
@@ -2736,8 +2978,12 @@
     "name": "(697-3) (다세대)",
     "address": "강북구 수유동 697-3",
     "coords": [127.015568009013, 37.6488957098135],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [19000, 19000], "rep_area": 45.1, "rep_avg_price": 19000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 6, "range": [19000, 21000], "rep_area": 39.9, "rep_avg_price": 20500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 20000, "rent": 0, "area": 39.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 697-3", "by": 1987},
+      {"type": "매매", "price": 21000, "rent": 0, "area": 39.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 697-3", "by": 1987},
+      {"type": "매매", "price": 21000, "rent": 0, "area": 39.9, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 697-3", "by": 1987},
+      {"type": "매매", "price": 20000, "rent": 0, "area": 39.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 697-3", "by": 1987},
       {"type": "매매", "price": 19000, "rent": 0, "area": 45.1, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 697-3", "by": 1987},
       {"type": "매매", "price": 19000, "rent": 0, "area": 45.1, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 697-3", "by": 1987}
     ]
@@ -2786,6 +3032,16 @@
     "deals": [
       {"type": "월세", "price": 100, "rent": 57, "area": 58.87, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수유동 711-8", "by": 2018},
       {"type": "월세", "price": 100, "rent": 57, "area": 58.87, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-06", "period": "26.04~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 711-8", "by": 2018}
+    ]
+  },
+  {
+    "name": "양지그린빌(714-1) (다세대)",
+    "address": "강북구 수유동 714-1",
+    "coords": [127.022540537026, 37.6474919326372],
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [3000, 5000], "rep_area": 42.8, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 70, "area": 42.8, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-09", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 714-1", "by": 2013},
+      {"type": "월세", "price": 3000, "rent": 90, "area": 48.27, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "수유동 714-1", "by": 2013}
     ]
   },
   {
@@ -2917,12 +3173,30 @@
     ]
   },
   {
+    "name": "메이트하우스 (다세대)",
+    "address": "강북구 우이동 154-20",
+    "coords": [127.00967839036, 37.6614440513075],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 66.9, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 66.925, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-21", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우이동 154-20", "by": 2010}
+    ]
+  },
+  {
     "name": "우창파크빌 (다세대)",
     "address": "강북구 우이동 154-7",
     "coords": [127.009277309815, 37.6615144501822],
     "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 74.6, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 74.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우이동 154-7", "by": 2003}
+    ]
+  },
+  {
+    "name": "둘레길마을(155-1) (다세대)",
+    "address": "강북구 우이동 155-1",
+    "coords": [127.010206061946, 37.6613572423212],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15800, 15800], "rep_area": 42.3, "rep_avg_price": 15800}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15800, "rent": 0, "area": 42.3, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우이동 155-1", "by": 2015}
     ]
   },
   {
@@ -2961,6 +3235,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [11000, 11000], "rep_area": 44.3, "rep_avg_price": 11000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 11000, "rent": 0, "area": 44.3, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-01", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우이동 163-1", "by": 2014}
+    ]
+  },
+  {
+    "name": "우이하이츠빌라 (연립)",
+    "address": "강북구 우이동 164-1",
+    "coords": [127.011616915693, 37.6618242706665],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 164.8, "rep_avg_price": 33000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 33000, "rent": 0, "area": 164.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우이동 164-1", "by": 1985}
     ]
   },
   {
@@ -3022,8 +3305,9 @@
     "name": "동양그린빌 (다세대)",
     "address": "강북구 우이동 44-14",
     "coords": [127.013278032469, 37.6578418465306],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2500, 2500], "rep_area": 46.9, "rep_avg_price": 2500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 2500], "rep_area": 25.5, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 50, "area": 25.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우이동 44-14", "by": 2002},
       {"type": "월세", "price": 2500, "rent": 60, "area": 46.86, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "갱신", "p_dep": 2500, "p_rent": 55, "jibun": "우이동 44-14", "by": 2002}
     ]
   },
@@ -3034,6 +3318,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [28200, 28200], "rep_area": 92.4, "rep_avg_price": 28200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 28200, "rent": 0, "area": 92.44, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우이동 45-1", "by": 1986}
+    ]
+  },
+  {
+    "name": "성환빌라 (다세대)",
+    "address": "강북구 우이동 52-3",
+    "coords": [127.012304217973, 37.6579520521204],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 50.1, "rep_avg_price": 8000}},
+    "deals": [
+      {"type": "월세", "price": 8000, "rent": 30, "area": 50.1, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우이동 52-3", "by": 1997}
     ]
   },
   {

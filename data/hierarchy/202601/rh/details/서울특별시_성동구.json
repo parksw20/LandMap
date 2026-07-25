@@ -157,8 +157,9 @@
     "name": "삼성빌10차 (다세대)",
     "address": "성동구 금호동2가 500-2",
     "coords": [127.018936124561, 37.5534931935032],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 49.8, "rep_avg_price": 5000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 49.8, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "월세", "price": 5000, "rent": 100, "area": 49.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "금호동2가 500-2", "by": 2004},
       {"type": "월세", "price": 5000, "rent": 100, "area": 49.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-26", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "금호동2가 500-2", "by": 2004}
     ]
   },
@@ -166,8 +167,9 @@
     "name": "보람맨션5차B동 (다세대)",
     "address": "성동구 금호동2가 651-5",
     "coords": [127.021412193967, 37.5523560713478],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 65.2, "rep_avg_price": 33000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 65.2, "rep_avg_price": 33000}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 62.6, "rep_avg_price": 20000}},
     "deals": [
+      {"type": "월세", "price": 20000, "rent": 51, "area": 62.64, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-08", "period": "26.02~28.02", "renew": "갱신", "p_dep": 20000, "p_rent": 45, "jibun": "금호동2가 651-5", "by": 2003},
       {"type": "전세", "price": 33000, "rent": 0, "area": 65.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-30", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "금호동2가 651-5", "by": 2003}
     ]
   },
@@ -443,8 +445,10 @@
     "name": "좋은사람좋은집 (다세대)",
     "address": "성동구 마장동 388-16",
     "coords": [127.042907017394, 37.5628470151032],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 18.3, "rep_avg_price": 16000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 16.7, "rep_avg_price": 3000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 3, "range": [15000, 16000], "rep_area": 18.3, "rep_avg_price": 15850}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 16.7, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "전세", "price": 15000, "rent": 0, "area": 16.94, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-16", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마장동 388-16", "by": 2012},
+      {"type": "전세", "price": 15700, "rent": 0, "area": 18.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-19", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마장동 388-16", "by": 2012},
       {"type": "월세", "price": 3000, "rent": 70, "area": 16.74, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-17", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마장동 388-16", "by": 2012},
       {"type": "전세", "price": 16000, "rent": 0, "area": 18.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-19", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "마장동 388-16", "by": 2012}
     ]
@@ -590,6 +594,15 @@
     ]
   },
   {
+    "name": "Bella (다세대)",
+    "address": "성동구 마장동 796-1",
+    "coords": [127.041976094135, 37.5640923465131],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38200, 38200], "rep_area": 30.0, "rep_avg_price": 38200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 38200, "rent": 0, "area": 29.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마장동 796-1", "by": 2016}
+    ]
+  },
+  {
     "name": "(800-1) (다세대)",
     "address": "성동구 마장동 800-1",
     "coords": [127.04006480176, 37.5636204380217],
@@ -694,8 +707,9 @@
     "name": "고신빌 (다세대)",
     "address": "성동구 사근동 213-26",
     "coords": [127.047243887613, 37.5615576550997],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 29.4, "rep_avg_price": 500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 500], "rep_area": 29.4, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 50.56, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-08", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사근동 213-26", "by": 2007},
       {"type": "월세", "price": 500, "rent": 50, "area": 29.38, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-07", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사근동 213-26", "by": 2007}
     ]
   },
@@ -1013,8 +1027,9 @@
     "name": "에스포레 (다세대)",
     "address": "성동구 성수동1가 656-432",
     "coords": [127.04726795835, 37.5421460014607],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 17.8, "rep_avg_price": 1666}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [1000, 2000], "rep_area": 17.8, "rep_avg_price": 1750}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 185, "area": 17.77, "land": 0.0, "floor": "7", "dong": "", "date": "2026-01-22", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 656-432", "by": 2023},
       {"type": "월세", "price": 2000, "rent": 205, "area": 17.77, "land": 0.0, "floor": "7", "dong": "", "date": "2026-01-15", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 656-432", "by": 2023},
       {"type": "월세", "price": 2000, "rent": 185, "area": 17.77, "land": 0.0, "floor": "7", "dong": "", "date": "2026-01-22", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 656-432", "by": 2023},
       {"type": "월세", "price": 1000, "rent": 195, "area": 17.77, "land": 0.0, "floor": "8", "dong": "", "date": "2026-01-16", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 656-432", "by": 2023}
@@ -1053,8 +1068,9 @@
     "name": "(685-1) (다세대)",
     "address": "성동구 성수동1가 685-1",
     "coords": [127.043237199653, 37.5485874373194],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 28.6, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 28.6, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 130, "area": 28.64, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 685-1", "by": 2003},
       {"type": "월세", "price": 1000, "rent": 100, "area": 35.95, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-03", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 685-1", "by": 2003},
       {"type": "월세", "price": 1000, "rent": 130, "area": 28.64, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-22", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성수동1가 685-1", "by": 2003}
     ]
@@ -1632,8 +1648,9 @@
     "name": "엘케이플레이스4차 (다세대)",
     "address": "성동구 용답동 6-4",
     "coords": [127.055709807969, 37.5635012875808],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [62000, 62000], "rep_area": 25.1, "rep_avg_price": 62000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [62000, 62000], "rep_area": 25.1, "rep_avg_price": 62000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 62000, "rent": 0, "area": 25.09, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용답동 6-4", "by": 2023},
       {"type": "매매", "price": 62000, "rent": 0, "area": 25.09, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "용답동 6-4", "by": 2023}
     ]
   },
@@ -2045,6 +2062,15 @@
     "deals": [
       {"type": "월세", "price": 10000, "rent": 54, "area": 25.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-11", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행당동 117-32", "by": 2022},
       {"type": "월세", "price": 20000, "rent": 4, "area": 29.55, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-29", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행당동 117-32", "by": 2022}
+    ]
+  },
+  {
+    "name": "성동하이츠 (연립다세대)",
+    "address": "성동구 행당동 168-7",
+    "coords": [127.037339791589, 37.5623581342923],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 28.9, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 68, "area": 28.92, "land": 0.0, "floor": "6", "dong": "", "date": "2026-01-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행당동 168-7", "by": 2013}
     ]
   },
   {

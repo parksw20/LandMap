@@ -104,8 +104,9 @@
     "name": "청솔빌라 (다세대)",
     "address": "여주시 산북면 명품리 111-3",
     "coords": [127.452644949254, 37.4124229765799],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [4500, 4500], "rep_area": 55.3, "rep_avg_price": 4500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [4500, 4500], "rep_area": 55.3, "rep_avg_price": 4500}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 4500, "rent": 0, "area": 55.31, "land": 0.0, "floor": "2", "dong": "", "date": "2025-12-09", "period": "25.12~27.12", "renew": "갱신", "p_dep": 4500, "p_rent": 0, "jibun": "산북면 명품리 111-3", "by": 2004},
       {"type": "전세", "price": 4500, "rent": 0, "area": 55.31, "land": 0.0, "floor": "2", "dong": "", "date": "2025-12-09", "period": "25.12~27.12", "renew": "갱신", "p_dep": 4000, "p_rent": 0, "jibun": "산북면 명품리 111-3", "by": 2004}
     ]
   },
@@ -186,9 +187,9 @@
     "name": "오펜바흐2차 (다세대)",
     "address": "여주시 월송동 316",
     "coords": [127.605091863503, 37.2767992953442],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 82.5, "rep_avg_price": 20000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 82.5, "rep_avg_price": 15000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 20000, "rent": 0, "area": 82.46, "land": 0.0, "floor": "2", "dong": "", "date": "2025-12-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "월송동 316", "by": 2022}
+      {"type": "매매", "price": 15000, "rent": 0, "area": 82.46, "land": 0.0, "floor": "2", "dong": "", "date": "2025-12-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "월송동 316", "by": 2022}
     ]
   },
   {
@@ -230,6 +231,15 @@
     ]
   },
   {
+    "name": "해피하우스(3동) (다세대)",
+    "address": "여주시 점봉동 430-24",
+    "coords": [127.638891839513, 37.2628945632242],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1700, 1700], "rep_area": 59.9, "rep_avg_price": 1700}},
+    "deals": [
+      {"type": "월세", "price": 1700, "rent": 65, "area": 59.875, "land": 0.0, "floor": "1", "dong": "", "date": "2025-12-13", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "점봉동 430-24", "by": 2017}
+    ]
+  },
+  {
     "name": "베스트빌(103동) (다세대)",
     "address": "여주시 점봉동 437-84",
     "coords": [127.641211436643, 37.26415994958],
@@ -263,6 +273,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [5500, 5500], "rep_area": 47.5, "rep_avg_price": 5500}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 5500, "rent": 0, "area": 47.52, "land": 0.0, "floor": "3", "dong": "", "date": "2025-12-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 130-8", "by": 2007}
+    ]
+  },
+  {
+    "name": "국진주택(A,B동) (연립)",
+    "address": "여주시 창동 145-1",
+    "coords": [127.632959835689, 37.2945069970399],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8400, 8400], "rep_area": 64.8, "rep_avg_price": 8400}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8400, "rent": 0, "area": 64.85, "land": 0.0, "floor": "3", "dong": "", "date": "2025-12-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 145-1", "by": 1985}
     ]
   },
   {

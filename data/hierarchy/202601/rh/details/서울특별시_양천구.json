@@ -118,8 +118,9 @@
     "name": "한신빌리지 (다세대)",
     "address": "양천구 목동 131-50",
     "coords": [126.880474084904, 37.5436405442393],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 36.2, "rep_avg_price": 21000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [21000, 22800], "rep_area": 36.2, "rep_avg_price": 21000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 22800, "rent": 0, "area": 38.09, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-31", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 131-50", "by": 2019},
       {"type": "전세", "price": 21000, "rent": 0, "area": 36.19, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-07", "period": "26.02~27.02", "renew": "갱신", "p_dep": 21000, "p_rent": 0, "jibun": "목동 131-50", "by": 2019}
     ]
   },
@@ -248,6 +249,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 36.9, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 34, "area": 36.9, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-01-06", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 231-286", "by": 1991}
+    ]
+  },
+  {
+    "name": "KC하우징 (다세대)",
+    "address": "양천구 목동 231-51",
+    "coords": [126.869652431783, 37.54170951633],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 29.6, "rep_avg_price": 43000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 43000, "rent": 0, "area": 29.55, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "목동 231-51", "by": 2021}
     ]
   },
   {
@@ -1249,6 +1259,15 @@
     ]
   },
   {
+    "name": "동화빌라 (다세대)",
+    "address": "양천구 목동 530-28",
+    "coords": [126.872147410911, 37.5461025409786],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31000, 31000], "rep_area": 29.4, "rep_avg_price": 31000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 31000, "rent": 0, "area": 29.4, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "목동 530-28", "by": 1989}
+    ]
+  },
+  {
     "name": "성우뜨란채 (다세대)",
     "address": "양천구 목동 531-15",
     "coords": [126.870969013607, 37.544633712692],
@@ -2242,8 +2261,9 @@
     "name": "목동그레이스빌 (다세대)",
     "address": "양천구 목동 764-2",
     "coords": [126.869677715851, 37.5360891089164],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1246, 1354], "rep_area": 26.8, "rep_avg_price": 1246}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1246, 3574], "rep_area": 26.8, "rep_avg_price": 2410}},
     "deals": [
+      {"type": "월세", "price": 3574, "rent": 3, "area": 26.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-06", "period": "26.01~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 764-2", "by": 2018},
       {"type": "월세", "price": 1354, "rent": 18, "area": 29.4, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-08", "period": "26.01~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 764-2", "by": 2018},
       {"type": "월세", "price": 1246, "rent": 16, "area": 26.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-06", "period": "26.01~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 764-2", "by": 2018}
     ]
@@ -2508,8 +2528,9 @@
     "name": "양지샤인빌(807-7) (다세대)",
     "address": "양천구 목동 807-7",
     "coords": [126.864459652447, 37.5305109082882],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 30.0, "rep_avg_price": 20000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [20000, 20000], "rep_area": 30.0, "rep_avg_price": 20000}},
     "deals": [
+      {"type": "월세", "price": 20000, "rent": 30, "area": 29.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 807-7", "by": 2021},
       {"type": "월세", "price": 20000, "rent": 30, "area": 29.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-30", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "목동 807-7", "by": 2021}
     ]
   },
@@ -2569,6 +2590,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14200, 14200], "rep_area": 54.5, "rep_avg_price": 14200}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 14200, "rent": 0, "area": 54.52, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-07", "period": "26.01~27.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신월동 12-6", "by": 2002}
+    ]
+  },
+  {
+    "name": "동도하이츠빌라 (다세대)",
+    "address": "양천구 신월동 123-20",
+    "coords": [126.834920300115, 37.5316891222372],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12700, 12700], "rep_area": 59.2, "rep_avg_price": 12700}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12700, "rent": 0, "area": 59.16, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-08", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신월동 123-20", "by": 1997}
     ]
   },
   {
@@ -2650,15 +2680,6 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3012, 3012], "rep_area": 59.4, "rep_avg_price": 3012}},
     "deals": [
       {"type": "월세", "price": 3012, "rent": 1, "area": 59.43, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-14", "period": "26.02~28.01", "renew": "갱신", "p_dep": 2953, "p_rent": 1, "jibun": "신월동 19-22", "by": 2010}
-    ]
-  },
-  {
-    "name": "삼성쉐르빌7차 (다세대)",
-    "address": "양천구 신월동 19-26",
-    "coords": [126.831925025298, 37.5413522619769],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 37.4, "rep_avg_price": 21000}, "monthly": null},
-    "deals": [
-      {"type": "전세", "price": 21000, "rent": 0, "area": 37.38, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-15", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신월동 19-26", "by": 2017}
     ]
   },
   {
@@ -4588,6 +4609,15 @@
     ]
   },
   {
+    "name": "태림아트빌 (다세대)",
+    "address": "양천구 신정동 927-14",
+    "coords": [126.853062193388, 37.5266234239331],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36000, 36000], "rep_area": 65.9, "rep_avg_price": 36000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 36000, "rent": 0, "area": 65.88, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-01-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신정동 927-14", "by": 2002}
+    ]
+  },
+  {
     "name": "현대빌라(927-28) (다세대)",
     "address": "양천구 신정동 927-28",
     "coords": [126.853165337441, 37.5264656967871],
@@ -4833,6 +4863,15 @@
     ]
   },
   {
+    "name": "태영파크빌 (다세대)",
+    "address": "양천구 신정동 956-18",
+    "coords": [126.858980469552, 37.5235537184486],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2459, 2459], "rep_area": 33.8, "rep_avg_price": 2459}},
+    "deals": [
+      {"type": "월세", "price": 2459, "rent": 25, "area": 33.77, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-22", "period": "26.02~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신정동 956-18", "by": 2024}
+    ]
+  },
+  {
     "name": "대운주택 (다세대)",
     "address": "양천구 신정동 957-22",
     "coords": [126.858386536531, 37.5233881244668],
@@ -4949,6 +4988,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21500, 21500], "rep_area": 45.3, "rep_avg_price": 21500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 21500, "rent": 0, "area": 45.3, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-10", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신정동 967-8", "by": 2014}
+    ]
+  },
+  {
+    "name": "다다빌라트(967-9) (다세대)",
+    "address": "양천구 신정동 967-9",
+    "coords": [126.85323385305, 37.5232527203096],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [67000, 67000], "rep_area": 70.5, "rep_avg_price": 67000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 67000, "rent": 0, "area": 70.46, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신정동 967-9", "by": 2002}
     ]
   },
   {

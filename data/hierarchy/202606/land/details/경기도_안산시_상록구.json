@@ -12,8 +12,9 @@
     "name": "답",
     "address": "경기도 안산시 상록구 본오동",
     "coords": [126.864590815243, 37.289193960288],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [24500, 30900], "rep_area": 2022.0, "rep_avg_price": 24500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [24500, 52560], "rep_area": 2022.0, "rep_avg_price": 24500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 52560, "rent": 0, "area": 3621.0, "land": 3621.0, "floor": "", "dong": "", "date": "2026-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본오동 6**", "by": 0},
       {"type": "매매", "price": 30900, "rent": 0, "area": 2044.0, "land": 2044.0, "floor": "", "dong": "", "date": "2026-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본오동 6**", "by": 0},
       {"type": "매매", "price": 24500, "rent": 0, "area": 2022.0, "land": 2022.0, "floor": "", "dong": "", "date": "2026-06-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본오동 5**", "by": 0}
     ]
@@ -56,11 +57,21 @@
     ]
   },
   {
+    "name": "잡종지",
+    "address": "경기도 안산시 상록구 수암동",
+    "coords": [126.884029267782, 37.3679251374641],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [17000, 17000], "rep_area": 119.7, "rep_avg_price": 17000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 17000, "rent": 0, "area": 119.7, "land": 119.7, "floor": "", "dong": "", "date": "2026-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수암동 5*", "by": 0}
+    ]
+  },
+  {
     "name": "임야",
     "address": "경기도 안산시 상록구 팔곡일동",
     "coords": [126.890301466414, 37.3058681329248],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [500, 500], "rep_area": 21.0, "rep_avg_price": 500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [500, 15000], "rep_area": 21.0, "rep_avg_price": 500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 15000, "rent": 0, "area": 127.0, "land": 127.0, "floor": "", "dong": "", "date": "2026-06-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팔곡일동 3*", "by": 0},
       {"type": "매매", "price": 500, "rent": 0, "area": 21.0, "land": 21.0, "floor": "", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "팔곡일동 산*", "by": 0}
     ]
   },

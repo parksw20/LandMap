@@ -35,8 +35,9 @@
     "name": "주연스위트빌노량 (다세대)",
     "address": "동작구 노량진동 211-34",
     "coords": [126.945639375129, 37.5111147849172],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [28000, 29000], "rep_area": 27.5, "rep_avg_price": 28500}, "monthly": {"count": 1, "range": [29000, 29000], "rep_area": 25.6, "rep_avg_price": 29000}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [28000, 29000], "rep_area": 27.5, "rep_avg_price": 28500}, "monthly": {"count": 2, "range": [29000, 29000], "rep_area": 25.6, "rep_avg_price": 29000}},
     "deals": [
+      {"type": "월세", "price": 29000, "rent": 5, "area": 25.62, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "노량진동 211-34", "by": 2024},
       {"type": "전세", "price": 29000, "rent": 0, "area": 27.46, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "노량진동 211-34", "by": 2024},
       {"type": "월세", "price": 29000, "rent": 5, "area": 25.62, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.05~28.05", "renew": "갱신", "p_dep": 29000, "p_rent": 0, "jibun": "노량진동 211-34", "by": 2024},
       {"type": "전세", "price": 28000, "rent": 0, "area": 27.46, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "노량진동 211-34", "by": 2024}
@@ -427,9 +428,10 @@
     "name": "리안 (다세대)",
     "address": "동작구 대방동 394-26",
     "coords": [126.927063380339, 37.5001563022921],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [13900, 13900], "rep_area": 14.6, "rep_avg_price": 13900}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 6000], "rep_area": 14.6, "rep_avg_price": 1000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [13900, 13900], "rep_area": 14.6, "rep_avg_price": 13900}, "jeonse": null, "monthly": {"count": 3, "range": [200, 6000], "rep_area": 14.6, "rep_avg_price": 1000}},
     "deals": [
       {"type": "매매", "price": 13900, "rent": 0, "area": 14.59, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "대방동 394-26", "by": 2017},
+      {"type": "월세", "price": 200, "rent": 56, "area": 15.05, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-29", "period": "26.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "대방동 394-26", "by": 2017},
       {"type": "월세", "price": 1000, "rent": 65, "area": 14.59, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-21", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "대방동 394-26", "by": 2017},
       {"type": "월세", "price": 6000, "rent": 40, "area": 15.37, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-10", "period": "26.03~27.03", "renew": "갱신", "p_dep": 7000, "p_rent": 35, "jibun": "대방동 394-26", "by": 2017}
     ]
@@ -600,6 +602,15 @@
     ]
   },
   {
+    "name": "(49-5) (다세대)",
+    "address": "동작구 본동 49-5",
+    "coords": [126.955182725685, 37.5109257061332],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 20.7, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 20.68, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "본동 49-5", "by": 1990}
+    ]
+  },
+  {
     "name": "(51-8) (다세대)",
     "address": "동작구 본동 51-8",
     "coords": [126.95575069652, 37.5111985641871],
@@ -622,8 +633,9 @@
     "name": "THEiel(더이엘) (다세대)",
     "address": "동작구 사당동 1003-36",
     "coords": [126.979301949085, 37.4837871409983],
-    "stats": {"total": 9, "sale": null, "jeonse": {"count": 9, "range": [24000, 36000], "rep_area": 29.9, "rep_avg_price": 34000}, "monthly": null},
+    "stats": {"total": 10, "sale": null, "jeonse": {"count": 10, "range": [24000, 36000], "rep_area": 29.9, "rep_avg_price": 34285}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 36000, "rent": 0, "area": 29.88, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 1003-36", "by": 2026},
       {"type": "전세", "price": 36000, "rent": 0, "area": 29.88, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 1003-36", "by": 2026},
       {"type": "전세", "price": 36000, "rent": 0, "area": 29.88, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 1003-36", "by": 2026},
       {"type": "전세", "price": 36000, "rent": 0, "area": 29.88, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 1003-36", "by": 2026},
@@ -1240,6 +1252,15 @@
     ]
   },
   {
+    "name": "그랑시아 (다세대)",
+    "address": "동작구 사당동 180-18",
+    "coords": [126.968340415, 37.4925771977943],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 27.4, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 70, "area": 27.43, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 180-18", "by": 2019}
+    ]
+  },
+  {
     "name": "선영나동 (다세대)",
     "address": "동작구 사당동 180-19",
     "coords": [126.968490192628, 37.4924301033553],
@@ -1417,8 +1438,9 @@
     "name": "보성빌라 (다세대)",
     "address": "동작구 사당동 220-106",
     "coords": [126.969912013589, 37.4876983820375],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13500, 13500], "rep_area": 33.4, "rep_avg_price": 13500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [8000, 13500], "rep_area": 33.4, "rep_avg_price": 13500}},
     "deals": [
+      {"type": "월세", "price": 8000, "rent": 60, "area": 42.81, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 220-106", "by": 1992},
       {"type": "월세", "price": 13500, "rent": 5, "area": 33.45, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-03", "period": "26.04~28.04", "renew": "갱신", "p_dep": 12000, "p_rent": 15, "jibun": "사당동 220-106", "by": 1992}
     ]
   },
@@ -1493,6 +1515,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [31200, 31200], "rep_area": 64.7, "rep_avg_price": 31200}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 31200, "rent": 0, "area": 64.66, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 229-12", "by": 1994}
+    ]
+  },
+  {
+    "name": "골든 (다세대)",
+    "address": "동작구 사당동 230-24",
+    "coords": [126.967756649752, 37.4837592360233],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 32.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 50, "area": 32.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 230-24", "by": 1990}
     ]
   },
   {
@@ -1815,8 +1846,9 @@
     "name": "기연채(316-108) (다세대)",
     "address": "동작구 사당동 316-108",
     "coords": [126.974512683863, 37.4809399181334],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20100, 20100], "rep_area": 50.8, "rep_avg_price": 20100}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 50.8, "rep_avg_price": 40000}, "jeonse": {"count": 1, "range": [20100, 20100], "rep_area": 50.8, "rep_avg_price": 20100}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 40000, "rent": 0, "area": 50.77, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 316-108", "by": 2014},
       {"type": "전세", "price": 20100, "rent": 0, "area": 50.77, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-04", "period": "26.03~26.05", "renew": "갱신", "p_dep": 20100, "p_rent": 0, "jibun": "사당동 316-108", "by": 2014}
     ]
   },
@@ -2006,6 +2038,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5500, 5500], "rep_area": 41.6, "rep_avg_price": 5500}},
     "deals": [
       {"type": "월세", "price": 5500, "rent": 42, "area": 41.59, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 419-178", "by": 2003}
+    ]
+  },
+  {
+    "name": "선영아트빌 (다세대)",
+    "address": "동작구 사당동 419-37",
+    "coords": [126.976038863656, 37.4789066597865],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 68.2, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 100, "area": 68.22, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "사당동 419-37", "by": 2002}
     ]
   },
   {
@@ -2208,8 +2249,9 @@
     "name": "화이트빌라 (연립)",
     "address": "동작구 사당동 446-127",
     "coords": [126.972465893362, 37.4776847431292],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19950, 19950], "rep_area": 51.9, "rep_avg_price": 19950}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [40500, 40500], "rep_area": 41.8, "rep_avg_price": 40500}, "jeonse": {"count": 1, "range": [19950, 19950], "rep_area": 51.9, "rep_avg_price": 19950}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 40500, "rent": 0, "area": 41.82, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "사당동 446-127", "by": 1996},
       {"type": "전세", "price": 19950, "rent": 0, "area": 51.93, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-18", "period": "26.06~28.06", "renew": "갱신", "p_dep": 19950, "p_rent": 0, "jibun": "사당동 446-127", "by": 1996}
     ]
   },
@@ -2517,8 +2559,9 @@
     "name": "덕수빌 (다세대)",
     "address": "동작구 상도1동 641-1",
     "coords": [126.95084548938, 37.5044779217938],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 28.0, "rep_avg_price": 5000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 5000], "rep_area": 28.0, "rep_avg_price": 5000}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 29.76, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-15", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도1동 641-1", "by": 2002},
       {"type": "월세", "price": 5000, "rent": 40, "area": 27.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-23", "period": "26.04~27.03", "renew": "갱신", "p_dep": 5000, "p_rent": 40, "jibun": "상도1동 641-1", "by": 2002}
     ]
   },
@@ -2645,8 +2688,9 @@
     "name": "서연빌 (다세대)",
     "address": "동작구 상도동 159-38",
     "coords": [126.948447449176, 37.5004501251302],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [35000, 35000], "rep_area": 29.8, "rep_avg_price": 35000}, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 20.5, "rep_avg_price": 18000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [25000, 35000], "rep_area": 20.5, "rep_avg_price": 25000}, "jeonse": {"count": 1, "range": [18000, 18000], "rep_area": 20.5, "rep_avg_price": 18000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 20.52, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상도동 159-38", "by": 2017},
       {"type": "매매", "price": 35000, "rent": 0, "area": 29.75, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상도동 159-38", "by": 2017},
       {"type": "전세", "price": 18000, "rent": 0, "area": 20.52, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 159-38", "by": 2017}
     ]
@@ -2889,6 +2933,15 @@
     ]
   },
   {
+    "name": "상도동두양빌라 (연립)",
+    "address": "동작구 상도동 210-448",
+    "coords": [126.941283363045, 37.4960272556509],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [29400, 29400], "rep_area": 83.2, "rep_avg_price": 29400}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 29400, "rent": 0, "area": 83.19, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-19", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 210-448", "by": 1994}
+    ]
+  },
+  {
     "name": "초원하이츠빌라 (연립)",
     "address": "동작구 상도동 210-62",
     "coords": [126.940954613989, 37.4989188717977],
@@ -2910,9 +2963,10 @@
     "name": "유지빌라 (다세대)",
     "address": "동작구 상도동 210-78",
     "coords": [126.941104288301, 37.4981238986176],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 60.1, "rep_avg_price": 58000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 60.1, "rep_avg_price": 58000}, "jeonse": {"count": 1, "range": [18700, 18700], "rep_area": 60.1, "rep_avg_price": 18700}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 58000, "rent": 0, "area": 60.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상도동 210-78", "by": 1994}
+      {"type": "매매", "price": 58000, "rent": 0, "area": 60.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상도동 210-78", "by": 1994},
+      {"type": "전세", "price": 18700, "rent": 0, "area": 60.12, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-13", "period": "26.07~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 210-78", "by": 1994}
     ]
   },
   {
@@ -2965,8 +3019,10 @@
     "name": "(211-418) (다세대)",
     "address": "동작구 상도동 211-418",
     "coords": [126.945045319393, 37.4991086152625],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [17950, 17950], "rep_area": 43.0, "rep_avg_price": 17950}, "monthly": {"count": 1, "range": [18500, 18500], "rep_area": 43.0, "rep_avg_price": 18500}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 3, "range": [17010, 17950], "rep_area": 43.0, "rep_avg_price": 17323}, "monthly": {"count": 1, "range": [18500, 18500], "rep_area": 43.0, "rep_avg_price": 18500}},
     "deals": [
+      {"type": "전세", "price": 17010, "rent": 0, "area": 43.03, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 211-418", "by": 2012},
+      {"type": "전세", "price": 17010, "rent": 0, "area": 43.03, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 211-418", "by": 2012},
       {"type": "전세", "price": 17950, "rent": 0, "area": 43.03, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 211-418", "by": 2012},
       {"type": "월세", "price": 18500, "rent": 5, "area": 43.03, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 211-418", "by": 2012}
     ]
@@ -3210,6 +3266,15 @@
     ]
   },
   {
+    "name": "정경연립(244-125) (연립)",
+    "address": "동작구 상도동 244-125",
+    "coords": [126.936528138767, 37.4994364569627],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 55.5, "rep_avg_price": 25000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 25000, "rent": 0, "area": 55.47, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상도동 244-125", "by": 1982}
+    ]
+  },
+  {
     "name": "미소가A동(244-166) (다세대)",
     "address": "동작구 상도동 244-166",
     "coords": [126.935513221987, 37.4988467394045],
@@ -3275,6 +3340,15 @@
     ]
   },
   {
+    "name": "퍼스트빌 (다세대)",
+    "address": "동작구 상도동 244-35",
+    "coords": [126.934632523788, 37.499201431981],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [18000, 18000], "rep_area": 28.8, "rep_avg_price": 18000}},
+    "deals": [
+      {"type": "월세", "price": 18000, "rent": 25, "area": 28.8, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-07", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 244-35", "by": 2016}
+    ]
+  },
+  {
     "name": "인성주택나동 (다세대)",
     "address": "동작구 상도동 244-352",
     "coords": [126.936867239408, 37.4990958781662],
@@ -3305,9 +3379,10 @@
     "name": "상도동하이빌 (연립)",
     "address": "동작구 상도동 246-18",
     "coords": [126.933616537299, 37.500734737999],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [75000, 75000], "rep_area": 62.7, "rep_avg_price": 75000}, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 62.7, "rep_avg_price": 33000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [75000, 75000], "rep_area": 62.7, "rep_avg_price": 75000}, "jeonse": {"count": 2, "range": [33000, 33000], "rep_area": 62.7, "rep_avg_price": 33000}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 75000, "rent": 0, "area": 62.74, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상도동 246-18", "by": 2003},
+      {"type": "전세", "price": 33000, "rent": 0, "area": 62.74, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 246-18", "by": 2003},
       {"type": "전세", "price": 33000, "rent": 0, "area": 62.74, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 246-18", "by": 2003}
     ]
   },
@@ -3757,6 +3832,15 @@
     ]
   },
   {
+    "name": "미소빌 (다세대)",
+    "address": "동작구 상도동 299-130",
+    "coords": [126.931173910126, 37.4943066421411],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26300, 26300], "rep_area": 39.2, "rep_avg_price": 26300}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 26300, "rent": 0, "area": 39.21, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 299-130", "by": 2017}
+    ]
+  },
+  {
     "name": "동방파레스빌라13차 (다세대)",
     "address": "동작구 상도동 299-137",
     "coords": [126.931173369653, 37.4957581636447],
@@ -4073,6 +4157,15 @@
     ]
   },
   {
+    "name": "동송빌리지A동 (다세대)",
+    "address": "동작구 상도동 335-83",
+    "coords": [126.930649580854, 37.5014918605496],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 57.0, "rep_avg_price": 20000}},
+    "deals": [
+      {"type": "월세", "price": 20000, "rent": 45, "area": 57.03, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-11", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 335-83", "by": 2002}
+    ]
+  },
+  {
     "name": "푸움 (다세대)",
     "address": "동작구 상도동 335-86",
     "coords": [126.930326763277, 37.5017927866994],
@@ -4105,8 +4198,9 @@
     "name": "우주 (다세대)",
     "address": "동작구 상도동 359-5",
     "coords": [126.936952049788, 37.5044826761957],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [8000, 8000], "rep_area": 13.5, "rep_avg_price": 8000}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [8000, 8000], "rep_area": 13.5, "rep_avg_price": 8000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 13.54, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 359-5", "by": 2012},
       {"type": "전세", "price": 8000, "rent": 0, "area": 13.54, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 359-5", "by": 2012},
       {"type": "전세", "price": 8000, "rent": 0, "area": 13.54, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 359-5", "by": 2012}
     ]
@@ -4224,6 +4318,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 25.3, "rep_avg_price": 15000}},
     "deals": [
       {"type": "월세", "price": 15000, "rent": 31, "area": 25.31, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상도동 491-17", "by": 2016}
+    ]
+  },
+  {
+    "name": "491-20 (다세대)",
+    "address": "동작구 상도동 491-20",
+    "coords": [126.952838838805, 37.4958056504434],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12978, 12978], "rep_area": 14.8, "rep_avg_price": 12978}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12978, "rent": 0, "area": 14.83, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-20", "period": "26.03~28.03", "renew": "갱신", "p_dep": 12360, "p_rent": 0, "jibun": "상도동 491-20", "by": 2013}
     ]
   },
   {
@@ -4464,6 +4567,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [23500, 23500], "rep_area": 29.9, "rep_avg_price": 23500}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 23500, "rent": 0, "area": 29.87, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "갱신", "p_dep": 23500, "p_rent": 0, "jibun": "신대방동 360-70", "by": 2014}
+    ]
+  },
+  {
+    "name": "골드캐슬 (다세대)",
+    "address": "동작구 신대방동 360-78",
+    "coords": [126.923619662393, 37.4968445501251],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 48.4, "rep_avg_price": 7000}},
+    "deals": [
+      {"type": "월세", "price": 7000, "rent": 120, "area": 48.4, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신대방동 360-78", "by": 2012}
     ]
   },
   {

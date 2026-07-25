@@ -18,6 +18,24 @@
     ]
   },
   {
+    "name": "청림빌라15동 (다세대)",
+    "address": "고양시 덕양구 고양동 1049",
+    "coords": [126.903030633825, 37.718957900779],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6000, 6000], "rep_area": 49.6, "rep_avg_price": 6000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 6000, "rent": 0, "area": 49.6, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-25", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 1049", "by": 1993}
+    ]
+  },
+  {
+    "name": "보라빌라2동-8동 (연립)",
+    "address": "고양시 덕양구 고양동 1073",
+    "coords": [126.902350943849, 37.7188366995935],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8500, 8500], "rep_area": 67.7, "rep_avg_price": 8500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8500, "rent": 0, "area": 67.68, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 1073", "by": 1986}
+    ]
+  },
+  {
     "name": "신성빌라109동 (다세대)",
     "address": "고양시 덕양구 고양동 11-13",
     "coords": [126.900975672663, 37.7098309582647],
@@ -86,9 +104,10 @@
     "name": "건흥가동 (다세대)",
     "address": "고양시 덕양구 고양동 27-1",
     "coords": [126.901576130317, 37.7074572147305],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [7300, 7300], "rep_area": 46.0, "rep_avg_price": 7300}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [7300, 7300], "rep_area": 46.0, "rep_avg_price": 7300}, "jeonse": {"count": 1, "range": [5000, 5000], "rep_area": 46.0, "rep_avg_price": 5000}, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 7300, "rent": 0, "area": 45.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 27-1", "by": 1992}
+      {"type": "매매", "price": 7300, "rent": 0, "area": 45.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 27-1", "by": 1992},
+      {"type": "전세", "price": 5000, "rent": 0, "area": 45.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 27-1", "by": 1992}
     ]
   },
   {
@@ -194,8 +213,9 @@
     "name": "세중더클래스2(101,102,103동) (다세대)",
     "address": "고양시 덕양구 고양동 860",
     "coords": [126.901536001583, 37.7156729775219],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7900, 7900], "rep_area": 44.6, "rep_avg_price": 7900}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [7800, 7900], "rep_area": 44.6, "rep_avg_price": 7850}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 7800, "rent": 0, "area": 44.55, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 860", "by": 2012},
       {"type": "전세", "price": 7900, "rent": 0, "area": 44.55, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-22", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 860", "by": 2012}
     ]
   },
@@ -409,6 +429,15 @@
     ]
   },
   {
+    "name": "관산빌라1차(나동) (다세대)",
+    "address": "고양시 덕양구 관산동 538-25",
+    "coords": [126.86021863178, 37.7051960698901],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 32.8, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 32.8, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관산동 538-25", "by": 1991}
+    ]
+  },
+  {
     "name": "부흥빌라다동 (다세대)",
     "address": "고양시 덕양구 관산동 538-8",
     "coords": [126.860186955534, 37.7053367644776],
@@ -418,12 +447,30 @@
     ]
   },
   {
+    "name": "화강빌라다동 (다세대)",
+    "address": "고양시 덕양구 관산동 540-3",
+    "coords": [126.858664561379, 37.7059876150135],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 35.7, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 45, "area": 35.7, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관산동 540-3", "by": 1991}
+    ]
+  },
+  {
     "name": "힐타운101,102동 (다세대)",
     "address": "고양시 덕양구 관산동 540-54",
     "coords": [126.858963759019, 37.7062637613757],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 59.8, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 59.8, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-16", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관산동 540-54", "by": 2014}
+    ]
+  },
+  {
+    "name": "리더스빌B동 (다세대)",
+    "address": "고양시 덕양구 관산동 540-85",
+    "coords": [126.858201917951, 37.7053140320143],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 38.7, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 40, "area": 38.745, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관산동 540-85", "by": 2002}
     ]
   },
   {
@@ -466,9 +513,10 @@
     "name": "대훈그린빌5,6동 (다세대)",
     "address": "고양시 덕양구 관산동 641-10",
     "coords": [126.86512224902, 37.7155483781128],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 59.2, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 59.2, "rep_avg_price": 10000}, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.2, "rep_avg_price": 3000}},
     "deals": [
-      {"type": "매매", "price": 10000, "rent": 0, "area": 59.15, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 641-10", "by": 2011}
+      {"type": "매매", "price": 10000, "rent": 0, "area": 59.15, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 641-10", "by": 2011},
+      {"type": "월세", "price": 3000, "rent": 45, "area": 59.15, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-28", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관산동 641-10", "by": 2011}
     ]
   },
   {
@@ -478,6 +526,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [18200, 18200], "rep_area": 56.6, "rep_avg_price": 18200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 18200, "rent": 0, "area": 56.55, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 672-37", "by": 2015}
+    ]
+  },
+  {
+    "name": "리더스빌3차A,B,C동 (다세대)",
+    "address": "고양시 덕양구 관산동 672-64",
+    "coords": [126.85497216603, 37.7099038078377],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [8500, 8500], "rep_area": 67.9, "rep_avg_price": 8500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 8500, "rent": 0, "area": 67.94, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 672-64", "by": 2014}
     ]
   },
   {
@@ -533,6 +590,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [11800, 11800], "rep_area": 47.6, "rep_avg_price": 11800}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 11800, "rent": 0, "area": 47.64, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "내유동 245-5", "by": 2016}
+    ]
+  },
+  {
+    "name": "M타운(5동,6동) (다세대)",
+    "address": "고양시 덕양구 내유동 275-17",
+    "coords": [126.853789887851, 37.7181008381876],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 58.1, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 40, "area": 58.14, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "내유동 275-17", "by": 2012}
     ]
   },
   {
@@ -620,8 +686,9 @@
     "name": "라온팰리스103동104동 (다세대)",
     "address": "고양시 덕양구 내유동 576-4",
     "coords": [126.845293298188, 37.7242346203108],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 47.3, "rep_avg_price": 2000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 47.3, "rep_avg_price": 2000}},
     "deals": [
+      {"type": "월세", "price": 2000, "rent": 50, "area": 47.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "내유동 576-4", "by": 2016},
       {"type": "월세", "price": 2000, "rent": 50, "area": 47.31, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "내유동 576-4", "by": 2016}
     ]
   },
@@ -709,6 +776,15 @@
     ]
   },
   {
+    "name": "양지그린타운(105동) (다세대)",
+    "address": "고양시 덕양구 내유동 654-4",
+    "coords": [126.846053883404, 37.728928231323],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [10800, 10800], "rep_area": 59.9, "rep_avg_price": 10800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 10800, "rent": 0, "area": 59.895, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "내유동 654-4", "by": 2002}
+    ]
+  },
+  {
     "name": "명진탑클래스 (다세대)",
     "address": "고양시 덕양구 내유동 655-1",
     "coords": [126.846860758495, 37.7272758213761],
@@ -724,6 +800,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [8800, 8800], "rep_area": 44.8, "rep_avg_price": 8800}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 8800, "rent": 0, "area": 44.82, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "내유동 655-5", "by": 2001}
+    ]
+  },
+  {
+    "name": "미성빌라(111동) (다세대)",
+    "address": "고양시 덕양구 내유동 661-2",
+    "coords": [126.846485525305, 37.7268876457192],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 37.3, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 35, "area": 37.26, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-04-27", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "내유동 661-2", "by": 2002}
+    ]
+  },
+  {
+    "name": "킹스빌타운2차202,203동 (다세대)",
+    "address": "고양시 덕양구 내유동 676-76",
+    "coords": [126.843214799187, 37.7263405064506],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 58.4, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 60, "area": 58.4, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "내유동 676-76", "by": 2001}
     ]
   },
   {
@@ -996,11 +1090,25 @@
     ]
   },
   {
+    "name": "테라비아타인삼송(101-106동) (연립)",
+    "address": "고양시 덕양구 오금동 585",
+    "coords": [126.897749737982, 37.6640367618857],
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [5000, 45000], "rep_area": 84.6, "rep_avg_price": 25000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 180, "area": 84.6287, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-17", "period": "26.07~28.07", "renew": "갱신", "p_dep": 5000, "p_rent": 180, "jibun": "오금동 585", "by": 2020},
+      {"type": "월세", "price": 45000, "rent": 25, "area": 84.6287, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-16", "period": "26.05~28.05", "renew": "갱신", "p_dep": 45000, "p_rent": 0, "jibun": "오금동 585", "by": 2020},
+      {"type": "월세", "price": 5000, "rent": 180, "area": 84.7357, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-03", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 585", "by": 2020}
+    ]
+  },
+  {
     "name": "삼송비아티움 (연립)",
     "address": "고양시 덕양구 오금동 595",
     "coords": [126.898329748788, 37.6618319324655],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [14910, 23850], "rep_area": 84.5, "rep_avg_price": 20033}},
+    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [14910, 23850], "rep_area": 84.5, "rep_avg_price": 18646}},
     "deals": [
+      {"type": "월세", "price": 17890, "rent": 40, "area": 84.5287, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오금동 595", "by": 2023},
+      {"type": "월세", "price": 17890, "rent": 40, "area": 84.5287, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 595", "by": 2023},
+      {"type": "월세", "price": 16000, "rent": 35, "area": 84.5287, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 595", "by": 2023},
       {"type": "월세", "price": 21340, "rent": 23, "area": 84.5287, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 595", "by": 2023},
       {"type": "월세", "price": 23850, "rent": 27, "area": 84.5287, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-30", "period": "26.07~28.07", "renew": "갱신", "p_dep": 23850, "p_rent": 23, "jibun": "오금동 595", "by": 2023},
       {"type": "월세", "price": 14910, "rent": 47, "area": 84.5287, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 595", "by": 2023}
@@ -1091,10 +1199,20 @@
     "name": "삼송자이더빌리지6-3BL(631동-639동) (연립)",
     "address": "고양시 덕양구 오금동 670",
     "coords": [126.911314705738, 37.6606086962033],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [73500, 73500], "rep_area": 84.9, "rep_avg_price": 73500}, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 84.9, "rep_avg_price": 15000}},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [72000, 73500], "rep_area": 84.9, "rep_avg_price": 72750}, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 84.9, "rep_avg_price": 15000}},
     "deals": [
+      {"type": "매매", "price": 72000, "rent": 0, "area": 84.9207, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오금동 670", "by": 2021},
       {"type": "매매", "price": 73500, "rent": 0, "area": 84.9207, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "오금동 670", "by": 2021},
       {"type": "월세", "price": 15000, "rent": 200, "area": 84.9207, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-19", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "오금동 670", "by": 2021}
+    ]
+  },
+  {
+    "name": "용두평안채A동 (다세대)",
+    "address": "고양시 덕양구 용두동 466-8",
+    "coords": [126.886420002222, 37.6346581407436],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [0, 0], "rep_area": 41.4, "rep_avg_price": 0}},
+    "deals": [
+      {"type": "월세", "price": 0, "rent": 100, "area": 41.35, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-23", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "용두동 466-8", "by": 2018}
     ]
   },
   {
@@ -1355,6 +1473,15 @@
     ]
   },
   {
+    "name": "신성베스티아105동 (다세대)",
+    "address": "고양시 덕양구 주교동 623-15",
+    "coords": [126.837399583987, 37.6595527628669],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [21400, 21400], "rep_area": 68.2, "rep_avg_price": 21400}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 21400, "rent": 0, "area": 68.22, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-10", "period": "26.05~27.05", "renew": "갱신", "p_dep": 21700, "p_rent": 0, "jibun": "주교동 623-15", "by": 2019}
+    ]
+  },
+  {
     "name": "성림주택(623-22)라동 (다세대)",
     "address": "고양시 덕양구 주교동 623-22",
     "coords": [126.836848033421, 37.6595382162965],
@@ -1385,8 +1512,9 @@
     "name": "백조 (연립)",
     "address": "고양시 덕양구 토당동 13",
     "coords": [126.825541776655, 37.6246583071974],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 61.0, "rep_avg_price": 13000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [13000, 13000], "rep_area": 61.0, "rep_avg_price": 13000}},
     "deals": [
+      {"type": "월세", "price": 13000, "rent": 10, "area": 61.0, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "토당동 13", "by": 1983},
       {"type": "월세", "price": 13000, "rent": 10, "area": 61.0, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "토당동 13", "by": 1983}
     ]
   },
@@ -1478,8 +1606,9 @@
     "name": "정우빌라가동 (다세대)",
     "address": "고양시 덕양구 토당동 846-4",
     "coords": [126.825741344747, 37.6266112185836],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12700, 12700], "rep_area": 57.7, "rep_avg_price": 12700}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [12700, 12700], "rep_area": 57.7, "rep_avg_price": 12700}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 12700, "rent": 0, "area": 57.705, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "토당동 846-4", "by": 1991},
       {"type": "전세", "price": 12700, "rent": 0, "area": 57.705, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "토당동 846-4", "by": 1991}
     ]
   },
@@ -1487,8 +1616,9 @@
     "name": "현대하이츠빌라가동 (다세대)",
     "address": "고양시 덕양구 토당동 848-1",
     "coords": [126.825059049462, 37.6257427399095],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9400, 9400], "rep_area": 36.1, "rep_avg_price": 9400}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [9400, 9400], "rep_area": 36.1, "rep_avg_price": 9400}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 9400, "rent": 0, "area": 36.075, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "토당동 848-1", "by": 1989},
       {"type": "전세", "price": 9400, "rent": 0, "area": 36.075, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "토당동 848-1", "by": 1989}
     ]
   },
@@ -1732,6 +1862,15 @@
     ]
   },
   {
+    "name": "우성빌라14동 (다세대)",
+    "address": "고양시 덕양구 행신동 282-53",
+    "coords": [126.844987648611, 37.6244997621141],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 49.9, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 49.94, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-21", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 282-53", "by": 1991}
+    ]
+  },
+  {
     "name": "대호빌라가동 (다세대)",
     "address": "고양시 덕양구 행신동 644-56",
     "coords": [126.829725928209, 37.6240130063004],
@@ -1774,6 +1913,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [9922, 9922], "rep_area": 56.5, "rep_avg_price": 9922}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 9922, "rent": 0, "area": 56.49, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "현천동 394-6", "by": 2011}
+    ]
+  },
+  {
+    "name": "송골매B (다세대)",
+    "address": "고양시 덕양구 화전동 203-71",
+    "coords": [126.870879504557, 37.6012842667687],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 63.0, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 63, "area": 62.97, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.04~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화전동 203-71", "by": 2023}
     ]
   }
 ]

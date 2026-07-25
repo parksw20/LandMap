@@ -124,8 +124,9 @@
     "name": "새빛둥지 (다세대)",
     "address": "노원구 공릉동 320-113",
     "coords": [127.078508623922, 37.6216772584223],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 18.0, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 18.0, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 41, "area": 17.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-26", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "공릉동 320-113", "by": 2013},
       {"type": "월세", "price": 1000, "rent": 41, "area": 17.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-26", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "공릉동 320-113", "by": 2013}
     ]
   },
@@ -810,6 +811,15 @@
     ]
   },
   {
+    "name": "장미빌라 (다세대)",
+    "address": "노원구 상계동 1381-8",
+    "coords": [127.079030235685, 37.6723553350169],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31000, 31000], "rep_area": 43.2, "rep_avg_price": 31000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 31000, "rent": 0, "area": 43.15, "land": 0.0, "floor": "1", "dong": "", "date": "2026-05-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상계동 1381-8", "by": 1995}
+    ]
+  },
+  {
     "name": "현대빌라1차 (연립)",
     "address": "노원구 상계동 1383",
     "coords": [127.078452232707, 37.6718980232694],
@@ -878,8 +888,9 @@
     "name": "범하훼미리타운 (다세대)",
     "address": "노원구 상계동 1402-13",
     "coords": [127.079812820406, 37.6697205235199],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [30500, 30500], "rep_area": 60.2, "rep_avg_price": 30500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [30500, 30500], "rep_area": 60.2, "rep_avg_price": 30500}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 30500, "rent": 0, "area": 60.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상계동 1402-13", "by": 2002},
       {"type": "매매", "price": 30500, "rent": 0, "area": 60.21, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상계동 1402-13", "by": 2002}
     ]
   },

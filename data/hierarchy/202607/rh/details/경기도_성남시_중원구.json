@@ -55,6 +55,15 @@
     ]
   },
   {
+    "name": "원룸이지 (다세대)",
+    "address": "성남시 중원구 금광동 3092",
+    "coords": [127.166461944479, 37.4471744611798],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 21.6, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 47, "area": 21.6, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-08", "period": "26.07~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "금광동 3092", "by": 1996}
+    ]
+  },
+  {
     "name": "부영빌라(A) (다세대)",
     "address": "성남시 중원구 금광동 3272",
     "coords": [127.164208910925, 37.4494185224984],
@@ -121,9 +130,20 @@
     "name": "동분당KCC스위첸파티오1단지 (연립)",
     "address": "성남시 중원구 도촌동 639",
     "coords": [127.154229031984, 37.4141679249078],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 84.8, "rep_avg_price": 30000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [89700, 89700], "rep_area": 85.0, "rep_avg_price": 89700}, "jeonse": null, "monthly": {"count": 2, "range": [30000, 67000], "rep_area": 84.8, "rep_avg_price": 30000}},
     "deals": [
+      {"type": "매매", "price": 89700, "rent": 0, "area": 84.98, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도촌동 639", "by": 2019},
+      {"type": "월세", "price": 67000, "rent": 12, "area": 84.98, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-14", "period": "26.08~28.08", "renew": "갱신", "p_dep": 67000, "p_rent": 0, "jibun": "도촌동 639", "by": 2019},
       {"type": "월세", "price": 30000, "rent": 135, "area": 84.82, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-08", "period": "26.08~28.08", "renew": "갱신", "p_dep": 30000, "p_rent": 135, "jibun": "도촌동 639", "by": 2019}
+    ]
+  },
+  {
+    "name": "동분당KCC스위첸파티오2단지 (다세대)",
+    "address": "성남시 중원구 도촌동 705",
+    "coords": [127.157465663075, 37.4134022077064],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [67000, 67000], "rep_area": 84.7, "rep_avg_price": 67000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 67000, "rent": 0, "area": 84.74, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-11", "period": "26.07~28.07", "renew": "갱신", "p_dep": 67000, "p_rent": 0, "jibun": "도촌동 705", "by": 2019}
     ]
   },
   {
@@ -136,6 +156,15 @@
     ]
   },
   {
+    "name": "장미주택나동 (다세대)",
+    "address": "성남시 중원구 상대원동 1414-1",
+    "coords": [127.165707838826, 37.433957642292],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 50.2, "rep_avg_price": 20000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 20000, "rent": 0, "area": 50.19, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-17", "period": "26.10~28.10", "renew": "갱신", "p_dep": 18500, "p_rent": 0, "jibun": "상대원동 1414-1", "by": 1995}
+    ]
+  },
+  {
     "name": "아르미빌1동 (다세대)",
     "address": "성남시 중원구 상대원동 1424",
     "coords": [127.164940199469, 37.4339130344567],
@@ -145,12 +174,30 @@
     ]
   },
   {
+    "name": "금호A동 (다세대)",
+    "address": "성남시 중원구 상대원동 1478",
+    "coords": [127.163491782497, 37.4372383504169],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 47.2, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 55, "area": 47.16, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-22", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 1478", "by": 1987}
+    ]
+  },
+  {
     "name": "드림캐슬 (다세대)",
     "address": "성남시 중원구 상대원동 1484",
     "coords": [127.16347606146, 37.4367120894199],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 64.2, "rep_avg_price": 24000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 24000, "rent": 0, "area": 64.22, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-05", "period": "26.07~28.07", "renew": "갱신", "p_dep": 24000, "p_rent": 0, "jibun": "상대원동 1484", "by": 2016}
+    ]
+  },
+  {
+    "name": "더헤리움(A동) (다세대)",
+    "address": "성남시 중원구 상대원동 1526",
+    "coords": [127.164111904868, 37.4357920830274],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [31500, 31500], "rep_area": 60.0, "rep_avg_price": 31500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 31500, "rent": 0, "area": 60.02, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-17", "period": "26.09~28.09", "renew": "갱신", "p_dep": 30000, "p_rent": 0, "jibun": "상대원동 1526", "by": 2017}
     ]
   },
   {
@@ -181,12 +228,30 @@
     ]
   },
   {
+    "name": "대원빌라 (다세대)",
+    "address": "성남시 중원구 상대원동 1704-1",
+    "coords": [127.161906719448, 37.4348922169257],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 60.8, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 38, "area": 60.85, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-11", "period": "26.08~28.08", "renew": "갱신", "p_dep": 1000, "p_rent": 38, "jibun": "상대원동 1704-1", "by": 2002}
+    ]
+  },
+  {
     "name": "하나빌라 (다세대)",
     "address": "성남시 중원구 상대원동 1908",
     "coords": [127.161011348574, 37.4358820336743],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 38.9, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 38.94, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-11", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 1908", "by": 1991}
+    ]
+  },
+  {
+    "name": "성진빌라 (다세대)",
+    "address": "성남시 중원구 상대원동 2036",
+    "coords": [127.159068052818, 37.4347939860112],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19950, 19950], "rep_area": 58.9, "rep_avg_price": 19950}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 19950, "rent": 0, "area": 58.89, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-17", "period": "26.08~28.08", "renew": "갱신", "p_dep": 19000, "p_rent": 0, "jibun": "상대원동 2036", "by": 2001}
     ]
   },
   {
@@ -199,6 +264,15 @@
     ]
   },
   {
+    "name": "동호맨션 (다세대)",
+    "address": "성남시 중원구 상대원동 2342-3",
+    "coords": [127.162267437093, 37.439677372089],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [22000, 22000], "rep_area": 58.3, "rep_avg_price": 22000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 22000, "rent": 0, "area": 58.32, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-15", "period": "26.12~28.12", "renew": "갱신", "p_dep": 18900, "p_rent": 0, "jibun": "상대원동 2342-3", "by": 2002}
+    ]
+  },
+  {
     "name": "성진빌라 (다세대)",
     "address": "성남시 중원구 상대원동 2976",
     "coords": [127.160970604667, 37.4382250880806],
@@ -208,12 +282,39 @@
     ]
   },
   {
+    "name": "반석빌라 (다세대)",
+    "address": "성남시 중원구 상대원동 378-8",
+    "coords": [127.179982141794, 37.4354389418111],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34500, 34500], "rep_area": 60.0, "rep_avg_price": 34500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 34500, "rent": 0, "area": 59.96, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 378-8", "by": 2000}
+    ]
+  },
+  {
     "name": "상봉빌라 (다세대)",
     "address": "성남시 중원구 상대원동 781-20",
     "coords": [127.16491626663, 37.4416467469224],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 70.2, "rep_avg_price": 10000}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 70, "area": 70.2, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-06", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 781-20", "by": 1992}
+    ]
+  },
+  {
+    "name": "양지빌라 (다세대)",
+    "address": "성남시 중원구 상대원동 845",
+    "coords": [127.165729314296, 37.4402125466773],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13300, 13300], "rep_area": 43.0, "rep_avg_price": 13300}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13300, "rent": 0, "area": 42.96, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-22", "period": "26.08~28.08", "renew": "갱신", "p_dep": 12300, "p_rent": 0, "jibun": "상대원동 845", "by": 1993}
+    ]
+  },
+  {
+    "name": "(2331-0) (다세대)",
+    "address": "성남시 중원구 성남동 2331",
+    "coords": [127.137644801854, 37.4340645616885],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [58300, 58300], "rep_area": 80.0, "rep_avg_price": 58300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 58300, "rent": 0, "area": 79.97, "land": 0.0, "floor": "9", "dong": "", "date": "2026-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성남동 2331", "by": 2023}
     ]
   },
   {
@@ -232,6 +333,33 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 53.7, "rep_avg_price": 8000}},
     "deals": [
       {"type": "월세", "price": 8000, "rent": 80, "area": 53.7, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-01", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성남동 2658", "by": 2011}
+    ]
+  },
+  {
+    "name": "성호주택 (다세대)",
+    "address": "성남시 중원구 성남동 2751",
+    "coords": [127.144157346724, 37.4371935029547],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [28600, 28600], "rep_area": 42.2, "rep_avg_price": 28600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28600, "rent": 0, "area": 42.2, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성남동 2751", "by": 1996}
+    ]
+  },
+  {
+    "name": "금호빌라B동 (다세대)",
+    "address": "성남시 중원구 성남동 3013",
+    "coords": [127.14113715897, 37.4334917223886],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25600, 25600], "rep_area": 48.9, "rep_avg_price": 25600}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 25600, "rent": 0, "area": 48.91, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성남동 3013", "by": 1986}
+    ]
+  },
+  {
+    "name": "삼성맨션 (다세대)",
+    "address": "성남시 중원구 성남동 3100",
+    "coords": [127.140526287939, 37.4331625883768],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26500, 26500], "rep_area": 77.0, "rep_avg_price": 26500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 26500, "rent": 0, "area": 76.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-22", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성남동 3100", "by": 2001}
     ]
   },
   {
@@ -263,12 +391,57 @@
     ]
   },
   {
+    "name": "주원빌리지 (다세대)",
+    "address": "성남시 중원구 은행동 1011-1",
+    "coords": [127.165812576388, 37.4581761943845],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [59000, 59000], "rep_area": 102.0, "rep_avg_price": 59000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 59000, "rent": 0, "area": 102.05, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1011-1", "by": 1995}
+    ]
+  },
+  {
     "name": "정환주택 (다세대)",
     "address": "성남시 중원구 은행동 1043-1",
     "coords": [127.166935267088, 37.4569043676661],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 57.8, "rep_avg_price": 15000}},
     "deals": [
       {"type": "월세", "price": 15000, "rent": 20, "area": 57.79, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-03", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1043-1", "by": 2000}
+    ]
+  },
+  {
+    "name": "반석하이츠빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1052",
+    "coords": [127.167295005958, 37.4567946563481],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 43.6, "rep_avg_price": 13000}},
+    "deals": [
+      {"type": "월세", "price": 13000, "rent": 20, "area": 43.55, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-14", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1052", "by": 1993}
+    ]
+  },
+  {
+    "name": "보람빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1161",
+    "coords": [127.168947984434, 37.4559892330517],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 44.5, "rep_avg_price": 13000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 44.46, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-16", "period": "26.08~28.08", "renew": "갱신", "p_dep": 11550, "p_rent": 0, "jibun": "은행동 1161", "by": 1996}
+    ]
+  },
+  {
+    "name": "연흥빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1165",
+    "coords": [127.169534166827, 37.4564093463127],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 53.8, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 53.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-21", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1165", "by": 1996}
+    ]
+  },
+  {
+    "name": "삼우빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1165-2",
+    "coords": [127.169763214642, 37.4562865700145],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 56.7, "rep_avg_price": 5000}},
+    "deals": [
+      {"type": "월세", "price": 5000, "rent": 60, "area": 56.7, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-02", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1165-2", "by": 1992}
     ]
   },
   {
@@ -326,6 +499,60 @@
     ]
   },
   {
+    "name": "수영빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1329-2",
+    "coords": [127.16639273998, 37.4552677239533],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 45.2, "rep_avg_price": 13000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13000, "rent": 0, "area": 45.245, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-18", "period": "26.09~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1329-2", "by": 1994}
+    ]
+  },
+  {
+    "name": "광동빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1335-1",
+    "coords": [127.166993022431, 37.4557351331614],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 37.6, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 70, "area": 37.59, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-03", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1335-1", "by": 1994}
+    ]
+  },
+  {
+    "name": "대중빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1337",
+    "coords": [127.167253030763, 37.4560139890523],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 41.9, "rep_avg_price": 12000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 12000, "rent": 0, "area": 41.94, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-21", "period": "26.09~28.09", "renew": "갱신", "p_dep": 12000, "p_rent": 0, "jibun": "은행동 1337", "by": 1992}
+    ]
+  },
+  {
+    "name": "은천빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1356",
+    "coords": [127.166145011238, 37.4552748300713],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 60.0, "rep_avg_price": 500}},
+    "deals": [
+      {"type": "월세", "price": 500, "rent": 70, "area": 59.96, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-20", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1356", "by": 1993}
+    ]
+  },
+  {
+    "name": "현대빌라(2차) (다세대)",
+    "address": "성남시 중원구 은행동 1382-1",
+    "coords": [127.166663382307, 37.4561130323613],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15700, 15700], "rep_area": 60.9, "rep_avg_price": 15700}},
+    "deals": [
+      {"type": "월세", "price": 15700, "rent": 50, "area": 60.94, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-22", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1382-1", "by": 1992}
+    ]
+  },
+  {
+    "name": "은성빌라(1차) (다세대)",
+    "address": "성남시 중원구 은행동 1435-2",
+    "coords": [127.16623740567, 37.4564743073522],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13380, 13380], "rep_area": 41.1, "rep_avg_price": 13380}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13380, "rent": 0, "area": 41.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-20", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1435-2", "by": 1994}
+    ]
+  },
+  {
     "name": "태화빌라 (다세대)",
     "address": "성남시 중원구 은행동 1458",
     "coords": [127.165690857341, 37.4567977272003],
@@ -335,12 +562,39 @@
     ]
   },
   {
+    "name": "부흥하이츠빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1537",
+    "coords": [127.164863270431, 37.4568906075944],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30500, 30500], "rep_area": 59.9, "rep_avg_price": 30500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 30500, "rent": 0, "area": 59.91, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1537", "by": 1992}
+    ]
+  },
+  {
     "name": "희망빌라(1592) (다세대)",
     "address": "성남시 중원구 은행동 1592",
     "coords": [127.163890444612, 37.4567244626178],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 39.3, "rep_avg_price": 1000}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 70, "area": 39.3, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-01", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1592", "by": 1998}
+    ]
+  },
+  {
+    "name": "초원빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1606",
+    "coords": [127.163195279574, 37.4559140634557],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16200, 16200], "rep_area": 40.9, "rep_avg_price": 16200}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16200, "rent": 0, "area": 40.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-18", "period": "26.08~28.08", "renew": "갱신", "p_dep": 13230, "p_rent": 0, "jibun": "은행동 1606", "by": 1992}
+    ]
+  },
+  {
+    "name": "성일아트맨션(2차) (다세대)",
+    "address": "성남시 중원구 은행동 1613-1",
+    "coords": [127.163927228563, 37.4562300264205],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24750, 24750], "rep_area": 58.5, "rep_avg_price": 24750}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24750, "rent": 0, "area": 58.52, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1613-1", "by": 1994}
     ]
   },
   {
@@ -389,6 +643,15 @@
     ]
   },
   {
+    "name": "선경빌라(B) (다세대)",
+    "address": "성남시 중원구 은행동 1815-1",
+    "coords": [127.164176259178, 37.4545936231952],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 54.4, "rep_avg_price": 21000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 21000, "rent": 0, "area": 54.39, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1815-1", "by": 1995}
+    ]
+  },
+  {
     "name": "영인빌라(A) (다세대)",
     "address": "성남시 중원구 은행동 1872",
     "coords": [127.166488491268, 37.4540027483716],
@@ -398,12 +661,30 @@
     ]
   },
   {
+    "name": "영인빌라(B) (다세대)",
+    "address": "성남시 중원구 은행동 1873",
+    "coords": [127.166425436222, 37.4539053476664],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13500, 13500], "rep_area": 38.0, "rep_avg_price": 13500}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 13500, "rent": 0, "area": 37.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-16", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1873", "by": 1996}
+    ]
+  },
+  {
     "name": "보광하이츠 (다세대)",
     "address": "성남시 중원구 은행동 1900-3",
     "coords": [127.164579673274, 37.4537358391278],
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.8, "rep_avg_price": 2000}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 69, "area": 59.81, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-03", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1900-3", "by": 1992}
+    ]
+  },
+  {
+    "name": "훼미리빌라 (다세대)",
+    "address": "성남시 중원구 은행동 1927",
+    "coords": [127.163638019209, 37.4534888277301],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15750, 15750], "rep_area": 52.9, "rep_avg_price": 15750}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 15750, "rent": 0, "area": 52.9, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-15", "period": "26.09~28.09", "renew": "갱신", "p_dep": 15000, "p_rent": 0, "jibun": "은행동 1927", "by": 1991}
     ]
   },
   {
@@ -422,6 +703,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 47.6, "rep_avg_price": 12000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 12000, "rent": 0, "area": 47.56, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-10", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2068-2", "by": 1991}
+    ]
+  },
+  {
+    "name": "영신파크빌라(1) (다세대)",
+    "address": "성남시 중원구 은행동 2081-1",
+    "coords": [127.170362768253, 37.4523338683405],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [19500, 19500], "rep_area": 47.5, "rep_avg_price": 19500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 19500, "rent": 0, "area": 47.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2081-1", "by": 1991}
     ]
   },
   {
@@ -452,6 +742,24 @@
     ]
   },
   {
+    "name": "까치빌라(12차) (다세대)",
+    "address": "성남시 중원구 은행동 2179",
+    "coords": [127.169706509608, 37.4518991730145],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 54.8, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 50, "area": 54.77, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-22", "period": "26.07~28.07", "renew": "갱신", "p_dep": 2000, "p_rent": 40, "jibun": "은행동 2179", "by": 1996}
+    ]
+  },
+  {
+    "name": "월드빌라(A) (다세대)",
+    "address": "성남시 중원구 은행동 2266",
+    "coords": [127.168000253271, 37.4520842459983],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [11800, 11800], "rep_area": 35.5, "rep_avg_price": 11800}},
+    "deals": [
+      {"type": "월세", "price": 11800, "rent": 10, "area": 35.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-17", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2266", "by": 1993}
+    ]
+  },
+  {
     "name": "(2270-0) (다세대)",
     "address": "성남시 중원구 은행동 2270",
     "coords": [127.167727175482, 37.4520211124866],
@@ -461,12 +769,30 @@
     ]
   },
   {
+    "name": "현대아트빌라 (다세대)",
+    "address": "성남시 중원구 은행동 2286",
+    "coords": [127.167324103312, 37.4520989006023],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 59.8, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 59.75, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-23", "period": "26.08~28.08", "renew": "갱신", "p_dep": 16000, "p_rent": 0, "jibun": "은행동 2286", "by": 1993}
+    ]
+  },
+  {
     "name": "까치빌라(21차) (다세대)",
     "address": "성남시 중원구 은행동 2289",
     "coords": [127.167430274356, 37.4518161026314],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 57.2, "rep_avg_price": 24000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 24000, "rent": 0, "area": 57.25, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-10", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2289", "by": 1998}
+    ]
+  },
+  {
+    "name": "동원빌라(2317-1) (다세대)",
+    "address": "성남시 중원구 은행동 2317-1",
+    "coords": [127.166575153176, 37.4518511890375],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [7340, 7340], "rep_area": 41.2, "rep_avg_price": 7340}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 7340, "rent": 0, "area": 41.16, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-20", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2317-1", "by": 1992}
     ]
   },
   {
@@ -497,12 +823,32 @@
     ]
   },
   {
+    "name": "(2398-2) (다세대)",
+    "address": "성남시 중원구 은행동 2398-2",
+    "coords": [127.168040982749, 37.4514468118658],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [12000, 12000], "rep_area": 18.6, "rep_avg_price": 12000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 12000, "rent": 0, "area": 18.62, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2398-2", "by": 2000}
+    ]
+  },
+  {
     "name": "(2443-0) (다세대)",
     "address": "성남시 중원구 은행동 2443",
     "coords": [127.166589784418, 37.4512121703261],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 44.0, "rep_avg_price": 14000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 44.0, "rep_avg_price": 14000}, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 40.0, "rep_avg_price": 13000}},
     "deals": [
+      {"type": "월세", "price": 13000, "rent": 5, "area": 40.03, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-06", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2443", "by": 1997},
       {"type": "전세", "price": 14000, "rent": 0, "area": 44.02, "land": 0.0, "floor": "5", "dong": "", "date": "2026-07-08", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 2443", "by": 1997}
+    ]
+  },
+  {
+    "name": "금복빌라 (다세대)",
+    "address": "성남시 중원구 은행동 2447",
+    "coords": [127.166392815751, 37.4511693793989],
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [8000, 8000], "rep_area": 37.1, "rep_avg_price": 8000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 8000, "rent": 0, "area": 37.07, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-17", "period": "26.08~26.11", "renew": "갱신", "p_dep": 8000, "p_rent": 0, "jibun": "은행동 2447", "by": 1994},
+      {"type": "전세", "price": 8000, "rent": 0, "area": 37.07, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-17", "period": "26.11~28.11", "renew": "갱신", "p_dep": 8000, "p_rent": 0, "jibun": "은행동 2447", "by": 1994}
     ]
   },
   {
@@ -518,8 +864,9 @@
     "name": "삼환맨숀 (다세대)",
     "address": "성남시 중원구 은행동 596",
     "coords": [127.170357546706, 37.4624387208866],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6500, 6500], "rep_area": 69.0, "rep_avg_price": 6500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [6500, 6500], "rep_area": 69.0, "rep_avg_price": 6500}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 69.0, "rep_avg_price": 500}},
     "deals": [
+      {"type": "월세", "price": 500, "rent": 50, "area": 69.01, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-07-20", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 596", "by": 1991},
       {"type": "전세", "price": 6500, "rent": 0, "area": 69.01, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-05", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "은행동 596", "by": 1991}
     ]
   },
@@ -569,6 +916,15 @@
     ]
   },
   {
+    "name": "그랜저타운 (다세대)",
+    "address": "성남시 중원구 은행동 939",
+    "coords": [127.170574670271, 37.4564618196918],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 59.3, "rep_avg_price": 17000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 17000, "rent": 0, "area": 59.33, "land": 0.0, "floor": "1", "dong": "", "date": "2026-07-12", "period": "26.08~28.08", "renew": "갱신", "p_dep": 17000, "p_rent": 0, "jibun": "은행동 939", "by": 2000}
+    ]
+  },
+  {
     "name": "솔아트빌라(B) (다세대)",
     "address": "성남시 중원구 은행동 942-1",
     "coords": [127.170416277558, 37.4562422013338],
@@ -593,6 +949,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 57.4, "rep_avg_price": 15000}},
     "deals": [
       {"type": "월세", "price": 15000, "rent": 55, "area": 57.36, "land": 0.0, "floor": "2", "dong": "", "date": "2026-07-07", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "하대원동 135-1", "by": 1997}
+    ]
+  },
+  {
+    "name": "현대맨션 (다세대)",
+    "address": "성남시 중원구 하대원동 176-2",
+    "coords": [127.150895637058, 37.4328346309677],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31500, 31500], "rep_area": 60.2, "rep_avg_price": 31500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 31500, "rent": 0, "area": 60.225, "land": 0.0, "floor": "3", "dong": "", "date": "2026-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하대원동 176-2", "by": 2000}
     ]
   },
   {

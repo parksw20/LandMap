@@ -870,8 +870,9 @@
     "name": "포레스트빌 (다세대)",
     "address": "성북구 석관동 199-18",
     "coords": [127.05989044472, 37.6101548061278],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 36.0, "rep_avg_price": 7000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [26000, 26000], "rep_area": 36.0, "rep_avg_price": 26000}, "jeonse": null, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 36.0, "rep_avg_price": 7000}},
     "deals": [
+      {"type": "매매", "price": 26000, "rent": 0, "area": 36.02, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "석관동 199-18", "by": 2019},
       {"type": "월세", "price": 7000, "rent": 90, "area": 36.02, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-09", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "석관동 199-18", "by": 2019}
     ]
   },
@@ -1780,8 +1781,9 @@
     "name": "(219-44) (다세대)",
     "address": "성북구 장위동 219-44",
     "coords": [127.045610626326, 37.6186447170128],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 42.1, "rep_avg_price": 25000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [25000, 25000], "rep_area": 42.1, "rep_avg_price": 25000}},
     "deals": [
+      {"type": "월세", "price": 25000, "rent": 4, "area": 42.06, "land": 0.0, "floor": "5", "dong": "", "date": "2026-05-12", "period": "26.07~28.07", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "장위동 219-44", "by": 2020},
       {"type": "월세", "price": 25000, "rent": 4, "area": 42.06, "land": 0.0, "floor": "5", "dong": "", "date": "2026-05-12", "period": "26.07~28.07", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "장위동 219-44", "by": 2020}
     ]
   },

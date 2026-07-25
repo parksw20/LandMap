@@ -273,12 +273,15 @@
     "name": "e편한세상 시티 삼송3차",
     "address": "고양시 덕양구 동산동 368",
     "coords": [126.892791731519, 37.6489294725884],
-    "stats": {"total": 28, "sale": {"count": 4, "range": [39000, 56000], "rep_area": 57.9, "rep_avg_price": 39066}, "jeonse": {"count": 16, "range": [26790, 47000], "rep_area": 75.9, "rep_avg_price": 43092}, "monthly": {"count": 8, "range": [2000, 36000], "rep_area": 57.9, "rep_avg_price": 10833}},
+    "stats": {"total": 31, "sale": {"count": 4, "range": [39000, 56000], "rep_area": 57.9, "rep_avg_price": 39066}, "jeonse": {"count": 17, "range": [26790, 47000], "rep_area": 75.9, "rep_avg_price": 43175}, "monthly": {"count": 10, "range": [2000, 36000], "rep_area": 57.9, "rep_avg_price": 10375}},
     "deals": [
       {"type": "매매", "price": 39000, "rent": 0, "area": 57.9189, "land": 0.0, "floor": "5", "dong": "", "date": "2026-05-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
       {"type": "매매", "price": 39200, "rent": 0, "area": 57.9189, "land": 0.0, "floor": "8", "dong": "", "date": "2026-05-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
       {"type": "매매", "price": 39000, "rent": 0, "area": 57.9189, "land": 0.0, "floor": "16", "dong": "", "date": "2026-05-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
       {"type": "매매", "price": 56000, "rent": 0, "area": 82.7617, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
+      {"type": "월세", "price": 15000, "rent": 100, "area": 57.92, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-28", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
+      {"type": "월세", "price": 3000, "rent": 140, "area": 57.92, "land": 0.0, "floor": "20", "dong": "", "date": "2026-05-29", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
+      {"type": "전세", "price": 44000, "rent": 0, "area": 75.93, "land": 0.0, "floor": "12", "dong": "", "date": "2026-05-12", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
       {"type": "월세", "price": 5000, "rent": 115, "area": 57.92, "land": 0.0, "floor": "10", "dong": "", "date": "2026-05-15", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
       {"type": "전세", "price": 34729, "rent": 0, "area": 75.93, "land": 0.0, "floor": "22", "dong": "", "date": "2026-05-29", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동산동 368", "by": 2019},
       {"type": "월세", "price": 5000, "rent": 124, "area": 57.92, "land": 0.0, "floor": "17", "dong": "", "date": "2026-05-21", "period": "26.07~28.07", "renew": "갱신", "p_dep": 5000, "p_rent": 118, "jibun": "동산동 368", "by": 2019},
@@ -587,6 +590,15 @@
       {"type": "월세", "price": 500, "rent": 75, "area": 29.99, "land": 0.0, "floor": "5", "dong": "", "date": "2026-05-15", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 728", "by": 2023},
       {"type": "월세", "price": 1000, "rent": 70, "area": 29.99, "land": 0.0, "floor": "5", "dong": "", "date": "2026-05-12", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 728", "by": 2023},
       {"type": "월세", "price": 1000, "rent": 73, "area": 29.99, "land": 0.0, "floor": "18", "dong": "", "date": "2026-05-07", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 728", "by": 2023}
+    ]
+  },
+  {
+    "name": "경원아인스타워",
+    "address": "고양시 덕양구 주교동 584-3",
+    "coords": [126.83488189344, 37.6592640150197],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [32600, 32600], "rep_area": 84.7, "rep_avg_price": 32600}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 32600, "rent": 0, "area": 84.66, "land": 0.0, "floor": "2", "dong": "", "date": "2026-05-09", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "주교동 584-3", "by": 2022}
     ]
   },
   {

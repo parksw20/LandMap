@@ -21,8 +21,9 @@
     "name": "경기도 연천군 연천읍 현가리",
     "address": "경기도 연천군 연천읍 현가리",
     "coords": [127.07141094139, 38.1149033427592],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [100, 1000], "rep_area": 83.2, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [100, 1000], "rep_area": 33.6, "rep_avg_price": 300}},
     "deals": [
+      {"type": "월세", "price": 300, "rent": 30, "area": 33.64, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
       {"type": "월세", "price": 1000, "rent": 50, "area": 83.17, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
       {"type": "월세", "price": 100, "rent": 25, "area": 101.13, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-03", "period": "26.02~28.02", "renew": "갱신", "p_dep": 100, "p_rent": 25, "jibun": "", "by": 1992}
     ]
@@ -69,6 +70,15 @@
     "deals": [
       {"type": "매매", "price": 14500, "rent": 0, "area": 85.67, "land": 1226.0, "floor": "", "dong": "", "date": "2026-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청산면 대전리 5**", "by": 2011},
       {"type": "월세", "price": 200, "rent": 30, "area": 11.3, "land": 0.0, "floor": "", "dong": "", "date": "2026-02-25", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015}
+    ]
+  },
+  {
+    "name": "경기도 연천군 청산면 초성리",
+    "address": "경기도 연천군 청산면 초성리",
+    "coords": [127.079764040761, 37.9902501141586],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27900, 27900], "rep_area": 181.0, "rep_avg_price": 27900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 27900, "rent": 0, "area": 180.96, "land": 267.0, "floor": "", "dong": "", "date": "2026-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "청산면 초성리 4**", "by": 2026}
     ]
   }
 ]

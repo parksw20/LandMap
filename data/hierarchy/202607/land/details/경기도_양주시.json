@@ -13,8 +13,10 @@
     "name": "답",
     "address": "경기도 양주시 광적면 가납리",
     "coords": [126.99347193126, 37.8167731250134],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [46715, 46715], "rep_area": 2817.0, "rep_avg_price": 46715}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [12147, 46715], "rep_area": 483.0, "rep_avg_price": 12147}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 36830, "rent": 0, "area": 1332.0, "land": 1332.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "광적면 가납리 4**", "by": 0},
+      {"type": "매매", "price": 12147, "rent": 0, "area": 483.0, "land": 483.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "광적면 가납리 4**", "by": 0},
       {"type": "매매", "price": 46715, "rent": 0, "area": 2817.0, "land": 2817.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "광적면 가납리 4**", "by": 0}
     ]
   },
@@ -25,6 +27,15 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [1285, 1285], "rep_area": 77.0, "rep_avg_price": 1285}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 1285, "rent": 0, "area": 77.0, "land": 77.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "광적면 가납리 4**", "by": 0}
+    ]
+  },
+  {
+    "name": "도로",
+    "address": "경기도 양주시 남면 구암리",
+    "coords": [126.973455061448, 37.8832101561024],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1800, 1800], "rep_area": 190.0, "rep_avg_price": 1800}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1800, "rent": 0, "area": 190.0, "land": 190.0, "floor": "", "dong": "", "date": "2026-07-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남면 구암리 1**", "by": 0}
     ]
   },
   {
@@ -55,6 +66,15 @@
     ]
   },
   {
+    "name": "답",
+    "address": "경기도 양주시 남면 황방리",
+    "coords": [126.984799477363, 37.9281981016377],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [7000, 7000], "rep_area": 945.0, "rep_avg_price": 7000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 7000, "rent": 0, "area": 945.0, "land": 945.0, "floor": "", "dong": "", "date": "2026-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "남면 황방리 3**", "by": 0}
+    ]
+  },
+  {
     "name": "임야",
     "address": "경기도 양주시 덕계동",
     "coords": [127.035815323019, 37.8252044218029],
@@ -67,21 +87,169 @@
     ]
   },
   {
+    "name": "도로",
+    "address": "경기도 양주시 만송동",
+    "coords": [127.093360921776, 37.785026128854],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1100, 1100], "rep_area": 46.0, "rep_avg_price": 1100}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1100, "rent": 0, "area": 46.0, "land": 46.0, "floor": "", "dong": "", "date": "2026-07-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "만송동 6*", "by": 0}
+    ]
+  },
+  {
+    "name": "대",
+    "address": "경기도 양주시 백석읍 방성리",
+    "coords": [127.007222074422, 37.8059976215313],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [52100, 52100], "rep_area": 764.0, "rep_avg_price": 52100}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 52100, "rent": 0, "area": 764.0, "land": 764.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "백석읍 방성리 6**", "by": 0}
+    ]
+  },
+  {
+    "name": "도로",
+    "address": "경기도 양주시 백석읍 방성리",
+    "coords": [127.007222074422, 37.8059976215313],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [6900, 6900], "rep_area": 76.0, "rep_avg_price": 6900}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 6900, "rent": 0, "area": 76.0, "land": 76.0, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "백석읍 방성리 6**", "by": 0}
+    ]
+  },
+  {
+    "name": "전",
+    "address": "경기도 양주시 백석읍 방성리",
+    "coords": [127.007222074422, 37.8059976215313],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13100, 13100], "rep_area": 723.0, "rep_avg_price": 13100}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13100, "rent": 0, "area": 723.0, "land": 723.0, "floor": "", "dong": "", "date": "2026-07-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "백석읍 방성리 2**", "by": 0}
+    ]
+  },
+  {
+    "name": "답",
+    "address": "경기도 양주시 백석읍 홍죽리",
+    "coords": [126.959092383175, 37.799028123504],
+    "stats": {"total": 2, "sale": {"count": 2, "range": [21204, 24036], "rep_area": 584.0, "rep_avg_price": 21204}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 24036, "rent": 0, "area": 662.0, "land": 662.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "백석읍 홍죽리 3*", "by": 0},
+      {"type": "매매", "price": 21204, "rent": 0, "area": 584.0, "land": 584.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "백석읍 홍죽리 3*", "by": 0}
+    ]
+  },
+  {
     "name": "전",
     "address": "경기도 양주시 봉양동",
     "coords": [127.07549283045, 37.8611949785397],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [10000, 10000], "rep_area": 330.0, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [10000, 25000], "rep_area": 330.0, "rep_avg_price": 10000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 25000, "rent": 0, "area": 2277.0, "land": 2277.0, "floor": "", "dong": "", "date": "2026-07-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉양동 7**", "by": 0},
       {"type": "매매", "price": 10000, "rent": 0, "area": 330.0, "land": 330.0, "floor": "", "dong": "", "date": "2026-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉양동 3*", "by": 0}
+    ]
+  },
+  {
+    "name": "답",
+    "address": "경기도 양주시 삼숭동",
+    "coords": [127.103695444937, 37.804117852933],
+    "stats": {"total": 3, "sale": {"count": 3, "range": [18000, 29000], "rep_area": 171.0, "rep_avg_price": 19700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 29000, "rent": 0, "area": 250.0, "land": 250.0, "floor": "", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼숭동 1**", "by": 0},
+      {"type": "매매", "price": 19700, "rent": 0, "area": 171.0, "land": 171.0, "floor": "", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼숭동 1**", "by": 0},
+      {"type": "매매", "price": 18000, "rent": 0, "area": 202.0, "land": 202.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼숭동 6**", "by": 0}
+    ]
+  },
+  {
+    "name": "전",
+    "address": "경기도 양주시 삼숭동",
+    "coords": [127.103695444937, 37.804117852933],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [4300, 4300], "rep_area": 37.0, "rep_avg_price": 4300}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 4300, "rent": 0, "area": 37.0, "land": 37.0, "floor": "", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼숭동 1**", "by": 0}
+    ]
+  },
+  {
+    "name": "답",
+    "address": "경기도 양주시 옥정동",
+    "coords": [127.088271333497, 37.8200125084859],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1500, 1500], "rep_area": 37.7, "rep_avg_price": 1500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1500, "rent": 0, "area": 37.7, "land": 37.7, "floor": "", "dong": "", "date": "2026-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "옥정동 4**", "by": 0}
+    ]
+  },
+  {
+    "name": "대",
+    "address": "경기도 양주시 은현면 선암리",
+    "coords": [127.030639670613, 37.8672948052514],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [200, 200], "rep_area": 9.0, "rep_avg_price": 200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 200, "rent": 0, "area": 9.0, "land": 9.0, "floor": "", "dong": "", "date": "2026-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 선암리 4**", "by": 0}
+    ]
+  },
+  {
+    "name": "도로",
+    "address": "경기도 양주시 은현면 선암리",
+    "coords": [127.030639670613, 37.8672948052514],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [700, 700], "rep_area": 58.0, "rep_avg_price": 700}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 700, "rent": 0, "area": 58.0, "land": 58.0, "floor": "", "dong": "", "date": "2026-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 선암리 1**", "by": 0}
+    ]
+  },
+  {
+    "name": "답",
+    "address": "경기도 양주시 은현면 용암리",
+    "coords": [127.03805557225, 37.8524629891434],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [13776, 13776], "rep_area": 397.0, "rep_avg_price": 13776}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 13776, "rent": 0, "area": 397.0, "land": 397.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0}
     ]
   },
   {
     "name": "임야",
     "address": "경기도 양주시 은현면 용암리",
     "coords": [127.03805557225, 37.8524629891434],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 233.0, "rep_avg_price": 15000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 11, "sale": {"count": 11, "range": [82, 72820], "rep_area": 2.0, "rep_avg_price": 82}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 72820, "rent": 0, "area": 1766.0, "land": 1766.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 2598, "rent": 0, "area": 63.0, "land": 63.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 82, "rent": 0, "area": 2.0, "land": 2.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 20128, "rent": 0, "area": 947.0, "land": 947.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 340, "rent": 0, "area": 16.0, "land": 16.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 4242, "rent": 0, "area": 170.0, "land": 170.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 1692, "rent": 0, "area": 67.0, "land": 67.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 10181, "rent": 0, "area": 404.0, "land": 404.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 2470, "rent": 0, "area": 98.0, "land": 98.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
+      {"type": "매매", "price": 1422, "rent": 0, "area": 57.0, "land": 57.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0},
       {"type": "매매", "price": 15000, "rent": 0, "area": 233.0, "land": 233.0, "floor": "", "dong": "", "date": "2026-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 산3*", "by": 0}
+    ]
+  },
+  {
+    "name": "전",
+    "address": "경기도 양주시 은현면 용암리",
+    "coords": [127.03805557225, 37.8524629891434],
+    "stats": {"total": 9, "sale": {"count": 9, "range": [649, 28452], "rep_area": 16.0, "rep_avg_price": 865}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 28452, "rent": 0, "area": 526.0, "land": 526.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 21582, "rent": 0, "area": 399.0, "land": 399.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 865, "rent": 0, "area": 16.0, "land": 16.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 13608, "rent": 0, "area": 420.0, "land": 420.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 941, "rent": 0, "area": 29.0, "land": 29.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 649, "rent": 0, "area": 20.0, "land": 20.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 974, "rent": 0, "area": 30.0, "land": 30.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 2109, "rent": 0, "area": 65.0, "land": 65.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0},
+      {"type": "매매", "price": 5790, "rent": 0, "area": 176.0, "land": 176.0, "floor": "", "dong": "", "date": "2026-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 용암리 2**", "by": 0}
+    ]
+  },
+  {
+    "name": "임야",
+    "address": "경기도 양주시 은현면 운암리",
+    "coords": [127.011357898973, 37.8811548366128],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1500, 1500], "rep_area": 83.0, "rep_avg_price": 1500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1500, "rent": 0, "area": 83.0, "land": 83.0, "floor": "", "dong": "", "date": "2026-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 운암리 산*", "by": 0}
+    ]
+  },
+  {
+    "name": "공장용지",
+    "address": "경기도 양주시 은현면 하패리",
+    "coords": [127.030661595147, 37.8872886442943],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [200, 200], "rep_area": 42.0, "rep_avg_price": 200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 200, "rent": 0, "area": 42.0, "land": 42.0, "floor": "", "dong": "", "date": "2026-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은현면 하패리 2**", "by": 0}
     ]
   },
   {
@@ -100,6 +268,24 @@
     "stats": {"total": 1, "sale": {"count": 1, "range": [2200, 2200], "rep_area": 37.0, "rep_avg_price": 2200}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 2200, "rent": 0, "area": 37.0, "land": 37.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장흥면 석현리 3**", "by": 0}
+    ]
+  },
+  {
+    "name": "답",
+    "address": "경기도 양주시 회정동",
+    "coords": [127.051268895395, 37.8340821308537],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [14000, 14000], "rep_area": 343.0, "rep_avg_price": 14000}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 14000, "rent": 0, "area": 343.0, "land": 343.0, "floor": "", "dong": "", "date": "2026-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회정동 4**", "by": 0}
+    ]
+  },
+  {
+    "name": "임야",
+    "address": "경기도 양주시 회정동",
+    "coords": [127.051268895395, 37.8340821308537],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [2500, 2500], "rep_area": 1653.0, "rep_avg_price": 2500}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 2500, "rent": 0, "area": 1653.0, "land": 1653.0, "floor": "", "dong": "", "date": "2026-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "회정동 1**", "by": 0}
     ]
   }
 ]

@@ -138,9 +138,10 @@
     "name": "아남1",
     "address": "종로구 명륜2가 4",
     "coords": [126.999413978947, 37.5855421290535],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [115000, 115000], "rep_area": 84.9, "rep_avg_price": 115000}, "jeonse": {"count": 1, "range": [80000, 80000], "rep_area": 84.9, "rep_avg_price": 80000}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 84.9, "rep_avg_price": 20000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [115000, 115000], "rep_area": 84.9, "rep_avg_price": 115000}, "jeonse": {"count": 1, "range": [80000, 80000], "rep_area": 84.9, "rep_avg_price": 80000}, "monthly": {"count": 2, "range": [20000, 20000], "rep_area": 84.9, "rep_avg_price": 20000}},
     "deals": [
       {"type": "매매", "price": 115000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "13", "dong": "", "date": "2026-05-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "명륜2가 4", "by": 1995},
+      {"type": "월세", "price": 20000, "rent": 188, "area": 84.9, "land": 0.0, "floor": "14", "dong": "", "date": "2026-05-30", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "명륜2가 4", "by": 1995},
       {"type": "월세", "price": 20000, "rent": 188, "area": 84.9, "land": 0.0, "floor": "14", "dong": "", "date": "2026-05-30", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "명륜2가 4", "by": 1995},
       {"type": "전세", "price": 80000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "7", "dong": "", "date": "2026-05-27", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "명륜2가 4", "by": 1995}
     ]
@@ -596,6 +597,15 @@
       {"type": "전세", "price": 34372, "rent": 0, "area": 54.7, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-04", "period": "26.06~28.06", "renew": "갱신", "p_dep": 32735, "p_rent": 0, "jibun": "창신동 703", "by": 1993},
       {"type": "전세", "price": 47000, "rent": 0, "area": 79.87, "land": 0.0, "floor": "11", "dong": "", "date": "2026-05-02", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창신동 703", "by": 1993},
       {"type": "전세", "price": 34372, "rent": 0, "area": 54.7, "land": 0.0, "floor": "9", "dong": "", "date": "2026-05-04", "period": "26.06~28.06", "renew": "갱신", "p_dep": 32735, "p_rent": 0, "jibun": "창신동 703", "by": 1993}
+    ]
+  },
+  {
+    "name": "청운현대",
+    "address": "종로구 청운동 56-45",
+    "coords": [126.967381797143, 37.586205890259],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [60000, 60000], "rep_area": 78.8, "rep_avg_price": 60000}},
+    "deals": [
+      {"type": "월세", "price": 60000, "rent": 50, "area": 78.78, "land": 0.0, "floor": "4", "dong": "", "date": "2026-05-15", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "청운동 56-45", "by": 2000}
     ]
   },
   {

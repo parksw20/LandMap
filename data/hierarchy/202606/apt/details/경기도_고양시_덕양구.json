@@ -18,11 +18,13 @@
     "name": "현대1",
     "address": "고양시 덕양구 고양동 240-6",
     "coords": [126.90037421, 37.7013202085992],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [23400, 31000], "rep_area": 84.4, "rep_avg_price": 27500}, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 84.4, "rep_avg_price": 13000}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 4, "range": [23400, 31000], "rep_area": 84.4, "rep_avg_price": 27000}, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 84.4, "rep_avg_price": 13000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 85.0, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "매매", "price": 26000, "rent": 0, "area": 84.36, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997},
       {"type": "매매", "price": 23400, "rent": 0, "area": 59.36, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997},
-      {"type": "매매", "price": 24000, "rent": 0, "area": 84.36, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997},
+      {"type": "매매", "price": 24000, "rent": 0, "area": 84.36, "land": 0.0, "floor": "15", "dong": "105", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997},
       {"type": "매매", "price": 31000, "rent": 0, "area": 84.36, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997},
+      {"type": "월세", "price": 3000, "rent": 60, "area": 84.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997},
       {"type": "전세", "price": 13000, "rent": 0, "area": 84.36, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-10", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 240-6", "by": 1997}
     ]
   },
@@ -67,7 +69,7 @@
       {"type": "매매", "price": 25500, "rent": 0, "area": 84.89, "land": 0.0, "floor": "7", "dong": "301", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
       {"type": "매매", "price": 24700, "rent": 0, "area": 84.89, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
       {"type": "매매", "price": 26000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "20", "dong": "307", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
-      {"type": "매매", "price": 25000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
+      {"type": "매매", "price": 25000, "rent": 0, "area": 84.89, "land": 0.0, "floor": "3", "dong": "301", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
       {"type": "매매", "price": 25000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
       {"type": "월세", "price": 2000, "rent": 85, "area": 59.98, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-17", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
       {"type": "전세", "price": 22300, "rent": 0, "area": 84.93, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-25", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고양동 719", "by": 2004},
@@ -186,7 +188,7 @@
     "coords": [126.864897987098, 37.6923278519358],
     "stats": {"total": 5, "sale": {"count": 3, "range": [32000, 35900], "rep_area": 84.8, "rep_avg_price": 35600}, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 59.9, "rep_avg_price": 21000}, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 59.9, "rep_avg_price": 8000}},
     "deals": [
-      {"type": "매매", "price": 35300, "rent": 0, "area": 84.8, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 996", "by": 2003},
+      {"type": "매매", "price": 35300, "rent": 0, "area": 84.8, "land": 0.0, "floor": "15", "dong": "109", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 996", "by": 2003},
       {"type": "매매", "price": 32000, "rent": 0, "area": 75.95, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 996", "by": 2003},
       {"type": "매매", "price": 35900, "rent": 0, "area": 84.8, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관산동 996", "by": 2003},
       {"type": "월세", "price": 8000, "rent": 70, "area": 59.92, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-08", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관산동 996", "by": 2003},
@@ -208,9 +210,10 @@
     "name": "DMC한강호반써밋",
     "address": "고양시 덕양구 덕은동 596",
     "coords": [126.86194234456, 37.5823085520238],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [107000, 118000], "rep_area": 85.0, "rep_avg_price": 112500}, "jeonse": {"count": 1, "range": [62000, 62000], "rep_area": 85.0, "rep_avg_price": 62000}, "monthly": {"count": 2, "range": [10000, 30000], "rep_area": 85.0, "rep_avg_price": 20000}},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [107000, 118000], "rep_area": 85.0, "rep_avg_price": 111000}, "jeonse": {"count": 1, "range": [62000, 62000], "rep_area": 85.0, "rep_avg_price": 62000}, "monthly": {"count": 2, "range": [10000, 30000], "rep_area": 85.0, "rep_avg_price": 20000}},
     "deals": [
       {"type": "매매", "price": 107000, "rent": 0, "area": 84.9773, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 596", "by": 2022},
+      {"type": "매매", "price": 108000, "rent": 0, "area": 84.9773, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 596", "by": 2022},
       {"type": "매매", "price": 118000, "rent": 0, "area": 84.9773, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 596", "by": 2022},
       {"type": "월세", "price": 10000, "rent": 240, "area": 84.9773, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-04", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 596", "by": 2022},
       {"type": "전세", "price": 62000, "rent": 0, "area": 84.9773, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-03", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 596", "by": 2022},
@@ -279,9 +282,10 @@
     "name": "DMC한강자이더헤리티지",
     "address": "고양시 덕양구 덕은동 679",
     "coords": [126.861738256199, 37.5802686451732],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [124000, 124000], "rep_area": 84.9, "rep_avg_price": 124000}, "jeonse": {"count": 3, "range": [67000, 76000], "rep_area": 85.0, "rep_avg_price": 67500}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [124000, 124000], "rep_area": 84.9, "rep_avg_price": 124000}, "jeonse": {"count": 4, "range": [66000, 76000], "rep_area": 85.0, "rep_avg_price": 67500}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 124000, "rent": 0, "area": 84.9481, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 679", "by": 2022},
+      {"type": "전세", "price": 66000, "rent": 0, "area": 84.8288, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-16", "period": "26.08~28.08", "renew": "갱신", "p_dep": 63000, "p_rent": 0, "jibun": "덕은동 679", "by": 2022},
       {"type": "전세", "price": 67000, "rent": 0, "area": 84.9585, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-27", "period": "26.11~28.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 679", "by": 2022},
       {"type": "전세", "price": 68000, "rent": 0, "area": 84.9585, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-04", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 679", "by": 2022},
       {"type": "전세", "price": 76000, "rent": 0, "area": 99.6734, "land": 0.0, "floor": "18", "dong": "", "date": "2026-06-01", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 679", "by": 2022}
@@ -291,11 +295,12 @@
     "name": "DMC디에트르한강",
     "address": "고양시 덕양구 덕은동 683",
     "coords": [126.86588125283, 37.5798642839593],
-    "stats": {"total": 16, "sale": {"count": 3, "range": [123000, 128500], "rep_area": 85.0, "rep_avg_price": 125500}, "jeonse": {"count": 12, "range": [56500, 90000], "rep_area": 85.0, "rep_avg_price": 63060}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 85.0, "rep_avg_price": 5000}},
+    "stats": {"total": 17, "sale": {"count": 3, "range": [123000, 128500], "rep_area": 85.0, "rep_avg_price": 125500}, "jeonse": {"count": 13, "range": [56500, 90000], "rep_area": 85.0, "rep_avg_price": 63145}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 85.0, "rep_avg_price": 5000}},
     "deals": [
       {"type": "매매", "price": 125000, "rent": 0, "area": 84.9665, "land": 0.0, "floor": "24", "dong": "", "date": "2026-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
       {"type": "매매", "price": 123000, "rent": 0, "area": 84.995, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
       {"type": "매매", "price": 128500, "rent": 0, "area": 84.9665, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
+      {"type": "전세", "price": 64000, "rent": 0, "area": 84.995, "land": 0.0, "floor": "23", "dong": "", "date": "2026-06-26", "period": "26.09~28.09", "renew": "갱신", "p_dep": 64000, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
       {"type": "전세", "price": 65000, "rent": 0, "area": 84.9665, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-30", "period": "26.06~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
       {"type": "전세", "price": 80850, "rent": 0, "area": 116.6286, "land": 0.0, "floor": "17", "dong": "", "date": "2026-06-29", "period": "26.07~28.07", "renew": "갱신", "p_dep": 77000, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
       {"type": "전세", "price": 67000, "rent": 0, "area": 84.9665, "land": 0.0, "floor": "21", "dong": "", "date": "2026-06-01", "period": "26.09~28.09", "renew": "갱신", "p_dep": 65000, "p_rent": 0, "jibun": "덕은동 683", "by": 2022},
@@ -315,10 +320,11 @@
     "name": "DMC자이더리버",
     "address": "고양시 덕양구 덕은동 686",
     "coords": [126.868831593441, 37.5800756384899],
-    "stats": {"total": 14, "sale": {"count": 5, "range": [126000, 161000], "rep_area": 85.0, "rep_avg_price": 127625}, "jeonse": {"count": 7, "range": [60900, 69000], "rep_area": 85.0, "rep_avg_price": 66164}, "monthly": {"count": 2, "range": [5000, 69000], "rep_area": 85.0, "rep_avg_price": 5000}},
+    "stats": {"total": 15, "sale": {"count": 6, "range": [117500, 161000], "rep_area": 85.0, "rep_avg_price": 125600}, "jeonse": {"count": 7, "range": [60900, 69000], "rep_area": 85.0, "rep_avg_price": 66164}, "monthly": {"count": 2, "range": [5000, 69000], "rep_area": 85.0, "rep_avg_price": 5000}},
     "deals": [
       {"type": "매매", "price": 128000, "rent": 0, "area": 84.9948, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 686", "by": 2022},
       {"type": "매매", "price": 130000, "rent": 0, "area": 84.9948, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 686", "by": 2022},
+      {"type": "매매", "price": 117500, "rent": 0, "area": 84.9961, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 686", "by": 2022},
       {"type": "매매", "price": 126500, "rent": 0, "area": 84.9948, "land": 0.0, "floor": "23", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 686", "by": 2022},
       {"type": "매매", "price": 126000, "rent": 0, "area": 84.9961, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 686", "by": 2022},
       {"type": "매매", "price": 161000, "rent": 0, "area": 99.9962, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "덕은동 686", "by": 2022},
@@ -410,10 +416,11 @@
     "name": "도래울센트럴파크(CentralPark)",
     "address": "고양시 덕양구 도내동 1011",
     "coords": [126.87306150836, 37.631307546072],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [64500, 65500], "rep_area": 59.9, "rep_avg_price": 64500}, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 84.9, "rep_avg_price": 45000}, "monthly": {"count": 2, "range": [20000, 30000], "rep_area": 59.8, "rep_avg_price": 20000}},
+    "stats": {"total": 6, "sale": {"count": 2, "range": [64500, 65500], "rep_area": 59.9, "rep_avg_price": 64500}, "jeonse": {"count": 2, "range": [43000, 45000], "rep_area": 84.7, "rep_avg_price": 43000}, "monthly": {"count": 2, "range": [20000, 30000], "rep_area": 59.8, "rep_avg_price": 20000}},
     "deals": [
       {"type": "매매", "price": 65500, "rent": 0, "area": 84.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1011", "by": 2013},
       {"type": "매매", "price": 64500, "rent": 0, "area": 59.92, "land": 0.0, "floor": "18", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1011", "by": 2013},
+      {"type": "전세", "price": 43000, "rent": 0, "area": 84.68, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-20", "period": "26.08~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1011", "by": 2013},
       {"type": "월세", "price": 20000, "rent": 70, "area": 59.78, "land": 0.0, "floor": "21", "dong": "", "date": "2026-06-16", "period": "26.07~27.12", "renew": "갱신", "p_dep": 20000, "p_rent": 63, "jibun": "도내동 1011", "by": 2013},
       {"type": "월세", "price": 30000, "rent": 37, "area": 59.92, "land": 0.0, "floor": "25", "dong": "", "date": "2026-06-17", "period": "26.07~28.07", "renew": "갱신", "p_dep": 30000, "p_rent": 30, "jibun": "도내동 1011", "by": 2013},
       {"type": "전세", "price": 45000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-12", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1011", "by": 2013}
@@ -446,7 +453,7 @@
     "name": "고양원흥동일스위트",
     "address": "고양시 덕양구 도내동 1107",
     "coords": [126.871235748038, 37.6257959490195],
-    "stats": {"total": 13, "sale": {"count": 7, "range": [94000, 108000], "rep_area": 85.0, "rep_avg_price": 100107}, "jeonse": {"count": 6, "range": [37000, 51000], "rep_area": 85.0, "rep_avg_price": 46750}, "monthly": null},
+    "stats": {"total": 14, "sale": {"count": 7, "range": [94000, 108000], "rep_area": 85.0, "rep_avg_price": 100107}, "jeonse": {"count": 6, "range": [37000, 51000], "rep_area": 85.0, "rep_avg_price": 46750}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 85.0, "rep_avg_price": 5000}},
     "deals": [
       {"type": "매매", "price": 102000, "rent": 0, "area": 84.9832, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
       {"type": "매매", "price": 99000, "rent": 0, "area": 84.9832, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
@@ -455,6 +462,7 @@
       {"type": "매매", "price": 96750, "rent": 0, "area": 84.9956, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
       {"type": "매매", "price": 104000, "rent": 0, "area": 84.9956, "land": 0.0, "floor": "25", "dong": "", "date": "2026-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
       {"type": "매매", "price": 94000, "rent": 0, "area": 84.9832, "land": 0.0, "floor": "19", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
+      {"type": "월세", "price": 5000, "rent": 200, "area": 84.9956, "land": 0.0, "floor": "19", "dong": "", "date": "2026-06-16", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
       {"type": "전세", "price": 48000, "rent": 0, "area": 84.9956, "land": 0.0, "floor": "21", "dong": "", "date": "2026-06-24", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
       {"type": "전세", "price": 51000, "rent": 0, "area": 84.9956, "land": 0.0, "floor": "17", "dong": "", "date": "2026-06-26", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
       {"type": "전세", "price": 50000, "rent": 0, "area": 84.9832, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도내동 1107", "by": 2018},
@@ -469,7 +477,7 @@
     "coords": [126.869090212262, 37.633877952287],
     "stats": {"total": 10, "sale": {"count": 6, "range": [66000, 72200], "rep_area": 85.0, "rep_avg_price": 70566}, "jeonse": {"count": 3, "range": [36500, 42000], "rep_area": 75.0, "rep_avg_price": 40950}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000}},
     "deals": [
-      {"type": "매매", "price": 72200, "rent": 0, "area": 84.98, "land": 0.0, "floor": "19", "dong": "", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 983", "by": 2014},
+      {"type": "매매", "price": 72200, "rent": 0, "area": 84.98, "land": 0.0, "floor": "19", "dong": "211", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 983", "by": 2014},
       {"type": "매매", "price": 70000, "rent": 0, "area": 84.58, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 983", "by": 2014},
       {"type": "매매", "price": 69500, "rent": 0, "area": 84.98, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 983", "by": 2014},
       {"type": "매매", "price": 70000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "24", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도내동 983", "by": 2014},
@@ -538,7 +546,7 @@
     "stats": {"total": 9, "sale": {"count": 2, "range": [69400, 81800], "rep_area": 85.0, "rep_avg_price": 69400}, "jeonse": {"count": 6, "range": [49000, 57000], "rep_area": 85.0, "rep_avg_price": 50087}, "monthly": {"count": 1, "range": [55000, 55000], "rep_area": 110.9, "rep_avg_price": 55000}},
     "deals": [
       {"type": "매매", "price": 69400, "rent": 0, "area": 84.9609, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 306", "by": 2012},
-      {"type": "매매", "price": 81800, "rent": 0, "area": 116.5175, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 306", "by": 2012},
+      {"type": "매매", "price": 81800, "rent": 0, "area": 116.5175, "land": 0.0, "floor": "5", "dong": "1709동", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 306", "by": 2012},
       {"type": "월세", "price": 55000, "rent": 25, "area": 110.9118, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-03", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 306", "by": 2012},
       {"type": "전세", "price": 50000, "rent": 0, "area": 84.9609, "land": 0.0, "floor": "17", "dong": "", "date": "2026-06-30", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 306", "by": 2012},
       {"type": "전세", "price": 49000, "rent": 0, "area": 84.9707, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-28", "period": "26.09~28.09", "renew": "갱신", "p_dep": 49000, "p_rent": 0, "jibun": "삼송동 306", "by": 2012},
@@ -552,8 +560,9 @@
     "name": "삼송2차아이파크",
     "address": "고양시 덕양구 삼송동 311",
     "coords": [126.887195418693, 37.6504441219821],
-    "stats": {"total": 12, "sale": {"count": 5, "range": [79000, 93000], "rep_area": 84.7, "rep_avg_price": 88700}, "jeonse": {"count": 6, "range": [48000, 60000], "rep_area": 75.0, "rep_avg_price": 50775}, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 84.7, "rep_avg_price": 15000}},
+    "stats": {"total": 13, "sale": {"count": 6, "range": [79000, 93000], "rep_area": 84.7, "rep_avg_price": 89083}, "jeonse": {"count": 6, "range": [48000, 60000], "rep_area": 75.0, "rep_avg_price": 50775}, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 84.7, "rep_avg_price": 15000}},
     "deals": [
+      {"type": "매매", "price": 91000, "rent": 0, "area": 84.739, "land": 0.0, "floor": "25", "dong": "", "date": "2026-06-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 311", "by": 2015},
       {"type": "매매", "price": 79000, "rent": 0, "area": 84.739, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 311", "by": 2015},
       {"type": "매매", "price": 93000, "rent": 0, "area": 84.739, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 311", "by": 2015},
       {"type": "매매", "price": 91000, "rent": 0, "area": 84.739, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "삼송동 311", "by": 2015},
@@ -633,8 +642,9 @@
     "name": "미도(422-3)",
     "address": "고양시 덕양구 성사동 422-3",
     "coords": [126.843517774003, 37.6569556708129],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 42.0, "rep_avg_price": 14000}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 42.0, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 42.0, "rep_avg_price": 14000}, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 42.0, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 70, "area": 49.32, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-16", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성사동 422-3", "by": 1988},
       {"type": "월세", "price": 1000, "rent": 58, "area": 42.03, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-16", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성사동 422-3", "by": 1988},
       {"type": "전세", "price": 14000, "rent": 0, "area": 42.03, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-07", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성사동 422-3", "by": 1988}
     ]
@@ -798,10 +808,10 @@
     "coords": [126.834496327116, 37.6517656879503],
     "stats": {"total": 7, "sale": {"count": 6, "range": [23500, 27700], "rep_area": 54.9, "rep_avg_price": 26475}, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 54.9, "rep_avg_price": 2000}},
     "deals": [
-      {"type": "매매", "price": 26400, "rent": 0, "area": 54.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
-      {"type": "매매", "price": 23500, "rent": 0, "area": 54.91, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
+      {"type": "매매", "price": 26400, "rent": 0, "area": 54.91, "land": 0.0, "floor": "4", "dong": "604", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
+      {"type": "매매", "price": 23500, "rent": 0, "area": 54.91, "land": 0.0, "floor": "2", "dong": "604", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
       {"type": "매매", "price": 27250, "rent": 0, "area": 54.91, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
-      {"type": "매매", "price": 27200, "rent": 0, "area": 54.91, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
+      {"type": "매매", "price": 27200, "rent": 0, "area": 54.91, "land": 0.0, "floor": "4", "dong": "605", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
       {"type": "매매", "price": 27700, "rent": 0, "area": 54.91, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
       {"type": "매매", "price": 26800, "rent": 0, "area": 54.91, "land": 0.0, "floor": "3", "dong": "606", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993},
       {"type": "월세", "price": 2000, "rent": 90, "area": 54.91, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-23", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성사동 731", "by": 1993}
@@ -850,7 +860,7 @@
     "stats": {"total": 10, "sale": {"count": 8, "range": [55000, 67000], "rep_area": 84.1, "rep_avg_price": 65687}, "jeonse": {"count": 2, "range": [42500, 47000], "rep_area": 76.0, "rep_avg_price": 42500}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 56500, "rent": 0, "area": 66.0346, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 595", "by": 2017},
-      {"type": "매매", "price": 65250, "rent": 0, "area": 84.0785, "land": 0.0, "floor": "27", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 595", "by": 2017},
+      {"type": "매매", "price": 65250, "rent": 0, "area": 84.0785, "land": 0.0, "floor": "27", "dong": "705동", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 595", "by": 2017},
       {"type": "매매", "price": 56270, "rent": 0, "area": 66.0346, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 595", "by": 2017},
       {"type": "매매", "price": 55000, "rent": 0, "area": 66.0346, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 595", "by": 2017},
       {"type": "매매", "price": 67000, "rent": 0, "area": 84.0785, "land": 0.0, "floor": "26", "dong": "", "date": "2026-06-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 595", "by": 2017},
@@ -911,11 +921,12 @@
     "name": "삼송힐스테이트",
     "address": "고양시 덕양구 신원동 653",
     "coords": [126.887387327941, 37.6630081347186],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [60000, 66000], "rep_area": 84.8, "rep_avg_price": 65000}, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 84.8, "rep_avg_price": 45000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [60000, 66000], "rep_area": 84.8, "rep_avg_price": 65000}, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 84.8, "rep_avg_price": 45000}, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 74.1, "rep_avg_price": 8000}},
     "deals": [
       {"type": "매매", "price": 66000, "rent": 0, "area": 84.77, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 653", "by": 2013},
       {"type": "매매", "price": 64000, "rent": 0, "area": 84.77, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 653", "by": 2013},
       {"type": "매매", "price": 60000, "rent": 0, "area": 74.13, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신원동 653", "by": 2013},
+      {"type": "월세", "price": 8000, "rent": 155, "area": 74.13, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신원동 653", "by": 2013},
       {"type": "전세", "price": 45000, "rent": 0, "area": 84.77, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-13", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신원동 653", "by": 2013}
     ]
   },
@@ -1068,7 +1079,7 @@
     "stats": {"total": 7, "sale": {"count": 3, "range": [82000, 88000], "rep_area": 84.0, "rep_avg_price": 82500}, "jeonse": {"count": 4, "range": [58000, 64000], "rep_area": 91.7, "rep_avg_price": 60500}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 82000, "rent": 0, "area": 84.0409, "land": 0.0, "floor": "18", "dong": "", "date": "2026-06-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 630", "by": 2018},
-      {"type": "매매", "price": 88000, "rent": 0, "area": 91.8586, "land": 0.0, "floor": "35", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 630", "by": 2018},
+      {"type": "매매", "price": 88000, "rent": 0, "area": 91.8586, "land": 0.0, "floor": "35", "dong": "101동", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 630", "by": 2018},
       {"type": "매매", "price": 83000, "rent": 0, "area": 84.0409, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "원흥동 630", "by": 2018},
       {"type": "전세", "price": 63500, "rent": 0, "area": 91.7151, "land": 0.0, "floor": "29", "dong": "", "date": "2026-06-25", "period": "26.07~28.07", "renew": "갱신", "p_dep": 60000, "p_rent": 0, "jibun": "원흥동 630", "by": 2018},
       {"type": "전세", "price": 58000, "rent": 0, "area": 91.7151, "land": 0.0, "floor": "35", "dong": "", "date": "2026-06-24", "period": "26.08~28.06", "renew": "갱신", "p_dep": 58000, "p_rent": 0, "jibun": "원흥동 630", "by": 2018},
@@ -1153,7 +1164,7 @@
     "coords": [126.832721338844, 37.6646768539797],
     "stats": {"total": 3, "sale": {"count": 3, "range": [36000, 37000], "rep_area": 114.6, "rep_avg_price": 37000}, "jeonse": null, "monthly": null},
     "deals": [
-      {"type": "매매", "price": 37000, "rent": 0, "area": 114.63, "land": 0.0, "floor": "22", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "주교동 350-1", "by": 1999},
+      {"type": "매매", "price": 37000, "rent": 0, "area": 114.63, "land": 0.0, "floor": "22", "dong": "101", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "주교동 350-1", "by": 1999},
       {"type": "매매", "price": 36000, "rent": 0, "area": 84.75, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "주교동 350-1", "by": 1999},
       {"type": "매매", "price": 37000, "rent": 0, "area": 114.63, "land": 0.0, "floor": "22", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "주교동 350-1", "by": 1999}
     ]
@@ -1242,8 +1253,9 @@
     "name": "지축역한림풀에버",
     "address": "고양시 덕양구 지축동 848",
     "coords": [126.91097393389, 37.6533786910561],
-    "stats": {"total": 23, "sale": {"count": 16, "range": [75000, 85000], "rep_area": 85.0, "rep_avg_price": 84669}, "jeonse": {"count": 6, "range": [52000, 62500], "rep_area": 85.0, "rep_avg_price": 57000}, "monthly": {"count": 1, "range": [49000, 49000], "rep_area": 72.9, "rep_avg_price": 49000}},
+    "stats": {"total": 24, "sale": {"count": 17, "range": [75000, 90000], "rep_area": 85.0, "rep_avg_price": 85050}, "jeonse": {"count": 6, "range": [52000, 62500], "rep_area": 85.0, "rep_avg_price": 57000}, "monthly": {"count": 1, "range": [49000, 49000], "rep_area": 72.9, "rep_avg_price": 49000}},
     "deals": [
+      {"type": "매매", "price": 90000, "rent": 0, "area": 84.982, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 848", "by": 2020},
       {"type": "매매", "price": 85000, "rent": 0, "area": 84.982, "land": 0.0, "floor": "22", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 848", "by": 2020},
       {"type": "매매", "price": 85000, "rent": 0, "area": 84.982, "land": 0.0, "floor": "22", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 848", "by": 2020},
       {"type": "매매", "price": 75000, "rent": 0, "area": 72.937, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 848", "by": 2020},
@@ -1296,7 +1308,7 @@
     "name": "지축역북한산유보라",
     "address": "고양시 덕양구 지축동 884",
     "coords": [126.912149502274, 37.651770417603],
-    "stats": {"total": 10, "sale": {"count": 7, "range": [87000, 93000], "rep_area": 85.0, "rep_avg_price": 89542}, "jeonse": {"count": 3, "range": [60000, 67000], "rep_area": 85.0, "rep_avg_price": 63333}, "monthly": null},
+    "stats": {"total": 11, "sale": {"count": 7, "range": [87000, 93000], "rep_area": 85.0, "rep_avg_price": 89542}, "jeonse": {"count": 4, "range": [60000, 67000], "rep_area": 85.0, "rep_avg_price": 63750}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 90000, "rent": 0, "area": 84.993, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
       {"type": "매매", "price": 93000, "rent": 0, "area": 84.9884, "land": 0.0, "floor": "24", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
@@ -1305,6 +1317,7 @@
       {"type": "매매", "price": 90000, "rent": 0, "area": 84.9884, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
       {"type": "매매", "price": 90800, "rent": 0, "area": 84.993, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
       {"type": "매매", "price": 89000, "rent": 0, "area": 84.993, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
+      {"type": "전세", "price": 65000, "rent": 0, "area": 84.993, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-30", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
       {"type": "전세", "price": 60000, "rent": 0, "area": 84.9884, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-29", "period": "26.06~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
       {"type": "전세", "price": 63000, "rent": 0, "area": 84.9884, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-11", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019},
       {"type": "전세", "price": 67000, "rent": 0, "area": 84.993, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-06", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지축동 884", "by": 2019}
@@ -1672,8 +1685,9 @@
     "name": "서정마을7단지파크하임휴먼시아",
     "address": "고양시 덕양구 행신동 1090",
     "coords": [126.844978579088, 37.614028929426],
-    "stats": {"total": 3, "sale": {"count": 3, "range": [89700, 94500], "rep_area": 130.9, "rep_avg_price": 92900}, "jeonse": null, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 4, "range": [89000, 94500], "rep_area": 130.9, "rep_avg_price": 92900}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 89000, "rent": 0, "area": 120.78, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 1090", "by": 2009},
       {"type": "매매", "price": 89700, "rent": 0, "area": 130.88, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 1090", "by": 2009},
       {"type": "매매", "price": 94500, "rent": 0, "area": 130.88, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 1090", "by": 2009},
       {"type": "매매", "price": 94500, "rent": 0, "area": 130.88, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 1090", "by": 2009}
@@ -1758,8 +1772,9 @@
     "name": "건우",
     "address": "고양시 덕양구 행신동 644-37",
     "coords": [126.829064574288, 37.6246745451571],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26500, 26500], "rep_area": 84.4, "rep_avg_price": 26500}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [26500, 26500], "rep_area": 84.4, "rep_avg_price": 26500}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 26500, "rent": 0, "area": 84.35, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-09", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 644-37", "by": 1995},
       {"type": "전세", "price": 26500, "rent": 0, "area": 84.35, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-09", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 644-37", "by": 1995}
     ]
   },
@@ -1767,8 +1782,9 @@
     "name": "행신3차SKVIEW",
     "address": "고양시 덕양구 행신동 650",
     "coords": [126.829899195386, 37.6200066596136],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [62700, 74500], "rep_area": 85.0, "rep_avg_price": 62700}, "jeonse": {"count": 2, "range": [39900, 45000], "rep_area": 59.9, "rep_avg_price": 39900}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 4, "range": [62700, 74500], "rep_area": 85.0, "rep_avg_price": 65350}, "jeonse": {"count": 2, "range": [39900, 45000], "rep_area": 59.9, "rep_avg_price": 39900}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 68000, "rent": 0, "area": 84.9858, "land": 0.0, "floor": "22", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 650", "by": 2009},
       {"type": "매매", "price": 62700, "rent": 0, "area": 84.9858, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 650", "by": 2009},
       {"type": "매매", "price": 74500, "rent": 0, "area": 104.5787, "land": 0.0, "floor": "22", "dong": "", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 650", "by": 2009},
       {"type": "매매", "price": 74400, "rent": 0, "area": 122.7483, "land": 0.0, "floor": "18", "dong": "", "date": "2026-06-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 650", "by": 2009},
@@ -1833,8 +1849,9 @@
     "name": "무원마을(신안)8",
     "address": "고양시 덕양구 행신동 700",
     "coords": [126.831545357427, 37.6147878004689],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [37000, 37000], "rep_area": 101.8, "rep_avg_price": 37000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [34600, 37000], "rep_area": 101.8, "rep_avg_price": 35800}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 34600, "rent": 0, "area": 101.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "갱신", "p_dep": 33000, "p_rent": 0, "jibun": "행신동 700", "by": 1994},
       {"type": "전세", "price": 37000, "rent": 0, "area": 101.76, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-22", "period": "26.07~28.07", "renew": "갱신", "p_dep": 37000, "p_rent": 0, "jibun": "행신동 700", "by": 1994}
     ]
   },
@@ -1954,13 +1971,15 @@
     "name": "소만마을(성원)6",
     "address": "고양시 덕양구 행신동 785",
     "coords": [126.841006527139, 37.6148587702558],
-    "stats": {"total": 23, "sale": {"count": 5, "range": [29200, 37500], "rep_area": 49.8, "rep_avg_price": 32400}, "jeonse": {"count": 14, "range": [20000, 30000], "rep_area": 49.8, "rep_avg_price": 23830}, "monthly": {"count": 4, "range": [4000, 28000], "rep_area": 59.3, "rep_avg_price": 12333}},
+    "stats": {"total": 25, "sale": {"count": 5, "range": [29200, 37500], "rep_area": 49.8, "rep_avg_price": 32400}, "jeonse": {"count": 15, "range": [20000, 30000], "rep_area": 49.8, "rep_avg_price": 24039}, "monthly": {"count": 5, "range": [4000, 28000], "rep_area": 59.3, "rep_avg_price": 12333}},
     "deals": [
       {"type": "매매", "price": 29200, "rent": 0, "area": 49.77, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "매매", "price": 35000, "rent": 0, "area": 49.77, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "매매", "price": 37000, "rent": 0, "area": 59.34, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "매매", "price": 37500, "rent": 0, "area": 59.34, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "매매", "price": 33000, "rent": 0, "area": 49.77, "land": 0.0, "floor": "5", "dong": "607", "date": "2026-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
+      {"type": "전세", "price": 25500, "rent": 0, "area": 49.77, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-24", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
+      {"type": "월세", "price": 5000, "rent": 80, "area": 49.77, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-22", "period": "26.09~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "전세", "price": 27500, "rent": 0, "area": 59.34, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-30", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "전세", "price": 30000, "rent": 0, "area": 59.34, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-20", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
       {"type": "전세", "price": 26000, "rent": 0, "area": 49.77, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-22", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 785", "by": 1995},
@@ -2033,11 +2052,13 @@
     "name": "소만마을1단지",
     "address": "고양시 덕양구 행신동 796",
     "coords": [126.844984181971, 37.6172769970221],
-    "stats": {"total": 17, "sale": {"count": 2, "range": [25000, 26100], "rep_area": 45.5, "rep_avg_price": 25550}, "jeonse": {"count": 10, "range": [16800, 23000], "rep_area": 45.5, "rep_avg_price": 20310}, "monthly": {"count": 5, "range": [1000, 2000], "rep_area": 45.5, "rep_avg_price": 1700}},
+    "stats": {"total": 19, "sale": {"count": 2, "range": [25000, 26100], "rep_area": 45.5, "rep_avg_price": 25550}, "jeonse": {"count": 11, "range": [16800, 23000], "rep_area": 45.5, "rep_avg_price": 20463}, "monthly": {"count": 6, "range": [1000, 2000], "rep_area": 45.5, "rep_avg_price": 1750}},
     "deals": [
       {"type": "매매", "price": 25000, "rent": 0, "area": 45.48, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
       {"type": "매매", "price": 26100, "rent": 0, "area": 45.48, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
       {"type": "전세", "price": 16800, "rent": 0, "area": 45.48, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
+      {"type": "전세", "price": 22000, "rent": 0, "area": 45.48, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-15", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
+      {"type": "월세", "price": 2000, "rent": 80, "area": 45.48, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-26", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
       {"type": "전세", "price": 16800, "rent": 0, "area": 45.48, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-30", "period": "26.06~27.06", "renew": "갱신", "p_dep": 16800, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 79, "area": 45.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-30", "period": "26.07~28.07", "renew": "갱신", "p_dep": 2000, "p_rent": 75, "jibun": "행신동 796", "by": 1995},
       {"type": "전세", "price": 20000, "rent": 0, "area": 45.48, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-27", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 796", "by": 1995},
@@ -2109,7 +2130,7 @@
       {"type": "매매", "price": 53000, "rent": 0, "area": 101.97, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
       {"type": "매매", "price": 60300, "rent": 0, "area": 134.64, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
       {"type": "매매", "price": 64000, "rent": 0, "area": 134.64, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
-      {"type": "매매", "price": 56000, "rent": 0, "area": 101.97, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
+      {"type": "매매", "price": 56000, "rent": 0, "area": 101.97, "land": 0.0, "floor": "1", "dong": "2110", "date": "2026-06-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
       {"type": "매매", "price": 53000, "rent": 0, "area": 101.97, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
       {"type": "전세", "price": 45000, "rent": 0, "area": 134.64, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-04", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997},
       {"type": "월세", "price": 10000, "rent": 150, "area": 134.64, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-16", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 905", "by": 1997}
@@ -2119,7 +2140,7 @@
     "name": "햇빛마을주공20",
     "address": "고양시 덕양구 행신동 934",
     "coords": [126.839179501443, 37.6253650446077],
-    "stats": {"total": 29, "sale": {"count": 11, "range": [21500, 33800], "rep_area": 60.0, "rep_avg_price": 31440}, "jeonse": {"count": 11, "range": [18900, 27500], "rep_area": 60.0, "rep_avg_price": 24968}, "monthly": {"count": 7, "range": [1000, 27000], "rep_area": 60.0, "rep_avg_price": 6750}},
+    "stats": {"total": 28, "sale": {"count": 11, "range": [21500, 33800], "rep_area": 60.0, "rep_avg_price": 31440}, "jeonse": {"count": 11, "range": [18900, 27500], "rep_area": 60.0, "rep_avg_price": 24968}, "monthly": {"count": 6, "range": [1000, 4000], "rep_area": 60.0, "rep_avg_price": 2700}},
     "deals": [
       {"type": "매매", "price": 29800, "rent": 0, "area": 59.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "매매", "price": 33000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
@@ -2129,7 +2150,7 @@
       {"type": "매매", "price": 27300, "rent": 0, "area": 49.97, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "매매", "price": 22000, "rent": 0, "area": 39.99, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "매매", "price": 28500, "rent": 0, "area": 49.97, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
-      {"type": "매매", "price": 29900, "rent": 0, "area": 59.98, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
+      {"type": "매매", "price": 29900, "rent": 0, "area": 59.98, "land": 0.0, "floor": "8", "dong": "2003", "date": "2026-06-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "매매", "price": 21500, "rent": 0, "area": 39.99, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "매매", "price": 33800, "rent": 0, "area": 59.56, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "월세", "price": 1000, "rent": 90, "area": 59.97, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-20", "period": "26.06~28.06", "renew": "갱신", "p_dep": 1000, "p_rent": 85, "jibun": "행신동 934", "by": 1997},
@@ -2145,7 +2166,6 @@
       {"type": "전세", "price": 26000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-18", "period": "26.07~28.07", "renew": "갱신", "p_dep": 24000, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "전세", "price": 27500, "rent": 0, "area": 59.97, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-13", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "월세", "price": 4000, "rent": 100, "area": 59.97, "land": 0.0, "floor": "17", "dong": "", "date": "2026-06-12", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
-      {"type": "월세", "price": 27000, "rent": 10, "area": 59.97, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-04", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "전세", "price": 24000, "rent": 0, "area": 59.98, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-04", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "전세", "price": 20258, "rent": 0, "area": 59.98, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-01", "period": "26.06~28.06", "renew": "갱신", "p_dep": 19294, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
       {"type": "월세", "price": 3000, "rent": 110, "area": 59.98, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-03", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 934", "by": 1997},
@@ -2166,8 +2186,9 @@
     "name": "햇빛주공22",
     "address": "고양시 덕양구 행신동 946",
     "coords": [126.837127233163, 37.6242700543392],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [30800, 32300], "rep_area": 60.0, "rep_avg_price": 31550}, "jeonse": {"count": 3, "range": [19000, 27000], "rep_area": 40.0, "rep_avg_price": 19000}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [30800, 32300], "rep_area": 60.0, "rep_avg_price": 31800}, "jeonse": {"count": 3, "range": [19000, 27000], "rep_area": 40.0, "rep_avg_price": 19000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 32300, "rent": 0, "area": 59.98, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 946", "by": 1996},
       {"type": "매매", "price": 32300, "rent": 0, "area": 59.98, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 946", "by": 1996},
       {"type": "매매", "price": 30800, "rent": 0, "area": 59.98, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 946", "by": 1996},
       {"type": "전세", "price": 27000, "rent": 0, "area": 59.98, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 946", "by": 1996},
@@ -2225,6 +2246,15 @@
     ]
   },
   {
+    "name": "샘터마을(동신)",
+    "address": "고양시 덕양구 행신동 973",
+    "coords": [126.840477481615, 37.6190438632395],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 134.9, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 189, "area": 134.88, "land": 0.0, "floor": "19", "dong": "", "date": "2026-06-11", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "행신동 973", "by": 1997}
+    ]
+  },
+  {
     "name": "샘터마을(화성)",
     "address": "고양시 덕양구 행신동 973",
     "coords": [126.840477481615, 37.6190438632395],
@@ -2252,7 +2282,7 @@
     "deals": [
       {"type": "매매", "price": 36000, "rent": 0, "area": 59.56, "land": 0.0, "floor": "7", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
       {"type": "매매", "price": 29000, "rent": 0, "area": 49.96, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
-      {"type": "매매", "price": 34900, "rent": 0, "area": 59.93, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
+      {"type": "매매", "price": 34900, "rent": 0, "area": 59.93, "land": 0.0, "floor": "6", "dong": "210", "date": "2026-06-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
       {"type": "매매", "price": 33500, "rent": 0, "area": 59.93, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
       {"type": "매매", "price": 38500, "rent": 0, "area": 59.97, "land": 0.0, "floor": "18", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
       {"type": "매매", "price": 33300, "rent": 0, "area": 59.97, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "행신동 983", "by": 1996},
@@ -2347,16 +2377,18 @@
     "name": "DMC중흥S-클래스더센트럴",
     "address": "고양시 덕양구 향동동 501",
     "coords": [126.893932407421, 37.6021798448763],
-    "stats": {"total": 20, "sale": {"count": 8, "range": [72000, 80000], "rep_area": 59.9, "rep_avg_price": 78125}, "jeonse": {"count": 10, "range": [44000, 50000], "rep_area": 59.9, "rep_avg_price": 47288}, "monthly": {"count": 2, "range": [15000, 30000], "rep_area": 59.9, "rep_avg_price": 22500}},
+    "stats": {"total": 22, "sale": {"count": 8, "range": [72000, 80000], "rep_area": 59.9, "rep_avg_price": 78125}, "jeonse": {"count": 10, "range": [44000, 50000], "rep_area": 59.9, "rep_avg_price": 47288}, "monthly": {"count": 4, "range": [5000, 30000], "rep_area": 59.9, "rep_avg_price": 16666}},
     "deals": [
-      {"type": "매매", "price": 77500, "rent": 0, "area": 59.9234, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
-      {"type": "매매", "price": 72000, "rent": 0, "area": 59.718, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
+      {"type": "매매", "price": 77500, "rent": 0, "area": 59.9234, "land": 0.0, "floor": "20", "dong": "205동", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
+      {"type": "매매", "price": 72000, "rent": 0, "area": 59.718, "land": 0.0, "floor": "15", "dong": "203동", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "매매", "price": 80000, "rent": 0, "area": 59.9482, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "매매", "price": 78000, "rent": 0, "area": 59.9234, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "매매", "price": 77500, "rent": 0, "area": 59.8179, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "매매", "price": 74000, "rent": 0, "area": 59.718, "land": 0.0, "floor": "21", "dong": "", "date": "2026-06-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "매매", "price": 77000, "rent": 0, "area": 59.9482, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "매매", "price": 74000, "rent": 0, "area": 59.718, "land": 0.0, "floor": "19", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
+      {"type": "월세", "price": 5000, "rent": 168, "area": 59.718, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "갱신", "p_dep": 5000, "p_rent": 160, "jibun": "향동동 501", "by": 2020},
+      {"type": "월세", "price": 5000, "rent": 185, "area": 59.9234, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-15", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "전세", "price": 48000, "rent": 0, "area": 59.9482, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-27", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "전세", "price": 45000, "rent": 0, "area": 59.9234, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-11", "period": "26.07~28.07", "renew": "갱신", "p_dep": 43000, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
       {"type": "전세", "price": 44000, "rent": 0, "area": 59.9234, "land": 0.0, "floor": "20", "dong": "", "date": "2026-06-25", "period": "26.07~28.07", "renew": "갱신", "p_dep": 44000, "p_rent": 0, "jibun": "향동동 501", "by": 2020},
@@ -2410,8 +2442,9 @@
     "name": "DMC호반베르디움더포레3단지",
     "address": "고양시 덕양구 향동동 557",
     "coords": [126.889250525732, 37.595325943634],
-    "stats": {"total": 11, "sale": {"count": 5, "range": [80000, 91500], "rep_area": 84.9, "rep_avg_price": 89833}, "jeonse": {"count": 5, "range": [36380, 59000], "rep_area": 84.9, "rep_avg_price": 51126}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 71.0, "rep_avg_price": 20000}},
+    "stats": {"total": 12, "sale": {"count": 6, "range": [80000, 91500], "rep_area": 71.0, "rep_avg_price": 80500}, "jeonse": {"count": 5, "range": [36380, 59000], "rep_area": 84.9, "rep_avg_price": 51126}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 71.0, "rep_avg_price": 20000}},
     "deals": [
+      {"type": "매매", "price": 81500, "rent": 0, "area": 70.9637, "land": 0.0, "floor": "21", "dong": "", "date": "2026-06-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 557", "by": 2019},
       {"type": "매매", "price": 87000, "rent": 0, "area": 84.8984, "land": 0.0, "floor": "21", "dong": "", "date": "2026-06-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 557", "by": 2019},
       {"type": "매매", "price": 80000, "rent": 0, "area": 70.9637, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 557", "by": 2019},
       {"type": "매매", "price": 80000, "rent": 0, "area": 70.9637, "land": 0.0, "floor": "24", "dong": "", "date": "2026-06-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 557", "by": 2019},
@@ -2469,10 +2502,11 @@
     "name": "DMC호반베르디움더포레2단지",
     "address": "고양시 덕양구 향동동 571",
     "coords": [126.891538817107, 37.5926283381758],
-    "stats": {"total": 8, "sale": {"count": 2, "range": [76000, 79000], "rep_area": 71.0, "rep_avg_price": 76000}, "jeonse": {"count": 2, "range": [54000, 57225], "rep_area": 71.0, "rep_avg_price": 54000}, "monthly": {"count": 4, "range": [9520, 35000], "rep_area": 84.9, "rep_avg_price": 24840}},
+    "stats": {"total": 9, "sale": {"count": 2, "range": [76000, 79000], "rep_area": 71.0, "rep_avg_price": 76000}, "jeonse": {"count": 3, "range": [42000, 57225], "rep_area": 71.0, "rep_avg_price": 48000}, "monthly": {"count": 4, "range": [9520, 35000], "rep_area": 84.9, "rep_avg_price": 24840}},
     "deals": [
       {"type": "매매", "price": 76000, "rent": 0, "area": 70.9637, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 571", "by": 2019},
       {"type": "매매", "price": 79000, "rent": 0, "area": 84.9313, "land": 0.0, "floor": "1", "dong": "", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "향동동 571", "by": 2019},
+      {"type": "전세", "price": 42000, "rent": 0, "area": 70.9637, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-02", "period": "26.06~28.06", "renew": "갱신", "p_dep": 40000, "p_rent": 0, "jibun": "향동동 571", "by": 2019},
       {"type": "월세", "price": 9520, "rent": 160, "area": 84.9313, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "갱신", "p_dep": 10000, "p_rent": 160, "jibun": "향동동 571", "by": 2019},
       {"type": "월세", "price": 35000, "rent": 100, "area": 84.9313, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-12", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "향동동 571", "by": 2019},
       {"type": "전세", "price": 54000, "rent": 0, "area": 70.9637, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-10", "period": "26.10~29.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "향동동 571", "by": 2019},
@@ -2532,11 +2566,12 @@
     "name": "옥빛마을(주공)17(에듀뷰)",
     "address": "고양시 덕양구 화정동 1135",
     "coords": [126.83496394653, 37.6263313876345],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [49800, 54500], "rep_area": 84.8, "rep_avg_price": 52433}, "jeonse": {"count": 1, "range": [34500, 34500], "rep_area": 84.8, "rep_avg_price": 34500}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [49800, 54500], "rep_area": 84.8, "rep_avg_price": 52433}, "jeonse": {"count": 1, "range": [34500, 34500], "rep_area": 84.8, "rep_avg_price": 34500}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.8, "rep_avg_price": 5000}},
     "deals": [
       {"type": "매매", "price": 53000, "rent": 0, "area": 84.79, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1135", "by": 1997},
       {"type": "매매", "price": 54500, "rent": 0, "area": 84.79, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1135", "by": 1997},
       {"type": "매매", "price": 49800, "rent": 0, "area": 84.79, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1135", "by": 1997},
+      {"type": "월세", "price": 5000, "rent": 130, "area": 84.79, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-15", "period": "26.08~28.08", "renew": "갱신", "p_dep": 1000, "p_rent": 110, "jibun": "화정동 1135", "by": 1997},
       {"type": "전세", "price": 34500, "rent": 0, "area": 84.79, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-12", "period": "26.07~28.07", "renew": "갱신", "p_dep": 33000, "p_rent": 0, "jibun": "화정동 1135", "by": 1997}
     ]
   },
@@ -2547,7 +2582,7 @@
     "stats": {"total": 6, "sale": {"count": 2, "range": [32000, 33200], "rep_area": 60.0, "rep_avg_price": 32600}, "jeonse": {"count": 3, "range": [26040, 29000], "rep_area": 60.0, "rep_avg_price": 27680}, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 60.0, "rep_avg_price": 4000}},
     "deals": [
       {"type": "매매", "price": 33200, "rent": 0, "area": 59.97, "land": 0.0, "floor": "7", "dong": "1602", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1141", "by": 1996},
-      {"type": "매매", "price": 32000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1141", "by": 1996},
+      {"type": "매매", "price": 32000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "11", "dong": "1603", "date": "2026-06-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1141", "by": 1996},
       {"type": "전세", "price": 29000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-23", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 1141", "by": 1996},
       {"type": "월세", "price": 4000, "rent": 76, "area": 59.97, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-24", "period": "26.07~28.07", "renew": "갱신", "p_dep": 4000, "p_rent": 72, "jibun": "화정동 1141", "by": 1996},
       {"type": "전세", "price": 28000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-20", "period": "26.08~28.08", "renew": "갱신", "p_dep": 27000, "p_rent": 0, "jibun": "화정동 1141", "by": 1996},
@@ -2647,8 +2682,9 @@
     "name": "달빛마을(진덕)",
     "address": "고양시 덕양구 화정동 858",
     "coords": [126.832208460832, 37.6468581391209],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33560, 33560], "rep_area": 84.9, "rep_avg_price": 33560}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [33560, 33560], "rep_area": 84.9, "rep_avg_price": 33560}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 72.3, "rep_avg_price": 3000}},
     "deals": [
+      {"type": "월세", "price": 3000, "rent": 110, "area": 72.27, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-30", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 858", "by": 1995},
       {"type": "전세", "price": 33560, "rent": 0, "area": 84.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-06-27", "period": "26.08~27.03", "renew": "갱신", "p_dep": 31970, "p_rent": 0, "jibun": "화정동 858", "by": 1995}
     ]
   },
@@ -2687,8 +2723,9 @@
     "name": "은빛마을(LG)5",
     "address": "고양시 덕양구 화정동 870",
     "coords": [126.836016649687, 37.6422680298612],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [44000, 48000], "rep_area": 100.0, "rep_avg_price": 48000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [63000, 63000], "rep_area": 134.9, "rep_avg_price": 63000}, "jeonse": {"count": 2, "range": [44000, 48000], "rep_area": 100.0, "rep_avg_price": 48000}, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 63000, "rent": 0, "area": 134.94, "land": 0.0, "floor": "12", "dong": "", "date": "2026-06-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 870", "by": 1995},
       {"type": "전세", "price": 44000, "rent": 0, "area": 134.94, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "갱신", "p_dep": 44000, "p_rent": 0, "jibun": "화정동 870", "by": 1995},
       {"type": "전세", "price": 48000, "rent": 0, "area": 99.96, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-20", "period": "26.06~27.06", "renew": "갱신", "p_dep": 48000, "p_rent": 0, "jibun": "화정동 870", "by": 1995}
     ]
@@ -2728,9 +2765,10 @@
     "name": "은빛삼익주택(5)",
     "address": "고양시 덕양구 화정동 870",
     "coords": [126.836016649687, 37.6422680298612],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [54500, 54500], "rep_area": 134.8, "rep_avg_price": 54500}, "jeonse": {"count": 1, "range": [42000, 42000], "rep_area": 134.8, "rep_avg_price": 42000}, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 134.8, "rep_avg_price": 4000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [54500, 54500], "rep_area": 134.8, "rep_avg_price": 54500}, "jeonse": {"count": 2, "range": [42000, 42000], "rep_area": 134.8, "rep_avg_price": 42000}, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 134.8, "rep_avg_price": 4000}},
     "deals": [
       {"type": "매매", "price": 54500, "rent": 0, "area": 134.83, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 870", "by": 1995},
+      {"type": "전세", "price": 42000, "rent": 0, "area": 134.83, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-23", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 870", "by": 1995},
       {"type": "전세", "price": 42000, "rent": 0, "area": 134.83, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-23", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 870", "by": 1995},
       {"type": "월세", "price": 4000, "rent": 153, "area": 134.83, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-06", "period": "26.10~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 870", "by": 1995}
     ]
@@ -2818,7 +2856,7 @@
     "name": "별빛마을(부영)8(좋은집)",
     "address": "고양시 덕양구 화정동 952",
     "coords": [126.828540277805, 37.632091327361],
-    "stats": {"total": 28, "sale": {"count": 16, "range": [27000, 44800], "rep_area": 50.0, "rep_avg_price": 32713}, "jeonse": {"count": 7, "range": [22050, 31000], "rep_area": 50.0, "rep_avg_price": 24070}, "monthly": {"count": 5, "range": [2000, 8000], "rep_area": 50.0, "rep_avg_price": 4000}},
+    "stats": {"total": 29, "sale": {"count": 16, "range": [27000, 44800], "rep_area": 50.0, "rep_avg_price": 32713}, "jeonse": {"count": 7, "range": [22050, 31000], "rep_area": 50.0, "rep_avg_price": 24070}, "monthly": {"count": 6, "range": [2000, 8000], "rep_area": 50.0, "rep_avg_price": 3666}},
     "deals": [
       {"type": "매매", "price": 27000, "rent": 0, "area": 50.0, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
       {"type": "매매", "price": 34700, "rent": 0, "area": 50.0, "land": 0.0, "floor": "17", "dong": "", "date": "2026-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
@@ -2836,6 +2874,7 @@
       {"type": "매매", "price": 34900, "rent": 0, "area": 50.0, "land": 0.0, "floor": "7", "dong": "806", "date": "2026-06-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
       {"type": "매매", "price": 35700, "rent": 0, "area": 50.0, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
       {"type": "매매", "price": 35000, "rent": 0, "area": 50.0, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
+      {"type": "월세", "price": 2000, "rent": 77, "area": 50.0, "land": 0.0, "floor": "11", "dong": "", "date": "2026-06-18", "period": "26.06~27.06", "renew": "갱신", "p_dep": 2000, "p_rent": 70, "jibun": "화정동 952", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 72, "area": 50.0, "land": 0.0, "floor": "5", "dong": "", "date": "2026-06-05", "period": "26.07~28.07", "renew": "갱신", "p_dep": 2000, "p_rent": 69, "jibun": "화정동 952", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 85, "area": 50.0, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-21", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
       {"type": "전세", "price": 24300, "rent": 0, "area": 50.0, "land": 0.0, "floor": "17", "dong": "", "date": "2026-06-26", "period": "26.08~28.08", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "화정동 952", "by": 1995},
@@ -2871,7 +2910,7 @@
     "name": "은빛마을11단지",
     "address": "고양시 덕양구 화정동 961",
     "coords": [126.835827510309, 37.635641120219],
-    "stats": {"total": 25, "sale": {"count": 13, "range": [23000, 43500], "rep_area": 60.0, "rep_avg_price": 42112}, "jeonse": {"count": 8, "range": [24150, 32000], "rep_area": 50.0, "rep_avg_price": 24625}, "monthly": {"count": 4, "range": [2000, 13000], "rep_area": 50.0, "rep_avg_price": 5833}},
+    "stats": {"total": 27, "sale": {"count": 13, "range": [23000, 43500], "rep_area": 60.0, "rep_avg_price": 42112}, "jeonse": {"count": 9, "range": [22000, 32000], "rep_area": 50.0, "rep_avg_price": 24100}, "monthly": {"count": 5, "range": [2000, 13000], "rep_area": 50.0, "rep_avg_price": 5833}},
     "deals": [
       {"type": "매매", "price": 32500, "rent": 0, "area": 50.0, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 42000, "rent": 0, "area": 60.0, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
@@ -2881,11 +2920,13 @@
       {"type": "매매", "price": 40500, "rent": 0, "area": 60.0, "land": 0.0, "floor": "16", "dong": "", "date": "2026-06-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 43500, "rent": 0, "area": 60.0, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 42900, "rent": 0, "area": 60.0, "land": 0.0, "floor": "8", "dong": "", "date": "2026-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
-      {"type": "매매", "price": 34000, "rent": 0, "area": 50.0, "land": 0.0, "floor": "10", "dong": "", "date": "2026-06-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
+      {"type": "매매", "price": 34000, "rent": 0, "area": 50.0, "land": 0.0, "floor": "10", "dong": "1111", "date": "2026-06-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 41500, "rent": 0, "area": 60.0, "land": 0.0, "floor": "2", "dong": "", "date": "2026-06-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 41000, "rent": 0, "area": 60.0, "land": 0.0, "floor": "16", "dong": "1110", "date": "2026-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 42000, "rent": 0, "area": 60.0, "land": 0.0, "floor": "13", "dong": "", "date": "2026-06-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "매매", "price": 43500, "rent": 0, "area": 60.0, "land": 0.0, "floor": "6", "dong": "", "date": "2026-06-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
+      {"type": "전세", "price": 22000, "rent": 0, "area": 50.0, "land": 0.0, "floor": "9", "dong": "", "date": "2026-06-17", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
+      {"type": "월세", "price": 5000, "rent": 92, "area": 60.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "갱신", "p_dep": 5000, "p_rent": 88, "jibun": "화정동 961", "by": 1996},
       {"type": "월세", "price": 2500, "rent": 90, "area": 50.0, "land": 0.0, "floor": "14", "dong": "", "date": "2026-06-27", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "월세", "price": 2000, "rent": 100, "area": 50.0, "land": 0.0, "floor": "15", "dong": "", "date": "2026-06-11", "period": "26.08~28.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화정동 961", "by": 1996},
       {"type": "전세", "price": 25700, "rent": 0, "area": 50.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-06-19", "period": "26.07~28.07", "renew": "갱신", "p_dep": 24500, "p_rent": 0, "jibun": "화정동 961", "by": 1996},

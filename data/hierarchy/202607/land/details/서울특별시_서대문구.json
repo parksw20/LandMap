@@ -1,11 +1,31 @@
 [
   {
     "name": "도로",
+    "address": "서울특별시 서대문구 연희동",
+    "coords": [126.935230751932, 37.5739100104158],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [346, 346], "rep_area": 6.7, "rep_avg_price": 346}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 346, "rent": 0, "area": 6.74, "land": 6.74, "floor": "", "dong": "", "date": "2026-07-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "연희동 2**", "by": 0}
+    ]
+  },
+  {
+    "name": "도로",
     "address": "서울특별시 서대문구 창천동",
     "coords": [126.934193637741, 37.5586862112855],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [3069, 3069], "rep_area": 10.0, "rep_avg_price": 3069}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [2232, 3069], "rep_area": 10.0, "rep_avg_price": 2929}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 2232, "rent": 0, "area": 8.0, "land": 8.0, "floor": "", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창천동 *", "by": 0},
+      {"type": "매매", "price": 2790, "rent": 0, "area": 10.0, "land": 10.0, "floor": "", "dong": "", "date": "2026-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창천동 *", "by": 0},
       {"type": "매매", "price": 3069, "rent": 0, "area": 10.0, "land": 10.0, "floor": "", "dong": "", "date": "2026-07-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창천동 *", "by": 0}
+    ]
+  },
+  {
+    "name": "대",
+    "address": "서울특별시 서대문구 홍은동",
+    "coords": [126.933218715152, 37.5908908122788],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [1266, 1266], "rep_area": 2.0, "rep_avg_price": 1266}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 1266, "rent": 0, "area": 2.0, "land": 2.0, "floor": "", "dong": "", "date": "2026-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "홍은동 1*", "by": 0}
     ]
   }
 ]

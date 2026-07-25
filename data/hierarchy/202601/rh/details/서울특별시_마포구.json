@@ -676,11 +676,21 @@
     ]
   },
   {
+    "name": "푸른빌딩 (다세대)",
+    "address": "마포구 동교동 113-91",
+    "coords": [126.925809961754, 37.5598258673715],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [700, 700], "rep_area": 29.2, "rep_avg_price": 700}},
+    "deals": [
+      {"type": "월세", "price": 700, "rent": 57, "area": 29.2, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-30", "period": "26.01~27.06", "renew": "갱신", "p_dep": 700, "p_rent": 57, "jibun": "동교동 113-91", "by": 2003}
+    ]
+  },
+  {
     "name": "동교빌라 (연립)",
     "address": "마포구 동교동 153-6",
     "coords": [126.924025523029, 37.5587540780424],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 98.6, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [44500, 44500], "rep_area": 98.6, "rep_avg_price": 44500}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 98.6, "rep_avg_price": 10000}},
     "deals": [
+      {"type": "전세", "price": 44500, "rent": 0, "area": 98.58, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동교동 153-6", "by": 1983},
       {"type": "월세", "price": 10000, "rent": 145, "area": 98.58, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-30", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동교동 153-6", "by": 1983}
     ]
   },
@@ -767,8 +777,9 @@
     "name": "광성빌라 (다세대)",
     "address": "마포구 마포동 214",
     "coords": [126.945809288282, 37.5382902619467],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [69000, 69000], "rep_area": 87.6, "rep_avg_price": 69000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [68500, 69000], "rep_area": 87.6, "rep_avg_price": 68750}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 68500, "rent": 0, "area": 87.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마포동 214", "by": 2001},
       {"type": "매매", "price": 69000, "rent": 0, "area": 87.59, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마포동 214", "by": 2001}
     ]
   },
@@ -1265,6 +1276,15 @@
     ]
   },
   {
+    "name": "두원캐스빌 (다세대)",
+    "address": "마포구 망원동 410-41",
+    "coords": [126.904217291525, 37.5557377283711],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.3, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 140, "area": 59.32, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-20", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "망원동 410-41", "by": 2002}
+    ]
+  },
+  {
     "name": "무지개센터빌 (다세대)",
     "address": "마포구 망원동 411-39",
     "coords": [126.905321295347, 37.5559215212474],
@@ -1343,8 +1363,9 @@
     "name": "황금리 (다세대)",
     "address": "마포구 망원동 415-23",
     "coords": [126.904307328343, 37.5567499816281],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [27300, 27300], "rep_area": 30.0, "rep_avg_price": 27300}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [27300, 27300], "rep_area": 30.0, "rep_avg_price": 27300}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 27300, "rent": 0, "area": 29.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-17", "period": "26.02~27.02", "renew": "갱신", "p_dep": 5000, "p_rent": 90, "jibun": "망원동 415-23", "by": 2022},
       {"type": "전세", "price": 27300, "rent": 0, "area": 29.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-17", "period": "26.02~27.02", "renew": "갱신", "p_dep": 5000, "p_rent": 90, "jibun": "망원동 415-23", "by": 2022},
       {"type": "전세", "price": 27300, "rent": 0, "area": 29.96, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-17", "period": "26.02~27.02", "renew": "갱신", "p_dep": 5000, "p_rent": 90, "jibun": "망원동 415-23", "by": 2022}
     ]
@@ -1638,6 +1659,15 @@
     ]
   },
   {
+    "name": "에덴빌라(432-26) (다세대)",
+    "address": "마포구 망원동 432-26",
+    "coords": [126.901137339611, 37.5582532962599],
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 61.8, "rep_avg_price": 16000}, "monthly": null},
+    "deals": [
+      {"type": "전세", "price": 16000, "rent": 0, "area": 61.84, "land": 0.0, "floor": "-1", "dong": "", "date": "2026-01-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "망원동 432-26", "by": 1997}
+    ]
+  },
+  {
     "name": "센터빌 (다세대)",
     "address": "마포구 망원동 432-32",
     "coords": [126.900544882768, 37.5588285356613],
@@ -1741,8 +1771,10 @@
     "name": "(456-40) (다세대)",
     "address": "마포구 망원동 456-40",
     "coords": [126.90048607147, 37.5541165413862],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 41.6, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [50000, 50000], "rep_area": 41.6, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
     "deals": [
+      {"type": "매매", "price": 50000, "rent": 0, "area": 41.608, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "망원동 456-40", "by": 1991},
+      {"type": "매매", "price": 50000, "rent": 0, "area": 41.608, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "망원동 456-40", "by": 1991},
       {"type": "매매", "price": 50000, "rent": 0, "area": 41.608, "land": 0.0, "floor": "1", "dong": "", "date": "2026-01-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "망원동 456-40", "by": 1991}
     ]
   },
@@ -2113,6 +2145,15 @@
     ]
   },
   {
+    "name": "프라임빌라 (다세대)",
+    "address": "마포구 망원동 57-276",
+    "coords": [126.907278154833, 37.5548518784373],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 47.0, "rep_avg_price": 1000}},
+    "deals": [
+      {"type": "월세", "price": 1000, "rent": 81, "area": 47.0, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-29", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "망원동 57-276", "by": 2002}
+    ]
+  },
+  {
     "name": "석우빌라8차 (다세대)",
     "address": "마포구 망원동 57-292",
     "coords": [126.907065085458, 37.5541863242847],
@@ -2387,6 +2428,15 @@
     ]
   },
   {
+    "name": "(328-1) (다세대)",
+    "address": "마포구 서교동 328-1",
+    "coords": [126.92788940455, 37.5560807197713],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [100, 100], "rep_area": 73.5, "rep_avg_price": 100}},
+    "deals": [
+      {"type": "월세", "price": 100, "rent": 51, "area": 73.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-12", "period": "26.01~26.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 328-1", "by": 1999}
+    ]
+  },
+  {
     "name": "우림빌딩 (다세대)",
     "address": "마포구 서교동 328-18",
     "coords": [126.928523487928, 37.555284983999],
@@ -2523,8 +2573,9 @@
     "name": "서교동스튜디오 (다세대)",
     "address": "마포구 서교동 372-6",
     "coords": [126.918816674251, 37.5524293938945],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 18.4, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 18.4, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 71, "area": 18.36, "land": 0.0, "floor": "6", "dong": "", "date": "2026-01-10", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 372-6", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 63, "area": 18.36, "land": 0.0, "floor": "6", "dong": "", "date": "2026-01-17", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 372-6", "by": 2014}
     ]
   },
@@ -2532,8 +2583,10 @@
     "name": "MJ블랑로튜스 (다세대)",
     "address": "마포구 서교동 372-8",
     "coords": [126.919098136158, 37.5524190454039],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.6, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 14.3, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 170, "area": 15.93, "land": 0.0, "floor": "7", "dong": "", "date": "2026-01-25", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 372-8", "by": 2023},
+      {"type": "월세", "price": 1000, "rent": 170, "area": 14.3, "land": 0.0, "floor": "7", "dong": "", "date": "2026-01-25", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 372-8", "by": 2023},
       {"type": "월세", "price": 1000, "rent": 170, "area": 14.57, "land": 0.0, "floor": "7", "dong": "", "date": "2026-01-25", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 372-8", "by": 2023}
     ]
   },
@@ -2612,6 +2665,15 @@
     "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 18.6, "rep_avg_price": 3000}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 55, "area": 18.58, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-21", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 391-4", "by": 2012}
+    ]
+  },
+  {
+    "name": "한일빌리지 (다세대)",
+    "address": "마포구 서교동 395-127",
+    "coords": [126.919650183859, 37.5501954888763],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 43.0, "rep_avg_price": 300}},
+    "deals": [
+      {"type": "월세", "price": 300, "rent": 48, "area": 43.05, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-18", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 395-127", "by": 1991}
     ]
   },
   {
@@ -2970,6 +3032,15 @@
     ]
   },
   {
+    "name": "벨라지오빌 (다세대)",
+    "address": "마포구 서교동 474-1",
+    "coords": [126.912460656111, 37.5562093127114],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 38.1, "rep_avg_price": 2000}},
+    "deals": [
+      {"type": "월세", "price": 2000, "rent": 80, "area": 38.11, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-26", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "서교동 474-1", "by": 2002}
+    ]
+  },
+  {
     "name": "(474-22) (다세대)",
     "address": "마포구 서교동 474-22",
     "coords": [126.913164224698, 37.5557536573167],
@@ -3153,12 +3224,30 @@
     ]
   },
   {
+    "name": "성사빌라 (연립)",
+    "address": "마포구 성산동 134-116",
+    "coords": [126.912352366609, 37.5673043724248],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 73.5, "rep_avg_price": 3000}},
+    "deals": [
+      {"type": "월세", "price": 3000, "rent": 110, "area": 73.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-24", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성산동 134-116", "by": 1982}
+    ]
+  },
+  {
     "name": "유일빌리지 (다세대)",
     "address": "마포구 성산동 134-126",
     "coords": [126.912478676027, 37.5677016249584],
     "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26000, 26000], "rep_area": 29.9, "rep_avg_price": 26000}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 26000, "rent": 0, "area": 29.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-19", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "성산동 134-126", "by": 2016}
+    ]
+  },
+  {
+    "name": "소노하우스성산3차 (다세대)",
+    "address": "마포구 성산동 134-15",
+    "coords": [126.912210950377, 37.5678209882818],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [39200, 39200], "rep_area": 40.2, "rep_avg_price": 39200}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 39200, "rent": 0, "area": 40.16, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성산동 134-15", "by": 2018}
     ]
   },
   {
@@ -3860,9 +3949,10 @@
     "name": "성산동이에스하임 (다세대)",
     "address": "마포구 성산동 4-3",
     "coords": [126.916075624887, 37.5651338761261],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 30.0, "rep_avg_price": 25000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [34500, 34500], "rep_area": 30.0, "rep_avg_price": 34500}, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 30.0, "rep_avg_price": 25000}},
     "deals": [
-      {"type": "월세", "price": 25000, "rent": 31, "area": 29.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-19", "period": "26.02~28.02", "renew": "갱신", "p_dep": 25000, "p_rent": 25, "jibun": "성산동 4-3", "by": 2019}
+      {"type": "월세", "price": 25000, "rent": 31, "area": 29.95, "land": 0.0, "floor": "4", "dong": "", "date": "2026-01-19", "period": "26.02~28.02", "renew": "갱신", "p_dep": 25000, "p_rent": 25, "jibun": "성산동 4-3", "by": 2019},
+      {"type": "전세", "price": 34500, "rent": 0, "area": 29.95, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-14", "period": "26.06~28.06", "renew": "갱신", "p_dep": 33000, "p_rent": 0, "jibun": "성산동 4-3", "by": 2019}
     ]
   },
   {
@@ -5132,8 +5222,9 @@
     "name": "해피트리하우스 (다세대)",
     "address": "마포구 연남동 562-15",
     "coords": [126.919648131116, 37.5605397488451],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 23.7, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 23.7, "rep_avg_price": 1000}},
     "deals": [
+      {"type": "월세", "price": 1000, "rent": 46, "area": 23.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-23", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "연남동 562-15", "by": 2012},
       {"type": "월세", "price": 1000, "rent": 63, "area": 23.73, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-23", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "연남동 562-15", "by": 2012}
     ]
   },
@@ -5384,8 +5475,9 @@
     "name": "세림promise (다세대)",
     "address": "마포구 염리동 486-1",
     "coords": [126.948250634498, 37.5565113543618],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [34000, 34000], "rep_area": 29.7, "rep_avg_price": 34000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [34000, 34000], "rep_area": 29.7, "rep_avg_price": 34000}, "monthly": null},
     "deals": [
+      {"type": "전세", "price": 34000, "rent": 0, "area": 29.72, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "염리동 486-1", "by": 2021},
       {"type": "전세", "price": 34000, "rent": 0, "area": 29.72, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-23", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "염리동 486-1", "by": 2021}
     ]
   },
@@ -6652,6 +6744,15 @@
       {"type": "월세", "price": 1000, "rent": 75, "area": 15.74, "land": 0.0, "floor": "5", "dong": "", "date": "2026-01-13", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "합정동 439-6", "by": 2013},
       {"type": "월세", "price": 500, "rent": 76, "area": 15.74, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-13", "period": "26.01~27.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "합정동 439-6", "by": 2013},
       {"type": "월세", "price": 500, "rent": 90, "area": 21.2, "land": 0.0, "floor": "2", "dong": "", "date": "2026-01-13", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "합정동 439-6", "by": 2013}
+    ]
+  },
+  {
+    "name": "MAIBAUMHapjeongB (다세대)",
+    "address": "마포구 합정동 439-7",
+    "coords": [126.906784582124, 37.551057929019],
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3200, 3200], "rep_area": 37.1, "rep_avg_price": 3200}},
+    "deals": [
+      {"type": "월세", "price": 3200, "rent": 88, "area": 37.13, "land": 0.0, "floor": "3", "dong": "", "date": "2026-01-28", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "합정동 439-7", "by": 2013}
     ]
   },
   {
