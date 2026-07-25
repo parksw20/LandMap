@@ -48,6 +48,8 @@ const state = {
     // 지적도 모드 클릭 주소 표시 + VWorld 필지 폴리곤
     clickAddrOverlay: null,
     clickParcelPoly: null,
+    dongBoundary: [],          // 검색한 동의 경계 폴리곤 오버레이
+    dongBoundaryFor: null,     // 현재 경계가 표시된 동 이름(늦은 응답 무시용)
     // 길찾기 (출발→도착)
     routeMode: false,
     routePts: [],
@@ -1957,6 +1959,43 @@ function vworldParcel(latlng, cb) {
         + `&format=json&crs=EPSG:4326&size=1&geomFilter=POINT(${latlng.getLng()} ${latlng.getLat()})`, cb);
 }
 
+// 읍면동 경계(법정동) 조회 — 좌표를 품은 동의 경계 폴리곤
+function vworldDongBoundary(lng, lat, cb) {
+    vworldJsonp('https://api.vworld.kr/req/data?service=data&request=GetFeature&data=LT_C_ADEMD_INFO'
+        + `&format=json&crs=EPSG:4326&size=1&geometry=true&geomFilter=POINT(${lng} ${lat})`, cb);
+}
+
+// 검색으로 이동한 동의 경계를 지도에 그린다 (검색·이동 시마다 갱신)
+function drawDongBoundary(lng, lat, name) {
+    clearDongBoundary();
+    if (!window.VWORLD_KEY) return;
+    vworldDongBoundary(lng, lat, (resp) => {
+        const feats = resp && resp.response && resp.response.status === 'OK'
+            ? (resp.response.result.featureCollection.features || []) : [];
+        if (!feats.length) return;
+        const f = feats[0];
+        // 다른 동을 검색하는 사이 응답이 늦게 오면 무시
+        if (state.dongBoundaryFor !== name) return;
+        const rings = f.geometry.type === 'MultiPolygon'
+            ? f.geometry.coordinates.flatMap(poly => poly)   // 외곽+내부 링
+            : f.geometry.coordinates;
+        rings.forEach(ring => {
+            const path = ring.map(p => new kakao.maps.LatLng(p[1], p[0]));
+            const poly = new kakao.maps.Polygon({
+                path, strokeWeight: 3, strokeColor: '#e11d48', strokeOpacity: 0.9,
+                strokeStyle: 'solid', fillColor: '#e11d48', fillOpacity: 0.06, zIndex: 20
+            });
+            poly.setMap(state.map);
+            state.dongBoundary.push(poly);
+        });
+    });
+}
+
+function clearDongBoundary() {
+    state.dongBoundary.forEach(o => o.setMap(null));
+    state.dongBoundary = [];
+}
+
 // 토지이용계획 속성: PNU → 용도지역지구명목록 (토지이용계획확인서 항목)
 function vworldLandUse(pnu, cb) {
     vworldJsonp(`https://api.vworld.kr/ned/data/getLandUseAttr?pnu=${pnu}&format=json&numOfRows=100`, cb);
@@ -2199,7 +2238,7 @@ function rvPosVisible(pos) {
 let searchTimer = null;
 
 function handleSearch(q) {
-    const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); return; }
+    const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); state.dongBoundaryFor = null; clearDongBoundary(); return; }
     const qLower = q.toLowerCase();
     const results = state.searchIndex
         .filter(i => (i.n && i.n.toLowerCase().includes(qLower)) || (i.a && i.a.toLowerCase().includes(qLower)))
@@ -2280,7 +2319,16 @@ function goToAddress(lat, lng, label) {
     updateMap(true);
 }
 
-function goToDong(name, lat, lng) { state.map.setCenter(new kakao.maps.LatLng(lat, lng)); state.map.setLevel(6); document.getElementById('search-results').classList.add('hidden'); document.getElementById('search-input').value = name; updateMap(true); }
+function goToDong(name, lat, lng) {
+    state.map.setCenter(new kakao.maps.LatLng(lat, lng));
+    state.map.setLevel(6);
+    document.getElementById('search-results').classList.add('hidden');
+    document.getElementById('search-input').value = name;
+    // 검색한 동(법정동)의 경계를 지도에 표시
+    state.dongBoundaryFor = name;
+    drawDongBoundary(lng, lat, name);
+    updateMap(true);
+}
 function goToLocation(lat, lng, name, addr) {
     state.map.setCenter(new kakao.maps.LatLng(lat, lng));
     state.map.setLevel(4);
