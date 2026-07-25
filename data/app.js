@@ -48,9 +48,10 @@ const state = {
     // 지적도 모드 클릭 주소 표시 + VWorld 필지 폴리곤
     clickAddrOverlay: null,
     clickParcelPoly: null,
-    dongBoundary: [],          // 동 경계 폴리곤 오버레이
-    dongBoundaryFor: null,     // 클릭/검색으로 '고정'된 동 이름
-    dongHoverFor: null,        // hover 미리보기 중인 동 이름
+    dongBoundary: [],          // 고정(실선) 경계 오버레이 — 클릭/검색
+    dongHoverBoundary: [],     // hover(점선) 경계 오버레이
+    dongBoundaryFor: null,     // 실선으로 고정된 동 이름
+    dongHoverFor: null,        // 점선 미리보기 중인 동 이름
     // 길찾기 (출발→도착)
     routeMode: false,
     routePts: [],
@@ -864,7 +865,7 @@ function renderMarkers(data, level) {
             markOverlayClick(ev);
             if (level !== 4) {
                 // 동 마커(레벨3) 클릭: 한 단계 확대 + 그 동의 경계 '고정'
-                if (level === 3) { state.dongHoverFor = null; state.dongBoundaryFor = item.name; drawDongBoundary(item.coords[0], item.coords[1], item.name); }
+                if (level === 3) { state.dongHoverFor = null; clearDongHover(); state.dongBoundaryFor = item.name; drawDongBoundary(item.coords[0], item.coords[1], item.name); }
                 handleLevelMove(item, level);
                 return;
             }
@@ -879,13 +880,16 @@ function renderMarkers(data, level) {
         content.onmouseenter = () => {
             const key = `${level}_${item.name}`; if (state.hoveredItem === key) return; state.hoveredItem = key;
             showTooltip(item, level, pos);
-            // 동 마커 hover: 경계 미리보기 (클릭으로 고정된 경계가 없을 때만)
-            if (level === 3 && !state.dongBoundaryFor) { state.dongHoverFor = item.name; drawDongBoundary(item.coords[0], item.coords[1], item.name, true); }
+            // 동 마커 hover: 점선 미리보기. 이미 실선으로 고정된 그 동이면 중복이라 생략
+            if (level === 3 && state.dongBoundaryFor !== item.name) {
+                state.dongHoverFor = item.name;
+                drawDongBoundary(item.coords[0], item.coords[1], item.name, true);
+            }
         };
         content.onmouseleave = () => {
             state.hoveredItem = null; state.tooltip.setMap(null);
-            // hover로 그린 미리보기만 지운다 (클릭 고정 경계는 유지)
-            if (level === 3 && state.dongHoverFor === item.name && !state.dongBoundaryFor) { state.dongHoverFor = null; clearDongBoundary(); }
+            // 점선 미리보기만 지운다 (실선 고정 경계는 유지)
+            if (level === 3 && state.dongHoverFor === item.name) { state.dongHoverFor = null; clearDongHover(); }
         };
     });
     
@@ -1986,30 +1990,31 @@ function vworldDongBoundary(lng, lat, cb) {
         + `&format=json&crs=EPSG:4326&size=1&geometry=true&geomFilter=POINT(${lng} ${lat})`, cb);
 }
 
-// 동의 경계를 지도에 그린다 (검색·마커 hover·클릭 시).
-// hover=true면 hover 미리보기용(dongHoverFor로 늦은 응답 판정), 아니면 고정용(dongBoundaryFor)
+// 동의 경계를 지도에 그린다. hover=true면 점선 미리보기, 아니면 실선 고정.
+// 두 종류는 독립적으로 공존한다 (선택한 동은 실선, 다른 동에 마우스 올리면 점선).
 function drawDongBoundary(lng, lat, name, hover) {
-    clearDongBoundary();
+    if (hover) clearDongHover(); else clearDongBoundary();
     if (!window.VWORLD_KEY) return;
     vworldDongBoundary(lng, lat, (resp) => {
         const feats = resp && resp.response && resp.response.status === 'OK'
             ? (resp.response.result.featureCollection.features || []) : [];
         if (!feats.length) return;
-        const f = feats[0];
         // 다른 동으로 넘어가는 사이 응답이 늦게 오면 무시
-        const cur = hover ? state.dongHoverFor : state.dongBoundaryFor;
-        if (cur !== name) return;
-        const rings = f.geometry.type === 'MultiPolygon'
-            ? f.geometry.coordinates.flatMap(poly => poly)   // 외곽+내부 링
-            : f.geometry.coordinates;
+        if ((hover ? state.dongHoverFor : state.dongBoundaryFor) !== name) return;
+        const g = feats[0].geometry;
+        const rings = g.type === 'MultiPolygon' ? g.coordinates.flatMap(p => p) : g.coordinates;
+        const bucket = hover ? state.dongHoverBoundary : state.dongBoundary;
         rings.forEach(ring => {
             const path = ring.map(p => new kakao.maps.LatLng(p[1], p[0]));
             const poly = new kakao.maps.Polygon({
-                path, strokeWeight: 3, strokeColor: '#e11d48', strokeOpacity: 0.9,
-                strokeStyle: 'solid', fillColor: '#e11d48', fillOpacity: 0.06, zIndex: 20
+                path, strokeWeight: hover ? 2 : 3, strokeColor: '#e11d48',
+                strokeOpacity: hover ? 0.8 : 0.9,
+                strokeStyle: hover ? 'shortdash' : 'solid',
+                fillColor: '#e11d48', fillOpacity: hover ? 0.03 : 0.06,
+                zIndex: hover ? 19 : 20
             });
             poly.setMap(state.map);
-            state.dongBoundary.push(poly);
+            bucket.push(poly);
         });
     });
 }
@@ -2017,6 +2022,11 @@ function drawDongBoundary(lng, lat, name, hover) {
 function clearDongBoundary() {
     state.dongBoundary.forEach(o => o.setMap(null));
     state.dongBoundary = [];
+}
+
+function clearDongHover() {
+    state.dongHoverBoundary.forEach(o => o.setMap(null));
+    state.dongHoverBoundary = [];
 }
 
 // 토지이용계획 속성: PNU → 용도지역지구명목록 (토지이용계획확인서 항목)
@@ -2261,7 +2271,7 @@ function rvPosVisible(pos) {
 let searchTimer = null;
 
 function handleSearch(q) {
-    const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); state.dongBoundaryFor = null; clearDongBoundary(); return; }
+    const resEl = document.getElementById('search-results'); if (!q) { resEl.classList.add('hidden'); state.dongBoundaryFor = null; state.dongHoverFor = null; clearDongBoundary(); clearDongHover(); return; }
     const qLower = q.toLowerCase();
     const results = state.searchIndex
         .filter(i => (i.n && i.n.toLowerCase().includes(qLower)) || (i.a && i.a.toLowerCase().includes(qLower)))
