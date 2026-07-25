@@ -987,6 +987,17 @@ function markerPyeong(item) {
     return t ? Math.round(basisArea(item, statsOf(item)[t].rep_area) * 0.3025) : 0;
 }
 
+// 지역 요약 마커용 평당가 라벨 (전용면적 기준, 만원/평).
+// 예: 홍익동 → '3,940만/평'. ㎡ 모드에서는 만원/㎡.
+function perPyeongLabel(stats) {
+    if (!stats.rep_area || stats.rep_area <= 0) return formatPrice(stats.rep_avg_price);
+    const perM2 = stats.rep_avg_price / stats.rep_area;              // 만원/㎡
+    if (state.displayUnit === 'pyeong') {
+        return `${nf(Math.round(perM2 / 0.3025))}만/평`;
+    }
+    return `${nf(Math.round(perM2))}만/㎡`;
+}
+
 function createOverlayContent(item, level, groupCount = 1) {
     const isSelected = state.selectedComplex && state.selectedComplex.name === item.name && state.selectedComplex.address === item.address;
     const div = document.createElement('div');
@@ -1006,7 +1017,13 @@ function createOverlayContent(item, level, groupCount = 1) {
             label = '거래없음';
             subLabel = '';
         }
-    } else { label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name; subLabel = stats ? `${nf(basisDisplay(item, stats.rep_area))}${state.displayUnit === 'pyeong' ? '평' : '㎡'} ${formatPrice(stats.rep_avg_price)}` : "내역없음"; }
+    } else {
+        // 시도·구·동 요약(레벨1~3): 대표 평·총액 대신 평당가로 표시.
+        // (개별 단지가 아니라 지역 집계라 총액보다 평단가가 비교에 유용하다)
+        // 평당가는 전용면적 기준 — 시세 그래프의 평당가 모드와 동일한 기준
+        label = (level === 2) ? (item.name.split(' ')[1] || item.name) : item.name;
+        subLabel = stats ? perPyeongLabel(stats) : "내역없음";
+    }
     
     const noDeal = level === 4 && !stats;
     if (noDeal) themeColor = '#9ca3af';
