@@ -119,10 +119,23 @@ class DataManager:
                 df = self.parser.parse_file(f)
                 if df.empty: continue
                 
+                # 주소 → (대표 단지명, 시군구): 지번 지오코딩 실패 시 아파트 단지명 키워드로 폴백
+                addr_hint = {}
+                for addr, g in df.groupby('__address'):
+                    row = g.iloc[0]
+                    region = f"{row.get('__sido', '')} {row.get('__gungu', '')}".strip()
+                    addr_hint[addr] = (row['__name'], region)
+
                 unique_addrs = df['__address'].unique()
                 print(f"    - 주소 확인 중 ({len(df)}건 / 유니크 {len(unique_addrs)}건)...")
-                addr_map = {addr: self.geo.get_coords(addr) for addr in unique_addrs}
-                
+                # 단지명 키워드 폴백은 아파트에만 적용 (단독·연립은 단지명이 위치 힌트가 안 됨)
+                addr_type = df.groupby('__address')['__h_type'].first().to_dict()
+                addr_map = {}
+                for addr in unique_addrs:
+                    name, region = addr_hint.get(addr, (None, None))
+                    place = name if addr_type.get(addr) == 'apt' else None
+                    addr_map[addr] = self.geo.get_coords(addr, place=place, region=region)
+
                 df['__coords'] = df['__address'].map(addr_map)
                 df = df.dropna(subset=['__coords'])
 

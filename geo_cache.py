@@ -41,7 +41,9 @@ class GeoCache:
         with open(self.cache_path, "w", encoding="utf-8") as f:
             json.dump(self.raw_cache, f, ensure_ascii=False, indent=2)
 
-    def get_coords(self, address):
+    def get_coords(self, address, place=None, region=None):
+        """place: 지번 지오코딩이 실패했을 때 키워드로 위치를 찾을 단지명(아파트 등).
+        region: 키워드 검색 결과가 엉뚱한 지역으로 튀지 않게 검증할 '시군구'."""
         if not address: return None
 
         # 1. 캐시 확인
@@ -59,6 +61,15 @@ class GeoCache:
         coords = self._fetch_api(address)
         if coords:
             return coords
+
+        # 2.5. 단지명 키워드 폴백 — 지번이 카카오 DB에 없는 신축 등에서,
+        #      '자양동 863'(존재하지 않는 지번)이 동 중심으로 잘못 찍히는 것을 막는다.
+        #      키워드 결과 주소가 요청한 시군구와 같을 때만 채택(엉뚱한 지역 방지).
+        if place:
+            coords = self._fetch_keyword(place, region or (parts[0] if parts else ""))
+            if coords:
+                self._store(str(address).strip(), coords)
+                return coords
 
         # 3. 폴백 사다리 — 카카오 DB에 없는 지번(특수지번 등)이나 일시 실패로
         #    매물이 통째로 드랍되는 것을 방지. 정확도는 낮아져도 위치는 유지한다.
@@ -84,6 +95,24 @@ class GeoCache:
         """폴백으로 얻은 좌표를 원래 주소 키로 캐시 (다음 실행부터 즉시 히트)"""
         self.raw_cache[address] = coords
         self.full_cache[address.replace(" ", "")] = coords
+
+    def _fetch_keyword(self, place, region):
+        """장소명(단지명) 키워드 검색 → 좌표. region(시군구)이 결과 주소에 포함될 때만 채택."""
+        url = "https://dapi.kakao.com/v2/local/search/keyword.json"
+        headers = {"Authorization": f"KakaoAK {self.api_key}"}
+        gu = str(region or "").split()[-1] if region else ""
+        query = f"{gu} {place}".strip()
+        try:
+            r = requests.get(url, headers=headers, params={"query": query, "size": 5}, timeout=5)
+            r.raise_for_status()
+            for d in r.json().get("documents", []):
+                addr = d.get("address_name", "") or d.get("road_address_name", "")
+                if gu and gu not in addr:
+                    continue     # 다른 지역 결과 배제
+                return [float(d["x"]), float(d["y"])]
+        except Exception as e:
+            print(f"      (!) 키워드 오류 ({query}): {e}")
+        return None
 
     def _fetch_api(self, address):
         url = "https://dapi.kakao.com/v2/local/search/address.json"
