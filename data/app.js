@@ -995,15 +995,21 @@ function markerPyeong(item) {
     return t ? Math.round(basisArea(item, statsOf(item)[t].rep_area) * 0.3025) : 0;
 }
 
-// 지역 요약 마커용 평당가 라벨 (전용면적 기준, 만원/평).
-// 예: 홍익동 → '3,940만/평'. ㎡ 모드에서는 만원/㎡.
+// 지역 요약 마커용 평당가 라벨.
+// stats.ppy = 전 거래 가중평균 평당가(전용 만원/평) — 대표평형 하나만 쓰던 왜곡을 없앰.
+// 표시는 '공급면적 기준'으로 환산(전용률 중앙값 약 0.75)해 마커의 공급평 표기와 일관되게 한다.
+const SUPPLY_RATIO = 0.75;   // 공급 평당가 ≈ 전용 평당가 × 전용률
+
 function perPyeongLabel(stats) {
-    if (!stats.rep_area || stats.rep_area <= 0) return formatPrice(stats.rep_avg_price);
-    const perM2 = stats.rep_avg_price / stats.rep_area;              // 만원/㎡
+    // ppy(가중평균)가 있으면 우선, 없으면 대표평형으로 폴백
+    let perPyExcl = stats.ppy;
+    if (!perPyExcl && stats.rep_area > 0) perPyExcl = stats.rep_avg_price / (stats.rep_area * 0.3025);
+    if (!perPyExcl) return formatPrice(stats.rep_avg_price);
+    const perPySupply = perPyExcl * SUPPLY_RATIO;   // 공급 기준
     if (state.displayUnit === 'pyeong') {
-        return `${nf(Math.round(perM2 / 0.3025))}만/평`;
+        return `${nf(Math.round(perPySupply))}만/평`;
     }
-    return `${nf(Math.round(perM2))}만/㎡`;
+    return `${nf(Math.round(perPySupply / 0.3025))}만/㎡`;
 }
 
 function createOverlayContent(item, level, groupCount = 1) {
@@ -2316,6 +2322,15 @@ function goToAddress(lat, lng, label) {
     div.onclick = (ev) => { markOverlayClick(ev); if (state.searchPin) { state.searchPin.setMap(null); state.searchPin = null; } };
     state.searchPin = new kakao.maps.CustomOverlay({ position: pos, content: div, yAnchor: 1.0, zIndex: 1800 });
     state.searchPin.setMap(state.map);
+    // 주소가 '동' 단위면(지번 없이 …동/가/리로 끝남) 그 법정동 경계도 함께 표시
+    const last = label.trim().split(' ').pop();
+    if (/(동|가|리)$/.test(last) && !/\d/.test(last)) {
+        state.dongBoundaryFor = label;
+        drawDongBoundary(lng, lat, label);
+    } else {
+        state.dongBoundaryFor = null;
+        clearDongBoundary();
+    }
     updateMap(true);
 }
 

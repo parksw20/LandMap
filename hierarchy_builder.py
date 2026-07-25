@@ -18,18 +18,26 @@ class HierarchyBuilder:
         valid_area_df = sub_df[sub_df['__area'] > 0].copy()
         rep_area = 0
         avg_price = 0
+        ppy = 0
         if not valid_area_df.empty:
             valid_area_df['_rounded_area'] = valid_area_df['__area'].round(1)
             modes = valid_area_df['_rounded_area'].mode()
             if not modes.empty:
                 rep_area = float(modes[0])
                 avg_price = int(valid_area_df[valid_area_df['_rounded_area'] == rep_area]['__price'].mean())
+            # 지역 요약 마커용 평당가: 대표 평형 하나가 아니라 전 거래의 가중평균(전용 만원/평).
+            #   Σ가격 / Σ(전용면적×0.3025). 대표평형 편중을 없앤다.
+            tot_price = float(valid_area_df['__price'].sum())
+            tot_pyeong = float((valid_area_df['__area'] * 0.3025).sum())
+            if tot_pyeong > 0:
+                ppy = int(round(tot_price / tot_pyeong))
 
         return {
             "count": len(sub_df),
             "range": get_range(sub_df),
             "rep_area": rep_area,
-            "rep_avg_price": avg_price
+            "rep_avg_price": avg_price,
+            "ppy": ppy   # 전용면적 기준 가중평균 평당가(만원/평)
         }
 
     def _get_stats(self, df):
