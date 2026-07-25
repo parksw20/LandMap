@@ -3,7 +3,7 @@
     "name": "엘리시아",
     "address": "수원시 팔달구 고등동 116",
     "coords": [127.004286668649, 37.2700299013128],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 22.7, "rep_avg_price": 15000}, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 22.7, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 22.7, "rep_avg_price": 15000, "ppy": 2183}, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 22.7, "rep_avg_price": 1000, "ppy": 146}},
     "deals": [
       {"type": "매매", "price": 15000, "rent": 0, "area": 22.72, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고등동 116", "by": 2020},
       {"type": "월세", "price": 1000, "rent": 70, "area": 22.72, "land": 0.0, "floor": "13", "dong": "", "date": "2026-04-25", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고등동 116", "by": 2020}
@@ -13,7 +13,7 @@
     "name": "루체스타",
     "address": "수원시 팔달구 고등동 305-10",
     "coords": [127.002949646487, 37.2704910049651],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [9680, 9680], "rep_area": 14.9, "rep_avg_price": 9680}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [9680, 9680], "rep_area": 14.9, "rep_avg_price": 9680, "ppy": 2149}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 9680, "rent": 0, "area": 14.89, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고등동 305-10", "by": 2020},
       {"type": "전세", "price": 9680, "rent": 0, "area": 14.89, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고등동 305-10", "by": 2020}
@@ -23,7 +23,7 @@
     "name": "수원역푸르지오자이",
     "address": "수원시 팔달구 고등동 310",
     "coords": [126.998889616835, 37.2749827250855],
-    "stats": {"total": 39, "sale": {"count": 22, "range": [57000, 88000], "rep_area": 75.0, "rep_avg_price": 77390}, "jeonse": {"count": 10, "range": [42000, 56000], "rep_area": 75.0, "rep_avg_price": 44800}, "monthly": {"count": 7, "range": [5000, 30000], "rep_area": 75.0, "rep_avg_price": 13333}},
+    "stats": {"total": 39, "sale": {"count": 22, "range": [57000, 88000], "rep_area": 75.0, "rep_avg_price": 77390, "ppy": 3346}, "jeonse": {"count": 10, "range": [42000, 56000], "rep_area": 75.0, "rep_avg_price": 44800, "ppy": 1966}, "monthly": {"count": 7, "range": [5000, 30000], "rep_area": 75.0, "rep_avg_price": 13333, "ppy": 597}},
     "deals": [
       {"type": "매매", "price": 78500, "rent": 0, "area": 74.99, "land": 0.0, "floor": "5", "dong": "107동", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고등동 310", "by": 2021},
       {"type": "매매", "price": 87000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "14", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고등동 310", "by": 2021},
@@ -70,7 +70,7 @@
     "name": "수원역푸르지오더스마트",
     "address": "수원시 팔달구 고등동 321",
     "coords": [126.997844114052, 37.2733030808345],
-    "stats": {"total": 65, "sale": null, "jeonse": null, "monthly": {"count": 65, "range": [12000, 20500], "rep_area": 80.0, "rep_avg_price": 18677}},
+    "stats": {"total": 65, "sale": null, "jeonse": null, "monthly": {"count": 65, "range": [12000, 20500], "rep_area": 80.0, "rep_avg_price": 18677, "ppy": 779}},
     "deals": [
       {"type": "월세", "price": 19000, "rent": 36, "area": 79.9396, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-20", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "고등동 321", "by": 2022},
       {"type": "월세", "price": 20500, "rent": 44, "area": 79.9947, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-28", "period": "26.06~28.06", "renew": "갱신", "p_dep": 20500, "p_rent": 41, "jibun": "고등동 321", "by": 2022},
@@ -143,7 +143,7 @@
     "name": "풍림아이원",
     "address": "수원시 팔달구 교동 185-7",
     "coords": [127.012300932137, 37.2701989158256],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 66.6, "rep_avg_price": 38000}, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 56.4, "rep_avg_price": 25000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 66.6, "rep_avg_price": 38000, "ppy": 1888}, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 56.4, "rep_avg_price": 25000, "ppy": 1465}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 38000, "rent": 0, "area": 66.55, "land": 0.0, "floor": "1", "dong": "풍림아이원아파트", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "교동 185-7", "by": 2005},
       {"type": "전세", "price": 25000, "rent": 0, "area": 56.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-14", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "교동 185-7", "by": 2005}
@@ -153,7 +153,7 @@
     "name": "연향예스빌",
     "address": "수원시 팔달구 매교동 142-1",
     "coords": [127.017166267511, 37.269921510458],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 59.3, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 59.3, "rep_avg_price": 29000, "ppy": 1616}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 29000, "rent": 0, "area": 59.332, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 142-1", "by": 2004}
     ]
@@ -162,7 +162,7 @@
     "name": "문화맨션",
     "address": "수원시 팔달구 매교동 158-6",
     "coords": [127.015944156516, 37.2674399428941],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [34750, 34750], "rep_area": 72.3, "rep_avg_price": 34750}, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 64.1, "rep_avg_price": 20000}, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 64.1, "rep_avg_price": 4000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [34750, 34750], "rep_area": 72.3, "rep_avg_price": 34750, "ppy": 1588}, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 64.1, "rep_avg_price": 20000, "ppy": 1031}, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 64.1, "rep_avg_price": 4000, "ppy": 206}},
     "deals": [
       {"type": "매매", "price": 34750, "rent": 0, "area": 72.33, "land": 0.0, "floor": "12", "dong": "2", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 158-6", "by": 1979},
       {"type": "전세", "price": 20000, "rent": 0, "area": 64.1, "land": 0.0, "floor": "11", "dong": "", "date": "2026-04-18", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "매교동 158-6", "by": 1979},
@@ -173,7 +173,7 @@
     "name": "만강",
     "address": "수원시 팔달구 매교동 24-6",
     "coords": [127.016019117515, 37.2705778995491],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [34700, 34700], "rep_area": 69.4, "rep_avg_price": 34700}, "jeonse": {"count": 1, "range": [29500, 29500], "rep_area": 69.4, "rep_avg_price": 29500}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [34700, 34700], "rep_area": 69.4, "rep_avg_price": 34700, "ppy": 1652}, "jeonse": {"count": 1, "range": [29500, 29500], "rep_area": 69.4, "rep_avg_price": 29500, "ppy": 1405}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 34700, "rent": 0, "area": 69.42, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 24-6", "by": 2021},
       {"type": "전세", "price": 29500, "rent": 0, "area": 69.42, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-10", "period": "26.07~30.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "매교동 24-6", "by": 2021}
@@ -183,7 +183,7 @@
     "name": "힐스테이트푸르지오수원",
     "address": "수원시 팔달구 매교동 292",
     "coords": [127.011748868131, 37.2683330954442],
-    "stats": {"total": 52, "sale": {"count": 30, "range": [42700, 89000], "rep_area": 60.0, "rep_avg_price": 69261}, "jeonse": {"count": 19, "range": [25500, 58000], "rep_area": 43.5, "rep_avg_price": 30760}, "monthly": {"count": 3, "range": [5000, 40000], "rep_area": 59.9, "rep_avg_price": 22500}},
+    "stats": {"total": 52, "sale": {"count": 30, "range": [42700, 89000], "rep_area": 60.0, "rep_avg_price": 69261, "ppy": 3621}, "jeonse": {"count": 19, "range": [25500, 58000], "rep_area": 43.5, "rep_avg_price": 30760, "ppy": 2266}, "monthly": {"count": 3, "range": [5000, 40000], "rep_area": 59.9, "rep_avg_price": 22500, "ppy": 1169}},
     "deals": [
       {"type": "매매", "price": 43300, "rent": 0, "area": 43.46, "land": 0.0, "floor": "9", "dong": "208", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 292", "by": 2023},
       {"type": "매매", "price": 73200, "rent": 0, "area": 59.88, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 292", "by": 2023},
@@ -243,7 +243,7 @@
     "name": "매교역푸르지오SKVIEW",
     "address": "수원시 팔달구 매교동 300",
     "coords": [127.020431211637, 37.2677361467862],
-    "stats": {"total": 54, "sale": {"count": 36, "range": [70200, 109500], "rep_area": 59.9, "rep_avg_price": 80376}, "jeonse": {"count": 12, "range": [27709, 60000], "rep_area": 59.9, "rep_avg_price": 45600}, "monthly": {"count": 6, "range": [3000, 30000], "rep_area": 59.9, "rep_avg_price": 15250}},
+    "stats": {"total": 54, "sale": {"count": 36, "range": [70200, 109500], "rep_area": 59.9, "rep_avg_price": 80376, "ppy": 4174}, "jeonse": {"count": 12, "range": [27709, 60000], "rep_area": 59.9, "rep_avg_price": 45600, "ppy": 2391}, "monthly": {"count": 6, "range": [3000, 30000], "rep_area": 59.9, "rep_avg_price": 15250, "ppy": 817}},
     "deals": [
       {"type": "매매", "price": 80000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "13", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 300", "by": 2023},
       {"type": "매매", "price": 105000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "14", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매교동 300", "by": 2023},
@@ -305,7 +305,7 @@
     "name": "동은",
     "address": "수원시 팔달구 매산로2가 11-2",
     "coords": [127.00531148374, 37.269534377165],
-    "stats": {"total": 3, "sale": {"count": 3, "range": [25000, 29000], "rep_area": 73.4, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [25000, 29000], "rep_area": 73.4, "rep_avg_price": 29000, "ppy": 1227}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 25000, "rent": 0, "area": 76.6555, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매산로2가 11-2", "by": 2007},
       {"type": "매매", "price": 29000, "rent": 0, "area": 73.4455, "land": 0.0, "floor": "9", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매산로2가 11-2", "by": 2007},
@@ -316,7 +316,7 @@
     "name": "대한대우",
     "address": "수원시 팔달구 매산로2가 90",
     "coords": [127.004554070442, 37.2658077907236],
-    "stats": {"total": 16, "sale": {"count": 8, "range": [53000, 80000], "rep_area": 85.0, "rep_avg_price": 60575}, "jeonse": {"count": 4, "range": [29000, 45000], "rep_area": 85.0, "rep_avg_price": 33500}, "monthly": {"count": 4, "range": [2000, 5000], "rep_area": 85.0, "rep_avg_price": 4250}},
+    "stats": {"total": 16, "sale": {"count": 8, "range": [53000, 80000], "rep_area": 85.0, "rep_avg_price": 60575, "ppy": 2102}, "jeonse": {"count": 4, "range": [29000, 45000], "rep_area": 85.0, "rep_avg_price": 33500, "ppy": 1278}, "monthly": {"count": 4, "range": [2000, 5000], "rep_area": 85.0, "rep_avg_price": 4250, "ppy": 165}},
     "deals": [
       {"type": "매매", "price": 80000, "rent": 0, "area": 154.11, "land": 0.0, "floor": "6", "dong": "117", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매산로2가 90", "by": 1999},
       {"type": "매매", "price": 70000, "rent": 0, "area": 134.94, "land": 0.0, "floor": "3", "dong": "109", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매산로2가 90", "by": 1999},
@@ -340,7 +340,7 @@
     "name": "우주그린",
     "address": "수원시 팔달구 매산로3가 16-24",
     "coords": [127.009721710049, 37.271430608631],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [25700, 25700], "rep_area": 76.5, "rep_avg_price": 25700}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25700, 25700], "rep_area": 76.5, "rep_avg_price": 25700, "ppy": 1111}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 25700, "rent": 0, "area": 76.5, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매산로3가 16-24", "by": 2006}
     ]
@@ -349,7 +349,7 @@
     "name": "KCC파크타운",
     "address": "수원시 팔달구 매산로3가 32-1",
     "coords": [127.009328171036, 37.2700911525389],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [38800, 38800], "rep_area": 84.9, "rep_avg_price": 38800}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38800, 38800], "rep_area": 84.9, "rep_avg_price": 38800, "ppy": 1511}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 38800, "rent": 0, "area": 84.87, "land": 0.0, "floor": "14", "dong": "101", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "매산로3가 32-1", "by": 2005}
     ]
@@ -358,7 +358,7 @@
     "name": "한일베라체에코플러스",
     "address": "수원시 팔달구 우만동 139-18",
     "coords": [127.038567193943, 37.2769401752133],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [53500, 58000], "rep_area": 70.0, "rep_avg_price": 53500}, "jeonse": {"count": 3, "range": [43000, 48000], "rep_area": 81.9, "rep_avg_price": 48000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [53500, 58000], "rep_area": 70.0, "rep_avg_price": 53500, "ppy": 2427}, "jeonse": {"count": 3, "range": [43000, 48000], "rep_area": 81.9, "rep_avg_price": 48000, "ppy": 1965}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 58000, "rent": 0, "area": 81.9006, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 139-18", "by": 2022},
       {"type": "매매", "price": 53500, "rent": 0, "area": 69.9878, "land": 0.0, "floor": "14", "dong": "101동", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 139-18", "by": 2022},
@@ -371,7 +371,7 @@
     "name": "우만주공1단지",
     "address": "수원시 팔달구 우만동 28",
     "coords": [127.038484145454, 37.281914752671],
-    "stats": {"total": 9, "sale": {"count": 3, "range": [35500, 43500], "rep_area": 38.5, "rep_avg_price": 35750}, "jeonse": {"count": 3, "range": [12000, 17000], "rep_area": 38.5, "rep_avg_price": 13000}, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 38.5, "rep_avg_price": 1000}},
+    "stats": {"total": 9, "sale": {"count": 3, "range": [35500, 43500], "rep_area": 38.5, "rep_avg_price": 35750, "ppy": 3059}, "jeonse": {"count": 3, "range": [12000, 17000], "rep_area": 38.5, "rep_avg_price": 13000, "ppy": 1144}, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 38.5, "rep_avg_price": 1000, "ppy": 80}},
     "deals": [
       {"type": "매매", "price": 35500, "rent": 0, "area": 38.52, "land": 0.0, "floor": "5", "dong": "102", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 28", "by": 1988},
       {"type": "매매", "price": 36000, "rent": 0, "area": 38.52, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 28", "by": 1988},
@@ -388,7 +388,7 @@
     "name": "우만주공2단지",
     "address": "수원시 팔달구 우만동 28",
     "coords": [127.038484145454, 37.281914752671],
-    "stats": {"total": 23, "sale": {"count": 11, "range": [29400, 55500], "rep_area": 49.9, "rep_avg_price": 42250}, "jeonse": {"count": 5, "range": [15750, 24150], "rep_area": 58.0, "rep_avg_price": 19412}, "monthly": {"count": 7, "range": [500, 5000], "rep_area": 49.9, "rep_avg_price": 3000}},
+    "stats": {"total": 23, "sale": {"count": 11, "range": [29400, 55500], "rep_area": 49.9, "rep_avg_price": 42250, "ppy": 2922}, "jeonse": {"count": 5, "range": [15750, 24150], "rep_area": 58.0, "rep_avg_price": 19412, "ppy": 1162}, "monthly": {"count": 7, "range": [500, 5000], "rep_area": 49.9, "rep_avg_price": 3000, "ppy": 145}},
     "deals": [
       {"type": "매매", "price": 45300, "rent": 0, "area": 49.94, "land": 0.0, "floor": "14", "dong": "202", "date": "2026-04-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 28", "by": 1989},
       {"type": "매매", "price": 29400, "rent": 0, "area": 49.94, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 28", "by": 1989},
@@ -419,7 +419,7 @@
     "name": "우만주공4단지",
     "address": "수원시 팔달구 우만동 300",
     "coords": [127.030655578128, 37.2912877511636],
-    "stats": {"total": 33, "sale": {"count": 13, "range": [29100, 50000], "rep_area": 36.2, "rep_avg_price": 30920}, "jeonse": {"count": 12, "range": [14000, 25000], "rep_area": 49.9, "rep_avg_price": 22714}, "monthly": {"count": 8, "range": [1000, 2000], "rep_area": 49.9, "rep_avg_price": 1666}},
+    "stats": {"total": 33, "sale": {"count": 13, "range": [29100, 50000], "rep_area": 36.2, "rep_avg_price": 30920, "ppy": 2824}, "jeonse": {"count": 12, "range": [14000, 25000], "rep_area": 49.9, "rep_avg_price": 22714, "ppy": 1446}, "monthly": {"count": 8, "range": [1000, 2000], "rep_area": 49.9, "rep_avg_price": 1666, "ppy": 107}},
     "deals": [
       {"type": "매매", "price": 34800, "rent": 0, "area": 41.3, "land": 0.0, "floor": "2", "dong": "407", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 300", "by": 1992},
       {"type": "매매", "price": 30500, "rent": 0, "area": 36.16, "land": 0.0, "floor": "13", "dong": "408", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 300", "by": 1992},
@@ -460,7 +460,7 @@
     "name": "우만주공3단지",
     "address": "수원시 팔달구 우만동 301",
     "coords": [127.034913510941, 37.2921435489454],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [262, 636], "rep_area": 26.4, "rep_avg_price": 449}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [262, 636], "rep_area": 26.4, "rep_avg_price": 449, "ppy": 56}},
     "deals": [
       {"type": "월세", "price": 636, "rent": 9, "area": 26.37, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-29", "period": "26.04~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우만동 301", "by": 1992},
       {"type": "월세", "price": 262, "rent": 5, "area": 26.37, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-20", "period": "26.04~27.03", "renew": "갱신", "p_dep": 250, "p_rent": 5, "jibun": "우만동 301", "by": 1992}
@@ -470,7 +470,7 @@
     "name": "풍림",
     "address": "수원시 팔달구 우만동 496",
     "coords": [127.031164044981, 37.2873571993338],
-    "stats": {"total": 12, "sale": {"count": 3, "range": [41000, 43900], "rep_area": 39.6, "rep_avg_price": 41966}, "jeonse": {"count": 4, "range": [9345, 15500], "rep_area": 39.6, "rep_avg_price": 11115}, "monthly": {"count": 5, "range": [500, 12000], "rep_area": 39.6, "rep_avg_price": 3500}},
+    "stats": {"total": 12, "sale": {"count": 3, "range": [41000, 43900], "rep_area": 39.6, "rep_avg_price": 41966, "ppy": 3503}, "jeonse": {"count": 4, "range": [9345, 15500], "rep_area": 39.6, "rep_avg_price": 11115, "ppy": 958}, "monthly": {"count": 5, "range": [500, 12000], "rep_area": 39.6, "rep_avg_price": 3500, "ppy": 238}},
     "deals": [
       {"type": "매매", "price": 43900, "rent": 0, "area": 39.6, "land": 0.0, "floor": "1", "dong": "4", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 496", "by": 1987},
       {"type": "매매", "price": 41000, "rent": 0, "area": 39.6, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 496", "by": 1987},
@@ -490,7 +490,7 @@
     "name": "신미주",
     "address": "수원시 팔달구 우만동 517",
     "coords": [127.033079399905, 37.2862038006034],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [20500, 20500], "rep_area": 43.5, "rep_avg_price": 20500}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 61.4, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [20500, 20500], "rep_area": 43.5, "rep_avg_price": 20500, "ppy": 1559}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 61.4, "rep_avg_price": 1000, "ppy": 54}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 70, "area": 61.38, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우만동 517", "by": 1989},
       {"type": "전세", "price": 20500, "rent": 0, "area": 43.47, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-01", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우만동 517", "by": 1989},
@@ -501,7 +501,7 @@
     "name": "한효",
     "address": "수원시 팔달구 우만동 526-12",
     "coords": [127.030733618523, 37.2832444297697],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [36800, 36800], "rep_area": 59.7, "rep_avg_price": 36800}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [36800, 36800], "rep_area": 59.7, "rep_avg_price": 36800, "ppy": 2037}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 36800, "rent": 0, "area": 59.71, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 526-12", "by": 1996}
     ]
@@ -510,7 +510,7 @@
     "name": "동도센트리움",
     "address": "수원시 팔달구 우만동 533-1",
     "coords": [127.035754003966, 37.2839564626371],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 84.9, "rep_avg_price": 38000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 84.9, "rep_avg_price": 38000, "ppy": 1479}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 38000, "rent": 0, "area": 84.922, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-13", "period": "26.04~28.04", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "우만동 533-1", "by": 2007}
     ]
@@ -519,7 +519,7 @@
     "name": "월드메르디앙",
     "address": "수원시 팔달구 우만동 600",
     "coords": [127.034864848994, 37.2807812850766],
-    "stats": {"total": 20, "sale": {"count": 11, "range": [45500, 76800], "rep_area": 84.2, "rep_avg_price": 69625}, "jeonse": {"count": 5, "range": [40950, 61000], "rep_area": 84.2, "rep_avg_price": 45475}, "monthly": {"count": 4, "range": [10000, 45000], "rep_area": 84.2, "rep_avg_price": 10000}},
+    "stats": {"total": 20, "sale": {"count": 11, "range": [45500, 76800], "rep_area": 84.2, "rep_avg_price": 69625, "ppy": 2374}, "jeonse": {"count": 5, "range": [40950, 61000], "rep_area": 84.2, "rep_avg_price": 45475, "ppy": 1463}, "monthly": {"count": 4, "range": [10000, 45000], "rep_area": 84.2, "rep_avg_price": 10000, "ppy": 515}},
     "deals": [
       {"type": "매매", "price": 76800, "rent": 0, "area": 122.345, "land": 0.0, "floor": "15", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 600", "by": 2004},
       {"type": "매매", "price": 70000, "rent": 0, "area": 84.237, "land": 0.0, "floor": "28", "dong": "110", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 600", "by": 2004},
@@ -547,7 +547,7 @@
     "name": "동수원신도브래뉴",
     "address": "수원시 팔달구 우만동 606",
     "coords": [127.036525039845, 37.2784761050224],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [31500, 31500], "rep_area": 84.7, "rep_avg_price": 31500}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [31500, 31500], "rep_area": 84.7, "rep_avg_price": 31500, "ppy": 1229}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 31500, "rent": 0, "area": 84.7153, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-15", "period": "26.05~28.05", "renew": "갱신", "p_dep": 30000, "p_rent": 0, "jibun": "우만동 606", "by": 2007}
     ]
@@ -556,7 +556,7 @@
     "name": "수원광교양우내안애애플아파트",
     "address": "수원시 팔달구 우만동 607",
     "coords": [127.036825485781, 37.2792943363326],
-    "stats": {"total": 9, "sale": {"count": 1, "range": [6300, 6300], "rep_area": 14.8, "rep_avg_price": 6300}, "jeonse": null, "monthly": {"count": 8, "range": [500, 7500], "rep_area": 13.4, "rep_avg_price": 7500}},
+    "stats": {"total": 9, "sale": {"count": 1, "range": [6300, 6300], "rep_area": 14.8, "rep_avg_price": 6300, "ppy": 1402}, "jeonse": null, "monthly": {"count": 8, "range": [500, 7500], "rep_area": 13.4, "rep_avg_price": 7500, "ppy": 766}},
     "deals": [
       {"type": "매매", "price": 6300, "rent": 0, "area": 14.85, "land": 0.0, "floor": "11", "dong": "1", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 607", "by": 2013},
       {"type": "월세", "price": 7500, "rent": 10, "area": 13.39, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-30", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "우만동 607", "by": 2013},
@@ -573,7 +573,7 @@
     "name": "우만동삼성래미안",
     "address": "수원시 팔달구 우만동 76-7",
     "coords": [127.043282322516, 37.2764370262099],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [34000, 34500], "rep_area": 59.4, "rep_avg_price": 34250}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [34000, 34500], "rep_area": 59.4, "rep_avg_price": 34250, "ppy": 1906}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 34000, "rent": 0, "area": 59.4, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 76-7", "by": 1995},
       {"type": "매매", "price": 34500, "rent": 0, "area": 59.4, "land": 0.0, "floor": "6", "dong": "101", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 76-7", "by": 1995}
@@ -583,7 +583,7 @@
     "name": "선경",
     "address": "수원시 팔달구 우만동 98",
     "coords": [127.039988257525, 37.2765356773029],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [24500, 47000], "rep_area": 42.2, "rep_avg_price": 24500}, "jeonse": {"count": 3, "range": [18000, 26000], "rep_area": 59.3, "rep_avg_price": 26000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [24500, 47000], "rep_area": 42.2, "rep_avg_price": 24500, "ppy": 1859}, "jeonse": {"count": 3, "range": [18000, 26000], "rep_area": 59.3, "rep_avg_price": 26000, "ppy": 1438}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 24500, "rent": 0, "area": 42.24, "land": 0.0, "floor": "13", "dong": "102", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 98", "by": 1995},
       {"type": "매매", "price": 47000, "rent": 0, "area": 84.925, "land": 0.0, "floor": "15", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "우만동 98", "by": 1995},
@@ -596,7 +596,7 @@
     "name": "ELYSIA",
     "address": "수원시 팔달구 인계동 1019-6",
     "coords": [127.029062438702, 37.2673790619278],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 24.2, "rep_avg_price": 750}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 24.2, "rep_avg_price": 750, "ppy": 103}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 70, "area": 24.16, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-26", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1019-6", "by": 2018},
       {"type": "월세", "price": 1000, "rent": 70, "area": 24.16, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-10", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1019-6", "by": 2018}
@@ -606,7 +606,7 @@
     "name": "센트럴하임",
     "address": "수원시 팔달구 인계동 1022-3",
     "coords": [127.028933780329, 37.2670292189671],
-    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [1000, 13500], "rep_area": 14.7, "rep_avg_price": 13500}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [1000, 13500], "rep_area": 14.7, "rep_avg_price": 13500, "ppy": 2060}},
     "deals": [
       {"type": "월세", "price": 13500, "rent": 10, "area": 14.73, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1022-3", "by": 2021},
       {"type": "월세", "price": 1000, "rent": 67, "area": 18.57, "land": 0.0, "floor": "12", "dong": "", "date": "2026-04-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1022-3", "by": 2021},
@@ -618,7 +618,7 @@
     "name": "RAUM1",
     "address": "수원시 팔달구 인계동 1023-16",
     "coords": [127.02780805024, 37.2666727663205],
-    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [2000, 3400], "rep_area": 22.1, "rep_avg_price": 2333}},
+    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [2000, 3400], "rep_area": 22.1, "rep_avg_price": 2333, "ppy": 407}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 60, "area": 22.24, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-20", "period": "26.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1023-16", "by": 2021},
       {"type": "월세", "price": 3000, "rent": 60, "area": 22.24, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-20", "period": "26.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1023-16", "by": 2021},
@@ -632,7 +632,7 @@
     "name": "에코원",
     "address": "수원시 팔달구 인계동 1024-10",
     "coords": [127.027384676137, 37.2659497789682],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 16.1, "rep_avg_price": 500}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 16.1, "rep_avg_price": 500, "ppy": 103}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 42, "area": 16.0911, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1024-10", "by": 2011}
     ]
@@ -641,7 +641,7 @@
     "name": "SCT타워",
     "address": "수원시 팔달구 인계동 1030-6",
     "coords": [127.029450264864, 37.2641888273566],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2700, 2700], "rep_area": 22.5, "rep_avg_price": 2700}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [2700, 2700], "rep_area": 22.5, "rep_avg_price": 2700, "ppy": 397}},
     "deals": [
       {"type": "월세", "price": 2700, "rent": 63, "area": 22.51, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-23", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1030-6", "by": 2017}
     ]
@@ -650,7 +650,7 @@
     "name": "리블리안",
     "address": "수원시 팔달구 인계동 1034-11",
     "coords": [127.029569355106, 37.2666003462869],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [0, 0], "rep_area": 29.4, "rep_avg_price": 0}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [0, 0], "rep_area": 29.4, "rep_avg_price": 0, "ppy": 0}},
     "deals": [
       {"type": "월세", "price": 0, "rent": 70, "area": 29.38, "land": 0.0, "floor": "9", "dong": "", "date": "2026-04-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1034-11", "by": 2017},
       {"type": "월세", "price": 0, "rent": 75, "area": 29.38, "land": 0.0, "floor": "9", "dong": "", "date": "2026-04-30", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1034-11", "by": 2017}
@@ -660,7 +660,7 @@
     "name": "인계리치안",
     "address": "수원시 팔달구 인계동 1035-7",
     "coords": [127.030521150041, 37.2669957521578],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [9900, 9900], "rep_area": 17.2, "rep_avg_price": 9900}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.2, "rep_avg_price": 500}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [9900, 9900], "rep_area": 17.2, "rep_avg_price": 9900, "ppy": 1904}, "monthly": {"count": 1, "range": [500, 500], "rep_area": 17.2, "rep_avg_price": 500, "ppy": 96}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 60, "area": 17.19, "land": 0.0, "floor": "11", "dong": "", "date": "2026-04-24", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1035-7", "by": 2019},
       {"type": "전세", "price": 9900, "rent": 0, "area": 17.19, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-01", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1035-7", "by": 2019},
@@ -671,7 +671,7 @@
     "name": "센트럴시티아리스타",
     "address": "수원시 팔달구 인계동 1036-13",
     "coords": [127.03116820892, 37.26682573722],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12200, 12200], "rep_area": 19.8, "rep_avg_price": 12200}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12200, 12200], "rep_area": 19.8, "rep_avg_price": 12200, "ppy": 2041}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 12200, "rent": 0, "area": 19.76, "land": 0.0, "floor": "11", "dong": "", "date": "2026-04-29", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1036-13", "by": 2020}
     ]
@@ -680,7 +680,7 @@
     "name": "프리모하우스",
     "address": "수원시 팔달구 인계동 1040-7",
     "coords": [127.031010672983, 37.2656328893543],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 27.8, "rep_avg_price": 12000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 27.8, "rep_avg_price": 12000, "ppy": 1426}},
     "deals": [
       {"type": "월세", "price": 12000, "rent": 8, "area": 27.825, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "갱신", "p_dep": 12000, "p_rent": 5, "jibun": "인계동 1040-7", "by": 2018}
     ]
@@ -689,7 +689,7 @@
     "name": "무비하임",
     "address": "수원시 팔달구 인계동 1043",
     "coords": [127.030554157344, 37.264141963744],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [4000, 4000], "rep_area": 10.9, "rep_avg_price": 4000}, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 10.9, "rep_avg_price": 300}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [4000, 4000], "rep_area": 10.9, "rep_avg_price": 4000, "ppy": 1209}, "jeonse": null, "monthly": {"count": 1, "range": [300, 300], "rep_area": 10.9, "rep_avg_price": 300, "ppy": 91}},
     "deals": [
       {"type": "매매", "price": 4000, "rent": 0, "area": 10.938, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1043", "by": 2012},
       {"type": "월세", "price": 300, "rent": 30, "area": 10.938, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-13", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1043", "by": 2012}
@@ -699,7 +699,7 @@
     "name": "인계미루아파트",
     "address": "수원시 팔달구 인계동 1114-5",
     "coords": [127.034190846408, 37.2652540265805],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 15.0, "rep_avg_price": 750}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 15.0, "rep_avg_price": 750, "ppy": 165}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 45, "area": 15.02, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-23", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1114-5", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 40, "area": 15.02, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-04", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1114-5", "by": 2014}
@@ -709,7 +709,7 @@
     "name": "(1116-9)",
     "address": "수원시 팔달구 인계동 1116-9",
     "coords": [127.036169720877, 37.2649988942127],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 22.5, "rep_avg_price": 13000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 22.5, "rep_avg_price": 13000, "ppy": 1908}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 13000, "rent": 0, "area": 22.52, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.04~26.10", "renew": "갱신", "p_dep": 15000, "p_rent": 0, "jibun": "인계동 1116-9", "by": 2021}
     ]
@@ -718,7 +718,7 @@
     "name": "벽산그랜드코아",
     "address": "수원시 팔달구 인계동 1125-2",
     "coords": [127.031845921558, 37.2604774443382],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [31000, 31000], "rep_area": 88.6, "rep_avg_price": 31000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [31000, 31000], "rep_area": 88.6, "rep_avg_price": 31000, "ppy": 1157}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 31000, "rent": 0, "area": 88.61, "land": 0.0, "floor": "20", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1125-2", "by": 1995}
     ]
@@ -727,7 +727,7 @@
     "name": "한화꿈에그린파크",
     "address": "수원시 팔달구 인계동 1127-1",
     "coords": [127.034504452957, 37.2602469335381],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [84000, 84000], "rep_area": 142.8, "rep_avg_price": 84000}, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 134.8, "rep_avg_price": 15000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [84000, 84000], "rep_area": 142.8, "rep_avg_price": 84000, "ppy": 1944}, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 134.8, "rep_avg_price": 15000, "ppy": 368}},
     "deals": [
       {"type": "매매", "price": 84000, "rent": 0, "area": 142.85, "land": 0.0, "floor": "19", "dong": "102", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1127-1", "by": 2010},
       {"type": "월세", "price": 15000, "rent": 150, "area": 134.8, "land": 0.0, "floor": "20", "dong": "", "date": "2026-04-18", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1127-1", "by": 2010}
@@ -737,7 +737,7 @@
     "name": "수원시청역선경센트럴파크",
     "address": "수원시 팔달구 인계동 1131",
     "coords": [127.031608706073, 37.2598649790641],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [22000, 22000], "rep_area": 105.6, "rep_avg_price": 22000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [22000, 22000], "rep_area": 105.6, "rep_avg_price": 22000, "ppy": 689}},
     "deals": [
       {"type": "월세", "price": 22000, "rent": 60, "area": 105.575, "land": 0.0, "floor": "15", "dong": "", "date": "2026-04-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1131", "by": 1995}
     ]
@@ -746,7 +746,7 @@
     "name": "인계지음",
     "address": "수원시 팔달구 인계동 1132-1",
     "coords": [127.032421830914, 37.2588273885698],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.6, "rep_avg_price": 1000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 14.6, "rep_avg_price": 1000, "ppy": 227}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 39, "area": 14.5537, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-18", "period": "26.05~27.04", "renew": "갱신", "p_dep": 1000, "p_rent": 39, "jibun": "인계동 1132-1", "by": 2013}
     ]
@@ -755,7 +755,7 @@
     "name": "테라스더아델라움",
     "address": "수원시 팔달구 인계동 1132-18",
     "coords": [127.031442878567, 37.2587747613704],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [100, 1000], "rep_area": 15.9, "rep_avg_price": 1000}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [100, 1000], "rep_area": 15.9, "rep_avg_price": 1000, "ppy": 74}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 65, "area": 15.87, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-04", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1132-18", "by": 2020},
       {"type": "월세", "price": 100, "rent": 24, "area": 18.58, "land": 0.0, "floor": "8", "dong": "", "date": "2026-04-29", "period": "26.04~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1132-18", "by": 2020},
@@ -766,7 +766,7 @@
     "name": "인계희성연인",
     "address": "수원시 팔달구 인계동 1168",
     "coords": [127.028008241226, 37.2766229146307],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000, "ppy": 195}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 130, "area": 84.9487, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-29", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1168", "by": 2012}
     ]
@@ -775,7 +775,7 @@
     "name": "인계한양수자인",
     "address": "수원시 팔달구 인계동 1170",
     "coords": [127.025537797786, 37.2759840050667],
-    "stats": {"total": 7, "sale": {"count": 3, "range": [45000, 49900], "rep_area": 75.0, "rep_avg_price": 48950}, "jeonse": {"count": 1, "range": [32000, 32000], "rep_area": 60.0, "rep_avg_price": 32000}, "monthly": {"count": 3, "range": [3000, 15000], "rep_area": 59.9, "rep_avg_price": 5000}},
+    "stats": {"total": 7, "sale": {"count": 3, "range": [45000, 49900], "rep_area": 75.0, "rep_avg_price": 48950, "ppy": 2250}, "jeonse": {"count": 1, "range": [32000, 32000], "rep_area": 60.0, "rep_avg_price": 32000, "ppy": 1764}, "monthly": {"count": 3, "range": [3000, 15000], "rep_area": 59.9, "rep_avg_price": 5000, "ppy": 390}},
     "deals": [
       {"type": "매매", "price": 45000, "rent": 0, "area": 59.9455, "land": 0.0, "floor": "9", "dong": "101동", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1170", "by": 2019},
       {"type": "매매", "price": 49900, "rent": 0, "area": 74.9874, "land": 0.0, "floor": "10", "dong": "102동", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1170", "by": 2019},
@@ -790,7 +790,7 @@
     "name": "수원인계동동문굿모닝힐아파트",
     "address": "수원시 팔달구 인계동 1171",
     "coords": [127.038988043227, 37.2757202991906],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [56000, 64800], "rep_area": 63.5, "rep_avg_price": 56000}, "jeonse": {"count": 2, "range": [36700, 49000], "rep_area": 63.5, "rep_avg_price": 36700}, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 63.5, "rep_avg_price": 7000}},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [56000, 64800], "rep_area": 63.5, "rep_avg_price": 56000, "ppy": 2789}, "jeonse": {"count": 2, "range": [36700, 49000], "rep_area": 63.5, "rep_avg_price": 36700, "ppy": 1978}, "monthly": {"count": 1, "range": [7000, 7000], "rep_area": 63.5, "rep_avg_price": 7000, "ppy": 364}},
     "deals": [
       {"type": "매매", "price": 64800, "rent": 0, "area": 79.6844, "land": 0.0, "floor": "29", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1171", "by": 2020},
       {"type": "매매", "price": 56000, "rent": 0, "area": 63.5227, "land": 0.0, "floor": "25", "dong": "102", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1171", "by": 2020},
@@ -803,7 +803,7 @@
     "name": "수원센트럴아이파크자이",
     "address": "수원시 팔달구 인계동 1173",
     "coords": [127.021055563292, 37.2721543832596],
-    "stats": {"total": 56, "sale": {"count": 37, "range": [36500, 89000], "rep_area": 60.0, "rep_avg_price": 68090}, "jeonse": {"count": 10, "range": [26410, 58000], "rep_area": 60.0, "rep_avg_price": 41400}, "monthly": {"count": 9, "range": [2000, 30000], "rep_area": 39.8, "rep_avg_price": 2666}},
+    "stats": {"total": 56, "sale": {"count": 37, "range": [36500, 89000], "rep_area": 60.0, "rep_avg_price": 68090, "ppy": 3547}, "jeonse": {"count": 10, "range": [26410, 58000], "rep_area": 60.0, "rep_avg_price": 41400, "ppy": 2303}, "monthly": {"count": 9, "range": [2000, 30000], "rep_area": 39.8, "rep_avg_price": 2666, "ppy": 366}},
     "deals": [
       {"type": "매매", "price": 73500, "rent": 0, "area": 73.94, "land": 0.0, "floor": "10", "dong": "128", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1173", "by": 2024},
       {"type": "매매", "price": 70500, "rent": 0, "area": 59.99, "land": 0.0, "floor": "10", "dong": "108", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 1173", "by": 2024},
@@ -867,7 +867,7 @@
     "name": "선경2",
     "address": "수원시 팔달구 인계동 158-30",
     "coords": [127.037704558582, 37.2754651798944],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 59.3, "rep_avg_price": 28500}, "jeonse": null, "monthly": {"count": 3, "range": [1335, 2000], "rep_area": 59.3, "rep_avg_price": 1778}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [28500, 28500], "rep_area": 59.3, "rep_avg_price": 28500, "ppy": 1588}, "jeonse": null, "monthly": {"count": 3, "range": [1335, 2000], "rep_area": 59.3, "rep_avg_price": 1778, "ppy": 99}},
     "deals": [
       {"type": "매매", "price": 28500, "rent": 0, "area": 59.335, "land": 0.0, "floor": "9", "dong": "201", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 158-30", "by": 1994},
       {"type": "월세", "price": 2000, "rent": 90, "area": 59.335, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-27", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 158-30", "by": 1994},
@@ -879,7 +879,7 @@
     "name": "선경3",
     "address": "수원시 팔달구 인계동 159",
     "coords": [127.03590920454, 37.2752484071564],
-    "stats": {"total": 7, "sale": {"count": 4, "range": [31000, 47000], "rep_area": 59.3, "rep_avg_price": 33633}, "jeonse": {"count": 2, "range": [28500, 35000], "rep_area": 59.3, "rep_avg_price": 28500}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.3, "rep_avg_price": 5000}},
+    "stats": {"total": 7, "sale": {"count": 4, "range": [31000, 47000], "rep_area": 59.3, "rep_avg_price": 33633, "ppy": 1861}, "jeonse": {"count": 2, "range": [28500, 35000], "rep_area": 59.3, "rep_avg_price": 28500, "ppy": 1087}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.3, "rep_avg_price": 5000, "ppy": 279}},
     "deals": [
       {"type": "매매", "price": 47000, "rent": 0, "area": 84.79, "land": 0.0, "floor": "7", "dong": "304", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 159", "by": 1996},
       {"type": "매매", "price": 38000, "rent": 0, "area": 59.32, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 159", "by": 1996},
@@ -894,7 +894,7 @@
     "name": "선경1",
     "address": "수원시 팔달구 인계동 163",
     "coords": [127.036523377905, 37.2762032319142],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 133.9, "rep_avg_price": 54000}, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 133.9, "rep_avg_price": 54000, "ppy": 1334}, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000, "ppy": 195}},
     "deals": [
       {"type": "매매", "price": 54000, "rent": 0, "area": 133.855, "land": 0.0, "floor": "12", "dong": "2", "date": "2026-04-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 163", "by": 1993},
       {"type": "월세", "price": 5000, "rent": 120, "area": 84.925, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-13", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 163", "by": 1993}
@@ -904,7 +904,7 @@
     "name": "CJ아파트101동",
     "address": "수원시 팔달구 인계동 209-7",
     "coords": [127.02865185353, 37.2766469084837],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [27590, 27590], "rep_area": 57.0, "rep_avg_price": 27590}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27590, 27590], "rep_area": 57.0, "rep_avg_price": 27590, "ppy": 1599}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 27590, "rent": 0, "area": 57.043, "land": 0.0, "floor": "8", "dong": "101", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 209-7", "by": 2001}
     ]
@@ -913,7 +913,7 @@
     "name": "장안",
     "address": "수원시 팔달구 인계동 261-1",
     "coords": [127.026977056653, 37.2736562982371],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 85.0, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 85.0, "rep_avg_price": 30000, "ppy": 1167}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "2", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 261-1", "by": 1995}
     ]
@@ -922,7 +922,7 @@
     "name": "신반포수원(한신)",
     "address": "수원시 팔달구 인계동 319-6",
     "coords": [127.032083346348, 37.2745950801505],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [18900, 23500], "rep_area": 41.8, "rep_avg_price": 18900}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [18900, 23500], "rep_area": 41.8, "rep_avg_price": 18900, "ppy": 1483}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 18900, "rent": 0, "area": 41.85, "land": 0.0, "floor": "10", "dong": "105", "date": "2026-04-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 319-6", "by": 1980},
       {"type": "매매", "price": 23500, "rent": 0, "area": 52.69, "land": 0.0, "floor": "11", "dong": "103", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 319-6", "by": 1980}
@@ -932,7 +932,7 @@
     "name": "삼성",
     "address": "수원시 팔달구 인계동 371-1",
     "coords": [127.03667107697, 37.2722337421557],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [27000, 41500], "rep_area": 59.9, "rep_avg_price": 27000}, "jeonse": {"count": 1, "range": [29000, 29000], "rep_area": 84.9, "rep_avg_price": 29000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [27000, 41500], "rep_area": 59.9, "rep_avg_price": 27000, "ppy": 1564}, "jeonse": {"count": 1, "range": [29000, 29000], "rep_area": 84.9, "rep_avg_price": 29000, "ppy": 1129}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 27000, "rent": 0, "area": 59.88, "land": 0.0, "floor": "17", "dong": "", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 371-1", "by": 1996},
       {"type": "매매", "price": 41500, "rent": 0, "area": 84.88, "land": 0.0, "floor": "8", "dong": "101", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 371-1", "by": 1996},
@@ -943,7 +943,7 @@
     "name": "아미힐",
     "address": "수원시 팔달구 인계동 373-2",
     "coords": [127.036885386228, 37.2728762978878],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [9000, 9000], "rep_area": 17.7, "rep_avg_price": 9000}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 23.2, "rep_avg_price": 12000}, "monthly": {"count": 4, "range": [100, 10350], "rep_area": 19.3, "rep_avg_price": 10350}},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [9000, 9000], "rep_area": 17.7, "rep_avg_price": 9000, "ppy": 1683}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 23.2, "rep_avg_price": 12000, "ppy": 1706}, "monthly": {"count": 4, "range": [100, 10350], "rep_area": 19.3, "rep_avg_price": 10350, "ppy": 370}},
     "deals": [
       {"type": "매매", "price": 9000, "rent": 0, "area": 17.6776, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 373-2", "by": 2019},
       {"type": "월세", "price": 100, "rent": 28, "area": 27.6376, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-29", "period": "26.04~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 373-2", "by": 2019},
@@ -957,7 +957,7 @@
     "name": "래미안노블클래스1단지",
     "address": "수원시 팔달구 인계동 384",
     "coords": [127.036455838345, 37.2694222000424],
-    "stats": {"total": 6, "sale": {"count": 3, "range": [72300, 80000], "rep_area": 85.0, "rep_avg_price": 72650}, "jeonse": {"count": 3, "range": [39000, 63000], "rep_area": 60.0, "rep_avg_price": 42000}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [72300, 80000], "rep_area": 85.0, "rep_avg_price": 72650, "ppy": 2539}, "jeonse": {"count": 3, "range": [39000, 63000], "rep_area": 60.0, "rep_avg_price": 42000, "ppy": 1997}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 80000, "rent": 0, "area": 123.35, "land": 0.0, "floor": "10", "dong": "110", "date": "2026-04-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 384", "by": 2009},
       {"type": "매매", "price": 73000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "12", "dong": "115", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 384", "by": 2009},
@@ -971,7 +971,7 @@
     "name": "래미안노블클래스2단지",
     "address": "수원시 팔달구 인계동 465",
     "coords": [127.033879654361, 37.2686963655543],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [72900, 72900], "rep_area": 85.0, "rep_avg_price": 72900}, "jeonse": {"count": 2, "range": [34000, 55000], "rep_area": 60.0, "rep_avg_price": 34000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 111.0, "rep_avg_price": 5000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [72900, 72900], "rep_area": 85.0, "rep_avg_price": 72900, "ppy": 2836}, "jeonse": {"count": 2, "range": [34000, 55000], "rep_area": 60.0, "rep_avg_price": 34000, "ppy": 2029}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 111.0, "rep_avg_price": 5000, "ppy": 149}},
     "deals": [
       {"type": "매매", "price": 72900, "rent": 0, "area": 84.99, "land": 0.0, "floor": "23", "dong": "204", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 465", "by": 2009},
       {"type": "전세", "price": 55000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "22", "dong": "", "date": "2026-04-19", "period": "26.05~28.05", "renew": "갱신", "p_dep": 55000, "p_rent": 0, "jibun": "인계동 465", "by": 2009},
@@ -983,7 +983,7 @@
     "name": "영평엘리시움",
     "address": "수원시 팔달구 인계동 740-10",
     "coords": [127.024292651936, 37.2756100650696],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 84.3, "rep_avg_price": 35000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 84.3, "rep_avg_price": 35000, "ppy": 1373}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 35000, "rent": 0, "area": 84.294, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-22", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 740-10", "by": 2024}
     ]
@@ -992,7 +992,7 @@
     "name": "인계파밀리에",
     "address": "수원시 팔달구 인계동 865-10",
     "coords": [127.022689461044, 37.2705007611915],
-    "stats": {"total": 6, "sale": {"count": 2, "range": [52500, 53500], "rep_area": 60.0, "rep_avg_price": 52500}, "jeonse": {"count": 3, "range": [40000, 45000], "rep_area": 85.0, "rep_avg_price": 40000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 60.0, "rep_avg_price": 5000}},
+    "stats": {"total": 6, "sale": {"count": 2, "range": [52500, 53500], "rep_area": 60.0, "rep_avg_price": 52500, "ppy": 1985}, "jeonse": {"count": 3, "range": [40000, 45000], "rep_area": 85.0, "rep_avg_price": 40000, "ppy": 1442}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 60.0, "rep_avg_price": 5000, "ppy": 276}},
     "deals": [
       {"type": "매매", "price": 52500, "rent": 0, "area": 59.98, "land": 0.0, "floor": "16", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 865-10", "by": 2009},
       {"type": "매매", "price": 53500, "rent": 0, "area": 116.56, "land": 0.0, "floor": "1", "dong": "101", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 865-10", "by": 2009},
@@ -1006,7 +1006,7 @@
     "name": "코스모골드",
     "address": "수원시 팔달구 인계동 939-5",
     "coords": [127.031253412954, 37.2771244322566],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 2500], "rep_area": 13.8, "rep_avg_price": 1500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 2500], "rep_area": 13.8, "rep_avg_price": 1500, "ppy": 359}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 37, "area": 13.812, "land": 0.0, "floor": "14", "dong": "", "date": "2026-04-22", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 939-5", "by": 2014},
       {"type": "월세", "price": 2500, "rent": 17, "area": 13.812, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-06", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "인계동 939-5", "by": 2014}
@@ -1016,7 +1016,7 @@
     "name": "인계베스트빌",
     "address": "수원시 팔달구 인계동 968-6",
     "coords": [127.026178729084, 37.2708883897646],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 58.4, "rep_avg_price": 25000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [25000, 25000], "rep_area": 58.4, "rep_avg_price": 25000, "ppy": 1415}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 25000, "rent": 0, "area": 58.3869, "land": 0.0, "floor": "12", "dong": "101", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "인계동 968-6", "by": 2004}
     ]
@@ -1025,7 +1025,7 @@
     "name": "수원성중흥S-클래스",
     "address": "수원시 팔달구 지동 349-1",
     "coords": [127.021909087615, 37.2769009099865],
-    "stats": {"total": 64, "sale": null, "jeonse": {"count": 48, "range": [19300, 55000], "rep_area": 40.0, "rep_avg_price": 22221}, "monthly": {"count": 16, "range": [0, 35000], "rep_area": 84.7, "rep_avg_price": 9375}},
+    "stats": {"total": 64, "sale": null, "jeonse": {"count": 48, "range": [19300, 55000], "rep_area": 40.0, "rep_avg_price": 22221, "ppy": 1730}, "monthly": {"count": 16, "range": [0, 35000], "rep_area": 84.7, "rep_avg_price": 9375, "ppy": 344}},
     "deals": [
       {"type": "전세", "price": 42000, "rent": 0, "area": 84.9015, "land": 0.0, "floor": "1", "dong": "", "date": "2026-04-18", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지동 349-1", "by": 2025},
       {"type": "월세", "price": 7000, "rent": 150, "area": 84.8986, "land": 0.0, "floor": "9", "dong": "", "date": "2026-04-17", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지동 349-1", "by": 2025},
@@ -1097,7 +1097,7 @@
     "name": "포레스트",
     "address": "수원시 팔달구 지동 365-20",
     "coords": [127.023246082529, 37.2759920460028],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [5800, 7000], "rep_area": 15.4, "rep_avg_price": 5800}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [5800, 7000], "rep_area": 15.4, "rep_avg_price": 5800, "ppy": 1146}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 5800, "rent": 0, "area": 15.352, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-11", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지동 365-20", "by": 2014},
       {"type": "전세", "price": 7000, "rent": 0, "area": 21.557, "land": 0.0, "floor": "9", "dong": "", "date": "2026-04-27", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "지동 365-20", "by": 2014}
@@ -1107,7 +1107,7 @@
     "name": "성원쌍떼빌",
     "address": "수원시 팔달구 화서동 11-11",
     "coords": [127.004465800777, 37.2849723834817],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [28800, 42000], "rep_area": 59.6, "rep_avg_price": 28800}, "jeonse": {"count": 1, "range": [23000, 23000], "rep_area": 71.4, "rep_avg_price": 23000}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.6, "rep_avg_price": 2000}},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [28800, 42000], "rep_area": 59.6, "rep_avg_price": 28800, "ppy": 1608}, "jeonse": {"count": 1, "range": [23000, 23000], "rep_area": 71.4, "rep_avg_price": 23000, "ppy": 1064}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.6, "rep_avg_price": 2000, "ppy": 111}},
     "deals": [
       {"type": "매매", "price": 28800, "rent": 0, "area": 59.55, "land": 0.0, "floor": "10", "dong": "107", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 11-11", "by": 2001},
       {"type": "매매", "price": 31500, "rent": 0, "area": 66.27, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 11-11", "by": 2001},
@@ -1120,7 +1120,7 @@
     "name": "벽산아파트",
     "address": "수원시 팔달구 화서동 11-41",
     "coords": [127.003428738019, 37.2837170904357],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [30000, 32000], "rep_area": 84.7, "rep_avg_price": 31000}, "jeonse": {"count": 1, "range": [25600, 25600], "rep_area": 84.7, "rep_avg_price": 25600}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [30000, 32000], "rep_area": 84.7, "rep_avg_price": 31000, "ppy": 1210}, "jeonse": {"count": 1, "range": [25600, 25600], "rep_area": 84.7, "rep_avg_price": 25600, "ppy": 999}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 32000, "rent": 0, "area": 84.7, "land": 0.0, "floor": "8", "dong": "2", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 11-41", "by": 1991},
       {"type": "매매", "price": 30000, "rent": 0, "area": 84.7, "land": 0.0, "floor": "5", "dong": "3", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 11-41", "by": 1991},
@@ -1131,7 +1131,7 @@
     "name": "화서맨션다동",
     "address": "수원시 팔달구 화서동 212-6",
     "coords": [126.996934660035, 37.2820244980931],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 71.6, "rep_avg_price": 20000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [20000, 20000], "rep_area": 71.6, "rep_avg_price": 20000, "ppy": 923}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 20000, "rent": 0, "area": 71.6, "land": 0.0, "floor": "5", "dong": "다", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 212-6", "by": 1980}
     ]
@@ -1140,7 +1140,7 @@
     "name": "영광",
     "address": "수원시 팔달구 화서동 220-3",
     "coords": [126.994046950594, 37.2802202365853],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [42000, 47000], "rep_area": 83.4, "rep_avg_price": 46000}, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 83.4, "rep_avg_price": 15000}},
+    "stats": {"total": 4, "sale": {"count": 3, "range": [42000, 47000], "rep_area": 83.4, "rep_avg_price": 46000, "ppy": 1835}, "jeonse": null, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 83.4, "rep_avg_price": 15000, "ppy": 595}},
     "deals": [
       {"type": "매매", "price": 47000, "rent": 0, "area": 83.4, "land": 0.0, "floor": "10", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 220-3", "by": 1993},
       {"type": "매매", "price": 42000, "rent": 0, "area": 74.58, "land": 0.0, "floor": "11", "dong": "1", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 220-3", "by": 1993},
@@ -1152,7 +1152,7 @@
     "name": "화서역블루밍푸른숲",
     "address": "수원시 팔달구 화서동 250-4",
     "coords": [127.000025710047, 37.282499926159],
-    "stats": {"total": 32, "sale": {"count": 23, "range": [42000, 68800], "rep_area": 84.9, "rep_avg_price": 59271}, "jeonse": {"count": 4, "range": [30400, 45500], "rep_area": 84.9, "rep_avg_price": 35816}, "monthly": {"count": 5, "range": [3000, 25000], "rep_area": 84.9, "rep_avg_price": 14333}},
+    "stats": {"total": 32, "sale": {"count": 23, "range": [42000, 68800], "rep_area": 84.9, "rep_avg_price": 59271, "ppy": 2288}, "jeonse": {"count": 4, "range": [30400, 45500], "rep_area": 84.9, "rep_avg_price": 35816, "ppy": 1450}, "monthly": {"count": 5, "range": [3000, 25000], "rep_area": 84.9, "rep_avg_price": 14333, "ppy": 434}},
     "deals": [
       {"type": "매매", "price": 43000, "rent": 0, "area": 84.942, "land": 0.0, "floor": "5", "dong": "103", "date": "2026-04-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 250-4", "by": 2009},
       {"type": "매매", "price": 67500, "rent": 0, "area": 84.915, "land": 0.0, "floor": "18", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 250-4", "by": 2009},
@@ -1192,7 +1192,7 @@
     "name": "화서주공3단지",
     "address": "수원시 팔달구 화서동 646",
     "coords": [126.992204428884, 37.2859186622843],
-    "stats": {"total": 9, "sale": {"count": 4, "range": [85500, 95500], "rep_area": 84.8, "rep_avg_price": 91333}, "jeonse": {"count": 4, "range": [31500, 42000], "rep_area": 84.8, "rep_avg_price": 35625}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.8, "rep_avg_price": 5000}},
+    "stats": {"total": 9, "sale": {"count": 4, "range": [85500, 95500], "rep_area": 84.8, "rep_avg_price": 91333, "ppy": 3571}, "jeonse": {"count": 4, "range": [31500, 42000], "rep_area": 84.8, "rep_avg_price": 35625, "ppy": 1389}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.8, "rep_avg_price": 5000, "ppy": 195}},
     "deals": [
       {"type": "매매", "price": 95500, "rent": 0, "area": 84.79, "land": 0.0, "floor": "15", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 646", "by": 1997},
       {"type": "매매", "price": 92500, "rent": 0, "area": 84.9, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 646", "by": 1997},
@@ -1209,7 +1209,7 @@
     "name": "화서주공4단지",
     "address": "수원시 팔달구 화서동 650",
     "coords": [126.992589130216, 37.2842781653769],
-    "stats": {"total": 37, "sale": {"count": 14, "range": [62000, 81500], "rep_area": 60.0, "rep_avg_price": 78925}, "jeonse": {"count": 17, "range": [21370, 33000], "rep_area": 60.0, "rep_avg_price": 27772}, "monthly": {"count": 6, "range": [2000, 5000], "rep_area": 60.0, "rep_avg_price": 3500}},
+    "stats": {"total": 37, "sale": {"count": 14, "range": [62000, 81500], "rep_area": 60.0, "rep_avg_price": 78925, "ppy": 4278}, "jeonse": {"count": 17, "range": [21370, 33000], "rep_area": 60.0, "rep_avg_price": 27772, "ppy": 1590}, "monthly": {"count": 6, "range": [2000, 5000], "rep_area": 60.0, "rep_avg_price": 3500, "ppy": 185}},
     "deals": [
       {"type": "매매", "price": 77000, "rent": 0, "area": 59.98, "land": 0.0, "floor": "18", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 650", "by": 1997},
       {"type": "매매", "price": 81400, "rent": 0, "area": 59.98, "land": 0.0, "floor": "12", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 650", "by": 1997},
@@ -1254,7 +1254,7 @@
     "name": "화서주공5단지",
     "address": "수원시 팔달구 화서동 650",
     "coords": [126.992589130216, 37.2842781653769],
-    "stats": {"total": 10, "sale": {"count": 2, "range": [61900, 64700], "rep_area": 50.0, "rep_avg_price": 63300}, "jeonse": {"count": 5, "range": [22000, 27000], "rep_area": 50.0, "rep_avg_price": 25525}, "monthly": {"count": 3, "range": [2000, 17000], "rep_area": 40.0, "rep_avg_price": 2500}},
+    "stats": {"total": 10, "sale": {"count": 2, "range": [61900, 64700], "rep_area": 50.0, "rep_avg_price": 63300, "ppy": 4186}, "jeonse": {"count": 5, "range": [22000, 27000], "rep_area": 50.0, "rep_avg_price": 25525, "ppy": 1710}, "monthly": {"count": 3, "range": [2000, 17000], "rep_area": 40.0, "rep_avg_price": 2500, "ppy": 560}},
     "deals": [
       {"type": "매매", "price": 61900, "rent": 0, "area": 49.99, "land": 0.0, "floor": "5", "dong": "502", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 650", "by": 1997},
       {"type": "매매", "price": 64700, "rent": 0, "area": 49.99, "land": 0.0, "floor": "12", "dong": "501", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 650", "by": 1997},
@@ -1272,7 +1272,7 @@
     "name": "한진현대아파트",
     "address": "수원시 팔달구 화서동 656",
     "coords": [126.993532785358, 37.281302177979],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [50000, 50000], "rep_area": 135.0, "rep_avg_price": 50000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [50000, 50000], "rep_area": 135.0, "rep_avg_price": 50000, "ppy": 1225}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 50000, "rent": 0, "area": 134.985, "land": 0.0, "floor": "12", "dong": "", "date": "2026-04-27", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화서동 656", "by": 1997}
     ]
@@ -1281,7 +1281,7 @@
     "name": "꽃뫼마을풍림",
     "address": "수원시 팔달구 화서동 674-1",
     "coords": [126.987929209338, 37.2890827510203],
-    "stats": {"total": 8, "sale": {"count": 3, "range": [55000, 58000], "rep_area": 60.0, "rep_avg_price": 56333}, "jeonse": {"count": 3, "range": [26000, 35000], "rep_area": 60.0, "rep_avg_price": 30333}, "monthly": {"count": 2, "range": [3000, 15000], "rep_area": 60.0, "rep_avg_price": 9000}},
+    "stats": {"total": 8, "sale": {"count": 3, "range": [55000, 58000], "rep_area": 60.0, "rep_avg_price": 56333, "ppy": 3106}, "jeonse": {"count": 3, "range": [26000, 35000], "rep_area": 60.0, "rep_avg_price": 30333, "ppy": 1672}, "monthly": {"count": 2, "range": [3000, 15000], "rep_area": 60.0, "rep_avg_price": 9000, "ppy": 496}},
     "deals": [
       {"type": "매매", "price": 56000, "rent": 0, "area": 59.96, "land": 0.0, "floor": "13", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 674-1", "by": 1999},
       {"type": "매매", "price": 55000, "rent": 0, "area": 59.96, "land": 0.0, "floor": "5", "dong": "212", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 674-1", "by": 1999},
@@ -1297,7 +1297,7 @@
     "name": "꽃뫼마을신동아",
     "address": "수원시 팔달구 화서동 684-2",
     "coords": [126.986626277961, 37.2868886723216],
-    "stats": {"total": 12, "sale": {"count": 5, "range": [55600, 59500], "rep_area": 59.8, "rep_avg_price": 57520}, "jeonse": {"count": 4, "range": [25200, 35000], "rep_area": 59.8, "rep_avg_price": 29550}, "monthly": {"count": 3, "range": [2000, 4000], "rep_area": 59.8, "rep_avg_price": 3333}},
+    "stats": {"total": 12, "sale": {"count": 5, "range": [55600, 59500], "rep_area": 59.8, "rep_avg_price": 57520, "ppy": 3182}, "jeonse": {"count": 4, "range": [25200, 35000], "rep_area": 59.8, "rep_avg_price": 29550, "ppy": 1635}, "monthly": {"count": 3, "range": [2000, 4000], "rep_area": 59.8, "rep_avg_price": 3333, "ppy": 184}},
     "deals": [
       {"type": "매매", "price": 56000, "rent": 0, "area": 59.76, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 684-2", "by": 1999},
       {"type": "매매", "price": 55600, "rent": 0, "area": 59.76, "land": 0.0, "floor": "4", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 684-2", "by": 1999},
@@ -1317,7 +1317,7 @@
     "name": "꽃뫼양지마을현대",
     "address": "수원시 팔달구 화서동 700",
     "coords": [126.985328695483, 37.2871559468762],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [68000, 68000], "rep_area": 86.1, "rep_avg_price": 68000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [68000, 68000], "rep_area": 86.1, "rep_avg_price": 68000, "ppy": 2610}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 68000, "rent": 0, "area": 86.1217, "land": 0.0, "floor": "6", "dong": "133", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 700", "by": 2002}
     ]
@@ -1326,7 +1326,7 @@
     "name": "꽃뫼양지마을대우",
     "address": "수원시 팔달구 화서동 703",
     "coords": [126.985113429785, 37.285373485111],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 117.5, "rep_avg_price": 20000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 117.5, "rep_avg_price": 20000, "ppy": 563}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 100, "area": 117.5163, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-15", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "화서동 703", "by": 2001}
     ]
@@ -1335,7 +1335,7 @@
     "name": "꽃뫼버들마을진흥",
     "address": "수원시 팔달구 화서동 706",
     "coords": [126.983883153572, 37.2889863987804],
-    "stats": {"total": 25, "sale": {"count": 17, "range": [50000, 71500], "rep_area": 60.0, "rep_avg_price": 62247}, "jeonse": {"count": 5, "range": [28000, 37000], "rep_area": 60.0, "rep_avg_price": 30400}, "monthly": {"count": 3, "range": [7000, 15500], "rep_area": 60.0, "rep_avg_price": 10166}},
+    "stats": {"total": 25, "sale": {"count": 17, "range": [50000, 71500], "rep_area": 60.0, "rep_avg_price": 62247, "ppy": 3432}, "jeonse": {"count": 5, "range": [28000, 37000], "rep_area": 60.0, "rep_avg_price": 30400, "ppy": 1676}, "monthly": {"count": 3, "range": [7000, 15500], "rep_area": 60.0, "rep_avg_price": 10166, "ppy": 561}},
     "deals": [
       {"type": "매매", "price": 61000, "rent": 0, "area": 59.96, "land": 0.0, "floor": "15", "dong": "143", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 706", "by": 2002},
       {"type": "매매", "price": 71500, "rent": 0, "area": 59.96, "land": 0.0, "floor": "21", "dong": "147", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 706", "by": 2002},
@@ -1368,7 +1368,7 @@
     "name": "꽃뫼버들마을금강",
     "address": "수원시 팔달구 화서동 709",
     "coords": [126.982672616903, 37.2881373594743],
-    "stats": {"total": 6, "sale": {"count": 3, "range": [65000, 69500], "rep_area": 85.0, "rep_avg_price": 67466}, "jeonse": {"count": 2, "range": [30450, 36000], "rep_area": 85.0, "rep_avg_price": 33225}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [65000, 69500], "rep_area": 85.0, "rep_avg_price": 67466, "ppy": 2625}, "jeonse": {"count": 2, "range": [30450, 36000], "rep_area": 85.0, "rep_avg_price": 33225, "ppy": 1293}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "매매", "price": 65000, "rent": 0, "area": 84.965, "land": 0.0, "floor": "10", "dong": "152", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 709", "by": 2002},
       {"type": "매매", "price": 67900, "rent": 0, "area": 84.965, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 709", "by": 2002},
@@ -1382,7 +1382,7 @@
     "name": "포레스트나인아파트",
     "address": "수원시 팔달구 화서동 71-6",
     "coords": [127.004444278706, 37.2794988403159],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [23150, 23150], "rep_area": 48.3, "rep_avg_price": 23150}, "monthly": {"count": 1, "range": [18900, 18900], "rep_area": 48.3, "rep_avg_price": 18900}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [23150, 23150], "rep_area": 48.3, "rep_avg_price": 23150, "ppy": 1585}, "monthly": {"count": 1, "range": [18900, 18900], "rep_area": 48.3, "rep_avg_price": 18900, "ppy": 1294}},
     "deals": [
       {"type": "전세", "price": 23150, "rent": 0, "area": 48.294, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "갱신", "p_dep": 22050, "p_rent": 0, "jibun": "화서동 71-6", "by": 2017},
       {"type": "월세", "price": 18900, "rent": 30, "area": 48.301, "land": 0.0, "floor": "6", "dong": "", "date": "2026-04-13", "period": "26.04~28.04", "renew": "갱신", "p_dep": 18000, "p_rent": 30, "jibun": "화서동 71-6", "by": 2017}
@@ -1392,7 +1392,7 @@
     "name": "꽃뫼버들마을엘지",
     "address": "수원시 팔달구 화서동 713",
     "coords": [126.980514624821, 37.2881041359986],
-    "stats": {"total": 6, "sale": {"count": 3, "range": [60000, 64500], "rep_area": 84.9, "rep_avg_price": 62500}, "jeonse": {"count": 3, "range": [30000, 35000], "rep_area": 84.9, "rep_avg_price": 32000}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [60000, 64500], "rep_area": 84.9, "rep_avg_price": 62500, "ppy": 2432}, "jeonse": {"count": 3, "range": [30000, 35000], "rep_area": 84.9, "rep_avg_price": 32000, "ppy": 1245}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 84.938, "land": 0.0, "floor": "3", "dong": "165", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 713", "by": 2001},
       {"type": "매매", "price": 63000, "rent": 0, "area": 84.938, "land": 0.0, "floor": "10", "dong": "168", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 713", "by": 2001},
@@ -1406,7 +1406,7 @@
     "name": "꽃뫼마을코오롱",
     "address": "수원시 팔달구 화서동 730",
     "coords": [126.982222218977, 37.2847285730375],
-    "stats": {"total": 13, "sale": {"count": 7, "range": [65500, 73000], "rep_area": 84.7, "rep_avg_price": 70371}, "jeonse": {"count": 3, "range": [35000, 39500], "rep_area": 84.7, "rep_avg_price": 37166}, "monthly": {"count": 3, "range": [5000, 5000], "rep_area": 84.7, "rep_avg_price": 5000}},
+    "stats": {"total": 13, "sale": {"count": 7, "range": [65500, 73000], "rep_area": 84.7, "rep_avg_price": 70371, "ppy": 2746}, "jeonse": {"count": 3, "range": [35000, 39500], "rep_area": 84.7, "rep_avg_price": 37166, "ppy": 1450}, "monthly": {"count": 3, "range": [5000, 5000], "rep_area": 84.7, "rep_avg_price": 5000, "ppy": 195}},
     "deals": [
       {"type": "매매", "price": 73000, "rent": 0, "area": 84.729, "land": 0.0, "floor": "16", "dong": "172", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 730", "by": 2002},
       {"type": "매매", "price": 65500, "rent": 0, "area": 84.729, "land": 0.0, "floor": "2", "dong": "171", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 730", "by": 2002},
@@ -1427,7 +1427,7 @@
     "name": "화서위브하늘채",
     "address": "수원시 팔달구 화서동 743",
     "coords": [127.000563409819, 37.2884100191632],
-    "stats": {"total": 9, "sale": {"count": 6, "range": [64500, 83000], "rep_area": 84.9, "rep_avg_price": 66333}, "jeonse": {"count": 2, "range": [26500, 45000], "rep_area": 59.9, "rep_avg_price": 26500}, "monthly": {"count": 1, "range": [27500, 27500], "rep_area": 59.9, "rep_avg_price": 27500}},
+    "stats": {"total": 9, "sale": {"count": 6, "range": [64500, 83000], "rep_area": 84.9, "rep_avg_price": 66333, "ppy": 2604}, "jeonse": {"count": 2, "range": [26500, 45000], "rep_area": 59.9, "rep_avg_price": 26500, "ppy": 1338}, "monthly": {"count": 1, "range": [27500, 27500], "rep_area": 59.9, "rep_avg_price": 27500, "ppy": 1518}},
     "deals": [
       {"type": "매매", "price": 74000, "rent": 0, "area": 84.9628, "land": 0.0, "floor": "21", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 743", "by": 2009},
       {"type": "매매", "price": 83000, "rent": 0, "area": 118.736, "land": 0.0, "floor": "17", "dong": "104", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 743", "by": 2009},
@@ -1444,7 +1444,7 @@
     "name": "수원화서역동문굿모닝힐",
     "address": "수원시 팔달구 화서동 761",
     "coords": [126.994797061108, 37.2846804167426],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [55000, 84000], "rep_area": 84.7, "rep_avg_price": 84000}, "jeonse": {"count": 2, "range": [47000, 47000], "rep_area": 117.2, "rep_avg_price": 47000}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [55000, 84000], "rep_area": 84.7, "rep_avg_price": 84000, "ppy": 2707}, "jeonse": {"count": 2, "range": [47000, 47000], "rep_area": 117.2, "rep_avg_price": 47000, "ppy": 1326}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 55000, "rent": 0, "area": 84.996, "land": 0.0, "floor": "5", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 761", "by": 2010},
       {"type": "매매", "price": 84000, "rent": 0, "area": 84.739, "land": 0.0, "floor": "25", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 761", "by": 2010},
@@ -1456,7 +1456,7 @@
     "name": "화서한신더휴",
     "address": "수원시 팔달구 화서동 769",
     "coords": [127.002211429235, 37.2872740605665],
-    "stats": {"total": 3, "sale": {"count": 3, "range": [48000, 54000], "rep_area": 85.0, "rep_avg_price": 53750}, "jeonse": null, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 3, "range": [48000, 54000], "rep_area": 85.0, "rep_avg_price": 53750, "ppy": 2147}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 54000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "7", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 769", "by": 2014},
       {"type": "매매", "price": 48000, "rent": 0, "area": 69.51, "land": 0.0, "floor": "3", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "화서동 769", "by": 2014},

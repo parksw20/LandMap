@@ -3,7 +3,7 @@
     "name": "한신",
     "address": "도봉구 도봉동 30-1",
     "coords": [127.047810838565, 37.6862789968232],
-    "stats": {"total": 18, "sale": {"count": 2, "range": [61000, 62500], "rep_area": 84.9, "rep_avg_price": 61750}, "jeonse": {"count": 13, "range": [26000, 39000], "rep_area": 84.9, "rep_avg_price": 33611}, "monthly": {"count": 3, "range": [10000, 27000], "rep_area": 84.9, "rep_avg_price": 17583}},
+    "stats": {"total": 18, "sale": {"count": 2, "range": [61000, 62500], "rep_area": 84.9, "rep_avg_price": 61750, "ppy": 2403}, "jeonse": {"count": 13, "range": [26000, 39000], "rep_area": 84.9, "rep_avg_price": 33611, "ppy": 1308}, "monthly": {"count": 3, "range": [10000, 27000], "rep_area": 84.9, "rep_avg_price": 17583, "ppy": 684}},
     "deals": [
       {"type": "매매", "price": 62500, "rent": 0, "area": 84.94, "land": 0.0, "floor": "3", "dong": "111", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 30-1", "by": 1995},
       {"type": "매매", "price": 61000, "rent": 0, "area": 84.94, "land": 0.0, "floor": "12", "dong": "105", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 30-1", "by": 1995},
@@ -29,7 +29,7 @@
     "name": "서울가든",
     "address": "도봉구 도봉동 555",
     "coords": [127.041630978619, 37.6865526246139],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [22000, 32000], "rep_area": 75.3, "rep_avg_price": 27000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [22000, 32000], "rep_area": 75.3, "rep_avg_price": 27000, "ppy": 1185}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 22000, "rent": 0, "area": 75.33, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-23", "period": "25.02~27.02", "renew": "갱신", "p_dep": 22000, "p_rent": 0, "jibun": "도봉동 555", "by": 1987},
       {"type": "전세", "price": 32000, "rent": 0, "area": 75.33, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-23", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 555", "by": 1987}
@@ -39,7 +39,7 @@
     "name": "도봉산리베니움",
     "address": "도봉구 도봉동 571",
     "coords": [127.043139662808, 37.6856420049315],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 84.6, "rep_avg_price": 20000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 84.6, "rep_avg_price": 20000, "ppy": 782}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 55, "area": 84.58, "land": 0.0, "floor": "1", "dong": "", "date": "2025-02-09", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 571", "by": 2004}
     ]
@@ -48,7 +48,7 @@
     "name": "럭키",
     "address": "도봉구 도봉동 595",
     "coords": [127.044416589132, 37.6792280982444],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 84.9, "rep_avg_price": 40000}, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 84.9, "rep_avg_price": 4000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 84.9, "rep_avg_price": 40000, "ppy": 1558}, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 84.9, "rep_avg_price": 4000, "ppy": 156}},
     "deals": [
       {"type": "매매", "price": 40000, "rent": 0, "area": 84.86, "land": 0.0, "floor": "2", "dong": "제101동", "date": "2025-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 595", "by": 1992},
       {"type": "월세", "price": 4000, "rent": 90, "area": 84.86, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-10", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 595", "by": 1992}
@@ -58,7 +58,7 @@
     "name": "서원",
     "address": "도봉구 도봉동 641",
     "coords": [127.04829873867, 37.6741332478974],
-    "stats": {"total": 17, "sale": {"count": 4, "range": [37300, 42500], "rep_area": 49.8, "rep_avg_price": 38266}, "jeonse": {"count": 7, "range": [15750, 20000], "rep_area": 49.8, "rep_avg_price": 18608}, "monthly": {"count": 6, "range": [2000, 10000], "rep_area": 49.8, "rep_avg_price": 4500}},
+    "stats": {"total": 17, "sale": {"count": 4, "range": [37300, 42500], "rep_area": 49.8, "rep_avg_price": 38266, "ppy": 2487}, "jeonse": {"count": 7, "range": [15750, 20000], "rep_area": 49.8, "rep_avg_price": 18608, "ppy": 1276}, "monthly": {"count": 6, "range": [2000, 10000], "rep_area": 49.8, "rep_avg_price": 4500, "ppy": 296}},
     "deals": [
       {"type": "매매", "price": 42500, "rent": 0, "area": 59.76, "land": 0.0, "floor": "4", "dong": "113", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 641", "by": 1996},
       {"type": "매매", "price": 37300, "rent": 0, "area": 49.77, "land": 0.0, "floor": "8", "dong": "112", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 641", "by": 1996},
@@ -83,7 +83,7 @@
     "name": "서광",
     "address": "도봉구 도봉동 643",
     "coords": [127.049749156878, 37.6781307397219],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18900, 18900], "rep_area": 59.9, "rep_avg_price": 18900}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [18900, 18900], "rep_area": 59.9, "rep_avg_price": 18900, "ppy": 1043}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 18900, "rent": 0, "area": 59.91, "land": 0.0, "floor": "1", "dong": "", "date": "2025-02-20", "period": "25.04~27.04", "renew": "갱신", "p_dep": 18000, "p_rent": 0, "jibun": "도봉동 643", "by": 1999}
     ]
@@ -92,7 +92,7 @@
     "name": "도봉파크빌3",
     "address": "도봉구 도봉동 644",
     "coords": [127.048658044037, 37.6876330896878],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [36750, 36750], "rep_area": 84.2, "rep_avg_price": 36750}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [36750, 36750], "rep_area": 84.2, "rep_avg_price": 36750, "ppy": 1443}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 36750, "rent": 0, "area": 84.166, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-14", "period": "25.02~27.02", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "도봉동 644", "by": 2002}
     ]
@@ -101,7 +101,7 @@
     "name": "도봉파크빌2",
     "address": "도봉구 도봉동 647",
     "coords": [127.05072081523, 37.6843714025297],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [64400, 64400], "rep_area": 84.2, "rep_avg_price": 64400}, "jeonse": {"count": 2, "range": [35700, 35700], "rep_area": 84.4, "rep_avg_price": 35700}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [64400, 64400], "rep_area": 84.2, "rep_avg_price": 64400, "ppy": 2529}, "jeonse": {"count": 2, "range": [35700, 35700], "rep_area": 84.4, "rep_avg_price": 35700, "ppy": 1399}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 64400, "rent": 0, "area": 84.166, "land": 0.0, "floor": "14", "dong": "201", "date": "2025-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 647", "by": 2002},
       {"type": "전세", "price": 35700, "rent": 0, "area": 84.354, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 647", "by": 2002},
@@ -112,7 +112,7 @@
     "name": "도봉주공1단지",
     "address": "도봉구 도봉동 649",
     "coords": [127.050699271921, 37.6830341803605],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1575, 1575], "rep_area": 36.4, "rep_avg_price": 1575}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1575, 1575], "rep_area": 36.4, "rep_avg_price": 1575, "ppy": 143}},
     "deals": [
       {"type": "월세", "price": 1575, "rent": 20, "area": 36.44, "land": 0.0, "floor": "13", "dong": "", "date": "2025-02-10", "period": "25.02~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 649", "by": 2002}
     ]
@@ -121,7 +121,7 @@
     "name": "동아에코빌",
     "address": "도봉구 도봉동 654",
     "coords": [127.046899391178, 37.6815163431126],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [17000, 40000], "rep_area": 85.0, "rep_avg_price": 37125}, "monthly": null},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [17000, 40000], "rep_area": 85.0, "rep_avg_price": 37125, "ppy": 1227}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 17000, "rent": 0, "area": 105.976, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-18", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 654", "by": 2003},
       {"type": "전세", "price": 31500, "rent": 0, "area": 84.967, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-12", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 654", "by": 2003},
@@ -134,7 +134,7 @@
     "name": "래미안도봉",
     "address": "도봉구 도봉동 655",
     "coords": [127.046578551654, 37.6794935934997],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 59.2, "rep_avg_price": 60000}, "jeonse": {"count": 1, "range": [42000, 42000], "rep_area": 84.6, "rep_avg_price": 42000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.2, "rep_avg_price": 10000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 59.2, "rep_avg_price": 60000, "ppy": 3348}, "jeonse": {"count": 1, "range": [42000, 42000], "rep_area": 84.6, "rep_avg_price": 42000, "ppy": 1642}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.2, "rep_avg_price": 10000, "ppy": 558}},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 59.25, "land": 0.0, "floor": "9", "dong": "106", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 655", "by": 2005},
       {"type": "월세", "price": 10000, "rent": 90, "area": 59.25, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-05", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 655", "by": 2005},
@@ -145,7 +145,7 @@
     "name": "극동",
     "address": "도봉구 도봉동 81-1",
     "coords": [127.049631193507, 37.6824505305941],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [28000, 28000], "rep_area": 84.8, "rep_avg_price": 28000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 84.8, "rep_avg_price": 3000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [28000, 28000], "rep_area": 84.8, "rep_avg_price": 28000, "ppy": 1091}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 84.8, "rep_avg_price": 3000, "ppy": 117}},
     "deals": [
       {"type": "전세", "price": 28000, "rent": 0, "area": 84.83, "land": 0.0, "floor": "1", "dong": "", "date": "2025-02-19", "period": "25.03~27.03", "renew": "갱신", "p_dep": 24000, "p_rent": 0, "jibun": "도봉동 81-1", "by": 1991},
       {"type": "전세", "price": 28000, "rent": 0, "area": 84.83, "land": 0.0, "floor": "1", "dong": "", "date": "2025-02-19", "period": "25.03~27.03", "renew": "갱신", "p_dep": 24000, "p_rent": 0, "jibun": "도봉동 81-1", "by": 1991},
@@ -156,7 +156,7 @@
     "name": "유원도봉",
     "address": "도봉구 도봉동 83",
     "coords": [127.050296120815, 37.6818316372914],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [29000, 29000], "rep_area": 84.9, "rep_avg_price": 29000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [29000, 29000], "rep_area": 84.9, "rep_avg_price": 29000, "ppy": 1129}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 29000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-28", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 83", "by": 1990}
     ]
@@ -165,7 +165,7 @@
     "name": "삼환도봉",
     "address": "도봉구 도봉동 87",
     "coords": [127.04884839583, 37.6810593866472],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 73.9, "rep_avg_price": 54000}, "jeonse": {"count": 3, "range": [20100, 28000], "rep_area": 84.0, "rep_avg_price": 24700}, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 73.9, "rep_avg_price": 5000}},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 73.9, "rep_avg_price": 54000, "ppy": 2416}, "jeonse": {"count": 3, "range": [20100, 28000], "rep_area": 84.0, "rep_avg_price": 24700, "ppy": 972}, "monthly": {"count": 2, "range": [5000, 5000], "rep_area": 73.9, "rep_avg_price": 5000, "ppy": 224}},
     "deals": [
       {"type": "매매", "price": 54000, "rent": 0, "area": 73.89, "land": 0.0, "floor": "11", "dong": "4", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 87", "by": 1987},
       {"type": "월세", "price": 5000, "rent": 105, "area": 73.89, "land": 0.0, "floor": "15", "dong": "", "date": "2025-02-11", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "도봉동 87", "by": 1987},
@@ -179,7 +179,7 @@
     "name": "신동아아파트1",
     "address": "도봉구 방학동 271-1",
     "coords": [127.0267260331, 37.6609347988243],
-    "stats": {"total": 32, "sale": {"count": 10, "range": [23000, 40000], "rep_area": 53.2, "rep_avg_price": 31900}, "jeonse": {"count": 9, "range": [20000, 31000], "rep_area": 70.6, "rep_avg_price": 26400}, "monthly": {"count": 13, "range": [1500, 21000], "rep_area": 70.6, "rep_avg_price": 8166}},
+    "stats": {"total": 32, "sale": {"count": 10, "range": [23000, 40000], "rep_area": 53.2, "rep_avg_price": 31900, "ppy": 1941}, "jeonse": {"count": 9, "range": [20000, 31000], "rep_area": 70.6, "rep_avg_price": 26400, "ppy": 1277}, "monthly": {"count": 13, "range": [1500, 21000], "rep_area": 70.6, "rep_avg_price": 8166, "ppy": 313}},
     "deals": [
       {"type": "매매", "price": 34000, "rent": 0, "area": 53.16, "land": 0.0, "floor": "8", "dong": "16", "date": "2025-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 271-1", "by": 1986},
       {"type": "매매", "price": 35000, "rent": 0, "area": 62.22, "land": 0.0, "floor": "1", "dong": "28", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 271-1", "by": 1986},
@@ -219,7 +219,7 @@
     "name": "삼익세라믹아파트",
     "address": "도봉구 방학동 274",
     "coords": [127.034044277256, 37.6611236514876],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 58.8, "rep_avg_price": 25000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 58.8, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 58.8, "rep_avg_price": 25000, "ppy": 1406}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 58.8, "rep_avg_price": 3000, "ppy": 169}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 70, "area": 58.77, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-21", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 274", "by": 1988},
       {"type": "전세", "price": 25000, "rent": 0, "area": 58.77, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-26", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 274", "by": 1988}
@@ -229,7 +229,7 @@
     "name": "벽산아파트1",
     "address": "도봉구 방학동 275",
     "coords": [127.032527356121, 37.6604565423523],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 52.4, "rep_avg_price": 2000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 52.4, "rep_avg_price": 2000, "ppy": 106}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 130, "area": 72.01, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-10", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 275", "by": 1991},
       {"type": "월세", "price": 2000, "rent": 75, "area": 52.36, "land": 0.0, "floor": "14", "dong": "", "date": "2025-02-10", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 275", "by": 1991}
@@ -239,7 +239,7 @@
     "name": "벽산아파트2",
     "address": "도봉구 방학동 496",
     "coords": [127.025138236022, 37.6589255083572],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [41200, 41200], "rep_area": 59.6, "rep_avg_price": 41200}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [41200, 41200], "rep_area": 59.6, "rep_avg_price": 41200, "ppy": 2286}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 41200, "rent": 0, "area": 59.581, "land": 0.0, "floor": "11", "dong": "101", "date": "2025-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 496", "by": 1998}
     ]
@@ -248,7 +248,7 @@
     "name": "우성아파트1",
     "address": "도봉구 방학동 507",
     "coords": [127.023857206994, 37.6580383072687],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [45000, 48800], "rep_area": 83.8, "rep_avg_price": 48800}, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 72.1, "rep_avg_price": 5000}},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [45000, 48800], "rep_area": 83.8, "rep_avg_price": 48800, "ppy": 1840}, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 72.1, "rep_avg_price": 5000, "ppy": 229}},
     "deals": [
       {"type": "매매", "price": 48800, "rent": 0, "area": 83.85, "land": 0.0, "floor": "11", "dong": "103", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 507", "by": 1992},
       {"type": "매매", "price": 45000, "rent": 0, "area": 84.69, "land": 0.0, "floor": "1", "dong": "101", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 507", "by": 1992},
@@ -259,7 +259,7 @@
     "name": "우성아파트2",
     "address": "도봉구 방학동 508",
     "coords": [127.021688802247, 37.6569741255456],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [36000, 40000], "rep_area": 85.0, "rep_avg_price": 37333}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [36000, 40000], "rep_area": 85.0, "rep_avg_price": 37333, "ppy": 1452}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 36000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "11", "dong": "", "date": "2025-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 508", "by": 1993},
       {"type": "전세", "price": 36000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-10", "period": "25.02~27.02", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "방학동 508", "by": 1993},
@@ -270,7 +270,7 @@
     "name": "신동아아파트2",
     "address": "도봉구 방학동 531",
     "coords": [127.023416013429, 37.6591075908241],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 84.8, "rep_avg_price": 50000}, "jeonse": {"count": 2, "range": [31500, 37000], "rep_area": 84.8, "rep_avg_price": 37000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 84.8, "rep_avg_price": 50000, "ppy": 1949}, "jeonse": {"count": 2, "range": [31500, 37000], "rep_area": 84.8, "rep_avg_price": 37000, "ppy": 1335}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 50000, "rent": 0, "area": 84.82, "land": 0.0, "floor": "5", "dong": "102", "date": "2025-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 531", "by": 1992},
       {"type": "전세", "price": 37000, "rent": 0, "area": 84.82, "land": 0.0, "floor": "15", "dong": "", "date": "2025-02-10", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 531", "by": 1992},
@@ -281,7 +281,7 @@
     "name": "태양아파트(612-2)",
     "address": "도봉구 방학동 612-2",
     "coords": [127.031345031529, 37.6676406541646],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 67.3, "rep_avg_price": 15000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 67.3, "rep_avg_price": 15000, "ppy": 737}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 15000, "rent": 0, "area": 67.27, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-10", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 612-2", "by": 2004}
     ]
@@ -290,7 +290,7 @@
     "name": "송학휴스테이",
     "address": "도봉구 방학동 636",
     "coords": [127.036115254259, 37.6670386964658],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23000, 23000], "rep_area": 49.1, "rep_avg_price": 23000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [23000, 23000], "rep_area": 49.1, "rep_avg_price": 23000, "ppy": 1548}},
     "deals": [
       {"type": "월세", "price": 23000, "rent": 15, "area": 49.125, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-26", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 636", "by": 2016}
     ]
@@ -299,7 +299,7 @@
     "name": "동부센트레빌아파트",
     "address": "도봉구 방학동 689",
     "coords": [127.039531579839, 37.6633180819517],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [68500, 68500], "rep_area": 84.6, "rep_avg_price": 68500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [68500, 68500], "rep_area": 84.6, "rep_avg_price": 68500, "ppy": 2678}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 68500, "rent": 0, "area": 84.569, "land": 0.0, "floor": "8", "dong": "104", "date": "2025-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 689", "by": 2005}
     ]
@@ -308,7 +308,7 @@
     "name": "거성학마을아파트",
     "address": "도봉구 방학동 701-15",
     "coords": [127.039453759806, 37.6666102018529],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 77.0, "rep_avg_price": 33000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 77.0, "rep_avg_price": 33000, "ppy": 1416}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 33000, "rent": 0, "area": 77.05, "land": 0.0, "floor": "15", "dong": "", "date": "2025-02-24", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 701-15", "by": 1994}
     ]
@@ -317,7 +317,7 @@
     "name": "퍼스티안",
     "address": "도봉구 방학동 705-17",
     "coords": [127.043893982102, 37.667468889263],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 13.7, "rep_avg_price": 500}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 13.7, "rep_avg_price": 500, "ppy": 121}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 60, "area": 13.6794, "land": 0.0, "floor": "11", "dong": "", "date": "2025-02-12", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 705-17", "by": 2013}
     ]
@@ -326,7 +326,7 @@
     "name": "태솔에버빌아파트",
     "address": "도봉구 방학동 712-17",
     "coords": [127.045836950209, 37.6625550118092],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [32800, 32800], "rep_area": 65.2, "rep_avg_price": 32800}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [32800, 32800], "rep_area": 65.2, "rep_avg_price": 32800, "ppy": 1663}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 32800, "rent": 0, "area": 65.21, "land": 0.0, "floor": "9", "dong": "태솔에버빌아파트102", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 712-17", "by": 2008}
     ]
@@ -335,7 +335,7 @@
     "name": "브라운스톤방학아파트",
     "address": "도봉구 방학동 713",
     "coords": [127.044915277439, 37.6640160368683],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 84.9, "rep_avg_price": 70000}, "jeonse": {"count": 1, "range": [43000, 43000], "rep_area": 85.0, "rep_avg_price": 43000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 84.9, "rep_avg_price": 70000, "ppy": 2726}, "jeonse": {"count": 1, "range": [43000, 43000], "rep_area": 85.0, "rep_avg_price": 43000, "ppy": 1673}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000, "ppy": 195}},
     "deals": [
       {"type": "매매", "price": 70000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "16", "dong": "101", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 713", "by": 2003},
       {"type": "월세", "price": 5000, "rent": 130, "area": 84.9, "land": 0.0, "floor": "1", "dong": "", "date": "2025-02-22", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 713", "by": 2003},
@@ -346,7 +346,7 @@
     "name": "방학동삼성래미안2",
     "address": "도봉구 방학동 715-12",
     "coords": [127.045805061018, 37.6648846907662],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [80500, 80500], "rep_area": 84.9, "rep_avg_price": 80500}, "jeonse": {"count": 2, "range": [42000, 58000], "rep_area": 84.9, "rep_avg_price": 50000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [80500, 80500], "rep_area": 84.9, "rep_avg_price": 80500, "ppy": 3133}, "jeonse": {"count": 2, "range": [42000, 58000], "rep_area": 84.9, "rep_avg_price": 50000, "ppy": 1946}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 80500, "rent": 0, "area": 84.937, "land": 0.0, "floor": "13", "dong": "205", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 715-12", "by": 2002},
       {"type": "전세", "price": 58000, "rent": 0, "area": 84.937, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-21", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 715-12", "by": 2002},
@@ -357,7 +357,7 @@
     "name": "이에스에이아파트3",
     "address": "도봉구 방학동 716-1",
     "coords": [127.044882127345, 37.6665592478836],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.9, "rep_avg_price": 5000, "ppy": 195}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 145, "area": 84.87, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-25", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 716-1", "by": 2004}
     ]
@@ -366,7 +366,7 @@
     "name": "방학지음재힐스",
     "address": "도봉구 방학동 717-2",
     "coords": [127.044821359728, 37.6672859117735],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 1, "range": [10800, 10800], "rep_area": 14.9, "rep_avg_price": 10800}, "monthly": {"count": 5, "range": [1000, 13700], "rep_area": 14.9, "rep_avg_price": 1000}},
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 1, "range": [10800, 10800], "rep_area": 14.9, "rep_avg_price": 10800, "ppy": 2403}, "monthly": {"count": 5, "range": [1000, 13700], "rep_area": 14.9, "rep_avg_price": 1000, "ppy": 723}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 65, "area": 14.86, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-15", "period": "25.02~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 717-2", "by": 2018},
       {"type": "전세", "price": 10800, "rent": 0, "area": 14.86, "land": 0.0, "floor": "12", "dong": "", "date": "2025-02-15", "period": "25.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 717-2", "by": 2018},
@@ -380,7 +380,7 @@
     "name": "대상타운현대아파트",
     "address": "도봉구 방학동 720-1",
     "coords": [127.048141717457, 37.6651428823127],
-    "stats": {"total": 9, "sale": {"count": 1, "range": [77000, 77000], "rep_area": 84.8, "rep_avg_price": 77000}, "jeonse": {"count": 5, "range": [43000, 68000], "rep_area": 60.0, "rep_avg_price": 43000}, "monthly": {"count": 3, "range": [5500, 40000], "rep_area": 84.8, "rep_avg_price": 25000}},
+    "stats": {"total": 9, "sale": {"count": 1, "range": [77000, 77000], "rep_area": 84.8, "rep_avg_price": 77000, "ppy": 3002}, "jeonse": {"count": 5, "range": [43000, 68000], "rep_area": 60.0, "rep_avg_price": 43000, "ppy": 1945}, "monthly": {"count": 3, "range": [5500, 40000], "rep_area": 84.8, "rep_avg_price": 25000, "ppy": 550}},
     "deals": [
       {"type": "매매", "price": 77000, "rent": 0, "area": 84.78, "land": 0.0, "floor": "16", "dong": "202", "date": "2025-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 720-1", "by": 2001},
       {"type": "전세", "price": 55000, "rent": 0, "area": 101.4, "land": 0.0, "floor": "21", "dong": "", "date": "2025-02-26", "period": "25.02~27.02", "renew": "갱신", "p_dep": 48000, "p_rent": 0, "jibun": "방학동 720-1", "by": 2001},
@@ -397,7 +397,7 @@
     "name": "한원힐트리움아레나",
     "address": "도봉구 방학동 725-9",
     "coords": [127.049910087046, 37.6618226629412],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [23300, 23300], "rep_area": 31.3, "rep_avg_price": 23300}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 31.3, "rep_avg_price": 3000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [23300, 23300], "rep_area": 31.3, "rep_avg_price": 23300, "ppy": 2462}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 31.3, "rep_avg_price": 3000, "ppy": 317}},
     "deals": [
       {"type": "전세", "price": 23300, "rent": 0, "area": 31.29, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-24", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 725-9", "by": 2021},
       {"type": "전세", "price": 23300, "rent": 0, "area": 31.29, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-24", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 725-9", "by": 2021},
@@ -408,7 +408,7 @@
     "name": "극동아파트",
     "address": "도봉구 방학동 730",
     "coords": [127.026854480279, 37.6645080610932],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [37500, 44000], "rep_area": 84.9, "rep_avg_price": 40750}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [37500, 44000], "rep_area": 84.9, "rep_avg_price": 40750, "ppy": 1586}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 37500, "rent": 0, "area": 84.935, "land": 0.0, "floor": "1", "dong": "102", "date": "2025-02-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 730", "by": 1993},
       {"type": "매매", "price": 44000, "rent": 0, "area": 84.935, "land": 0.0, "floor": "4", "dong": "101", "date": "2025-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 730", "by": 1993}
@@ -418,7 +418,7 @@
     "name": "한화성원아파트",
     "address": "도봉구 방학동 731",
     "coords": [127.031765765872, 37.661265380776],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [35000, 49500], "rep_area": 59.9, "rep_avg_price": 35000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [35000, 49500], "rep_area": 59.9, "rep_avg_price": 35000, "ppy": 1928}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 49500, "rent": 0, "area": 84.98, "land": 0.0, "floor": "8", "dong": "102", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 731", "by": 1996},
       {"type": "매매", "price": 35000, "rent": 0, "area": 59.88, "land": 0.0, "floor": "8", "dong": "102", "date": "2025-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 731", "by": 1996}
@@ -428,7 +428,7 @@
     "name": "신동아아파트4",
     "address": "도봉구 방학동 732",
     "coords": [127.029379109557, 37.6628054159966],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [45000, 47700], "rep_area": 84.9, "rep_avg_price": 46350}, "jeonse": {"count": 2, "range": [24000, 24000], "rep_area": 59.9, "rep_avg_price": 24000}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [45000, 47700], "rep_area": 84.9, "rep_avg_price": 46350, "ppy": 1805}, "jeonse": {"count": 2, "range": [24000, 24000], "rep_area": 59.9, "rep_avg_price": 24000, "ppy": 1324}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 45000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 732", "by": 1995},
       {"type": "매매", "price": 47700, "rent": 0, "area": 84.9, "land": 0.0, "floor": "2", "dong": "115", "date": "2025-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 732", "by": 1995},
@@ -440,7 +440,7 @@
     "name": "청구아파트",
     "address": "도봉구 방학동 734",
     "coords": [127.026228957921, 37.6580488858301],
-    "stats": {"total": 6, "sale": {"count": 2, "range": [52000, 52000], "rep_area": 85.0, "rep_avg_price": 52000}, "jeonse": {"count": 4, "range": [27500, 34650], "rep_area": 70.7, "rep_avg_price": 27500}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 2, "range": [52000, 52000], "rep_area": 85.0, "rep_avg_price": 52000, "ppy": 2023}, "jeonse": {"count": 4, "range": [27500, 34650], "rep_area": 70.7, "rep_avg_price": 27500, "ppy": 1271}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 52000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "5", "dong": "107", "date": "2025-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 734", "by": 1994},
       {"type": "매매", "price": 52000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 734", "by": 1994},
@@ -454,7 +454,7 @@
     "name": "성원아파트",
     "address": "도봉구 방학동 735",
     "coords": [127.035703142134, 37.6618360175175],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [41100, 52400], "rep_area": 84.5, "rep_avg_price": 50700}, "jeonse": null, "monthly": {"count": 1, "range": [18000, 18000], "rep_area": 84.5, "rep_avg_price": 18000}},
+    "stats": {"total": 4, "sale": {"count": 3, "range": [41100, 52400], "rep_area": 84.5, "rep_avg_price": 50700, "ppy": 2057}, "jeonse": null, "monthly": {"count": 1, "range": [18000, 18000], "rep_area": 84.5, "rep_avg_price": 18000, "ppy": 704}},
     "deals": [
       {"type": "매매", "price": 49000, "rent": 0, "area": 84.54, "land": 0.0, "floor": "2", "dong": "101", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 735", "by": 1996},
       {"type": "매매", "price": 52400, "rent": 0, "area": 84.54, "land": 0.0, "floor": "9", "dong": "101", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 735", "by": 1996},
@@ -466,7 +466,7 @@
     "name": "신동아타워아파트",
     "address": "도봉구 방학동 736",
     "coords": [127.028848254054, 37.6622481099352],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [29200, 29200], "rep_area": 60.0, "rep_avg_price": 29200}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [29200, 29200], "rep_area": 60.0, "rep_avg_price": 29200, "ppy": 1609}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 29200, "rent": 0, "area": 60.0, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-25", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 736", "by": 1997}
     ]
@@ -475,7 +475,7 @@
     "name": "효성하이타운아파트",
     "address": "도봉구 방학동 739",
     "coords": [127.033100853351, 37.6610445435325],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [28000, 34500], "rep_area": 84.9, "rep_avg_price": 31250}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [28000, 34500], "rep_area": 84.9, "rep_avg_price": 31250, "ppy": 1217}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 34500, "rent": 0, "area": 84.87, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-28", "period": "25.02~27.02", "renew": "갱신", "p_dep": 34000, "p_rent": 0, "jibun": "방학동 739", "by": 2002},
       {"type": "전세", "price": 28000, "rent": 0, "area": 84.87, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-06", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "방학동 739", "by": 2002}
@@ -485,7 +485,7 @@
     "name": "성진파크뷰아파트",
     "address": "도봉구 방학동 741",
     "coords": [127.035304010246, 37.660948040298],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 45.5, "rep_avg_price": 25000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 45.5, "rep_avg_price": 25000, "ppy": 1816}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 45.51, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-27", "period": "25.05~27.05", "renew": "갱신", "p_dep": 20000, "p_rent": 0, "jibun": "방학동 741", "by": 2019}
     ]
@@ -494,7 +494,7 @@
     "name": "북한산청호아파트",
     "address": "도봉구 방학동 743",
     "coords": [127.039555563856, 37.6643041976202],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [46000, 46000], "rep_area": 59.8, "rep_avg_price": 46000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [46000, 46000], "rep_area": 59.8, "rep_avg_price": 46000, "ppy": 2545}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 46000, "rent": 0, "area": 59.75, "land": 0.0, "floor": "1", "dong": "101", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "방학동 743", "by": 2022}
     ]
@@ -503,7 +503,7 @@
     "name": "드림하우스",
     "address": "도봉구 쌍문동 103-231",
     "coords": [127.032419599851, 37.645391060275],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19950, 19950], "rep_area": 35.1, "rep_avg_price": 19950}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19950, 19950], "rep_area": 35.1, "rep_avg_price": 19950, "ppy": 1877}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 19950, "rent": 0, "area": 35.13, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-05", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 103-231", "by": 2016}
     ]
@@ -512,7 +512,7 @@
     "name": "대웅",
     "address": "도봉구 쌍문동 13-2",
     "coords": [127.035703351898, 37.6599075567277],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [24500, 24500], "rep_area": 52.0, "rep_avg_price": 24500}, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 55.5, "rep_avg_price": 13000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [24500, 24500], "rep_area": 52.0, "rep_avg_price": 24500, "ppy": 1557}, "jeonse": null, "monthly": {"count": 1, "range": [13000, 13000], "rep_area": 55.5, "rep_avg_price": 13000, "ppy": 774}},
     "deals": [
       {"type": "매매", "price": 24500, "rent": 0, "area": 52.02, "land": 0.0, "floor": "5", "dong": "1", "date": "2025-02-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 13-2", "by": 1989},
       {"type": "월세", "price": 13000, "rent": 27, "area": 55.5, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-10", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 13-2", "by": 1989}
@@ -522,7 +522,7 @@
     "name": "신동아",
     "address": "도봉구 쌍문동 139-52",
     "coords": [127.031072463018, 37.6497476780555],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [38900, 38900], "rep_area": 65.7, "rep_avg_price": 38900}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38900, 38900], "rep_area": 65.7, "rep_avg_price": 38900, "ppy": 1957}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 38900, "rent": 0, "area": 65.71, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 139-52", "by": 2003}
     ]
@@ -531,7 +531,7 @@
     "name": "기용",
     "address": "도봉구 쌍문동 153",
     "coords": [127.034462491848, 37.6547784550096],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [19200, 19200], "rep_area": 44.4, "rep_avg_price": 19200}, "jeonse": {"count": 1, "range": [14500, 14500], "rep_area": 41.3, "rep_avg_price": 14500}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [19200, 19200], "rep_area": 44.4, "rep_avg_price": 19200, "ppy": 1430}, "jeonse": {"count": 1, "range": [14500, 14500], "rep_area": 41.3, "rep_avg_price": 14500, "ppy": 1160}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 19200, "rent": 0, "area": 44.37, "land": 0.0, "floor": "4", "dong": "2", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 153", "by": 1988},
       {"type": "매매", "price": 19200, "rent": 0, "area": 44.37, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 153", "by": 1988},
@@ -542,7 +542,7 @@
     "name": "한양7",
     "address": "도봉구 쌍문동 158",
     "coords": [127.033853936885, 37.6560145987519],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 84.3, "rep_avg_price": 60000}, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 84.9, "rep_avg_price": 36000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 84.3, "rep_avg_price": 60000, "ppy": 2353}, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 84.9, "rep_avg_price": 36000, "ppy": 1402}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 84.3, "land": 0.0, "floor": "14", "dong": "702", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 158", "by": 1993},
       {"type": "전세", "price": 36000, "rent": 0, "area": 84.86, "land": 0.0, "floor": "13", "dong": "", "date": "2025-02-07", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 158", "by": 1993}
@@ -552,7 +552,7 @@
     "name": "미라보",
     "address": "도봉구 쌍문동 160",
     "coords": [127.031409020088, 37.6551469083419],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 85.0, "rep_avg_price": 38000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 85.0, "rep_avg_price": 38000, "ppy": 1478}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 38000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-25", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 160", "by": 1995}
     ]
@@ -561,7 +561,7 @@
     "name": "금호1",
     "address": "도봉구 쌍문동 199-1",
     "coords": [127.033494951089, 37.6591094842197],
-    "stats": {"total": 11, "sale": {"count": 3, "range": [47500, 53500], "rep_area": 84.9, "rep_avg_price": 53500}, "jeonse": {"count": 4, "range": [15000, 25000], "rep_area": 36.4, "rep_avg_price": 16333}, "monthly": {"count": 4, "range": [1000, 3000], "rep_area": 36.4, "rep_avg_price": 2000}},
+    "stats": {"total": 11, "sale": {"count": 3, "range": [47500, 53500], "rep_area": 84.9, "rep_avg_price": 53500, "ppy": 2129}, "jeonse": {"count": 4, "range": [15000, 25000], "rep_area": 36.4, "rep_avg_price": 16333, "ppy": 1475}, "monthly": {"count": 4, "range": [1000, 3000], "rep_area": 36.4, "rep_avg_price": 2000, "ppy": 153}},
     "deals": [
       {"type": "매매", "price": 47500, "rent": 0, "area": 70.13, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 199-1", "by": 1990},
       {"type": "매매", "price": 53500, "rent": 0, "area": 84.88, "land": 0.0, "floor": "5", "dong": "1", "date": "2025-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 199-1", "by": 1990},
@@ -580,7 +580,7 @@
     "name": "동익미라벨",
     "address": "도봉구 쌍문동 285-5",
     "coords": [127.024824026691, 37.6512628099218],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [49800, 49800], "rep_area": 84.5, "rep_avg_price": 49800}, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 65.4, "rep_avg_price": 13000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.4, "rep_avg_price": 10000}},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [49800, 49800], "rep_area": 84.5, "rep_avg_price": 49800, "ppy": 1948}, "jeonse": {"count": 1, "range": [13000, 13000], "rep_area": 65.4, "rep_avg_price": 13000, "ppy": 657}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.4, "rep_avg_price": 10000, "ppy": 392}},
     "deals": [
       {"type": "매매", "price": 49800, "rent": 0, "area": 84.53, "land": 0.0, "floor": "14", "dong": "1", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 285-5", "by": 1987},
       {"type": "매매", "price": 49800, "rent": 0, "area": 84.53, "land": 0.0, "floor": "14", "dong": "", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 285-5", "by": 1987},
@@ -592,7 +592,7 @@
     "name": "쌍문금용",
     "address": "도봉구 쌍문동 321",
     "coords": [127.027891162204, 37.6492868092825],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 59.9, "rep_avg_price": 38000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [38000, 38000], "rep_area": 59.9, "rep_avg_price": 38000, "ppy": 2096}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 38000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 321", "by": 1995}
     ]
@@ -601,7 +601,7 @@
     "name": "한양1",
     "address": "도봉구 쌍문동 388-33",
     "coords": [127.030692970618, 37.6459021096389],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [21000, 32000], "rep_area": 66.3, "rep_avg_price": 31666}, "monthly": null},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [21000, 32000], "rep_area": 66.3, "rep_avg_price": 31666, "ppy": 1553}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 50.58, "land": 0.0, "floor": "9", "dong": "", "date": "2025-02-25", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 388-33", "by": 1986},
       {"type": "전세", "price": 32000, "rent": 0, "area": 66.33, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-22", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 388-33", "by": 1986},
@@ -614,7 +614,7 @@
     "name": "서광",
     "address": "도봉구 쌍문동 478-25",
     "coords": [127.019379707895, 37.6545979164525],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 82.1, "rep_avg_price": 3000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 82.1, "rep_avg_price": 3000, "ppy": 121}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 60, "area": 82.08, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-24", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 478-25", "by": 2006}
     ]
@@ -623,7 +623,7 @@
     "name": "에드가쌍문",
     "address": "도봉구 쌍문동 507-1",
     "coords": [127.013859616446, 37.6565234626722],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5895, 5895], "rep_area": 22.5, "rep_avg_price": 5895}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5895, 5895], "rep_area": 22.5, "rep_avg_price": 5895, "ppy": 867}},
     "deals": [
       {"type": "월세", "price": 5895, "rent": 41, "area": 22.4666, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-11", "period": "25.02~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 507-1", "by": 2022}
     ]
@@ -632,7 +632,7 @@
     "name": "성원",
     "address": "도봉구 쌍문동 53",
     "coords": [127.028839788429, 37.6585287700527],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [48000, 48000], "rep_area": 85.0, "rep_avg_price": 48000}, "jeonse": {"count": 4, "range": [29400, 37000], "rep_area": 85.0, "rep_avg_price": 34600}, "monthly": {"count": 1, "range": [15500, 15500], "rep_area": 85.0, "rep_avg_price": 15500}},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [48000, 48000], "rep_area": 85.0, "rep_avg_price": 48000, "ppy": 1867}, "jeonse": {"count": 4, "range": [29400, 37000], "rep_area": 85.0, "rep_avg_price": 34600, "ppy": 1346}, "monthly": {"count": 1, "range": [15500, 15500], "rep_area": 85.0, "rep_avg_price": 15500, "ppy": 603}},
     "deals": [
       {"type": "매매", "price": 48000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "9", "dong": "105", "date": "2025-02-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 53", "by": 1989},
       {"type": "전세", "price": 36000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-26", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 53", "by": 1989},
@@ -646,7 +646,7 @@
     "name": "현대1",
     "address": "도봉구 쌍문동 54",
     "coords": [127.031200913055, 37.6585642084385],
-    "stats": {"total": 6, "sale": {"count": 2, "range": [26400, 35000], "rep_area": 44.6, "rep_avg_price": 26400}, "jeonse": {"count": 4, "range": [17500, 28000], "rep_area": 44.6, "rep_avg_price": 18500}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 2, "range": [26400, 35000], "rep_area": 44.6, "rep_avg_price": 26400, "ppy": 1571}, "jeonse": {"count": 4, "range": [17500, 28000], "rep_area": 44.6, "rep_avg_price": 18500, "ppy": 1264}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 35000, "rent": 0, "area": 84.66, "land": 0.0, "floor": "1", "dong": "107", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 54", "by": 1990},
       {"type": "매매", "price": 26400, "rent": 0, "area": 44.55, "land": 0.0, "floor": "12", "dong": "", "date": "2025-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 54", "by": 1990},
@@ -660,7 +660,7 @@
     "name": "삼익세라믹",
     "address": "도봉구 쌍문동 56",
     "coords": [127.034882395018, 37.6575242550096],
-    "stats": {"total": 16, "sale": {"count": 5, "range": [28000, 44500], "rep_area": 58.8, "rep_avg_price": 43833}, "jeonse": {"count": 3, "range": [24000, 33000], "rep_area": 80.0, "rep_avg_price": 30500}, "monthly": {"count": 8, "range": [2000, 14000], "rep_area": 80.0, "rep_avg_price": 7333}},
+    "stats": {"total": 16, "sale": {"count": 5, "range": [28000, 44500], "rep_area": 58.8, "rep_avg_price": 43833, "ppy": 2413}, "jeonse": {"count": 3, "range": [24000, 33000], "rep_area": 80.0, "rep_avg_price": 30500, "ppy": 1285}, "monthly": {"count": 8, "range": [2000, 14000], "rep_area": 80.0, "rep_avg_price": 7333, "ppy": 362}},
     "deals": [
       {"type": "매매", "price": 42500, "rent": 0, "area": 58.77, "land": 0.0, "floor": "7", "dong": "109", "date": "2025-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 56", "by": 1988},
       {"type": "매매", "price": 31900, "rent": 0, "area": 42.93, "land": 0.0, "floor": "12", "dong": "110", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 56", "by": 1988},
@@ -684,7 +684,7 @@
     "name": "성원하이츠A동",
     "address": "도봉구 쌍문동 574",
     "coords": [127.038883697083, 37.6575747203012],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 71.2, "rep_avg_price": 40000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [40000, 40000], "rep_area": 71.2, "rep_avg_price": 40000, "ppy": 1857}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 40000, "rent": 0, "area": 71.22, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 574", "by": 2004}
     ]
@@ -693,7 +693,7 @@
     "name": "시그마팰리스",
     "address": "도봉구 쌍문동 575",
     "coords": [127.040102198744, 37.6584118651253],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [27700, 27700], "rep_area": 55.6, "rep_avg_price": 27700}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27700, 27700], "rep_area": 55.6, "rep_avg_price": 27700, "ppy": 1647}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 27700, "rent": 0, "area": 55.59, "land": 0.0, "floor": "12", "dong": "", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 575", "by": 2003}
     ]
@@ -702,7 +702,7 @@
     "name": "한양2",
     "address": "도봉구 쌍문동 59",
     "coords": [127.031453992625, 37.6569864317373],
-    "stats": {"total": 27, "sale": {"count": 1, "range": [33500, 33500], "rep_area": 49.0, "rep_avg_price": 33500}, "jeonse": {"count": 10, "range": [13890, 29000], "rep_area": 35.1, "rep_avg_price": 16245}, "monthly": {"count": 16, "range": [200, 13000], "rep_area": 35.1, "rep_avg_price": 2625}},
+    "stats": {"total": 27, "sale": {"count": 1, "range": [33500, 33500], "rep_area": 49.0, "rep_avg_price": 33500, "ppy": 2262}, "jeonse": {"count": 10, "range": [13890, 29000], "rep_area": 35.1, "rep_avg_price": 16245, "ppy": 1451}, "monthly": {"count": 16, "range": [200, 13000], "rep_area": 35.1, "rep_avg_price": 2625, "ppy": 261}},
     "deals": [
       {"type": "매매", "price": 33500, "rent": 0, "area": 48.96, "land": 0.0, "floor": "10", "dong": "5", "date": "2025-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 59", "by": 1988},
       {"type": "전세", "price": 23000, "rent": 0, "area": 48.96, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 59", "by": 1988},
@@ -737,7 +737,7 @@
     "name": "한양5",
     "address": "도봉구 쌍문동 59-3",
     "coords": [127.032133993703, 37.6560211163906],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26000, 26000], "rep_area": 65.4, "rep_avg_price": 26000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [26000, 26000], "rep_area": 65.4, "rep_avg_price": 26000, "ppy": 1315}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 26000, "rent": 0, "area": 65.37, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-04", "period": "25.02~27.02", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "쌍문동 59-3", "by": 1991}
     ]
@@ -746,7 +746,7 @@
     "name": "한양6",
     "address": "도봉구 쌍문동 59-5",
     "coords": [127.028991985722, 37.655894351358],
-    "stats": {"total": 9, "sale": {"count": 1, "range": [53000, 53000], "rep_area": 83.9, "rep_avg_price": 53000}, "jeonse": {"count": 7, "range": [37500, 45500], "rep_area": 83.9, "rep_avg_price": 40571}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 83.9, "rep_avg_price": 20000}},
+    "stats": {"total": 9, "sale": {"count": 1, "range": [53000, 53000], "rep_area": 83.9, "rep_avg_price": 53000, "ppy": 2089}, "jeonse": {"count": 7, "range": [37500, 45500], "rep_area": 83.9, "rep_avg_price": 40571, "ppy": 1599}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 83.9, "rep_avg_price": 20000, "ppy": 788}},
     "deals": [
       {"type": "매매", "price": 53000, "rent": 0, "area": 83.86, "land": 0.0, "floor": "8", "dong": "601", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 59-5", "by": 2002},
       {"type": "전세", "price": 43000, "rent": 0, "area": 83.86, "land": 0.0, "floor": "13", "dong": "", "date": "2025-02-12", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 59-5", "by": 2002},
@@ -763,7 +763,7 @@
     "name": "염광",
     "address": "도봉구 쌍문동 722",
     "coords": [127.026303347366, 37.6485402588235],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 59.9, "rep_avg_price": 28000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.9, "rep_avg_price": 5000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 59.9, "rep_avg_price": 28000, "ppy": 1545}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.9, "rep_avg_price": 5000, "ppy": 276}},
     "deals": [
       {"type": "전세", "price": 28000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-28", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 722", "by": 1997},
       {"type": "월세", "price": 5000, "rent": 70, "area": 59.91, "land": 0.0, "floor": "11", "dong": "", "date": "2025-02-24", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 722", "by": 1997}
@@ -773,7 +773,7 @@
     "name": "신원2",
     "address": "도봉구 쌍문동 723",
     "coords": [127.035750750525, 37.6583073087137],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [49000, 49000], "rep_area": 85.0, "rep_avg_price": 49000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [49000, 49000], "rep_area": 85.0, "rep_avg_price": 49000, "ppy": 1906}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 49000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 723", "by": 1998}
     ]
@@ -782,7 +782,7 @@
     "name": "백조",
     "address": "도봉구 쌍문동 724",
     "coords": [127.026343935522, 37.6460347946701],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 56.7, "rep_avg_price": 16000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [16000, 16000], "rep_area": 56.7, "rep_avg_price": 16000, "ppy": 932}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 16000, "rent": 0, "area": 56.73, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-28", "period": "25.03~27.02", "renew": "갱신", "p_dep": 16000, "p_rent": 0, "jibun": "쌍문동 724", "by": 1981}
     ]
@@ -791,7 +791,7 @@
     "name": "신일라이프",
     "address": "도봉구 쌍문동 726",
     "coords": [127.029440003072, 37.650544655912],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [48500, 48500], "rep_area": 81.7, "rep_avg_price": 48500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [48500, 48500], "rep_area": 81.7, "rep_avg_price": 48500, "ppy": 1963}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 48500, "rent": 0, "area": 81.68, "land": 0.0, "floor": "3", "dong": "101", "date": "2025-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 726", "by": 2002}
     ]
@@ -800,7 +800,7 @@
     "name": "파라다이스빌",
     "address": "도봉구 쌍문동 727",
     "coords": [127.02741081892, 37.6560734842369],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 40000], "rep_area": 59.3, "rep_avg_price": 5000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 40000], "rep_area": 59.3, "rep_avg_price": 5000, "ppy": 1031}},
     "deals": [
       {"type": "월세", "price": 40000, "rent": 35, "area": 84.99, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-11", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 727", "by": 2004},
       {"type": "월세", "price": 5000, "rent": 130, "area": 59.33, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-10", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 727", "by": 2004}
@@ -810,7 +810,7 @@
     "name": "북한산월드메르디앙",
     "address": "도봉구 쌍문동 728",
     "coords": [127.013624075412, 37.6537778364103],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [58500, 58500], "rep_area": 70.7, "rep_avg_price": 58500}, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 70.7, "rep_avg_price": 38000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 82.1, "rep_avg_price": 5000}},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [58500, 58500], "rep_area": 70.7, "rep_avg_price": 58500, "ppy": 2735}, "jeonse": {"count": 1, "range": [38000, 38000], "rep_area": 70.7, "rep_avg_price": 38000, "ppy": 1777}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 82.1, "rep_avg_price": 5000, "ppy": 201}},
     "deals": [
       {"type": "매매", "price": 58500, "rent": 0, "area": 70.71, "land": 0.0, "floor": "8", "dong": "104", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 728", "by": 2005},
       {"type": "매매", "price": 58500, "rent": 0, "area": 70.71, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 728", "by": 2005},
@@ -822,7 +822,7 @@
     "name": "브라운스톤쌍문",
     "address": "도봉구 쌍문동 729",
     "coords": [127.029200092887, 37.6473174834296],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [38000, 42500], "rep_area": 60.0, "rep_avg_price": 38000}, "monthly": null},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [38000, 42500], "rep_area": 60.0, "rep_avg_price": 38000, "ppy": 1880}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 38000, "rent": 0, "area": 59.9788, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 729", "by": 2006},
       {"type": "전세", "price": 42500, "rent": 0, "area": 84.969, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 729", "by": 2006},
@@ -835,7 +835,7 @@
     "name": "경남",
     "address": "도봉구 쌍문동 73",
     "coords": [127.035145507637, 37.6548047423787],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 2, "range": [19000, 20000], "rep_area": 44.5, "rep_avg_price": 20000}, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 44.5, "rep_avg_price": 1333}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 2, "range": [19000, 20000], "rep_area": 44.5, "rep_avg_price": 20000, "ppy": 1420}, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 44.5, "rep_avg_price": 1333, "ppy": 99}},
     "deals": [
       {"type": "전세", "price": 20000, "rent": 0, "area": 44.5, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-14", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 73", "by": 1988},
       {"type": "월세", "price": 1000, "rent": 70, "area": 44.5, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-06", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 73", "by": 1988},
@@ -848,7 +848,7 @@
     "name": "대우파크힐(쌍문동이안)",
     "address": "도봉구 쌍문동 730",
     "coords": [127.029018174117, 37.6515523296978],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [74000, 74000], "rep_area": 126.4, "rep_avg_price": 74000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [74000, 74000], "rep_area": 126.4, "rep_avg_price": 74000, "ppy": 1936}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 74000, "rent": 0, "area": 126.379, "land": 0.0, "floor": "4", "dong": "103", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 730", "by": 2004}
     ]
@@ -857,7 +857,7 @@
     "name": "e편한세상",
     "address": "도봉구 쌍문동 731",
     "coords": [127.027292929292, 37.6497971759976],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 85.0, "rep_avg_price": 45000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 85.0, "rep_avg_price": 45000, "ppy": 1751}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 45000, "rent": 0, "area": 84.978, "land": 0.0, "floor": "9", "dong": "", "date": "2025-02-26", "period": "25.03~27.03", "renew": "갱신", "p_dep": 45000, "p_rent": 0, "jibun": "쌍문동 731", "by": 2007}
     ]
@@ -866,7 +866,7 @@
     "name": "북한산코오롱하늘채",
     "address": "도봉구 쌍문동 732",
     "coords": [127.023195607393, 37.6482484515853],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [48000, 48000], "rep_area": 85.0, "rep_avg_price": 48000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [48000, 48000], "rep_area": 85.0, "rep_avg_price": 48000, "ppy": 1867}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 48000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-18", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 732", "by": 2014}
     ]
@@ -875,7 +875,7 @@
     "name": "솔밭노블리안",
     "address": "도봉구 쌍문동 733",
     "coords": [127.013795880628, 37.6550483819526],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 50.3, "rep_avg_price": 25000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [25000, 25000], "rep_area": 50.3, "rep_avg_price": 25000, "ppy": 1643}},
     "deals": [
       {"type": "월세", "price": 25000, "rent": 25, "area": 50.29, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-04", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 733", "by": 2019}
     ]
@@ -884,7 +884,7 @@
     "name": "한성쉐르빌",
     "address": "도봉구 쌍문동 88-17",
     "coords": [127.034599301761, 37.6499537423305],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [23000, 23000], "rep_area": 54.1, "rep_avg_price": 23000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [23000, 23000], "rep_area": 54.1, "rep_avg_price": 23000, "ppy": 1405}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 23000, "rent": 0, "area": 54.1, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 88-17", "by": 2001}
     ]
@@ -893,7 +893,7 @@
     "name": "금호2",
     "address": "도봉구 쌍문동 산69-1",
     "coords": [127.028953886354, 37.6572970097023],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [30000, 30000], "rep_area": 72.0, "rep_avg_price": 30000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [30000, 30000], "rep_area": 72.0, "rep_avg_price": 30000, "ppy": 1378}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 30000, "rent": 0, "area": 71.98, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-19", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "쌍문동 산69-1", "by": 1991},
       {"type": "전세", "price": 30000, "rent": 0, "area": 71.98, "land": 0.0, "floor": "1", "dong": "", "date": "2025-02-07", "period": "25.02~27.02", "renew": "갱신", "p_dep": 29000, "p_rent": 0, "jibun": "쌍문동 산69-1", "by": 1991}
@@ -903,7 +903,7 @@
     "name": "동아",
     "address": "도봉구 창동 26",
     "coords": [127.050332274529, 37.6512697309111],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [95000, 95000], "rep_area": 109.5, "rep_avg_price": 95000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [95000, 95000], "rep_area": 109.5, "rep_avg_price": 95000, "ppy": 2868}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 95000, "rent": 0, "area": 109.5, "land": 0.0, "floor": "14", "dong": "6", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 26", "by": 1988},
       {"type": "매매", "price": 95000, "rent": 0, "area": 109.5, "land": 0.0, "floor": "14", "dong": "", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 26", "by": 1988}
@@ -913,7 +913,7 @@
     "name": "주공19단지(창동리버타운)",
     "address": "도봉구 창동 27",
     "coords": [127.0508054847, 37.6492614170598],
-    "stats": {"total": 23, "sale": {"count": 2, "range": [81000, 82000], "rep_area": 68.9, "rep_avg_price": 81500}, "jeonse": {"count": 15, "range": [23000, 46000], "rep_area": 68.9, "rep_avg_price": 27400}, "monthly": {"count": 6, "range": [4000, 30000], "rep_area": 59.4, "rep_avg_price": 7000}},
+    "stats": {"total": 23, "sale": {"count": 2, "range": [81000, 82000], "rep_area": 68.9, "rep_avg_price": 81500, "ppy": 3913}, "jeonse": {"count": 15, "range": [23000, 46000], "rep_area": 68.9, "rep_avg_price": 27400, "ppy": 1457}, "monthly": {"count": 6, "range": [4000, 30000], "rep_area": 59.4, "rep_avg_price": 7000, "ppy": 677}},
     "deals": [
       {"type": "매매", "price": 82000, "rent": 0, "area": 68.86, "land": 0.0, "floor": "10", "dong": "1904", "date": "2025-02-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 27", "by": 1988},
       {"type": "매매", "price": 81000, "rent": 0, "area": 68.86, "land": 0.0, "floor": "13", "dong": "1902", "date": "2025-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 27", "by": 1988},
@@ -944,7 +944,7 @@
     "name": "상아1차아파트",
     "address": "도봉구 창동 299",
     "coords": [127.042266004364, 37.6540244978375],
-    "stats": {"total": 18, "sale": {"count": 2, "range": [30800, 56500], "rep_area": 45.5, "rep_avg_price": 30800}, "jeonse": {"count": 11, "range": [21000, 38000], "rep_area": 58.6, "rep_avg_price": 26033}, "monthly": {"count": 5, "range": [1000, 20000], "rep_area": 45.5, "rep_avg_price": 10019}},
+    "stats": {"total": 18, "sale": {"count": 2, "range": [30800, 56500], "rep_area": 45.5, "rep_avg_price": 30800, "ppy": 2771}, "jeonse": {"count": 11, "range": [21000, 38000], "rep_area": 58.6, "rep_avg_price": 26033, "ppy": 1436}, "monthly": {"count": 5, "range": [1000, 20000], "rep_area": 45.5, "rep_avg_price": 10019, "ppy": 496}},
     "deals": [
       {"type": "매매", "price": 30800, "rent": 0, "area": 45.54, "land": 0.0, "floor": "9", "dong": "1동", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 299", "by": 1987},
       {"type": "매매", "price": 56500, "rent": 0, "area": 58.59, "land": 0.0, "floor": "4", "dong": "3동", "date": "2025-02-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 299", "by": 1987},
@@ -970,7 +970,7 @@
     "name": "창동주공18단지",
     "address": "도봉구 창동 30",
     "coords": [127.051742474665, 37.6464611137803],
-    "stats": {"total": 13, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 59.4, "rep_avg_price": 54000}, "jeonse": {"count": 7, "range": [17000, 27000], "rep_area": 45.9, "rep_avg_price": 17550}, "monthly": {"count": 5, "range": [1000, 5500], "rep_area": 32.3, "rep_avg_price": 5500}},
+    "stats": {"total": 13, "sale": {"count": 1, "range": [54000, 54000], "rep_area": 59.4, "rep_avg_price": 54000, "ppy": 3006}, "jeonse": {"count": 7, "range": [17000, 27000], "rep_area": 45.9, "rep_avg_price": 17550, "ppy": 1291}, "monthly": {"count": 5, "range": [1000, 5500], "rep_area": 32.3, "rep_avg_price": 5500, "ppy": 251}},
     "deals": [
       {"type": "매매", "price": 54000, "rent": 0, "area": 59.39, "land": 0.0, "floor": "15", "dong": "1806", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 30", "by": 1988},
       {"type": "전세", "price": 27000, "rent": 0, "area": 84.41, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 30", "by": 1988},
@@ -991,7 +991,7 @@
     "name": "상아2차아파트",
     "address": "도봉구 창동 300",
     "coords": [127.044028620047, 37.653436772926],
-    "stats": {"total": 8, "sale": null, "jeonse": {"count": 4, "range": [17300, 36000], "rep_area": 45.5, "rep_avg_price": 17312}, "monthly": {"count": 4, "range": [500, 10000], "rep_area": 45.5, "rep_avg_price": 1000}},
+    "stats": {"total": 8, "sale": null, "jeonse": {"count": 4, "range": [17300, 36000], "rep_area": 45.5, "rep_avg_price": 17312, "ppy": 1328}, "monthly": {"count": 4, "range": [500, 10000], "rep_area": 45.5, "rep_avg_price": 1000, "ppy": 239}},
     "deals": [
       {"type": "월세", "price": 1500, "rent": 61, "area": 45.54, "land": 0.0, "floor": "12", "dong": "", "date": "2025-02-03", "period": "25.04~27.04", "renew": "갱신", "p_dep": 1500, "p_rent": 58, "jibun": "창동 300", "by": 1988},
       {"type": "월세", "price": 500, "rent": 88, "area": 45.54, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-25", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 300", "by": 1988},
@@ -1007,7 +1007,7 @@
     "name": "창동주공1단지",
     "address": "도봉구 창동 305",
     "coords": [127.039404572356, 37.6535360746342],
-    "stats": {"total": 11, "sale": {"count": 1, "range": [37500, 37500], "rep_area": 41.3, "rep_avg_price": 37500}, "jeonse": {"count": 7, "range": [16800, 29000], "rep_area": 41.3, "rep_avg_price": 18025}, "monthly": {"count": 3, "range": [2000, 15000], "rep_area": 44.9, "rep_avg_price": 2000}},
+    "stats": {"total": 11, "sale": {"count": 1, "range": [37500, 37500], "rep_area": 41.3, "rep_avg_price": 37500, "ppy": 3002}, "jeonse": {"count": 7, "range": [16800, 29000], "rep_area": 41.3, "rep_avg_price": 18025, "ppy": 1509}, "monthly": {"count": 3, "range": [2000, 15000], "rep_area": 44.9, "rep_avg_price": 2000, "ppy": 686}},
     "deals": [
       {"type": "매매", "price": 37500, "rent": 0, "area": 41.3, "land": 0.0, "floor": "3", "dong": "105동", "date": "2025-02-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 305", "by": 1990},
       {"type": "월세", "price": 15000, "rent": 50, "area": 59.39, "land": 0.0, "floor": "14", "dong": "", "date": "2025-02-19", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 305", "by": 1990},
@@ -1026,7 +1026,7 @@
     "name": "창동주공2단지",
     "address": "도봉구 창동 316",
     "coords": [127.042299723487, 37.6527358103485],
-    "stats": {"total": 8, "sale": {"count": 1, "range": [42000, 42000], "rep_area": 41.3, "rep_avg_price": 42000}, "jeonse": {"count": 5, "range": [20000, 21500], "rep_area": 45.9, "rep_avg_price": 20666}, "monthly": {"count": 2, "range": [5000, 5500], "rep_area": 41.3, "rep_avg_price": 5250}},
+    "stats": {"total": 8, "sale": {"count": 1, "range": [42000, 42000], "rep_area": 41.3, "rep_avg_price": 42000, "ppy": 3362}, "jeonse": {"count": 5, "range": [20000, 21500], "rep_area": 45.9, "rep_avg_price": 20666, "ppy": 1553}, "monthly": {"count": 2, "range": [5000, 5500], "rep_area": 41.3, "rep_avg_price": 5250, "ppy": 420}},
     "deals": [
       {"type": "매매", "price": 42000, "rent": 0, "area": 41.3, "land": 0.0, "floor": "14", "dong": "205동", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 316", "by": 1990},
       {"type": "월세", "price": 5500, "rent": 60, "area": 41.3, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-15", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 316", "by": 1990},
@@ -1042,7 +1042,7 @@
     "name": "창동주공3단지(해등마을)",
     "address": "도봉구 창동 347",
     "coords": [127.04420113616, 37.6500631583751],
-    "stats": {"total": 43, "sale": {"count": 7, "range": [53500, 71800], "rep_area": 49.9, "rep_avg_price": 55166}, "jeonse": {"count": 25, "range": [19000, 43000], "rep_area": 58.0, "rep_avg_price": 27412}, "monthly": {"count": 11, "range": [3000, 25000], "rep_area": 49.9, "rep_avg_price": 8800}},
+    "stats": {"total": 43, "sale": {"count": 7, "range": [53500, 71800], "rep_area": 49.9, "rep_avg_price": 55166, "ppy": 3322}, "jeonse": {"count": 25, "range": [19000, 43000], "rep_area": 58.0, "rep_avg_price": 27412, "ppy": 1595}, "monthly": {"count": 11, "range": [3000, 25000], "rep_area": 49.9, "rep_avg_price": 8800, "ppy": 408}},
     "deals": [
       {"type": "매매", "price": 59000, "rent": 0, "area": 61.52, "land": 0.0, "floor": "11", "dong": "309동", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 347", "by": 1990},
       {"type": "매매", "price": 71800, "rent": 0, "area": 84.41, "land": 0.0, "floor": "2", "dong": "325동", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 347", "by": 1990},
@@ -1093,7 +1093,7 @@
     "name": "창동주공4단지",
     "address": "도봉구 창동 373",
     "coords": [127.048016739909, 37.645841010278],
-    "stats": {"total": 29, "sale": {"count": 2, "range": [31000, 35800], "rep_area": 41.3, "rep_avg_price": 33400}, "jeonse": {"count": 14, "range": [13000, 24000], "rep_area": 36.2, "rep_avg_price": 15000}, "monthly": {"count": 13, "range": [1000, 5000], "rep_area": 41.3, "rep_avg_price": 2357}},
+    "stats": {"total": 29, "sale": {"count": 2, "range": [31000, 35800], "rep_area": 41.3, "rep_avg_price": 33400, "ppy": 2673}, "jeonse": {"count": 14, "range": [13000, 24000], "rep_area": 36.2, "rep_avg_price": 15000, "ppy": 1431}, "monthly": {"count": 13, "range": [1000, 5000], "rep_area": 41.3, "rep_avg_price": 2357, "ppy": 201}},
     "deals": [
       {"type": "매매", "price": 35800, "rent": 0, "area": 41.3, "land": 0.0, "floor": "3", "dong": "402동", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 373", "by": 1991},
       {"type": "매매", "price": 31000, "rent": 0, "area": 41.3, "land": 0.0, "floor": "1", "dong": "409동", "date": "2025-02-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 373", "by": 1991},
@@ -1130,7 +1130,7 @@
     "name": "주공17단지",
     "address": "도봉구 창동 38",
     "coords": [127.05338274179, 37.6442064819292],
-    "stats": {"total": 28, "sale": {"count": 6, "range": [30200, 35000], "rep_area": 36.2, "rep_avg_price": 32033}, "jeonse": {"count": 13, "range": [12670, 23000], "rep_area": 36.2, "rep_avg_price": 15083}, "monthly": {"count": 9, "range": [700, 12000], "rep_area": 36.2, "rep_avg_price": 2671}},
+    "stats": {"total": 28, "sale": {"count": 6, "range": [30200, 35000], "rep_area": 36.2, "rep_avg_price": 32033, "ppy": 2947}, "jeonse": {"count": 13, "range": [12670, 23000], "rep_area": 36.2, "rep_avg_price": 15083, "ppy": 1364}, "monthly": {"count": 9, "range": [700, 12000], "rep_area": 36.2, "rep_avg_price": 2671, "ppy": 256}},
     "deals": [
       {"type": "매매", "price": 30900, "rent": 0, "area": 36.16, "land": 0.0, "floor": "3", "dong": "1706", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 38", "by": 1989},
       {"type": "매매", "price": 35000, "rent": 0, "area": 36.16, "land": 0.0, "floor": "8", "dong": "1701", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 38", "by": 1989},
@@ -1166,7 +1166,7 @@
     "name": "삼성래미안",
     "address": "도봉구 창동 45",
     "coords": [127.04854019084, 37.6490832554147],
-    "stats": {"total": 22, "sale": {"count": 5, "range": [72500, 78000], "rep_area": 66.5, "rep_avg_price": 73800}, "jeonse": {"count": 13, "range": [32600, 49000], "rep_area": 84.9, "rep_avg_price": 42388}, "monthly": {"count": 4, "range": [5000, 20000], "rep_area": 66.5, "rep_avg_price": 7500}},
+    "stats": {"total": 22, "sale": {"count": 5, "range": [72500, 78000], "rep_area": 66.5, "rep_avg_price": 73800, "ppy": 3350}, "jeonse": {"count": 13, "range": [32600, 49000], "rep_area": 84.9, "rep_avg_price": 42388, "ppy": 1701}, "monthly": {"count": 4, "range": [5000, 20000], "rep_area": 66.5, "rep_avg_price": 7500, "ppy": 437}},
     "deals": [
       {"type": "매매", "price": 72500, "rent": 0, "area": 73.92, "land": 0.0, "floor": "4", "dong": "102", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 45", "by": 1992},
       {"type": "매매", "price": 73800, "rent": 0, "area": 66.48, "land": 0.0, "floor": "5", "dong": "104", "date": "2025-02-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 45", "by": 1992},
@@ -1196,7 +1196,7 @@
     "name": "엘리시아",
     "address": "도봉구 창동 552-12",
     "coords": [127.037063019766, 37.6371591097355],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 53.4, "rep_avg_price": 36000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 53.4, "rep_avg_price": 36000, "ppy": 2228}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 36000, "rent": 0, "area": 53.42, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-01", "period": "25.02~28.02", "renew": "갱신", "p_dep": 36000, "p_rent": 0, "jibun": "창동 552-12", "by": 2020}
     ]
@@ -1205,7 +1205,7 @@
     "name": "보람아파트",
     "address": "도봉구 창동 607-4",
     "coords": [127.040203330148, 37.6431438629183],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28500, 28500], "rep_area": 72.9, "rep_avg_price": 28500}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [28500, 28500], "rep_area": 72.9, "rep_avg_price": 28500, "ppy": 1292}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 28500, "rent": 0, "area": 72.91, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-17", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 607-4", "by": 2004}
     ]
@@ -1214,7 +1214,7 @@
     "name": "LIG건영캐스빌",
     "address": "도봉구 창동 635-42",
     "coords": [127.034034160072, 37.6414406910731],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 55.7, "rep_avg_price": 10000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 55.7, "rep_avg_price": 10000, "ppy": 594}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 85, "area": 55.6724, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-21", "period": "24.10~26.10", "renew": "갱신", "p_dep": 10000, "p_rent": 80, "jibun": "창동 635-42", "by": 2002}
     ]
@@ -1223,7 +1223,7 @@
     "name": "하이브빌2",
     "address": "도봉구 창동 655-7",
     "coords": [127.034380251684, 37.6467383768657],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 13.2, "rep_avg_price": 1500}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 13.2, "rep_avg_price": 1500, "ppy": 344}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 13.2, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-28", "period": "25.02~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 655-7", "by": 2013},
       {"type": "월세", "price": 2000, "rent": 45, "area": 13.2, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-03", "period": "25.02~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 655-7", "by": 2013},
@@ -1234,7 +1234,7 @@
     "name": "호신빌딩",
     "address": "도봉구 창동 661-38",
     "coords": [127.035735178791, 37.6496991462783],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 16.6, "rep_avg_price": 1500}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 2000], "rep_area": 16.6, "rep_avg_price": 1500, "ppy": 280}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 42, "area": 16.64, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-11", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 661-38", "by": 2017},
       {"type": "월세", "price": 1000, "rent": 42, "area": 16.64, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-11", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 661-38", "by": 2017},
@@ -1245,7 +1245,7 @@
     "name": "스마트트라움",
     "address": "도봉구 창동 661-55",
     "coords": [127.036101310327, 37.6501814211753],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 16.4, "rep_avg_price": 16000}, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 16.4, "rep_avg_price": 14000}, "monthly": {"count": 3, "range": [1000, 14000], "rep_area": 16.4, "rep_avg_price": 5666}},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [16000, 16000], "rep_area": 16.4, "rep_avg_price": 16000, "ppy": 3221}, "jeonse": {"count": 1, "range": [14000, 14000], "rep_area": 16.4, "rep_avg_price": 14000, "ppy": 2819}, "monthly": {"count": 3, "range": [1000, 14000], "rep_area": 16.4, "rep_avg_price": 5666, "ppy": 1141}},
     "deals": [
       {"type": "매매", "price": 16000, "rent": 0, "area": 16.42, "land": 0.0, "floor": "8", "dong": "주건축물제1동", "date": "2025-02-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 661-55", "by": 2021},
       {"type": "월세", "price": 2000, "rent": 65, "area": 16.42, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-21", "period": "25.03~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 661-55", "by": 2021},
@@ -1258,7 +1258,7 @@
     "name": "월가타워",
     "address": "도봉구 창동 7",
     "coords": [127.049045042841, 37.6522341445137],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [8300, 8300], "rep_area": 13.1, "rep_avg_price": 8300}, "jeonse": null, "monthly": {"count": 3, "range": [500, 5500], "rep_area": 13.0, "rep_avg_price": 5500}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [8300, 8300], "rep_area": 13.1, "rep_avg_price": 8300, "ppy": 2096}, "jeonse": null, "monthly": {"count": 3, "range": [500, 5500], "rep_area": 13.0, "rep_avg_price": 5500, "ppy": 510}},
     "deals": [
       {"type": "매매", "price": 8300, "rent": 0, "area": 13.09, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 7", "by": 2013},
       {"type": "월세", "price": 500, "rent": 38, "area": 13.62, "land": 0.0, "floor": "14", "dong": "", "date": "2025-02-26", "period": "25.03~26.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 7", "by": 2013},
@@ -1270,7 +1270,7 @@
     "name": "미소애",
     "address": "도봉구 창동 715-3",
     "coords": [127.040128123941, 37.6560449765677],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [32000, 32000], "rep_area": 45.5, "rep_avg_price": 32000}, "jeonse": {"count": 3, "range": [22000, 26000], "rep_area": 45.5, "rep_avg_price": 24333}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [32000, 32000], "rep_area": 45.5, "rep_avg_price": 32000, "ppy": 2327}, "jeonse": {"count": 3, "range": [22000, 26000], "rep_area": 45.5, "rep_avg_price": 24333, "ppy": 1769}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 32000, "rent": 0, "area": 45.466, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 715-3", "by": 2005},
       {"type": "전세", "price": 22000, "rent": 0, "area": 45.466, "land": 0.0, "floor": "4", "dong": "", "date": "2025-02-24", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 715-3", "by": 2005},
@@ -1282,7 +1282,7 @@
     "name": "성원상떼빌",
     "address": "도봉구 창동 743-15",
     "coords": [127.049777485447, 37.6608041595514],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [57000, 57000], "rep_area": 59.8, "rep_avg_price": 57000}, "jeonse": {"count": 3, "range": [34650, 52000], "rep_area": 85.0, "rep_avg_price": 34650}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [57000, 57000], "rep_area": 59.8, "rep_avg_price": 57000, "ppy": 3154}, "jeonse": {"count": 3, "range": [34650, 52000], "rep_area": 85.0, "rep_avg_price": 34650, "ppy": 1457}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 57000, "rent": 0, "area": 59.75, "land": 0.0, "floor": "15", "dong": "", "date": "2025-02-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 743-15", "by": 2001},
       {"type": "전세", "price": 52000, "rent": 0, "area": 105.18, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-20", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 743-15", "by": 2001},
@@ -1294,7 +1294,7 @@
     "name": "창동역블루핀1동",
     "address": "도봉구 창동 743-28",
     "coords": [127.049623388974, 37.6605185232584],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 65.8, "rep_avg_price": 35000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 65.8, "rep_avg_price": 35000, "ppy": 1758}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 35000, "rent": 0, "area": 65.83, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-11", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 743-28", "by": 2020}
     ]
@@ -1303,7 +1303,7 @@
     "name": "대우",
     "address": "도봉구 창동 804",
     "coords": [127.037531292722, 37.6423706175541],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [31300, 45000], "rep_area": 59.7, "rep_avg_price": 31300}, "monthly": null},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 5, "range": [31300, 45000], "rep_area": 59.7, "rep_avg_price": 31300, "ppy": 1792}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 45000, "rent": 0, "area": 84.88, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 804", "by": 1995},
       {"type": "전세", "price": 31300, "rent": 0, "area": 59.71, "land": 0.0, "floor": "17", "dong": "", "date": "2025-02-17", "period": "25.03~27.03", "renew": "갱신", "p_dep": 29300, "p_rent": 0, "jibun": "창동 804", "by": 1995},
@@ -1316,7 +1316,7 @@
     "name": "동아그린",
     "address": "도봉구 창동 805",
     "coords": [127.046478203288, 37.6543732154344],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [65500, 65500], "rep_area": 60.0, "rep_avg_price": 65500}, "jeonse": {"count": 4, "range": [30000, 38000], "rep_area": 60.0, "rep_avg_price": 35250}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [65500, 65500], "rep_area": 60.0, "rep_avg_price": 65500, "ppy": 3611}, "jeonse": {"count": 4, "range": [30000, 38000], "rep_area": 60.0, "rep_avg_price": 35250, "ppy": 1943}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 65500, "rent": 0, "area": 59.96, "land": 0.0, "floor": "2", "dong": "102", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 805", "by": 1996},
       {"type": "전세", "price": 36500, "rent": 0, "area": 59.96, "land": 0.0, "floor": "2", "dong": "", "date": "2025-02-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 805", "by": 1996},
@@ -1329,7 +1329,7 @@
     "name": "쌍용",
     "address": "도봉구 창동 807",
     "coords": [127.048043148301, 37.6597477570553],
-    "stats": {"total": 11, "sale": null, "jeonse": {"count": 10, "range": [28000, 60000], "rep_area": 84.8, "rep_avg_price": 43230}, "monthly": {"count": 1, "range": [41000, 41000], "rep_area": 84.8, "rep_avg_price": 41000}},
+    "stats": {"total": 11, "sale": null, "jeonse": {"count": 10, "range": [28000, 60000], "rep_area": 84.8, "rep_avg_price": 43230, "ppy": 1705}, "monthly": {"count": 1, "range": [41000, 41000], "rep_area": 84.8, "rep_avg_price": 41000, "ppy": 1599}},
     "deals": [
       {"type": "전세", "price": 31500, "rent": 0, "area": 59.88, "land": 0.0, "floor": "7", "dong": "", "date": "2025-02-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 807", "by": 1997},
       {"type": "전세", "price": 34000, "rent": 0, "area": 59.88, "land": 0.0, "floor": "5", "dong": "", "date": "2025-02-27", "period": "25.04~27.04", "renew": "갱신", "p_dep": 32000, "p_rent": 0, "jibun": "창동 807", "by": 1997},
@@ -1348,7 +1348,7 @@
     "name": "동아청솔",
     "address": "도봉구 창동 808",
     "coords": [127.048380333971, 37.6578643872043],
-    "stats": {"total": 31, "sale": {"count": 6, "range": [61000, 119000], "rep_area": 85.0, "rep_avg_price": 92750}, "jeonse": {"count": 20, "range": [23000, 50000], "rep_area": 59.8, "rep_avg_price": 31850}, "monthly": {"count": 5, "range": [3000, 10000], "rep_area": 59.8, "rep_avg_price": 3500}},
+    "stats": {"total": 31, "sale": {"count": 6, "range": [61000, 119000], "rep_area": 85.0, "rep_avg_price": 92750, "ppy": 3417}, "jeonse": {"count": 20, "range": [23000, 50000], "rep_area": 59.8, "rep_avg_price": 31850, "ppy": 1692}, "monthly": {"count": 5, "range": [3000, 10000], "rep_area": 59.8, "rep_avg_price": 3500, "ppy": 245}},
     "deals": [
       {"type": "매매", "price": 62500, "rent": 0, "area": 59.445, "land": 0.0, "floor": "1", "dong": "119", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 808", "by": 1997},
       {"type": "매매", "price": 72300, "rent": 0, "area": 59.76, "land": 0.0, "floor": "17", "dong": "103", "date": "2025-02-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 808", "by": 1997},
@@ -1387,7 +1387,7 @@
     "name": "신창",
     "address": "도봉구 창동 810",
     "coords": [127.041696110416, 37.6406579794438],
-    "stats": {"total": 10, "sale": {"count": 3, "range": [33800, 40000], "rep_area": 49.8, "rep_avg_price": 34150}, "jeonse": {"count": 3, "range": [20000, 25000], "rep_area": 49.8, "rep_avg_price": 21500}, "monthly": {"count": 4, "range": [2000, 12000], "rep_area": 49.8, "rep_avg_price": 2500}},
+    "stats": {"total": 10, "sale": {"count": 3, "range": [33800, 40000], "rep_area": 49.8, "rep_avg_price": 34150, "ppy": 2253}, "jeonse": {"count": 3, "range": [20000, 25000], "rep_area": 49.8, "rep_avg_price": 21500, "ppy": 1414}, "monthly": {"count": 4, "range": [2000, 12000], "rep_area": 49.8, "rep_avg_price": 2500, "ppy": 316}},
     "deals": [
       {"type": "매매", "price": 34500, "rent": 0, "area": 49.77, "land": 0.0, "floor": "13", "dong": "105", "date": "2025-02-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 810", "by": 1998},
       {"type": "매매", "price": 40000, "rent": 0, "area": 59.4, "land": 0.0, "floor": "15", "dong": "102", "date": "2025-02-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 810", "by": 1998},
@@ -1405,7 +1405,7 @@
     "name": "창동현대타운",
     "address": "도봉구 창동 812",
     "coords": [127.035226059775, 37.6470828436738],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 57.9, "rep_avg_price": 25000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 47.8, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [25000, 25000], "rep_area": 57.9, "rep_avg_price": 25000, "ppy": 1427}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 47.8, "rep_avg_price": 3000, "ppy": 208}},
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 57.93, "land": 0.0, "floor": "11", "dong": "", "date": "2025-02-20", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 812", "by": 1999},
       {"type": "월세", "price": 3000, "rent": 70, "area": 47.79, "land": 0.0, "floor": "11", "dong": "", "date": "2025-02-10", "period": "25.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 812", "by": 1999}
@@ -1415,7 +1415,7 @@
     "name": "대우그린",
     "address": "도봉구 창동 814",
     "coords": [127.049492612915, 37.6465325360126],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [57500, 57500], "rep_area": 60.0, "rep_avg_price": 57500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [57500, 57500], "rep_area": 60.0, "rep_avg_price": 57500, "ppy": 3170}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 57500, "rent": 0, "area": 59.97, "land": 0.0, "floor": "1", "dong": "105", "date": "2025-02-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 814", "by": 2000}
     ]
@@ -1424,7 +1424,7 @@
     "name": "창동2차현대",
     "address": "도봉구 창동 815",
     "coords": [127.046089315065, 37.6610336966577],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 84.5, "rep_avg_price": 86000}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 84.5, "rep_avg_price": 40000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 84.5, "rep_avg_price": 86000, "ppy": 3364}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 84.5, "rep_avg_price": 40000, "ppy": 1565}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 86000, "rent": 0, "area": 84.504, "land": 0.0, "floor": "11", "dong": "205", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 815", "by": 2001},
       {"type": "전세", "price": 40000, "rent": 0, "area": 84.504, "land": 0.0, "floor": "16", "dong": "", "date": "2025-02-16", "period": "25.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 815", "by": 2001}
@@ -1434,7 +1434,7 @@
     "name": "창동현대4차",
     "address": "도봉구 창동 818",
     "coords": [127.046300185008, 37.658956130778],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [50000, 51000], "rep_area": 102.0, "rep_avg_price": 50666}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [50000, 51000], "rep_area": 102.0, "rep_avg_price": 50666, "ppy": 1642}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 50000, "rent": 0, "area": 101.9957, "land": 0.0, "floor": "10", "dong": "", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 818", "by": 2003},
       {"type": "전세", "price": 51000, "rent": 0, "area": 101.9957, "land": 0.0, "floor": "11", "dong": "", "date": "2025-02-11", "period": "25.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 818", "by": 2003},
@@ -1445,7 +1445,7 @@
     "name": "태영데시앙",
     "address": "도봉구 창동 819",
     "coords": [127.033329906769, 37.6428035408469],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [78000, 79000], "rep_area": 85.0, "rep_avg_price": 78500}, "jeonse": {"count": 2, "range": [45000, 46000], "rep_area": 85.0, "rep_avg_price": 45500}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [78000, 79000], "rep_area": 85.0, "rep_avg_price": 78500, "ppy": 3053}, "jeonse": {"count": 2, "range": [45000, 46000], "rep_area": 85.0, "rep_avg_price": 45500, "ppy": 1770}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "매매", "price": 79000, "rent": 0, "area": 84.995, "land": 0.0, "floor": "20", "dong": "111", "date": "2025-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 819", "by": 2003},
       {"type": "매매", "price": 78000, "rent": 0, "area": 84.995, "land": 0.0, "floor": "8", "dong": "108", "date": "2025-02-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 819", "by": 2003},
@@ -1458,7 +1458,7 @@
     "name": "창동신도브래뉴1차",
     "address": "도봉구 창동 820",
     "coords": [127.045221985792, 37.6561948591986],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 4, "range": [42000, 49000], "rep_area": 85.0, "rep_avg_price": 46250}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 4, "range": [42000, 49000], "rep_area": 85.0, "rep_avg_price": 46250, "ppy": 1799}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "전세", "price": 49000, "rent": 0, "area": 84.989, "land": 0.0, "floor": "3", "dong": "", "date": "2025-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 820", "by": 2003},
       {"type": "월세", "price": 10000, "rent": 150, "area": 84.989, "land": 0.0, "floor": "18", "dong": "", "date": "2025-02-13", "period": "25.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 820", "by": 2003},
@@ -1472,7 +1472,7 @@
     "name": "초안산신도브래뉴",
     "address": "도봉구 창동 821",
     "coords": [127.04255535448, 37.6334329434769],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 110, "area": 84.9991, "land": 0.0, "floor": "6", "dong": "", "date": "2025-02-17", "period": "24.05~26.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "창동 821", "by": 2005}
     ]
@@ -1481,7 +1481,7 @@
     "name": "대림e-편한세상",
     "address": "도봉구 창동 822",
     "coords": [127.045723364626, 37.6534621666236],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [87000, 87000], "rep_area": 85.0, "rep_avg_price": 87000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [87000, 87000], "rep_area": 85.0, "rep_avg_price": 87000, "ppy": 3385}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 87000, "rent": 0, "area": 84.976, "land": 0.0, "floor": "11", "dong": "102", "date": "2025-02-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 822", "by": 2003}
     ]
@@ -1490,7 +1490,7 @@
     "name": "금호어울림",
     "address": "도봉구 창동 823",
     "coords": [127.041736798042, 37.656473916567],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [79500, 79500], "rep_area": 85.0, "rep_avg_price": 79500}, "jeonse": {"count": 4, "range": [41000, 49000], "rep_area": 85.0, "rep_avg_price": 45775}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [79500, 79500], "rep_area": 85.0, "rep_avg_price": 79500, "ppy": 3092}, "jeonse": {"count": 4, "range": [41000, 49000], "rep_area": 85.0, "rep_avg_price": 45775, "ppy": 1780}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 79500, "rent": 0, "area": 84.99, "land": 0.0, "floor": "4", "dong": "102", "date": "2025-02-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 823", "by": 2004},
       {"type": "전세", "price": 44100, "rent": 0, "area": 84.99, "land": 0.0, "floor": "8", "dong": "", "date": "2025-02-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 823", "by": 2004},
@@ -1503,7 +1503,7 @@
     "name": "북한산아이파크5차",
     "address": "도봉구 창동 825",
     "coords": [127.043633590922, 37.6579097559237],
-    "stats": {"total": 15, "sale": {"count": 3, "range": [92000, 106500], "rep_area": 84.5, "rep_avg_price": 92000}, "jeonse": {"count": 9, "range": [40950, 75000], "rep_area": 84.5, "rep_avg_price": 46833}, "monthly": {"count": 3, "range": [10000, 10000], "rep_area": 84.5, "rep_avg_price": 10000}},
+    "stats": {"total": 15, "sale": {"count": 3, "range": [92000, 106500], "rep_area": 84.5, "rep_avg_price": 92000, "ppy": 3181}, "jeonse": {"count": 9, "range": [40950, 75000], "rep_area": 84.5, "rep_avg_price": 46833, "ppy": 1750}, "monthly": {"count": 3, "range": [10000, 10000], "rep_area": 84.5, "rep_avg_price": 10000, "ppy": 325}},
     "deals": [
       {"type": "매매", "price": 95500, "rent": 0, "area": 101.9176, "land": 0.0, "floor": "11", "dong": "524", "date": "2025-02-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 825", "by": 2004},
       {"type": "매매", "price": 106500, "rent": 0, "area": 119.1731, "land": 0.0, "floor": "23", "dong": "517", "date": "2025-02-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "창동 825", "by": 2004},
@@ -1526,7 +1526,7 @@
     "name": "북한산한신휴플러스",
     "address": "도봉구 창동 826",
     "coords": [127.042854036995, 37.6558003021092],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 114.6, "rep_avg_price": 45000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [45000, 45000], "rep_area": 114.6, "rep_avg_price": 45000, "ppy": 1299}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 45000, "rent": 0, "area": 114.5534, "land": 0.0, "floor": "15", "dong": "", "date": "2025-02-18", "period": "25.03~27.03", "renew": "갱신", "p_dep": 26000, "p_rent": 0, "jibun": "창동 826", "by": 2007}
     ]

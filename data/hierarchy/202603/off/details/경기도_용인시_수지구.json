@@ -3,7 +3,7 @@
     "name": "동천 하우스인",
     "address": "용인시 수지구 동천동 176-5",
     "coords": [127.099635754918, 37.3412084176356],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [51200, 51200], "rep_area": 80.5, "rep_avg_price": 51200}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [51200, 51200], "rep_area": 80.5, "rep_avg_price": 51200, "ppy": 2103}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 51200, "rent": 0, "area": 80.47, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동천동 176-5", "by": 2023}
     ]
@@ -12,7 +12,7 @@
     "name": "동천역자이르네",
     "address": "용인시 수지구 동천동 181-1",
     "coords": [127.101467730468, 37.3412565073667],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 70.1, "rep_avg_price": 5000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 70.1, "rep_avg_price": 5000, "ppy": 236}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 200, "area": 70.1, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-19", "period": "26.04~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동천동 181-1", "by": 2025}
     ]
@@ -21,7 +21,7 @@
     "name": "루체스타",
     "address": "용인시 수지구 동천동 185-11",
     "coords": [127.101747831185, 37.3404231744061],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 29.9, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 1000], "rep_area": 29.9, "rep_avg_price": 1000, "ppy": 88}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 95, "area": 45.09, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-31", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1000, "p_rent": 90, "jibun": "동천동 185-11", "by": 2016},
       {"type": "월세", "price": 1000, "rent": 80, "area": 29.9, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-12", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동천동 185-11", "by": 2016}
@@ -31,7 +31,7 @@
     "name": "누리빌",
     "address": "용인시 수지구 동천동 186-20",
     "coords": [127.102204399721, 37.3403236675536],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 43.2, "rep_avg_price": 500}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [500, 500], "rep_area": 43.2, "rep_avg_price": 500, "ppy": 38}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 55, "area": 43.16, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-03", "period": "26.04~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동천동 186-20", "by": 2012}
     ]
@@ -40,7 +40,7 @@
     "name": "분당 수지 유타워",
     "address": "용인시 수지구 동천동 899",
     "coords": [127.101682559372, 37.338213724026],
-    "stats": {"total": 30, "sale": {"count": 5, "range": [16000, 17400], "rep_area": 25.0, "rep_avg_price": 17100}, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 25.0, "rep_avg_price": 17000}, "monthly": {"count": 24, "range": [500, 15300], "rep_area": 25.0, "rep_avg_price": 3358}},
+    "stats": {"total": 30, "sale": {"count": 5, "range": [16000, 17400], "rep_area": 25.0, "rep_avg_price": 17100, "ppy": 2262}, "jeonse": {"count": 1, "range": [17000, 17000], "rep_area": 25.0, "rep_avg_price": 17000, "ppy": 2252}, "monthly": {"count": 24, "range": [500, 15300], "rep_area": 25.0, "rep_avg_price": 3358, "ppy": 495}},
     "deals": [
       {"type": "매매", "price": 16800, "rent": 0, "area": 24.96, "land": 0.0, "floor": "11", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동천동 899", "by": 0},
       {"type": "매매", "price": 17400, "rent": 0, "area": 24.96, "land": 0.0, "floor": "25", "dong": "", "date": "2026-03-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "동천동 899", "by": 0},
@@ -78,7 +78,7 @@
     "name": "대성빌리지",
     "address": "용인시 수지구 동천동 946-11",
     "coords": [127.090695535382, 37.3355381256386],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [21800, 21800], "rep_area": 46.5, "rep_avg_price": 21800}, "monthly": {"count": 2, "range": [19800, 21280], "rep_area": 46.5, "rep_avg_price": 19800}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 1, "range": [21800, 21800], "rep_area": 46.5, "rep_avg_price": 21800, "ppy": 1550}, "monthly": {"count": 2, "range": [19800, 21280], "rep_area": 46.5, "rep_avg_price": 19800, "ppy": 1351}},
     "deals": [
       {"type": "월세", "price": 19800, "rent": 4, "area": 46.48, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-26", "period": "26.04~28.04", "renew": "갱신", "p_dep": 19800, "p_rent": 0, "jibun": "동천동 946-11", "by": 0},
       {"type": "전세", "price": 21800, "rent": 0, "area": 46.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-11", "period": "26.06~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "동천동 946-11", "by": 0},
@@ -89,7 +89,7 @@
     "name": "광교2차 푸르지오시티 A동",
     "address": "용인시 수지구 상현동 1116",
     "coords": [127.068529526324, 37.2985016256095],
-    "stats": {"total": 12, "sale": {"count": 2, "range": [11000, 13500], "rep_area": 25.6, "rep_avg_price": 12250}, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 23.6, "rep_avg_price": 15000}, "monthly": {"count": 9, "range": [500, 11750], "rep_area": 22.8, "rep_avg_price": 11625}},
+    "stats": {"total": 12, "sale": {"count": 2, "range": [11000, 13500], "rep_area": 25.6, "rep_avg_price": 12250, "ppy": 1585}, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 23.6, "rep_avg_price": 15000, "ppy": 2103}, "monthly": {"count": 9, "range": [500, 11750], "rep_area": 22.8, "rep_avg_price": 11625, "ppy": 1054}},
     "deals": [
       {"type": "매매", "price": 11000, "rent": 0, "area": 25.55, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116", "by": 2014},
       {"type": "매매", "price": 13500, "rent": 0, "area": 25.55, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116", "by": 2014},
@@ -109,7 +109,7 @@
     "name": "광교푸르지오시티1단지",
     "address": "용인시 수지구 상현동 1116-1",
     "coords": [127.068405036139, 37.2980331585045],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 28.6, "rep_avg_price": 15000}, "jeonse": null, "monthly": {"count": 3, "range": [100, 1000], "rep_area": 25.1, "rep_avg_price": 533}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [15000, 15000], "rep_area": 28.6, "rep_avg_price": 15000, "ppy": 1736}, "jeonse": null, "monthly": {"count": 3, "range": [100, 1000], "rep_area": 25.1, "rep_avg_price": 533, "ppy": 70}},
     "deals": [
       {"type": "매매", "price": 15000, "rent": 0, "area": 28.556, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116-1", "by": 2013},
       {"type": "월세", "price": 500, "rent": 75, "area": 25.14, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-28", "period": "26.03~27.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116-1", "by": 2013},
@@ -121,7 +121,7 @@
     "name": "광교2차 푸르지오시티 B동",
     "address": "용인시 수지구 상현동 1116-3",
     "coords": [127.068246605946, 37.2974475760105],
-    "stats": {"total": 7, "sale": {"count": 1, "range": [13500, 13500], "rep_area": 24.3, "rep_avg_price": 13500}, "jeonse": null, "monthly": {"count": 6, "range": [500, 12300], "rep_area": 25.5, "rep_avg_price": 5325}},
+    "stats": {"total": 7, "sale": {"count": 1, "range": [13500, 13500], "rep_area": 24.3, "rep_avg_price": 13500, "ppy": 1838}, "jeonse": null, "monthly": {"count": 6, "range": [500, 12300], "rep_area": 25.5, "rep_avg_price": 5325, "ppy": 498}},
     "deals": [
       {"type": "매매", "price": 13500, "rent": 0, "area": 24.28, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116-3", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 70, "area": 24.57, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116-3", "by": 2014},
@@ -136,7 +136,7 @@
     "name": "더블유스퀘어광교",
     "address": "용인시 수지구 상현동 1116-4",
     "coords": [127.068099513548, 37.2969250593111],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [13800, 13800], "rep_area": 21.1, "rep_avg_price": 13800}, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 22.4, "rep_avg_price": 15000}, "monthly": {"count": 1, "range": [200, 200], "rep_area": 22.4, "rep_avg_price": 200}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [13800, 13800], "rep_area": 21.1, "rep_avg_price": 13800, "ppy": 2163}, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 22.4, "rep_avg_price": 15000, "ppy": 2215}, "monthly": {"count": 1, "range": [200, 200], "rep_area": 22.4, "rep_avg_price": 200, "ppy": 30}},
     "deals": [
       {"type": "매매", "price": 13800, "rent": 0, "area": 21.0899, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116-4", "by": 0},
       {"type": "월세", "price": 200, "rent": 60, "area": 22.39, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-25", "period": "26.04~26.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1116-4", "by": 0},
@@ -147,7 +147,7 @@
     "name": "광교2차 푸르지오시티 C동",
     "address": "용인시 수지구 상현동 1117-5",
     "coords": [127.068809734718, 37.2974366177267],
-    "stats": {"total": 9, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 25.2, "rep_avg_price": 15000}, "monthly": {"count": 8, "range": [500, 13000], "rep_area": 25.7, "rep_avg_price": 2833}},
+    "stats": {"total": 9, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 25.2, "rep_avg_price": 15000, "ppy": 1967}, "monthly": {"count": 8, "range": [500, 13000], "rep_area": 25.7, "rep_avg_price": 2833, "ppy": 559}},
     "deals": [
       {"type": "월세", "price": 13000, "rent": 23, "area": 25.73, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-30", "period": "26.04~27.04", "renew": "갱신", "p_dep": 13000, "p_rent": 20, "jibun": "상현동 1117-5", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 80, "area": 25.73, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-27", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1117-5", "by": 2014},
@@ -164,7 +164,7 @@
     "name": "광교2차 푸르지오시티 D동",
     "address": "용인시 수지구 상현동 1117-8",
     "coords": [127.068605151222, 37.2967021210618],
-    "stats": {"total": 8, "sale": {"count": 1, "range": [13300, 13300], "rep_area": 23.6, "rep_avg_price": 13300}, "jeonse": null, "monthly": {"count": 7, "range": [1000, 12500], "rep_area": 24.2, "rep_avg_price": 6750}},
+    "stats": {"total": 8, "sale": {"count": 1, "range": [13300, 13300], "rep_area": 23.6, "rep_avg_price": 13300, "ppy": 1860}, "jeonse": null, "monthly": {"count": 7, "range": [1000, 12500], "rep_area": 24.2, "rep_avg_price": 6750, "ppy": 417}},
     "deals": [
       {"type": "매매", "price": 13300, "rent": 0, "area": 23.64, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1117-8", "by": 2014},
       {"type": "월세", "price": 1000, "rent": 80, "area": 25.36, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-28", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1117-8", "by": 2014},
@@ -180,7 +180,7 @@
     "name": "광교 U-TOWER",
     "address": "용인시 수지구 상현동 1118",
     "coords": [127.068165478338, 37.2962842038059],
-    "stats": {"total": 18, "sale": {"count": 3, "range": [9700, 11000], "rep_area": 17.1, "rep_avg_price": 10975}, "jeonse": null, "monthly": {"count": 15, "range": [500, 8000], "rep_area": 17.1, "rep_avg_price": 1454}},
+    "stats": {"total": 18, "sale": {"count": 3, "range": [9700, 11000], "rep_area": 17.1, "rep_avg_price": 10975, "ppy": 2101}, "jeonse": null, "monthly": {"count": 15, "range": [500, 8000], "rep_area": 17.1, "rep_avg_price": 1454, "ppy": 296}},
     "deals": [
       {"type": "매매", "price": 11000, "rent": 0, "area": 17.1, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1118", "by": 2014},
       {"type": "매매", "price": 10950, "rent": 0, "area": 17.1, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1118", "by": 2014},
@@ -206,7 +206,7 @@
     "name": "광교푸르지오시티2단지",
     "address": "용인시 수지구 상현동 1132-1",
     "coords": [127.070333365851, 37.2976896343109],
-    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [1000, 13700], "rep_area": 25.1, "rep_avg_price": 5000}},
+    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [1000, 13700], "rep_area": 25.1, "rep_avg_price": 5000, "ppy": 958}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 75, "area": 25.14, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-14", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1132-1", "by": 2013},
       {"type": "월세", "price": 5000, "rent": 55, "area": 28.56, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-16", "period": "26.04~27.04", "renew": "갱신", "p_dep": 5000, "p_rent": 55, "jibun": "상현동 1132-1", "by": 2013},
@@ -220,7 +220,7 @@
     "name": "광교푸르지오시티3단지",
     "address": "용인시 수지구 상현동 1132-3",
     "coords": [127.070174921438, 37.2971040543785],
-    "stats": {"total": 8, "sale": {"count": 2, "range": [14900, 16000], "rep_area": 27.8, "rep_avg_price": 14900}, "jeonse": null, "monthly": {"count": 6, "range": [1000, 13800], "rep_area": 29.6, "rep_avg_price": 7325}},
+    "stats": {"total": 8, "sale": {"count": 2, "range": [14900, 16000], "rep_area": 27.8, "rep_avg_price": 14900, "ppy": 1779}, "jeonse": null, "monthly": {"count": 6, "range": [1000, 13800], "rep_area": 29.6, "rep_avg_price": 7325, "ppy": 749}},
     "deals": [
       {"type": "매매", "price": 14900, "rent": 0, "area": 27.833, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1132-3", "by": 2013},
       {"type": "매매", "price": 16000, "rent": 0, "area": 29.597, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1132-3", "by": 2013},
@@ -236,7 +236,7 @@
     "name": "광교 리치안",
     "address": "용인시 수지구 상현동 1132-4",
     "coords": [127.07002782473, 37.2965905504235],
-    "stats": {"total": 13, "sale": null, "jeonse": null, "monthly": {"count": 13, "range": [400, 13670], "rep_area": 21.2, "rep_avg_price": 7390}},
+    "stats": {"total": 13, "sale": null, "jeonse": null, "monthly": {"count": 13, "range": [400, 13670], "rep_area": 21.2, "rep_avg_price": 7390, "ppy": 1153}},
     "deals": [
       {"type": "월세", "price": 12500, "rent": 30, "area": 21.19, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "갱신", "p_dep": 15800, "p_rent": 0, "jibun": "상현동 1132-4", "by": 2018},
       {"type": "월세", "price": 13400, "rent": 26, "area": 21.19, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.04~27.04", "renew": "갱신", "p_dep": 15800, "p_rent": 0, "jibun": "상현동 1132-4", "by": 2018},
@@ -257,7 +257,7 @@
     "name": "엘리치안",
     "address": "용인시 수지구 상현동 1133",
     "coords": [127.069312713397, 37.2961581131648],
-    "stats": {"total": 6, "sale": {"count": 3, "range": [16500, 30000], "rep_area": 30.5, "rep_avg_price": 17250}, "jeonse": null, "monthly": {"count": 3, "range": [15000, 16000], "rep_area": 30.5, "rep_avg_price": 15500}},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [16500, 30000], "rep_area": 30.5, "rep_avg_price": 17250, "ppy": 1838}, "jeonse": null, "monthly": {"count": 3, "range": [15000, 16000], "rep_area": 30.5, "rep_avg_price": 15500, "ppy": 1678}},
     "deals": [
       {"type": "매매", "price": 18000, "rent": 0, "area": 30.54, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1133", "by": 2012},
       {"type": "매매", "price": 30000, "rent": 0, "area": 54.93, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1133", "by": 2012},
@@ -271,7 +271,7 @@
     "name": "골든풍산리치안",
     "address": "용인시 수지구 상현동 1133-1",
     "coords": [127.069643859669, 37.2960501547405],
-    "stats": {"total": 13, "sale": {"count": 1, "range": [13500, 13500], "rep_area": 21.1, "rep_avg_price": 13500}, "jeonse": null, "monthly": {"count": 12, "range": [500, 13500], "rep_area": 21.1, "rep_avg_price": 3863}},
+    "stats": {"total": 13, "sale": {"count": 1, "range": [13500, 13500], "rep_area": 21.1, "rep_avg_price": 13500, "ppy": 2113}, "jeonse": null, "monthly": {"count": 12, "range": [500, 13500], "rep_area": 21.1, "rep_avg_price": 3863, "ppy": 557}},
     "deals": [
       {"type": "매매", "price": 13500, "rent": 0, "area": 21.12, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1133-1", "by": 2017},
       {"type": "월세", "price": 1000, "rent": 77, "area": 21.12, "land": 0.0, "floor": "9", "dong": "", "date": "2026-03-31", "period": "26.05~27.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1133-1", "by": 2017},
@@ -292,7 +292,7 @@
     "name": "광교어드밴스힐",
     "address": "용인시 수지구 상현동 1133-2",
     "coords": [127.069970873404, 37.2959868892722],
-    "stats": {"total": 9, "sale": null, "jeonse": null, "monthly": {"count": 9, "range": [1000, 11300], "rep_area": 22.9, "rep_avg_price": 7170}},
+    "stats": {"total": 9, "sale": null, "jeonse": null, "monthly": {"count": 9, "range": [1000, 11300], "rep_area": 22.9, "rep_avg_price": 7170, "ppy": 946}},
     "deals": [
       {"type": "월세", "price": 11250, "rent": 23, "area": 22.17, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-02", "period": "26.04~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1133-2", "by": 2014},
       {"type": "월세", "price": 11250, "rent": 22, "area": 22.87, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-17", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1133-2", "by": 2014},
@@ -309,7 +309,7 @@
     "name": "광교지웰레이크",
     "address": "용인시 수지구 상현동 1137",
     "coords": [127.078315816965, 37.2949905209073],
-    "stats": {"total": 8, "sale": {"count": 2, "range": [48000, 56500], "rep_area": 84.7, "rep_avg_price": 56500}, "jeonse": {"count": 4, "range": [38325, 49000], "rep_area": 84.7, "rep_avg_price": 41275}, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 84.7, "rep_avg_price": 2000}},
+    "stats": {"total": 8, "sale": {"count": 2, "range": [48000, 56500], "rep_area": 84.7, "rep_avg_price": 56500, "ppy": 2036}, "jeonse": {"count": 4, "range": [38325, 49000], "rep_area": 84.7, "rep_avg_price": 41275, "ppy": 1686}, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 84.7, "rep_avg_price": 2000, "ppy": 97}},
     "deals": [
       {"type": "매매", "price": 56500, "rent": 0, "area": 84.725, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1137", "by": 2016},
       {"type": "매매", "price": 48000, "rent": 0, "area": 84.9189, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 1137", "by": 2016},
@@ -325,7 +325,7 @@
     "name": "오루체 트리플",
     "address": "용인시 수지구 상현동 24-3",
     "coords": [127.090649940349, 37.3135538654306],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [4800, 4800], "rep_area": 52.3, "rep_avg_price": 4800}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [4800, 4800], "rep_area": 52.3, "rep_avg_price": 4800, "ppy": 301}},
     "deals": [
       {"type": "월세", "price": 4800, "rent": 150, "area": 52.95, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-24", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 24-3", "by": 2022},
       {"type": "월세", "price": 4800, "rent": 150, "area": 52.33, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-19", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "상현동 24-3", "by": 2022}
@@ -335,7 +335,7 @@
     "name": "한일코지세상",
     "address": "용인시 수지구 상현동 32-1",
     "coords": [127.091912218213, 37.311556559838],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [41000, 41000], "rep_area": 79.0, "rep_avg_price": 41000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [41000, 41000], "rep_area": 79.0, "rep_avg_price": 41000, "ppy": 1713}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 41000, "rent": 0, "area": 79.2, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 32-1", "by": 2022},
       {"type": "매매", "price": 41000, "rent": 0, "area": 79.01, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상현동 32-1", "by": 2022}
@@ -345,7 +345,7 @@
     "name": "상현동 32-2 복합빌딩",
     "address": "용인시 수지구 상현동 32-2",
     "coords": [127.091591814903, 37.3111580103221],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [773, 773], "rep_area": 50.4, "rep_avg_price": 773}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [773, 773], "rep_area": 50.4, "rep_avg_price": 773, "ppy": 51}},
     "deals": [
       {"type": "월세", "price": 773, "rent": 33, "area": 50.43, "land": 0.0, "floor": "1", "dong": "", "date": "2026-03-18", "period": "26.04~28.03", "renew": "갱신", "p_dep": 736, "p_rent": 33, "jibun": "상현동 32-2", "by": 2021}
     ]
@@ -354,7 +354,7 @@
     "name": "성복역KCC스위첸",
     "address": "용인시 수지구 성복동 167",
     "coords": [127.073007177038, 37.31518360172],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [26000, 36000], "rep_area": 53.5, "rep_avg_price": 31000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [26000, 36000], "rep_area": 53.5, "rep_avg_price": 31000, "ppy": 1916}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 36000, "rent": 0, "area": 53.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-14", "period": "26.04~28.04", "renew": "갱신", "p_dep": 36000, "p_rent": 0, "jibun": "성복동 167", "by": 2019},
       {"type": "전세", "price": 26000, "rent": 0, "area": 53.48, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-03", "period": "26.03~27.05", "renew": "갱신", "p_dep": 25000, "p_rent": 0, "jibun": "성복동 167", "by": 2019}
@@ -364,7 +364,7 @@
     "name": "성복역 롯데캐슬 골드타운",
     "address": "용인시 수지구 성복동 789",
     "coords": [127.082775861254, 37.312456408587],
-    "stats": {"total": 12, "sale": {"count": 2, "range": [30500, 84500], "rep_area": 30.9, "rep_avg_price": 30500}, "jeonse": {"count": 3, "range": [24870, 44000], "rep_area": 30.9, "rep_avg_price": 26185}, "monthly": {"count": 7, "range": [1000, 24500], "rep_area": 30.9, "rep_avg_price": 7250}},
+    "stats": {"total": 12, "sale": {"count": 2, "range": [30500, 84500], "rep_area": 30.9, "rep_avg_price": 30500, "ppy": 3285}, "jeonse": {"count": 3, "range": [24870, 44000], "rep_area": 30.9, "rep_avg_price": 26185, "ppy": 2434}, "monthly": {"count": 7, "range": [1000, 24500], "rep_area": 30.9, "rep_avg_price": 7250, "ppy": 777}},
     "deals": [
       {"type": "매매", "price": 30500, "rent": 0, "area": 30.8885, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성복동 789", "by": 2019},
       {"type": "매매", "price": 84500, "rent": 0, "area": 84.8468, "land": 0.0, "floor": "22", "dong": "", "date": "2026-03-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성복동 789", "by": 2019},
@@ -384,7 +384,7 @@
     "name": "수지스카이뷰푸르지오",
     "address": "용인시 수지구 신봉동 1034",
     "coords": [127.069871128661, 37.3265350907721],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [50500, 52000], "rep_area": 84.4, "rep_avg_price": 51250}, "jeonse": {"count": 2, "range": [44000, 45000], "rep_area": 84.4, "rep_avg_price": 44000}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [50500, 52000], "rep_area": 84.4, "rep_avg_price": 51250, "ppy": 2006}, "jeonse": {"count": 2, "range": [44000, 45000], "rep_area": 84.4, "rep_avg_price": 44000, "ppy": 1740}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 52000, "rent": 0, "area": 84.45, "land": 0.0, "floor": "20", "dong": "", "date": "2026-03-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신봉동 1034", "by": 2022},
       {"type": "매매", "price": 50500, "rent": 0, "area": 84.45, "land": 0.0, "floor": "6", "dong": "", "date": "2026-03-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신봉동 1034", "by": 2022},
@@ -396,7 +396,7 @@
     "name": "에버하임",
     "address": "용인시 수지구 신봉동 971-3",
     "coords": [127.068519887761, 37.3272812149706],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [24300, 26000], "rep_area": 59.4, "rep_avg_price": 25402}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [24300, 26000], "rep_area": 59.4, "rep_avg_price": 25402, "ppy": 1413}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25906, "rent": 0, "area": 59.39, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-20", "period": "26.03~28.03", "renew": "갱신", "p_dep": 24673, "p_rent": 0, "jibun": "신봉동 971-3", "by": 0},
       {"type": "전세", "price": 26000, "rent": 0, "area": 59.43, "land": 0.0, "floor": "8", "dong": "", "date": "2026-03-06", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "신봉동 971-3", "by": 0},
@@ -407,7 +407,7 @@
     "name": "모닝파크오피스텔",
     "address": "용인시 수지구 죽전동 1185-1",
     "coords": [127.127675679369, 37.3327750465849],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 22.4, "rep_avg_price": 8000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8000, 8000], "rep_area": 22.4, "rep_avg_price": 8000, "ppy": 1180}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 8000, "rent": 0, "area": 22.42, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-06", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "죽전동 1185-1", "by": 2009}
     ]
@@ -416,7 +416,7 @@
     "name": "시즌 메리트빌",
     "address": "용인시 수지구 죽전동 429",
     "coords": [127.114758731862, 37.3263224767368],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25200, 25200], "rep_area": 64.5, "rep_avg_price": 25200}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [25200, 25200], "rep_area": 64.5, "rep_avg_price": 25200, "ppy": 1292}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25200, "rent": 0, "area": 64.48, "land": 0.0, "floor": "2", "dong": "", "date": "2026-03-21", "period": "26.04~28.04", "renew": "갱신", "p_dep": 25200, "p_rent": 0, "jibun": "죽전동 429", "by": 2016}
     ]
@@ -425,7 +425,7 @@
     "name": "수지구 죽전동 오피스텔",
     "address": "용인시 수지구 죽전동 484-12",
     "coords": [127.11418248007, 37.3280140911765],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 20.1, "rep_avg_price": 2000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 2000], "rep_area": 20.1, "rep_avg_price": 2000, "ppy": 215}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 105, "area": 41.4, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-30", "period": "26.03~27.03", "renew": "갱신", "p_dep": 2000, "p_rent": 105, "jibun": "죽전동 484-12", "by": 2018},
       {"type": "월세", "price": 2000, "rent": 53, "area": 20.1, "land": 0.0, "floor": "4", "dong": "", "date": "2026-03-14", "period": "26.03~27.03", "renew": "갱신", "p_dep": 2000, "p_rent": 50, "jibun": "죽전동 484-12", "by": 2018}
@@ -435,7 +435,7 @@
     "name": "힐스테이트 수지구청역",
     "address": "용인시 수지구 풍덕천동 1157",
     "coords": [127.094471903002, 37.3184880913042],
-    "stats": {"total": 19, "sale": {"count": 10, "range": [59500, 108000], "rep_area": 84.8, "rep_avg_price": 89625}, "jeonse": {"count": 4, "range": [47000, 65000], "rep_area": 59.8, "rep_avg_price": 49350}, "monthly": {"count": 5, "range": [4000, 65000], "rep_area": 63.0, "rep_avg_price": 7000}},
+    "stats": {"total": 19, "sale": {"count": 10, "range": [59500, 108000], "rep_area": 84.8, "rep_avg_price": 89625, "ppy": 3453}, "jeonse": {"count": 4, "range": [47000, 65000], "rep_area": 59.8, "rep_avg_price": 49350, "ppy": 2586}, "monthly": {"count": 5, "range": [4000, 65000], "rep_area": 63.0, "rep_avg_price": 7000, "ppy": 1293}},
     "deals": [
       {"type": "매매", "price": 62000, "rent": 0, "area": 62.9844, "land": 0.0, "floor": "10", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 1157", "by": 2022},
       {"type": "매매", "price": 60000, "rent": 0, "area": 59.7474, "land": 0.0, "floor": "17", "dong": "", "date": "2026-03-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 1157", "by": 2022},
@@ -462,7 +462,7 @@
     "name": "수지 푸르지오 월드마크",
     "address": "용인시 수지구 풍덕천동 1195",
     "coords": [127.100772086507, 37.3235786864952],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [16400, 16400], "rep_area": 36.8, "rep_avg_price": 16400}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [16400, 16400], "rep_area": 36.8, "rep_avg_price": 16400, "ppy": 1472}},
     "deals": [
       {"type": "월세", "price": 16400, "rent": 20, "area": 36.83, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 1195", "by": 2013}
     ]
@@ -471,7 +471,7 @@
     "name": "e편한세상 수지",
     "address": "용인시 수지구 풍덕천동 1209",
     "coords": [127.085349448063, 37.3156351413087],
-    "stats": {"total": 16, "sale": null, "jeonse": null, "monthly": {"count": 16, "range": [500, 18000], "rep_area": 18.7, "rep_avg_price": 2414}},
+    "stats": {"total": 16, "sale": null, "jeonse": null, "monthly": {"count": 16, "range": [500, 18000], "rep_area": 18.7, "rep_avg_price": 2414, "ppy": 535}},
     "deals": [
       {"type": "월세", "price": 18000, "rent": 60, "area": 31.94, "land": 0.0, "floor": "12", "dong": "", "date": "2026-03-06", "period": "26.04~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 1209", "by": 2017},
       {"type": "월세", "price": 12000, "rent": 30, "area": 18.74, "land": 0.0, "floor": "7", "dong": "", "date": "2026-03-27", "period": "26.05~27.05", "renew": "갱신", "p_dep": 12000, "p_rent": 25, "jibun": "풍덕천동 1209", "by": 2017},
@@ -495,7 +495,7 @@
     "name": "수지 풍덕천 한샘 더랜드마크",
     "address": "용인시 수지구 풍덕천동 82-9",
     "coords": [127.101822352193, 37.3240662371975],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [14700, 14700], "rep_area": 20.9, "rep_avg_price": 14700}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 2000], "rep_area": 20.8, "rep_avg_price": 2000}},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [14700, 14700], "rep_area": 20.9, "rep_avg_price": 14700, "ppy": 2323}, "jeonse": null, "monthly": {"count": 2, "range": [1000, 2000], "rep_area": 20.8, "rep_avg_price": 2000, "ppy": 235}},
     "deals": [
       {"type": "매매", "price": 14700, "rent": 0, "area": 20.9161, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "풍덕천동 82-9", "by": 2018},
       {"type": "월세", "price": 1000, "rent": 62, "area": 21.45, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-25", "period": "26.04~28.04", "renew": "갱신", "p_dep": 1000, "p_rent": 59, "jibun": "풍덕천동 82-9", "by": 2018},
@@ -506,7 +506,7 @@
     "name": "수지 포레스트",
     "address": "용인시 수지구 풍덕천동 85-28",
     "coords": [127.101648078535, 37.3230919201687],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 26.8, "rep_avg_price": 1000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 26.8, "rep_avg_price": 1000, "ppy": 123}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 80, "area": 26.81, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-13", "period": "26.04~27.04", "renew": "갱신", "p_dep": 1000, "p_rent": 80, "jibun": "풍덕천동 85-28", "by": 2019}
     ]
@@ -515,7 +515,7 @@
     "name": "솔리채",
     "address": "용인시 수지구 풍덕천동 96-2",
     "coords": [127.099950060133, 37.3232486145877],
-    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [35000, 35000], "rep_area": 77.1, "rep_avg_price": 35000}, "monthly": null},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [35000, 35000], "rep_area": 77.1, "rep_avg_price": 35000, "ppy": 1491}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 35000, "rent": 0, "area": 77.08, "land": 0.0, "floor": "5", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "풍덕천동 96-2", "by": 2022},
       {"type": "전세", "price": 35000, "rent": 0, "area": 79.2, "land": 0.0, "floor": "3", "dong": "", "date": "2026-03-20", "period": "26.05~28.05", "renew": "갱신", "p_dep": 35000, "p_rent": 0, "jibun": "풍덕천동 96-2", "by": 2022},

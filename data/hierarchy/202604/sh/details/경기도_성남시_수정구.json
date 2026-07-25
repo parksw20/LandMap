@@ -3,7 +3,7 @@
     "name": "경기도 성남시 수정구 고등동",
     "address": "경기도 성남시 수정구 고등동",
     "coords": [127.101344503792, 37.4282637538218],
-    "stats": {"total": 28, "sale": null, "jeonse": {"count": 14, "range": [22000, 50000], "rep_area": 48.5, "rep_avg_price": 30000}, "monthly": {"count": 14, "range": [1000, 30000], "rep_area": 20.0, "rep_avg_price": 1000}},
+    "stats": {"total": 28, "sale": null, "jeonse": {"count": 14, "range": [22000, 50000], "rep_area": 48.5, "rep_avg_price": 30000, "ppy": 1962}, "monthly": {"count": 14, "range": [1000, 30000], "rep_area": 20.0, "rep_avg_price": 1000, "ppy": 838}},
     "deals": [
       {"type": "전세", "price": 29000, "rent": 0, "area": 48.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2020},
       {"type": "전세", "price": 33548, "rent": 0, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -39,7 +39,7 @@
     "name": "경기도 성남시 수정구 금토동",
     "address": "경기도 성남시 수정구 금토동",
     "coords": [127.075701946878, 37.4100535546779],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 64.6, "rep_avg_price": 5000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 64.6, "rep_avg_price": 5000, "ppy": 256}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 180, "area": 64.58, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-14", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2025}
     ]
@@ -48,7 +48,7 @@
     "name": "경기도 성남시 수정구 단대동",
     "address": "경기도 성남시 수정구 단대동",
     "coords": [127.155361716912, 37.4493897577627],
-    "stats": {"total": 12, "sale": {"count": 1, "range": [35500, 35500], "rep_area": 176.7, "rep_avg_price": 35500}, "jeonse": {"count": 6, "range": [7000, 28000], "rep_area": 26.5, "rep_avg_price": 7000}, "monthly": {"count": 5, "range": [500, 3000], "rep_area": 25.0, "rep_avg_price": 500}},
+    "stats": {"total": 12, "sale": {"count": 1, "range": [35500, 35500], "rep_area": 176.7, "rep_avg_price": 35500, "ppy": 664}, "jeonse": {"count": 6, "range": [7000, 28000], "rep_area": 26.5, "rep_avg_price": 7000, "ppy": 526}, "monthly": {"count": 5, "range": [500, 3000], "rep_area": 25.0, "rep_avg_price": 500, "ppy": 94}},
     "deals": [
       {"type": "매매", "price": 35500, "rent": 0, "area": 176.73, "land": 102.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "단대동 *", "by": 1991},
       {"type": "월세", "price": 500, "rent": 40, "area": 25.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-18", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -68,7 +68,7 @@
     "name": "경기도 성남시 수정구 복정동",
     "address": "경기도 성남시 수정구 복정동",
     "coords": [127.127149746638, 37.4658074787091],
-    "stats": {"total": 117, "sale": {"count": 1, "range": [284000, 284000], "rep_area": 896.7, "rep_avg_price": 284000}, "jeonse": {"count": 24, "range": [4000, 45000], "rep_area": 48.0, "rep_avg_price": 17333}, "monthly": {"count": 92, "range": [300, 27000], "rep_area": 30.0, "rep_avg_price": 2375}},
+    "stats": {"total": 117, "sale": {"count": 1, "range": [284000, 284000], "rep_area": 896.7, "rep_avg_price": 284000, "ppy": 1047}, "jeonse": {"count": 24, "range": [4000, 45000], "rep_area": 48.0, "rep_avg_price": 17333, "ppy": 1134}, "monthly": {"count": 92, "range": [300, 27000], "rep_area": 30.0, "rep_avg_price": 2375, "ppy": 430}},
     "deals": [
       {"type": "매매", "price": 284000, "rent": 0, "area": 896.67, "land": 386.3, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "복정동 6**", "by": 2003},
       {"type": "전세", "price": 35000, "rent": 0, "area": 100.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2004},
@@ -193,7 +193,7 @@
     "name": "경기도 성남시 수정구 사송동",
     "address": "경기도 성남시 수정구 사송동",
     "coords": [127.112730888795, 37.4147670113406],
-    "stats": {"total": 5, "sale": null, "jeonse": null, "monthly": {"count": 5, "range": [1000, 43000], "rep_area": 116.2, "rep_avg_price": 30000}},
+    "stats": {"total": 5, "sale": null, "jeonse": null, "monthly": {"count": 5, "range": [1000, 43000], "rep_area": 116.2, "rep_avg_price": 30000, "ppy": 781}},
     "deals": [
       {"type": "월세", "price": 43000, "rent": 80, "area": 164.24, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-27", "period": "26.07~28.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 30000, "rent": 30, "area": 116.2, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-23", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2007},
@@ -206,7 +206,7 @@
     "name": "경기도 성남시 수정구 산성동",
     "address": "경기도 성남시 수정구 산성동",
     "coords": [127.15002866944, 37.4522438484413],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 57.9, "rep_avg_price": 15000}, "monthly": {"count": 4, "range": [500, 8000], "rep_area": 30.0, "rep_avg_price": 500}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 1, "range": [15000, 15000], "rep_area": 57.9, "rep_avg_price": 15000, "ppy": 856}, "monthly": {"count": 4, "range": [500, 8000], "rep_area": 30.0, "rep_avg_price": 500, "ppy": 264}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 70, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-18", "period": "26.04~26.12", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2006},
       {"type": "월세", "price": 5000, "rent": 50, "area": 55.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1991},
@@ -219,7 +219,7 @@
     "name": "경기도 성남시 수정구 상적동",
     "address": "경기도 성남시 수정구 상적동",
     "coords": [127.053955156249, 37.4214831902663],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 72.3, "rep_avg_price": 20000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 72.3, "rep_avg_price": 20000, "ppy": 915}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 20, "area": 72.27, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011}
     ]
@@ -228,7 +228,7 @@
     "name": "경기도 성남시 수정구 수진동",
     "address": "경기도 성남시 수정구 수진동",
     "coords": [127.139027108809, 37.4385763091096],
-    "stats": {"total": 116, "sale": {"count": 26, "range": [40000, 105000], "rep_area": 121.9, "rep_avg_price": 97000}, "jeonse": {"count": 39, "range": [3000, 30000], "rep_area": 41.4, "rep_avg_price": 12500}, "monthly": {"count": 51, "range": [50, 16000], "rep_area": 20.0, "rep_avg_price": 516}},
+    "stats": {"total": 116, "sale": {"count": 26, "range": [40000, 105000], "rep_area": 121.9, "rep_avg_price": 97000, "ppy": 2632}, "jeonse": {"count": 39, "range": [3000, 30000], "rep_area": 41.4, "rep_avg_price": 12500, "ppy": 1022}, "monthly": {"count": 51, "range": [50, 16000], "rep_area": 20.0, "rep_avg_price": 516, "ppy": 204}},
     "deals": [
       {"type": "매매", "price": 96000, "rent": 0, "area": 140.13, "land": 67.8, "floor": "", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2***", "by": 1993},
       {"type": "매매", "price": 78000, "rent": 0, "area": 123.56, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 3***", "by": 1991},
@@ -352,7 +352,7 @@
     "name": "경기도 성남시 수정구 수진동 1528",
     "address": "경기도 성남시 수정구 수진동 1528",
     "coords": [127.135559989587, 37.4373062110588],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [104000, 104000], "rep_area": 155.6, "rep_avg_price": 104000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [104000, 104000], "rep_area": 155.6, "rep_avg_price": 104000, "ppy": 2209}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 104000, "rent": 0, "area": 155.64, "land": 74.0, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1528 (추정)", "by": 1997}
     ]
@@ -361,7 +361,7 @@
     "name": "경기도 성남시 수정구 수진동 1903",
     "address": "경기도 성남시 수정구 수진동 1903",
     "coords": [127.137821593286, 37.4382954329409],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [99000, 99000], "rep_area": 37.6, "rep_avg_price": 99000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [99000, 99000], "rep_area": 37.6, "rep_avg_price": 99000, "ppy": 8706}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 99000, "rent": 0, "area": 37.59, "land": 79.7, "floor": "", "dong": "", "date": "2026-04-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 1903 (추정)", "by": 1974}
     ]
@@ -370,7 +370,7 @@
     "name": "경기도 성남시 수정구 수진동 259",
     "address": "경기도 성남시 수정구 수진동 259",
     "coords": [127.133944755042, 37.4398595463605],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [131000, 131000], "rep_area": 85.8, "rep_avg_price": 131000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [131000, 131000], "rep_area": 85.8, "rep_avg_price": 131000, "ppy": 5046}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 131000, "rent": 0, "area": 85.83, "land": 124.6, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 259 (추정)", "by": 1973}
     ]
@@ -379,7 +379,7 @@
     "name": "경기도 성남시 수정구 수진동 2824",
     "address": "경기도 성남시 수정구 수진동 2824",
     "coords": [127.135504538438, 37.4363824638422],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 114.6, "rep_avg_price": 95000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 114.6, "rep_avg_price": 95000, "ppy": 2741}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 95000, "rent": 0, "area": 114.58, "land": 63.5, "floor": "", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 2824 (추정)", "by": 1997}
     ]
@@ -388,7 +388,7 @@
     "name": "경기도 성남시 수정구 수진동 3936",
     "address": "경기도 성남시 수정구 수진동 3936",
     "coords": [127.12934617327, 37.4366567845461],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 454.4, "rep_avg_price": 130000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [130000, 130000], "rep_area": 454.4, "rep_avg_price": 130000, "ppy": 946}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 130000, "rent": 0, "area": 454.36, "land": 125.0, "floor": "", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 3936 (추정)", "by": 1988}
     ]
@@ -397,7 +397,7 @@
     "name": "경기도 성남시 수정구 수진동 4611-9",
     "address": "경기도 성남시 수정구 수진동 4611-9",
     "coords": [127.127661830687, 37.436027724798],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [84700, 84700], "rep_area": 174.4, "rep_avg_price": 84700}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [84700, 84700], "rep_area": 174.4, "rep_avg_price": 84700, "ppy": 1605}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 84700, "rent": 0, "area": 174.44, "land": 95.5, "floor": "", "dong": "", "date": "2026-04-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 4611-9 (추정)", "by": 1989}
     ]
@@ -406,7 +406,7 @@
     "name": "경기도 성남시 수정구 수진동 473",
     "address": "경기도 성남시 수정구 수진동 473",
     "coords": [127.13525155972, 37.4402204463255],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 106.8, "rep_avg_price": 105000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [105000, 105000], "rep_area": 106.8, "rep_avg_price": 105000, "ppy": 3249}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 105000, "rent": 0, "area": 106.84, "land": 69.8, "floor": "", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 473 (추정)", "by": 1984}
     ]
@@ -415,7 +415,7 @@
     "name": "경기도 성남시 수정구 수진동 625",
     "address": "경기도 성남시 수정구 수진동 625",
     "coords": [127.136471626223, 37.440101912035],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [92500, 92500], "rep_area": 132.1, "rep_avg_price": 92500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [92500, 92500], "rep_area": 132.1, "rep_avg_price": 92500, "ppy": 2314}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 92500, "rent": 0, "area": 132.13, "land": 65.5, "floor": "", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 625 (추정)", "by": 2007}
     ]
@@ -424,7 +424,7 @@
     "name": "경기도 성남시 수정구 수진동 757",
     "address": "경기도 성남시 수정구 수진동 757",
     "coords": [127.136624728964, 37.4392254983929],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 108.2, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 108.2, "rep_avg_price": 90000, "ppy": 2750}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 90000, "rent": 0, "area": 108.18, "land": 60.5, "floor": "", "dong": "", "date": "2026-04-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 757 (추정)", "by": 1991}
     ]
@@ -433,7 +433,7 @@
     "name": "경기도 성남시 수정구 수진동 851",
     "address": "경기도 성남시 수정구 수진동 851",
     "coords": [127.136117381659, 37.4389211803414],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 101.9, "rep_avg_price": 95000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 101.9, "rep_avg_price": 95000, "ppy": 3083}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 95000, "rent": 0, "area": 101.86, "land": 61.8, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 851 (추정)", "by": 1991}
     ]
@@ -442,7 +442,7 @@
     "name": "경기도 성남시 수정구 수진동 940",
     "address": "경기도 성남시 수정구 수진동 940",
     "coords": [127.135306999628, 37.4394435280328],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 105.2, "rep_avg_price": 90000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [90000, 90000], "rep_area": 105.2, "rep_avg_price": 90000, "ppy": 2829}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 90000, "rent": 0, "area": 105.15, "land": 60.5, "floor": "", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "수진동 940 (추정)", "by": 1991}
     ]
@@ -451,7 +451,7 @@
     "name": "경기도 성남시 수정구 시흥동",
     "address": "경기도 성남시 수정구 시흥동",
     "coords": [127.107911064005, 37.4220156950269],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [10000, 24800], "rep_area": 80.4, "rep_avg_price": 10000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [10000, 24800], "rep_area": 80.4, "rep_avg_price": 10000, "ppy": 679}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 24800, "rent": 0, "area": 89.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-22", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
       {"type": "전세", "price": 10000, "rent": 0, "area": 80.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-10", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015}
@@ -461,7 +461,7 @@
     "name": "경기도 성남시 수정구 신촌동",
     "address": "경기도 성남시 수정구 신촌동",
     "coords": [127.109079606758, 37.4581092778004],
-    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [500, 6000], "rep_area": 28.0, "rep_avg_price": 500}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [500, 6000], "rep_area": 28.0, "rep_avg_price": 500, "ppy": 100}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 60, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-16", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2008},
       {"type": "월세", "price": 6000, "rent": 200, "area": 153.07, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-27", "period": "26.04~28.04", "renew": "갱신", "p_dep": 5000, "p_rent": 158, "jibun": "", "by": 2008},
@@ -473,7 +473,7 @@
     "name": "경기도 성남시 수정구 신흥동",
     "address": "경기도 성남시 수정구 신흥동",
     "coords": [127.141137377657, 37.4431149209874],
-    "stats": {"total": 104, "sale": {"count": 17, "range": [50000, 90000], "rep_area": 95.1, "rep_avg_price": 79000}, "jeonse": {"count": 41, "range": [1000, 25000], "rep_area": 32.0, "rep_avg_price": 10250}, "monthly": {"count": 46, "range": [0, 8700], "rep_area": 38.6, "rep_avg_price": 2400}},
+    "stats": {"total": 104, "sale": {"count": 17, "range": [50000, 90000], "rep_area": 95.1, "rep_avg_price": 79000, "ppy": 2286}, "jeonse": {"count": 41, "range": [1000, 25000], "rep_area": 32.0, "rep_avg_price": 10250, "ppy": 828}, "monthly": {"count": 46, "range": [0, 8700], "rep_area": 38.6, "rep_avg_price": 2400, "ppy": 111}},
     "deals": [
       {"type": "매매", "price": 83000, "rent": 0, "area": 123.31, "land": 68.8, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4***", "by": 1991},
       {"type": "매매", "price": 90000, "rent": 0, "area": 131.57, "land": 71.1, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 6***", "by": 1992},
@@ -585,7 +585,7 @@
     "name": "경기도 성남시 수정구 신흥동 2703",
     "address": "경기도 성남시 수정구 신흥동 2703",
     "coords": [127.146145506298, 37.4426041766532],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 96.8, "rep_avg_price": 70000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [70000, 70000], "rep_area": 96.8, "rep_avg_price": 70000, "ppy": 2390}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 70000, "rent": 0, "area": 96.84, "land": 62.1, "floor": "", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 2703 (추정)", "by": 1992}
     ]
@@ -594,7 +594,7 @@
     "name": "경기도 성남시 수정구 신흥동 2890",
     "address": "경기도 성남시 수정구 신흥동 2890",
     "coords": [127.14576149418, 37.4430559688113],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [76000, 76000], "rep_area": 64.9, "rep_avg_price": 76000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [76000, 76000], "rep_area": 64.9, "rep_avg_price": 76000, "ppy": 3871}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 76000, "rent": 0, "area": 64.9, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 2890 (추정)", "by": 1973},
       {"type": "매매", "price": 76000, "rent": 0, "area": 64.9, "land": 62.5, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 2890 (추정)", "by": 1973}
@@ -604,7 +604,7 @@
     "name": "경기도 성남시 수정구 신흥동 4439",
     "address": "경기도 성남시 수정구 신흥동 4439",
     "coords": [127.141710165724, 37.4404632713609],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [74900, 74900], "rep_area": 94.9, "rep_avg_price": 74900}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [74900, 74900], "rep_area": 94.9, "rep_avg_price": 74900, "ppy": 2609}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 74900, "rent": 0, "area": 94.9, "land": 53.2, "floor": "", "dong": "", "date": "2026-04-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4439 (추정)", "by": 1989}
     ]
@@ -613,7 +613,7 @@
     "name": "경기도 성남시 수정구 신흥동 4669",
     "address": "경기도 성남시 수정구 신흥동 4669",
     "coords": [127.142153590226, 37.4411272370507],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 96.8, "rep_avg_price": 65000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 96.8, "rep_avg_price": 65000, "ppy": 2221}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 65000, "rent": 0, "area": 96.76, "land": 54.2, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4669 (추정)", "by": 2000}
     ]
@@ -622,7 +622,7 @@
     "name": "경기도 성남시 수정구 신흥동 4670",
     "address": "경기도 성남시 수정구 신흥동 4670",
     "coords": [127.142178460224, 37.4410726957663],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [73000, 73000], "rep_area": 27.8, "rep_avg_price": 73000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [73000, 73000], "rep_area": 27.8, "rep_avg_price": 73000, "ppy": 8668}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 73000, "rent": 0, "area": 27.84, "land": 53.2, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 4670 (추정)", "by": 1999}
     ]
@@ -631,7 +631,7 @@
     "name": "경기도 성남시 수정구 신흥동 6208",
     "address": "경기도 성남시 수정구 신흥동 6208",
     "coords": [127.140079449321, 37.4406975868554],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [97000, 97000], "rep_area": 147.4, "rep_avg_price": 97000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [97000, 97000], "rep_area": 147.4, "rep_avg_price": 97000, "ppy": 2175}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 97000, "rent": 0, "area": 147.45, "land": 76.4, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신흥동 6208 (추정)", "by": 1995}
     ]
@@ -640,7 +640,7 @@
     "name": "경기도 성남시 수정구 심곡동",
     "address": "경기도 성남시 수정구 심곡동",
     "coords": [127.102359551351, 37.4468634389173],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.4, "rep_avg_price": 3000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 59.4, "rep_avg_price": 3000, "ppy": 167}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 40, "area": 59.4, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
     ]
@@ -649,7 +649,7 @@
     "name": "경기도 성남시 수정구 양지동",
     "address": "경기도 성남시 수정구 양지동",
     "coords": [127.160987909728, 37.4548459679088],
-    "stats": {"total": 18, "sale": null, "jeonse": {"count": 2, "range": [15000, 30500], "rep_area": 44.3, "rep_avg_price": 15000}, "monthly": {"count": 16, "range": [300, 12000], "rep_area": 34.0, "rep_avg_price": 500}},
+    "stats": {"total": 18, "sale": null, "jeonse": {"count": 2, "range": [15000, 30500], "rep_area": 44.3, "rep_avg_price": 15000, "ppy": 1028}, "monthly": {"count": 16, "range": [300, 12000], "rep_area": 34.0, "rep_avg_price": 500, "ppy": 259}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 65, "area": 58.84, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-20", "period": "26.05~28.05", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2003},
       {"type": "월세", "price": 2000, "rent": 60, "area": 57.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "26.04~28.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1997},
@@ -675,7 +675,7 @@
     "name": "경기도 성남시 수정구 양지동 568",
     "address": "경기도 성남시 수정구 양지동 568",
     "coords": [127.16262721104, 37.4572644721208],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [68500, 68500], "rep_area": 165.8, "rep_avg_price": 68500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [68500, 68500], "rep_area": 165.8, "rep_avg_price": 68500, "ppy": 1366}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 68500, "rent": 0, "area": 165.78, "land": 92.9, "floor": "", "dong": "", "date": "2026-04-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "양지동 568 (추정)", "by": 1993}
     ]
@@ -684,7 +684,7 @@
     "name": "경기도 성남시 수정구 오야동",
     "address": "경기도 성남시 수정구 오야동",
     "coords": [127.111359718883, 37.4530218368562],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [35000, 39900], "rep_area": 78.7, "rep_avg_price": 35000}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [35000, 39900], "rep_area": 78.7, "rep_avg_price": 35000, "ppy": 1435}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 35000, "rent": 0, "area": 78.71, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-16", "period": "26.06~28.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2015},
       {"type": "전세", "price": 39900, "rent": 0, "area": 95.79, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-08", "period": "26.05~28.05", "renew": "갱신", "p_dep": 38000, "p_rent": 0, "jibun": "", "by": 2002},
@@ -695,7 +695,7 @@
     "name": "경기도 성남시 수정구 창곡동",
     "address": "경기도 성남시 수정구 창곡동",
     "coords": [127.147827065531, 37.4683098541632],
-    "stats": {"total": 22, "sale": null, "jeonse": {"count": 15, "range": [26000, 75000], "rep_area": 45.0, "rep_avg_price": 29250}, "monthly": {"count": 7, "range": [4000, 48500], "rep_area": 55.0, "rep_avg_price": 5000}},
+    "stats": {"total": 22, "sale": null, "jeonse": {"count": 15, "range": [26000, 75000], "rep_area": 45.0, "rep_avg_price": 29250, "ppy": 1983}, "monthly": {"count": 7, "range": [4000, 48500], "rep_area": 55.0, "rep_avg_price": 5000, "ppy": 969}},
     "deals": [
       {"type": "전세", "price": 30000, "rent": 0, "area": 45.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 5000, "rent": 95, "area": 55.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-07", "period": "26.04~28.04", "renew": "갱신", "p_dep": 5000, "p_rent": 90, "jibun": "", "by": 2015},
@@ -725,7 +725,7 @@
     "name": "경기도 성남시 수정구 태평동",
     "address": "경기도 성남시 수정구 태평동",
     "coords": [127.125991008174, 37.4408182318508],
-    "stats": {"total": 264, "sale": {"count": 11, "range": [21000, 67000], "rep_area": 69.0, "rep_avg_price": 50000}, "jeonse": {"count": 92, "range": [1000, 26000], "rep_area": 35.0, "rep_avg_price": 10700}, "monthly": {"count": 161, "range": [0, 15000], "rep_area": 20.0, "rep_avg_price": 312}},
+    "stats": {"total": 264, "sale": {"count": 11, "range": [21000, 67000], "rep_area": 69.0, "rep_avg_price": 50000, "ppy": 1283}, "jeonse": {"count": 92, "range": [1000, 26000], "rep_area": 35.0, "rep_avg_price": 10700, "ppy": 908}, "monthly": {"count": 161, "range": [0, 15000], "rep_area": 20.0, "rep_avg_price": 312, "ppy": 127}},
     "deals": [
       {"type": "매매", "price": 67000, "rent": 0, "area": 165.96, "land": 102.5, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 7**", "by": 1989},
       {"type": "매매", "price": 21000, "rent": 0, "area": 134.31, "land": 70.1, "floor": "", "dong": "", "date": "2026-04-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 3***", "by": 1994},
@@ -997,7 +997,7 @@
     "name": "경기도 성남시 수정구 태평동 1057",
     "address": "경기도 성남시 수정구 태평동 1057",
     "coords": [127.135743106949, 37.4491023483586],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [29500, 29500], "rep_area": 33.1, "rep_avg_price": 29500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29500, 29500], "rep_area": 33.1, "rep_avg_price": 29500, "ppy": 2944}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 29500, "rent": 0, "area": 33.12, "land": 63.1, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 1057 (추정)", "by": 1972}
     ]
@@ -1006,7 +1006,7 @@
     "name": "경기도 성남시 수정구 태평동 2792",
     "address": "경기도 성남시 수정구 태평동 2792",
     "coords": [127.137564159626, 37.44766276612],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 153.5, "rep_avg_price": 50000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [50000, 50000], "rep_area": 153.5, "rep_avg_price": 50000, "ppy": 1077}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 50000, "rent": 0, "area": 153.5, "land": 65.5, "floor": "", "dong": "", "date": "2026-04-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 2792 (추정)", "by": 2007}
     ]
@@ -1015,7 +1015,7 @@
     "name": "경기도 성남시 수정구 태평동 424",
     "address": "경기도 성남시 수정구 태평동 424",
     "coords": [127.136419620235, 37.4499836613159],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 127.0, "rep_avg_price": 43000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [43000, 43000], "rep_area": 127.0, "rep_avg_price": 43000, "ppy": 1119}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 43000, "rent": 0, "area": 127.0, "land": 68.8, "floor": "", "dong": "", "date": "2026-04-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 424 (추정)", "by": 1989}
     ]
@@ -1024,7 +1024,7 @@
     "name": "경기도 성남시 수정구 태평동 4407",
     "address": "경기도 성남시 수정구 태평동 4407",
     "coords": [127.130418024662, 37.4464818900938],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 146.7, "rep_avg_price": 66000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 146.7, "rep_avg_price": 66000, "ppy": 1488}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 66000, "rent": 0, "area": 146.67, "land": 70.4, "floor": "", "dong": "", "date": "2026-04-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 4407 (추정)", "by": 1988}
     ]
@@ -1033,7 +1033,7 @@
     "name": "경기도 성남시 수정구 태평동 4959",
     "address": "경기도 성남시 수정구 태평동 4959",
     "coords": [127.132584846657, 37.4490369159069],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [59000, 59000], "rep_area": 97.0, "rep_avg_price": 59000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [59000, 59000], "rep_area": 97.0, "rep_avg_price": 59000, "ppy": 2011}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 59000, "rent": 0, "area": 96.98, "land": 53.6, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 4959 (추정)", "by": 1998}
     ]
@@ -1042,7 +1042,7 @@
     "name": "경기도 성남시 수정구 태평동 507",
     "address": "경기도 성남시 수정구 태평동 507",
     "coords": [127.135148089666, 37.4497908637297],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [41000, 41000], "rep_area": 130.6, "rep_avg_price": 41000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [41000, 41000], "rep_area": 130.6, "rep_avg_price": 41000, "ppy": 1038}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 41000, "rent": 0, "area": 130.57, "land": 92.2, "floor": "", "dong": "", "date": "2026-04-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 507 (추정)", "by": 1987}
     ]
@@ -1051,7 +1051,7 @@
     "name": "경기도 성남시 수정구 태평동 5623",
     "address": "경기도 성남시 수정구 태평동 5623",
     "coords": [127.130183582186, 37.4435763786752],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 136.3, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 136.3, "rep_avg_price": 60000, "ppy": 1455}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 136.3, "land": 64.5, "floor": "", "dong": "", "date": "2026-04-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "태평동 5623 (추정)", "by": 1992}
     ]

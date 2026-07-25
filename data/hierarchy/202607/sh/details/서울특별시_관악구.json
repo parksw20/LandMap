@@ -3,7 +3,7 @@
     "name": "서울특별시 관악구 남현동",
     "address": "서울특별시 관악구 남현동",
     "coords": [126.977909779402, 37.4745631666845],
-    "stats": {"total": 25, "sale": null, "jeonse": {"count": 3, "range": [12000, 23000], "rep_area": 30.0, "rep_avg_price": 18000}, "monthly": {"count": 22, "range": [500, 40000], "rep_area": 20.0, "rep_avg_price": 3375}},
+    "stats": {"total": 25, "sale": null, "jeonse": {"count": 3, "range": [12000, 23000], "rep_area": 30.0, "rep_avg_price": 18000, "ppy": 1474}, "monthly": {"count": 22, "range": [500, 40000], "rep_area": 20.0, "rep_avg_price": 3375, "ppy": 840}},
     "deals": [
       {"type": "월세", "price": 5500, "rent": 42, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2002},
       {"type": "월세", "price": 2000, "rent": 45, "area": 20.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
@@ -36,7 +36,7 @@
     "name": "서울특별시 관악구 봉천동",
     "address": "서울특별시 관악구 봉천동",
     "coords": [126.952165181187, 37.4825384917268],
-    "stats": {"total": 217, "sale": null, "jeonse": {"count": 32, "range": [6000, 32700], "rep_area": 18.0, "rep_avg_price": 8333}, "monthly": {"count": 185, "range": [0, 25000], "rep_area": 18.0, "rep_avg_price": 1820}},
+    "stats": {"total": 217, "sale": null, "jeonse": {"count": 32, "range": [6000, 32700], "rep_area": 18.0, "rep_avg_price": 8333, "ppy": 1124}, "monthly": {"count": 185, "range": [0, 25000], "rep_area": 18.0, "rep_avg_price": 1820, "ppy": 375}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 54, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2017},
       {"type": "월세", "price": 3700, "rent": 25, "area": 15.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -261,7 +261,7 @@
     "name": "서울특별시 관악구 봉천동 1630-8",
     "address": "서울특별시 관악구 봉천동 1630-8",
     "coords": [126.961776538421, 37.4764020647651],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [250000, 250000], "rep_area": 458.9, "rep_avg_price": 250000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [250000, 250000], "rep_area": 458.9, "rep_avg_price": 250000, "ppy": 1801}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 250000, "rent": 0, "area": 458.88, "land": 200.2, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "봉천동 1630-8 (추정)", "by": 2012}
     ]
@@ -270,7 +270,7 @@
     "name": "서울특별시 관악구 신림동",
     "address": "서울특별시 관악구 신림동",
     "coords": [126.926185482384, 37.4894520674165],
-    "stats": {"total": 301, "sale": {"count": 5, "range": [38000, 132000], "rep_area": 25.8, "rep_avg_price": 68000}, "jeonse": {"count": 38, "range": [1800, 60000], "rep_area": 19.8, "rep_avg_price": 9833}, "monthly": {"count": 258, "range": [0, 20000], "rep_area": 18.0, "rep_avg_price": 1290}},
+    "stats": {"total": 301, "sale": {"count": 5, "range": [38000, 132000], "rep_area": 25.8, "rep_avg_price": 68000, "ppy": 1817}, "jeonse": {"count": 38, "range": [1800, 60000], "rep_area": 19.8, "rep_avg_price": 9833, "ppy": 1069}, "monthly": {"count": 258, "range": [0, 20000], "rep_area": 18.0, "rep_avg_price": 1290, "ppy": 275}},
     "deals": [
       {"type": "매매", "price": 38000, "rent": 0, "area": 129.89, "land": 116.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 2**", "by": 1977},
       {"type": "매매", "price": 132000, "rent": 0, "area": 142.15, "land": 149.2, "floor": "", "dong": "", "date": "2026-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1***", "by": 1974},
@@ -579,7 +579,7 @@
     "name": "서울특별시 관악구 신림동 1583-8",
     "address": "서울특별시 관악구 신림동 1583-8",
     "coords": [126.924071037152, 37.4813756220935],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [83000, 83000], "rep_area": 188.2, "rep_avg_price": 83000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [83000, 83000], "rep_area": 188.2, "rep_avg_price": 83000, "ppy": 1458}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 83000, "rent": 0, "area": 188.19, "land": 139.6, "floor": "", "dong": "", "date": "2026-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 1583-8 (추정)", "by": 1985}
     ]
@@ -588,7 +588,7 @@
     "name": "서울특별시 관악구 신림동 610-434",
     "address": "서울특별시 관악구 신림동 610-434",
     "coords": [126.921654473316, 37.4759484375153],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 230.9, "rep_avg_price": 60000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [60000, 60000], "rep_area": 230.9, "rep_avg_price": 60000, "ppy": 859}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 230.94, "land": 145.0, "floor": "", "dong": "", "date": "2026-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 610-434 (추정)", "by": 1993}
     ]
@@ -597,7 +597,7 @@
     "name": "서울특별시 관악구 신림동 768-11",
     "address": "서울특별시 관악구 신림동 768-11",
     "coords": [126.913152370181, 37.4780344578606],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 72.7, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 72.7, "rep_avg_price": 30000, "ppy": 1364}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 72.73, "land": 99.0, "floor": "", "dong": "", "date": "2026-07-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "신림동 768-11 (추정)", "by": 1976}
     ]

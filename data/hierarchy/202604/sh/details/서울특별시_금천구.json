@@ -3,7 +3,7 @@
     "name": "서울특별시 금천구 가산동",
     "address": "서울특별시 금천구 가산동",
     "coords": [126.891779471155, 37.4768763179224],
-    "stats": {"total": 23, "sale": {"count": 1, "range": [80000, 80000], "rep_area": 179.0, "rep_avg_price": 80000}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 13.0, "rep_avg_price": 12000}, "monthly": {"count": 21, "range": [100, 4000], "rep_area": 15.0, "rep_avg_price": 250}},
+    "stats": {"total": 23, "sale": {"count": 1, "range": [80000, 80000], "rep_area": 179.0, "rep_avg_price": 80000, "ppy": 1478}, "jeonse": {"count": 1, "range": [12000, 12000], "rep_area": 13.0, "rep_avg_price": 12000, "ppy": 3051}, "monthly": {"count": 21, "range": [100, 4000], "rep_area": 15.0, "rep_avg_price": 250, "ppy": 118}},
     "deals": [
       {"type": "매매", "price": 80000, "rent": 0, "area": 178.98, "land": 104.0, "floor": "", "dong": "", "date": "2026-04-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "가산동 4*", "by": 1994},
       {"type": "전세", "price": 12000, "rent": 0, "area": 13.0, "land": 0.0, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
@@ -34,7 +34,7 @@
     "name": "서울특별시 금천구 독산동",
     "address": "서울특별시 금천구 독산동",
     "coords": [126.899392976389, 37.4681432491734],
-    "stats": {"total": 232, "sale": {"count": 2, "range": [31000, 71000], "rep_area": 131.6, "rep_avg_price": 31000}, "jeonse": {"count": 30, "range": [500, 23000], "rep_area": 25.0, "rep_avg_price": 8900}, "monthly": {"count": 200, "range": [0, 11000], "rep_area": 30.0, "rep_avg_price": 1628}},
+    "stats": {"total": 232, "sale": {"count": 2, "range": [31000, 71000], "rep_area": 131.6, "rep_avg_price": 31000, "ppy": 1161}, "jeonse": {"count": 30, "range": [500, 23000], "rep_area": 25.0, "rep_avg_price": 8900, "ppy": 746}, "monthly": {"count": 200, "range": [0, 11000], "rep_area": 30.0, "rep_avg_price": 1628, "ppy": 175}},
     "deals": [
       {"type": "매매", "price": 71000, "rent": 0, "area": 158.73, "land": 110.1, "floor": "", "dong": "", "date": "2026-04-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 9**", "by": 1988},
       {"type": "매매", "price": 31000, "rent": 0, "area": 131.6, "land": 120.0, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 3**", "by": 1983},
@@ -274,7 +274,7 @@
     "name": "서울특별시 금천구 독산동 188-11",
     "address": "서울특별시 금천구 독산동 188-11",
     "coords": [126.904606336348, 37.470548495427],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [54300, 54300], "rep_area": 164.2, "rep_avg_price": 54300}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [54300, 54300], "rep_area": 164.2, "rep_avg_price": 54300, "ppy": 1093}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 54300, "rent": 0, "area": 164.22, "land": 109.8, "floor": "", "dong": "", "date": "2026-04-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 188-11 (추정)", "by": 1989}
     ]
@@ -283,7 +283,7 @@
     "name": "서울특별시 금천구 독산동 932",
     "address": "서울특별시 금천구 독산동 932",
     "coords": [126.905026246942, 37.4677305628692],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [83000, 83000], "rep_area": 358.7, "rep_avg_price": 83000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [83000, 83000], "rep_area": 358.7, "rep_avg_price": 83000, "ppy": 765}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 83000, "rent": 0, "area": 358.72, "land": 149.9, "floor": "", "dong": "", "date": "2026-04-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "독산동 932 (추정)", "by": 1996}
     ]
@@ -292,7 +292,7 @@
     "name": "서울특별시 금천구 시흥동",
     "address": "서울특별시 금천구 시흥동",
     "coords": [126.908452220723, 37.4476688042386],
-    "stats": {"total": 139, "sale": {"count": 3, "range": [45000, 70000], "rep_area": 117.7, "rep_avg_price": 70000}, "jeonse": {"count": 33, "range": [2000, 25500], "rep_area": 27.0, "rep_avg_price": 8000}, "monthly": {"count": 103, "range": [0, 22000], "rep_area": 40.0, "rep_avg_price": 2750}},
+    "stats": {"total": 139, "sale": {"count": 3, "range": [45000, 70000], "rep_area": 117.7, "rep_avg_price": 70000, "ppy": 1044}, "jeonse": {"count": 33, "range": [2000, 25500], "rep_area": 27.0, "rep_avg_price": 8000, "ppy": 491}, "monthly": {"count": 103, "range": [0, 22000], "rep_area": 40.0, "rep_avg_price": 2750, "ppy": 176}},
     "deals": [
       {"type": "매매", "price": 45000, "rent": 0, "area": 246.69, "land": 164.8, "floor": "", "dong": "", "date": "2026-04-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 8**", "by": 1987},
       {"type": "매매", "price": 70000, "rent": 0, "area": 117.69, "land": 133.3, "floor": "", "dong": "", "date": "2026-04-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 8**", "by": 1977},
@@ -439,7 +439,7 @@
     "name": "서울특별시 금천구 시흥동 244-8",
     "address": "서울특별시 금천구 시흥동 244-8",
     "coords": [126.913098985433, 37.4510985064684],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [37620, 37620], "rep_area": 206.1, "rep_avg_price": 37620}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [37620, 37620], "rep_area": 206.1, "rep_avg_price": 37620, "ppy": 603}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 37620, "rent": 0, "area": 206.1, "land": 169.0, "floor": "", "dong": "", "date": "2026-04-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 244-8 (추정)", "by": 1988}
     ]
@@ -448,7 +448,7 @@
     "name": "서울특별시 금천구 시흥동 819-8",
     "address": "서울특별시 금천구 시흥동 819-8",
     "coords": [126.906063433894, 37.4552326477739],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [194024, 194024], "rep_area": 466.6, "rep_avg_price": 194024}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [194024, 194024], "rep_area": 466.6, "rep_avg_price": 194024, "ppy": 1375}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 194024, "rent": 0, "area": 466.56, "land": 221.9, "floor": "", "dong": "", "date": "2026-04-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 819-8 (추정)", "by": 1988}
     ]
@@ -457,7 +457,7 @@
     "name": "서울특별시 금천구 시흥동 929-15",
     "address": "서울특별시 금천구 시흥동 929-15",
     "coords": [126.909976689394, 37.4469531285828],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 82.0, "rep_avg_price": 34000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [34000, 34000], "rep_area": 82.0, "rep_avg_price": 34000, "ppy": 1371}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 34000, "rent": 0, "area": 81.99, "land": 121.3, "floor": "", "dong": "", "date": "2026-04-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 929-15 (추정)", "by": 1977}
     ]
@@ -466,7 +466,7 @@
     "name": "서울특별시 금천구 시흥동 930-31",
     "address": "서울특별시 금천구 시흥동 930-31",
     "coords": [126.908872020504, 37.4468592973801],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 111.8, "rep_avg_price": 30000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [30000, 30000], "rep_area": 111.8, "rep_avg_price": 30000, "ppy": 887}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 30000, "rent": 0, "area": 111.78, "land": 76.5, "floor": "", "dong": "", "date": "2026-04-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "시흥동 930-31 (추정)", "by": 1992}
     ]

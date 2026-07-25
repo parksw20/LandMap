@@ -3,7 +3,7 @@
     "name": "경기도 성남시 중원구 금광동",
     "address": "경기도 성남시 중원구 금광동",
     "coords": [127.162431497209, 37.4450553893091],
-    "stats": {"total": 50, "sale": {"count": 1, "range": [50700, 50700], "rep_area": 169.7, "rep_avg_price": 50700}, "jeonse": {"count": 13, "range": [5000, 18000], "rep_area": 23.0, "rep_avg_price": 5000}, "monthly": {"count": 36, "range": [100, 4000], "rep_area": 20.0, "rep_avg_price": 300}},
+    "stats": {"total": 50, "sale": {"count": 1, "range": [50700, 50700], "rep_area": 169.7, "rep_avg_price": 50700, "ppy": 988}, "jeonse": {"count": 13, "range": [5000, 18000], "rep_area": 23.0, "rep_avg_price": 5000, "ppy": 826}, "monthly": {"count": 36, "range": [100, 4000], "rep_area": 20.0, "rep_avg_price": 300, "ppy": 99}},
     "deals": [
       {"type": "매매", "price": 50700, "rent": 0, "area": 169.71, "land": 99.5, "floor": "", "dong": "", "date": "2025-09-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "금광동 3***", "by": 1990},
       {"type": "월세", "price": 3000, "rent": 30, "area": 36.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-11", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1989},
@@ -61,7 +61,7 @@
     "name": "경기도 성남시 중원구 금광동 3523",
     "address": "경기도 성남시 중원구 금광동 3523",
     "coords": [127.162028769365, 37.4474789473011],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [78000, 78000], "rep_area": 252.3, "rep_avg_price": 78000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [78000, 78000], "rep_area": 252.3, "rep_avg_price": 78000, "ppy": 1022}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 78000, "rent": 0, "area": 252.32, "land": 105.7, "floor": "", "dong": "", "date": "2025-09-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "금광동 3523 (추정)", "by": 1989}
     ]
@@ -70,7 +70,7 @@
     "name": "경기도 성남시 중원구 도촌동",
     "address": "경기도 성남시 중원구 도촌동",
     "coords": [127.152772405649, 37.4165024621994],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 3, "range": [20000, 36700], "rep_area": 50.0, "rep_avg_price": 20000}, "monthly": {"count": 3, "range": [3000, 12000], "rep_area": 23.0, "rep_avg_price": 3000}},
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 3, "range": [20000, 36700], "rep_area": 50.0, "rep_avg_price": 20000, "ppy": 1266}, "monthly": {"count": 3, "range": [3000, 12000], "rep_area": 23.0, "rep_avg_price": 3000, "ppy": 437}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 40, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-24", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
       {"type": "월세", "price": 3000, "rent": 40, "area": 23.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-24", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2011},
@@ -84,7 +84,7 @@
     "name": "경기도 성남시 중원구 상대원동",
     "address": "경기도 성남시 중원구 상대원동",
     "coords": [127.164335999581, 37.4333251526037],
-    "stats": {"total": 105, "sale": {"count": 5, "range": [42000, 74700], "rep_area": 114.6, "rep_avg_price": 46000}, "jeonse": {"count": 36, "range": [1000, 13000], "rep_area": 16.0, "rep_avg_price": 7000}, "monthly": {"count": 64, "range": [100, 13000], "rep_area": 20.0, "rep_avg_price": 666}},
+    "stats": {"total": 105, "sale": {"count": 5, "range": [42000, 74700], "rep_area": 114.6, "rep_avg_price": 46000, "ppy": 2006}, "jeonse": {"count": 36, "range": [1000, 13000], "rep_area": 16.0, "rep_avg_price": 7000, "ppy": 726}, "monthly": {"count": 64, "range": [100, 13000], "rep_area": 20.0, "rep_avg_price": 666, "ppy": 166}},
     "deals": [
       {"type": "매매", "price": 42000, "rent": 0, "area": 80.46, "land": 67.1, "floor": "", "dong": "", "date": "2025-09-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 2***", "by": 1984},
       {"type": "매매", "price": 70000, "rent": 0, "area": 69.06, "land": 61.5, "floor": "", "dong": "", "date": "2025-09-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 4***", "by": 1985},
@@ -197,7 +197,7 @@
     "name": "경기도 성남시 중원구 상대원동 4785",
     "address": "경기도 성남시 중원구 상대원동 4785",
     "coords": [127.157201400894, 37.4356415453343],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [76000, 76000], "rep_area": 107.3, "rep_avg_price": 76000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [76000, 76000], "rep_area": 107.3, "rep_avg_price": 76000, "ppy": 2341}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 76000, "rent": 0, "area": 107.31, "land": 61.2, "floor": "", "dong": "", "date": "2025-09-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 4785 (추정)", "by": 1983}
     ]
@@ -206,7 +206,7 @@
     "name": "경기도 성남시 중원구 상대원동 5445-1장",
     "address": "경기도 성남시 중원구 상대원동 5445-1장",
     "coords": [127.158560532606, 37.4308476794629],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [99500, 99500], "rep_area": 95.9, "rep_avg_price": 99500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [99500, 99500], "rep_area": 95.9, "rep_avg_price": 99500, "ppy": 3431}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 99500, "rent": 0, "area": 95.88, "land": 92.6, "floor": "", "dong": "", "date": "2025-09-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "상대원동 5445-1장 (추정)", "by": 2000}
     ]
@@ -215,7 +215,7 @@
     "name": "경기도 성남시 중원구 성남동",
     "address": "경기도 성남시 중원구 성남동",
     "coords": [127.138944267643, 37.4353291482243],
-    "stats": {"total": 51, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 203.4, "rep_avg_price": 85000}, "jeonse": {"count": 14, "range": [3000, 25000], "rep_area": 60.0, "rep_avg_price": 19750}, "monthly": {"count": 36, "range": [50, 16000], "rep_area": 50.0, "rep_avg_price": 3750}},
+    "stats": {"total": 51, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 203.4, "rep_avg_price": 85000, "ppy": 1382}, "jeonse": {"count": 14, "range": [3000, 25000], "rep_area": 60.0, "rep_avg_price": 19750, "ppy": 1054}, "monthly": {"count": 36, "range": [50, 16000], "rep_area": 50.0, "rep_avg_price": 3750, "ppy": 290}},
     "deals": [
       {"type": "매매", "price": 85000, "rent": 0, "area": 203.35, "land": 115.7, "floor": "", "dong": "", "date": "2025-09-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성남동 2***", "by": 1987},
       {"type": "전세", "price": 21500, "rent": 0, "area": 53.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1983},
@@ -274,7 +274,7 @@
     "name": "경기도 성남시 중원구 성남동 2844",
     "address": "경기도 성남시 중원구 성남동 2844",
     "coords": [127.147406512899, 37.4351751862988],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [64000, 64000], "rep_area": 151.8, "rep_avg_price": 64000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [64000, 64000], "rep_area": 151.8, "rep_avg_price": 64000, "ppy": 1393}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 64000, "rent": 0, "area": 151.84, "land": 86.0, "floor": "", "dong": "", "date": "2025-09-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성남동 2844 (추정)", "by": 1988}
     ]
@@ -283,7 +283,7 @@
     "name": "경기도 성남시 중원구 여수동",
     "address": "경기도 성남시 중원구 여수동",
     "coords": [127.143744170308, 37.4211450154018],
-    "stats": {"total": 15, "sale": null, "jeonse": {"count": 8, "range": [12000, 50000], "rep_area": 25.0, "rep_avg_price": 12000}, "monthly": {"count": 7, "range": [2000, 29000], "rep_area": 25.0, "rep_avg_price": 2000}},
+    "stats": {"total": 15, "sale": null, "jeonse": {"count": 8, "range": [12000, 50000], "rep_area": 25.0, "rep_avg_price": 12000, "ppy": 1450}, "monthly": {"count": 7, "range": [2000, 29000], "rep_area": 25.0, "rep_avg_price": 2000, "ppy": 566}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 30, "area": 55.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
       {"type": "월세", "price": 2000, "rent": 65, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2016},
@@ -306,7 +306,7 @@
     "name": "경기도 성남시 중원구 은행동",
     "address": "경기도 성남시 중원구 은행동",
     "coords": [127.168879723867, 37.4521211053813],
-    "stats": {"total": 26, "sale": null, "jeonse": {"count": 13, "range": [4000, 20000], "rep_area": 45.0, "rep_avg_price": 13000}, "monthly": {"count": 13, "range": [500, 6000], "rep_area": 36.0, "rep_avg_price": 2500}},
+    "stats": {"total": 26, "sale": null, "jeonse": {"count": 13, "range": [4000, 20000], "rep_area": 45.0, "rep_avg_price": 13000, "ppy": 576}, "monthly": {"count": 13, "range": [500, 6000], "rep_area": 36.0, "rep_avg_price": 2500, "ppy": 79}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 25, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-06", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
       {"type": "월세", "price": 1000, "rent": 30, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-17", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1994},
@@ -340,7 +340,7 @@
     "name": "경기도 성남시 중원구 은행동 1558",
     "address": "경기도 성남시 중원구 은행동 1558",
     "coords": [127.164517395839, 37.457036512884],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [61750, 61750], "rep_area": 125.2, "rep_avg_price": 61750}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [61750, 61750], "rep_area": 125.2, "rep_avg_price": 61750, "ppy": 1631}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 61750, "rent": 0, "area": 125.19, "land": 128.8, "floor": "", "dong": "", "date": "2025-09-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 1558 (추정)", "by": 1979}
     ]
@@ -349,7 +349,7 @@
     "name": "경기도 성남시 중원구 은행동 860",
     "address": "경기도 성남시 중원구 은행동 860",
     "coords": [127.169597285904, 37.4570829421975],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [24000, 24000], "rep_area": 144.8, "rep_avg_price": 24000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [24000, 24000], "rep_area": 144.8, "rep_avg_price": 24000, "ppy": 548}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 24000, "rent": 0, "area": 144.77, "land": 62.2, "floor": "", "dong": "", "date": "2025-09-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "은행동 860 (추정)", "by": 1992}
     ]
@@ -358,7 +358,7 @@
     "name": "경기도 성남시 중원구 중앙동",
     "address": "경기도 성남시 중원구 중앙동",
     "coords": [127.156279509281, 37.4429300831517],
-    "stats": {"total": 16, "sale": {"count": 1, "range": [103000, 103000], "rep_area": 178.9, "rep_avg_price": 103000}, "jeonse": {"count": 3, "range": [12000, 17000], "rep_area": 31.7, "rep_avg_price": 13000}, "monthly": {"count": 12, "range": [150, 13000], "rep_area": 20.0, "rep_avg_price": 150}},
+    "stats": {"total": 16, "sale": {"count": 1, "range": [103000, 103000], "rep_area": 178.9, "rep_avg_price": 103000, "ppy": 1903}, "jeonse": {"count": 3, "range": [12000, 17000], "rep_area": 31.7, "rep_avg_price": 13000, "ppy": 528}, "monthly": {"count": 12, "range": [150, 13000], "rep_area": 20.0, "rep_avg_price": 150, "ppy": 58}},
     "deals": [
       {"type": "매매", "price": 103000, "rent": 0, "area": 178.89, "land": 72.1, "floor": "", "dong": "", "date": "2025-09-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 4**", "by": 1984},
       {"type": "월세", "price": 2000, "rent": 60, "area": 224.4, "land": 0.0, "floor": "", "dong": "", "date": "2025-09-17", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
@@ -382,7 +382,7 @@
     "name": "경기도 성남시 중원구 중앙동 131",
     "address": "경기도 성남시 중원구 중앙동 131",
     "coords": [127.155663452257, 37.4433850071328],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [79000, 79000], "rep_area": 19.1, "rep_avg_price": 79000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [79000, 79000], "rep_area": 19.1, "rep_avg_price": 79000, "ppy": 13687}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 79000, "rent": 0, "area": 19.08, "land": 72.1, "floor": "", "dong": "", "date": "2025-09-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 131 (추정)", "by": 1973}
     ]
@@ -391,7 +391,7 @@
     "name": "경기도 성남시 중원구 중앙동 179",
     "address": "경기도 성남시 중원구 중앙동 179",
     "coords": [127.15551621147, 37.4432230184533],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 198.0, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 198.0, "rep_avg_price": 85000, "ppy": 1419}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 85000, "rent": 0, "area": 198.0, "land": 69.4, "floor": "", "dong": "", "date": "2025-09-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 179 (추정)", "by": 1991}
     ]
@@ -400,7 +400,7 @@
     "name": "경기도 성남시 중원구 중앙동 2149",
     "address": "경기도 성남시 중원구 중앙동 2149",
     "coords": [127.155264196343, 37.4415744940476],
-    "stats": {"total": 2, "sale": {"count": 2, "range": [40500, 40500], "rep_area": 27.8, "rep_avg_price": 40500}, "jeonse": null, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 2, "range": [40500, 40500], "rep_area": 27.8, "rep_avg_price": 40500, "ppy": 4811}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 40500, "rent": 0, "area": 27.83, "land": 99.5, "floor": "", "dong": "", "date": "2025-09-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 2149 (추정)", "by": 1972},
       {"type": "매매", "price": 40500, "rent": 0, "area": 27.83, "land": 99.5, "floor": "", "dong": "", "date": "2025-09-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 2149 (추정)", "by": 1972}
@@ -410,7 +410,7 @@
     "name": "경기도 성남시 중원구 중앙동 272",
     "address": "경기도 성남시 중원구 중앙동 272",
     "coords": [127.154498603862, 37.4429450386739],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 199.2, "rep_avg_price": 85000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 199.2, "rep_avg_price": 85000, "ppy": 1411}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 85000, "rent": 0, "area": 199.2, "land": 72.4, "floor": "", "dong": "", "date": "2025-09-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "중앙동 272 (추정)", "by": 1993}
     ]
@@ -419,7 +419,7 @@
     "name": "경기도 성남시 중원구 하대원동",
     "address": "경기도 성남시 중원구 하대원동",
     "coords": [127.146360901903, 37.4282778582399],
-    "stats": {"total": 19, "sale": {"count": 2, "range": [72500, 72500], "rep_area": 169.2, "rep_avg_price": 72500}, "jeonse": {"count": 3, "range": [7000, 15000], "rep_area": 36.2, "rep_avg_price": 15000}, "monthly": {"count": 14, "range": [200, 10000], "rep_area": 30.0, "rep_avg_price": 875}},
+    "stats": {"total": 19, "sale": {"count": 2, "range": [72500, 72500], "rep_area": 169.2, "rep_avg_price": 72500, "ppy": 1416}, "jeonse": {"count": 3, "range": [7000, 15000], "rep_area": 36.2, "rep_avg_price": 15000, "ppy": 865}, "monthly": {"count": 14, "range": [200, 10000], "rep_area": 30.0, "rep_avg_price": 875, "ppy": 143}},
     "deals": [
       {"type": "매매", "price": 72500, "rent": 0, "area": 169.2, "land": 94.0, "floor": "", "dong": "", "date": "2025-09-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하대원동 1**", "by": 1988},
       {"type": "매매", "price": 72500, "rent": 0, "area": 169.2, "land": 94.0, "floor": "", "dong": "", "date": "2025-09-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "하대원동 1**", "by": 1988},

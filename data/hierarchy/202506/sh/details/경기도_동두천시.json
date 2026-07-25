@@ -3,7 +3,7 @@
     "name": "경기도 동두천시 동두천동",
     "address": "경기도 동두천시 동두천동",
     "coords": [127.055619450733, 37.9335231082184],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 121.6, "rep_avg_price": 1000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [500, 1000], "rep_area": 121.6, "rep_avg_price": 1000, "ppy": 15}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 33, "area": 209.79, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-10", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1992},
       {"type": "월세", "price": 1000, "rent": 60, "area": 121.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-14", "period": "25.07~26.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
@@ -13,7 +13,7 @@
     "name": "경기도 동두천시 보산동",
     "address": "경기도 동두천시 보산동",
     "coords": [127.061284747582, 37.917706981331],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 79.8, "rep_avg_price": 1500}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1500, 1500], "rep_area": 79.8, "rep_avg_price": 1500, "ppy": 62}},
     "deals": [
       {"type": "월세", "price": 1500, "rent": 65, "area": 79.75, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-13", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2025}
     ]
@@ -22,7 +22,7 @@
     "name": "경기도 동두천시 생연동",
     "address": "경기도 동두천시 생연동",
     "coords": [127.065583509011, 37.9073618412166],
-    "stats": {"total": 8, "sale": null, "jeonse": {"count": 1, "range": [4700, 4700], "rep_area": 123.6, "rep_avg_price": 4700}, "monthly": {"count": 7, "range": [300, 2500], "rep_area": 48.5, "rep_avg_price": 300}},
+    "stats": {"total": 8, "sale": null, "jeonse": {"count": 1, "range": [4700, 4700], "rep_area": 123.6, "rep_avg_price": 4700, "ppy": 126}, "monthly": {"count": 7, "range": [300, 2500], "rep_area": 48.5, "rep_avg_price": 300, "ppy": 25}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 35, "area": 123.6, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-28", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 300, "rent": 35, "area": 56.37, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-08", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1990},
@@ -38,7 +38,7 @@
     "name": "경기도 동두천시 생연동 533-18답",
     "address": "경기도 동두천시 생연동 533-18답",
     "coords": [127.063390828765, 37.9137161329],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [3950, 3950], "rep_area": 36.7, "rep_avg_price": 3950}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [3950, 3950], "rep_area": 36.7, "rep_avg_price": 3950, "ppy": 356}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 3950, "rent": 0, "area": 36.73, "land": 222.0, "floor": "", "dong": "", "date": "2025-06-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "생연동 533-18답 (추정)", "by": 1957}
     ]
@@ -47,7 +47,7 @@
     "name": "경기도 동두천시 생연동 561-4",
     "address": "경기도 동두천시 생연동 561-4",
     "coords": [127.056015588298, 37.9121585403365],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [15400, 15400], "rep_area": 118.7, "rep_avg_price": 15400}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [15400, 15400], "rep_area": 118.7, "rep_avg_price": 15400, "ppy": 429}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 15400, "rent": 0, "area": 118.71, "land": 198.0, "floor": "", "dong": "", "date": "2025-06-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "생연동 561-4 (추정)", "by": 1968}
     ]
@@ -56,7 +56,7 @@
     "name": "경기도 동두천시 생연동 725-23도",
     "address": "경기도 동두천시 생연동 725-23도",
     "coords": [127.056869238106, 37.900893361102],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [18050, 18050], "rep_area": 176.0, "rep_avg_price": 18050}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [18050, 18050], "rep_area": 176.0, "rep_avg_price": 18050, "ppy": 339}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 18050, "rent": 0, "area": 176.04, "land": 136.0, "floor": "", "dong": "", "date": "2025-06-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "생연동 725-23도 (추정)", "by": 1992}
     ]
@@ -65,7 +65,7 @@
     "name": "경기도 동두천시 송내동",
     "address": "경기도 동두천시 송내동",
     "coords": [127.051294397873, 37.8840128266303],
-    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [500, 1000], "rep_area": 21.8, "rep_avg_price": 500}},
+    "stats": {"total": 6, "sale": null, "jeonse": null, "monthly": {"count": 6, "range": [500, 1000], "rep_area": 21.8, "rep_avg_price": 500, "ppy": 59}},
     "deals": [
       {"type": "월세", "price": 500, "rent": 45, "area": 21.75, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-18", "period": "25.06~27.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2019},
       {"type": "월세", "price": 1000, "rent": 50, "area": 52.2, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-27", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2009},
@@ -79,7 +79,7 @@
     "name": "경기도 동두천시 송내동 271-5전",
     "address": "경기도 동두천시 송내동 271-5전",
     "coords": [127.064191081999, 37.8834812487718],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [7000, 7000], "rep_area": 65.9, "rep_avg_price": 7000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [7000, 7000], "rep_area": 65.9, "rep_avg_price": 7000, "ppy": 351}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 7000, "rent": 0, "area": 65.94, "land": 374.0, "floor": "", "dong": "", "date": "2025-06-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "송내동 271-5전 (추정)", "by": 2000}
     ]
@@ -88,7 +88,7 @@
     "name": "경기도 동두천시 안흥동",
     "address": "경기도 동두천시 안흥동",
     "coords": [127.033068239674, 37.9305981459785],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6300, 6300], "rep_area": 75.0, "rep_avg_price": 6300}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [6300, 6300], "rep_area": 75.0, "rep_avg_price": 6300, "ppy": 278}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 6300, "rent": 0, "area": 75.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "25.06~27.06", "renew": "갱신", "p_dep": 4500, "p_rent": 0, "jibun": "", "by": 0}
     ]
@@ -97,7 +97,7 @@
     "name": "경기도 동두천시 지행동",
     "address": "경기도 동두천시 지행동",
     "coords": [127.064221938883, 37.8898229961777],
-    "stats": {"total": 13, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 320.0, "rep_avg_price": 85000}, "jeonse": null, "monthly": {"count": 12, "range": [50, 1000], "rep_area": 18.3, "rep_avg_price": 250}},
+    "stats": {"total": 13, "sale": {"count": 1, "range": [85000, 85000], "rep_area": 320.0, "rep_avg_price": 85000, "ppy": 878}, "jeonse": null, "monthly": {"count": 12, "range": [50, 1000], "rep_area": 18.3, "rep_avg_price": 250, "ppy": 44}},
     "deals": [
       {"type": "매매", "price": 85000, "rent": 0, "area": 319.97, "land": 230.0, "floor": "", "dong": "", "date": "2025-06-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "지행동 2**", "by": 2020},
       {"type": "월세", "price": 1000, "rent": 50, "area": 49.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-30", "period": "25.07~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2012},
@@ -118,7 +118,7 @@
     "name": "경기도 동두천시 탑동동",
     "address": "경기도 동두천시 탑동동",
     "coords": [127.114528793769, 37.8837953102197],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 139.8, "rep_avg_price": 20000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 139.8, "rep_avg_price": 20000, "ppy": 473}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 20000, "rent": 0, "area": 139.75, "land": 0.0, "floor": "", "dong": "", "date": "2025-06-21", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0}
     ]
@@ -127,7 +127,7 @@
     "name": "경기도 동두천시 탑동동 384-1",
     "address": "경기도 동두천시 탑동동 384-1",
     "coords": [127.107720467181, 37.8923418066347],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [47000, 47000], "rep_area": 198.7, "rep_avg_price": 47000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [47000, 47000], "rep_area": 198.7, "rep_avg_price": 47000, "ppy": 782}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 47000, "rent": 0, "area": 198.71, "land": 1565.0, "floor": "", "dong": "", "date": "2025-06-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "탑동동 384-1 (추정)", "by": 2008}
     ]
@@ -136,7 +136,7 @@
     "name": "경기도 동두천시 탑동동 751-2",
     "address": "경기도 동두천시 탑동동 751-2",
     "coords": [127.097277684683, 37.8919537625423],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 197.7, "rep_avg_price": 29000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [29000, 29000], "rep_area": 197.7, "rep_avg_price": 29000, "ppy": 485}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 29000, "rent": 0, "area": 197.73, "land": 364.0, "floor": "", "dong": "", "date": "2025-06-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "탑동동 751-2 (추정)", "by": 1997}
     ]

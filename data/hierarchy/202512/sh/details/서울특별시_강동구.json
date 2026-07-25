@@ -3,7 +3,7 @@
     "name": "서울특별시 강동구 강일동",
     "address": "서울특별시 강동구 강일동",
     "coords": [127.173906305383, 37.5650420192003],
-    "stats": {"total": 10, "sale": null, "jeonse": {"count": 3, "range": [23000, 27000], "rep_area": 38.0, "rep_avg_price": 23000}, "monthly": {"count": 7, "range": [5000, 15000], "rep_area": 73.7, "rep_avg_price": 10000}},
+    "stats": {"total": 10, "sale": null, "jeonse": {"count": 3, "range": [23000, 27000], "rep_area": 38.0, "rep_avg_price": 23000, "ppy": 2109}, "monthly": {"count": 7, "range": [5000, 15000], "rep_area": 73.7, "rep_avg_price": 10000, "ppy": 219}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 75, "area": 246.78, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-27", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2025},
       {"type": "월세", "price": 10000, "rent": 175, "area": 73.72, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 0},
@@ -21,7 +21,7 @@
     "name": "서울특별시 강동구 고덕동",
     "address": "서울특별시 강동구 고덕동",
     "coords": [127.155939319817, 37.5641661222504],
-    "stats": {"total": 47, "sale": {"count": 3, "range": [250000, 310000], "rep_area": 245.0, "rep_avg_price": 250000}, "jeonse": {"count": 11, "range": [2750, 32000], "rep_area": 82.1, "rep_avg_price": 22000}, "monthly": {"count": 33, "range": [0, 13000], "rep_area": 30.0, "rep_avg_price": 875}},
+    "stats": {"total": 47, "sale": {"count": 3, "range": [250000, 310000], "rep_area": 245.0, "rep_avg_price": 250000, "ppy": 3728}, "jeonse": {"count": 11, "range": [2750, 32000], "rep_area": 82.1, "rep_avg_price": 22000, "ppy": 1039}, "monthly": {"count": 33, "range": [0, 13000], "rep_area": 30.0, "rep_avg_price": 875, "ppy": 218}},
     "deals": [
       {"type": "매매", "price": 250000, "rent": 0, "area": 245.01, "land": 177.6, "floor": "", "dong": "", "date": "2025-12-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고덕동 2**", "by": 1988},
       {"type": "매매", "price": 310000, "rent": 0, "area": 245.52, "land": 192.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고덕동 2**", "by": 1987},
@@ -76,7 +76,7 @@
     "name": "서울특별시 강동구 고덕동 617",
     "address": "서울특별시 강동구 고덕동 617",
     "coords": [127.152170464036, 37.5618418761693],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [286000, 286000], "rep_area": 312.8, "rep_avg_price": 286000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [286000, 286000], "rep_area": 312.8, "rep_avg_price": 286000, "ppy": 3022}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 286000, "rent": 0, "area": 312.84, "land": 215.6, "floor": "", "dong": "", "date": "2025-12-22", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "고덕동 617 (추정)", "by": 1986}
     ]
@@ -85,7 +85,7 @@
     "name": "서울특별시 강동구 길동",
     "address": "서울특별시 강동구 길동",
     "coords": [127.142712345548, 37.5344859624469],
-    "stats": {"total": 45, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 248.4, "rep_avg_price": 200000}, "jeonse": {"count": 6, "range": [3500, 36500], "rep_area": 24.0, "rep_avg_price": 13000}, "monthly": {"count": 38, "range": [200, 13000], "rep_area": 33.0, "rep_avg_price": 1000}},
+    "stats": {"total": 45, "sale": {"count": 1, "range": [200000, 200000], "rep_area": 248.4, "rep_avg_price": 200000, "ppy": 2662}, "jeonse": {"count": 6, "range": [3500, 36500], "rep_area": 24.0, "rep_avg_price": 13000, "ppy": 954}, "monthly": {"count": 38, "range": [200, 13000], "rep_area": 33.0, "rep_avg_price": 1000, "ppy": 198}},
     "deals": [
       {"type": "매매", "price": 200000, "rent": 0, "area": 248.4, "land": 227.0, "floor": "", "dong": "", "date": "2025-12-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "길동 3**", "by": 1989},
       {"type": "월세", "price": 500, "rent": 45, "area": 30.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-16", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1993},
@@ -138,7 +138,7 @@
     "name": "서울특별시 강동구 길동 152-8",
     "address": "서울특별시 강동구 길동 152-8",
     "coords": [127.142756102128, 37.5351235473144],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [110000, 110000], "rep_area": 224.2, "rep_avg_price": 110000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [110000, 110000], "rep_area": 224.2, "rep_avg_price": 110000, "ppy": 1622}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 110000, "rent": 0, "area": 224.16, "land": 180.6, "floor": "", "dong": "", "date": "2025-12-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "길동 152-8 (추정)", "by": 1983}
     ]
@@ -147,7 +147,7 @@
     "name": "서울특별시 강동구 길동 329-17",
     "address": "서울특별시 강동구 길동 329-17",
     "coords": [127.146649352179, 37.5424108355398],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [197000, 197000], "rep_area": 428.5, "rep_avg_price": 197000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [197000, 197000], "rep_area": 428.5, "rep_avg_price": 197000, "ppy": 1520}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 197000, "rent": 0, "area": 428.48, "land": 203.0, "floor": "", "dong": "", "date": "2025-12-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "길동 329-17 (추정)", "by": 1998}
     ]
@@ -156,7 +156,7 @@
     "name": "서울특별시 강동구 둔촌동",
     "address": "서울특별시 강동구 둔촌동",
     "coords": [127.142354524933, 37.5271882887608],
-    "stats": {"total": 26, "sale": null, "jeonse": {"count": 3, "range": [13650, 25000], "rep_area": 20.0, "rep_avg_price": 14000}, "monthly": {"count": 23, "range": [100, 15000], "rep_area": 20.4, "rep_avg_price": 1000}},
+    "stats": {"total": 26, "sale": null, "jeonse": {"count": 3, "range": [13650, 25000], "rep_area": 20.0, "rep_avg_price": 14000, "ppy": 1331}, "monthly": {"count": 23, "range": [100, 15000], "rep_area": 20.4, "rep_avg_price": 1000, "ppy": 283}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 50, "area": 18.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-29", "period": "26.01~28.01", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2018},
       {"type": "월세", "price": 7000, "rent": 64, "area": 55.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "26.01~28.01", "renew": "갱신", "p_dep": 7000, "p_rent": 60, "jibun": "", "by": 2008},
@@ -190,7 +190,7 @@
     "name": "서울특별시 강동구 명일동",
     "address": "서울특별시 강동구 명일동",
     "coords": [127.150304746486, 37.5494403330956],
-    "stats": {"total": 20, "sale": null, "jeonse": {"count": 2, "range": [10000, 11500], "rep_area": 25.0, "rep_avg_price": 11500}, "monthly": {"count": 18, "range": [100, 12500], "rep_area": 40.0, "rep_avg_price": 4700}},
+    "stats": {"total": 20, "sale": null, "jeonse": {"count": 2, "range": [10000, 11500], "rep_area": 25.0, "rep_avg_price": 11500, "ppy": 1356}, "monthly": {"count": 18, "range": [100, 12500], "rep_area": 40.0, "rep_avg_price": 4700, "ppy": 308}},
     "deals": [
       {"type": "월세", "price": 2000, "rent": 21, "area": 39.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
       {"type": "월세", "price": 12500, "rent": 20, "area": 50.05, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-20", "period": "26.03~28.03", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1995},
@@ -218,7 +218,7 @@
     "name": "서울특별시 강동구 상일동",
     "address": "서울특별시 강동구 상일동",
     "coords": [127.168300419218, 37.5505837474645],
-    "stats": {"total": 8, "sale": null, "jeonse": {"count": 2, "range": [5000, 22000], "rep_area": 28.0, "rep_avg_price": 5000}, "monthly": {"count": 6, "range": [50, 3000], "rep_area": 19.0, "rep_avg_price": 100}},
+    "stats": {"total": 8, "sale": null, "jeonse": {"count": 2, "range": [5000, 22000], "rep_area": 28.0, "rep_avg_price": 5000, "ppy": 1195}, "monthly": {"count": 6, "range": [50, 3000], "rep_area": 19.0, "rep_avg_price": 100, "ppy": 54}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 100, "area": 55.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-14", "period": "26.02~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "전세", "price": 5000, "rent": 0, "area": 28.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-24", "period": "26.02~27.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1987},
@@ -234,7 +234,7 @@
     "name": "서울특별시 강동구 성내동",
     "address": "서울특별시 강동구 성내동",
     "coords": [127.130026914568, 37.5292748071425],
-    "stats": {"total": 146, "sale": {"count": 2, "range": [96000, 190000], "rep_area": 231.7, "rep_avg_price": 96000}, "jeonse": {"count": 26, "range": [3500, 40000], "rep_area": 16.0, "rep_avg_price": 12000}, "monthly": {"count": 118, "range": [100, 30000], "rep_area": 20.0, "rep_avg_price": 1441}},
+    "stats": {"total": 146, "sale": {"count": 2, "range": [96000, 190000], "rep_area": 231.7, "rep_avg_price": 96000, "ppy": 1548}, "jeonse": {"count": 26, "range": [3500, 40000], "rep_area": 16.0, "rep_avg_price": 12000, "ppy": 1457}, "monthly": {"count": 118, "range": [100, 30000], "rep_area": 20.0, "rep_avg_price": 1441, "ppy": 373}},
     "deals": [
       {"type": "매매", "price": 190000, "rent": 0, "area": 379.18, "land": 176.0, "floor": "", "dong": "", "date": "2025-12-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성내동 4**", "by": 1997},
       {"type": "매매", "price": 96000, "rent": 0, "area": 231.67, "land": 118.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "성내동 2**", "by": 1996},
@@ -388,7 +388,7 @@
     "name": "서울특별시 강동구 암사동",
     "address": "서울특별시 강동구 암사동",
     "coords": [127.13168588897, 37.5591140475274],
-    "stats": {"total": 68, "sale": null, "jeonse": {"count": 16, "range": [3300, 25000], "rep_area": 33.0, "rep_avg_price": 9000}, "monthly": {"count": 52, "range": [50, 15000], "rep_area": 30.0, "rep_avg_price": 1928}},
+    "stats": {"total": 68, "sale": null, "jeonse": {"count": 16, "range": [3300, 25000], "rep_area": 33.0, "rep_avg_price": 9000, "ppy": 950}, "monthly": {"count": 52, "range": [50, 15000], "rep_area": 30.0, "rep_avg_price": 1928, "ppy": 247}},
     "deals": [
       {"type": "월세", "price": 300, "rent": 30, "area": 33.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
       {"type": "월세", "price": 2000, "rent": 40, "area": 32.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 1988},
@@ -464,7 +464,7 @@
     "name": "서울특별시 강동구 천호동",
     "address": "서울특별시 강동구 천호동",
     "coords": [127.12866892591, 37.5422218634248],
-    "stats": {"total": 125, "sale": {"count": 1, "range": [146000, 146000], "rep_area": 348.1, "rep_avg_price": 146000}, "jeonse": {"count": 24, "range": [2000, 50000], "rep_area": 30.0, "rep_avg_price": 9500}, "monthly": {"count": 100, "range": [100, 20000], "rep_area": 40.0, "rep_avg_price": 1833}},
+    "stats": {"total": 125, "sale": {"count": 1, "range": [146000, 146000], "rep_area": 348.1, "rep_avg_price": 146000, "ppy": 1386}, "jeonse": {"count": 24, "range": [2000, 50000], "rep_area": 30.0, "rep_avg_price": 9500, "ppy": 1222}, "monthly": {"count": 100, "range": [100, 20000], "rep_area": 40.0, "rep_avg_price": 1833, "ppy": 327}},
     "deals": [
       {"type": "매매", "price": 146000, "rent": 0, "area": 348.12, "land": 152.0, "floor": "", "dong": "", "date": "2025-12-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 1**", "by": 1989},
       {"type": "월세", "price": 8000, "rent": 20, "area": 17.0, "land": 0.0, "floor": "", "dong": "", "date": "2025-12-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "", "by": 2021},
@@ -597,7 +597,7 @@
     "name": "서울특별시 강동구 천호동 279-15",
     "address": "서울특별시 강동구 천호동 279-15",
     "coords": [127.131720275264, 37.5437339794145],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 195.3, "rep_avg_price": 86000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 195.3, "rep_avg_price": 86000, "ppy": 1456}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 86000, "rent": 0, "area": 195.27, "land": 132.0, "floor": "", "dong": "", "date": "2025-12-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 279-15 (추정)", "by": 1984}
     ]
@@ -606,7 +606,7 @@
     "name": "서울특별시 강동구 천호동 40-33",
     "address": "서울특별시 강동구 천호동 40-33",
     "coords": [127.139533518373, 37.5449291000884],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [270000, 270000], "rep_area": 658.7, "rep_avg_price": 270000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [270000, 270000], "rep_area": 658.7, "rep_avg_price": 270000, "ppy": 1355}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 270000, "rent": 0, "area": 658.66, "land": 317.9, "floor": "", "dong": "", "date": "2025-12-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 40-33 (추정)", "by": 1996}
     ]
@@ -615,7 +615,7 @@
     "name": "서울특별시 강동구 천호동 86-29",
     "address": "서울특별시 강동구 천호동 86-29",
     "coords": [127.137405962604, 37.5446366981041],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [228000, 228000], "rep_area": 321.7, "rep_avg_price": 228000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [228000, 228000], "rep_area": 321.7, "rep_avg_price": 228000, "ppy": 2343}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 228000, "rent": 0, "area": 321.66, "land": 166.0, "floor": "", "dong": "", "date": "2025-12-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 86-29 (추정)", "by": 2019}
     ]
@@ -624,7 +624,7 @@
     "name": "서울특별시 강동구 천호동 87-17",
     "address": "서울특별시 강동구 천호동 87-17",
     "coords": [127.136375961143, 37.5439275447843],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 148.7, "rep_avg_price": 58000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [58000, 58000], "rep_area": 148.7, "rep_avg_price": 58000, "ppy": 1290}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 58000, "rent": 0, "area": 148.68, "land": 109.0, "floor": "", "dong": "", "date": "2025-12-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 87-17 (추정)", "by": 1993}
     ]
@@ -633,7 +633,7 @@
     "name": "서울특별시 강동구 천호동 91-66",
     "address": "서울특별시 강동구 천호동 91-66",
     "coords": [127.136412524658, 37.5437490146976],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [45000, 45000], "rep_area": 86.2, "rep_avg_price": 45000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [45000, 45000], "rep_area": 86.2, "rep_avg_price": 45000, "ppy": 1725}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 45000, "rent": 0, "area": 86.22, "land": 89.0, "floor": "", "dong": "", "date": "2025-12-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "천호동 91-66 (추정)", "by": 1980}
     ]

@@ -3,7 +3,7 @@
     "name": "현대",
     "address": "안양시 동안구 관양동 1396",
     "coords": [126.958043618471, 37.407772204082],
-    "stats": {"total": 8, "sale": {"count": 2, "range": [89500, 90000], "rep_area": 84.5, "rep_avg_price": 89750}, "jeonse": {"count": 4, "range": [28000, 45000], "rep_area": 84.5, "rep_avg_price": 29000}, "monthly": {"count": 2, "range": [3000, 5000], "rep_area": 84.5, "rep_avg_price": 4000}},
+    "stats": {"total": 8, "sale": {"count": 2, "range": [89500, 90000], "rep_area": 84.5, "rep_avg_price": 89750, "ppy": 3512}, "jeonse": {"count": 4, "range": [28000, 45000], "rep_area": 84.5, "rep_avg_price": 29000, "ppy": 1096}, "monthly": {"count": 2, "range": [3000, 5000], "rep_area": 84.5, "rep_avg_price": 4000, "ppy": 157}},
     "deals": [
       {"type": "매매", "price": 89500, "rent": 0, "area": 84.47, "land": 0.0, "floor": "7", "dong": "5", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1396", "by": 1985},
       {"type": "매매", "price": 90000, "rent": 0, "area": 84.47, "land": 0.0, "floor": "11", "dong": "3", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1396", "by": 1985},
@@ -19,7 +19,7 @@
     "name": "아리랑3차",
     "address": "안양시 동안구 관양동 1414-14",
     "coords": [126.962151556485, 37.4072655952613],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 51.5, "rep_avg_price": 19000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [19000, 19000], "rep_area": 51.5, "rep_avg_price": 19000, "ppy": 1219}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 19000, "rent": 0, "area": 51.51, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-04", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1414-14", "by": 1988}
     ]
@@ -28,7 +28,7 @@
     "name": "인덕원관양뜰",
     "address": "안양시 동안구 관양동 1454-9",
     "coords": [126.962616704985, 37.4022237218811],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 79.7, "rep_avg_price": 35000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [35000, 35000], "rep_area": 79.7, "rep_avg_price": 35000, "ppy": 1452}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 35000, "rent": 0, "area": 79.69, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "갱신", "p_dep": 34000, "p_rent": 0, "jibun": "관양동 1454-9", "by": 2022}
     ]
@@ -37,7 +37,7 @@
     "name": "원주",
     "address": "안양시 동안구 관양동 1455-2",
     "coords": [126.964314251136, 37.4026574572902],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 57.1, "rep_avg_price": 24000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [24000, 24000], "rep_area": 57.1, "rep_avg_price": 24000, "ppy": 1390}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 24000, "rent": 0, "area": 57.06, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-24", "period": "25.09~29.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1455-2", "by": 1986}
     ]
@@ -46,7 +46,7 @@
     "name": "신태양(B동)",
     "address": "안양시 동안구 관양동 1461-10",
     "coords": [126.96594028136, 37.4031841330768],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 52.4, "rep_avg_price": 20000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [20000, 20000], "rep_area": 52.4, "rep_avg_price": 20000, "ppy": 1262}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 20000, "rent": 0, "area": 52.37, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-26", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1461-10", "by": 1984}
     ]
@@ -55,7 +55,7 @@
     "name": "신태양(A동)",
     "address": "안양시 동안구 관양동 1461-9",
     "coords": [126.965873904854, 37.4033570198424],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 50.9, "rep_avg_price": 21000}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 50.9, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [21000, 21000], "rep_area": 50.9, "rep_avg_price": 21000, "ppy": 1365}, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 50.9, "rep_avg_price": 3000, "ppy": 195}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 80, "area": 50.86, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-31", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1461-9", "by": 1984},
       {"type": "전세", "price": 21000, "rent": 0, "area": 50.86, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-18", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1461-9", "by": 1984}
@@ -65,7 +65,7 @@
     "name": "한미(C,D)",
     "address": "안양시 동안구 관양동 1470-5",
     "coords": [126.970277887058, 37.4026296433853],
-    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [16500, 20000], "rep_area": 41.1, "rep_avg_price": 18250}, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 41.1, "rep_avg_price": 2500}},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 2, "range": [16500, 20000], "rep_area": 41.1, "rep_avg_price": 18250, "ppy": 1467}, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 41.1, "rep_avg_price": 2500, "ppy": 201}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 70, "area": 41.13, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-11", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-5", "by": 1986},
       {"type": "월세", "price": 2000, "rent": 65, "area": 41.13, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-10", "period": "25.08~25.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1470-5", "by": 1986},
@@ -77,7 +77,7 @@
     "name": "골든",
     "address": "안양시 동안구 관양동 1471-8",
     "coords": [126.970438745965, 37.4034211404834],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 52.1, "rep_avg_price": 4000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [4000, 4000], "rep_area": 52.1, "rep_avg_price": 4000, "ppy": 254}},
     "deals": [
       {"type": "월세", "price": 4000, "rent": 65, "area": 52.11, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-12", "period": "25.07~27.07", "renew": "갱신", "p_dep": 4000, "p_rent": 60, "jibun": "관양동 1471-8", "by": 1985}
     ]
@@ -86,7 +86,7 @@
     "name": "한미(A1,A2,B)",
     "address": "안양시 동안구 관양동 1477",
     "coords": [126.972043340728, 37.4031307713266],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [25000, 27000], "rep_area": 58.0, "rep_avg_price": 26000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [25000, 27000], "rep_area": 58.0, "rep_avg_price": 26000, "ppy": 1483}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 25000, "rent": 0, "area": 57.96, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-19", "period": "25.09~29.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1477", "by": 1986},
       {"type": "전세", "price": 27000, "rent": 0, "area": 57.96, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-15", "period": "25.07~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1477", "by": 1986}
@@ -96,7 +96,7 @@
     "name": "인덕원메트로빌",
     "address": "안양시 동안구 관양동 1488-39",
     "coords": [126.975602118721, 37.4019950113279],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [76500, 76500], "rep_area": 84.9, "rep_avg_price": 76500}, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 84.9, "rep_avg_price": 36000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [76500, 76500], "rep_area": 84.9, "rep_avg_price": 76500, "ppy": 2978}, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 84.9, "rep_avg_price": 36000, "ppy": 1401}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 76500, "rent": 0, "area": 84.93, "land": 0.0, "floor": "9", "dong": "", "date": "2025-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1488-39", "by": 2000},
       {"type": "전세", "price": 36000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "9", "dong": "", "date": "2025-07-06", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1488-39", "by": 2000}
@@ -106,7 +106,7 @@
     "name": "렉스타워",
     "address": "안양시 동안구 관양동 1504-8",
     "coords": [126.976163869916, 37.3985023166393],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [39000, 39000], "rep_area": 60.9, "rep_avg_price": 39000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [39000, 39000], "rep_area": 60.9, "rep_avg_price": 39000, "ppy": 2117}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 39000, "rent": 0, "area": 60.89, "land": 0.0, "floor": "17", "dong": "", "date": "2025-07-19", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1504-8", "by": 2022}
     ]
@@ -115,7 +115,7 @@
     "name": "파인빌",
     "address": "안양시 동안구 관양동 1507-2",
     "coords": [126.977829935008, 37.3984361453572],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [10200, 10300], "rep_area": 13.5, "rep_avg_price": 10250}, "jeonse": null, "monthly": {"count": 3, "range": [1000, 5300], "rep_area": 13.5, "rep_avg_price": 3100}},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [10200, 10300], "rep_area": 13.5, "rep_avg_price": 10250, "ppy": 2505}, "jeonse": null, "monthly": {"count": 3, "range": [1000, 5300], "rep_area": 13.5, "rep_avg_price": 3100, "ppy": 758}},
     "deals": [
       {"type": "매매", "price": 10300, "rent": 0, "area": 13.5208, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1507-2", "by": 2014},
       {"type": "매매", "price": 10200, "rent": 0, "area": 13.5273, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1507-2", "by": 2014},
@@ -128,7 +128,7 @@
     "name": "미래센트럴타워",
     "address": "안양시 동안구 관양동 1507-22",
     "coords": [126.977554391914, 37.398359776841],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [63300, 63300], "rep_area": 59.6, "rep_avg_price": 63300}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [63300, 63300], "rep_area": 59.6, "rep_avg_price": 63300, "ppy": 3511}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 63300, "rent": 0, "area": 59.6, "land": 0.0, "floor": "21", "dong": "주건축물제1동", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1507-22", "by": 2022}
     ]
@@ -137,7 +137,7 @@
     "name": "인덕원마을(삼성)",
     "address": "안양시 동안구 관양동 1510-1",
     "coords": [126.97928692747, 37.3984565023396],
-    "stats": {"total": 21, "sale": {"count": 4, "range": [86000, 112000], "rep_area": 59.9, "rep_avg_price": 92625}, "jeonse": {"count": 15, "range": [36750, 65000], "rep_area": 59.8, "rep_avg_price": 40915}, "monthly": {"count": 2, "range": [5000, 7000], "rep_area": 59.8, "rep_avg_price": 7000}},
+    "stats": {"total": 21, "sale": {"count": 4, "range": [86000, 112000], "rep_area": 59.9, "rep_avg_price": 92625, "ppy": 4965}, "jeonse": {"count": 15, "range": [36750, 65000], "rep_area": 59.8, "rep_avg_price": 40915, "ppy": 2130}, "monthly": {"count": 2, "range": [5000, 7000], "rep_area": 59.8, "rep_avg_price": 7000, "ppy": 274}},
     "deals": [
       {"type": "매매", "price": 99250, "rent": 0, "area": 59.89, "land": 0.0, "floor": "21", "dong": "", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1510-1", "by": 1998},
       {"type": "매매", "price": 112000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "15", "dong": "109", "date": "2025-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1510-1", "by": 1998},
@@ -166,7 +166,7 @@
     "name": "한가람(한양)",
     "address": "안양시 동안구 관양동 1586",
     "coords": [126.953114784741, 37.3992493085643],
-    "stats": {"total": 22, "sale": {"count": 5, "range": [37800, 75000], "rep_area": 41.1, "rep_avg_price": 39250}, "jeonse": {"count": 16, "range": [18000, 48000], "rep_area": 41.1, "rep_avg_price": 20533}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 41.1, "rep_avg_price": 2000}},
+    "stats": {"total": 22, "sale": {"count": 5, "range": [37800, 75000], "rep_area": 41.1, "rep_avg_price": 39250, "ppy": 3176}, "jeonse": {"count": 16, "range": [18000, 48000], "rep_area": 41.1, "rep_avg_price": 20533, "ppy": 1681}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 41.1, "rep_avg_price": 2000, "ppy": 161}},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 59.78, "land": 0.0, "floor": "2", "dong": "305", "date": "2025-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1586", "by": 1995},
       {"type": "매매", "price": 61900, "rent": 0, "area": 59.78, "land": 0.0, "floor": "12", "dong": "305", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1586", "by": 1995},
@@ -196,7 +196,7 @@
     "name": "한가람(삼성)",
     "address": "안양시 동안구 관양동 1586-5",
     "coords": [126.955618909891, 37.3999088315116],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 84.9, "rep_avg_price": 86000}, "jeonse": {"count": 2, "range": [30000, 35000], "rep_area": 59.8, "rep_avg_price": 35000}, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 59.8, "rep_avg_price": 8000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 84.9, "rep_avg_price": 86000, "ppy": 3347}, "jeonse": {"count": 2, "range": [30000, 35000], "rep_area": 59.8, "rep_avg_price": 35000, "ppy": 1485}, "monthly": {"count": 1, "range": [8000, 8000], "rep_area": 59.8, "rep_avg_price": 8000, "ppy": 443}},
     "deals": [
       {"type": "매매", "price": 86000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1586-5", "by": 1995},
       {"type": "전세", "price": 35000, "rent": 0, "area": 59.76, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-15", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1586-5", "by": 1995},
@@ -208,7 +208,7 @@
     "name": "한가람(두산)",
     "address": "안양시 동안구 관양동 1586-6",
     "coords": [126.955990840827, 37.3985180637],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [84000, 84000], "rep_area": 84.8, "rep_avg_price": 84000}, "jeonse": {"count": 2, "range": [45000, 49000], "rep_area": 84.8, "rep_avg_price": 47000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [84000, 84000], "rep_area": 84.8, "rep_avg_price": 84000, "ppy": 3273}, "jeonse": {"count": 2, "range": [45000, 49000], "rep_area": 84.8, "rep_avg_price": 47000, "ppy": 1831}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 84000, "rent": 0, "area": 84.84, "land": 0.0, "floor": "7", "dong": "104", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1586-6", "by": 1992},
       {"type": "전세", "price": 49000, "rent": 0, "area": 84.84, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-21", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1586-6", "by": 1992},
@@ -219,7 +219,7 @@
     "name": "공작럭키",
     "address": "안양시 동안구 관양동 1587",
     "coords": [126.957608053786, 37.4006014556427],
-    "stats": {"total": 14, "sale": {"count": 7, "range": [42000, 50000], "rep_area": 49.8, "rep_avg_price": 47471}, "jeonse": {"count": 6, "range": [25000, 30000], "rep_area": 49.8, "rep_avg_price": 27833}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 49.8, "rep_avg_price": 5000}},
+    "stats": {"total": 14, "sale": {"count": 7, "range": [42000, 50000], "rep_area": 49.8, "rep_avg_price": 47471, "ppy": 3151}, "jeonse": {"count": 6, "range": [25000, 30000], "rep_area": 49.8, "rep_avg_price": 27833, "ppy": 1848}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 49.8, "rep_avg_price": 5000, "ppy": 332}},
     "deals": [
       {"type": "매매", "price": 48300, "rent": 0, "area": 49.8, "land": 0.0, "floor": "5", "dong": "506", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1587", "by": 1993},
       {"type": "매매", "price": 48000, "rent": 0, "area": 49.8, "land": 0.0, "floor": "18", "dong": "501", "date": "2025-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1587", "by": 1993},
@@ -241,7 +241,7 @@
     "name": "공작성일",
     "address": "안양시 동안구 관양동 1587-5",
     "coords": [126.958374373554, 37.3993376850456],
-    "stats": {"total": 14, "sale": {"count": 8, "range": [30300, 62700], "rep_area": 39.6, "rep_avg_price": 33650}, "jeonse": {"count": 5, "range": [20000, 37000], "rep_area": 39.6, "rep_avg_price": 21333}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 39.6, "rep_avg_price": 1000}},
+    "stats": {"total": 14, "sale": {"count": 8, "range": [30300, 62700], "rep_area": 39.6, "rep_avg_price": 33650, "ppy": 2927}, "jeonse": {"count": 5, "range": [20000, 37000], "rep_area": 39.6, "rep_avg_price": 21333, "ppy": 1554}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 39.6, "rep_avg_price": 1000, "ppy": 83}},
     "deals": [
       {"type": "매매", "price": 34750, "rent": 0, "area": 39.6, "land": 0.0, "floor": "10", "dong": "207", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1587-5", "by": 1993},
       {"type": "매매", "price": 35000, "rent": 0, "area": 39.6, "land": 0.0, "floor": "14", "dong": "207", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1587-5", "by": 1993},
@@ -263,7 +263,7 @@
     "name": "공작아파트",
     "address": "안양시 동안구 관양동 1588",
     "coords": [126.958786714573, 37.39809342863],
-    "stats": {"total": 43, "sale": {"count": 10, "range": [35500, 61900], "rep_area": 50.0, "rep_avg_price": 51700}, "jeonse": {"count": 27, "range": [17000, 40950], "rep_area": 37.8, "rep_avg_price": 21841}, "monthly": {"count": 6, "range": [1000, 31500], "rep_area": 37.8, "rep_avg_price": 1333}},
+    "stats": {"total": 43, "sale": {"count": 10, "range": [35500, 61900], "rep_area": 50.0, "rep_avg_price": 51700, "ppy": 3346}, "jeonse": {"count": 27, "range": [17000, 40950], "rep_area": 37.8, "rep_avg_price": 21841, "ppy": 1841}, "monthly": {"count": 6, "range": [1000, 31500], "rep_area": 37.8, "rep_avg_price": 1333, "ppy": 495}},
     "deals": [
       {"type": "매매", "price": 49000, "rent": 0, "area": 50.0, "land": 0.0, "floor": "14", "dong": "310", "date": "2025-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1588", "by": 1993},
       {"type": "매매", "price": 35500, "rent": 0, "area": 37.85, "land": 0.0, "floor": "9", "dong": "309", "date": "2025-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1588", "by": 1993},
@@ -314,7 +314,7 @@
     "name": "한가람(세경)",
     "address": "안양시 동안구 관양동 1589",
     "coords": [126.954770635482, 37.3963203716689],
-    "stats": {"total": 31, "sale": {"count": 6, "range": [47500, 57500], "rep_area": 49.7, "rep_avg_price": 52066}, "jeonse": {"count": 21, "range": [26000, 33000], "rep_area": 51.8, "rep_avg_price": 28105}, "monthly": {"count": 4, "range": [2000, 17000], "rep_area": 49.7, "rep_avg_price": 2500}},
+    "stats": {"total": 31, "sale": {"count": 6, "range": [47500, 57500], "rep_area": 49.7, "rep_avg_price": 52066, "ppy": 3381}, "jeonse": {"count": 21, "range": [26000, 33000], "rep_area": 51.8, "rep_avg_price": 28105, "ppy": 1840}, "monthly": {"count": 4, "range": [2000, 17000], "rep_area": 49.7, "rep_avg_price": 2500, "ppy": 391}},
     "deals": [
       {"type": "매매", "price": 53000, "rent": 0, "area": 49.68, "land": 0.0, "floor": "13", "dong": "509", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1589", "by": 1996},
       {"type": "매매", "price": 50000, "rent": 0, "area": 51.75, "land": 0.0, "floor": "2", "dong": "508", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1589", "by": 1996},
@@ -353,7 +353,7 @@
     "name": "한가람(신라)",
     "address": "안양시 동안구 관양동 1589-1",
     "coords": [126.956766175414, 37.3971027545729],
-    "stats": {"total": 21, "sale": {"count": 7, "range": [32500, 59800], "rep_area": 38.3, "rep_avg_price": 32700}, "jeonse": {"count": 8, "range": [18500, 35000], "rep_area": 38.3, "rep_avg_price": 19833}, "monthly": {"count": 6, "range": [1000, 20000], "rep_area": 45.8, "rep_avg_price": 1500}},
+    "stats": {"total": 21, "sale": {"count": 7, "range": [32500, 59800], "rep_area": 38.3, "rep_avg_price": 32700, "ppy": 2946}, "jeonse": {"count": 8, "range": [18500, 35000], "rep_area": 38.3, "rep_avg_price": 19833, "ppy": 1717}, "monthly": {"count": 6, "range": [1000, 20000], "rep_area": 45.8, "rep_avg_price": 1500, "ppy": 317}},
     "deals": [
       {"type": "매매", "price": 32900, "rent": 0, "area": 38.33, "land": 0.0, "floor": "16", "dong": "409", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1589-1", "by": 1992},
       {"type": "매매", "price": 37200, "rent": 0, "area": 45.8, "land": 0.0, "floor": "3", "dong": "404", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1589-1", "by": 1992},
@@ -382,7 +382,7 @@
     "name": "동편마을(3단지)",
     "address": "안양시 동안구 관양동 1651",
     "coords": [126.970371353688, 37.4130828524314],
-    "stats": {"total": 10, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 75.0, "rep_avg_price": 95000}, "jeonse": {"count": 8, "range": [47000, 64000], "rep_area": 85.0, "rep_avg_price": 57800}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000}},
+    "stats": {"total": 10, "sale": {"count": 1, "range": [95000, 95000], "rep_area": 75.0, "rep_avg_price": 95000, "ppy": 4190}, "jeonse": {"count": 8, "range": [47000, 64000], "rep_area": 85.0, "rep_avg_price": 57800, "ppy": 2231}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 85.0, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "매매", "price": 95000, "rent": 0, "area": 74.96, "land": 0.0, "floor": "15", "dong": "312", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1651", "by": 2012},
       {"type": "전세", "price": 47000, "rent": 0, "area": 74.34, "land": 0.0, "floor": "10", "dong": "", "date": "2025-07-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1651", "by": 2012},
@@ -400,7 +400,7 @@
     "name": "동편마을(4단지)",
     "address": "안양시 동안구 관양동 1669",
     "coords": [126.969140504868, 37.4090732702856],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [124000, 144000], "rep_area": 100.6, "rep_avg_price": 124000}, "jeonse": {"count": 1, "range": [75000, 75000], "rep_area": 120.5, "rep_avg_price": 75000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [124000, 144000], "rep_area": 100.6, "rep_avg_price": 124000, "ppy": 4006}, "jeonse": {"count": 1, "range": [75000, 75000], "rep_area": 120.5, "rep_avg_price": 75000, "ppy": 2058}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 144000, "rent": 0, "area": 120.48, "land": 0.0, "floor": "2", "dong": "410", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1669", "by": 2012},
       {"type": "매매", "price": 124000, "rent": 0, "area": 100.65, "land": 0.0, "floor": "10", "dong": "403", "date": "2025-07-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1669", "by": 2012},
@@ -411,7 +411,7 @@
     "name": "동편마을(1단지)",
     "address": "안양시 동안구 관양동 1672",
     "coords": [126.968174392853, 37.4123405622534],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5711, 5711], "rep_area": 55.9, "rep_avg_price": 5711}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5711, 5711], "rep_area": 55.9, "rep_avg_price": 5711, "ppy": 338}},
     "deals": [
       {"type": "월세", "price": 5711, "rent": 39, "area": 55.88, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-04", "period": "25.08~27.07", "renew": "갱신", "p_dep": 5449, "p_rent": 37, "jibun": "관양동 1672", "by": 2011}
     ]
@@ -420,7 +420,7 @@
     "name": "평촌더샵센트럴시티",
     "address": "안양시 동안구 관양동 1815",
     "coords": [126.963314010359, 37.3999103881587],
-    "stats": {"total": 8, "sale": {"count": 2, "range": [124000, 130000], "rep_area": 85.0, "rep_avg_price": 127000}, "jeonse": {"count": 5, "range": [56000, 76000], "rep_area": 60.0, "rep_avg_price": 56583}, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 85.0, "rep_avg_price": 30000}},
+    "stats": {"total": 8, "sale": {"count": 2, "range": [124000, 130000], "rep_area": 85.0, "rep_avg_price": 127000, "ppy": 4940}, "jeonse": {"count": 5, "range": [56000, 76000], "rep_area": 60.0, "rep_avg_price": 56583, "ppy": 2916}, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 85.0, "rep_avg_price": 30000, "ppy": 1167}},
     "deals": [
       {"type": "매매", "price": 130000, "rent": 0, "area": 84.985, "land": 0.0, "floor": "8", "dong": "110동", "date": "2025-07-13", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1815", "by": 2016},
       {"type": "매매", "price": 124000, "rent": 0, "area": 84.9887, "land": 0.0, "floor": "11", "dong": "110동", "date": "2025-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "관양동 1815", "by": 2016},
@@ -436,7 +436,7 @@
     "name": "영화",
     "address": "안양시 동안구 비산동 1015",
     "coords": [126.948298503043, 37.4083469794354],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [59000, 59000], "rep_area": 52.9, "rep_avg_price": 59000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [59000, 59000], "rep_area": 52.9, "rep_avg_price": 59000, "ppy": 3686}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 59000, "rent": 0, "area": 52.92, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-17", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1015", "by": 1988}
     ]
@@ -445,7 +445,7 @@
     "name": "성원",
     "address": "안양시 동안구 비산동 1028-20",
     "coords": [126.952456435244, 37.4069893554079],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 59.8, "rep_avg_price": 2500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [2000, 3000], "rep_area": 59.8, "rep_avg_price": 2500, "ppy": 138}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 90, "area": 59.82, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1028-20", "by": 1995},
       {"type": "월세", "price": 2000, "rent": 100, "area": 59.82, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-21", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1028-20", "by": 1995}
@@ -455,7 +455,7 @@
     "name": "샛별마을한양4-1",
     "address": "안양시 동안구 비산동 1101-2",
     "coords": [126.948945726601, 37.3965121703858],
-    "stats": {"total": 29, "sale": {"count": 6, "range": [34000, 42700], "rep_area": 35.1, "rep_avg_price": 34466}, "jeonse": {"count": 11, "range": [15600, 23000], "rep_area": 42.6, "rep_avg_price": 20069}, "monthly": {"count": 12, "range": [0, 3000], "rep_area": 42.6, "rep_avg_price": 2000}},
+    "stats": {"total": 29, "sale": {"count": 6, "range": [34000, 42700], "rep_area": 35.1, "rep_avg_price": 34466, "ppy": 3186}, "jeonse": {"count": 11, "range": [15600, 23000], "rep_area": 42.6, "rep_avg_price": 20069, "ppy": 1554}, "monthly": {"count": 12, "range": [0, 3000], "rep_area": 42.6, "rep_avg_price": 2000, "ppy": 127}},
     "deals": [
       {"type": "매매", "price": 42700, "rent": 0, "area": 42.615, "land": 0.0, "floor": "12", "dong": "105", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1101-2", "by": 1993},
       {"type": "매매", "price": 34700, "rent": 0, "area": 35.1, "land": 0.0, "floor": "14", "dong": "101", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1101-2", "by": 1993},
@@ -492,7 +492,7 @@
     "name": "샛별한양4-2",
     "address": "안양시 동안구 비산동 1101-6",
     "coords": [126.950547737977, 37.3983366993731],
-    "stats": {"total": 11, "sale": {"count": 2, "range": [40000, 62000], "rep_area": 41.3, "rep_avg_price": 40000}, "jeonse": {"count": 9, "range": [18900, 47000], "rep_area": 59.8, "rep_avg_price": 33680}, "monthly": null},
+    "stats": {"total": 11, "sale": {"count": 2, "range": [40000, 62000], "rep_area": 41.3, "rep_avg_price": 40000, "ppy": 3336}, "jeonse": {"count": 9, "range": [18900, 47000], "rep_area": 59.8, "rep_avg_price": 33680, "ppy": 1799}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 40000, "rent": 0, "area": 41.265, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1101-6", "by": 1993},
       {"type": "매매", "price": 62000, "rent": 0, "area": 59.82, "land": 0.0, "floor": "9", "dong": "208", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1101-6", "by": 1993},
@@ -511,7 +511,7 @@
     "name": "샛별한양4-3",
     "address": "안양시 동안구 비산동 1101-8",
     "coords": [126.951297485214, 37.3970012459159],
-    "stats": {"total": 10, "sale": {"count": 5, "range": [37000, 80000], "rep_area": 41.3, "rep_avg_price": 37433}, "jeonse": {"count": 4, "range": [17000, 40000], "rep_area": 41.3, "rep_avg_price": 19316}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 41.3, "rep_avg_price": 1000}},
+    "stats": {"total": 10, "sale": {"count": 5, "range": [37000, 80000], "rep_area": 41.3, "rep_avg_price": 37433, "ppy": 3066}, "jeonse": {"count": 4, "range": [17000, 40000], "rep_area": 41.3, "rep_avg_price": 19316, "ppy": 1552}, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 41.3, "rep_avg_price": 1000, "ppy": 80}},
     "deals": [
       {"type": "매매", "price": 37000, "rent": 0, "area": 41.265, "land": 0.0, "floor": "7", "dong": "301", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1101-8", "by": 1993},
       {"type": "매매", "price": 37500, "rent": 0, "area": 41.265, "land": 0.0, "floor": "2", "dong": "304", "date": "2025-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1101-8", "by": 1993},
@@ -529,7 +529,7 @@
     "name": "관악",
     "address": "안양시 동안구 비산동 1102",
     "coords": [126.943351471877, 37.3948075921978],
-    "stats": {"total": 16, "sale": {"count": 7, "range": [57800, 74000], "rep_area": 84.9, "rep_avg_price": 68335}, "jeonse": {"count": 8, "range": [24150, 45150], "rep_area": 59.4, "rep_avg_price": 29230}, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 59.4, "rep_avg_price": 15000}},
+    "stats": {"total": 16, "sale": {"count": 7, "range": [57800, 74000], "rep_area": 84.9, "rep_avg_price": 68335, "ppy": 2830}, "jeonse": {"count": 8, "range": [24150, 45150], "rep_area": 59.4, "rep_avg_price": 29230, "ppy": 1675}, "monthly": {"count": 1, "range": [15000, 15000], "rep_area": 59.4, "rep_avg_price": 15000, "ppy": 835}},
     "deals": [
       {"type": "매매", "price": 70850, "rent": 0, "area": 84.945, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1102", "by": 1992},
       {"type": "매매", "price": 59990, "rent": 0, "area": 84.945, "land": 0.0, "floor": "1", "dong": "116", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1102", "by": 1992},
@@ -553,7 +553,7 @@
     "name": "관악부영4",
     "address": "안양시 동안구 비산동 1102-4",
     "coords": [126.945362688143, 37.3964894851731],
-    "stats": {"total": 10, "sale": {"count": 5, "range": [53000, 70000], "rep_area": 59.4, "rep_avg_price": 55500}, "jeonse": {"count": 3, "range": [45000, 49000], "rep_area": 84.6, "rep_avg_price": 47600}, "monthly": {"count": 2, "range": [5000, 40000], "rep_area": 84.6, "rep_avg_price": 22500}},
+    "stats": {"total": 10, "sale": {"count": 5, "range": [53000, 70000], "rep_area": 59.4, "rep_avg_price": 55500, "ppy": 2887}, "jeonse": {"count": 3, "range": [45000, 49000], "rep_area": 84.6, "rep_avg_price": 47600, "ppy": 1859}, "monthly": {"count": 2, "range": [5000, 40000], "rep_area": 84.6, "rep_avg_price": 22500, "ppy": 879}},
     "deals": [
       {"type": "매매", "price": 59500, "rent": 0, "area": 59.44, "land": 0.0, "floor": "21", "dong": "207", "date": "2025-07-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1102-4", "by": 1993},
       {"type": "매매", "price": 70000, "rent": 0, "area": 84.63, "land": 0.0, "floor": "10", "dong": "208", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1102-4", "by": 1993},
@@ -571,7 +571,7 @@
     "name": "관악성원",
     "address": "안양시 동안구 비산동 1102-7",
     "coords": [126.946606721838, 37.3957585137713],
-    "stats": {"total": 16, "sale": {"count": 3, "range": [32500, 49000], "rep_area": 49.7, "rep_avg_price": 49000}, "jeonse": {"count": 11, "range": [17850, 30000], "rep_area": 49.7, "rep_avg_price": 26640}, "monthly": {"count": 2, "range": [2000, 8000], "rep_area": 33.7, "rep_avg_price": 5000}},
+    "stats": {"total": 16, "sale": {"count": 3, "range": [32500, 49000], "rep_area": 49.7, "rep_avg_price": 49000, "ppy": 3241}, "jeonse": {"count": 11, "range": [17850, 30000], "rep_area": 49.7, "rep_avg_price": 26640, "ppy": 1769}, "monthly": {"count": 2, "range": [2000, 8000], "rep_area": 33.7, "rep_avg_price": 5000, "ppy": 490}},
     "deals": [
       {"type": "매매", "price": 32500, "rent": 0, "area": 33.736, "land": 0.0, "floor": "9", "dong": "305", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1102-7", "by": 1992},
       {"type": "매매", "price": 49000, "rent": 0, "area": 49.68, "land": 0.0, "floor": "15", "dong": "302", "date": "2025-07-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1102-7", "by": 1992},
@@ -595,7 +595,7 @@
     "name": "은하수벽산",
     "address": "안양시 동안구 비산동 1103",
     "coords": [126.947175473544, 37.3925085118198],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [79500, 79500], "rep_area": 59.4, "rep_avg_price": 79500}, "jeonse": {"count": 2, "range": [35000, 45000], "rep_area": 55.6, "rep_avg_price": 35000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 76.0, "rep_avg_price": 5000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [79500, 79500], "rep_area": 59.4, "rep_avg_price": 79500, "ppy": 4424}, "jeonse": {"count": 2, "range": [35000, 45000], "rep_area": 55.6, "rep_avg_price": 35000, "ppy": 1882}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 76.0, "rep_avg_price": 5000, "ppy": 217}},
     "deals": [
       {"type": "매매", "price": 79500, "rent": 0, "area": 59.4, "land": 0.0, "floor": "15", "dong": "", "date": "2025-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1103", "by": 1992},
       {"type": "전세", "price": 35000, "rent": 0, "area": 55.65, "land": 0.0, "floor": "12", "dong": "", "date": "2025-07-23", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1103", "by": 1992},
@@ -607,7 +607,7 @@
     "name": "은하수신성",
     "address": "안양시 동안구 비산동 1103-4",
     "coords": [126.948392031625, 37.3940121344878],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 84.6, "rep_avg_price": 86000}, "jeonse": {"count": 3, "range": [43000, 46200], "rep_area": 59.9, "rep_avg_price": 43000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.9, "rep_avg_price": 10000}},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [86000, 86000], "rep_area": 84.6, "rep_avg_price": 86000, "ppy": 3360}, "jeonse": {"count": 3, "range": [43000, 46200], "rep_area": 59.9, "rep_avg_price": 43000, "ppy": 2138}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.9, "rep_avg_price": 10000, "ppy": 552}},
     "deals": [
       {"type": "매매", "price": 86000, "rent": 0, "area": 84.6, "land": 0.0, "floor": "9", "dong": "301", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1103-4", "by": 1992},
       {"type": "전세", "price": 43000, "rent": 0, "area": 59.895, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-06", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1103-4", "by": 1992},
@@ -620,7 +620,7 @@
     "name": "은하수마을한양",
     "address": "안양시 동안구 비산동 1103-5",
     "coords": [126.948890092203, 37.3927911952556],
-    "stats": {"total": 28, "sale": {"count": 3, "range": [38000, 44000], "rep_area": 42.6, "rep_avg_price": 42900}, "jeonse": {"count": 9, "range": [18000, 24000], "rep_area": 42.6, "rep_avg_price": 22735}, "monthly": {"count": 16, "range": [500, 9000], "rep_area": 35.1, "rep_avg_price": 2573}},
+    "stats": {"total": 28, "sale": {"count": 3, "range": [38000, 44000], "rep_area": 42.6, "rep_avg_price": 42900, "ppy": 3401}, "jeonse": {"count": 9, "range": [18000, 24000], "rep_area": 42.6, "rep_avg_price": 22735, "ppy": 1811}, "monthly": {"count": 16, "range": [500, 9000], "rep_area": 35.1, "rep_avg_price": 2573, "ppy": 253}},
     "deals": [
       {"type": "매매", "price": 38000, "rent": 0, "area": 35.1, "land": 0.0, "floor": "11", "dong": "504", "date": "2025-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1103-5", "by": 1993},
       {"type": "매매", "price": 44000, "rent": 0, "area": 42.615, "land": 0.0, "floor": "7", "dong": "505", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1103-5", "by": 1993},
@@ -656,7 +656,7 @@
     "name": "은하수청구",
     "address": "안양시 동안구 비산동 1104",
     "coords": [126.946235856969, 37.3916385115165],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [80000, 86500], "rep_area": 84.6, "rep_avg_price": 83833}, "jeonse": {"count": 2, "range": [28500, 31500], "rep_area": 55.4, "rep_avg_price": 30000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [80000, 86500], "rep_area": 84.6, "rep_avg_price": 83833, "ppy": 3276}, "jeonse": {"count": 2, "range": [28500, 31500], "rep_area": 55.4, "rep_avg_price": 30000, "ppy": 1789}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 80000, "rent": 0, "area": 84.6, "land": 0.0, "floor": "8", "dong": "101", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1104", "by": 1992},
       {"type": "매매", "price": 85000, "rent": 0, "area": 84.6, "land": 0.0, "floor": "6", "dong": "106", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1104", "by": 1992},
@@ -669,7 +669,7 @@
     "name": "샛별한양6(고층1109)",
     "address": "안양시 동안구 비산동 1109",
     "coords": [126.950002981384, 37.3952012747925],
-    "stats": {"total": 13, "sale": {"count": 2, "range": [37000, 59500], "rep_area": 35.1, "rep_avg_price": 37000}, "jeonse": {"count": 6, "range": [17000, 28000], "rep_area": 42.6, "rep_avg_price": 20666}, "monthly": {"count": 5, "range": [1000, 5000], "rep_area": 35.1, "rep_avg_price": 2600}},
+    "stats": {"total": 13, "sale": {"count": 2, "range": [37000, 59500], "rep_area": 35.1, "rep_avg_price": 37000, "ppy": 3763}, "jeonse": {"count": 6, "range": [17000, 28000], "rep_area": 42.6, "rep_avg_price": 20666, "ppy": 1668}, "monthly": {"count": 5, "range": [1000, 5000], "rep_area": 35.1, "rep_avg_price": 2600, "ppy": 245}},
     "deals": [
       {"type": "매매", "price": 37000, "rent": 0, "area": 35.1, "land": 0.0, "floor": "7", "dong": "604", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1109", "by": 1993},
       {"type": "매매", "price": 59500, "rent": 0, "area": 49.68, "land": 0.0, "floor": "16", "dong": "602", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1109", "by": 1993},
@@ -690,7 +690,7 @@
     "name": "샛별한양6(고층1109-4)",
     "address": "안양시 동안구 비산동 1109-4",
     "coords": [126.952034826699, 37.3955975749983],
-    "stats": {"total": 26, "sale": {"count": 6, "range": [33000, 57800], "rep_area": 42.6, "rep_avg_price": 43833}, "jeonse": {"count": 10, "range": [11500, 25000], "rep_area": 28.2, "rep_avg_price": 14590}, "monthly": {"count": 10, "range": [1000, 8000], "rep_area": 35.1, "rep_avg_price": 2500}},
+    "stats": {"total": 26, "sale": {"count": 6, "range": [33000, 57800], "rep_area": 42.6, "rep_avg_price": 43833, "ppy": 3447}, "jeonse": {"count": 10, "range": [11500, 25000], "rep_area": 28.2, "rep_avg_price": 14590, "ppy": 1750}, "monthly": {"count": 10, "range": [1000, 8000], "rep_area": 35.1, "rep_avg_price": 2500, "ppy": 272}},
     "deals": [
       {"type": "매매", "price": 43500, "rent": 0, "area": 42.615, "land": 0.0, "floor": "14", "dong": "610", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1109-4", "by": 1993},
       {"type": "매매", "price": 43500, "rent": 0, "area": 42.615, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1109-4", "by": 1993},
@@ -724,7 +724,7 @@
     "name": "샛별한양6(고층1109-6)",
     "address": "안양시 동안구 비산동 1109-6",
     "coords": [126.952723957205, 37.3943134455226],
-    "stats": {"total": 19, "sale": {"count": 2, "range": [26900, 37000], "rep_area": 28.2, "rep_avg_price": 26900}, "jeonse": {"count": 9, "range": [18000, 29000], "rep_area": 35.1, "rep_avg_price": 19500}, "monthly": {"count": 8, "range": [1000, 20000], "rep_area": 28.2, "rep_avg_price": 8666}},
+    "stats": {"total": 19, "sale": {"count": 2, "range": [26900, 37000], "rep_area": 28.2, "rep_avg_price": 26900, "ppy": 3336}, "jeonse": {"count": 9, "range": [18000, 29000], "rep_area": 35.1, "rep_avg_price": 19500, "ppy": 1839}, "monthly": {"count": 8, "range": [1000, 20000], "rep_area": 28.2, "rep_avg_price": 8666, "ppy": 642}},
     "deals": [
       {"type": "매매", "price": 26900, "rent": 0, "area": 28.215, "land": 0.0, "floor": "14", "dong": "617", "date": "2025-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1109-6", "by": 1992},
       {"type": "매매", "price": 37000, "rent": 0, "area": 35.1, "land": 0.0, "floor": "5", "dong": "615", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1109-6", "by": 1992},
@@ -751,7 +751,7 @@
     "name": "더포레스트힐",
     "address": "안양시 동안구 비산동 1155",
     "coords": [126.932596449563, 37.405907847848],
-    "stats": {"total": 21, "sale": {"count": 11, "range": [26000, 59000], "rep_area": 59.9, "rep_avg_price": 48433}, "jeonse": {"count": 6, "range": [18000, 41475], "rep_area": 39.7, "rep_avg_price": 18500}, "monthly": {"count": 4, "range": [3000, 24000], "rep_area": 49.5, "rep_avg_price": 13500}},
+    "stats": {"total": 21, "sale": {"count": 11, "range": [26000, 59000], "rep_area": 59.9, "rep_avg_price": 48433, "ppy": 2451}, "jeonse": {"count": 6, "range": [18000, 41475], "rep_area": 39.7, "rep_avg_price": 18500, "ppy": 1560}, "monthly": {"count": 4, "range": [3000, 24000], "rep_area": 49.5, "rep_avg_price": 13500, "ppy": 574}},
     "deals": [
       {"type": "매매", "price": 48500, "rent": 0, "area": 59.93, "land": 0.0, "floor": "18", "dong": "102", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1155", "by": 2003},
       {"type": "매매", "price": 50900, "rent": 0, "area": 59.93, "land": 0.0, "floor": "22", "dong": "104", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1155", "by": 2003},
@@ -780,7 +780,7 @@
     "name": "안양임곡휴먼시아",
     "address": "안양시 동안구 비산동 1163",
     "coords": [126.929987031271, 37.4012735534426],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [40700, 40700], "rep_area": 46.9, "rep_avg_price": 40700}, "jeonse": {"count": 4, "range": [34000, 37000], "rep_area": 59.7, "rep_avg_price": 37000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [40700, 40700], "rep_area": 46.9, "rep_avg_price": 40700, "ppy": 2868}, "jeonse": {"count": 4, "range": [34000, 37000], "rep_area": 59.7, "rep_avg_price": 37000, "ppy": 2005}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 40700, "rent": 0, "area": 46.92, "land": 0.0, "floor": "3", "dong": "205", "date": "2025-07-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1163", "by": 2007},
       {"type": "전세", "price": 34000, "rent": 0, "area": 59.95, "land": 0.0, "floor": "8", "dong": "", "date": "2025-07-28", "period": "25.08~27.08", "renew": "갱신", "p_dep": 32400, "p_rent": 0, "jibun": "비산동 1163", "by": 2007},
@@ -793,7 +793,7 @@
     "name": "이-편한세상",
     "address": "안양시 동안구 비산동 1165",
     "coords": [126.942540455939, 37.3999103174508],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [64000, 64000], "rep_area": 125.8, "rep_avg_price": 64000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [64000, 64000], "rep_area": 125.8, "rep_avg_price": 64000, "ppy": 1682}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 64000, "rent": 0, "area": 125.792, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-28", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1165", "by": 2008},
       {"type": "전세", "price": 64000, "rent": 0, "area": 125.792, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-28", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1165", "by": 2008}
@@ -803,7 +803,7 @@
     "name": "비산화성파크드림",
     "address": "안양시 동안구 비산동 1166",
     "coords": [126.931608863732, 37.3987893959711],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [53000, 53000], "rep_area": 84.9, "rep_avg_price": 53000}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 84.6, "rep_avg_price": 40000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [53000, 53000], "rep_area": 84.9, "rep_avg_price": 53000, "ppy": 2063}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 84.6, "rep_avg_price": 40000, "ppy": 1563}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 53000, "rent": 0, "area": 84.9336, "land": 0.0, "floor": "21", "dong": "101", "date": "2025-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1166", "by": 2014},
       {"type": "매매", "price": 53000, "rent": 0, "area": 84.9336, "land": 0.0, "floor": "21", "dong": "", "date": "2025-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1166", "by": 2014},
@@ -814,7 +814,7 @@
     "name": "대광로제비앙",
     "address": "안양시 동안구 비산동 1167",
     "coords": [126.932412141115, 37.3995951006454],
-    "stats": {"total": 4, "sale": {"count": 3, "range": [56000, 62000], "rep_area": 85.0, "rep_avg_price": 56000}, "jeonse": {"count": 1, "range": [40500, 40500], "rep_area": 74.3, "rep_avg_price": 40500}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 3, "range": [56000, 62000], "rep_area": 85.0, "rep_avg_price": 56000, "ppy": 2257}, "jeonse": {"count": 1, "range": [40500, 40500], "rep_area": 74.3, "rep_avg_price": 40500, "ppy": 1802}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 56000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "15", "dong": "103동", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1167", "by": 2017},
       {"type": "매매", "price": 56000, "rent": 0, "area": 84.98, "land": 0.0, "floor": "15", "dong": "", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1167", "by": 2017},
@@ -826,7 +826,7 @@
     "name": "한양수자인평촌리버뷰",
     "address": "안양시 동안구 비산동 1172",
     "coords": [126.941978787699, 37.3924676926387],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [56900, 57500], "rep_area": 51.9, "rep_avg_price": 57200}, "jeonse": {"count": 3, "range": [10300, 44000], "rep_area": 60.0, "rep_avg_price": 44000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [56900, 57500], "rep_area": 51.9, "rep_avg_price": 57200, "ppy": 3643}, "jeonse": {"count": 3, "range": [10300, 44000], "rep_area": 60.0, "rep_avg_price": 44000, "ppy": 1891}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 57500, "rent": 0, "area": 51.902, "land": 0.0, "floor": "16", "dong": "102", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1172", "by": 2021},
       {"type": "매매", "price": 56900, "rent": 0, "area": 51.902, "land": 0.0, "floor": "11", "dong": "201", "date": "2025-07-07", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1172", "by": 2021},
@@ -839,7 +839,7 @@
     "name": "평촌래미안푸르지오",
     "address": "안양시 동안구 비산동 1177",
     "coords": [126.938113293922, 37.3975171326484],
-    "stats": {"total": 12, "sale": {"count": 4, "range": [86000, 115000], "rep_area": 60.0, "rep_avg_price": 88000}, "jeonse": {"count": 6, "range": [50000, 68000], "rep_area": 84.9, "rep_avg_price": 66500}, "monthly": {"count": 2, "range": [2000, 10000], "rep_area": 60.0, "rep_avg_price": 10000}},
+    "stats": {"total": 12, "sale": {"count": 4, "range": [86000, 115000], "rep_area": 60.0, "rep_avg_price": 88000, "ppy": 4609}, "jeonse": {"count": 6, "range": [50000, 68000], "rep_area": 84.9, "rep_avg_price": 66500, "ppy": 2565}, "monthly": {"count": 2, "range": [2000, 10000], "rep_area": 60.0, "rep_avg_price": 10000, "ppy": 308}},
     "deals": [
       {"type": "매매", "price": 115000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "33", "dong": "", "date": "2025-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1177", "by": 2022},
       {"type": "매매", "price": 113000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "6", "dong": "107", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1177", "by": 2022},
@@ -859,7 +859,7 @@
     "name": "평촌자이아이파크",
     "address": "안양시 동안구 비산동 1185",
     "coords": [126.933314109201, 37.402225603285],
-    "stats": {"total": 24, "sale": {"count": 11, "range": [41500, 94800], "rep_area": 60.0, "rep_avg_price": 79400}, "jeonse": {"count": 7, "range": [27700, 63000], "rep_area": 39.9, "rep_avg_price": 29900}, "monthly": {"count": 6, "range": [5000, 40000], "rep_area": 60.0, "rep_avg_price": 7500}},
+    "stats": {"total": 24, "sale": {"count": 11, "range": [41500, 94800], "rep_area": 60.0, "rep_avg_price": 79400, "ppy": 4192}, "jeonse": {"count": 7, "range": [27700, 63000], "rep_area": 39.9, "rep_avg_price": 29900, "ppy": 2467}, "monthly": {"count": 6, "range": [5000, 40000], "rep_area": 60.0, "rep_avg_price": 7500, "ppy": 1030}},
     "deals": [
       {"type": "매매", "price": 41500, "rent": 0, "area": 39.9368, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1185", "by": 2021},
       {"type": "매매", "price": 77500, "rent": 0, "area": 59.9675, "land": 0.0, "floor": "6", "dong": "106", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1185", "by": 2021},
@@ -891,7 +891,7 @@
     "name": "힐스테이트비산파크뷰",
     "address": "안양시 동안구 비산동 1198",
     "coords": [126.934421458406, 37.405395652942],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [64500, 64500], "rep_area": 59.9, "rep_avg_price": 64500}, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 76.8, "rep_avg_price": 55000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [64500, 64500], "rep_area": 59.9, "rep_avg_price": 64500, "ppy": 3559}, "jeonse": {"count": 1, "range": [55000, 55000], "rep_area": 76.8, "rep_avg_price": 55000, "ppy": 2368}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 64500, "rent": 0, "area": 59.9085, "land": 0.0, "floor": "21", "dong": "104", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1198", "by": 2022},
       {"type": "전세", "price": 55000, "rent": 0, "area": 76.7856, "land": 0.0, "floor": "9", "dong": "", "date": "2025-07-12", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1198", "by": 2022}
@@ -901,7 +901,7 @@
     "name": "한신더휴",
     "address": "안양시 동안구 비산동 1205",
     "coords": [126.933356494436, 37.3993838966555],
-    "stats": {"total": 7, "sale": null, "jeonse": {"count": 6, "range": [35000, 39900], "rep_area": 62.0, "rep_avg_price": 37000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 71.4, "rep_avg_price": 10000}},
+    "stats": {"total": 7, "sale": null, "jeonse": {"count": 6, "range": [35000, 39900], "rep_area": 62.0, "rep_avg_price": 37000, "ppy": 1924}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 71.4, "rep_avg_price": 10000, "ppy": 463}},
     "deals": [
       {"type": "전세", "price": 35000, "rent": 0, "area": 62.0192, "land": 0.0, "floor": "18", "dong": "", "date": "2025-07-21", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 1205", "by": 2023},
       {"type": "전세", "price": 38000, "rent": 0, "area": 62.7449, "land": 0.0, "floor": "24", "dong": "", "date": "2025-07-23", "period": "25.07~27.07", "renew": "갱신", "p_dep": 37000, "p_rent": 0, "jibun": "비산동 1205", "by": 2023},
@@ -916,7 +916,7 @@
     "name": "미륭",
     "address": "안양시 동안구 비산동 406",
     "coords": [126.943107510122, 37.3984330967265],
-    "stats": {"total": 6, "sale": {"count": 6, "range": [43000, 63500], "rep_area": 85.2, "rep_avg_price": 63350}, "jeonse": null, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 6, "range": [43000, 63500], "rep_area": 85.2, "rep_avg_price": 63350, "ppy": 1865}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 46000, "rent": 0, "area": 87.83, "land": 0.0, "floor": "11", "dong": "1", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 406", "by": 1979},
       {"type": "매매", "price": 46000, "rent": 0, "area": 103.17, "land": 0.0, "floor": "5", "dong": "2", "date": "2025-07-28", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 406", "by": 1979},
@@ -930,7 +930,7 @@
     "name": "비산롯데캐슬",
     "address": "안양시 동안구 비산동 408",
     "coords": [126.939925184967, 37.3984226026373],
-    "stats": {"total": 13, "sale": {"count": 5, "range": [60000, 70000], "rep_area": 82.2, "rep_avg_price": 69300}, "jeonse": {"count": 4, "range": [44000, 53000], "rep_area": 82.2, "rep_avg_price": 46250}, "monthly": {"count": 4, "range": [10000, 32500], "rep_area": 82.2, "rep_avg_price": 32500}},
+    "stats": {"total": 13, "sale": {"count": 5, "range": [60000, 70000], "rep_area": 82.2, "rep_avg_price": 69300, "ppy": 3035}, "jeonse": {"count": 4, "range": [44000, 53000], "rep_area": 82.2, "rep_avg_price": 46250, "ppy": 1859}, "monthly": {"count": 4, "range": [10000, 32500], "rep_area": 82.2, "rep_avg_price": 32500, "ppy": 1001}},
     "deals": [
       {"type": "매매", "price": 69400, "rent": 0, "area": 82.245, "land": 0.0, "floor": "13", "dong": "", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 408", "by": 2003},
       {"type": "매매", "price": 68500, "rent": 0, "area": 82.245, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 408", "by": 2003},
@@ -951,7 +951,7 @@
     "name": "삼성래미안",
     "address": "안양시 동안구 비산동 425",
     "coords": [126.93963520621, 37.4007627677827],
-    "stats": {"total": 32, "sale": {"count": 16, "range": [67500, 89000], "rep_area": 84.9, "rep_avg_price": 76223}, "jeonse": {"count": 12, "range": [37800, 57050], "rep_area": 84.9, "rep_avg_price": 46333}, "monthly": {"count": 4, "range": [5000, 30000], "rep_area": 114.6, "rep_avg_price": 20000}},
+    "stats": {"total": 32, "sale": {"count": 16, "range": [67500, 89000], "rep_area": 84.9, "rep_avg_price": 76223, "ppy": 2885}, "jeonse": {"count": 12, "range": [37800, 57050], "rep_area": 84.9, "rep_avg_price": 46333, "ppy": 1844}, "monthly": {"count": 4, "range": [5000, 30000], "rep_area": 114.6, "rep_avg_price": 20000, "ppy": 501}},
     "deals": [
       {"type": "매매", "price": 67500, "rent": 0, "area": 59.881, "land": 0.0, "floor": "12", "dong": "143", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 425", "by": 2003},
       {"type": "매매", "price": 84000, "rent": 0, "area": 114.607, "land": 0.0, "floor": "3", "dong": "107", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 425", "by": 2003},
@@ -991,7 +991,7 @@
     "name": "비산수풀채",
     "address": "안양시 동안구 비산동 547-18",
     "coords": [126.931454669018, 37.4001921067736],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 3000], "rep_area": 24.1, "rep_avg_price": 2333}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 3000], "rep_area": 24.1, "rep_avg_price": 2333, "ppy": 320}},
     "deals": [
       {"type": "월세", "price": 3000, "rent": 75, "area": 24.1321, "land": 0.0, "floor": "13", "dong": "", "date": "2025-07-14", "period": "25.07~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 547-18", "by": 2022},
       {"type": "월세", "price": 3000, "rent": 75, "area": 24.1321, "land": 0.0, "floor": "8", "dong": "", "date": "2025-07-14", "period": "25.07~26.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 547-18", "by": 2022},
@@ -1002,7 +1002,7 @@
     "name": "한화꿈에그린",
     "address": "안양시 동안구 비산동 572",
     "coords": [126.935007437366, 37.3967545535119],
-    "stats": {"total": 6, "sale": {"count": 3, "range": [75000, 85500], "rep_area": 85.0, "rep_avg_price": 76125}, "jeonse": {"count": 3, "range": [44000, 49000], "rep_area": 111.5, "rep_avg_price": 49000}, "monthly": null},
+    "stats": {"total": 6, "sale": {"count": 3, "range": [75000, 85500], "rep_area": 85.0, "rep_avg_price": 76125, "ppy": 2793}, "jeonse": {"count": 3, "range": [44000, 49000], "rep_area": 111.5, "rep_avg_price": 49000, "ppy": 1659}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 75000, "rent": 0, "area": 84.973, "land": 0.0, "floor": "28", "dong": "106", "date": "2025-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 572", "by": 2009},
       {"type": "매매", "price": 77250, "rent": 0, "area": 84.973, "land": 0.0, "floor": "23", "dong": "103", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 572", "by": 2009},
@@ -1016,7 +1016,7 @@
     "name": "비산힐스테이트",
     "address": "안양시 동안구 비산동 576-7",
     "coords": [126.940720195316, 37.3937727398607],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 82.2, "rep_avg_price": 65000}, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 60.0, "rep_avg_price": 3000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [65000, 65000], "rep_area": 82.2, "rep_avg_price": 65000, "ppy": 2614}, "jeonse": null, "monthly": {"count": 1, "range": [3000, 3000], "rep_area": 60.0, "rep_avg_price": 3000, "ppy": 165}},
     "deals": [
       {"type": "매매", "price": 65000, "rent": 0, "area": 82.2, "land": 0.0, "floor": "6", "dong": "", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "비산동 576-7", "by": 2005},
       {"type": "월세", "price": 3000, "rent": 110, "area": 59.979, "land": 0.0, "floor": "16", "dong": "", "date": "2025-07-11", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "비산동 576-7", "by": 2005}
@@ -1026,7 +1026,7 @@
     "name": "힐스테이트인덕원역베르텍스",
     "address": "안양시 동안구 평촌동 1001",
     "coords": [126.977243362118, 37.39313712334],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 20000], "rep_area": 64.0, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [10000, 20000], "rep_area": 64.0, "rep_avg_price": 10000, "ppy": 666}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 160, "area": 63.9777, "land": 0.0, "floor": "26", "dong": "", "date": "2025-07-09", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 1001", "by": 2024},
       {"type": "월세", "price": 20000, "rent": 180, "area": 84.9987, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 1001", "by": 2024}
@@ -1036,7 +1036,7 @@
     "name": "인덕원대림2차",
     "address": "안양시 동안구 평촌동 101",
     "coords": [126.977015606372, 37.3915862392653],
-    "stats": {"total": 8, "sale": {"count": 1, "range": [77700, 77700], "rep_area": 84.9, "rep_avg_price": 77700}, "jeonse": {"count": 6, "range": [40700, 48000], "rep_area": 84.9, "rep_avg_price": 46750}, "monthly": {"count": 1, "range": [26500, 26500], "rep_area": 84.9, "rep_avg_price": 26500}},
+    "stats": {"total": 8, "sale": {"count": 1, "range": [77700, 77700], "rep_area": 84.9, "rep_avg_price": 77700, "ppy": 3025}, "jeonse": {"count": 6, "range": [40700, 48000], "rep_area": 84.9, "rep_avg_price": 46750, "ppy": 1959}, "monthly": {"count": 1, "range": [26500, 26500], "rep_area": 84.9, "rep_avg_price": 26500, "ppy": 1032}},
     "deals": [
       {"type": "매매", "price": 77700, "rent": 0, "area": 84.92, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 101", "by": 2004},
       {"type": "월세", "price": 26500, "rent": 60, "area": 84.92, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-31", "period": "25.08~27.08", "renew": "갱신", "p_dep": 26500, "p_rent": 30, "jibun": "평촌동 101", "by": 2004},
@@ -1052,7 +1052,7 @@
     "name": "영풍",
     "address": "안양시 동안구 평촌동 130-1",
     "coords": [126.974610787536, 37.3907236488385],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [29400, 29400], "rep_area": 36.8, "rep_avg_price": 29400}, "jeonse": {"count": 2, "range": [36500, 39900], "rep_area": 84.8, "rep_avg_price": 38200}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [29400, 29400], "rep_area": 36.8, "rep_avg_price": 29400, "ppy": 2637}, "jeonse": {"count": 2, "range": [36500, 39900], "rep_area": 84.8, "rep_avg_price": 38200, "ppy": 1490}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 29400, "rent": 0, "area": 36.85, "land": 0.0, "floor": "11", "dong": "101", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 130-1", "by": 2000},
       {"type": "매매", "price": 29400, "rent": 0, "area": 36.85, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 130-1", "by": 2000},
@@ -1064,7 +1064,7 @@
     "name": "한미(132-3)",
     "address": "안양시 동안구 평촌동 132-3",
     "coords": [126.97471478615, 37.3900677264843],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 55.2, "rep_avg_price": 5000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 55.2, "rep_avg_price": 5000, "ppy": 300}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 65, "area": 55.17, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-29", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 132-3", "by": 1985}
     ]
@@ -1073,7 +1073,7 @@
     "name": "귀인마을현대홈타운",
     "address": "안양시 동안구 평촌동 314",
     "coords": [126.963199906127, 37.3854302006322],
-    "stats": {"total": 19, "sale": {"count": 6, "range": [94000, 128000], "rep_area": 80.4, "rep_avg_price": 119800}, "jeonse": {"count": 8, "range": [52500, 80000], "rep_area": 80.4, "rep_avg_price": 69942}, "monthly": {"count": 5, "range": [15000, 40000], "rep_area": 80.4, "rep_avg_price": 26666}},
+    "stats": {"total": 19, "sale": {"count": 6, "range": [94000, 128000], "rep_area": 80.4, "rep_avg_price": 119800, "ppy": 5003}, "jeonse": {"count": 8, "range": [52500, 80000], "rep_area": 80.4, "rep_avg_price": 69942, "ppy": 2897}, "monthly": {"count": 5, "range": [15000, 40000], "rep_area": 80.4, "rep_avg_price": 26666, "ppy": 1170}},
     "deals": [
       {"type": "매매", "price": 122000, "rent": 0, "area": 80.374, "land": 0.0, "floor": "10", "dong": "", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 314", "by": 2002},
       {"type": "매매", "price": 119500, "rent": 0, "area": 80.374, "land": 0.0, "floor": "1", "dong": "203", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 314", "by": 2002},
@@ -1100,7 +1100,7 @@
     "name": "래미안인덕원더포인트",
     "address": "안양시 동안구 평촌동 34",
     "coords": [126.978964870914, 37.3930622067298],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [73300, 76000], "rep_area": 59.8, "rep_avg_price": 74500}, "jeonse": {"count": 2, "range": [34650, 43000], "rep_area": 59.8, "rep_avg_price": 34650}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [73300, 76000], "rep_area": 59.8, "rep_avg_price": 74500, "ppy": 3637}, "jeonse": {"count": 2, "range": [34650, 43000], "rep_area": 59.8, "rep_avg_price": 34650, "ppy": 1773}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 75700, "rent": 0, "area": 59.76, "land": 0.0, "floor": "5", "dong": "104", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 34", "by": 2000},
       {"type": "매매", "price": 76000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "19", "dong": "104", "date": "2025-07-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 34", "by": 2000},
@@ -1113,7 +1113,7 @@
     "name": "한일미래아파트",
     "address": "안양시 동안구 평촌동 66-6",
     "coords": [126.977627220567, 37.3938526984646],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [31000, 31000], "rep_area": 59.9, "rep_avg_price": 31000}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.9, "rep_avg_price": 2000}},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 1, "range": [31000, 31000], "rep_area": 59.9, "rep_avg_price": 31000, "ppy": 1711}, "monthly": {"count": 1, "range": [2000, 2000], "rep_area": 59.9, "rep_avg_price": 2000, "ppy": 110}},
     "deals": [
       {"type": "전세", "price": 31000, "rent": 0, "area": 59.89, "land": 0.0, "floor": "16", "dong": "", "date": "2025-07-26", "period": "25.08~27.08", "renew": "갱신", "p_dep": 30000, "p_rent": 0, "jibun": "평촌동 66-6", "by": 1999},
       {"type": "월세", "price": 2000, "rent": 105, "area": 59.89, "land": 0.0, "floor": "10", "dong": "", "date": "2025-07-01", "period": "25.07~27.07", "renew": "갱신", "p_dep": 2000, "p_rent": 100, "jibun": "평촌동 66-6", "by": 1999}
@@ -1123,7 +1123,7 @@
     "name": "평촌이편한세상",
     "address": "안양시 동안구 평촌동 75-1",
     "coords": [126.977076694708, 37.395681668069],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [78750, 78750], "rep_area": 130.6, "rep_avg_price": 78750}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [78750, 78750], "rep_area": 130.6, "rep_avg_price": 78750, "ppy": 1993}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 78750, "rent": 0, "area": 130.628, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-03", "period": "25.07~27.07", "renew": "갱신", "p_dep": 75000, "p_rent": 0, "jibun": "평촌동 75-1", "by": 2010}
     ]
@@ -1132,7 +1132,7 @@
     "name": "인덕원대우",
     "address": "안양시 동안구 평촌동 75-2",
     "coords": [126.978902147681, 37.3948443275963],
-    "stats": {"total": 17, "sale": {"count": 2, "range": [84900, 84900], "rep_area": 85.0, "rep_avg_price": 84900}, "jeonse": {"count": 12, "range": [35500, 55000], "rep_area": 85.0, "rep_avg_price": 48625}, "monthly": {"count": 3, "range": [10000, 38000], "rep_area": 85.0, "rep_avg_price": 22666}},
+    "stats": {"total": 17, "sale": {"count": 2, "range": [84900, 84900], "rep_area": 85.0, "rep_avg_price": 84900, "ppy": 3303}, "jeonse": {"count": 12, "range": [35500, 55000], "rep_area": 85.0, "rep_avg_price": 48625, "ppy": 1949}, "monthly": {"count": 3, "range": [10000, 38000], "rep_area": 85.0, "rep_avg_price": 22666, "ppy": 882}},
     "deals": [
       {"type": "매매", "price": 84900, "rent": 0, "area": 84.96, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 75-2", "by": 2001},
       {"type": "매매", "price": 84900, "rent": 0, "area": 84.96, "land": 0.0, "floor": "1", "dong": "117", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 75-2", "by": 2001},
@@ -1157,7 +1157,7 @@
     "name": "초원마을세경",
     "address": "안양시 동안구 평촌동 896-2",
     "coords": [126.962956392162, 37.3903805263085],
-    "stats": {"total": 9, "sale": {"count": 3, "range": [56500, 60000], "rep_area": 49.7, "rep_avg_price": 58333}, "jeonse": null, "monthly": {"count": 6, "range": [2000, 12000], "rep_area": 49.7, "rep_avg_price": 4916}},
+    "stats": {"total": 9, "sale": {"count": 3, "range": [56500, 60000], "rep_area": 49.7, "rep_avg_price": 58333, "ppy": 3882}, "jeonse": null, "monthly": {"count": 6, "range": [2000, 12000], "rep_area": 49.7, "rep_avg_price": 4916, "ppy": 327}},
     "deals": [
       {"type": "매매", "price": 60000, "rent": 0, "area": 49.68, "land": 0.0, "floor": "18", "dong": "801", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 896-2", "by": 1996},
       {"type": "매매", "price": 56500, "rent": 0, "area": 49.68, "land": 0.0, "floor": "6", "dong": "805", "date": "2025-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 896-2", "by": 1996},
@@ -1174,7 +1174,7 @@
     "name": "초원부영",
     "address": "안양시 동안구 평촌동 896-6",
     "coords": [126.964748891399, 37.391973001162],
-    "stats": {"total": 39, "sale": {"count": 6, "range": [37500, 61000], "rep_area": 37.8, "rep_avg_price": 40750}, "jeonse": {"count": 19, "range": [19099, 39000], "rep_area": 37.8, "rep_avg_price": 21561}, "monthly": {"count": 14, "range": [1000, 28000], "rep_area": 37.8, "rep_avg_price": 3625}},
+    "stats": {"total": 39, "sale": {"count": 6, "range": [37500, 61000], "rep_area": 37.8, "rep_avg_price": 40750, "ppy": 3732}, "jeonse": {"count": 19, "range": [19099, 39000], "rep_area": 37.8, "rep_avg_price": 21561, "ppy": 1879}, "monthly": {"count": 14, "range": [1000, 28000], "rep_area": 37.8, "rep_avg_price": 3625, "ppy": 513}},
     "deals": [
       {"type": "매매", "price": 41500, "rent": 0, "area": 37.85, "land": 0.0, "floor": "9", "dong": "702", "date": "2025-07-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 896-6", "by": 1992},
       {"type": "매매", "price": 42500, "rent": 0, "area": 37.85, "land": 0.0, "floor": "5", "dong": "702", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 896-6", "by": 1992},
@@ -1221,7 +1221,7 @@
     "name": "초원한양",
     "address": "안양시 동안구 평촌동 897-5",
     "coords": [126.96792733582, 37.3911839793832],
-    "stats": {"total": 16, "sale": {"count": 3, "range": [78000, 82500], "rep_area": 84.9, "rep_avg_price": 80166}, "jeonse": {"count": 12, "range": [33600, 53000], "rep_area": 84.9, "rep_avg_price": 46810}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.9, "rep_avg_price": 10000}},
+    "stats": {"total": 16, "sale": {"count": 3, "range": [78000, 82500], "rep_area": 84.9, "rep_avg_price": 80166, "ppy": 3121}, "jeonse": {"count": 12, "range": [33600, 53000], "rep_area": 84.9, "rep_avg_price": 46810, "ppy": 1832}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.9, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "매매", "price": 80000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "11", "dong": "605", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 897-5", "by": 1993},
       {"type": "매매", "price": 82500, "rent": 0, "area": 84.9, "land": 0.0, "floor": "10", "dong": "611", "date": "2025-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 897-5", "by": 1993},
@@ -1245,7 +1245,7 @@
     "name": "초원LG",
     "address": "안양시 동안구 평촌동 897-7",
     "coords": [126.968610887754, 37.3892612899008],
-    "stats": {"total": 11, "sale": {"count": 3, "range": [70000, 87000], "rep_area": 59.8, "rep_avg_price": 70000}, "jeonse": {"count": 7, "range": [32000, 60000], "rep_area": 84.9, "rep_avg_price": 51500}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.9, "rep_avg_price": 10000}},
+    "stats": {"total": 11, "sale": {"count": 3, "range": [70000, 87000], "rep_area": 59.8, "rep_avg_price": 70000, "ppy": 3670}, "jeonse": {"count": 7, "range": [32000, 60000], "rep_area": 84.9, "rep_avg_price": 51500, "ppy": 2007}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.9, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "매매", "price": 70000, "rent": 0, "area": 59.79, "land": 0.0, "floor": "7", "dong": "507", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 897-7", "by": 1993},
       {"type": "매매", "price": 87000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "3", "dong": "501", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 897-7", "by": 1993},
@@ -1264,7 +1264,7 @@
     "name": "초원성원",
     "address": "안양시 동안구 평촌동 898",
     "coords": [126.963380371789, 37.3890960699739],
-    "stats": {"total": 6, "sale": {"count": 1, "range": [97000, 97000], "rep_area": 85.0, "rep_avg_price": 97000}, "jeonse": {"count": 4, "range": [38199, 55000], "rep_area": 85.0, "rep_avg_price": 55000}, "monthly": {"count": 1, "range": [27000, 27000], "rep_area": 85.0, "rep_avg_price": 27000}},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [97000, 97000], "rep_area": 85.0, "rep_avg_price": 97000, "ppy": 3773}, "jeonse": {"count": 4, "range": [38199, 55000], "rep_area": 85.0, "rep_avg_price": 55000, "ppy": 2133}, "monthly": {"count": 1, "range": [27000, 27000], "rep_area": 85.0, "rep_avg_price": 27000, "ppy": 1050}},
     "deals": [
       {"type": "매매", "price": 97000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "15", "dong": "101", "date": "2025-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 898", "by": 1992},
       {"type": "월세", "price": 27000, "rent": 100, "area": 84.99, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-10", "period": "25.07~27.07", "renew": "갱신", "p_dep": 27000, "p_rent": 90, "jibun": "평촌동 898", "by": 1992},
@@ -1278,7 +1278,7 @@
     "name": "초원마을대림",
     "address": "안양시 동안구 평촌동 898-2",
     "coords": [126.964641160434, 37.3878823250202],
-    "stats": {"total": 7, "sale": {"count": 3, "range": [68300, 105000], "rep_area": 84.9, "rep_avg_price": 104000}, "jeonse": {"count": 3, "range": [28940, 62000], "rep_area": 59.7, "rep_avg_price": 31970}, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 84.9, "rep_avg_price": 30000}},
+    "stats": {"total": 7, "sale": {"count": 3, "range": [68300, 105000], "rep_area": 84.9, "rep_avg_price": 104000, "ppy": 3978}, "jeonse": {"count": 3, "range": [28940, 62000], "rep_area": 59.7, "rep_avg_price": 31970, "ppy": 2037}, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 84.9, "rep_avg_price": 30000, "ppy": 1168}},
     "deals": [
       {"type": "매매", "price": 68300, "rent": 0, "area": 59.742, "land": 0.0, "floor": "8", "dong": "204", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 898-2", "by": 1993},
       {"type": "매매", "price": 103000, "rent": 0, "area": 84.92, "land": 0.0, "floor": "15", "dong": "206", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 898-2", "by": 1993},
@@ -1293,7 +1293,7 @@
     "name": "초원마을대원",
     "address": "안양시 동안구 평촌동 898-6",
     "coords": [126.966810515596, 37.3885829586621],
-    "stats": {"total": 13, "sale": {"count": 3, "range": [80800, 95000], "rep_area": 85.0, "rep_avg_price": 95000}, "jeonse": {"count": 7, "range": [42525, 52500], "rep_area": 85.0, "rep_avg_price": 50625}, "monthly": {"count": 3, "range": [10000, 12000], "rep_area": 85.0, "rep_avg_price": 12000}},
+    "stats": {"total": 13, "sale": {"count": 3, "range": [80800, 95000], "rep_area": 85.0, "rep_avg_price": 95000, "ppy": 3894}, "jeonse": {"count": 7, "range": [42525, 52500], "rep_area": 85.0, "rep_avg_price": 50625, "ppy": 2195}, "monthly": {"count": 3, "range": [10000, 12000], "rep_area": 85.0, "rep_avg_price": 12000, "ppy": 489}},
     "deals": [
       {"type": "매매", "price": 95000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "1", "dong": "306", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 898-6", "by": 1993},
       {"type": "매매", "price": 80800, "rent": 0, "area": 59.94, "land": 0.0, "floor": "2", "dong": "302", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 898-6", "by": 1993},
@@ -1314,7 +1314,7 @@
     "name": "향촌롯데",
     "address": "안양시 동안구 평촌동 899",
     "coords": [126.959261680112, 37.3875334299392],
-    "stats": {"total": 8, "sale": {"count": 3, "range": [80500, 123500], "rep_area": 84.8, "rep_avg_price": 123500}, "jeonse": {"count": 4, "range": [44100, 80000], "rep_area": 59.8, "rep_avg_price": 46050}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.8, "rep_avg_price": 10000}},
+    "stats": {"total": 8, "sale": {"count": 3, "range": [80500, 123500], "rep_area": 84.8, "rep_avg_price": 123500, "ppy": 4719}, "jeonse": {"count": 4, "range": [44100, 80000], "rep_area": 59.8, "rep_avg_price": 46050, "ppy": 2655}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.8, "rep_avg_price": 10000, "ppy": 553}},
     "deals": [
       {"type": "매매", "price": 123500, "rent": 0, "area": 84.84, "land": 0.0, "floor": "15", "dong": "307", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 899", "by": 1993},
       {"type": "매매", "price": 123500, "rent": 0, "area": 84.84, "land": 0.0, "floor": "15", "dong": "", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 899", "by": 1993},
@@ -1330,7 +1330,7 @@
     "name": "향촌마을현대4차",
     "address": "안양시 동안구 평촌동 899-2",
     "coords": [126.95998552667, 37.3862089925435],
-    "stats": {"total": 7, "sale": {"count": 3, "range": [88500, 119000], "rep_area": 85.0, "rep_avg_price": 119000}, "jeonse": {"count": 3, "range": [66150, 70000], "rep_area": 85.0, "rep_avg_price": 67716}, "monthly": {"count": 1, "range": [40000, 40000], "rep_area": 85.0, "rep_avg_price": 40000}},
+    "stats": {"total": 7, "sale": {"count": 3, "range": [88500, 119000], "rep_area": 85.0, "rep_avg_price": 119000, "ppy": 4694}, "jeonse": {"count": 3, "range": [66150, 70000], "rep_area": 85.0, "rep_avg_price": 67716, "ppy": 2634}, "monthly": {"count": 1, "range": [40000, 40000], "rep_area": 85.0, "rep_avg_price": 40000, "ppy": 1556}},
     "deals": [
       {"type": "매매", "price": 119000, "rent": 0, "area": 84.99, "land": 0.0, "floor": "16", "dong": "", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 899-2", "by": 1992},
       {"type": "매매", "price": 88500, "rent": 0, "area": 59.94, "land": 0.0, "floor": "13", "dong": "204", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 899-2", "by": 1992},
@@ -1345,7 +1345,7 @@
     "name": "향촌마을현대5차",
     "address": "안양시 동안구 평촌동 899-7",
     "coords": [126.962109478633, 37.3869710569203],
-    "stats": {"total": 8, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 84.8, "rep_avg_price": 118000}, "jeonse": {"count": 4, "range": [54200, 73000], "rep_area": 84.8, "rep_avg_price": 65050}, "monthly": {"count": 3, "range": [20000, 30000], "rep_area": 84.8, "rep_avg_price": 25000}},
+    "stats": {"total": 8, "sale": {"count": 1, "range": [118000, 118000], "rep_area": 84.8, "rep_avg_price": 118000, "ppy": 4603}, "jeonse": {"count": 4, "range": [54200, 73000], "rep_area": 84.8, "rep_avg_price": 65050, "ppy": 2537}, "monthly": {"count": 3, "range": [20000, 30000], "rep_area": 84.8, "rep_avg_price": 25000, "ppy": 1009}},
     "deals": [
       {"type": "매매", "price": 118000, "rent": 0, "area": 84.75, "land": 0.0, "floor": "8", "dong": "", "date": "2025-07-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 899-7", "by": 1993},
       {"type": "전세", "price": 73000, "rent": 0, "area": 84.75, "land": 0.0, "floor": "21", "dong": "", "date": "2025-07-02", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 899-7", "by": 1993},
@@ -1361,7 +1361,7 @@
     "name": "인덕원대림1차",
     "address": "안양시 동안구 평촌동 93-1",
     "coords": [126.975730599479, 37.393386135444],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.8, "rep_avg_price": 10000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.8, "rep_avg_price": 10000, "ppy": 553}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 95, "area": 59.79, "land": 0.0, "floor": "12", "dong": "", "date": "2025-07-03", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 93-1", "by": 2000}
     ]
@@ -1370,7 +1370,7 @@
     "name": "꿈마을금호",
     "address": "안양시 동안구 평촌동 932-2",
     "coords": [126.965685815031, 37.385355262093],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [168000, 168000], "rep_area": 133.6, "rep_avg_price": 168000}, "jeonse": {"count": 3, "range": [70000, 90000], "rep_area": 133.6, "rep_avg_price": 85000}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [168000, 168000], "rep_area": 133.6, "rep_avg_price": 168000, "ppy": 4157}, "jeonse": {"count": 3, "range": [70000, 90000], "rep_area": 133.6, "rep_avg_price": 85000, "ppy": 2149}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 168000, "rent": 0, "area": 133.59, "land": 0.0, "floor": "25", "dong": "", "date": "2025-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 932-2", "by": 1993},
       {"type": "전세", "price": 70000, "rent": 0, "area": 101.97, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-03", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 932-2", "by": 1993},
@@ -1382,7 +1382,7 @@
     "name": "꿈마을한신",
     "address": "안양시 동안구 평촌동 932-4",
     "coords": [126.966322315571, 37.3841236555686],
-    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [10000, 60000], "rep_area": 96.7, "rep_avg_price": 15000}},
+    "stats": {"total": 4, "sale": null, "jeonse": null, "monthly": {"count": 4, "range": [10000, 60000], "rep_area": 96.7, "rep_avg_price": 15000, "ppy": 754}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 220, "area": 117.0, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-12", "period": "25.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 932-4", "by": 1993},
       {"type": "월세", "price": 10000, "rent": 195, "area": 96.66, "land": 0.0, "floor": "9", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "갱신", "p_dep": 10000, "p_rent": 126, "jibun": "평촌동 932-4", "by": 1993},
@@ -1394,7 +1394,7 @@
     "name": "꿈마을라이프",
     "address": "안양시 동안구 평촌동 932-6",
     "coords": [126.967843809543, 37.3865981997908],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [43020, 43020], "rep_area": 85.0, "rep_avg_price": 43020}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [43020, 43020], "rep_area": 85.0, "rep_avg_price": 43020, "ppy": 1673}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 43020, "rent": 0, "area": 85.0, "land": 0.0, "floor": "16", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "갱신", "p_dep": 43010, "p_rent": 0, "jibun": "평촌동 932-6", "by": 1992},
       {"type": "전세", "price": 43020, "rent": 0, "area": 85.0, "land": 0.0, "floor": "16", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "갱신", "p_dep": 43010, "p_rent": 0, "jibun": "평촌동 932-6", "by": 1992}
@@ -1404,7 +1404,7 @@
     "name": "꿈마을현대",
     "address": "안양시 동안구 평촌동 932-7",
     "coords": [126.96815214489, 37.3848396654575],
-    "stats": {"total": 7, "sale": null, "jeonse": {"count": 7, "range": [55650, 73000], "rep_area": 101.5, "rep_avg_price": 63628}, "monthly": null},
+    "stats": {"total": 7, "sale": null, "jeonse": {"count": 7, "range": [55650, 73000], "rep_area": 101.5, "rep_avg_price": 63628, "ppy": 2072}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 73000, "rent": 0, "area": 101.52, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-26", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 932-7", "by": 1993},
       {"type": "전세", "price": 60900, "rent": 0, "area": 101.52, "land": 0.0, "floor": "10", "dong": "", "date": "2025-07-22", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 932-7", "by": 1993},
@@ -1419,7 +1419,7 @@
     "name": "꿈마을우성",
     "address": "안양시 동안구 평촌동 933",
     "coords": [126.969873781768, 37.3873796513001],
-    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [55650, 73000], "rep_area": 101.2, "rep_avg_price": 69000}, "monthly": null},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [55650, 73000], "rep_area": 101.2, "rep_avg_price": 69000, "ppy": 1885}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 55650, "rent": 0, "area": 132.69, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-25", "period": "25.08~25.09", "renew": "갱신", "p_dep": 55650, "p_rent": 0, "jibun": "평촌동 933", "by": 1993},
       {"type": "전세", "price": 73000, "rent": 0, "area": 132.69, "land": 0.0, "floor": "8", "dong": "", "date": "2025-07-16", "period": "25.09~27.09", "renew": "갱신", "p_dep": 68000, "p_rent": 0, "jibun": "평촌동 933", "by": 1993},
@@ -1431,7 +1431,7 @@
     "name": "꿈마을건영3차",
     "address": "안양시 동안구 평촌동 933-7",
     "coords": [126.971537762999, 37.3862151303471],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [68000, 75100], "rep_area": 102.0, "rep_avg_price": 68500}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [68000, 75100], "rep_area": 102.0, "rep_avg_price": 68500, "ppy": 2075}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 68000, "rent": 0, "area": 102.0, "land": 0.0, "floor": "8", "dong": "", "date": "2025-07-31", "period": "25.11~27.11", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 933-7", "by": 1994},
       {"type": "전세", "price": 75100, "rent": 0, "area": 133.92, "land": 0.0, "floor": "6", "dong": "", "date": "2025-07-08", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 933-7", "by": 1994},
@@ -1442,7 +1442,7 @@
     "name": "꿈마을동아",
     "address": "안양시 동안구 평촌동 933-7",
     "coords": [126.971537762999, 37.3862151303471],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [100000, 100000], "rep_area": 130.1, "rep_avg_price": 100000}, "jeonse": {"count": 2, "range": [57000, 80000], "rep_area": 130.1, "rep_avg_price": 68500}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [100000, 100000], "rep_area": 130.1, "rep_avg_price": 100000, "ppy": 2541}, "jeonse": {"count": 2, "range": [57000, 80000], "rep_area": 130.1, "rep_avg_price": 68500, "ppy": 1741}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 100000, "rent": 0, "area": 130.08, "land": 0.0, "floor": "8", "dong": "309", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 933-7", "by": 1994},
       {"type": "전세", "price": 80000, "rent": 0, "area": 130.08, "land": 0.0, "floor": "25", "dong": "", "date": "2025-07-31", "period": "25.07~26.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 933-7", "by": 1994},
@@ -1453,7 +1453,7 @@
     "name": "청광플러스원",
     "address": "안양시 동안구 평촌동 97-1",
     "coords": [126.975382205222, 37.3923731339605],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [32500, 32500], "rep_area": 52.5, "rep_avg_price": 32500}, "jeonse": {"count": 1, "range": [30500, 30500], "rep_area": 65.5, "rep_avg_price": 30500}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [32500, 32500], "rep_area": 52.5, "rep_avg_price": 32500, "ppy": 2047}, "jeonse": {"count": 1, "range": [30500, 30500], "rep_area": 65.5, "rep_avg_price": 30500, "ppy": 1538}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 32500, "rent": 0, "area": 52.49, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "평촌동 97-1", "by": 2008},
       {"type": "전세", "price": 30500, "rent": 0, "area": 65.54, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-07", "period": "25.08~27.08", "renew": "갱신", "p_dep": 30000, "p_rent": 0, "jibun": "평촌동 97-1", "by": 2008}
@@ -1463,7 +1463,7 @@
     "name": "진우(1002-9)",
     "address": "안양시 동안구 호계동 1002-9",
     "coords": [126.959983535331, 37.3714684999913],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12600, 12600], "rep_area": 64.4, "rep_avg_price": 12600}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [12600, 12600], "rep_area": 64.4, "rep_avg_price": 12600, "ppy": 647}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 12600, "rent": 0, "area": 64.35, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-31", "period": "25.07~27.07", "renew": "갱신", "p_dep": 12000, "p_rent": 0, "jibun": "호계동 1002-9", "by": 1986}
     ]
@@ -1472,7 +1472,7 @@
     "name": "목련마을2단지대우선경",
     "address": "안양시 동안구 호계동 1052",
     "coords": [126.953573998113, 37.388617427115],
-    "stats": {"total": 19, "sale": {"count": 3, "range": [34000, 72000], "rep_area": 58.3, "rep_avg_price": 71000}, "jeonse": {"count": 8, "range": [18500, 34700], "rep_area": 58.3, "rep_avg_price": 31314}, "monthly": {"count": 8, "range": [1000, 4000], "rep_area": 34.4, "rep_avg_price": 1400}},
+    "stats": {"total": 19, "sale": {"count": 3, "range": [34000, 72000], "rep_area": 58.3, "rep_avg_price": 71000, "ppy": 3851}, "jeonse": {"count": 8, "range": [18500, 34700], "rep_area": 58.3, "rep_avg_price": 31314, "ppy": 1775}, "monthly": {"count": 8, "range": [1000, 4000], "rep_area": 34.4, "rep_avg_price": 1400, "ppy": 152}},
     "deals": [
       {"type": "매매", "price": 70000, "rent": 0, "area": 58.32, "land": 0.0, "floor": "10", "dong": "제202", "date": "2025-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1052", "by": 1992},
       {"type": "매매", "price": 72000, "rent": 0, "area": 58.32, "land": 0.0, "floor": "9", "dong": "제207", "date": "2025-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1052", "by": 1992},
@@ -1499,7 +1499,7 @@
     "name": "목련우성",
     "address": "안양시 동안구 호계동 1052-3",
     "coords": [126.95546020173, 37.3892695922269],
-    "stats": {"total": 23, "sale": {"count": 5, "range": [54800, 65000], "rep_area": 50.7, "rep_avg_price": 56600}, "jeonse": {"count": 13, "range": [19095, 32000], "rep_area": 56.7, "rep_avg_price": 28878}, "monthly": {"count": 5, "range": [3000, 24000], "rep_area": 56.7, "rep_avg_price": 16666}},
+    "stats": {"total": 23, "sale": {"count": 5, "range": [54800, 65000], "rep_area": 50.7, "rep_avg_price": 56600, "ppy": 3725}, "jeonse": {"count": 13, "range": [19095, 32000], "rep_area": 56.7, "rep_avg_price": 28878, "ppy": 1696}, "monthly": {"count": 5, "range": [3000, 24000], "rep_area": 56.7, "rep_avg_price": 16666, "ppy": 731}},
     "deals": [
       {"type": "매매", "price": 59000, "rent": 0, "area": 50.73, "land": 0.0, "floor": "11", "dong": "302", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1052-3", "by": 1992},
       {"type": "매매", "price": 54800, "rent": 0, "area": 50.73, "land": 0.0, "floor": "1", "dong": "303", "date": "2025-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1052-3", "by": 1992},
@@ -1530,7 +1530,7 @@
     "name": "목련우성5",
     "address": "안양시 동안구 호계동 1052-5",
     "coords": [126.956001095187, 37.3879307843138],
-    "stats": {"total": 22, "sale": {"count": 6, "range": [48500, 74900], "rep_area": 41.8, "rep_avg_price": 49700}, "jeonse": {"count": 11, "range": [17000, 33000], "rep_area": 41.8, "rep_avg_price": 21742}, "monthly": {"count": 5, "range": [2000, 5000], "rep_area": 41.8, "rep_avg_price": 3260}},
+    "stats": {"total": 22, "sale": {"count": 6, "range": [48500, 74900], "rep_area": 41.8, "rep_avg_price": 49700, "ppy": 3970}, "jeonse": {"count": 11, "range": [17000, 33000], "rep_area": 41.8, "rep_avg_price": 21742, "ppy": 1724}, "monthly": {"count": 5, "range": [2000, 5000], "rep_area": 41.8, "rep_avg_price": 3260, "ppy": 258}},
     "deals": [
       {"type": "매매", "price": 49000, "rent": 0, "area": 41.85, "land": 0.0, "floor": "11", "dong": "503", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1052-5", "by": 1993},
       {"type": "매매", "price": 49500, "rent": 0, "area": 41.85, "land": 0.0, "floor": "14", "dong": "501", "date": "2025-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1052-5", "by": 1993},
@@ -1560,7 +1560,7 @@
     "name": "목련선경",
     "address": "안양시 동안구 호계동 1053-2",
     "coords": [126.951453123986, 37.3878725105682],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [70000, 70350], "rep_area": 122.4, "rep_avg_price": 70175}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [70000, 70350], "rep_area": 122.4, "rep_avg_price": 70175, "ppy": 1895}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 70350, "rent": 0, "area": 122.44, "land": 0.0, "floor": "10", "dong": "", "date": "2025-07-30", "period": "25.08~27.08", "renew": "갱신", "p_dep": 67000, "p_rent": 0, "jibun": "호계동 1053-2", "by": 1992},
       {"type": "전세", "price": 70000, "rent": 0, "area": 122.44, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-02", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1053-2", "by": 1992}
@@ -1570,7 +1570,7 @@
     "name": "목련아파트",
     "address": "안양시 동안구 호계동 1053-3",
     "coords": [126.952574480536, 37.3859983865701],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 3, "range": [66000, 81000], "rep_area": 128.2, "rep_avg_price": 75500}, "monthly": {"count": 3, "range": [10000, 30000], "rep_area": 100.8, "rep_avg_price": 23333}},
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 3, "range": [66000, 81000], "rep_area": 128.2, "rep_avg_price": 75500, "ppy": 2009}, "monthly": {"count": 3, "range": [10000, 30000], "rep_area": 100.8, "rep_avg_price": 23333, "ppy": 765}},
     "deals": [
       {"type": "월세", "price": 30000, "rent": 140, "area": 100.77, "land": 0.0, "floor": "7", "dong": "", "date": "2025-07-03", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1053-3", "by": 1994},
       {"type": "전세", "price": 70000, "rent": 0, "area": 128.19, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1053-3", "by": 1994},
@@ -1584,7 +1584,7 @@
     "name": "목련경남",
     "address": "안양시 동안구 호계동 1053-4",
     "coords": [126.953480416795, 37.384180660974],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [110000, 110000], "rep_area": 99.0, "rep_avg_price": 110000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [110000, 110000], "rep_area": 99.0, "rep_avg_price": 110000, "ppy": 3672}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 110000, "rent": 0, "area": 99.02, "land": 0.0, "floor": "12", "dong": "809", "date": "2025-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1053-4", "by": 1992}
     ]
@@ -1593,7 +1593,7 @@
     "name": "목련동아",
     "address": "안양시 동안구 호계동 1053-4",
     "coords": [126.953480416795, 37.384180660974],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [139000, 139000], "rep_area": 127.3, "rep_avg_price": 139000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [139000, 139000], "rep_area": 127.3, "rep_avg_price": 139000, "ppy": 3610}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 139000, "rent": 0, "area": 127.29, "land": 0.0, "floor": "9", "dong": "802", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1053-4", "by": 1992}
     ]
@@ -1602,7 +1602,7 @@
     "name": "목련두산",
     "address": "안양시 동안구 호계동 1054-6",
     "coords": [126.956693926173, 37.3866480730097],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [137000, 137000], "rep_area": 101.9, "rep_avg_price": 137000}, "jeonse": {"count": 4, "range": [66000, 80000], "rep_area": 101.9, "rep_avg_price": 75750}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 1, "range": [137000, 137000], "rep_area": 101.9, "rep_avg_price": 137000, "ppy": 4443}, "jeonse": {"count": 4, "range": [66000, 80000], "rep_area": 101.9, "rep_avg_price": 75750, "ppy": 2456}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 137000, "rent": 0, "area": 101.94, "land": 0.0, "floor": "6", "dong": "610", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1054-6", "by": 1993},
       {"type": "전세", "price": 80000, "rent": 0, "area": 101.94, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-14", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1054-6", "by": 1993},
@@ -1615,7 +1615,7 @@
     "name": "목련우성7",
     "address": "안양시 동안구 호계동 1054-8",
     "coords": [126.957239096074, 37.3852627675771],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [160000, 160000], "rep_area": 133.7, "rep_avg_price": 160000}, "jeonse": {"count": 3, "range": [75000, 85000], "rep_area": 101.3, "rep_avg_price": 75000}, "monthly": null},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [160000, 160000], "rep_area": 133.7, "rep_avg_price": 160000, "ppy": 3955}, "jeonse": {"count": 3, "range": [75000, 85000], "rep_area": 101.3, "rep_avg_price": 75000, "ppy": 2047}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 160000, "rent": 0, "area": 133.74, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1054-8", "by": 1992},
       {"type": "전세", "price": 85000, "rent": 0, "area": 158.91, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-31", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1054-8", "by": 1992},
@@ -1627,7 +1627,7 @@
     "name": "무궁화한양",
     "address": "안양시 동안구 호계동 1055",
     "coords": [126.954588266442, 37.3822481250061],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [53000, 53000], "rep_area": 84.9, "rep_avg_price": 53000}, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.9, "rep_avg_price": 10000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [53000, 53000], "rep_area": 84.9, "rep_avg_price": 53000, "ppy": 2064}, "jeonse": null, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 84.9, "rep_avg_price": 10000, "ppy": 389}},
     "deals": [
       {"type": "매매", "price": 53000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "7", "dong": "108", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055", "by": 1992},
       {"type": "월세", "price": 10000, "rent": 135, "area": 84.9, "land": 0.0, "floor": "13", "dong": "", "date": "2025-07-05", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055", "by": 1992}
@@ -1637,7 +1637,7 @@
     "name": "무궁화효성",
     "address": "안양시 동안구 호계동 1055",
     "coords": [126.954588266442, 37.3822481250061],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [31000, 55000], "rep_area": 59.8, "rep_avg_price": 31000}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.5, "rep_avg_price": 5000}},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 2, "range": [31000, 55000], "rep_area": 59.8, "rep_avg_price": 31000, "ppy": 1971}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 84.5, "rep_avg_price": 5000, "ppy": 196}},
     "deals": [
       {"type": "전세", "price": 55000, "rent": 0, "area": 84.51, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-31", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055", "by": 1992},
       {"type": "월세", "price": 5000, "rent": 150, "area": 84.51, "land": 0.0, "floor": "10", "dong": "", "date": "2025-07-24", "period": "25.07~27.04", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055", "by": 1992},
@@ -1648,7 +1648,7 @@
     "name": "무궁화건영캐스빌",
     "address": "안양시 동안구 호계동 1055-1",
     "coords": [126.955643647545, 37.3801604920523],
-    "stats": {"total": 9, "sale": {"count": 2, "range": [40000, 70000], "rep_area": 53.6, "rep_avg_price": 40000}, "jeonse": {"count": 7, "range": [25000, 46300], "rep_area": 53.6, "rep_avg_price": 27750}, "monthly": null},
+    "stats": {"total": 9, "sale": {"count": 2, "range": [40000, 70000], "rep_area": 53.6, "rep_avg_price": 40000, "ppy": 2627}, "jeonse": {"count": 7, "range": [25000, 46300], "rep_area": 53.6, "rep_avg_price": 27750, "ppy": 1653}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 70000, "rent": 0, "area": 84.84, "land": 0.0, "floor": "11", "dong": "703", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055-1", "by": 1992},
       {"type": "매매", "price": 40000, "rent": 0, "area": 53.58, "land": 0.0, "floor": "5", "dong": "704", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055-1", "by": 1992},
@@ -1665,7 +1665,7 @@
     "name": "무궁화코오롱",
     "address": "안양시 동안구 호계동 1055-1",
     "coords": [126.955643647545, 37.3801604920523],
-    "stats": {"total": 7, "sale": {"count": 2, "range": [70000, 70000], "rep_area": 76.6, "rep_avg_price": 70000}, "jeonse": {"count": 4, "range": [36000, 44000], "rep_area": 85.0, "rep_avg_price": 41250}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.3, "rep_avg_price": 5000}},
+    "stats": {"total": 7, "sale": {"count": 2, "range": [70000, 70000], "rep_area": 76.6, "rep_avg_price": 70000, "ppy": 3019}, "jeonse": {"count": 4, "range": [36000, 44000], "rep_area": 85.0, "rep_avg_price": 41250, "ppy": 1605}, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 59.3, "rep_avg_price": 5000, "ppy": 279}},
     "deals": [
       {"type": "매매", "price": 70000, "rent": 0, "area": 76.64, "land": 0.0, "floor": "4", "dong": "708", "date": "2025-07-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055-1", "by": 1992},
       {"type": "매매", "price": 70000, "rent": 0, "area": 76.64, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-05", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1055-1", "by": 1992},
@@ -1680,7 +1680,7 @@
     "name": "무궁화금호",
     "address": "안양시 동안구 호계동 1056",
     "coords": [126.956204520661, 37.3829833394521],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [76000, 82300], "rep_area": 72.9, "rep_avg_price": 76000}, "jeonse": {"count": 3, "range": [45000, 52000], "rep_area": 84.9, "rep_avg_price": 50650}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [76000, 82300], "rep_area": 72.9, "rep_avg_price": 76000, "ppy": 3316}, "jeonse": {"count": 3, "range": [45000, 52000], "rep_area": 84.9, "rep_avg_price": 50650, "ppy": 1993}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 76000, "rent": 0, "area": 72.89, "land": 0.0, "floor": "11", "dong": "206", "date": "2025-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1056", "by": 1992},
       {"type": "매매", "price": 82300, "rent": 0, "area": 84.9, "land": 0.0, "floor": "1", "dong": "203", "date": "2025-07-02", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1056", "by": 1992},
@@ -1693,7 +1693,7 @@
     "name": "무궁화진흥",
     "address": "안양시 동안구 호계동 1056-6",
     "coords": [126.957588253767, 37.3804188983738],
-    "stats": {"total": 4, "sale": {"count": 2, "range": [48000, 48700], "rep_area": 56.8, "rep_avg_price": 48350}, "jeonse": {"count": 1, "range": [43000, 43000], "rep_area": 84.6, "rep_avg_price": 43000}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 84.6, "rep_avg_price": 20000}},
+    "stats": {"total": 4, "sale": {"count": 2, "range": [48000, 48700], "rep_area": 56.8, "rep_avg_price": 48350, "ppy": 2816}, "jeonse": {"count": 1, "range": [43000, 43000], "rep_area": 84.6, "rep_avg_price": 43000, "ppy": 1680}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 84.6, "rep_avg_price": 20000, "ppy": 781}},
     "deals": [
       {"type": "매매", "price": 48700, "rent": 0, "area": 56.76, "land": 0.0, "floor": "11", "dong": "501", "date": "2025-07-08", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1056-6", "by": 1992},
       {"type": "매매", "price": 48000, "rent": 0, "area": 56.76, "land": 0.0, "floor": "7", "dong": "501", "date": "2025-07-27", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1056-6", "by": 1992},
@@ -1705,7 +1705,7 @@
     "name": "무궁화경남",
     "address": "안양시 동안구 호계동 1057",
     "coords": [126.957801084448, 37.3836505875042],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [31237, 49000], "rep_area": 59.9, "rep_avg_price": 31237}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [31237, 49000], "rep_area": 59.9, "rep_avg_price": 31237, "ppy": 1832}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 49000, "rent": 0, "area": 84.9, "land": 0.0, "floor": "15", "dong": "", "date": "2025-07-01", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1057", "by": 1994},
       {"type": "전세", "price": 31237, "rent": 0, "area": 59.917, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-24", "period": "25.08~27.08", "renew": "갱신", "p_dep": 29750, "p_rent": 0, "jibun": "호계동 1057", "by": 1994}
@@ -1715,7 +1715,7 @@
     "name": "무궁화태영",
     "address": "안양시 동안구 호계동 1075",
     "coords": [126.957341294677, 37.3780715505921],
-    "stats": {"total": 9, "sale": {"count": 2, "range": [50000, 50000], "rep_area": 59.8, "rep_avg_price": 50000}, "jeonse": {"count": 5, "range": [30000, 44000], "rep_area": 84.9, "rep_avg_price": 38833}, "monthly": {"count": 2, "range": [5000, 23500], "rep_area": 59.8, "rep_avg_price": 14250}},
+    "stats": {"total": 9, "sale": {"count": 2, "range": [50000, 50000], "rep_area": 59.8, "rep_avg_price": 50000, "ppy": 2766}, "jeonse": {"count": 5, "range": [30000, 44000], "rep_area": 84.9, "rep_avg_price": 38833, "ppy": 1471}, "monthly": {"count": 2, "range": [5000, 23500], "rep_area": 59.8, "rep_avg_price": 14250, "ppy": 788}},
     "deals": [
       {"type": "매매", "price": 50000, "rent": 0, "area": 59.76, "land": 0.0, "floor": "4", "dong": "605", "date": "2025-07-12", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1075", "by": 1992},
       {"type": "매매", "price": 50000, "rent": 0, "area": 59.76, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-01", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1075", "by": 1992},
@@ -1732,7 +1732,7 @@
     "name": "샘마을임광",
     "address": "안양시 동안구 호계동 1115",
     "coords": [126.967181846297, 37.379416226214],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 3, "range": [47000, 53500], "rep_area": 91.1, "rep_avg_price": 48500}, "monthly": {"count": 2, "range": [20000, 20000], "rep_area": 118.9, "rep_avg_price": 20000}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 3, "range": [47000, 53500], "rep_area": 91.1, "rep_avg_price": 48500, "ppy": 1652}, "monthly": {"count": 2, "range": [20000, 20000], "rep_area": 118.9, "rep_avg_price": 20000, "ppy": 556}},
     "deals": [
       {"type": "월세", "price": 20000, "rent": 160, "area": 118.92, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-26", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1115", "by": 1992},
       {"type": "전세", "price": 50000, "rent": 0, "area": 91.14, "land": 0.0, "floor": "9", "dong": "", "date": "2025-07-22", "period": "25.10~57.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1115", "by": 1992},
@@ -1745,7 +1745,7 @@
     "name": "샘마을우방",
     "address": "안양시 동안구 호계동 1116",
     "coords": [126.968671113618, 37.3785855250281],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [119500, 119500], "rep_area": 133.9, "rep_avg_price": 119500}, "jeonse": {"count": 1, "range": [56000, 56000], "rep_area": 102.0, "rep_avg_price": 56000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [119500, 119500], "rep_area": 133.9, "rep_avg_price": 119500, "ppy": 2951}, "jeonse": {"count": 1, "range": [56000, 56000], "rep_area": 102.0, "rep_avg_price": 56000, "ppy": 1816}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 119500, "rent": 0, "area": 133.86, "land": 0.0, "floor": "20", "dong": "504", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1116", "by": 1992},
       {"type": "전세", "price": 56000, "rent": 0, "area": 101.96, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-11", "period": "25.10~27.10", "renew": "갱신", "p_dep": 55000, "p_rent": 0, "jibun": "호계동 1116", "by": 1992}
@@ -1755,7 +1755,7 @@
     "name": "샘마을쌍용",
     "address": "안양시 동안구 호계동 1117",
     "coords": [126.967538254972, 37.3766339602195],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [114000, 115000], "rep_area": 132.6, "rep_avg_price": 114500}, "jeonse": null, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 132.6, "rep_avg_price": 30000}},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [114000, 115000], "rep_area": 132.6, "rep_avg_price": 114500, "ppy": 2855}, "jeonse": null, "monthly": {"count": 1, "range": [30000, 30000], "rep_area": 132.6, "rep_avg_price": 30000, "ppy": 748}},
     "deals": [
       {"type": "매매", "price": 114000, "rent": 0, "area": 132.6, "land": 0.0, "floor": "3", "dong": "205", "date": "2025-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1117", "by": 1992},
       {"type": "매매", "price": 115000, "rent": 0, "area": 132.6, "land": 0.0, "floor": "18", "dong": "", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1117", "by": 1992},
@@ -1766,7 +1766,7 @@
     "name": "샘마을대우",
     "address": "안양시 동안구 호계동 1121",
     "coords": [126.965258875714, 37.3750736382548],
-    "stats": {"total": 6, "sale": null, "jeonse": {"count": 5, "range": [44500, 60000], "rep_area": 101.9, "rep_avg_price": 56125}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 88.8, "rep_avg_price": 20000}},
+    "stats": {"total": 6, "sale": null, "jeonse": {"count": 5, "range": [44500, 60000], "rep_area": 101.9, "rep_avg_price": 56125, "ppy": 1667}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 88.8, "rep_avg_price": 20000, "ppy": 745}},
     "deals": [
       {"type": "전세", "price": 60000, "rent": 0, "area": 101.94, "land": 0.0, "floor": "15", "dong": "", "date": "2025-07-27", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1121", "by": 1994},
       {"type": "월세", "price": 20000, "rent": 80, "area": 88.788, "land": 0.0, "floor": "7", "dong": "", "date": "2025-07-28", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1121", "by": 1994},
@@ -1780,7 +1780,7 @@
     "name": "샘마을한양",
     "address": "안양시 동안구 호계동 1121",
     "coords": [126.965258875714, 37.3750736382548],
-    "stats": {"total": 5, "sale": {"count": 2, "range": [103000, 115500], "rep_area": 102.0, "rep_avg_price": 103000}, "jeonse": {"count": 3, "range": [43000, 52000], "rep_area": 88.7, "rep_avg_price": 43000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 2, "range": [103000, 115500], "rep_area": 102.0, "rep_avg_price": 103000, "ppy": 3054}, "jeonse": {"count": 3, "range": [43000, 52000], "rep_area": 88.7, "rep_avg_price": 43000, "ppy": 1480}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 115500, "rent": 0, "area": 134.58, "land": 0.0, "floor": "10", "dong": "118", "date": "2025-07-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1121", "by": 1993},
       {"type": "매매", "price": 103000, "rent": 0, "area": 101.95, "land": 0.0, "floor": "12", "dong": "", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1121", "by": 1993},
@@ -1793,7 +1793,7 @@
     "name": "금호어울림",
     "address": "안양시 동안구 호계동 1278",
     "coords": [126.96407070181, 37.3634641932508],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 10000], "rep_area": 84.8, "rep_avg_price": 5500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [1000, 10000], "rep_area": 84.8, "rep_avg_price": 5500, "ppy": 214}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 100, "area": 84.78, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-19", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1278", "by": 2012},
       {"type": "월세", "price": 1000, "rent": 70, "area": 84.78, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-18", "period": "25.07~25.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1278", "by": 2012}
@@ -1803,7 +1803,7 @@
     "name": "금정역호계푸르지오",
     "address": "안양시 동안구 호계동 1279",
     "coords": [126.951155349522, 37.3746446320898],
-    "stats": {"total": 8, "sale": {"count": 7, "range": [63000, 76000], "rep_area": 59.9, "rep_avg_price": 64166}, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 59.9, "rep_avg_price": 36000}, "monthly": null},
+    "stats": {"total": 8, "sale": {"count": 7, "range": [63000, 76000], "rep_area": 59.9, "rep_avg_price": 64166, "ppy": 3179}, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 59.9, "rep_avg_price": 36000, "ppy": 1985}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 63000, "rent": 0, "area": 59.94, "land": 0.0, "floor": "18", "dong": "106동", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1279", "by": 2015},
       {"type": "매매", "price": 70000, "rent": 0, "area": 74.92, "land": 0.0, "floor": "16", "dong": "108동", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1279", "by": 2015},
@@ -1819,7 +1819,7 @@
     "name": "신평촌일성트루엘파크",
     "address": "안양시 동안구 호계동 1280",
     "coords": [126.959713629668, 37.3762686208729],
-    "stats": {"total": 5, "sale": null, "jeonse": {"count": 4, "range": [43000, 45000], "rep_area": 59.4, "rep_avg_price": 44120}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 59.9, "rep_avg_price": 20000}},
+    "stats": {"total": 5, "sale": null, "jeonse": {"count": 4, "range": [43000, 45000], "rep_area": 59.4, "rep_avg_price": 44120, "ppy": 2433}, "monthly": {"count": 1, "range": [20000, 20000], "rep_area": 59.9, "rep_avg_price": 20000, "ppy": 1103}},
     "deals": [
       {"type": "전세", "price": 43680, "rent": 0, "area": 59.4384, "land": 0.0, "floor": "29", "dong": "", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1280", "by": 2018},
       {"type": "전세", "price": 43680, "rent": 0, "area": 59.4384, "land": 0.0, "floor": "29", "dong": "", "date": "2025-07-30", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1280", "by": 2018},
@@ -1832,7 +1832,7 @@
     "name": "평촌더샵아이파크",
     "address": "안양시 동안구 호계동 1287",
     "coords": [126.958159645498, 37.3764345907375],
-    "stats": {"total": 31, "sale": {"count": 7, "range": [88500, 120000], "rep_area": 59.9, "rep_avg_price": 88766}, "jeonse": {"count": 20, "range": [17712, 65000], "rep_area": 59.8, "rep_avg_price": 21218}, "monthly": {"count": 4, "range": [4000, 23000], "rep_area": 59.9, "rep_avg_price": 12000}},
+    "stats": {"total": 31, "sale": {"count": 7, "range": [88500, 120000], "rep_area": 59.9, "rep_avg_price": 88766, "ppy": 4667}, "jeonse": {"count": 20, "range": [17712, 65000], "rep_area": 59.8, "rep_avg_price": 21218, "ppy": 1731}, "monthly": {"count": 4, "range": [4000, 23000], "rep_area": 59.9, "rep_avg_price": 12000, "ppy": 593}},
     "deals": [
       {"type": "매매", "price": 89200, "rent": 0, "area": 59.94, "land": 0.0, "floor": "19", "dong": "105", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1287", "by": 2019},
       {"type": "매매", "price": 88600, "rent": 0, "area": 59.94, "land": 0.0, "floor": "17", "dong": "108", "date": "2025-07-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1287", "by": 2019},
@@ -1871,7 +1871,7 @@
     "name": "평촌대성유니드",
     "address": "안양시 동안구 호계동 1294",
     "coords": [126.943214631989, 37.3916201600754],
-    "stats": {"total": 7, "sale": {"count": 6, "range": [46500, 58500], "rep_area": 45.8, "rep_avg_price": 46633}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 59.9, "rep_avg_price": 40000}, "monthly": null},
+    "stats": {"total": 7, "sale": {"count": 6, "range": [46500, 58500], "rep_area": 45.8, "rep_avg_price": 46633, "ppy": 3289}, "jeonse": {"count": 1, "range": [40000, 40000], "rep_area": 59.9, "rep_avg_price": 40000, "ppy": 2208}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 46500, "rent": 0, "area": 45.7771, "land": 0.0, "floor": "9", "dong": "101", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1294", "by": 2019},
       {"type": "매매", "price": 46700, "rent": 0, "area": 45.7771, "land": 0.0, "floor": "18", "dong": "101", "date": "2025-07-25", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1294", "by": 2019},
@@ -1886,7 +1886,7 @@
     "name": "평촌어바인퍼스트",
     "address": "안양시 동안구 호계동 1296",
     "coords": [126.955097451294, 37.3753260179205],
-    "stats": {"total": 59, "sale": {"count": 20, "range": [40400, 106500], "rep_area": 59.9, "rep_avg_price": 82871}, "jeonse": {"count": 33, "range": [25500, 62000], "rep_area": 39.3, "rep_avg_price": 26918}, "monthly": {"count": 6, "range": [3000, 15750], "rep_area": 39.3, "rep_avg_price": 7250}},
+    "stats": {"total": 59, "sale": {"count": 20, "range": [40400, 106500], "rep_area": 59.9, "rep_avg_price": 82871, "ppy": 4195}, "jeonse": {"count": 33, "range": [25500, 62000], "rep_area": 39.3, "rep_avg_price": 26918, "ppy": 2413}, "monthly": {"count": 6, "range": [3000, 15750], "rep_area": 39.3, "rep_avg_price": 7250, "ppy": 505}},
     "deals": [
       {"type": "매매", "price": 81000, "rent": 0, "area": 59.87, "land": 0.0, "floor": "15", "dong": "", "date": "2025-07-30", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1296", "by": 2021},
       {"type": "매매", "price": 104000, "rent": 0, "area": 84.13, "land": 0.0, "floor": "5", "dong": "114", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1296", "by": 2021},
@@ -1953,7 +1953,7 @@
     "name": "평촌두산위브리버뷰",
     "address": "안양시 동안구 호계동 1309",
     "coords": [126.953258199486, 37.3674414205475],
-    "stats": {"total": 26, "sale": {"count": 21, "range": [34000, 75000], "rep_area": 36.9, "rep_avg_price": 34333}, "jeonse": {"count": 3, "range": [26000, 48000], "rep_area": 36.9, "rep_avg_price": 26000}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 60.0, "rep_avg_price": 10000}},
+    "stats": {"total": 26, "sale": {"count": 21, "range": [34000, 75000], "rep_area": 36.9, "rep_avg_price": 34333, "ppy": 3112}, "jeonse": {"count": 3, "range": [26000, 48000], "rep_area": 36.9, "rep_avg_price": 26000, "ppy": 2043}, "monthly": {"count": 2, "range": [10000, 10000], "rep_area": 60.0, "rep_avg_price": 10000, "ppy": 551}},
     "deals": [
       {"type": "매매", "price": 34000, "rent": 0, "area": 36.94, "land": 0.0, "floor": "7", "dong": "108", "date": "2025-07-29", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1309", "by": 2022},
       {"type": "매매", "price": 34000, "rent": 0, "area": 36.94, "land": 0.0, "floor": "8", "dong": "108", "date": "2025-07-16", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1309", "by": 2022},
@@ -1987,7 +1987,7 @@
     "name": "평촌신원아침도시",
     "address": "안양시 동안구 호계동 1323",
     "coords": [126.963956722577, 37.3626850405252],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [50700, 50700], "rep_area": 61.6, "rep_avg_price": 50700}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [50700, 50700], "rep_area": 61.6, "rep_avg_price": 50700, "ppy": 2722}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 50700, "rent": 0, "area": 61.5817, "land": 0.0, "floor": "6", "dong": "103", "date": "2025-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1323", "by": 2022}
     ]
@@ -1996,7 +1996,7 @@
     "name": "평촌센텀퍼스트",
     "address": "안양시 동안구 호계동 1327",
     "coords": [126.960457037208, 37.3738069106036],
-    "stats": {"total": 11, "sale": {"count": 3, "range": [94400, 148500], "rep_area": 99.3, "rep_avg_price": 148500}, "jeonse": {"count": 7, "range": [45000, 78000], "rep_area": 84.9, "rep_avg_price": 78000}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.8, "rep_avg_price": 10000}},
+    "stats": {"total": 11, "sale": {"count": 3, "range": [94400, 148500], "rep_area": 99.3, "rep_avg_price": 148500, "ppy": 5005}, "jeonse": {"count": 7, "range": [45000, 78000], "rep_area": 84.9, "rep_avg_price": 78000, "ppy": 2969}, "monthly": {"count": 1, "range": [10000, 10000], "rep_area": 59.8, "rep_avg_price": 10000, "ppy": 553}},
     "deals": [
       {"type": "매매", "price": 148500, "rent": 0, "area": 99.2733, "land": 0.0, "floor": "11", "dong": "105", "date": "2025-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1327", "by": 2023},
       {"type": "매매", "price": 148500, "rent": 0, "area": 99.2733, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 1327", "by": 2023},
@@ -2015,7 +2015,7 @@
     "name": "호계금호",
     "address": "안양시 동안구 호계동 282-31",
     "coords": [126.948392999055, 37.3815628778633],
-    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [33000, 33000], "rep_area": 84.9, "rep_avg_price": 33000}, "monthly": null},
+    "stats": {"total": 3, "sale": null, "jeonse": {"count": 3, "range": [33000, 33000], "rep_area": 84.9, "rep_avg_price": 33000, "ppy": 1284}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 33000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-11", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 282-31", "by": 2001},
       {"type": "전세", "price": 33000, "rent": 0, "area": 84.93, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-01", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 282-31", "by": 2001},
@@ -2026,7 +2026,7 @@
     "name": "호계럭키",
     "address": "안양시 동안구 호계동 570",
     "coords": [126.951269163412, 37.3760260406053],
-    "stats": {"total": 11, "sale": null, "jeonse": {"count": 8, "range": [30000, 44000], "rep_area": 84.8, "rep_avg_price": 31400}, "monthly": {"count": 3, "range": [5000, 10000], "rep_area": 84.8, "rep_avg_price": 8000}},
+    "stats": {"total": 11, "sale": null, "jeonse": {"count": 8, "range": [30000, 44000], "rep_area": 84.8, "rep_avg_price": 31400, "ppy": 1143}, "monthly": {"count": 3, "range": [5000, 10000], "rep_area": 84.8, "rep_avg_price": 8000, "ppy": 312}},
     "deals": [
       {"type": "월세", "price": 10000, "rent": 90, "area": 84.79, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-26", "period": "25.08~28.02", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 570", "by": 1992},
       {"type": "전세", "price": 32000, "rent": 0, "area": 84.79, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-19", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 570", "by": 1992},
@@ -2045,7 +2045,7 @@
     "name": "서부인터빌",
     "address": "안양시 동안구 호계동 767-2",
     "coords": [126.958781225387, 37.3668618616858],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [900, 900], "rep_area": 71.1, "rep_avg_price": 900}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [900, 900], "rep_area": 71.1, "rep_avg_price": 900, "ppy": 42}},
     "deals": [
       {"type": "월세", "price": 900, "rent": 110, "area": 71.0977, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-01", "period": "25.08~25.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 767-2", "by": 2003}
     ]
@@ -2054,7 +2054,7 @@
     "name": "호계2차현대홈타운",
     "address": "안양시 동안구 호계동 811",
     "coords": [126.96071280846, 37.3643957785126],
-    "stats": {"total": 20, "sale": {"count": 10, "range": [54000, 73000], "rep_area": 85.0, "rep_avg_price": 64750}, "jeonse": {"count": 10, "range": [30000, 46000], "rep_area": 85.0, "rep_avg_price": 38875}, "monthly": null},
+    "stats": {"total": 20, "sale": {"count": 10, "range": [54000, 73000], "rep_area": 85.0, "rep_avg_price": 64750, "ppy": 2248}, "jeonse": {"count": 10, "range": [30000, 46000], "rep_area": 85.0, "rep_avg_price": 38875, "ppy": 1557}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 54000, "rent": 0, "area": 59.977, "land": 0.0, "floor": "7", "dong": "222", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 811", "by": 2003},
       {"type": "매매", "price": 67000, "rent": 0, "area": 84.973, "land": 0.0, "floor": "13", "dong": "216", "date": "2025-07-31", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 811", "by": 2003},
@@ -2082,7 +2082,7 @@
     "name": "대림e-편한세상",
     "address": "안양시 동안구 호계동 813",
     "coords": [126.962413269014, 37.3638190431969],
-    "stats": {"total": 19, "sale": {"count": 6, "range": [55800, 66000], "rep_area": 84.8, "rep_avg_price": 64125}, "jeonse": {"count": 10, "range": [32000, 45000], "rep_area": 84.8, "rep_avg_price": 39500}, "monthly": {"count": 3, "range": [3000, 25000], "rep_area": 84.8, "rep_avg_price": 12666}},
+    "stats": {"total": 19, "sale": {"count": 6, "range": [55800, 66000], "rep_area": 84.8, "rep_avg_price": 64125, "ppy": 2657}, "jeonse": {"count": 10, "range": [32000, 45000], "rep_area": 84.8, "rep_avg_price": 39500, "ppy": 1475}, "monthly": {"count": 3, "range": [3000, 25000], "rep_area": 84.8, "rep_avg_price": 12666, "ppy": 494}},
     "deals": [
       {"type": "매매", "price": 56800, "rent": 0, "area": 59.982, "land": 0.0, "floor": "4", "dong": "102", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 813", "by": 2003},
       {"type": "매매", "price": 66000, "rent": 0, "area": 84.846, "land": 0.0, "floor": "13", "dong": "103", "date": "2025-07-23", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 813", "by": 2003},
@@ -2109,7 +2109,7 @@
     "name": "일신건영장미아파트",
     "address": "안양시 동안구 호계동 819-2",
     "coords": [126.963939076838, 37.3655909368073],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 85.0, "rep_avg_price": 33000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [33000, 33000], "rep_area": 85.0, "rep_avg_price": 33000, "ppy": 1284}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 33000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "14", "dong": "", "date": "2025-07-26", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 819-2", "by": 2000}
     ]
@@ -2118,7 +2118,7 @@
     "name": "호계동현대",
     "address": "안양시 동안구 호계동 828-4",
     "coords": [126.964581932207, 37.3642337342928],
-    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [28000, 31000], "rep_area": 59.9, "rep_avg_price": 29250}, "monthly": null},
+    "stats": {"total": 4, "sale": null, "jeonse": {"count": 4, "range": [28000, 31000], "rep_area": 59.9, "rep_avg_price": 29250, "ppy": 1614}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 31000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "12", "dong": "", "date": "2025-07-26", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 828-4", "by": 1999},
       {"type": "전세", "price": 28000, "rent": 0, "area": 59.91, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-11", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 828-4", "by": 1999},
@@ -2130,7 +2130,7 @@
     "name": "삼천리",
     "address": "안양시 동안구 호계동 843-1",
     "coords": [126.96522586289, 37.3634315609112],
-    "stats": {"total": 3, "sale": {"count": 1, "range": [35200, 35200], "rep_area": 62.8, "rep_avg_price": 35200}, "jeonse": {"count": 2, "range": [18000, 20000], "rep_area": 62.8, "rep_avg_price": 19000}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 1, "range": [35200, 35200], "rep_area": 62.8, "rep_avg_price": 35200, "ppy": 1852}, "jeonse": {"count": 2, "range": [18000, 20000], "rep_area": 62.8, "rep_avg_price": 19000, "ppy": 1000}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 35200, "rent": 0, "area": 62.82, "land": 0.0, "floor": "4", "dong": "가", "date": "2025-07-21", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 843-1", "by": 1984},
       {"type": "전세", "price": 18000, "rent": 0, "area": 62.82, "land": 0.0, "floor": "4", "dong": "", "date": "2025-07-18", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 843-1", "by": 1984},
@@ -2141,7 +2141,7 @@
     "name": "양수",
     "address": "안양시 동안구 호계동 848-2",
     "coords": [126.964603252176, 37.3625842306325],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 45.0, "rep_avg_price": 21000}, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 45.0, "rep_avg_price": 12000}},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [21000, 21000], "rep_area": 45.0, "rep_avg_price": 21000, "ppy": 1543}, "jeonse": null, "monthly": {"count": 1, "range": [12000, 12000], "rep_area": 45.0, "rep_avg_price": 12000, "ppy": 882}},
     "deals": [
       {"type": "매매", "price": 21000, "rent": 0, "area": 45.0, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 848-2", "by": 1984},
       {"type": "월세", "price": 12000, "rent": 10, "area": 45.0, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-14", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 848-2", "by": 1984}
@@ -2151,7 +2151,7 @@
     "name": "임광한마음2차",
     "address": "안양시 동안구 호계동 893-1",
     "coords": [126.943537096219, 37.3912406235604],
-    "stats": {"total": 8, "sale": {"count": 6, "range": [49200, 62500], "rep_area": 55.4, "rep_avg_price": 49733}, "jeonse": {"count": 2, "range": [32000, 33000], "rep_area": 55.4, "rep_avg_price": 32500}, "monthly": null},
+    "stats": {"total": 8, "sale": {"count": 6, "range": [49200, 62500], "rep_area": 55.4, "rep_avg_price": 49733, "ppy": 2750}, "jeonse": {"count": 2, "range": [32000, 33000], "rep_area": 55.4, "rep_avg_price": 32500, "ppy": 1939}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 50000, "rent": 0, "area": 55.405, "land": 0.0, "floor": "21", "dong": "205", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 893-1", "by": 2003},
       {"type": "매매", "price": 50000, "rent": 0, "area": 55.405, "land": 0.0, "floor": "21", "dong": "", "date": "2025-07-24", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 893-1", "by": 2003},
@@ -2167,7 +2167,7 @@
     "name": "임광한마음1차",
     "address": "안양시 동안구 호계동 895",
     "coords": [126.945225544967, 37.3901832566215],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [53500, 65000], "rep_area": 60.0, "rep_avg_price": 55250}, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 60.0, "rep_avg_price": 30000}, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 85.0, "rep_avg_price": 21000}},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [53500, 65000], "rep_area": 60.0, "rep_avg_price": 55250, "ppy": 2831}, "jeonse": {"count": 1, "range": [30000, 30000], "rep_area": 60.0, "rep_avg_price": 30000, "ppy": 1654}, "monthly": {"count": 1, "range": [21000, 21000], "rep_area": 85.0, "rep_avg_price": 21000, "ppy": 817}},
     "deals": [
       {"type": "매매", "price": 53500, "rent": 0, "area": 59.97, "land": 0.0, "floor": "21", "dong": "105", "date": "2025-07-18", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 895", "by": 1999},
       {"type": "매매", "price": 57000, "rent": 0, "area": 59.97, "land": 0.0, "floor": "8", "dong": "101", "date": "2025-07-15", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 895", "by": 1999},
@@ -2180,7 +2180,7 @@
     "name": "리츠팰리스",
     "address": "안양시 동안구 호계동 903-16",
     "coords": [126.946285268775, 37.3896511481282],
-    "stats": {"total": 4, "sale": {"count": 1, "range": [10400, 10400], "rep_area": 17.3, "rep_avg_price": 10400}, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 17.3, "rep_avg_price": 1000}},
+    "stats": {"total": 4, "sale": {"count": 1, "range": [10400, 10400], "rep_area": 17.3, "rep_avg_price": 10400, "ppy": 1987}, "jeonse": null, "monthly": {"count": 3, "range": [1000, 1000], "rep_area": 17.3, "rep_avg_price": 1000, "ppy": 213}},
     "deals": [
       {"type": "매매", "price": 10400, "rent": 0, "area": 17.3009, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-04", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 903-16", "by": 2013},
       {"type": "월세", "price": 1000, "rent": 58, "area": 12.0324, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-26", "period": "25.08~26.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 903-16", "by": 2013},
@@ -2192,7 +2192,7 @@
     "name": "한스하임",
     "address": "안양시 동안구 호계동 903-4",
     "coords": [126.947131750418, 37.3893209442897],
-    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 11000], "rep_area": 16.8, "rep_avg_price": 5666}},
+    "stats": {"total": 3, "sale": null, "jeonse": null, "monthly": {"count": 3, "range": [1000, 11000], "rep_area": 16.8, "rep_avg_price": 5666, "ppy": 1114}},
     "deals": [
       {"type": "월세", "price": 11000, "rent": 20, "area": 16.81, "land": 0.0, "floor": "7", "dong": "", "date": "2025-07-11", "period": "25.08~27.08", "renew": "갱신", "p_dep": 13700, "p_rent": 5, "jibun": "호계동 903-4", "by": 2018},
       {"type": "월세", "price": 5000, "rent": 52, "area": 16.81, "land": 0.0, "floor": "6", "dong": "", "date": "2025-07-14", "period": "25.08~26.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 903-4", "by": 2018},
@@ -2203,7 +2203,7 @@
     "name": "효성백년가약",
     "address": "안양시 동안구 호계동 912",
     "coords": [126.947471880917, 37.3854277744532],
-    "stats": {"total": 5, "sale": {"count": 3, "range": [53000, 70000], "rep_area": 85.0, "rep_avg_price": 53000}, "jeonse": {"count": 2, "range": [30000, 40000], "rep_area": 59.8, "rep_avg_price": 30000}, "monthly": null},
+    "stats": {"total": 5, "sale": {"count": 3, "range": [53000, 70000], "rep_area": 85.0, "rep_avg_price": 53000, "ppy": 1960}, "jeonse": {"count": 2, "range": [30000, 40000], "rep_area": 59.8, "rep_avg_price": 30000, "ppy": 1598}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 53000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "6", "dong": "102", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 912", "by": 2000},
       {"type": "매매", "price": 53000, "rent": 0, "area": 84.97, "land": 0.0, "floor": "6", "dong": "", "date": "2025-07-26", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 912", "by": 2000},
@@ -2216,7 +2216,7 @@
     "name": "호계1차현대홈타운",
     "address": "안양시 동안구 호계동 914-40",
     "coords": [126.94906948499, 37.3860216170511],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [78000, 78000], "rep_area": 84.6, "rep_avg_price": 78000}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [78000, 78000], "rep_area": 84.6, "rep_avg_price": 78000, "ppy": 3047}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 78000, "rent": 0, "area": 84.621, "land": 0.0, "floor": "4", "dong": "107", "date": "2025-07-19", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 914-40", "by": 2002}
     ]
@@ -2225,7 +2225,7 @@
     "name": "아크로베스티뉴",
     "address": "안양시 동안구 호계동 915",
     "coords": [126.948141094639, 37.3877915441781],
-    "stats": {"total": 23, "sale": null, "jeonse": {"count": 18, "range": [31000, 80000], "rep_area": 39.6, "rep_avg_price": 31888}, "monthly": {"count": 5, "range": [20000, 40000], "rep_area": 84.8, "rep_avg_price": 28500}},
+    "stats": {"total": 23, "sale": null, "jeonse": {"count": 18, "range": [31000, 80000], "rep_area": 39.6, "rep_avg_price": 31888, "ppy": 2994}, "monthly": {"count": 5, "range": [20000, 40000], "rep_area": 84.8, "rep_avg_price": 28500, "ppy": 1110}},
     "deals": [
       {"type": "월세", "price": 27000, "rent": 200, "area": 84.79, "land": 0.0, "floor": "17", "dong": "", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 915", "by": 2025},
       {"type": "전세", "price": 58000, "rent": 0, "area": 59.9787, "land": 0.0, "floor": "7", "dong": "", "date": "2025-07-30", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 915", "by": 2025},
@@ -2256,7 +2256,7 @@
     "name": "대명",
     "address": "안양시 동안구 호계동 918-55",
     "coords": [126.950067674725, 37.3846701469856],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [27800, 27800], "rep_area": 60.2, "rep_avg_price": 27800}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [27800, 27800], "rep_area": 60.2, "rep_avg_price": 27800, "ppy": 1526}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 27800, "rent": 0, "area": 60.23, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 918-55", "by": 1982}
     ]
@@ -2265,7 +2265,7 @@
     "name": "일신진흥",
     "address": "안양시 동안구 호계동 920-4",
     "coords": [126.948523877977, 37.3843498018768],
-    "stats": {"total": 1, "sale": {"count": 1, "range": [46200, 46200], "rep_area": 84.8, "rep_avg_price": 46200}, "jeonse": null, "monthly": null},
+    "stats": {"total": 1, "sale": {"count": 1, "range": [46200, 46200], "rep_area": 84.8, "rep_avg_price": 46200, "ppy": 1802}, "jeonse": null, "monthly": null},
     "deals": [
       {"type": "매매", "price": 46200, "rent": 0, "area": 84.75, "land": 0.0, "floor": "3", "dong": "101", "date": "2025-07-10", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 920-4", "by": 1998}
     ]
@@ -2274,7 +2274,7 @@
     "name": "신성미소지움",
     "address": "안양시 동안구 호계동 923-21",
     "coords": [126.949543667867, 37.3834351616246],
-    "stats": {"total": 2, "sale": {"count": 1, "range": [56500, 56500], "rep_area": 85.0, "rep_avg_price": 56500}, "jeonse": {"count": 1, "range": [49000, 49000], "rep_area": 85.0, "rep_avg_price": 49000}, "monthly": null},
+    "stats": {"total": 2, "sale": {"count": 1, "range": [56500, 56500], "rep_area": 85.0, "rep_avg_price": 56500, "ppy": 2198}, "jeonse": {"count": 1, "range": [49000, 49000], "rep_area": 85.0, "rep_avg_price": 49000, "ppy": 1906}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 56500, "rent": 0, "area": 84.9854, "land": 0.0, "floor": "16", "dong": "102", "date": "2025-07-20", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 923-21", "by": 2004},
       {"type": "전세", "price": 49000, "rent": 0, "area": 84.9854, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-23", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 923-21", "by": 2004}
@@ -2284,7 +2284,7 @@
     "name": "신도브래뉴",
     "address": "안양시 동안구 호계동 923-28",
     "coords": [126.948502934883, 37.3836027539589],
-    "stats": {"total": 3, "sale": {"count": 2, "range": [47800, 47800], "rep_area": 85.0, "rep_avg_price": 47800}, "jeonse": {"count": 1, "range": [26500, 26500], "rep_area": 66.7, "rep_avg_price": 26500}, "monthly": null},
+    "stats": {"total": 3, "sale": {"count": 2, "range": [47800, 47800], "rep_area": 85.0, "rep_avg_price": 47800, "ppy": 1859}, "jeonse": {"count": 1, "range": [26500, 26500], "rep_area": 66.7, "rep_avg_price": 26500, "ppy": 1314}, "monthly": null},
     "deals": [
       {"type": "매매", "price": 47800, "rent": 0, "area": 84.99, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 923-28", "by": 2004},
       {"type": "매매", "price": 47800, "rent": 0, "area": 84.99, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "호계동 923-28", "by": 2004},
@@ -2295,7 +2295,7 @@
     "name": "삼성(931)",
     "address": "안양시 동안구 호계동 931",
     "coords": [126.952192301424, 37.3800521055362],
-    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 20000], "rep_area": 85.0, "rep_avg_price": 12500}},
+    "stats": {"total": 2, "sale": null, "jeonse": null, "monthly": {"count": 2, "range": [5000, 20000], "rep_area": 85.0, "rep_avg_price": 12500, "ppy": 486}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 120, "area": 84.99, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-31", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 931", "by": 1999},
       {"type": "월세", "price": 20000, "rent": 80, "area": 84.99, "land": 0.0, "floor": "9", "dong": "", "date": "2025-07-17", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 931", "by": 1999}
@@ -2305,7 +2305,7 @@
     "name": "평촌더힐즈",
     "address": "안양시 동안구 호계동 932-3",
     "coords": [126.952519614767, 37.3804270635251],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [41000, 41000], "rep_area": 85.0, "rep_avg_price": 41000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [41000, 41000], "rep_area": 85.0, "rep_avg_price": 41000, "ppy": 1595}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 41000, "rent": 0, "area": 84.96, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-19", "period": "25.10~27.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 932-3", "by": 2005}
     ]
@@ -2314,7 +2314,7 @@
     "name": "청안스마트빌",
     "address": "안양시 동안구 호계동 949-31",
     "coords": [126.956876332614, 37.373165750996],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 12.9, "rep_avg_price": 1000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 12.9, "rep_avg_price": 1000, "ppy": 256}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 46, "area": 12.89, "land": 0.0, "floor": "5", "dong": "", "date": "2025-07-15", "period": "25.08~26.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 949-31", "by": 2012}
     ]
@@ -2323,7 +2323,7 @@
     "name": "개성하이뷰",
     "address": "안양시 동안구 호계동 959-1",
     "coords": [126.957337166171, 37.3722040733864],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 60.7, "rep_avg_price": 36000}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [36000, 36000], "rep_area": 60.7, "rep_avg_price": 36000, "ppy": 1959}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 36000, "rent": 0, "area": 60.74, "land": 0.0, "floor": "18", "dong": "", "date": "2025-07-04", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 959-1", "by": 2022}
     ]
@@ -2332,7 +2332,7 @@
     "name": "호계타운",
     "address": "안양시 동안구 호계동 959-18",
     "coords": [126.957109725522, 37.3713269327543],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8400, 8400], "rep_area": 13.6, "rep_avg_price": 8400}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [8400, 8400], "rep_area": 13.6, "rep_avg_price": 8400, "ppy": 2034}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 8400, "rent": 0, "area": 13.65, "land": 0.0, "floor": "11", "dong": "", "date": "2025-07-30", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 959-18", "by": 2014}
     ]
@@ -2341,7 +2341,7 @@
     "name": "베네치아",
     "address": "안양시 동안구 호계동 966-7",
     "coords": [126.95455264289, 37.3688679791702],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9800, 9800], "rep_area": 20.3, "rep_avg_price": 9800}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [9800, 9800], "rep_area": 20.3, "rep_avg_price": 9800, "ppy": 1594}},
     "deals": [
       {"type": "월세", "price": 9800, "rent": 2, "area": 20.32, "land": 0.0, "floor": "7", "dong": "", "date": "2025-07-11", "period": "25.07~27.07", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 966-7", "by": 2014}
     ]
@@ -2350,7 +2350,7 @@
     "name": "삼덕진주",
     "address": "안양시 동안구 호계동 969-3",
     "coords": [126.957507206153, 37.3683719814215],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 55.6, "rep_avg_price": 1000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [1000, 1000], "rep_area": 55.6, "rep_avg_price": 1000, "ppy": 59}},
     "deals": [
       {"type": "월세", "price": 1000, "rent": 46, "area": 55.6, "land": 0.0, "floor": "3", "dong": "", "date": "2025-07-25", "period": "25.08~26.06", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 969-3", "by": 1985}
     ]
@@ -2359,7 +2359,7 @@
     "name": "유환3차",
     "address": "안양시 동안구 호계동 970-17",
     "coords": [126.956907230658, 37.3682948167155],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [17000, 17000], "rep_area": 51.3, "rep_avg_price": 17000}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [17000, 17000], "rep_area": 51.3, "rep_avg_price": 17000, "ppy": 1095}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 17000, "rent": 0, "area": 51.3, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-28", "period": "25.08~27.08", "renew": "갱신", "p_dep": 16000, "p_rent": 0, "jibun": "호계동 970-17", "by": 1988},
       {"type": "전세", "price": 17000, "rent": 0, "area": 51.3, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-28", "period": "25.08~27.08", "renew": "갱신", "p_dep": 16000, "p_rent": 0, "jibun": "호계동 970-17", "by": 1988}
@@ -2369,7 +2369,7 @@
     "name": "정화",
     "address": "안양시 동안구 호계동 970-21",
     "coords": [126.956456900991, 37.368108049262],
-    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13650, 13650], "rep_area": 36.7, "rep_avg_price": 13650}, "monthly": null},
+    "stats": {"total": 1, "sale": null, "jeonse": {"count": 1, "range": [13650, 13650], "rep_area": 36.7, "rep_avg_price": 13650, "ppy": 1229}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 13650, "rent": 0, "area": 36.72, "land": 0.0, "floor": "1", "dong": "", "date": "2025-07-07", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 970-21", "by": 1983}
     ]
@@ -2378,7 +2378,7 @@
     "name": "DYtown",
     "address": "안양시 동안구 호계동 971-1",
     "coords": [126.955423555253, 37.3681946133592],
-    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [15750, 15750], "rep_area": 35.1, "rep_avg_price": 15750}, "monthly": null},
+    "stats": {"total": 2, "sale": null, "jeonse": {"count": 2, "range": [15750, 15750], "rep_area": 35.1, "rep_avg_price": 15750, "ppy": 1484}, "monthly": null},
     "deals": [
       {"type": "전세", "price": 15750, "rent": 0, "area": 35.0806, "land": 0.0, "floor": "6", "dong": "", "date": "2025-07-09", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 971-1", "by": 2014},
       {"type": "전세", "price": 15750, "rent": 0, "area": 35.0806, "land": 0.0, "floor": "6", "dong": "", "date": "2025-07-09", "period": "25.08~27.08", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 971-1", "by": 2014}
@@ -2388,7 +2388,7 @@
     "name": "우양파크빌",
     "address": "안양시 동안구 호계동 972-7",
     "coords": [126.956883319429, 37.3668757816928],
-    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 62.3, "rep_avg_price": 5000}},
+    "stats": {"total": 1, "sale": null, "jeonse": null, "monthly": {"count": 1, "range": [5000, 5000], "rep_area": 62.3, "rep_avg_price": 5000, "ppy": 265}},
     "deals": [
       {"type": "월세", "price": 5000, "rent": 50, "area": 62.26, "land": 0.0, "floor": "2", "dong": "", "date": "2025-07-24", "period": "25.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "호계동 972-7", "by": 2004}
     ]
