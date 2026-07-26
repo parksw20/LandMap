@@ -132,6 +132,14 @@ class Handler(SimpleHTTPRequestHandler):
             ok = _run_job("월간 실거래 갱신",
                           [sys.executable, "-X", "utf8", "update_monthly.py"])
             return self._json({"ok": ok, "job": _job})
+        if p == "/api/run/backfill":
+            ok = _run_job("밀린 달 채우기",
+                          [sys.executable, "-X", "utf8", "update_monthly.py", "--backfill"])
+            return self._json({"ok": ok, "job": _job})
+        if p == "/api/run/rebuild":
+            ok = _run_job("전체 재생성",
+                          [sys.executable, "-X", "utf8", "update_monthly.py", "--rebuild"])
+            return self._json({"ok": ok, "job": _job})
         if p == "/api/run/ledger":
             ok = _run_job("건축물대장 수집",
                           [sys.executable, "-X", "utf8", "bldg_ledger.py"])
