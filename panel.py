@@ -22,7 +22,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
-PORT = 8080
+# 포트: 인자 > 기본 8080 (카카오 지도 키가 localhost:8080에 등록돼 있어 기본 고정)
+PORT = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 8080
 JOB_LOG = ROOT / "panel_job.log"
 
 _job = {"running": False, "name": None, "started": None, "rc": None}
