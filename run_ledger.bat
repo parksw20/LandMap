@@ -4,7 +4,7 @@ REM 매일 00:30 실행: 그날치 쿼터만큼 수집(~300-400동) 후 429에�
 REM 남은 동이 0이 될 때까지 며칠에 걸쳐 자동으로 이어받는다.
 cd /d "%~dp0"
 echo [%date% %time%] 건축물대장 수집 시작 >> ledger_auto.log
-python -X utf8 bldg_ledger.py >> ledger_auto.log 2>&1
+python -X utf8 scripts\bldg_ledger.py >> ledger_auto.log 2>&1
 echo [%date% %time%] 수집 종료 (exit %errorlevel%) >> ledger_auto.log
 
 REM --- 진행분 자동 커밋/푸시 (변경 있을 때만) ---

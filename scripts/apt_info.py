@@ -25,7 +25,7 @@ import keyring
 import requests
 import pandas as pd
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CACHE_DIR = DATA / "kapt_cache"
 LIST_CACHE = CACHE_DIR / "list.json"

@@ -14,7 +14,7 @@ import requests
 from pathlib import Path
 from geo_cache import GeoCache
 
-ROOT_DIR = Path(__file__).parent
+ROOT_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = ROOT_DIR / "data"
 CACHE_PATH = BASE_DIR / "address_cache.json"
 OUT_PATH = BASE_DIR / "redev_zones.json"

@@ -16,7 +16,7 @@ from pathlib import Path
 import shapefile
 from pyproj import CRS, Transformer
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 ZONES_PATH = ROOT / "data" / "redev_zones.json"
 OUT_PATH = ROOT / "data" / "redev_polygons.json"
 

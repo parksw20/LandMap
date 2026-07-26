@@ -13,7 +13,7 @@ import glob
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 TYPES = ["apt", "rh", "off", "silv", "sh", "nrg", "land", "indu"]
 

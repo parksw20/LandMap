@@ -8,7 +8,7 @@
 import keyring
 from pathlib import Path
 
-OUT = Path(__file__).parent / "data" / "config.local.js"
+OUT = Path(__file__).resolve().parent.parent / "data" / "config.local.js"
 
 key = keyring.get_password("v-world", "parksw20")
 if not key or len(key) < 10:
@@ -24,7 +24,7 @@ print(f"[OK] {OUT} 생성 완료")
 #   python -c "import keyring; keyring.set_password('v-world','parksw20-pages','발급키')"
 # 로 저장하면 config.pages.js(커밋되는 파일)를 생성해 Pages에서도 VWorld 기능 동작.
 pages_key = keyring.get_password("v-world", "parksw20-pages")
-PAGES_OUT = Path(__file__).parent / "data" / "config.pages.js"
+PAGES_OUT = Path(__file__).resolve().parent.parent / "data" / "config.pages.js"
 if pages_key and len(pages_key) > 10:
     PAGES_OUT.write_text(
         "// GitHub Pages 배포용 VWorld 공개 키 (커밋되는 파일 — 로컬 키와 별개)\n"

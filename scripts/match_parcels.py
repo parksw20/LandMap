@@ -27,7 +27,7 @@ from pyproj import Transformer
 
 from match_buildings import masked_match
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 PDONG_CACHE_DIR = DATA / "parcel_dong_cache"
 BLDG_CACHE_DIR = DATA / "bldg_cache"

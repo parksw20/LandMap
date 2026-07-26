@@ -20,7 +20,7 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 # 포트: 인자 > 기본 8080 (카카오 지도 키가 localhost:8080에 등록돼 있어 기본 고정)
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 8080
@@ -130,19 +130,19 @@ class Handler(SimpleHTTPRequestHandler):
         p = self.path.split("?")[0]
         if p == "/api/run/monthly":
             ok = _run_job("월간 실거래 갱신",
-                          [sys.executable, "-X", "utf8", "update_monthly.py"])
+                          [sys.executable, "-X", "utf8", "scripts/update_monthly.py"])
             return self._json({"ok": ok, "job": _job})
         if p == "/api/run/backfill":
             ok = _run_job("밀린 달 채우기",
-                          [sys.executable, "-X", "utf8", "update_monthly.py", "--backfill"])
+                          [sys.executable, "-X", "utf8", "scripts/update_monthly.py", "--backfill"])
             return self._json({"ok": ok, "job": _job})
         if p == "/api/run/rebuild":
             ok = _run_job("전체 재생성",
-                          [sys.executable, "-X", "utf8", "update_monthly.py", "--rebuild"])
+                          [sys.executable, "-X", "utf8", "scripts/update_monthly.py", "--rebuild"])
             return self._json({"ok": ok, "job": _job})
         if p == "/api/run/ledger":
             ok = _run_job("건축물대장 수집",
-                          [sys.executable, "-X", "utf8", "bldg_ledger.py"])
+                          [sys.executable, "-X", "utf8", "scripts/bldg_ledger.py"])
             return self._json({"ok": ok, "job": _job})
         return self._json({"error": "unknown"}, 404)
 

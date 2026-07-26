@@ -11,7 +11,7 @@ if not key or len(key) < 10:
     print("(!) keyring에 VWorld 키가 없습니다")
     raise SystemExit(1)
 
-out = Path(__file__).parent / "data" / "config.pages.js"
+out = Path(__file__).resolve().parent.parent / "data" / "config.pages.js"
 out.write_text(
     "// GitHub Pages 배포용 VWorld 키 (공개 - 사용자 선택으로 로컬 키와 동일 키 사용)\n"
     "// domain 파라미터는 키 등록 도메인(localhost)과 일치해야 통과\n"

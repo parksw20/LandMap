@@ -26,7 +26,7 @@ import pandas as pd
 from apt_info import api, items_of, extract_dong, _DONG_RE, Unauthorized, QuotaExceeded
 import apt_info
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CACHE_DIR = DATA / "hspms_cache"
 BJD_CACHE = CACHE_DIR / "bjd_map.json"

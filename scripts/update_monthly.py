@@ -16,7 +16,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 PY = [sys.executable, "-X", "utf8"]
 
@@ -71,11 +71,11 @@ def commit_push(msg):
 
 def do_current(month):
     print(f"[이번 달 갱신] {month}", flush=True)
-    if run(PY + ["land.py", "-n"], "① 실거래 다운로드") != 0:
+    if run(PY + ["scripts/land.py", "-n"], "① 실거래 다운로드") != 0:
         print("[!] 다운로드 실패 — 중단", flush=True)
         return
     prune_old_versions(month)
-    if run(PY + ["data_manager.py", "-m", month], "② 데이터 가공") != 0:
+    if run(PY + ["scripts/data_manager.py", "-m", month], "② 데이터 가공") != 0:
         print("[!] 가공 실패 — 커밋 생략", flush=True)
         return
     commit_push(f"Data: {month} 월간 실거래 갱신 (자동)")
@@ -102,13 +102,13 @@ def do_backfill():
     print(f"[밀린 달 채우기] 대상 {len(missing)}개: {', '.join(missing)}", flush=True)
     x = months_ago(min(missing))            # 가장 오래된 빠진 달
     y = x + 1                               # 그달 ~ 현재월
-    if run(PY + ["land.py", "-n", str(x), str(y)], "① 밀린 달 다운로드") != 0:
+    if run(PY + ["scripts/land.py", "-n", str(x), str(y)], "① 밀린 달 다운로드") != 0:
         print("[!] 다운로드 실패 — 중단", flush=True)
         return
     for m in missing:
         prune_old_versions(m)
     # 인자 없는 data_manager = manifest에 없는 달만 가공 (=빠진 달 정확히)
-    if run(PY + ["data_manager.py"], "② 빠진 달 가공") != 0:
+    if run(PY + ["scripts/data_manager.py"], "② 빠진 달 가공") != 0:
         print("[!] 가공 실패 — 커밋 생략", flush=True)
         return
     commit_push(f"Data: 밀린 달 채우기 ({missing[0]}~{missing[-1]}, {len(missing)}개월)")
@@ -116,7 +116,7 @@ def do_backfill():
 
 def do_rebuild():
     print("[전체 재생성] 재다운로드 없이 기존 엑셀로 전 기간 재가공", flush=True)
-    if run(PY + ["data_manager.py", "-r"], "① 전체 재생성") != 0:
+    if run(PY + ["scripts/data_manager.py", "-r"], "① 전체 재생성") != 0:
         print("[!] 재생성 실패 — 커밋 생략", flush=True)
         return
     commit_push("Data: 전체 재생성 (구조 변경 반영)")

@@ -23,7 +23,7 @@ import pandas as pd
 
 from geo_cache import GeoCache
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 BLDG_CACHE_DIR = DATA / "bldg_cache"
 MATCH_CACHE = DATA / "match_cache.json"

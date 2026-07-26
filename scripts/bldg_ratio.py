@@ -22,7 +22,7 @@ from pathlib import Path
 import keyring
 import requests
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = DATA / "bldg_ratio.json"
 

@@ -13,7 +13,7 @@ from excel_parser import ExcelParser
 from hierarchy_builder import HierarchyBuilder
 
 # 현재 스크립트 위치 기준 상대 경로 사용
-ROOT_DIR = Path(__file__).parent
+ROOT_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = ROOT_DIR / "data"
 CACHE_PATH = BASE_DIR / "address_cache.json"
 

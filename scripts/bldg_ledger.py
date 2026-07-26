@@ -26,7 +26,7 @@ from supply_area import (region_key, load_our_complexes, match_by_areas,
                          TYPE_PURPS, SUPPLY_PURPS)
 from bldg_ratio import sane, num as rnum
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CACHE_DIR = DATA / "ledger_cache"
 AREA_CACHE = CACHE_DIR / "area.json"

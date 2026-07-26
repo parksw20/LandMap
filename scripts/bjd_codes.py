@@ -19,7 +19,7 @@ import requests
 
 from geo_cache import GeoCache
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = DATA / "hspms_cache" / "bjd_map.json"
 ADDR_CACHE = DATA / "address_cache.json"

@@ -27,7 +27,7 @@ from apt_info import (api, items_of, build_kapt_index, lookup_kapt,
 import apt_info
 from geo_cache import GeoCache
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CACHE_DIR = DATA / "kapt_cache"
 LIST_CACHE = CACHE_DIR / "list.json"
