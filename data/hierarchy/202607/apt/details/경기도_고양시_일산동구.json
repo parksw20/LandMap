@@ -90,6 +90,15 @@
     ]
   },
   {
+    "name": "백마마을(한양)",
+    "address": "고양시 일산동구 마두동 732",
+    "coords": [126.791396446757, 37.6551865774233],
+    "stats": {"total": 1, "sale": {"count": 1, "range": [54750, 54750], "rep_area": 84.9, "rep_avg_price": 54750, "ppy": 2131}, "jeonse": null, "monthly": null},
+    "deals": [
+      {"type": "매매", "price": 54750, "rent": 0, "area": 84.945, "land": 0.0, "floor": "12", "dong": "", "date": "2026-07-14", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "마두동 732", "by": 1995}
+    ]
+  },
+  {
     "name": "백마마을(청구)",
     "address": "고양시 일산동구 마두동 734",
     "coords": [126.793355751711, 37.6561127203399],
@@ -624,9 +633,10 @@
     "name": "호수마을(청구)",
     "address": "고양시 일산동구 장항동 883",
     "coords": [126.776173375822, 37.6502727455569],
-    "stats": {"total": 5, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 85.0, "rep_avg_price": 66000, "ppy": 2568}, "jeonse": null, "monthly": {"count": 4, "range": [2000, 2000], "rep_area": 50.0, "rep_avg_price": 2000, "ppy": 132}},
+    "stats": {"total": 6, "sale": {"count": 1, "range": [66000, 66000], "rep_area": 85.0, "rep_avg_price": 66000, "ppy": 2568}, "jeonse": {"count": 1, "range": [28000, 28000], "rep_area": 50.0, "rep_avg_price": 28000, "ppy": 1853}, "monthly": {"count": 4, "range": [2000, 2000], "rep_area": 50.0, "rep_avg_price": 2000, "ppy": 132}},
     "deals": [
       {"type": "매매", "price": 66000, "rent": 0, "area": 84.965, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-09", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장항동 883", "by": 1994},
+      {"type": "전세", "price": 28000, "rent": 0, "area": 49.965, "land": 0.0, "floor": "4", "dong": "", "date": "2026-07-11", "period": "", "renew": "", "p_dep": 0, "p_rent": 0, "jibun": "장항동 883", "by": 1994},
       {"type": "월세", "price": 2000, "rent": 95, "area": 49.965, "land": 0.0, "floor": "11", "dong": "", "date": "2026-07-21", "period": "26.09~28.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장항동 883", "by": 1994},
       {"type": "월세", "price": 2000, "rent": 90, "area": 49.965, "land": 0.0, "floor": "9", "dong": "", "date": "2026-07-22", "period": "26.10~28.10", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장항동 883", "by": 1994},
       {"type": "월세", "price": 2000, "rent": 90, "area": 49.965, "land": 0.0, "floor": "8", "dong": "", "date": "2026-07-07", "period": "26.09~27.09", "renew": "신규", "p_dep": 0, "p_rent": 0, "jibun": "장항동 883", "by": 1994},
