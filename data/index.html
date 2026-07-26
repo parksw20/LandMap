@@ -257,6 +257,25 @@
     </div>
   </div>
 
+  <!-- 관리 콘솔 진입 (로컬 실행 시에만 표시) -->
+  <a id="admin-settings-btn" href="./panel.html" title="데이터 파이프라인 관리"
+     style="display:none; position:fixed; right:16px; bottom:16px; z-index:1000;
+            width:44px; height:44px; border-radius:50%; background:#ffffff;
+            box-shadow:0 2px 10px rgba(20,33,54,.18); border:1px solid #e2e7ee;
+            align-items:center; justify-content:center; text-decoration:none;
+            font-size:20px; line-height:1; transition:transform .15s, box-shadow .15s;">⚙️</a>
+  <script>
+    (function(){
+      var h = location.hostname;
+      if (h === 'localhost' || h === '127.0.0.1') {
+        var b = document.getElementById('admin-settings-btn');
+        b.style.display = 'flex';
+        b.addEventListener('mouseenter', function(){ b.style.transform='rotate(45deg)'; b.style.boxShadow='0 4px 16px rgba(20,33,54,.28)'; });
+        b.addEventListener('mouseleave', function(){ b.style.transform='none'; b.style.boxShadow='0 2px 10px rgba(20,33,54,.18)'; });
+      }
+    })();
+  </script>
+
   <script src="./config.local.js?v=39"></script>
   <script src="./config.pages.js?v=39"></script>
   <script src="./app.js?v=39"></script>
