@@ -11,6 +11,7 @@
 # 실행: python panel.py   (실행.bat이 자동으로 띄움)
 
 import json
+import socket
 import subprocess
 import sys
 import threading
@@ -137,9 +138,27 @@ class Handler(SimpleHTTPRequestHandler):
         return self._json({"error": "unknown"}, 404)
 
 
+class DualStackServer(ThreadingHTTPServer):
+    """IPv4·IPv6 동시 수신 — localhost가 ::1(IPv6)로 풀려도 응답한다.
+    (옛 http.server가 IPv6를 잡고 있으면 /panel이 404 나던 문제 방지)"""
+    address_family = socket.AF_INET6
+    allow_reuse_address = True
+
+    def server_bind(self):
+        try:
+            self.socket.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
+        except (AttributeError, OSError):
+            pass
+        return super().server_bind()
+
+
 def main():
     handler = partial(Handler, directory=str(DATA))
-    httpd = ThreadingHTTPServer(("127.0.0.1", PORT), handler)
+    try:
+        httpd = DualStackServer(("", PORT), handler)
+    except OSError as e:
+        print(f"[panel] 포트 {PORT} 사용 중 — 기존 서버를 먼저 종료하세요. ({e})")
+        sys.exit(1)
     print(f"[panel] 관리 서버 실행 → http://localhost:{PORT}/")
     print(f"[panel] 대시보드     → http://localhost:{PORT}/panel")
     try:
