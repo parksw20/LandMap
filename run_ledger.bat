@@ -8,7 +8,7 @@ python -X utf8 scripts\bldg_ledger.py >> ledger_auto.log 2>&1
 echo [%date% %time%] 수집 종료 (exit %errorlevel%) >> ledger_auto.log
 
 REM --- 진행분 자동 커밋/푸시 (변경 있을 때만) ---
-git add data/ledger_cache/area.json data/ledger_cache/title.json data/supply_area.json data/bldg_ratio.json
+git add data/supply_area.json data/bldg_ratio.json
 git diff --cached --quiet
 if errorlevel 1 (
   git commit -m "Data: 건축물대장 수집 자동 진행분 (스케줄러)" >> ledger_auto.log 2>&1

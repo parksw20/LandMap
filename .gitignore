@@ -36,3 +36,7 @@ ledger_auto.log
 # 로컬 전용 관리 콘솔 — 공개 사이트에 배포하지 않음
 data/panel.html
 panel_job.log
+
+# 건축물대장 수집 캐시 — 앱이 안 씀(파생물 supply_area/bldg_ratio만 사용).
+# 70MB+로 계속 커져 GitHub 한도 초과 → 로컬 재개용으로만 유지, 커밋 제외.
+data/ledger_cache/
